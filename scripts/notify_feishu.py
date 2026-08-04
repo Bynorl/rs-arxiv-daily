@@ -20,7 +20,7 @@ from pathlib import Path
 
 SCRIPT_DIR       = Path(__file__).parent
 DATA_DIR         = SCRIPT_DIR.parent / "data" / "papers"
-SITE_URL         = "https://wsybb252237.github.io/rs-arxiv-daily/"
+SITE_URL         = "https://bynorl.github.io/rs-arxiv-daily/"
 PAPERS_PER_CHUNK = 3       # 每个 div 放几篇（完整摘要约 900 字/篇，3 篇 ≈ 2700 < 4000 上限）
 MAX_CARD_BYTES   = 25_000  # 飞书单卡片 JSON 大小上限（实测约 30KB，留 5KB 余量）
 MAX_AUTHORS      = 4       # 最多显示几位作者
