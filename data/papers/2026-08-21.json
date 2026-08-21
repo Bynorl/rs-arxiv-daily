@@ -1,0 +1,1949 @@
+{
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T02:55:49.630610+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 46,
+  "papers": [
+    {
+      "title": "Open-Vocabulary 3D Object Detection with Co-Distillation Discovery and Dual Guidance Robust Training",
+      "authors": [
+        "Shangbo Yuan",
+        "Jie Xu",
+        "Xiaofeng Zhu",
+        "Na Zhao"
+      ],
+      "summary": "Recently, open-vocabulary 3D object detection (3D-OVD) has gained increasing attention for its ability to detect unseen objects in 3D scenes. Existing approaches typically adopt a two-stage pipeline that first discovers novel objects using foundation models and then trains a 3D-OVD model based on these discovered objects. Although effective, this pipeline often suffers from inaccurate localization and mismatched classification during the discovery stage, which subsequently limits the performance of the model training stage. To address these limitations, we advocate for improving both the reliability of novel object discovery and the robustness of model training, and propose an innovative framework. Specifically, for reliable discovery, our co-distillation strategy distills high-quality novel objects by applying Hungarian matching over a comprehensive score that incorporates geometric consistency, structural objectness, and semantic certainty. To enhance robust model training, we further propose a dual-guidance learning scheme, incorporating a scene-awareness-guided uncertainty regularization for the regression head and an LLM-guided hierarchical alignment for the classification head, effectively mitigating the negative effects of imprecise 3D bounding boxes and semantic ambiguity. Extensive experiments on SUN RGB-D and ScanNetV2 demonstrate that our method achieves significant performance gains over state-of-the-art approaches. Code is available at https://github.com/shangboyuan/Co-3DGT",
+      "published": "2026-08-20T12:47:40Z",
+      "updated": "2026-08-20T12:47:40Z",
+      "arxiv_id": "2608.19973v1",
+      "abs_url": "http://arxiv.org/abs/2608.19973v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19973v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "Accepted by ECCV26",
+      "code_url": "https://github.com/shangboyuan/Co-3DGT",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "目标检测",
+        "开放词汇与开放集",
+        "基础模型",
+        "视觉-语言模型"
+      ],
+      "topic": "目标检测",
+      "score": 11,
+      "anchor_terms": [
+        "object detection",
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "LLM",
+        "object detection",
+        "open-vocabulary",
+        "robust"
+      ],
+      "title_zh": "Open-Vocabulary 3D Object Detection with Co-Distillation Discovery and Dual Guidance Robust Training",
+      "summary_zh": "最近，开放词汇 3D 对象检测 (3D-OVD) 因其检测 3D 场景中看不见的对象的能力而受到越来越多的关注。现有方法通常采用两阶段管道，首先使用基础模型发现新对象，然后基于这些发现的对象训练 3D-OVD 模型。尽管有效，但该管道在发现阶段经常会遇到定位不准确和分类不匹配的问题，从而限制了模型训练阶段的性能。为了解决这些限制，我们主张提高新对象发现的可靠性和模型训练的鲁棒性，并提出了一个创新框架。具体来说，为了可靠的发现，我们的共同蒸馏策略通过在综合评分上应用匈牙利匹配来提取高质量的新颖对象，该综合评分包含几何一致性、结构客观性和语义确定性。为了增强鲁棒模型训练，我们进一步提出了一种双指导学习方案，结合了回归头的场景感知引导的不确定性正则化和分类头的LLM引导的分层对齐，有效减轻了不精确的3D边界框和语义模糊的负面影响。在 SUN RGB-D 和 ScanNetV2 上进行的大量实验表明，我们的方法比最先进的方法取得了显着的性能提升。代码可在 https://github.com/shangboyuan/Co-3DGT 获取"
+    },
+    {
+      "title": "Falcon Perception-HD: High Density Perception via Reinforcement Learning",
+      "authors": [
+        "Sofian Chaybouti",
+        "Yasser Dahou",
+        "Ngoc Dung Huynh",
+        "Reda Alami",
+        "Hilde Kuehne"
+      ],
+      "summary": "Autoregressive perception models trained to localize visual entities under the open-vocabulary setting are mostly trained using Supervised fine-tuning (SFT) with maximum likelihood, yet it optimizes a proxy objective (per-token cross-entropy) that is fundamentally misaligned with perception metrics such as precision and recall. In this paper, we explore post-training reinforcement learning (RL), specifically GRPO, to directly align these models with their evaluation metrics. Building up on the recently introduced Falcon Perception, we design an RL framework that addresses perception-specific challenges: reward design for set-structured outputs and multi-head sampling control. We discover multiple benefits from RL for perception: first, RL unlocks state-of-the-art performance in very dense scenes (up to 500 objects per scene), a regime where most existing systems degrade sharply or collapse; furthermore it fixes common issues in autoregressive perception models like mask repetitions and removes almost entirely the need for NMS and coordinate deduplication, which improve both performance and efficiency and remove the need for hyperparameters tuning; overall, we notice improvements on all levels of difficulties in referring expression segmentation (on PBench and SACO-Gold), and we find an elegant way to preserve the knowledge of whether an object exists or not (as evaluated by MCC) without training on negative samples. We show that a simple reward that penalizes false negatives and positives is sufficient. We develop two hybrid self-annotation pipelines, respectively tailored for difficult referring expressions and very dense scenes, and show their benefits on RL-training. Model weights are released as a Falcon Perception revision~\\footnote{https://huggingface.co/tiiuae/Falcon-Perception}. Datasets will be published.",
+      "published": "2026-08-19T13:01:00Z",
+      "updated": "2026-08-19T13:01:00Z",
+      "arxiv_id": "2608.18881v1",
+      "abs_url": "http://arxiv.org/abs/2608.18881v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18881v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "27 pages, 11 figures",
+      "code_url": "https://huggingface.co/tiiuae/Falcon-Perception",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "开放词汇与开放集",
+        "图像描述与视觉推理",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 5,
+      "anchor_terms": [
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "open-vocabulary",
+        "referring expression"
+      ],
+      "title_zh": "Falcon Perception-HD：通过强化学习实现高密度感知",
+      "summary_zh": "在开放词汇设置下训练定位视觉实体的自回归感知模型大多使用最大似然的监督微调（SFT）进行训练，但它优化了代理目标（每个令牌交叉熵），该代理目标与精度和召回等感知指标根本不一致。在本文中，我们探索训练后强化学习（RL），特别是 GRPO，以直接将这些模型与其评估指标对齐。在最近推出的 Falcon Perception 的基础上，我们设计了一个 RL 框架，用于解决特定于感知的挑战：针对集合结构输出和多头采样控制的奖励设计。我们发现 RL 对感知有多种好处：首先，RL 在非常密集的场景（每个场景最多 500 个物体）中解锁了最先进的性能，在这种情况下，大多数现有系统都会急剧退化或崩溃；此外，它还解决了自回归感知模型中的常见问题，例如掩模重复，并且几乎完全消除了对 NMS 和协调重复数据删除的需要，从而提高了性能和效率，并消除了对超参数调整的需要；总体而言，我们注意到引用表达分割（在 PBench 和 SACO-Gold 上）的各个层面的困难都得到了改善，并且我们找到了一种优雅的方法来保留对象是否存在的知识（由 MCC 评估），而无需对负样本进行训练。我们证明，惩罚假阴性和阳性的简单奖励就足够了。我们开发了两种混合自注释管道，分别针对困难的指代表达和非常密集的场景量身定制，并展示了它们在强化学习训练中的优势。模型权重作为 Falcon Perception 修订版发布~\\footnote{https://huggingface.co/tiiuae/Falcon-Perception}。数据集将被发布。"
+    },
+    {
+      "title": "Monitoring Pasture Restoration from Satellite Image Time Series: Caveats and Opportunities",
+      "authors": [
+        "Linnea Sartorius",
+        "Isak Randahl",
+        "Delia Fano Yela",
+        "Georg Andersson",
+        "Sadegh Jamali",
+        "Aleksis Pirinen"
+      ],
+      "summary": "Monitoring nature restoration at scale is an important but difficult ecological problem. Deep learning methods to analyze satellite image time series (SITS) have been widely used for land surface monitoring. In semi-natural grasslands - the habitat type in focus in this work - restoration outcomes develop gradually, yet satellite observations are influenced by weather, acquisition conditions, and processing artefacts, making it difficult to distinguish genuine restoration signals from unrelated temporal variation. In this work, we examine - to the best of our knowledge, for the first time - whether restoration status can be detected directly from satellite image time series by formulating pasture restoration as a binary deep learning classification problem. We evaluate two common SITS deep learning architectures on different Sentinel-2 image combinations, across 1,397 restored Swedish pastures and find that explicitly modeling intra-year variability and per-pasture normalization increases separability, reaching 0.88 accuracy for the best model. We further investigate our results and perform a targeted bias analysis finding that reliable deployment requires temporally balanced labels and evaluation protocols that explicitly test for year-related confounding. We therefore frame our contribution not as a solved restoration-monitoring system, but as a realistic case study of what works, what fails, and what future studies should control for. Code and models are available at https://github.com/aleksispi/ml-nature-resto.",
+      "published": "2026-08-18T12:27:08Z",
+      "updated": "2026-08-18T12:27:08Z",
+      "arxiv_id": "2608.17704v1",
+      "abs_url": "http://arxiv.org/abs/2608.17704v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17704v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Accepted at the 3rd Workshop on Computer Vision for Ecology at ECCV 2026",
+      "code_url": "https://github.com/aleksispi/ml-nature-resto",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "高光谱/多光谱",
+      "score": 5,
+      "anchor_terms": [
+        "satellite image",
+        "Sentinel-2",
+        "temporal",
+        "time series"
+      ],
+      "matched_terms": [
+        "satellite",
+        "satellite image",
+        "Sentinel-2",
+        "temporal",
+        "time series"
+      ],
+      "title_zh": "从卫星图像时间序列监测牧场恢复：注意事项和机遇",
+      "summary_zh": "大规模监测自然恢复是一个重要但困难的生态问题。分析卫星图像时间序列（SITS）的深度学习方法已广泛用于地表监测。在半天然草原（本工作重点关注的栖息地类型）中，恢复结果逐渐发展，但卫星观测受到天气、采集条件和处理人工制品的影响，因此很难区分真正的恢复信号和不相关的时间变化。在这项工作中，我们据我们所知，首次检查是否可以通过将牧场恢复制定为二元深度学习分类问题来直接从卫星图像时间序列检测恢复状态。我们在 1,397 个恢复的瑞典牧场上的不同 Sentinel-2 图像组合上评估了两种常见的 SITS 深度学习架构，发现显式建模年内变异性和每个牧场归一化可提高可分离性，最佳模型的准确度达到 0.88。我们进一步调查我们的结果并进行有针对性的偏差分析，发现可靠的部署需要暂时平衡的标签和评估协议，明确测试与年份相关的混杂因素。因此，我们的贡献不是作为一个已解决的恢复监测系统，而是作为一个现实的案例研究，了解什么有效、什么失败以及未来的研究应该控制什么。代码和模型可在 https://github.com/aleksispi/ml-nature-resto 获取。"
+    },
+    {
+      "title": "Swift-Image: Exploring the Performance Frontier of Compact Unified Image Generation Models",
+      "authors": [
+        "Taihang Hu",
+        "Zhao Wang",
+        "Zuan Gao",
+        "Tao Liu",
+        "Hao Yan",
+        "Zhengze Xu",
+        "Yuhang Yu",
+        "Yongchao Du",
+        "Xingjian Wang",
+        "Jun Zheng",
+        "Qinye Zhou",
+        "Zhengrui Chen",
+        "Chao Lin",
+        "Yefeng Shen",
+        "Zhengtao Wu",
+        "Ge Wu",
+        "Xiaoli Xu",
+        "Denghui Yang",
+        "Huayu Zhang",
+        "Mingzhou Zhang",
+        "Mengting Chen"
+      ],
+      "summary": "We present Swift-Image, a compact unified model for text-to-image generation, single-image editing, and multi-image editing. Our goal is to explore how far a relatively small visual generator can be pushed through systematic training engineering under a constrained computational budget. Swift-Image adopts an efficient 6B single-stream DiT and a progressive training pipeline that evolves from broad semantic coverage to higher resolution, stronger visual quality, and unified generation-editing supervision. For post-training, we employ parallel expert reinforcement learning followed by multi-teacher on-policy distillation to alleviate interference among heterogeneous objectives. We further decouple high-level reasoning from pixel-level rendering with a Prompt Enhancer that translates user requests into generator-aligned visual specifications. For efficient deployment, structural pruning and few-step distillation produce 3B and accelerated variants. Swift-Image achieves leading aggregate performance among evaluated open-source models with only 6B parameters and 243K GPU training hours; the compressed 3B model incurs nearly no loss, while few-step distillation further improves aggregate editing performance with substantially fewer sampling steps. Our study also summarizes practical lessons for architecture, data curriculum, post-training, prompt enhancement, and model compression.",
+      "published": "2026-08-20T17:59:52Z",
+      "updated": "2026-08-20T17:59:52Z",
+      "arxiv_id": "2608.20334v1",
+      "abs_url": "http://arxiv.org/abs/2608.20334v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20334v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "28 pages, 11 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation"
+      ],
+      "title_zh": "Swift-Image：探索紧凑统一图像生成模型的性能前沿",
+      "summary_zh": "我们推出了 Swift-Image，这是一个紧凑的统一模型，用于文本到图像生成、单图像编辑和多图像编辑。我们的目标是探索在有限的计算预算下通过系统训练工程可以将相对较小的视觉生成器推到多远。 Swift-Image采用高效的6B单流DiT和渐进式训练管道，从广泛的语义覆盖演进到更高分辨率、更强的视觉质量和统一的生成编辑监督。对于后期训练，我们采用并行专家强化学习，然后采用多教师同策略蒸馏来减轻异构目标之间的干扰。我们使用提示增强器进一步将高级推理与像素级渲染分离，该提示增强器将用户请求转换为与生成器对齐的视觉规范。为了高效部署，结构修剪和几个步骤的蒸馏产生了 3B 和加速变体。 Swift-Image 在仅 6B 参数和 243K GPU 训练小时的评估开源模型中实现了领先的综合性能；压缩的 3B 模型几乎不会造成任何损失，而少步蒸馏则以更少的采样步骤进一步提高了聚合编辑性能。我们的研究还总结了架构、数据课程、后期培训、即时增强和模型压缩的实践课程。"
+    },
+    {
+      "title": "QUASAR: A Quantum-Classical Neural Network for SAR Satellite Physical-Layer Authentication",
+      "authors": [
+        "Vincenzo Sammartino",
+        "Nathanael Denis",
+        "Roberto Di Pietro"
+      ],
+      "summary": "X-band SAR satellites (8-12 GHz) play a critical role in disaster response, environmental monitoring, and military intelligence. Yet, they lack robust physical-layer authentication (PLA), a security layer orthogonal to cryptographic solutions. Existing PLA systems, typically based on radio-frequency fingerprinting, are often limited to sub-6 GHz frequencies and rely on classical deep learning. However, this approach underfits the IQ phase nonlinearities that distinguish satellite hardware. In this paper, we present QUASAR, to the best of our knowledge the first quantum-classical hybrid architecture that fuses a CNN spectrogram encoder with a variational quantum circuit (VQC) to provide PLA to X-band SAR signals. Our solution enjoys two distinctive features: (i) it is markedly more data-efficient than classical machine learning, requiring only 10% of the training data to match the accuracy of classical baselines -- data collection being notoriously the most time-consuming phase of PLA; and, (ii) at an equal data budget, it improves classification accuracy over those baselines. In detail, we test our solution under three adversarial scenarios: replay, crafted-IQ injection, and space-borne spoofing. QUASAR rejects spoofed transmissions in 89.7%, 94.1%, and 81.3% of attempts, respectively, establishing the first quantum-enhanced physical-layer classifier for satellite constellations. The fully detailed framework and the supporting results, other than being interesting on their own, show a novel research avenue for physical-layer authentication.",
+      "published": "2026-08-20T16:31:01Z",
+      "updated": "2026-08-20T16:31:01Z",
+      "arxiv_id": "2608.20240v1",
+      "abs_url": "http://arxiv.org/abs/2608.20240v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20240v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "comment": "Submitted to NDSS 2027",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "SAR遥感",
+        "灾害与应急监测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 7,
+      "anchor_terms": [
+        "SAR"
+      ],
+      "matched_terms": [
+        "CNN",
+        "robust",
+        "SAR",
+        "satellite"
+      ],
+      "title_zh": "QUASAR：用于 SAR 卫星物理层认证的量子经典神经网络",
+      "summary_zh": "X波段SAR卫星（8-12 GHz）在灾难响应、环境监测和军事情报方面发挥着关键作用。然而，它们缺乏强大的物理层身份验证（PLA），这是一个与加密解决方案正交的安全层。现有的 PLA 系统通常基于射频指纹识别，通常仅限于 6 GHz 以下的频率，并且依赖于经典的深度学习。然而，这种方法不符合区分卫星硬件的 IQ 相位非线性。在本文中，我们提出了 QUASAR，据我们所知，这是第一个量子经典混合架构，它将 CNN 频谱图编码器与变分量子电路 (VQC) 融合，为 X 波段 SAR 信号提供 PLA。我们的解决方案具有两个显着特点：(i) 它的数据效率明显高于经典机器学习，仅需要 10% 的训练数据即可达到经典基线的准确性——众所周知，数据收集是 PLA 中最耗时的阶段； (ii) 在相同的数据预算下，它提高了这些基线的分类准确性。具体来说，我们在三种对抗场景下测试我们的解决方案：重放、精心设计的智商注入和星载欺骗。 QUASAR 分别拒绝了 89.7%、94.1% 和 81.3% 的欺骗传输尝试，为卫星星座建立了第一个量子增强物理层分类器。详细的框架和支持结果除了本身就很有趣之外，还为物理层身份验证展示了一种新颖的研究途径。"
+    },
+    {
+      "title": "Electronic Navigational Chart Change Classification",
+      "authors": [
+        "Jacob Arndt",
+        "Abhishek Potnis",
+        "Alexandre Sorokine"
+      ],
+      "summary": "Electronic Navigational Charts (ENCs) are geospatial vector datasets used in maritime navigation systems that represent hydrographic and navigational information such as depths, navigational aids, traffic schemes, and hazards. A major challenge for hydrographic offices is determining whether a given chart change poses a critical or non-critical risk to maritime safety. Existing workflows rely heavily on manual review and verification, which is labor-intensive, scales poorly with the volume of incoming chart updates, and introduces inter-analyst inconsistencies. To address this challenge, we propose a method for automated classification of ENC changes. We establish a baseline encoding scheme to translate complex vector data changes into a structured tabular format for classification models. The two crucial components of the encoding scheme include a spatial context encoder to enrich the change representations with surrounding geographic features, and an ENC attribute encoder to represent nuanced attribute-value descriptions of the modified objects. We evaluate the proposed approach across two distinct operational datasets, comprising 1,308 chart pairs containing over 100,000 individual chart modifications. Tuned gradient-boosted trees leveraging the proposed encoding schemes achieve accuracies of 90% and 94% on the two datasets, yielding a 5-7% improvement over default hyperparameterized models trained on encodings without spatial context and attribute embeddings. These results demonstrate the viability of integrating machine learning into operational geospatial pipelines to improve ENC maintenance and enhance maritime safety. Finally, our experiments demonstrate the effectiveness of simple location and spatial aggregation methods, providing a foundation for evaluating more sophisticated spatial representation learning techniques for this application.",
+      "published": "2026-08-20T16:14:02Z",
+      "updated": "2026-08-20T16:14:02Z",
+      "arxiv_id": "2608.20218v1",
+      "abs_url": "http://arxiv.org/abs/2608.20218v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20218v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "Accepted at 34th ACM SIGSPATIAL 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "数据集/评测"
+      ],
+      "topic": "数据集/评测",
+      "score": 2,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial"
+      ],
+      "title_zh": "电子海图变更分类",
+      "summary_zh": "电子导航图 (ENC) 是海上导航系统中使用的地理空间矢量数据集，表示水文和导航信息，例如深度、导航辅助设备、交通方案和危险。海道测量办公室面临的一个主要挑战是确定特定的海图变化是否对海上安全构成严重或非严重风险。现有的工作流程严重依赖于手动审查和验证，这是劳动密集型的，与传入图表更新量的扩展性很差，并且会引入分析师之间的不一致。为了应对这一挑战，我们提出了一种对 ENC 变化进行自动分类的方法。我们建立了一个基线编码方案，将复杂的矢量数据变化转换为分类模型的结构化表格格式。编码方案的两个关键组件包括一个空间上下文编码器，用于丰富周围地理特征的变化表示，以及一个 ENC 属性编码器，用于表示修改对象的细微属性值描述。我们在两个不同的操作数据集上评估了所提出的方法，其中包括 1,308 个图表对，其中包含超过 100,000 个单独的图表修改。利用所提出的编码方案的调整梯度增强树在两个数据集上实现了 90% 和 94% 的准确率，比在没有空间上下文和属性嵌入的编码上训练的默认超参数化模型提高了 5-7%。这些结果证明了将机器学习集成到运营地理空间管道中以改善 ENC 维护并增强海上安全的可行性。最后，我们的实验证明了简单位置和空间聚合方法的有效性，为评估该应用程序的更复杂的空间表示学习技术提供了基础。"
+    },
+    {
+      "title": "Systematic Evaluation of TabPFN-TS for Zero-Shot Probabilistic Heat Load Forecasting in District Heating Networks",
+      "authors": [
+        "Ben Spoek",
+        "Karim K. Ben Hicham",
+        "Kai Derzsi",
+        "Philipp Althaus",
+        "Alexander Mitsos",
+        "Dirk Müller"
+      ],
+      "summary": "District heating energy hubs require reliable heat load forecasts for efficient operational scheduling. Conventional forecasting workflows train system-specific models on historical data, which can become burdensome when networks change through new consumers, retrofits, or changing operating regimes. Zero-shot time-series foundation models and in-context forecasting offer a promising alternative: they can adapt at inference time from recent observations rather than by repeated retraining. This study systematically evaluates TabPFN-TS against time-series foundation models and trained machine-learning baselines for probabilistic heat load forecasting in district heating networks. Unlike foundation models pretrained on large collections of real time series, TabPFN-TS relies on synthetic pretraining data, which avoids direct pretraining-test overlap but raises the question of whether the learned prior captures district heating dynamics. We analyze covariate choice, context length, temporal resolution, and prediction horizon on representative operating weeks, validate the selected configuration over a full year, and test transferability on a second network. The results identify hourly 24-hour forecasting with a 12-week rolling context and ambient temperature as a parsimonious high-performing configuration; longer context windows do not improve accuracy. TabPFN-TS remains close to Chronos-2 in deterministic accuracy, reaching CVRMSE values of 13.06% versus 12.48% on the main dataset, and lies within the critical-difference threshold in the daily-rank comparison. Although Chronos-2 achieves the lowest aggregate full-year error, TabPFN-TS shows better empirical calibration. Finally, the diagnostic findings motivate a Multi-Resolution Residual-Correction Forecaster that combines a low-frequency Base Forecaster with a short-horizon Residual Forecaster to improve longer-horizon planning accuracy.",
+      "published": "2026-08-20T13:33:37Z",
+      "updated": "2026-08-20T13:33:37Z",
+      "arxiv_id": "2608.20024v1",
+      "abs_url": "http://arxiv.org/abs/2608.20024v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20024v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "33 pages, 10 figures; supplementary information included",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 4,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "temporal",
+        "time-series",
+        "zero-shot"
+      ],
+      "title_zh": "TabPFN-TS 在区域供热管网零样本概率热负荷预测中的系统评估",
+      "summary_zh": "区域供热能源中心需要可靠的热负荷预测，以实现高效的运行调度。传统的预测工作流程根据历史数据训练特定于系统的模型，当网络因新消费者、改造或改变运营制度而发生变化时，这些模型可能会变得繁重。零样本时间序列基础模型和上下文预测提供了一个有前途的替代方案：它们可以在推理时根据最近的观察进行调整，而不是通过重复的再训练。本研究根据时间序列基础模型和训练有素的机器学习基线系统地评估 TabPFN-TS，以进行区域供热网络的概率热负荷预测。与在大量实时序列上预训练的基础模型不同，TabPFN-TS 依赖于合成的预训练数据，这避免了预训练与测试的直接重叠，但提出了学习的先验是否捕获区域供热动态的问题。我们分析代表性操作周的协变量选择、上下文长度、时间分辨率和预测范围，验证全年所选配置，并测试第二个网络上的可转移性。结果表明，每小时 24 小时预测以及 12 周滚动背景和环境温度是一种简约的高性能配置；较长的上下文窗口不会提高准确性。 TabPFN-TS 在确定性准确性方面仍然接近 Chronos-2，在主数据集上达到 13.06% 的 CVRMSE 值，而主数据集上的 CVRMSE 值为 12.48%，并且在每日排名比较中处于临界差异阈值内。尽管 Chronos-2 实现了最低的全年总误差，但 TabPFN-TS 显示出更好的经验校准。最后，诊断结果激发了多分辨率残差校正预报器，该预报器将低频基础预报器与短时域残差预报器相结合，以提高较长时域规划的准确性。"
+    },
+    {
+      "title": "A 360-Degree Vision Dataset for Learning Yaw Control on GPS-Denied Micro-UAVs in Disaster-Response-Relevant Environments",
+      "authors": [
+        "Niklas Voigt",
+        "Hartmut Surmann"
+      ],
+      "summary": "This paper presents a novel data-driven approach to camera-based autonomy for micro-drones in GPS-denied, radio-challenging indoor environments. The target application is disaster and emergency response, where micro-UAVs can provide rapid situational awareness in hazardous settings such as firefighting and chemical, biological, radiological, and nuclear (CBRN) incidents while reducing risk for human responders. When the communication link is lost, the micro-drone uses a learned yaw controller to autonomously navigate toward open space, preserving onboard sensor data that would otherwise be lost with the vehicle. A custom micro-drone equipped with a 360-degree camera was used to record diverse industrial, underground, and training scenarios representative of communication-denied field operations. We introduce a preprocessing pipeline that converts equirectangular 360-degree footage into planar front views and dynamically generates image-label pairs for AI training. We then train and compare multiple convolutional neural network variants that predict a continuous yaw command from a single monocular view. Evaluation on a held-out test set confirms the feasibility of the learned yaw-prediction approach. A semi-autonomous real-world test further demonstrates the practicality of the method while revealing key failure modes, particularly reflections and glare.",
+      "published": "2026-08-20T10:21:57Z",
+      "updated": "2026-08-20T10:21:57Z",
+      "arxiv_id": "2608.19866v1",
+      "abs_url": "http://arxiv.org/abs/2608.19866v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19866v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Accepted at the 2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), Genoa, Italy, July 6-10, 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "无人机/UAV",
+      "score": 3,
+      "anchor_terms": [
+        "drone"
+      ],
+      "matched_terms": [
+        "convolutional neural network",
+        "drone"
+      ],
+      "title_zh": "360 度视觉数据集，用于学习灾难响应相关环境中 GPS 拒绝的微型无人机的偏航控制",
+      "summary_zh": "本文提出了一种新颖的数据驱动方法，用于在 GPS 受限、无线电挑战的室内环境中实现微型无人机基于摄像头的自主。目标应用是灾难和应急响应，微型无人机可以在危险环境中提供快速态势感知，例如消防和化学、生物、放射性和核 (CBRN) 事件，同时降低人类响应人员的风险。当通信链路丢失时，微型无人机使用学习的偏航控制器自动导航至开放空间，保留机载传感器数据，否则车辆会丢失这些数据。配备 360 度摄像头的定制微型无人机被用来记录代表通信中断现场作业的各种工业、地下和训练场景。我们引入了一个预处理管道，可将等距柱状投影的 360 度镜头转换为平面前视图，并动态生成用于 AI 训练的图像标签对。然后，我们训练并比较多个卷积神经网络变体，这些变体从单个单目视图预测连续偏航命令。对保留测试集的评估证实了学习的偏航预测方法的可行性。半自主现实世界测试进一步证明了该方法的实用性，同时揭示了关键的故障模式，特别是反射和眩光。"
+    },
+    {
+      "title": "Unsupervised Anomaly Detection Using Flow Matching on Tabular Data",
+      "authors": [
+        "Philip Konz",
+        "Tejaswini Medi",
+        "Margret Keuper"
+      ],
+      "summary": "Financial anomaly detection often relies on large unlabeled transaction logs, where anomalous samples may already be present during training. Such training-set contamination violates the clean-normal data assumption underlying many anomaly detection methods. Although flow matching has demonstrated strong performance in generative modeling, its robustness in unsupervised tabular anomaly detection remains underexplored. In this work, we study flow-matching-based anomaly detection under contaminated training data by comparing Time-Conditioned Contraction Matching (TCCM) with Forest-Flow and evaluating multiple anomaly scoring functions. Our results show that the choice of anomaly score is critical. The original single-step Decision score used by TCCM is sensitive to contamination, whereas trajectory-based Deviation and Reconstruction scores provide more stable anomaly signals. With these scores, Forest-Flow becomes competitive with, and in some cases outperforms, TCCM. These findings highlight the importance of anomaly scoring for flow-matching methods in financial anomaly detection under severe class imbalance.",
+      "published": "2026-08-20T08:56:46Z",
+      "updated": "2026-08-20T08:56:46Z",
+      "arxiv_id": "2608.19801v1",
+      "abs_url": "http://arxiv.org/abs/2608.19801v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19801v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 5,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "robust",
+        "unsupervised"
+      ],
+      "title_zh": "使用表格数据的流匹配进行无监督异常检测",
+      "summary_zh": "财务异常检测通常依赖于大量未标记的交易日志，其中异常样本可能在训练期间已经存在。这种训练集污染违反了许多异常检测方法背后的干净正常数据假设。尽管流匹配在生成建模中表现出了强大的性能，但其在无监督表格异常检测中的鲁棒性仍未得到充分探索。在这项工作中，我们通过将时间条件收缩匹配（TCCM）与森林流进行比较并评估多个异常评分函数，研究受污染训练数据下基于流匹配的异常检测。我们的结果表明，异常分数的选择至关重要。 TCCM 使用的原始单步决策分数对污染敏感，而基于轨迹的偏差和重建分数提供更稳定的异常信号。凭借这些分数，Forest-Flow 可以与 TCCM 竞争，在某些情况下甚至优于 TCCM。这些发现强调了在严重类别不平衡的情况下，流量匹配方法的异常评分在金融异常检测中的重要性。"
+    },
+    {
+      "title": "LoRA-GA$^2$: Low Rank Adaptation with Multi-step Gradient Adaptive Alignment",
+      "authors": [
+        "Haonan He",
+        "Xinyue Fan"
+      ],
+      "summary": "Low-Rank Adaptation (LoRA) is a prominent fine-tuning method for large models, achieving competitive performance with reduced memory overhead. However, a persistent performance gap remains between LoRA and full fine-tuning. Recent studies have sought to narrow this gap by employing one-step gradient approximations of pretrained weights to align LoRA updates with the principal directions or intrinsic dimensionalities of full fine-tuning updates. Nevertheless, these approaches fail to capture the full dynamics of the gradients. In this paper, we propose LoRA-GA$^2$, an effective fine-tuning algorithm that fully leverages multi-step gradient information. Specifically, we introduce a lightweight probe for multi-step gradients of pretrained weights that incurs no additional GPU memory cost and only marginal time overhead. We further employ a spectrum-aware, importance-based rank allocation and optimal initialization derived from multi-step gradients. Extensive experimental results demonstrate that LoRA-GA$^2$ consistently outperforms existing LoRA variants while preserving the efficiency advantages of vanilla LoRA. For instance, LoRA-GA$^2$ surpasses the leading baseline by an average of 0.66 points on the GLUE benchmark, and outperforms the strongest baseline by 1.03 points on GSM8K and 0.87 points on HumanEval, respectively.",
+      "published": "2026-08-20T08:55:05Z",
+      "updated": "2026-08-20T08:55:05Z",
+      "arxiv_id": "2608.19800v1",
+      "abs_url": "http://arxiv.org/abs/2608.19800v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19800v1",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "large model",
+        "LoRA"
+      ],
+      "title_zh": "LoRA-GA$^2$：具有多步梯度自适应对齐的低秩自适应",
+      "summary_zh": "低秩适应 (LoRA) 是一种重要的大型模型微调方法，可以通过减少内存开销实现有竞争力的性能。然而，LoRA 和完全微调之间仍然存在持续的性能差距。最近的研究试图通过采用预训练权重的一步梯度近似来缩小这一差距，以使 LoRA 更新与完全微调更新的主要方向或内在维度保持一致。然而，这些方法未能捕获梯度的完整动态。在本文中，我们提出了 LoRA-GA$^2$，这是一种充分利用多步梯度信息的有效微调算法。具体来说，我们引入了一种用于预训练权重的多步梯度的轻量级探针，它不会产生额外的 GPU 内存成本，并且只会产生边际时间开销。我们进一步采用了频谱感知、基于重要性的排名分配和从多步梯度导出的最佳初始化。大量实验结果表明，LoRA-GA$^2$ 始终优于现有 LoRA 变体，同时保留了普通 LoRA 的效率优势。例如，LoRA-GA$^2$ 在 GLUE 基准上平均超过领先基线 0.66 点，在 GSM8K 上比最强基线高出 1.03 点，在 HumanEval 上比最强基线高出 0.87 点。"
+    },
+    {
+      "title": "Far from the Crowd: Scalable Self-Supervised Learning via Geographic Isolation",
+      "authors": [
+        "Daniele Rege Cambrin",
+        "Francesco Rossi",
+        "Mattia Varile"
+      ],
+      "summary": "Self-supervised pretraining on remote sensing imagery typically treats all samples as equally informative, despite large variability in geographic and visual structure. We propose a curriculum learning strategy for self-supervised Earth observation that ranks samples by geographic isolation, a label-free proxy derived entirely from geolocation metadata already present in geospatial datasets, requiring no image decoding, no model feedback, and no manual annotation. Unlike visual complexity proxies, it scales as O(D log D) with dataset size D and is well-defined for both contrastive and reconstructive objectives. We integrate the proposed measure into MoCoV2 and MAE pretraining and evaluate across three downstream tasks from CopernicusBench (BigEarthNet, DFC-2020, LCZ). Our curriculum reaches baseline final-epoch performance using as few as 20% of the training budget (MAE) and at most 40% (MoCo) of the training budget, and improves final downstream performance by up to +5 mAP on BigEarthNet, with gains of 1-5 points across benchmarks, matching visual-complexity curricula while reducing pre-computation cost by more than 140x (4 s vs. 568 s on SSL4EO). A CKA and effective-rank analysis further reveals that curriculum-trained encoders develop higher-dimensional, more uniformly utilized embedding spaces throughout training.",
+      "published": "2026-08-20T08:09:53Z",
+      "updated": "2026-08-20T08:09:53Z",
+      "arxiv_id": "2608.19766v1",
+      "abs_url": "http://arxiv.org/abs/2608.19766v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19766v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "Accepted to ECCV 2026 TerraBytes Workshop",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "场景分类",
+        "基础模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "场景分类",
+      "score": 16,
+      "anchor_terms": [
+        "BigEarthNet",
+        "earth observation",
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "BigEarthNet",
+        "earth observation",
+        "geospatial",
+        "MAE",
+        "remote sensing",
+        "self-supervised",
+        "self-supervised learning"
+      ],
+      "title_zh": "远离人群：通过地理隔离进行可扩展的自我监督学习",
+      "summary_zh": "尽管地理和视觉结构存在很大差异，但遥感图像的自监督预训练通常将所有样本视为同等信息。我们提出了一种用于自我监督的地球观测的课程学习策略，该策略按地理隔离对样本进行排名，这是一种完全源自地理空间数据集中已有的地理位置元数据的无标签代理，不需要图像解码，不需要模型反馈，也不需要手动注释。与视觉复杂性代理不同，它的缩放比例为 O(D log D)，数据集大小为 D，并且针对对比和重建目标进行了明确定义。我们将提出的措施整合到 MoCoV2 和 MAE 预训练中，并评估 CopernicusBench（BigEarthNet、DFC-2020、LCZ）的三个下游任务。我们的课程使用少至 20% 的训练预算 (MAE) 和最多 40% (MoCo) 的训练预算即可达到基线最终纪元性能，并在 BigEarthNet 上将最终下游性能提高高达 +5 mAP，在基准测试中获得 1-5 分，匹配视觉复杂性课程，同时将预计算成本降低超过 140 倍（4 秒 vs. SSL4EO 上的 568 秒）。 CKA 和有效排名分析进一步表明，经过课程训练的编码器在整个训练过程中开发出更高维度、更统一利用的嵌入空间。"
+    },
+    {
+      "title": "A Locally Tokenized Generative Model for Robust Time-Series Watermarking",
+      "authors": [
+        "Dongbin Kim",
+        "Geonwoo Shin",
+        "Yujin Choi",
+        "Soyeon Park",
+        "Jaewook Lee"
+      ],
+      "summary": "Watermarking is a central tool for provenance in generative models, yet its application to multivariate time series remains hindered by reliability failures under post-editing attacks. We show that existing detectors, which rely on globally coupled re-encoding, suffer from bidirectional drift of the null distribution: post-editing attacks can shift the z-score of non-watermarked samples in either direction, invalidating clean-calibrated thresholds. We argue that this instability is a property of the re-encoding, and that reliable detection requires each recovered unit to depend only on a bounded temporal neighborhood. Guided by this principle, we propose L-VQVAE, a generative model in which each discrete token is produced from a short contiguous window, and LVQMark, a watermarking method over this token space that combines logit-bias injection with robust re-encoding for attack-time detection. Experiments on four benchmarks spanning finance, energy, and neuroimaging show that our approach preserves generation quality while stabilizing both detection power and false-positive behavior under post-editing attacks.",
+      "published": "2026-08-20T07:25:41Z",
+      "updated": "2026-08-20T07:25:41Z",
+      "arxiv_id": "2608.19727v1",
+      "abs_url": "http://arxiv.org/abs/2608.19727v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19727v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "Submitted to NeurIPS 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 4,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "robust",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "用于鲁棒时间序列水印的本地标记化生成模型",
+      "summary_zh": "水印是生成模型来源的核心工具，但其在多元时间序列中的应用仍然受到后期编辑攻击下可靠性故障的阻碍。我们表明，现有的依赖于全局耦合重新编码的检测器会遭受零分布的双向漂移：后期编辑攻击可以在任一方向上改变无水印样本的 z 分数，从而使干净校准的阈值失效。我们认为这种不稳定性是重新编码的一个属性，并且可靠的检测要求每个恢复的单元仅依赖于有界时间邻域。在这一原则的指导下，我们提出了 L-VQVAE，一种生成模型，其中每个离散令牌都是从一个短的连续窗口生成的，以及 LVQMark，一种在此令牌空间上的水印方法，它将 logit-bias 注入与用于攻击时间检测的鲁棒重编码相结合。对金融、能源和神经影像等四个基准的实验表明，我们的方法可以保持生成质量，同时稳定后期编辑攻击下的检测能力和误报行为。"
+    },
+    {
+      "title": "SAGE-XGBoost: Spatially Augmented Graph Embeddings--Machine Learning Framework for Natural Hazards Susceptibility Mapping under Data Scarcity",
+      "authors": [
+        "Mohammad H. Vahidnia",
+        "Ali Pourkarimi"
+      ],
+      "summary": "Natural hazard susceptibility mapping is often constrained by limited labeled data, reducing the generalizability of conventional machine learning and limiting the applicability of complex deep learning models. This study proposes SAGE (Spatially Augmented Graph Embeddings), a structurally informed feature-engineering framework that combines controlled noise-based data augmentation with neighborhood-based graph embeddings to improve prediction under data-scarce conditions. A K-nearest neighbor graph is constructed to derive local spatial statistics, which are reduced using principal component analysis and integrated with environmental covariates and spatial coordinates. The resulting features are used with XGBoost to develop the SAGE-XGBoost model. The framework was evaluated for landslide and wildfire susceptibility mapping. SAGE-XGBoost consistently outperformed conventional and spatially explicit machine learning models. Compared with Spatial XGBoost, it achieved an absolute improvement of above 33 percentage points across the two case studies. The model reached AUC values of approximately 0.97 for landslide susceptibility and 0.95 for wildfire susceptibility. Feature importance analysis confirmed the contribution of graph embeddings to prediction, while their integration improved spatial coherence and reduced local noise amplification. Overall, SAGE-XGBoost provides an efficient and transferable alternative to deep representation learning for environmental hazard assessment and other geospatial prediction tasks under limited supervision.",
+      "published": "2026-08-20T06:07:07Z",
+      "updated": "2026-08-20T06:07:07Z",
+      "arxiv_id": "2608.19672v1",
+      "abs_url": "http://arxiv.org/abs/2608.19672v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19672v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial"
+      ],
+      "title_zh": "SAGE-XGBoost：空间增强图嵌入——数据稀缺下自然灾害易感性绘图的机器学习框架",
+      "summary_zh": "自然灾害敏感性测绘通常受到有限标记数据的限制，降低了传统机器学习的通用性，并限制了复杂深度学习模型的适用性。本研究提出了 SAGE（空间增强图嵌入），这是一种结构信息丰富的特征工程框架，它将受控的基于噪声的数据增强与基于邻域的图嵌入相结合，以改进数据稀缺条件下的预测。构建 K 最近邻图来导出局部空间统计数据，使用主成分分析来减少局部空间统计数据，并与环境协变量和空间坐标相集成。由此产生的特征与 XGBoost 一起使用来开发 SAGE-XGBoost 模型。该框架针对山体滑坡和野火易发性绘图进行了评估。 SAGE-XGBoost 始终优于传统的空间显式机器学习模型。与 Spatial XGBoost 相比，它在两个案例研究中绝对提高了 33 个百分点以上。该模型的滑坡敏感性和野火敏感性的 AUC 值分别约为 0.97 和 0.95。特征重要性分析证实了图嵌入对预测的贡献，而它们的集成提高了空间相干性并减少了局部噪声放大。总体而言，SAGE-XGBoost 为有限监督下的环境危害评估和其他地理空间预测任务的深度表示学习提供了一种高效且可转移的替代方案。"
+    },
+    {
+      "title": "Scaffolding Minds: Optimizing Latent Visual Target Representations for Multimodal Reasoning",
+      "authors": [
+        "Haoqiang Kang",
+        "Yinpeng Chen",
+        "Luyang Liu",
+        "Jesper Sparre Andersen",
+        "Abhijit Ogale",
+        "Baochen Sun",
+        "Lichan Hong",
+        "Ed H. Chi"
+      ],
+      "summary": "Latent reasoning has advanced multimodal reasoning through a two-stage training paradigm: (1) a helper image is encoded into latent tokens to teach visual chain-of-thought during a supervised fine-tuning (SFT) stage, and (2) these latent tokens are further refined with reward feedback during a reinforcement learning (RL) stage. In this paper, we identify two key limitations of this framework, one in each stage. First, the SFT stage typically relies on an off-the-shelf vision encoder to encode the helper image, yielding suboptimal latent representations that may not be well aligned with the downstream reasoning task. Second, existing RL methods treat the latent component only through deterministic regularization, which constrains policy drift but does not create alternative latent trajectories for exploration. To address these limitations, we propose Scaffolding Minds. Our approach learns a dedicated scaffolding encoder that provides an optimized target in latent space, and learns both the mean and variance of the RL sampler. We further show that these two improvements are complementary, together yielding substantial gains over strong baselines. Empirically, our method improves over the strongest latent-reasoning baseline by +9.5% on FrozenLake spatial planning, with the gain widening to +19% at 32x32 grid map, and by +5.2% on average across nine visual-centric reasoning benchmarks.",
+      "published": "2026-08-20T06:04:28Z",
+      "updated": "2026-08-20T06:04:28Z",
+      "arxiv_id": "2608.19669v1",
+      "abs_url": "http://arxiv.org/abs/2608.19669v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19669v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 3,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "脚手架思维：优化多模态推理的潜在视觉目标表示",
+      "summary_zh": "潜在推理通过两阶段训练范例实现了多模态推理：(1) 将辅助图像编码为潜在标记，以在监督微调 (SFT) 阶段教授视觉思维链；(2) 在强化学习 (RL) 阶段，通过奖励反馈进一步细化这些潜在标记。在本文中，我们确定了该框架的两个关键限制，每个阶段都有一个。首先，SFT 阶段通常依赖于现成的视觉编码器来对辅助图像进行编码，从而产生可能与下游推理任务不太一致的次优潜在表示。其次，现有的强化学习方法仅通过确定性正则化来处理潜在成分，这会限制策略漂移，但不会为探索创建替代的潜在轨迹。为了解决这些限制，我们提出了脚手架思维。我们的方法学习一个专用的脚手架编码器，该编码器在潜在空间中提供优化的目标，并学习 RL 采样器的均值和方差。我们进一步表明，这两项改进是相辅相成的，共同产生了超过强大基线的巨大收益。根据经验，我们的方法在 FrozenLake 空间规划上比最强的潜在推理基线提高了 +9.5%，在 32x32 网格图上增益扩大到 +19%，在九个以视觉为中心的推理基准上平均提高了 +5.2%。"
+    },
+    {
+      "title": "In Two Minds about Lifelong Learning: Exploring Hemispheric Redundancy and Specialisation in Neural Models",
+      "authors": [
+        "Benjamin Smith",
+        "Levin Kuhlmann",
+        "Kaushik Roy",
+        "Gideon Kowadlo"
+      ],
+      "summary": "Persistent intelligent systems require the ability to learn continually, but current machine learning approaches face significant challenges in this area compared to biological learning systems. Machine learning algorithms typically trade off retention of previously learned information and adaptation to new or changing data patterns. When continual learning capabilities are absent, algorithms must undergo retraining using the entire data set, an approach that becomes impractical when original training data are unavailable due to storage constraints, financial or computational costs, or privacy restrictions. However, biological animals can learn continually, without experiencing catastrophic forgetting. This paper attempts to build a high-level framework for how animals learn and preserve knowledge by modelling neural components and states that are known to be related to memory consolidation. We focus on three concepts: experience replay, REM sleep, and bilaterality. We propose 4MAS (4 Module Awake/Sleep), a novel macroarchitecture demonstrating how machine learning models might benefit from asymmetric hemispheres, each with their own long- and short-term memory mechanisms, and how a period of sleep between incremental learning tasks might benefit memory consolidation. Finally, we present results showing that our architecture achieves competitive results on the Split-MNIST, Split-Fashion-MNIST and Split-CIFAR-100 datasets, with 98.3%, 84.9%, and 29.29% accuracy respectively.",
+      "published": "2026-08-20T00:15:18Z",
+      "updated": "2026-08-20T00:15:18Z",
+      "arxiv_id": "2608.19514v1",
+      "abs_url": "http://arxiv.org/abs/2608.19514v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19514v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "21 pages before references/appendix, 9 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "数据集/评测"
+      ],
+      "topic": "数据集/评测",
+      "score": 3,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "continual learning",
+        "incremental learning"
+      ],
+      "title_zh": "关于终身学习的两种想法：探索神经模型的半球冗余和专业化",
+      "summary_zh": "持久的智能系统需要持续学习的能力，但与生物学习系统相比，当前的机器学习方法在这方面面临着巨大的挑战。机器学习算法通常会权衡保留先前学习的信息和适应新的或不断变化的数据模式。当缺乏持续学习能力时，算法必须使用整个数据集进行重新训练，当原始训练数据由于存储限制、财务或计算成本或隐私限制而无法获得时，这种方法就变得不切实际。然而，生物动物可以不断学习，而不会经历灾难性的遗忘。本文试图通过对已知与记忆巩固相关的神经组件和状态进行建模，为动物如何学习和保存知识建立一个高级框架。我们关注三个概念：体验重放、快速眼动睡眠和双边性。我们提出了 4MAS（4 个唤醒/睡眠模块），这是一种新颖的宏观架构，展示了机器学习模型如何从不对称的半球中受益，每个半球都有自己的长期和短期记忆机制，以及增量学习任务之间的一段睡眠时间如何有利于记忆巩固。最后，我们的结果表明，我们的架构在 Split-MNIST、Split-Fashion-MNIST 和 Split-CIFAR-100 数据集上取得了有竞争力的结果，准确率分别为 98.3%、84.9% 和 29.29%。"
+    },
+    {
+      "title": "Quantifying Event Impacts on Time Series via Multiscale Contrastive Learning",
+      "authors": [
+        "Yiming Sun",
+        "Shengyu Chen",
+        "Zhengzhang Chen",
+        "Haoyu Wang",
+        "Xiaowei Jia",
+        "Haifeng Chen"
+      ],
+      "summary": "Shocks that spread through the web, such as cybersecurity breach disclosures, can abruptly disrupt financial time series and cause substantial abnormal losses. While these events are disclosed as discrete records through news reports, regulatory filings, or public databases, their consequences unfold through continuous market dynamics. This creates an event-conditioned impact prediction problem: given pre-event market history and limited event metadata, the goal is to estimate short-term post-disclosure abnormal loss rather than reconstruct the full post-event trajectory. However, most time-series forecasting models focus on endogenous regularities such as trend, seasonality, and autocorrelation, and thus struggle with rare and heterogeneous external events. The challenge is further amplified by sparse high-impact events and background market noise. We introduce EventTime, a multi-resolution framework that combines long-horizon market context, short-horizon pre-event dynamics, and event metadata. It incorporates an event fusion module that couples temporal representations with event attributes to identify relevant recent market patterns. To mitigate sparse supervision, EventTime further introduces a dynamic contrastive objective that constructs event- and time-series-aware positive and negative pairs during training. We also construct SECURE, a real-world dataset aligning cybersecurity incidents with stock-market time series and structured and LLM-derived semantic features. Experiments show that EventTime consistently outperforms state-of-the-art time-series and event-aware baselines in estimating post-event financial losses. Further analyses demonstrate more event-sensitive representations, greater robustness to incomplete metadata, and more interpretable estimates of short-term market impact following cybersecurity disclosures.",
+      "published": "2026-08-19T21:02:04Z",
+      "updated": "2026-08-19T21:02:04Z",
+      "arxiv_id": "2608.19447v1",
+      "abs_url": "http://arxiv.org/abs/2608.19447v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19447v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 5,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "contrastive learning",
+        "LLM",
+        "robust",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "通过多尺度对比学习量化事件对时间序列的影响",
+      "summary_zh": "通过网络传播的冲击，例如网络安全漏洞披露，可能会突然扰乱金融时间序列并造成重大异常损失。虽然这些事件通过新闻报道、监管文件或公共数据库以离散记录的形式披露，但其后果却通过持续的市场动态展现出来。这就产生了一个事件条件影响预测问题：鉴于事件前的市场历史和有限的事件元数据，目标是估计披露后的短期异常损失，而不是重建完整的事件后轨迹。然而，大多数时间序列预测模型关注趋势、季节性和自相关等内生规律，因此难以应对罕见且异质的外部事件。稀疏的高影响力事件和背景市场噪音进一步放大了这一挑战。我们引入了 EventTime，这是一个多分辨率框架，结合了长期市场背景、短期事件前动态和事件元数据。它包含一个事件融合模块，将时间表示与事件属性结合起来，以识别相关的近期市场模式。为了减轻稀疏监督，EventTime 进一步引入了动态对比目标，该目标在训练期间构建事件和时间序列感知的正负对。我们还构建了 SECURE，这是一个真实世界的数据集，将网络安全事件与股票市场时间序列以及结构化和法学硕士衍生的语义特征结合起来。实验表明，EventTime 在估计事件后财务损失方面始终优于最先进的时间序列和事件感知基线。进一步的分析表明，对事件更加敏感的表示、对不完整元数据的更强鲁棒性以及对网络安全披露后的短期市场影响的更可解释的估计。"
+    },
+    {
+      "title": "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training",
+      "authors": [
+        "Dongbin Kim",
+        "Seungyun Lee",
+        "Geonwoo Shin",
+        "Jaewook Lee"
+      ],
+      "summary": "Time series imputation is a crucial area for reliable time series analysis, yet it remains challenging due to the complex temporal dynamics and noise of real-world data. Existing approaches, however, exhibit two limitations: missing and observed values are embedded within the same representation space without explicit structural separation, and continuous diffusion-based methods are trained to predict added noise rather than the original signal. To address these, we propose the Masked Diffusion Time-series Imputation Model (MDTIM), which leverages the training paradigm of masked diffusion model for imputation tasks. The MASK token is structurally orthogonal to valid observations, and the model directly predicts the original values, naturally aligning both the representation and the learning objective with the imputation task. To bridge the gap between discrete masked diffusion and the continuous, ordinal nature of time series, we further introduce Stochastic Discretization, which maps continuous values to ordinal-aware tokens while preserving continuous dynamics. Our experiments on diverse benchmarks confirm that MDTIM achieves superior robustness and scalability, consistently outperforming state-of-the-art deterministic and generative baselines across various missing scenarios.",
+      "published": "2026-08-19T17:16:27Z",
+      "updated": "2026-08-19T17:16:27Z",
+      "arxiv_id": "2608.19119v1",
+      "abs_url": "http://arxiv.org/abs/2608.19119v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19119v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "Submitted to NeurIPS 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "时间序列与视频",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "robust",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "通过掩蔽扩散训练离散化连续时间序列进行插补",
+      "summary_zh": "时间序列插补是可靠时间序列分析的关键领域，但由于复杂的时间动态和现实世界数据的噪声，它仍然具有挑战性。然而，现有方法存在两个局限性：缺失值和观测值嵌入在同一表示空间中，没有明确的结构分离，并且基于连续扩散的方法被训练来预测添加的噪声而不是原始信号。为了解决这些问题，我们提出了掩蔽扩散时间序列插补模型（MDTIM），它利用掩蔽扩散模型的训练范例来进行插补任务。 MASK 令牌在结构上与有效观察正交，并且模型直接预测原始值，自然地将表示和学习目标与插补任务对齐。为了弥合离散掩码扩散与时间序列的连续有序性质之间的差距，我们进一步引入随机离散化，它将连续值映射到序数感知标记，同时保留连续动态。我们在不同基准上的实验证实，MDTIM 实现了卓越的稳健性和可扩展性，在各种缺失场景中始终优于最先进的确定性和生成基线。"
+    },
+    {
+      "title": "SPK: Eliciting Structured Prior Knowledge for Interpretable Out-of-Distribution Detection in Real-Time Object Detection",
+      "authors": [
+        "Changshun Wu",
+        "Weicheng He",
+        "Xiaowei Huang",
+        "Saddek Bensalem"
+      ],
+      "summary": "Object detectors often produce over-confident predictions for objects outside their training categories, leading to so-called out-of-distribution (OoD) hallucinations. Existing approaches for detecting or mitigating such hallucinations typically either construct scoring functions directly over learned object detector representations or modify the object detector itself to suppress hallucination emergence. However, the latent priors implicitly encoded in these representations remain largely unexplored and have not been explicitly decoded for OoD detection. To uncover and exploit these latent priors, we propose Structured Prior Knowledge (SPK), a hallucination-oriented framework that explicitly elicits OoD-relevant priors from pretrained object detectors. Specifically, SPK leverages in-distribution data and hallucination-inducing samples as diagnostic supervision to elicit part-level semantic concepts underlying object detector decision-making, rather than using them merely for rejection or object detector adaptation. The elicited semantic priors are further integrated with geometric and contextual priors to form a compact five-dimensional SPK representation for OoD detection. Extensive experiments across diverse object detector architectures and multiple OoD benchmarks demonstrate that SPK achieves state-of-the-art OoD detection. Our findings reveal that pretrained object detectors already encode substantially richer latent knowledge than is typically exploited for OoD detection. More importantly, this knowledge can be explicitly elicited and organized into a compact, structured, and interpretable knowledge space for prediction reliability analysis. This suggests a promising proactive route for improving object detector reliability by explicitly uncovering and leveraging latent priors. Code and data are available at: https://gricad-gitlab.univ-grenoble-alpes.fr/dnn-safety/spk",
+      "published": "2026-08-19T16:30:06Z",
+      "updated": "2026-08-19T16:30:06Z",
+      "arxiv_id": "2608.19080v1",
+      "abs_url": "http://arxiv.org/abs/2608.19080v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19080v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 3,
+      "anchor_terms": [
+        "object detection"
+      ],
+      "matched_terms": [
+        "object detection"
+      ],
+      "title_zh": "SPK：在实时目标检测中引入结构化先验知识以进行可解释的分布外检测",
+      "summary_zh": "Object detectors often produce over-confident predictions for objects outside their training categories, leading to so-called out-of-distribution (OoD) hallucinations. Existing approaches for detecting or mitigating such hallucinations typically either construct scoring functions directly over learned object detector representations or modify the object detector itself to suppress hallucination emergence. However, the latent priors implicitly encoded in these representations remain largely unexplored and have not been explicitly decoded for OoD detection. To uncover and exploit these latent priors, we propose Structured Prior Knowledge (SPK), a hallucination-oriented framework that explicitly elicits OoD-relevant priors from pretrained object detectors. Specifically, SPK leverages in-distribution data and hallucination-inducing samples as diagnostic supervision to elicit part-level semantic concepts underlying object detector decision-making, rather than using them merely for rejection or object detector adaptation. The elicited semantic priors are further integrated with geometric and contextual priors to form a compact five-dimensional SPK representation for OoD detection. Extensive experiments across diverse object detector architectures and multiple OoD benchmarks demonstrate that SPK achieves state-of-the-art OoD detection. Our findings reveal that pretrained object detectors already encode substantially richer latent knowledge than is typically exploited for OoD detection. More importantly, this knowledge can be explicitly elicited and organized into a compact, structured, and interpretable knowledge space for prediction reliability analysis. This suggests a promising proactive route for improving object detector reliability by explicitly uncovering and leveraging latent priors. Code and data are available at: https://gricad-gitlab.univ-grenoble-alpes.fr/dnn-safety/spk"
+    },
+    {
+      "title": "Autonomous Agricultural Tractor: Integrated Weed Detection and LiDAR Navigation for Precision Paddy Farming",
+      "authors": [
+        "Benjamin Merryman-Smith",
+        "Tony Nguyen",
+        "Bilal Dogutas",
+        "Krish Shah",
+        "Anthony Raphael",
+        "Sudip Dhakal"
+      ],
+      "summary": "Site-specific weed management in paddy farming offers substantial reductions in herbicide use over conventional broadcast spraying, but field deployment has been limited by three persistent challenges: robust crop-row navigation under canopy where GNSS degrades, real-time visual discrimination between rice and morphologically diverse weeds, and the asymmetric cost of misclassifying rice as weed, which is irreversible. This paper presents AgriNav, an integrated autonomous tractor system built around four ROS-coupled modules: a custom PyTorch reimplementation of WeedDet for rice detection, a parallel lightweight 1.68M-parameter CNN-FPN variant with asymmetric class weighting, an inverted-logic discrimination module that protects the rice class through a hardcoded confidence-gate veto, and a 6-state constant-velocity-turn-rate Extended Kalman Filter fusing GNSS, IMU, and wheel odometry with three-level outage bridging. Our primary system-level contribution is a four-mechanism LiDAR-camera fusion bridge that uses the navigation LiDAR for region-of-interest constraint, world-coordinate projection, ground-plane filtering, and bidirectional confidence fusion at zero additional hardware cost. Simulation experiments demonstrate continuous position tracking through a 20-second GNSS outage, crop row detection confidence above 0.9 throughout operation, and rice-detection confidences from 0.32 to 0.95 across paddy, aerial, and post-flood imagery. The LiDAR ROI constraint reduces detection inference region by an estimated 30 to 50 percent.",
+      "published": "2026-08-19T15:04:22Z",
+      "updated": "2026-08-19T15:04:22Z",
+      "arxiv_id": "2608.19004v1",
+      "abs_url": "http://arxiv.org/abs/2608.19004v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19004v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "LiDAR/点云"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 7,
+      "anchor_terms": [
+        "flood"
+      ],
+      "matched_terms": [
+        "aerial",
+        "CNN",
+        "flood",
+        "LiDAR",
+        "robust"
+      ],
+      "title_zh": "自主农用拖拉机：集成杂草检测和激光雷达导航，用于精准水稻种植",
+      "summary_zh": "与传统撒播喷洒相比，水稻种植中的定点杂草管理可大幅减少除草剂的使用，但田间部署受到三个持续挑战的限制：全球导航卫星系统（GNSS）性能下降的冠层下强大的作物行导航，水稻和形态多样的杂草之间的实时视觉区分，以及将水稻错误分类为杂草的不对称成本，这是不可逆转的。本文介绍了 AgriNav，这是一个围绕四个 ROS 耦合模块构建的集成自主拖拉机系统：用于水稻检测的 WeedDet 的自定义 PyTorch 重新实现、具有不对称类别加权的并行轻量级 1.68M 参数 CNN-FPN 变体、通过硬编码置信门否决保护水稻类别的反向逻辑判别模块，以及 6 状态恒速转动速率扩展卡尔曼滤波器融合具有三级断电桥接功能的 GNSS、IMU 和车轮里程计。我们的主要系统级贡献是四机制激光雷达相机融合桥，它使用导航激光雷达进行感兴趣区域约束、世界坐标投影、地平面过滤和双向置信融合，且零额外硬件成本。模拟实验表明，在 20 秒 GNSS 中断的情况下可以进行连续位置跟踪，整个操作过程中作物行检测置信度高于 0.9，水稻、航空和洪水后图像的水稻检测置信度为 0.32 至 0.95。 LiDAR ROI 约束将检测推断区域减少了大约 30% 到 50%。"
+    },
+    {
+      "title": "GrabVG: Graph-Attentive Binding for Visual Grounding in UAV Imagery",
+      "authors": [
+        "Chaowei Wang",
+        "Yan Di",
+        "Jingjun Sun",
+        "Baozhe Liu",
+        "Jiaxu Tian",
+        "Yuheng Li",
+        "Guangqian Guo",
+        "Shan Gao"
+      ],
+      "summary": "Visual grounding in Unmanned Aerial Vehicle (UAV) imagery aims to localize a target object in complex bird's-eye-view scenes according to a natural language description. However, the abundance of small, densely distributed, and visually similar objects creates high visual redundancy, while repetitive local configurations give rise to strong topological ambiguity. Existing approaches mainly focus on visual--language feature alignment or dense contextual interaction, yet they struggle to distinguish subtle inter-instance differences and effectively exploit spatial topological structures, leading to inaccurate grounding in highly crowded scenarios. To address these challenges, we propose $\\textbf{GrabVG}$, a novel visual grounding framework inspired by human visual search. GrabVG explicitly decomposes grounding into two sequential stages: $\\textit{preattentive hypothesis search}$ and $\\textit{graph-attentive feature binding}$. Specifically, we first generate a compact set of reliable object hypotheses through distillation-guided proposal induction and text-aware hypothesis filtering, substantially reducing background distractions and semantic mismatches. These hypotheses are then organized into a sparse graph, where language-guided intra-instance visual cues and inter-instance topological relationships are jointly bound and propagated via graph attention, enabling efficient spatial reasoning and accurate target localization. Extensive experiments on AerialVG and AerialSense show that GrabVG achieves a favorable accuracy--speed trade-off, reaching 67.31$\\%$ and 80.34$\\%$ Acc@0.5 and outperforming the corresponding baselines by 10.55 and 8.76 percentage points, respectively.",
+      "published": "2026-08-19T15:00:02Z",
+      "updated": "2026-08-19T15:00:02Z",
+      "arxiv_id": "2608.18996v1",
+      "abs_url": "http://arxiv.org/abs/2608.18996v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18996v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "无人机/UAV"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 9,
+      "anchor_terms": [
+        "UAV",
+        "visual grounding"
+      ],
+      "matched_terms": [
+        "aerial",
+        "spatial reasoning",
+        "UAV",
+        "unmanned aerial vehicle",
+        "visual grounding"
+      ],
+      "title_zh": "GrabVG：无人机图像中视觉接地的图注意绑定",
+      "summary_zh": "无人机（UAV）图像中的视觉接地旨在根据自然语言描述在复杂的鸟瞰场景中定位目标物体。然而，大量的小而密集分布且视觉上相似的物体造成了高度的视觉冗余，而重复的局部配置则产生了强烈的拓扑模糊性。现有的方法主要关注视觉-语言特征对齐或密集的上下文交互，但它们难以区分实例间的细微差异并有效利用空间拓扑结构，导致在高度拥挤的场景中接地不准确。为了应对这些挑战，我们提出了 $\\textbf{GrabVG}$，这是一种受人类视觉搜索启发的新颖的视觉基础框架。 GrabVG 显式地将基础分解为两个连续阶段：$\\textit{前注意假设搜索}$ 和 $\\textit{图注意特征绑定}$。具体来说，我们首先通过蒸馏引导的提议归纳和文本感知假设过滤生成一组紧凑的可靠对象假设，从而大大减少背景干扰和语义不匹配。然后将这些假设组织成一个稀疏图，其中语言引导的实例内视觉线索和实例间拓扑关系通过图注意力共同绑定和传播，从而实现高效的空间推理和准确的目标定位。在 AerialVG 和 AerialSense 上进行的大量实验表明，GrabVG 实现了良好的精度-速度权衡，在 Acc@0.5 上分别达到 67.31$\\%$ 和 80.34$\\%$ Acc@0.5，分别比相应的基线高出 10.55 和 8.76 个百分点。"
+    },
+    {
+      "title": "GEAR: Generative Expansion and Real Anchoring for Two-Stage Distillation of Tabular Foundation Models",
+      "authors": [
+        "Qi Qin",
+        "Jiajie Zhu",
+        "Dali Chen",
+        "Yuzhao Zhang",
+        "Jia-Xing Han",
+        "Yu Su",
+        "Peng Zhang",
+        "Ying Yan",
+        "Yifan Sun"
+      ],
+      "summary": "Tabular foundation models (TFMs) achieve strong performance through in-context learning, but context-dependent inference imposes substantial latency and memory costs, hindering large-scale deployment. We propose GEAR (\\emph{Generative Expansion and Real Anchoring}), a modular two-stage framework that distills TFMs into lightweight MLP or tree-based predictors that can be deployed on commodity CPUs. Stage 1 uses synthetic covariates solely as teacher-query locations and trains the student on soft TFM targets, expanding coverage beyond observed rows. Stage 2 re-anchors the student to the target distribution using real labels and out-of-fold teacher predictions, whitch avoids self-labeling leakage. We further derive a risk certificate characterizing the trade-off between generated-query volume and generator fidelity. Experiments on TALENT and TabArena demonstrate the broad applicability of GEAR. Two-stage MLPs outperform supervised MLPs by 1.81--2.00 AUC points on binary tasks and 1.19--1.35 points on multiclass tasks, with additional gains over real-data-only distillation of 1.76--2.19 and 2.09--2.40 points, respectively. On binary tasks, the gains also transfer to LightGBM and XGBoost, and all three student families outperform CatBoost, the strongest non-TFM baseline, in mean AUC. Ablations show gains beyond longer training or alternative warm starts, greater stability from staged than mixed optimization, and generator-dependent diminishing returns as query volume increases. Finally, GEAR reduces median inference time by 57--2866 times and peak prediction memory by 1.9--3.3 times, while retaining higher AUC than matched supervised baselines.",
+      "published": "2026-08-19T12:21:02Z",
+      "updated": "2026-08-19T12:21:02Z",
+      "arxiv_id": "2608.18849v1",
+      "abs_url": "http://arxiv.org/abs/2608.18849v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18849v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "stat.ME",
+        "stat.ML"
+      ],
+      "comment": "9 pages,5 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning"
+      ],
+      "title_zh": "GEAR：表格基础模型两阶段蒸馏的生成扩展和真实锚定",
+      "summary_zh": "表格基础模型 (TFM) 通过上下文学习实现了强大的性能，但上下文相关的推理会带来大量的延迟和内存成本，阻碍大规模部署。我们提出了 GEAR（\\emph{生成扩展和真实锚定}），这是一种模块化的两阶段框架，它将 TFM 提炼成可以部署在商用 CPU 上的轻量级 MLP 或基于树的预测器。第 1 阶段仅使用合成协变量作为教师查询位置，并在软 TFM 目标上训练学生，将覆盖范围扩展到观察到的行之外。第二阶段使用真实标签和不合时宜的教师预测将学生重新锚定到目标分布，这避免了自标记泄漏。我们进一步得出一个风险证书，描述生成的查询量和生成器保真度之间的权衡。在TALENT和TabArena上的实验证明了GEAR的广泛适用性。两阶段 MLP 在二元任务上优于监督 MLP 1.81--2.00 AUC 点，在多类任务上优于 1.19--1.35 点，比纯真实数据蒸馏分别获得 1.76--2.19 和 2.09--2.40 点的额外收益。在二元任务上，增益也转移到 LightGBM 和 XGBoost，并且所有三个学生家庭的平均 AUC 均优于 CatBoost（最强的非 TFM 基线）。消融显示出除了更长的训练或替代热启动之外的收益，分阶段比混合优化更高的稳定性，以及随着查询量的增加依赖于生成器的收益递减。最后，GEAR 将中值推理时间减少了 57--2866 倍，将峰值预测内存减少了 1.9--3.3 倍，同时保留了比匹配的监督基线更高的 AUC。"
+    },
+    {
+      "title": "Forgetting, plasticity, and co-observation: a third facet of continual learning",
+      "authors": [
+        "Timm Hess",
+        "Abhishek Jha",
+        "Gido M. van de Ven",
+        "Tinne Tuytelaars"
+      ],
+      "summary": "Efficient continual learning remains a fundamental challenge for deep neural networks. While catastrophic forgetting and loss of plasticity are widely considered the primary obstacles to overcome, we show that these two issues cannot fully explain the performance gap between naive sequential training and offline joint training. In this paper, we highlight data co-observation as a distinct factor influencing continual learning performance. By decoupling the constraints of separate data access from stability and plasticity, we systematically investigate the representational benefits gained by observing training data together. Empirically, we demonstrate a consistent performance difference between joint and separate training across both supervised and self-supervised paradigms in generic data-incremental \"chunking\" scenarios, whilst mitigating forgetting and controlling for plasticity. Our findings indicate that simultaneous observation of training data (co-observation) yields benefits to the learner's generalization that extend well beyond mere knowledge retention, and that this effect does not require a specific continual distribution shift. Furthermore, we contextualize prominent continual learning mechanisms through this lens: while distillation-based approaches act only as effective knowledge retention mechanisms, our results suggest that the empirical success of memory replay goes beyond the mitigation of forgetting, actively reintroducing the benefits of data co-observation into the learning process.",
+      "published": "2026-08-19T10:59:59Z",
+      "updated": "2026-08-19T10:59:59Z",
+      "arxiv_id": "2608.18803v1",
+      "abs_url": "http://arxiv.org/abs/2608.18803v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18803v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "continual learning",
+        "self-supervised"
+      ],
+      "title_zh": "遗忘、可塑性和共同观察：持续学习的第三个方面",
+      "summary_zh": "高效的持续学习仍然是深度神经网络的基本挑战。虽然灾难性遗忘和可塑性丧失被广泛认为是需要克服的主要障碍，但我们表明这两个问题不能完全解释朴素顺序训练和离线联合训练之间的性能差距。在本文中，我们强调数据共同观察是影响持续学习绩效的独特因素。通过将单独数据访问的限制与稳定性和可塑性解耦，我们系统地研究了通过一起观察训练数据所获得的代表性好处。根据经验，我们证明了在通用数据增量“分块”场景中，跨监督和自监督范式的联合训练和单独训练之间存在一致的性能差异，同时减少遗忘和控制可塑性。我们的研究结果表明，同时观察训练数据（共同观察）对学习者的泛化能力产生的好处远远超出了单纯的知识保留，并且这种效果不需要特定的连续分布变化。此外，我们通过这个视角将突出的持续学习机制置于背景中：虽然基于蒸馏的方法仅充当有效的知识保留机制，但我们的结果表明，记忆重放的经验成功不仅仅限于减轻遗忘，而是积极地将数据共同观察的好处重新引入学习过程。"
+    },
+    {
+      "title": "SED-FOD: Scattering-Aware Expert Decomposition for Few-Shot Cross-Sensor SAR Object Detection",
+      "authors": [
+        "Shu Yang",
+        "Zhen Chen",
+        "Zhiyu Jiang",
+        "Yanlei Li",
+        "Xingdong Liang"
+      ],
+      "summary": "Synthetic aperture radar (SAR) object detection is an important part of remote sensing interpretation. However, because of variations in frequency band, resolution, background clutter, and target scattering responses, the performance of existing detectors often degrades when training and testing data are acquired from different SAR domains. Although domain adaptation methods offer a promising paradigm for solving this problem, most of them mainly pursue domain-invariant feature alignment and suppress sensor-dependent scattering characteristics that are useful for object detection. This problem becomes more challenging in few-shot scenarios, where only a few fully annotated target-domain SAR images are available. To address this issue, we propose a scattering-aware shared-specific feature decomposition framework for few-shot SAR domain adaptation object detection. We decompose detection features into a shared path and several soft-gated scattering-specific expert paths. The shared path learns transferable object structural information and is used for asymmetric domain alignment, while the scattering-specific experts adaptively compensate heterogeneous SAR responses. In addition, routing-domain auxiliary loss is introduced to encourage specific experts to capture sensor-dependent routing preferences, and an expert balancing loss is used to prevent routing collapse. Extensive experiments on four bidirectional heterogeneous SAR detection tasks between FARAD-X/FARAD-Ka and MiniSAR under different few-shot settings have been conducted and experimental results demonstrate that the proposed method achieves superior performance in both forward and reverse adaptation directions.",
+      "published": "2026-08-19T10:02:30Z",
+      "updated": "2026-08-19T10:02:30Z",
+      "arxiv_id": "2608.18755v1",
+      "abs_url": "http://arxiv.org/abs/2608.18755v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18755v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Submitted to IEEE JSTARS. 13 pages, 7 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "小样本与域泛化",
+        "SAR遥感"
+      ],
+      "topic": "目标检测",
+      "score": 9,
+      "anchor_terms": [
+        "object detection",
+        "remote sensing",
+        "SAR",
+        "SAR image",
+        "synthetic aperture radar"
+      ],
+      "matched_terms": [
+        "domain adaptation",
+        "object detection",
+        "remote sensing",
+        "SAR",
+        "SAR image",
+        "synthetic aperture radar"
+      ],
+      "title_zh": "SED-FOD：用于少镜头跨传感器 SAR 目标检测的散射感知专家分解",
+      "summary_zh": "Synthetic aperture radar (SAR) object detection is an important part of remote sensing interpretation. However, because of variations in frequency band, resolution, background clutter, and target scattering responses, the performance of existing detectors often degrades when training and testing data are acquired from different SAR domains. Although domain adaptation methods offer a promising paradigm for solving this problem, most of them mainly pursue domain-invariant feature alignment and suppress sensor-dependent scattering characteristics that are useful for object detection. This problem becomes more challenging in few-shot scenarios, where only a few fully annotated target-domain SAR images are available. To address this issue, we propose a scattering-aware shared-specific feature decomposition framework for few-shot SAR domain adaptation object detection. We decompose detection features into a shared path and several soft-gated scattering-specific expert paths. The shared path learns transferable object structural information and is used for asymmetric domain alignment, while the scattering-specific experts adaptively compensate heterogeneous SAR responses. In addition, routing-domain auxiliary loss is introduced to encourage specific experts to capture sensor-dependent routing preferences, and an expert balancing loss is used to prevent routing collapse. Extensive experiments on four bidirectional heterogeneous SAR detection tasks between FARAD-X/FARAD-Ka and MiniSAR under different few-shot settings have been conducted and experimental results demonstrate that the proposed method achieves superior performance in both forward and reverse adaptation directions."
+    },
+    {
+      "title": "A Critical Synthesis of Uncertainty Quantification and Foundation Models for Semantic Segmentation",
+      "authors": [
+        "Steven Landgraf",
+        "Joceline Hinz",
+        "Markus Ulrich"
+      ],
+      "summary": "Foundation models are increasingly breaking what seemed to be impossible not long ago by enabling unprecedented accuracy and cross-domain generalization. Yet their lack of interpretability, tendency to be overconfident, and sensitivity to real-world domain shifts pose critical challenges for safety- and mission-critical applications. Uncertainty quantification (UQ) offers a principled way to address these issues, but its integration into segmentation foundation models has yet to be explored. In this paper we present the first systematic evaluation of UQ methods applied to a foundation model for semantic segmentation. We fine-tune a lightweight DPT decoder on top of the pretrained SAM2 encoder to establish a simple yet competitive baseline and benchmark four representative UQ approaches - Monte Carlo Dropout, Deep Sub-Ensemble, Test-Time Augmentation, and Evidential Deep Learning - across Cityscapes, NYUv2, and two challenging out-of-domain settings. Our analysis compares segmentation accuracy, calibration, uncertainty quality, and inference time, revealing clear trade-offs between predictive performance, reliability, and computational cost. These results highlight both the promise and the current limitations of uncertainty-aware foundation models, pointing to the need for future work that jointly optimizes accuracy, robustness, and efficiency for real-world deployment.",
+      "published": "2026-08-19T09:09:42Z",
+      "updated": "2026-08-19T09:09:42Z",
+      "arxiv_id": "2608.18709v1",
+      "abs_url": "http://arxiv.org/abs/2608.18709v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18709v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "Accepted for publication in the ISPRS Annals (ISPRS Congress 2026, Toronto, Oral Presentation)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 7,
+      "anchor_terms": [
+        "domain generalization"
+      ],
+      "matched_terms": [
+        "domain generalization",
+        "foundation model",
+        "robust",
+        "semantic segmentation"
+      ],
+      "title_zh": "不确定性量化和语义分割基础模型的批判性综合",
+      "summary_zh": "基础模型通过实现前所未有的准确性和跨领域泛化，越来越多地打破不久前看似不可能的事情。然而，它们缺乏可解释性、过于自信的倾向以及对现实世界领域变化的敏感性给安全和关键任务应用程序带来了严峻的挑战。不确定性量化（UQ）提供了解决这些问题的原则性方法，但其与细分基础模型的集成仍有待探索。在本文中，我们首次对应用于语义分割基础模型的 UQ 方法进行系统评估。我们在预训练的 SAM2 编码器之上微调轻量级 DPT 解码器，以建立一个简单但有竞争力的基线，并对四种代表性的 UQ 方法进行基准测试 - 蒙特卡罗 Dropout、深度子集成、测试时间增强和证据深度学习 - 跨越城市景观、NYUv2 和两个具有挑战性的域外设置。我们的分析比较了分割准确性、校准、不确定性质量和推理时间，揭示了预测性能、可靠性和计算成本之间的明确权衡。这些结果凸显了不确定性感知基础模型的前景和当前的局限性，表明未来需要共同优化实际部署的准确性、稳健性和效率。"
+    },
+    {
+      "title": "Vision-Language Models for Egocentric Video: From Hand-Object Interaction to Embodied AI",
+      "authors": [
+        "Mohammad Zamani",
+        "Fatemeh Ziaeetabar"
+      ],
+      "summary": "Egocentric video captures activities from the wearer's perspective, providing a direct view of human attention, hand--object interaction, and goal-directed behavior. This perspective is increasingly important for wearable intelligence, assistive systems, human--robot interaction, and embodied AI, yet it introduces challenges including ego-motion, occlusion, small active objects, viewpoint-dependent appearance, and long-range temporal dependencies. Vision--language models (VLMs) offer a promising foundation for addressing these challenges by linking visual observations with semantic knowledge and natural-language supervision. This survey presents a critical review of VLMs for egocentric video understanding, tracing the progression from conventional recognition architectures to multimodal foundation models and embodied systems. We organize the literature around tasks, datasets, hand--object interaction understanding, temporal reasoning, frame and clip selection, multimodal representation learning, prompting, semantic alignment, and model adaptation. Particular attention is given to graph-based and object-centric reasoning as mechanisms for modeling relations among hands, objects, actions, and scene context over time. We further examine how first-person perception and multimodal foundation models support wearable assistance, robot skill learning, human-to-robot transfer, and embodied decision making. Across the reviewed literature, a consistent limitation emerges: current models recognize visible objects more reliably than evolving interactions, actions, and user intent, especially over long activities. We therefore identify temporally grounded reasoning, interaction-aware supervision, efficient long-video processing, multimodal fusion, graph-enhanced representations, cross-domain generalization, privacy, and trustworthy evaluation as key priorities for deployable embodied intelligence.",
+      "published": "2026-08-19T08:21:58Z",
+      "updated": "2026-08-19T08:21:58Z",
+      "arxiv_id": "2608.18671v1",
+      "abs_url": "http://arxiv.org/abs/2608.18671v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18671v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "domain generalization"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "domain generalization",
+        "foundation model",
+        "modal fusion"
+      ],
+      "title_zh": "以自我为中心的视频的视觉语言模型：从手-物体交互到具体人工智能",
+      "summary_zh": "以自我为中心的视频从佩戴者的角度捕捉活动，提供人类注意力、手与物体交互和目标导向行为的直接视图。这种观点对于可穿戴智能、辅助系统、人机交互和嵌入式人工智能越来越重要，但它也带来了挑战，包括自我运动、遮挡、小型活动物体、视点相关的外观和远程时间依赖性。视觉-语言模型（VLM）通过将视觉观察与语义知识和自然语言监督联系起来，为应对这些挑战提供了一个有希望的基础。这项调查对以自我为中心的视频理解的 VLM 进行了批判性回顾，追踪了从传统识别架构到多模态基础模型和具体系统的进展。我们围绕任务、数据集、手-物体交互理解、时间推理、帧和剪辑选择、多模态表示学习、提示、语义对齐和模型适应来组织文献。特别关注基于图和以对象为中心的推理，作为随着时间的推移对手、对象、动作和场景上下文之间的关系进行建模的机制。我们进一步研究第一人称感知和多模态基础模型如何支持可穿戴辅助、机器人技能学习、人机迁移和具体决策。在回顾的文献中，出现了一个一致的局限性：当前的模型比不断变化的交互、动作和用户意图更可靠地识别可见对象，尤其是在长时间的活动中。因此，我们将基于时间的推理、交互感知监督、高效的长视频处理、多模态融合、图形增强表示、跨域泛化、隐私和可信评估确定为可部署的具体智能的关键优先事项。"
+    },
+    {
+      "title": "Coordination on a Budget: Federated Active Learning with Few Labels",
+      "authors": [
+        "Liam Mohr",
+        "Daphna Weinshall"
+      ],
+      "summary": "Federated Active Learning (FAL) addresses the dual challenges of data privacy and label scarcity, where the absence of a global data view introduces additional hurdles for coordinated query selection. We study cross-silo FAL in the low-budget regime, where annotation decisions are most critical. We characterize, both theoretically and empirically, a heterogeneity reversal: in low-budget settings, homogeneous (IID) data requires stronger coordination to avoid redundant queries, whereas heterogeneous data naturally promotes diversity; this trend reverses at higher budgets. Thus, in contrast to the standard federated learning (FL) narrative where heterogeneity is a primary challenge, we show that IID settings are more challenging for query selection in FAL. Motivated by these findings, we propose a new FAL framework that utilizes federated representation learning to align client data in a shared embedding space. This enables the server to perform globally coordinated active selection over optionally obfuscated client embeddings, while annotation remains local to each client. Although our framework operates in the more challenging low-budget regime, it achieves performance that surpasses existing FAL methods even when they are given substantially larger annotation budgets, demonstrating the value of centralized coordination under privacy constraints.",
+      "published": "2026-08-19T07:31:46Z",
+      "updated": "2026-08-19T07:31:46Z",
+      "arxiv_id": "2608.18634v1",
+      "abs_url": "http://arxiv.org/abs/2608.18634v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18634v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "16 pages",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 2,
+      "anchor_terms": [
+        "active learning"
+      ],
+      "matched_terms": [
+        "active learning"
+      ],
+      "title_zh": "预算协调：标签很少的联合主动学习",
+      "summary_zh": "联合主动学习（FAL）解决了数据隐私和标签稀缺的双重挑战，其中缺乏全局数据视图给协调查询选择带来了额外的障碍。我们研究低预算制度下的跨筒仓 FAL，其中注释决策最为关键。我们从理论上和经验上描述了异质性逆转：在低预算环境中，同质（IID）数据需要更强的协调以避免冗余查询，而异质数据自然会促进多样性；当预算增加时，这种趋势就会逆转。因此，与异质性是主要挑战的标准联邦学习 (FL) 叙述相反，我们表明 IID 设置对于 FAL 中的查询选择更具挑战性。受这些发现的启发，我们提出了一个新的 FAL 框架，该框架利用联合表示学习在共享嵌入空间中对齐客户端数据。这使得服务器能够对可选的混淆的客户端嵌入执行全局协调的主动选择，而注释对于每个客户端来说仍然是本地的。尽管我们的框架在更具挑战性的低预算制度下运行，但即使给予现有的 FAL 方法更大的注释预算，它也能实现超越现有 FAL 方法的性能，这证明了隐私约束下集中协调的价值。"
+    },
+    {
+      "title": "Evaluation of Image Matching Methods for Visual Odometry on UAVs",
+      "authors": [
+        "Gašper Spagnolo",
+        "Luka Čehovin Zajc",
+        "Matej Dobrevski"
+      ],
+      "summary": "Unmanned aerial vehicles (UAVs) are becoming a powerful tool for many environmental monitoring and transport applications. Yet, their reliance on Global Navigation Satellite System (GNSS) technology for navigation makes them susceptible to catastrophic failures in scenarios where the positioning signal is unavailable or disrupted. This work explores Visual Odometry (VO) as a crucial navigation component. Recently, numerous deep-learning-based methods for image matching have been proposed that are yet to be implemented in a fully-fledged VO system. In this paper, we evaluate recent state-of-the-art image matching methods for the task of VO for UAV position tracking, with a downwards-facing camera, on our synthetic dataset, and find that while the best results are generated by the recent RoMa matcher, SIFT features can outperform some recent state-of-the-art.",
+      "published": "2026-08-19T07:17:48Z",
+      "updated": "2026-08-19T07:17:48Z",
+      "arxiv_id": "2608.18624v1",
+      "abs_url": "http://arxiv.org/abs/2608.18624v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18624v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "5 pages, published in the Proceedings of the 33rd International Electrotechnical and Computer Science Conference ERK 2024",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "无人机/UAV",
+      "score": 8,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "satellite",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "Evaluation of Image Matching Methods for Visual Odometry on UAVs",
+      "summary_zh": "无人机 (UAV) 正在成为许多环境监测和运输应用的强大工具。然而，它们对全球导航卫星系统（GNSS）技术进行导航的依赖使得它们在定位信号不可用或中断的情况下容易遭受灾难性故障。这项工作探索了视觉里程计 (VO) 作为一个重要的导航组件。最近，人们提出了许多基于深度学习的图像匹配方法，但尚未在成熟的 VO 系统中实现。在本文中，我们在合成数据集上评估了用于无人机位置跟踪 VO 任务的最新最先进的图像匹配方法，使用朝下的相机，并发现虽然最好的结果是由最近的 RoMa 匹配器生成的，但 SIFT 特征可以超越一些最新的最先进的方法。"
+    },
+    {
+      "title": "CDGP: Contrastive Dual Gaussian Processes for Weakly Supervised Anomaly Segmentation",
+      "authors": [
+        "Seungjun Chu",
+        "Seokhee Han",
+        "Mateusz Nowak",
+        "Peter Chin"
+      ],
+      "summary": "Industrial visual inspection must both decide whether a product is defective and localize the defect, yet pixel-level masks are costly to collect at scale. Most anomaly-segmentation methods learn only from defect-free images and score deviations from normality. A true defect and an unusual-but-normal region, however, can both deviate substantially and receive similarly high scores. We propose Contrastive Dual Gaussian Processes (CDGP), a weakly supervised framework that models normal and anomaly inducing-variable predictive distributions over dense tokens. Its posterior-dominance statistic standardizes their predictive-mean difference by the joint predictive uncertainty, providing both spatial evidence and image-level confidence. This evidence complements hierarchical normal-reconstruction residuals for fine localization. All calibration uses training data only, without human pixel annotations or test-time fitting. Across MVTec AD~2, KSDD2, and VisA, CDGP ranks first among the evaluated methods on all MVTec AD~2 localization metrics and is first-place or competitive on KSDD2 and VisA. Factorized and matched linear-head controls delimit the contribution and scope of the linear-kernel Gaussian process (GP) formulation.",
+      "published": "2026-08-19T07:02:00Z",
+      "updated": "2026-08-19T07:02:00Z",
+      "arxiv_id": "2608.18614v1",
+      "abs_url": "http://arxiv.org/abs/2608.18614v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18614v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 3,
+      "anchor_terms": [
+        "weakly supervised"
+      ],
+      "matched_terms": [
+        "weakly supervised"
+      ],
+      "title_zh": "CDGP: Contrastive Dual Gaussian Processes for Weakly Supervised Anomaly Segmentation",
+      "summary_zh": "工业视觉检测必须确定产品是否有缺陷并定位缺陷，但大规模收集像素级掩模的成本很高。大多数异常分割方法仅从无缺陷图像中学习，并对与正态性的偏差进行评分。然而，真正的缺陷和不寻常但正常的区域都可能有很大偏差并获得类似的高分。我们提出了对比双高斯过程（CDGP），这是一种弱监督框架，可以对密集令牌上的正常和异常诱发变量预测分布进行建模。其后验优势统计通过联合预测不确定性标准化其预测均值差异，提供空间证据和图像级置信度。该证据补充了用于精细定位的分层正常重建残差。所有校准仅使用训练数据，没有人工像素注释或测试时间拟合。在 MVTec AD~2、KSDD2 和 VisA 中，CDGP 在所有 MVTec AD~2 本地化指标的评估方法中排名第一，并且在 KSDD2 和 VisA 上排名第一或具有竞争力。因式分解和匹配的线性头控制界定了线性核高斯过程 (GP) 公式的贡献和范围。"
+    },
+    {
+      "title": "Scalable Geospatial Machine Learning for Power-Line Asset Risk: Integrating Remote Sensing for Lightning and Vegetation Risk Modelling",
+      "authors": [
+        "Artur Sokolovsky",
+        "Bhavik Merai",
+        "Moe Jafari",
+        "Muen Chen"
+      ],
+      "summary": "Electric power networks are increasingly exposed to weather-sensitive failure mechanisms that require asset-level, spatially explicit risk modelling for effective intervention planning. This study contributes a modular, robust, and explainable probability-of-failure (PoF) modelling framework for utility asset management. The central contribution is an asset-level architecture that can be scaled to new environmental data sources and additional PoF types without reworking the underlying pipeline. This is particularly relevant for industry settings, where risk models must remain operationally maintainable while adapting to changing data availability, asset-management priorities, and climate-driven hazard conditions. We demonstrate the framework for vegetation-related and lightning-related failure modes using a harmonised geospatial machine-learning pipeline. The implementation integrates multi-source predictors, including topography (SRTM), vegetation condition (MODIS Normalised Difference Vegetation Index - NDVI), lightning climatology (LIS VHRMC), OpenStreetMap-derived proximity features, and utility operational records. The resulting architecture is computationally efficient, operationally extensible, and suitable for utility-scale deployment. It provides actionable asset-level risk stratification for inspection prioritisation, vegetation management, asset hardening, and resilience planning, supporting earlier intervention and more climate-resilient network operations.",
+      "published": "2026-08-19T06:54:04Z",
+      "updated": "2026-08-19T06:54:04Z",
+      "arxiv_id": "2608.18611v1",
+      "abs_url": "http://arxiv.org/abs/2608.18611v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18611v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 8,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "geospatial",
+        "MODIS",
+        "remote sensing",
+        "robust"
+      ],
+      "title_zh": "用于电力线资产风险的可扩展地理空间机器学习：集成遥感以进行闪电和植被风险建模",
+      "summary_zh": "Electric power networks are increasingly exposed to weather-sensitive failure mechanisms that require asset-level, spatially explicit risk modelling for effective intervention planning. This study contributes a modular, robust, and explainable probability-of-failure (PoF) modelling framework for utility asset management. The central contribution is an asset-level architecture that can be scaled to new environmental data sources and additional PoF types without reworking the underlying pipeline. This is particularly relevant for industry settings, where risk models must remain operationally maintainable while adapting to changing data availability, asset-management priorities, and climate-driven hazard conditions. We demonstrate the framework for vegetation-related and lightning-related failure modes using a harmonised geospatial machine-learning pipeline. The implementation integrates multi-source predictors, including topography (SRTM), vegetation condition (MODIS Normalised Difference Vegetation Index - NDVI), lightning climatology (LIS VHRMC), OpenStreetMap-derived proximity features, and utility operational records. The resulting architecture is computationally efficient, operationally extensible, and suitable for utility-scale deployment. It provides actionable asset-level risk stratification for inspection prioritisation, vegetation management, asset hardening, and resilience planning, supporting earlier intervention and more climate-resilient network operations."
+    },
+    {
+      "title": "Infrared Universality of Collective Dynamics across Transformer and State-Space Architectures",
+      "authors": [
+        "Byung Gyu Chae"
+      ],
+      "summary": "Whether distinct neural architectures develop common collective dynamics remains an open question. Recent analysis of Transformer language models revealed a nearly flat, weakly infrared-enhanced time-scale density of states (TDOS) associated with near-marginal long-memory dynamics. Here we test whether a closely related organization emerges in Mamba, whose selective state-space dynamics provides a fundamentally different microscopic mechanism. Mamba allows relaxation dynamics to be resolved at three levels: the intrinsic spectrum of the learned state-space generator, its input-conditioned selective rescaling, and the collective TDOS of the complete block measured from its Jacobian. These spectra are not identical: selective dynamics and the remaining block transformations substantially reorganize the microscopic relaxation hierarchy. Nevertheless, the full block develops a reproducible slow-mode continuum whose infrared sector becomes progressively better resolved with increasing sequence length. Cumulative analysis yields $ρ(λ)\\simλ^β$, with the long-sequence Mamba exponent stabilizing near $β_{\\rm M}\\simeq-0.17$. The corresponding memory dynamics follows $K(t)\\sim t^{-(1+β)}$, close to the marginal $1/t$ regime. Despite fundamentally different microscopic dynamics, Transformer full-block spectra exhibit closely related infrared organization, with representative exponents of order $β_{\\rm Tr}\\sim-0.1$. These results separate explicit state-space memory from collective infrared organization and show that distinct sequence architectures can develop closely related near-marginal slow-mode dynamics. They extend infrared collective organization beyond Transformers and provide an independent test of the dynamical structure described by Cognitive Field Theory.",
+      "published": "2026-08-19T06:34:04Z",
+      "updated": "2026-08-19T06:34:04Z",
+      "arxiv_id": "2608.18592v1",
+      "abs_url": "http://arxiv.org/abs/2608.18592v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18592v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "31 pages, 12 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "Mamba"
+      ],
+      "matched_terms": [
+        "Mamba",
+        "transformer"
+      ],
+      "title_zh": "跨变压器和状态空间架构的集体动力学的红外普遍性",
+      "summary_zh": "不同的神经结构是否会发展出共同的集体动力仍然是一个悬而未决的问题。最近对 Transformer 语言模型的分析揭示了与近边缘长记忆动态相关的近乎平坦、弱红外增强的时间尺度状态密度 (TDOS)。在这里，我们测试曼巴是否出现了一个密切相关的组织，其选择性状态空间动力学提供了一种根本不同的微观机制。 Mamba 允许在三个层面上解析弛豫动力学：学习状态空间生成器的固有谱、其输入条件选择性重新缩放以及从其雅可比行列式测量的整个块的集体 TDOS。这些光谱并不相同：选择性动力学和剩余的块变换实质上重新组织了微观弛豫层次结构。然而，整个模块形成了一个可重复的慢模式连续体，其红外部分随着序列长度的增加而逐渐变得更好地解析。累积分析得出 $ρ(λ)\\simλ^β$，长序列 Mamba 指数稳定在 $β_{\\rm M}\\simeq-0.17$ 附近。相应的记忆动态遵循 $K(t)\\sim t^{-(1+β)}$，接近边际 $1/t$ 状态。尽管微观动力学存在根本不同，Transformer 全块光谱表现出密切相关的红外组织，其代表性指数为 $β_{\\rm Tr}\\sim-0.1$ 阶。这些结果将显式状态空间记忆与集体红外组织分开，并表明不同的序列架构可以发展密切相关的近边缘慢模式动力学。它们将红外集体组织扩展到变形金刚之外，并提供对认知场理论描述的动态结构的独立测试。"
+    },
+    {
+      "title": "COSTA: A Cluster-Centric Paradigm for Annotation-Free Open-Set Semantic Segmentation of Aerial Point Clouds with Domain Shifts",
+      "authors": [
+        "Yanghong Lin",
+        "Li Fang",
+        "Tianyu Li",
+        "Shudong Zhou",
+        "Wei Yao"
+      ],
+      "summary": "Semantic segmentation of aerial point cloud is trapped in a generalization crisis under distinct domain shifts. While test-time adaptation offers a privacy-preserving and computationally efficient way to adapt pre-trained models to unlabeled target-domain data during inference, existing methods, bound to closed-set label assumptions and non-scalable point-wise segmentation pipelines, still struggle with semantic shifts. We ask: can we adapt any given pre-trained aerial point cloud segmentation model to a shifted target domain at the inference phase alone, without additional training, while segmenting target-specific categories beyond the source label space on demand? This paper introduces COSTA, which breaks this limitation by shifting from closed-set point-wise adaptation to cluster-centric open-set semantic propagation. Our core discovery is that, once effectively adapted at test time, the rich feature distribution of aerial point clouds can be distilled into a compact set of well-separated semantic centroids that are transferable across label spaces. COSTA leverages this to reformulate open-set semantic segmentation as a cluster-level propagating process: it first bridges the domain gap through proven test-time adaptation, then groups each batch of target-domain points into a small set of semantic clusters based on the similarity distribution in the adapted feature space, and finally propagates high-confidence pseudo labels obtained from an open-vocabulary vision-language model to all points through cluster-level voting. This cluster-centric paradigm enables test-time adaptation of aerial point clouds under significant domain gaps with mixed semantic shifts. With DALES as the source domain, COSTA enables on-demand segmentation across three aerial point cloud benchmarks with distinct domains and heterogeneous category spaces, achieving up to 70.09% mIoU under this new setting.",
+      "published": "2026-08-19T03:10:57Z",
+      "updated": "2026-08-19T03:10:57Z",
+      "arxiv_id": "2608.18479v1",
+      "abs_url": "http://arxiv.org/abs/2608.18479v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18479v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "开放词汇与开放集",
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 12,
+      "anchor_terms": [
+        "open-set",
+        "open-vocabulary",
+        "semantic segmentation"
+      ],
+      "matched_terms": [
+        "aerial",
+        "open-set",
+        "open-vocabulary",
+        "point cloud",
+        "semantic segmentation"
+      ],
+      "title_zh": "COSTA：一种以集群为中心的范式，用于具有域移位的航空点云的无注释开放集语义分割",
+      "summary_zh": "航空点云的语义分割在不同的领域转移下陷入了泛化危机。虽然测试时适应提供了一种隐私保护和计算高效的方法，使预训练模型在推理过程中适应未标记的目标域数据，但现有的方法受限于封闭集标签假设和不可扩展的逐点分割管道，仍然难以应对语义转换。我们问：我们是否可以仅在推理阶段将任何给定的预先训练的航空点云分割模型适应移动的目标域，而无需额外的训练，同时按需分割源标签空间之外的目标特定类别？本文介绍了 COSTA，它通过从闭集逐点适应转向以集群为中心的开放集语义传播来打破这一限制。我们的核心发现是，一旦在测试时进行有效调整，空中点云的丰富特征分布就可以被提炼成一组紧凑的、分离良好的语义质心，这些质心可以跨标签空间转移。 COSTA 利用这一点将开放集语义分割重新表述为集群级传播过程：它首先通过经过验证的测试时间适应来弥合领域差距，然后根据适应特征空间中的相似性分布将每批目标域点分组为一小组语义集群，最后通过集群级投票将从开放词汇视觉语言模型获得的高置信度伪标签传播到所有点。这种以集群为中心的范式使得空中点云能够在具有混合语义变化的显着域间隙下进行测试时适应。以 DALES 作为源域，COSTA 能够跨具有不同域和异构类别空间的三个航空点云基准进行按需分割，在此新设置下实现高达 70.09% 的 mIoU。"
+    },
+    {
+      "title": "Low-Power, Neuromorphic, Acoustic Anomaly Detection for Persistent Machine Monitoring",
+      "authors": [
+        "Steven C. Nesbit",
+        "Victor M. Vergara",
+        "Michael A. Felix",
+        "Evan T. Kain",
+        "Luis R. García Carrillo",
+        "Gerd J. Kunde",
+        "Andrew T. Sornborger"
+      ],
+      "summary": "Persistent acoustic monitoring can detect machine faults without physical contact, but always-on inference is constrained by power, latency, and deployment complexity. We demonstrate autoencoder-based acoustic anomaly detection on an Intel Loihi 2 neuromorphic processor under clean and noisy conditions. Log-mel features are computed off chip; normalization, autoencoder inference, L1 reconstruction scoring, and thresholding run on chip. In a clean, microphone-position-invariant ToyADMOS ToyCar benchmark, the on-chip model achieves 0.9959 AUC and 0.9785 standardized pAUC at maximum false-positive rate 0.1. In the DCASE 2026 Task 2 ToyCar noisy benchmark, the model achieves source AUC 0.7990, target AUC 0.6466, and pAUC 0.6426, exceeding reported baseline metrics. Power profiling on a 16-chip Loihi 2 VPX system shows real-time throughput with 0.0406$\\unicode{x2013}$0.0426 mJ dynamic energy per sample, two orders of magnitude lower than both a CPU and GPU. These results support neuromorphic acoustic anomaly detection as a practical candidate for low-power, persistent machine monitoring.",
+      "published": "2026-08-18T21:46:11Z",
+      "updated": "2026-08-18T21:46:11Z",
+      "arxiv_id": "2608.18341v1",
+      "abs_url": "http://arxiv.org/abs/2608.18341v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18341v1",
+      "primary_category": "cs.NE",
+      "categories": [
+        "cs.NE",
+        "cs.AI",
+        "cs.ET",
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "comment": "5 pages, 2 figures, 2 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "数据集/评测"
+      ],
+      "topic": "数据集/评测",
+      "score": 2,
+      "anchor_terms": [
+        "crop"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "crop"
+      ],
+      "title_zh": "用于持续机器监控的低功耗、神经形态、声学异常检测",
+      "summary_zh": "持续声学监控无需物理接触即可检测机器故障，但始终在线的推理受到功耗、延迟和部署复杂性的限制。我们在干净和嘈杂的条件下在 Intel Loihi 2 神经拟态处理器上演示了基于自动编码器的声学异常检测。 Log-mel 特征是在片外计算的；归一化、自动编码器推理、L1 重建评分和阈值在芯片上运行。在干净、麦克风位置不变的 ToyADMOS ToyCar 基准测试中，片上模型在最大误报率 0.1 下实现了 0.9959 AUC 和 0.9785 标准化 pAUC。在 DCASE 2026 Task 2 ToyCar 噪声基准中，该模型实现了源 AUC 0.7990、目标 AUC 0.6466 和 pAUC 0.6426，超过了报告的基线指标。 16 芯片 Loihi 2 VPX 系统上的功率分析显示，每个样本的实时吞吐量为 0.0406$\\unicode{x2013}$0.0426 mJ 动态能量，比 CPU 和 GPU 低两个数量级。这些结果支持神经形态声学异常检测作为低功耗、持久机器监控的实用候选者。"
+    },
+    {
+      "title": "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation",
+      "authors": [
+        "Xingjian Wang",
+        "Zhao Wang",
+        "Taihang Hu",
+        "Jun Zheng",
+        "Qing Jin",
+        "Qinye Zhou",
+        "Zhengtao Wu",
+        "Yongchao Du",
+        "Zuan Gao",
+        "Chao Lin",
+        "Yefeng Shen",
+        "Xiaoli Xu",
+        "Zhengze Xu",
+        "Hao Yan",
+        "Yuhang Yu",
+        "Mingzhou Zhang",
+        "Mengting Chen"
+      ],
+      "summary": "Large-scale image generation has benefited from advances in data scale, quality, rebalancing, and recaptioning, yet conventional pipelines typically optimize task-specific datasets in isolation. A central challenge is not only how to curate each task-specific corpus, but also how to organize heterogeneous supervision according to the dependencies among generative capabilities. We present a \\textbf{capability-driven data infrastructure} that couples capability-specific supervision construction with capability-aligned curriculum scheduling. Its three specialized yet interoperable data engines build complementary relational supervision for text-image grounding, inter-image transformation, and image-knowledge association, while caption experts align T2I and editing supervision across tasks and granularities. A multi-stage curriculum jointly evolves task composition, visual-concept distribution, data quality, and image resolution along the dependency order of capability acquisition, with capability-aware evaluation closing the loop through targeted retrieval, expert construction, and gap-aware resampling. At scale, the framework curates a 440M-image T2I corpus, 120M editing pairs, and over 27M image-entity pairs. With this infrastructure, we train multimodal diffusion models at two scales from scratch, with 3B and 6B sizes respectively. We conduct quantitative evaluation on CPI-Bench, along with qualitative evaluations across diverse text-to-image and editing scenarios. Experimental results present broad visual coverage, versatile rendering, and effective transfer across generative capabilities.",
+      "published": "2026-08-18T17:59:01Z",
+      "updated": "2026-08-18T17:59:01Z",
+      "arxiv_id": "2608.18076v1",
+      "abs_url": "http://arxiv.org/abs/2608.18076v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18076v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "19 pages, 10 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "图像描述与视觉推理",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 4,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "image generation"
+      ],
+      "title_zh": "从语料库到共同进化的能力：以能力为中心的通用图像生成数据设计",
+      "summary_zh": "大规模图像生成受益于数据规模、质量、重新平衡和重新捕获方面的进步，但传统管道通常单独优化特定于任务的数据集。一个核心挑战不仅是如何管理每个特定任务的语料库，而且是如何根据生成能力之间的依赖关系组织异构监督。我们提出了一个 \\textbf{能力驱动的数据基础设施}，它将特定于能力的监督构建与能力一致的课程安排结合起来。它的三个专业但可互操作的数据引擎为文本图像基础、图像间转换和图像知识关联构建了互补的关系监督，而字幕专家则跨任务和粒度调整 T2I 和编辑监督。多阶段课程沿着能力获取的依赖顺序共同发展任务构成、视觉概念分布、数据质量和图像分辨率，能力感知评估通过有针对性的检索、专家构建和差距感知重采样来闭合循环。从规模上看，该框架管理了 4.4 亿图像 T2I 语料库、1.2 亿个编辑对和超过 2700 万个图像实体对。有了这个基础设施，我们从头开始训练两个尺度的多模态扩散模型，分别具有 3B 和 6B 尺寸。我们在 CPI-Bench 上进行定量评估，并对不同的文本到图像和编辑场景进行定性评估。实验结果呈现出广泛的视觉覆盖范围、多功能渲染以及跨生成能力的有效迁移。"
+    },
+    {
+      "title": "Optimize Your Sampling: Tuned Diffusion Sampling with Bayesian Optimization",
+      "authors": [
+        "Travis Zhang",
+        "Christian Belardi",
+        "Justin Lovelace",
+        "Jin Peng Zhou",
+        "Saebyeol Shin",
+        "Carla P. Gomes",
+        "Kilian Q. Weinberger"
+      ],
+      "summary": "Sampling from a diffusion model typically requires many forward passes through a large neural network, making generation computationally expensive. While much work has focused on efficient solvers and samplers, comparatively little attention has been paid to selecting the sampling timesteps themselves. A recent line of work optimizes theoretically derived surrogates for sample quality rather than the quality metric itself. We propose Optimizing Your Sampling (OYS), which instead treats timestep selection as a black-box optimization problem, optimizing the target metric directly with Bayesian optimization. OYS outperforms both the default schedules and those of Align Your Steps on text-to-image generation, and improves over the default schedules on inpainting and other image tasks, in both quantitative and human evaluations. OYS requires no additional training, is applicable even to distilled models, and improves both simple and sophisticated samplers such as Euler and DPM-Solver++. A 5-step OYS schedule retains 89%-94% of the quality of a 50-step schedule while reducing inference cost by 10x.",
+      "published": "2026-08-18T17:33:00Z",
+      "updated": "2026-08-18T17:33:00Z",
+      "arxiv_id": "2608.18040v1",
+      "abs_url": "http://arxiv.org/abs/2608.18040v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18040v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "image generation"
+      ],
+      "title_zh": "优化您的采样：通过贝叶斯优化调整扩散采样",
+      "summary_zh": "从扩散模型中采样通常需要通过大型神经网络进行多次前向传递，这使得生成的计算成本很高。虽然很多工作都集中在高效的求解器和采样器上，但相对较少的注意力集中在选择采样时间步长本身。最近的一项工作优化了理论上得出的样本质量替代指标，而不是质量指标本身。我们提出优化采样（OYS），它将时间步选择视为黑盒优化问题，直接使用贝叶斯优化来优化目标指标。在定量和人工评估方面，OYS 在文本到图像生成方面均优于默认计划和“对齐您的步骤”，并且在修复和其他图像任务方面优于默认计划。 OYS 不需要额外的训练，甚至适用于蒸馏模型，并改进了简单和复杂的采样器，例如 Euler 和 DPM-Solver++。 5 步 OYS 计划保留了 50 步计划的 89%-94% 的质量，同时将推理成本降低了 10 倍。"
+    },
+    {
+      "title": "GS-Voxel: Fitting-Free Structured Latents for Large-Scale 3DGS Generation",
+      "authors": [
+        "Ming Qian",
+        "Zijian Wang",
+        "Minchao Sun",
+        "Jincheng Xiong",
+        "Hang Zhang",
+        "Mu Xu",
+        "Chi Wang",
+        "Baoquan Chen"
+      ],
+      "summary": "Many scalable latent 3D generators operate on structured tensors, whereas pre-optimized 3D Gaussian Splatting (3DGS) reconstructions are unordered, spatially irregular, and vary widely in primitive count. We present GS-Voxel, a fitting-free structured latent framework, and evaluate it for large-scale aerial 3D Gaussian scene generation. GS-Voxel deterministically converts a compatible pre-optimized 3DGS reconstruction into sparse active voxels without additional per-scene optimization, retaining the sub-voxel positions and rendering attributes of the selected primitives. A GS-specific factorized VAE then separately encodes voxel geometry and local Gaussian attributes into sparse 3D latents whose size grows with the number of occupied voxels rather than being limited by a fixed scene-wide primitive count. We train image-conditioned flow models in the GS-Voxel latent space to generate aerial 3DGS scenes. A key application enabled by GS-Voxel is large-area scene generation: overlap-aware tiled inference extends synthesis beyond a single training crop conditioned on satellite-view images. Our results show that GS-Voxel provides structured latents for pre-optimized aerial 3DGS reconstructions, with latent capacity that grows with the number of occupied voxels.",
+      "published": "2026-08-18T16:33:49Z",
+      "updated": "2026-08-18T16:33:49Z",
+      "arxiv_id": "2608.17988v1",
+      "abs_url": "http://arxiv.org/abs/2608.17988v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17988v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "LiDAR/点云"
+      ],
+      "topic": "LiDAR/点云",
+      "score": 5,
+      "anchor_terms": [
+        "crop"
+      ],
+      "matched_terms": [
+        "aerial",
+        "crop",
+        "satellite"
+      ],
+      "title_zh": "GS-Voxel：用于大规模 3DGS 生成的免拟合结构化潜在模型",
+      "summary_zh": "许多可扩展的潜在 3D 生成器在结构化张量上运行，而预优化的 3D 高斯分布 (3DGS) 重建是无序的、空间不规则的，并且基元计数变化很大。我们提出了 GS-Voxel，一种免拟合的结构化潜在框架，并对其进行大规模航空 3D 高斯场景生成进行评估。 GS-Voxel 确定性地将兼容的预优化 3DGS 重建转换为稀疏活动体素，无需额外的每场景优化，保留子体素位置和所选基元的渲染属性。然后，GS 特定的因式分解 VAE 将体素几何和局部高斯属性分别编码为稀疏 3D 潜伏，其大小随着占用体素的数量而增长，而不是受到固定的场景范围基元计数的限制。我们在 GS-Voxel 潜在空间中训练图像条件流模型以生成航空 3DGS 场景。 GS-Voxel 实现的一个关键应用是大面积场景生成：重叠感知平铺推理将合成扩展到以卫星视图图像为条件的单一训练作物之外。我们的结果表明，GS-Voxel 为预先优化的航空 3DGS 重建提供了结构化潜在，其潜在容量随着占用体素的数量而增长。"
+    },
+    {
+      "title": "Understanding the Surprising Generalization Properties of Tabular Foundation Models",
+      "authors": [
+        "Nour Shaheen",
+        "Junwei Ma",
+        "Alex Labach",
+        "Frank Hutter",
+        "Valentin Thomas",
+        "Anthony L. Caterini"
+      ],
+      "summary": "Tabular Foundation Models (TFMs) increasingly rely on in-context learning, where a model receives labelled examples at inference time and predicts labels for new inputs without updating its weights. Existing TFMs are typically trained on either massive synthetic corpora or very large collections of real datasets. In contrast, we show that surprisingly strong transfer can emerge from self-supervised pre-training on just a single real table. In this setting, we also find that tables tend to be either broadly useful or broadly poor regardless of downstream prediction task, and that the strongest predictor of usefulness is the number of features rather than the number of instances. This leads to a task-centric interpretation of tabular pre-training: the number and the quality of tasks are essential for the pre-training of TFMs. We show that the same task-centric perspective can help corpus design at scale: fine-grained column-level pre-processing consistently improves downstream performance, while no improvements are observed when we filter or deduplicate at the dataset level. Finally, we offer a new perspective for how TFMs generalize: we believe that tabular in-context generalization is largely retrieval-based, and good models are those that learn to identify relevant examples in the provided context and aggregate them well. The mechanics of TFMs have been relatively understudied; our task-centric, retrieval-based perspective offers a new framework to guide future model and corpus design.",
+      "published": "2026-08-18T16:11:08Z",
+      "updated": "2026-08-18T16:11:08Z",
+      "arxiv_id": "2608.17957v1",
+      "abs_url": "http://arxiv.org/abs/2608.17957v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17957v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "This work extends our previous work, Generalization Can Emerge in Tabular Foundation Models From a Single Table (arXiv:2511.09665)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning",
+        "pre-training",
+        "self-supervised"
+      ],
+      "title_zh": "了解表格基础模型令人惊讶的泛化特性",
+      "summary_zh": "表格基础模型 (TFM) 越来越依赖上下文学习，其中模型在推理时接收带标签的示例，并预测新输入的标签而不更新其权重。现有的 TFM 通常在大规模合成语料库或非常大的真实数据集上进行训练。相比之下，我们表明，仅在一张真实的桌子上进行自我监督预训练就可以产生令人惊讶的强大迁移。在这种情况下，我们还发现，无论下游预测任务如何，表往往要么广泛有用，要么普遍较差，并且有用性的最强预测因素是特征数量而不是实例数量。这导致了对表格预训练的以任务为中心的解释：任务的数量和质量对于 TFM 的预训练至关重要。我们表明，相同的以任务为中心的视角可以帮助大规模的语料库设计：细粒度的列级预处理持续提高下游性能，而当我们在数据集级别进行过滤或重复数据删除时，没有观察到任何改进。最后，我们为 TFM 如何泛化提供了一个新的视角：我们认为表格上下文泛化很大程度上是基于检索的，好的模型是那些学会在所提供的上下文中识别相关示例并很好地聚合它们的模型。 TFM 的机制相对而言还没有得到足够的研究。我们以任务为中心、基于检索的视角提供了一个新的框架来指导未来的模型和语料库设计。"
+    },
+    {
+      "title": "Cross-Domain Generalization in Machine Unlearning via Label-Conditioned Energy Magnitude Regularization",
+      "authors": [
+        "Syed Ali Ahmed",
+        "Syed Bilal Ahsan",
+        "Muhammad Zaigham Zaheer"
+      ],
+      "summary": "Machine unlearning removes the influence of specific data from a trained model. However, most methods treat the forgotten concept as isolated. In this paper, we study what happens to the rest of the model when a class is forgotten, using a label-conditioned energy-based model (EBM) that assigns per-class energies, making the effect directly observable. We forget a class by raising the energy of its image-label pairs, training with a forget term, a retain anchor to the pretrained model, a global margin, and an energy regularizer that stops the energy magnitudes from growing without limit. A propagation term applies the same forget signal to retain samples, weighted by each sample's DINOv2 similarity to the forget class, so forgetting reaches images that resemble it and leaves the rest untouched. We evaluate on two benchmark datasets: 1) On a subset of DomainNet across four visual domains, we forget tiger, lion, and scissors one at a time. Forgetting a class in the sketch domain also erases it from real, clipart, and painting, with forgetting error reaching 98% and 99% for lion and scissors, and the effect carrying over to the most similar class. 2) On CIFAR-10, we turn off the propagation term and forget each of the ten classes on its own. Forgetting is complete (100%), while the other nine classes retain 98.5% of their pre-unlearning accuracy on average.",
+      "published": "2026-08-18T16:01:19Z",
+      "updated": "2026-08-18T16:01:19Z",
+      "arxiv_id": "2608.17942v1",
+      "abs_url": "http://arxiv.org/abs/2608.17942v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17942v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "17 pages, 3 figures, accepted at the ECCV 2026 Workshop on Unlearning and Model Editing (U&Me)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 4,
+      "anchor_terms": [
+        "domain generalization"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "domain generalization"
+      ],
+      "title_zh": "通过标签条件能量幅度正则化实现机器遗忘的跨域泛化",
+      "summary_zh": "机器取消学习消除了训练模型中特定数据的影响。然而，大多数方法将被遗忘的概念视为孤立的。在本文中，我们研究了当一个类别被遗忘时模型的其余部分会发生什么，使用标签条件的基于能量的模型（EBM）分配每个类别的能量，使效果可以直接观察到。我们通过提高图像标签对的能量、使用遗忘项进行训练、预训练模型的保留锚、全局边距以及阻止能量大小无限制增长的能量正则化器来忘记一个类。传播项应用相同的遗忘信号来保留样本，并根据每个样本与遗忘类别的 DINOv2 相似性进行加权，因此遗忘会到达与其相似的图像，而其余图像则保持不变。我们对两个基准数据集进行评估：1）在跨四个视觉域的 DomainNet 子集上，我们一次忘记了老虎、狮子和剪刀。忘记素描领域中的类也会将其从真实、剪贴画和绘画中删除，狮子和剪刀的遗忘错误率达到 98% 和 99%，并且效果会延续到最相似的类。 2) 在 CIFAR-10 上，我们关闭传播项并单独忘记十个类别中的每一个类别。遗忘已完成（100%），而其他 9 个类别平均保留了遗忘前 98.5% 的准确度。"
+    },
+    {
+      "title": "Comparative Study of Out-of-the-Box Technology for Automatic Target Detection and Recognition",
+      "authors": [
+        "Alma M. Liezenga",
+        "Lotte Nijskens",
+        "Henrik R. Baumann",
+        "Stefan Becker",
+        "Simon Bensberg",
+        "Niccolò Camarlinghi",
+        "Håvard R. Eiring",
+        "Alexander W. Johnsgaard",
+        "Tanel Liiv",
+        "Giuseppe Martino",
+        "Matteo Marturini",
+        "Matthias Rapp",
+        "Jan Erik van Woerden",
+        "Alexander Wolpert",
+        "Hugo J. Kuijf"
+      ],
+      "summary": "Automatic Target Detection and Recognition (ATD/R) is critical for military decision support and (semi-)autonomous operations. Recent advances in object detection and artificial intelligence (AI) significantly boosted the potential performance of ATD/R. However, the scarcity of publicly available military datasets limits the application of these systems. As a solution, this paper explores the use of publicly available models and civilian datasets to achieve reasonable performance in military contexts. We benchmark several state-of-the-art models, including six iterations of the YOLO series and two variations on the DETR framework, on a newly acquired military relevant dataset. This dataset features military vehicles and challenging circumstances, including various degrees of occlusions and small targets. The out-of-the-box version of each model is validated alongside a version finetuned on the VisDrone dataset. This dataset features small objects, an Air-to-Ground (A2G) perspective and relevant classes, potentially generalizing to our military ATD/R task. We compare the performance of the models using mAP@0.5 and mAP@0.5:0.95, across A2G and Ground-to-Ground (G2G) perspective, target size and model size, giving insight into the real-time capabilities of models. Our main findings are: (1) bigger models outperform smaller models, (2) DETR-based models show promising results compared to the YOLO series,(3) fine-tuning models on an out-of-domain A2G dataset, improves their A2G performance and slightly improves their performance on small objects, but (4) all models still struggle with detecting small objects in an A2G scenario. We conclude that, despite recent advances in object detection, in-domain training is still crucial for creating capable ATD/R systems.",
+      "published": "2026-08-18T15:43:34Z",
+      "updated": "2026-08-18T15:43:34Z",
+      "arxiv_id": "2608.17917v1",
+      "abs_url": "http://arxiv.org/abs/2608.17917v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17917v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "This paper was originally presented at the International Conference on Military Communication and Information Systems, organized by the Information Systems Technology Scientific and Technical Committee, IST-224-RSY - the ICMCIS, held in Bath, United Kingdom, 12-13 May 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "高效微调与轻量化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 7,
+      "anchor_terms": [
+        "drone",
+        "object detection",
+        "small object"
+      ],
+      "matched_terms": [
+        "DETR",
+        "drone",
+        "fine-tuning",
+        "object detection",
+        "small object",
+        "YOLO"
+      ],
+      "title_zh": "自动目标检测与识别的开箱即用技术比较研究",
+      "summary_zh": "自动目标检测和识别 (ATD/R) 对于军事决策支持和（半）自主作战至关重要。物体检测和人工智能 (AI) 领域的最新进展显着提升了 ATD/R 的潜在性能。然而，公开可用的军事数据集的稀缺限制了这些系统的应用。作为一种解决方案，本文探讨了使用公开可用的模型和民用数据集在军事环境中实现合理的性能。我们在新获得的军事相关数据集上对几个最先进的模型进行了基准测试，包括 YOLO 系列的六次迭代和 DETR 框架的两个变体。该数据集以军用车辆和具有挑战性的环境为特征，包括不同程度的遮挡和小目标。每个模型的开箱即用版本均与在 VisDrone 数据集上微调的版本一起进行验证。该数据集包含小物体、空对地 (A2G) 视角和相关类别，有可能推广到我们的军事 ATD/R 任务。我们比较了使用 mAP@0.5 和 mAP@0.5:0.95 的模型在 A2G 和地对地 (G2G) 视角、目标大小和模型大小方面的性能，从而深入了解模型的实时功能。我们的主要发现是：(1) 较大的模型优于较小的模型，(2) 与 YOLO 系列相比，基于 DETR 的模型显示出有希望的结果，(3) 在域外 A2G 数据集上微调模型，提高了它们的 A2G 性能，并略微提高了它们在小物体上的性能，但 (4) 所有模型仍然难以检测 A2G 场景中的小物体。我们的结论是，尽管目标检测方面最近取得了进展，但域内训练对于创建强大的 ATD/R 系统仍然至关重要。"
+    },
+    {
+      "title": "ARASH: Adaptive Retrieval And Shot Selection for Tabular Prediction",
+      "authors": [
+        "Samirasadat Jamalidinan",
+        "Yue Xu",
+        "Kazem Cheshmi"
+      ],
+      "summary": "Tabular prediction is a critical task across numerous applications. The recent success of large language models has sparked various approaches for adapting them to the tabular domain. A prevalent strategy involves training or fine-tuning specialized Tabular Foundation Models (TFMs) such as TabPFN. However, TFMs require substantial computational resources, and frequent model retraining is often impractical. In-context learning (ICL), specifically, few-shot prompting, offers a resource-efficient alternative to enhance performance. Yet, identifying the most relevant rows to serve as shots remains a challenge for tabular data. This paper introduces ARASH (Adaptive, query-specific Retrieval And Shot selection), a method that improves TFM efficiency by selecting optimal shots based on local neighborhood analysis within the training set. Our results demonstrate that ARASH reduces the prompt length and memory usage of TabPFN by 1261.5$\\times$ and 2.56$\\times$, respectively, while providing comparable accuracy.",
+      "published": "2026-08-18T14:48:56Z",
+      "updated": "2026-08-18T14:48:56Z",
+      "arxiv_id": "2608.17856v1",
+      "abs_url": "http://arxiv.org/abs/2608.17856v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17856v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "foundation model",
+        "in-context learning",
+        "large language model"
+      ],
+      "title_zh": "ARASH：表格预测的自适应检索和镜头选择",
+      "summary_zh": "Tabular prediction is a critical task across numerous applications. The recent success of large language models has sparked various approaches for adapting them to the tabular domain. A prevalent strategy involves training or fine-tuning specialized Tabular Foundation Models (TFMs) such as TabPFN. However, TFMs require substantial computational resources, and frequent model retraining is often impractical. In-context learning (ICL), specifically, few-shot prompting, offers a resource-efficient alternative to enhance performance. Yet, identifying the most relevant rows to serve as shots remains a challenge for tabular data. This paper introduces ARASH (Adaptive, query-specific Retrieval And Shot selection), a method that improves TFM efficiency by selecting optimal shots based on local neighborhood analysis within the training set. Our results demonstrate that ARASH reduces the prompt length and memory usage of TabPFN by 1261.5$\\times$ and 2.56$\\times$, respectively, while providing comparable accuracy."
+    },
+    {
+      "title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+      "authors": [
+        "Ya Wen",
+        "Jixuan Cai",
+        "Yulun Zhou",
+        "Alec Kirkley"
+      ],
+      "summary": "Geospatial Foundation Models (GFMs) are emerging as a powerful paradigm for learning semantically rich and geographically consistent visual and physical representations. However, their reliance on Earth-observation (EO) data leaves information about human activity largely underrepresented. Human mobility data reveals the functional and relational structure between regions that is missing from EO data, but is often limited only to the city where it is observed, making it challenging to use for transferable urban representation learning. We introduce MoRAX, a lightweight framework for augmenting geospatial embeddings with functional structure derived from human mobility. MoRAX preserves the coverage and consistency of a GFM while providing information about the functional connectivity among urban regions, permitting zero-shot deployment in unseen cities with or without available mobility data. Across four target cities spanning two countries, the MoRAX teacher model, which observes mobility, consistently outperforms GFMs and strong urban representation baselines in eight socioeconomic and environmental prediction tasks. Meanwhile, the student model, which never takes mobility data as input, approaches the teacher in performance on most tasks. Transfer results across countries further demonstrate that modulation conditioned on mobility flows provides a general mechanism for grounding geospatial foundations in the human dimension of cities.",
+      "published": "2026-08-18T14:44:41Z",
+      "updated": "2026-08-18T14:44:41Z",
+      "arxiv_id": "2608.17848v1",
+      "abs_url": "http://arxiv.org/abs/2608.17848v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17848v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.SI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 14,
+      "anchor_terms": [
+        "foundation model",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model",
+        "GFM",
+        "zero-shot"
+      ],
+      "title_zh": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+      "summary_zh": "地理空间基础模型（GFM）正在成为学习语义丰富且地理一致的视觉和物理表示的强大范例。然而，他们对地球观测（EO）数据的依赖使得有关人类活动的信息在很大程度上未被充分体现。人员流动数据揭示了 EO 数据中缺失的区域之间的功能和关系结构，但通常仅限于观察到的城市，这使得用于可转移的城市表示学习具有挑战性。我们引入了 MoRAX，这是一种轻量级框架，用于通过源自人类移动性的功能结构来增强地理空间嵌入。 MoRAX 保留了 GFM 的覆盖范围和一致性，同时提供有关城市区域之间功能连接的信息，从而允许在有或没有可用移动数据的看不见的城市中进行零部署。在跨越两个国家的四个目标城市中，观察流动性的 MoRAX 教师模型在八项社会经济和环境预测任务中始终优于 GFM 和强大的城市代表性基线。与此同时，学生模型从不将移动数据作为输入，在大多数任务上的表现都接近老师。各国之间的转移结果进一步表明，以流动性为条件的调节提供了一种将地理空间基础扎根于城市人文维度的通用机制。"
+    },
+    {
+      "title": "Spatially explicit feature importance for building height estimation using research-access high-resolution SAR and optical sensors",
+      "authors": [
+        "Guilherme Iablonovski",
+        "Pierre-Louis Frison",
+        "Tatiana Silva da Silva"
+      ],
+      "summary": "Accurate building height information at the individual footprint scale is essential for material stock accounting and post-disaster damage assessments yet remains difficult to obtain at city scale in the Global South where airborne LiDAR coverage is rare and commercial very high-resolution imagery is cost-prohibitive or unavailable. While recent works have demonstrated building height estimation using freely available Sentinel imagery, the resolution ceiling of resulting products is still coarse for material stock analysis. This study incorporates products derived from data freely accessible under scientific research licenses, TerraSAR-X StripMap and PlanetScope, alongside Sentinel-1 to predict building heights in a large city in Brazil. To account for the spatial autocorrelation in the training set, features from all sources are integrated in a geographically weighted random forest model, returning an RMSE of 5.34 m and R2 of 0.756 against a LiDAR reference dataset. Local feature importance showed predictor dominance to vary consistently across intra-urban contexts, with footprint geometry dominating for low-rise buildings, shadow-derived height for taller and more isolated structures, and spectral reflectance for the tallest buildings in the set. Sentinel-1 backscatter and InSAR occupy complementary spatial niches, with no single sensor uniformly preferable across the set. Results provide optioneering guidance and insight over satellite-derived products predictive relevance in distinct contexts, which global machine learning or neural network models cannot offer.",
+      "published": "2026-08-18T14:20:53Z",
+      "updated": "2026-08-18T14:20:53Z",
+      "arxiv_id": "2608.17822v1",
+      "abs_url": "http://arxiv.org/abs/2608.17822v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17822v1",
+      "primary_category": "physics.soc-ph",
+      "categories": [
+        "physics.soc-ph",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "comment": "4 pages, 3 figures, intended for JURSE 2027",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "光学遥感",
+        "SAR遥感",
+        "高光谱/多光谱",
+        "LiDAR/点云",
+        "灾害与应急监测",
+        "数据集/评测"
+      ],
+      "topic": "光学遥感",
+      "score": 9,
+      "anchor_terms": [
+        "SAR",
+        "Sentinel-1"
+      ],
+      "matched_terms": [
+        "airborne",
+        "damage assessment",
+        "InSAR",
+        "LiDAR",
+        "SAR",
+        "satellite",
+        "Sentinel-1"
+      ],
+      "title_zh": "使用研究访问高分辨率 SAR 和光学传感器进行建筑物高度估计的空间显式特征重要性",
+      "summary_zh": "单个占地面积范围内准确的建筑高度信息对于材料库存核算和灾后损失评估至关重要，但在南半球的城市范围内仍然很难获得，因为机载激光雷达覆盖范围很少，商业超高分辨率图像成本高昂或无法获得。虽然最近的工作已经证明使用免费提供的 Sentinel 图像来估计建筑物高度，但对于材料库存分析而言，所得产品的分辨率上限仍然很粗糙。这项研究结合了根据科学研究许可可免费访问的数据、TerraSAR-X StripMap 和 PlanetScope 以及 Sentinel-1 所衍生的产品，以预测巴西一座大城市的建筑高度。为了考虑训练集中的空间自相关性，所有来源的特征都集成在地理加权随机森林模型中，针对 LiDAR 参考数据集返回 5.34 m 的 RMSE 和 0.756 的 R2。局部特征的重要性表明，预测变量的主导作用在城市内环境中始终存在变化，其中占地面积几何形状在低层建筑中占主导地位，阴影衍生的高度在较高且更孤立的结构中占主导地位，而光谱反射率在集合中最高的建筑物中占主导地位。 Sentinel-1 后向散射和 InSAR 占据了互补的空间位置，没有一个传感器在整个系列中具有一致的优势。结果为卫星衍生产品在不同背景下的预测相关性提供了选择指导和见解，这是全球机器学习或神经网络模型无法提供的。"
+    },
+    {
+      "title": "Training with synthetic data for drone detection in thermal imagery",
+      "authors": [
+        "Tanel Liiv",
+        "Sander Soodla",
+        "Nzamba Bignoumba",
+        "Alma M. Liezenga",
+        "Toomas Pruuden"
+      ],
+      "summary": "Ground-to-Air (G2A) drone detection in medium- and long-wave infrared (MWIR/LWIR) imagery is challenging due to reduced texture information, sensor noise, weak thermal contrast, and the scarcity of annotated data. This work investigates a synthetic-first training strategy that combines synthetic scene generation with fine-tuning on real data. We show that synthetic data provides an effective basis for learning initial object representations, while real in-domain thermal imagery is still essential for reliable deployment. Even small amounts of real IR data substantially reduce domain gaps. Our experiments indicate that dataset alignment has a stronger impact on performance than model scale. Finally, our analysis of the dataset suggests that semantic alignment in feature space is the strongest predictor of model performance, while radiometric properties such as entropy and dynamic range also contribute to detection robustness. This work provides a foundation for combining synthetic and real IR data for effective G2A drone detection.",
+      "published": "2026-08-18T13:59:58Z",
+      "updated": "2026-08-18T13:59:58Z",
+      "arxiv_id": "2608.17799v1",
+      "abs_url": "http://arxiv.org/abs/2608.17799v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17799v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.ET",
+        "cs.RO"
+      ],
+      "comment": "To be presented at SPIE: Sensors + Imaging, Artificial Intelligence for Security and Defence Applications IV",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 5,
+      "anchor_terms": [
+        "drone"
+      ],
+      "matched_terms": [
+        "drone",
+        "fine-tuning",
+        "robust"
+      ],
+      "title_zh": "使用合成数据进行热图像无人机检测训练",
+      "summary_zh": "由于纹理信息减少、传感器噪声、热对比度弱以及注释数据稀缺，中波红外 (MWIR/LWIR) 图像中的地对空 (G2A) 无人机检测具有挑战性。这项工作研究了一种合成优先的训练策略，该策略将合成场景生成与真实数据的微调相结合。我们表明，合成数据为学习初始对象表示提供了有效的基础，而真实的域内热图像对于可靠部署仍然至关重要。即使少量的真实红外数据也能显着减少域间隙。我们的实验表明，数据集对齐对性能的影响比模型规模更大。最后，我们对数据集的分析表明，特征空间中的语义对齐是模型性能的最强预测因素，而熵和动态范围等辐射特性也有助于检测的鲁棒性。这项工作为结合合成和真实红外数据以实现有效的 G2A 无人机检测奠定了基础。"
+    },
+    {
+      "title": "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models",
+      "authors": [
+        "Bilal Hussain",
+        "Xiao Tang",
+        "Qinghe Du",
+        "Tan Li",
+        "Muhammad Azhar",
+        "Danista Khan"
+      ],
+      "summary": "Deep learning-based DDoS detectors for 5G-enabled cyber-physical systems face scarce labeled attack data and unrealistic synthetic substitutes, which limit robustness against adaptive adversaries. Detectors trained on hand-crafted attacks with fixed scaling multipliers degrade catastrophically (F1-score drops of about 47 percent to 100 percent, depending on scenario) when confronted with realistic, distribution-preserving samples. We propose Diff-DDoS, a three-phase framework for realistic attack synthesis and robust detection using tabular diffusion models. Phase 1 trains a baseline CNN cell-level detector on spatiotemporal grids from call detail records (CDRs). Phase 2 trains a tabular denoising diffusion probabilistic model (TabDDPM) on normal CDR aggregates to generate realistic attacks and expose detector vulnerabilities. Phase 3 introduces adversarial diffusion training (ADT), using inverse classifier guidance to generate hard yet distribution-preserving samples until the detector converges. On a Milano CDR dataset across SMS-flooding, silent-call, Internet-signaling, and blended scenarios, ResNet50 with ADT recovers F1-scores of 79.62 percent (silent-call), 100 percent (Internet), and 92.79 percent (blended). After validation-based threshold calibration, ADT reaches 100 percent SMS F1 versus 47.3 percent for CTGAN, and matches the strongest gradient-based adversarial-training baseline on silent-call. These results support tabular diffusion models for stress-testing and hardening intrusion detectors in data-scarce 5G cyber-physical deployments.",
+      "published": "2026-08-18T13:56:47Z",
+      "updated": "2026-08-18T13:56:47Z",
+      "arxiv_id": "2608.17796v1",
+      "abs_url": "http://arxiv.org/abs/2608.17796v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17796v1",
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "comment": "Accepted manuscript. IEEE Transactions on Industrial Informatics, paper no. TII-26-6533. 11 pages + 9-page supplementary material (ancillary PDF). (c) 2026 IEEE. Personal use of this material is permitted",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 6,
+      "anchor_terms": [
+        "flood"
+      ],
+      "matched_terms": [
+        "CNN",
+        "denoising",
+        "diffusion model",
+        "flood",
+        "robust"
+      ],
+      "title_zh": "Diff-DDoS：使用表格扩散模型对支持 5G 的 CPS 进行真实的网络物理攻击合成和鲁棒检测",
+      "summary_zh": "用于支持 5G 的网络物理系统的基于深度学习的 DDoS 检测器面临着稀缺的标记攻击数据和不切实际的合成替代品，这限制了针对自适应对手的鲁棒性。当面对真实的、分布保持的样本时，使用固定缩放乘数进行手工攻击训练的检测器会出现灾难性的退化（F1 分数下降约 47% 到 100%，具体取决于场景）。我们提出了 Diff-DDoS，这是一个使用表格扩散模型进行真实攻击合成和鲁棒检测的三阶段框架。第 1 阶段在来自呼叫详细记录 (CDR) 的时空网格上训练基线 CNN 单元级检测器。第 2 阶段在正常 CDR 聚合上训练表格去噪扩散概率模型 (TabDDPM)，以生成真实的攻击并暴露检测器漏洞。第 3 阶段引入了对抗性扩散训练 (ADT)，使用逆分类器引导来生成困难但分布保持的样本，直到检测器收敛。在涵盖短信泛滥、无声呼叫、互联网信令和混合场景的 Milano CDR 数据集上，采用 ADT 的 ResNet50 恢复的 F1 分数为 79.62%（无声呼叫）、100%（互联网）和 92.79%（混合）。经过基于验证的阈值校准后，ADT 达到 100% SMS F1，而 CTGAN 达到 47.3%，并且与静默通话中最强的基于梯度的对抗训练基线相匹配。这些结果支持表格扩散模型，用于在数据稀缺的 5G 网络物理部署中进行压力测试和强化入侵检测器。"
+    },
+    {
+      "title": "MAGPIE-Net: Predicting short-duration heavy-rainfall events in station neighborhoods from multitemporal FY-4A AGRI observations",
+      "authors": [
+        "Xiang Lin",
+        "Yunying Li",
+        "Chengzhi Ye",
+        "Zitong Chen",
+        "Jing Sun"
+      ],
+      "summary": "Short-duration heavy-rainfall warning determines whether 1 h rainfall will exceed a threshold within a target-station neighborhood over the next few hours. Multitemporal infrared and water-vapor observations from the Fengyun-4A Advanced Geostationary Radiation Imager (FY-4A AGRI) capture cloud-top cooling, moisture evolution, and cloud expansion before substantial surface rainfall develops. However, most deep-learning nowcasting methods convert these signals into local warnings by post-processing gridded precipitation predictions, preventing station-neighborhood event targets from directly supervising the satellite-to-station learning pathway. We propose MAGPIE-Net, which embeds a geographically adaptive, differentiable grid-to-station mapping in a pathway combining convection-initiation features, multiscale encoding, and auxiliary gridded precipitation diagnosis. Station-neighborhood event losses thereby constrain the satellite representation and its mapping to irregular station locations for 0-3 h event prediction. In independent 2023 warm-season tests over central and eastern China, critical success index (CSI) values under the primary 40 km/20 mm h-1 definition were 0.371, 0.304, and 0.238 at 0-1, 1-2, and 2-3 h. Across episodes, MAGPIE-Net achieved a detection rate of 65.1% and a mean lead time of 64.6 min, compared with 23.6% and 18.3 min for the best gridded-output baseline, and remained superior for smaller neighborhoods and the 50 mm h-1 threshold. During the critical early-warning stage, when antecedent 1 h rainfall within 40 km remained below 1 mm, MAGPIE-Net detected 51.9% of episodes with a mean lead time of 38.5 min. These results show that event-oriented satellite-to-station modeling converts multitemporal geostationary cloud and moisture observations into local heavy-rainfall warnings more effectively than gridded-precipitation modeling.",
+      "published": "2026-08-18T13:17:21Z",
+      "updated": "2026-08-18T13:17:21Z",
+      "arxiv_id": "2608.17753v1",
+      "abs_url": "http://arxiv.org/abs/2608.17753v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17753v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "26pages, 10 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 2,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "satellite",
+        "temporal"
+      ],
+      "title_zh": "MAGPIE-Net：根据多时相 FY-4A AGRI 观测预测台站附近的短时强降雨事件",
+      "summary_zh": "短时暴雨警报确定未来几个小时内目标站附近 1 小时降雨量是否会超过阈值。风云四号A先进对地静止辐射成像仪（FY-4A AGRI）的多时相红外和水汽观测捕捉到了地面降雨大量出现之前的云顶冷却、水分演化和云膨胀。然而，大多数深度学习临近预报方法通过对网格化降水预测进行后处理，将这些信号转换为本地警报，从而防止站附近事件目标直接监督卫星到站的学习路径。我们提出了 MAGPIE-Net，它将地理自适应、可微的网格到站映射嵌入到结合对流起始特征、多尺度编码和辅助网格降水诊断的路径中。因此，邻近站点的事件损失限制了卫星表示及其映射到不规则站点位置以进行 0-3 小时事件预测。在2023年中国中部和东部地区的独立暖季测试中，40 km/20 mm h-1初始定义下的关键成功指数（CSI）值在0-1、1-2和2-3小时分别为0.371、0.304和0.238。在各个事件中，MAGPIE-Net 实现了 65.1% 的检测率和 64.6 分钟的平均前置时间，而最佳网格输出基线的检测率为 23.6% 和 18.3 分钟，并且对于较小的邻域和 50 mm h-1 阈值仍然表现出色。在关键预警阶段，当40公里范围内前1小时降雨量保持在1毫米以下时，MAGPIE-Net检测到51.9%的事件，平均提前时间为38.5分钟。这些结果表明，面向事件的卫星到站建模比网格降水建模更有效地将多时相静止云和水分观测转化为局部强降雨预警。"
+    },
+    {
+      "title": "Vision-Language Models for Analog Gauge Reading: An Empirical Study of Specialization, Transfer and Reliability",
+      "authors": [
+        "Abdul Mueez",
+        "Aaditya Baranwal",
+        "Junior Chaj-Mejia",
+        "Guneet Bhatia",
+        "Jason T. Voelker",
+        "Shruti Vyas"
+      ],
+      "summary": "Analog gauges remain common in industrial environments where manual inspection is costly or hazardous. The engineering application addressed here is direct numerical reading of single-target analog-gauge images, while the artificial-intelligence contribution is a systematic evaluation of specialization, transfer, robustness and reliability for a general-purpose vision-language model (VLM) without an explicit pointer-segmentation and geometric-reading pipeline. The Qwen2.5-VL-7B-Instruct model is evaluated using zero-shot prompting, in-context learning (ICL) and parameter-efficient fine-tuning with Quantized Low-Rank Adaptation (QLoRA) on a public synthetic dataset, a video-derived Pressure Gauge dataset and a proprietary industrial dataset. All fine-tuning experiments use a fixed 20-epoch protocol with the final epoch used for analysis; separate models with and without supplied gauge ranges remove prompt-setting confounds. The primary metric is range-normalized mean percentage error (MPE). The best fine-tuned MPE values are 2.39% on the synthetic dataset, with a 95% bootstrap confidence interval (CI) of 1.43-3.90%; 2.61% on the Pressure Gauge dataset, with a CI of 1.66-3.80%; and 4.43% on the proprietary industrial dataset, with a CI of 2.31-7.14%. Leave-one-dataset-out experiments reveal substantial transfer degradation on held-out synthetic and proprietary data, while robustness tests identify Gaussian blur as the strongest tested corruption. Reliability analysis shows that high-confidence errors remain possible, motivating abstention and independent validation in safety-critical use. These results support QLoRA-specialized VLMs for direct single-gauge reading but not yet a deployment-ready plant-monitoring pipeline.",
+      "published": "2026-08-18T12:47:14Z",
+      "updated": "2026-08-18T12:47:14Z",
+      "arxiv_id": "2608.17723v1",
+      "abs_url": "http://arxiv.org/abs/2608.17723v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17723v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Submitted to Engineering Applications of Artificial Intelligence",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 7,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "in-context learning",
+        "LoRA",
+        "robust",
+        "VLM",
+        "zero-shot"
+      ],
+      "title_zh": "用于模拟仪表读数的视觉语言模型：专业化、传递和可靠性的实证研究",
+      "summary_zh": "模拟仪表在手动检查成本高昂或危险的工业环境中仍然很常见。这里讨论的工程应用是单目标模拟测量图像的直接数值读取，而人工智能的贡献是对通用视觉语言模型（VLM）的专业化、传输、鲁棒性和可靠性的系统评估，而无需明确的指针分段和几何读取管道。 Qwen2.5-VL-7B-Instruct 模型使用零样本提示、上下文学习 (ICL) 以及通过量化低阶适应 (QLoRA) 进行的参数高效微调，在公共合成数据集、视频衍生的压力表数据集和专有工业数据集上进行评估。所有微调实验均使用固定的 20 epoch 协议，并使用最终 epoch 进行分析；带和不带仪表范围的单独型号消除了提示设置的混乱。主要指标是范围归一化平均百分比误差 (MPE)。合成数据集上的最佳微调 MPE 值为 2.39%，95% 自举置信区间 (CI) 为 1.43-3.90%；压力表数据集为 2.61%，CI 为 1.66-3.80%；专有工业数据集上的 CI 为 4.43%，CI 为 2.31-7.14%。留一数据集实验揭示了保留的合成和专有数据的传输性能大幅下降，而稳健性测试将高斯模糊确定为最强的测试损坏。可靠性分析表明，高置信度错误仍然是可能的，从而促使在安全关键用途中放弃并进行独立验证。这些结果支持 QLoRA 专用 VLM 进行直接单仪表读数，但尚未成为可部署的工厂监控管道。"
+    },
+    {
+      "title": "Environment-Invariant Subspace Learning for Generalizable Deepfake Detection",
+      "authors": [
+        "Shenghao Chen",
+        "Hao Jia",
+        "Chen Li",
+        "Chunjie Ma",
+        "Zan Gao",
+        "Shengyong Chen"
+      ],
+      "summary": "Cross-distribution generalization remains a critical bottleneck in deepfake detection. While recent efforts leverage the semantic priors of large-scale visual foundation models (VFMs), a noteworthy yet underexplored challenge remains: the susceptibility of these semantic priors to environmental interference from factors such as lighting and style. Crucially, this interference establishes spurious correlations between forgery cues and environmental patterns that severely limit generalization. To address this fundamental challenge, we propose an innovative Environment-Invariant Subspace Learning (EISL) framework. The core contribution of EISL is that it aims to disentangle features into orthogonal forgery-relevant invariant factors and environment-related residual factors via a learnable low-rank projection. To facilitate robust feature disentanglement, we also design an Environmental Intervention module that generates diverse and challenging intervention pairs, simulating out-of-distribution environmental shifts to guide the model toward discovering truly invariant forgery representations. Experiments across cross-dataset, cross-generator, whole-face synthesis, and corruption settings show consistent gains and competitive or leading performance against strong detectors, demonstrating improved robustness to unseen forgery types and environmental variations. This work provides a new perspective and a valuable exploration for understanding and tackling the generalization barriers of VFMs in deepfake detection.",
+      "published": "2026-08-18T12:22:21Z",
+      "updated": "2026-08-18T12:22:21Z",
+      "arxiv_id": "2608.17700v1",
+      "abs_url": "http://arxiv.org/abs/2608.17700v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17700v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "12 pages, 4 figures, 11 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "generalizable",
+        "LoRA",
+        "robust"
+      ],
+      "title_zh": "用于泛化 Deepfake 检测的环境不变子空间学习",
+      "summary_zh": "跨分布泛化仍然是深度伪造检测的关键瓶颈。虽然最近的努力利用了大规模视觉基础模型（VFM）的语义先验，但仍然存在一个值得注意但尚未充分探索的挑战：这些语义先验对照明和风格等因素的环境干扰的敏感性。至关重要的是，这种干扰在伪造线索和环境模式之间建立了虚假相关性，严重限制了泛化。为了应对这一基本挑战，我们提出了一种创新的环境不变子空间学习（EISL）框架。 EISL 的核心贡献在于，它旨在通过可学习的低秩投影将特征分解为正交伪造相关的不变因子和环境相关的残余因子。为了促进强大的特征解缠，我们还设计了一个环境干预模块，该模块生成多样化且具有挑战性的干预对，模拟分布外的环境变化，以指导模型发现真正不变的伪造表示。跨数据集、跨生成器、全脸合成和损坏设置的实验显示了与强检测器相比的一致增益和竞争或领先性能，证明了对看不见的伪造类型和环境变化的鲁棒性得到了提高。这项工作为理解和解决 VFM 在深度伪造检测中的泛化障碍提供了新的视角和有价值的探索。"
+    }
+  ]
+}
