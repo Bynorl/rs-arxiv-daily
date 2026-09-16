@@ -1,0 +1,1808 @@
+{
+  "date": "2026-09-16",
+  "generated_at": "2026-09-16T07:01:29.268413+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 41,
+  "papers": [
+    {
+      "title": "From Foundation Embeddings to Cropland Maps: Label Efficiency, Temporal Transferability and Independent Human Validation",
+      "authors": [
+        "Mohammad Ammar Mughees",
+        "Giovanni Montefoschi",
+        "Zhongxin Chen",
+        "Maria Antonia Brovelli"
+      ],
+      "summary": "Geospatial foundation models provide reusable representations of satellite imagery that support downstream mapping with limited task-specific modelling. We evaluate whether annual AlphaEarth embeddings support binary cultivated-versus-non-cultivated mapping in Maine, USA, using 192 spatially separated patches and labels derived from the USDA Cropland Data Layer (CDL). Without fine-tuning the foundation model, a lightweight classifier reaches 93.7% overall accuracy and 90.8% balanced accuracy on held-out patches. Logistic regression is within 0.3 percentage points of a gradient-boosted ensemble, while a nearest-class-centroid rule, which uses class centroids but fits no parameters, reaches 90.2%. A balanced sample of 60,000 labelled pixels is within 1.3 percentage points of the full pool of 8.6 million pixels; because pixels are spatially autocorrelated, this result concerns pixel-sample efficiency rather than 60,000 independent annotation sites. In a same-region transfer experiment, classifiers trained in one year remain accurate across 2018 to 2023. Against a blind, two-interpreter consensus at 385 randomly sampled points in one contiguous 2023 block, the AlphaEarth-plus-random-forest map agrees at 95.3% ($κ=0.82$), compared with 91.7% for the CDL ($κ=0.72$; exact two-sided McNemar $p=0.0161$). This local result is consistent with partial smoothing of CDL label noise, but it does not establish statewide correction of the reference product. On the same points, the difference from a fine-tuned TerraMind segmentation model is not statistically significant (95.3% versus 93.5%; $p=0.14$), and the experiment is not a controlled comparison of computational cost. These results support frozen geospatial embeddings as a low-compute candidate for regional cropland mapping, subject to the limits of a single-state study, a 30 m-derived training reference, and a one-block human validation.",
+      "published": "2026-09-15T13:04:35Z",
+      "updated": "2026-09-15T13:04:35Z",
+      "arxiv_id": "2609.17138v1",
+      "abs_url": "http://arxiv.org/abs/2609.17138v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.17138v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "eess.IV"
+      ],
+      "comment": "23 pages, 10 figures. Code: https://github.com/Black-Lights/alphaearth-cropland-maine",
+      "code_url": "https://github.com/Black-Lights/alphaearth-cropland-maine",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 10,
+      "anchor_terms": [
+        "crop",
+        "foundation model",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model",
+        "satellite image",
+        "satellite imagery",
+        "temporal"
+      ],
+      "matched_terms": [
+        "crop",
+        "fine-tuning",
+        "foundation model",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model",
+        "satellite",
+        "satellite image",
+        "satellite imagery",
+        "temporal"
+      ],
+      "title_zh": "From Foundation Embeddings to Cropland Maps: Label Efficiency, Temporal Transferability and Independent Human Validation",
+      "summary_zh": "Geospatial foundation models provide reusable representations of satellite imagery that support downstream mapping with limited task-specific modelling. We evaluate whether annual AlphaEarth embeddings support binary cultivated-versus-non-cultivated mapping in Maine, USA, using 192 spatially separated patches and labels derived from the USDA Cropland Data Layer (CDL). Without fine-tuning the foundation model, a lightweight classifier reaches 93.7% overall accuracy and 90.8% balanced accuracy on held-out patches. Logistic regression is within 0.3 percentage points of a gradient-boosted ensemble, while a nearest-class-centroid rule, which uses class centroids but fits no parameters, reaches 90.2%. A balanced sample of 60,000 labelled pixels is within 1.3 percentage points of the full pool of 8.6 million pixels; because pixels are spatially autocorrelated, this result concerns pixel-sample efficiency rather than 60,000 independent annotation sites. In a same-region transfer experiment, classifiers trained in one year remain accurate across 2018 to 2023. Against a blind, two-interpreter consensus at 385 randomly sampled points in one contiguous 2023 block, the AlphaEarth-plus-random-forest map agrees at 95.3% ($κ=0.82$), compared with 91.7% for the CDL ($κ=0.72$; exact two-sided McNemar $p=0.0161$). This local result is consistent with partial smoothing of CDL label noise, but it does not establish statewide correction of the reference product. On the same points, the difference from a fine-tuned TerraMind segmentation model is not statistically significant (95.3% versus 93.5%; $p=0.14$), and the experiment is not a controlled comparison of computational cost. These results support frozen geospatial embeddings as a low-compute candidate for regional cropland mapping, subject to the limits of a single-state study, a 30 m-derived training reference, and a one-block human validation."
+    },
+    {
+      "title": "VPRef: A Cross-Domain Benchmark for Referring Remote Sensing Image Segmentation",
+      "authors": [
+        "Quanwei Liu",
+        "Tao Huang",
+        "Jiaqi Yang",
+        "Wei Xiang"
+      ],
+      "summary": "Rapid advancements in vision-language models have propelled Referring Remote Sensing Image Segmentation (RRSIS) to the forefront of Earth observation. However, practical deployments suffer severe performance degradation under a coupled dual-drift paradigm: visual domain drift from cross-spatial-resolution mismatches and spectral variations, alongside textual logic drift from unconstrained, variable user-input granularities. To mitigate these bottlenecks, this paper establishes the first cross-domain RRSIS benchmark, designated as the Vaihingen-Potsdam Referring (VPRef) dataset, comprising 46,972 language-image-annotation triplets organized into a three-tier linguistic hierarchy. Building upon this benchmark, we develop a tailored parameter-efficient domain adaptation baseline anchored on the Segment Anything Model (SAM3) via Low-Rank Adaptation (LoRA). Our framework counteracts visual distribution discrepancies through pseudo-label-driven self-training and addresses textual logic drift via random multi-granularity text prompt mixing. Crucially, the distribution of empirical metrics across ablative variants suggests a potential decoupling between cross-modal semantic robustification and visual domain alignment, demonstrating that linguistic variance drives fine-grained semantic invariance while pseudo-label propagation governs macro-scale spatial grid alignment. Extensive benchmarks demonstrate the proposed framework achieves superior cross-domain segmentation boundaries while modifying merely 1.08\\% of the foundational parameter footprint, establishing a robust baseline for future multi-modal remote sensing domain adaptation research. The dataset and code will be available at https://github.com/quanweiliu/VPRef.",
+      "published": "2026-09-15T01:18:06Z",
+      "updated": "2026-09-15T01:18:06Z",
+      "arxiv_id": "2609.16486v1",
+      "abs_url": "http://arxiv.org/abs/2609.16486v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16486v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "12 pages, 7 figures, 6 tables",
+      "code_url": "https://github.com/quanweiliu/VPRef",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "语义分割",
+        "实例分割",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "多模态融合",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 21,
+      "anchor_terms": [
+        "earth observation",
+        "LoRA",
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "domain adaptation",
+        "earth observation",
+        "LoRA",
+        "multi-modal remote sensing",
+        "Potsdam",
+        "remote sensing",
+        "robust",
+        "Segment Anything Model",
+        "Vaihingen"
+      ],
+      "title_zh": "VPRef: A Cross-Domain Benchmark for Referring Remote Sensing Image Segmentation",
+      "summary_zh": "Rapid advancements in vision-language models have propelled Referring Remote Sensing Image Segmentation (RRSIS) to the forefront of Earth observation. However, practical deployments suffer severe performance degradation under a coupled dual-drift paradigm: visual domain drift from cross-spatial-resolution mismatches and spectral variations, alongside textual logic drift from unconstrained, variable user-input granularities. To mitigate these bottlenecks, this paper establishes the first cross-domain RRSIS benchmark, designated as the Vaihingen-Potsdam Referring (VPRef) dataset, comprising 46,972 language-image-annotation triplets organized into a three-tier linguistic hierarchy. Building upon this benchmark, we develop a tailored parameter-efficient domain adaptation baseline anchored on the Segment Anything Model (SAM3) via Low-Rank Adaptation (LoRA). Our framework counteracts visual distribution discrepancies through pseudo-label-driven self-training and addresses textual logic drift via random multi-granularity text prompt mixing. Crucially, the distribution of empirical metrics across ablative variants suggests a potential decoupling between cross-modal semantic robustification and visual domain alignment, demonstrating that linguistic variance drives fine-grained semantic invariance while pseudo-label propagation governs macro-scale spatial grid alignment. Extensive benchmarks demonstrate the proposed framework achieves superior cross-domain segmentation boundaries while modifying merely 1.08\\% of the foundational parameter footprint, establishing a robust baseline for future multi-modal remote sensing domain adaptation research. The dataset and code will be available at https://github.com/quanweiliu/VPRef."
+    },
+    {
+      "title": "A Sentinel-2 benchmark dataset for deep-learning active-fire segmentation across 25 California wildfires",
+      "authors": [
+        "Shreyan Mitra",
+        "Mohammadreza Narimani",
+        "Parastoo Farajpoor"
+      ],
+      "summary": "This article describes an open image dataset for developing and evaluating active-fire segmentation methods in satellite imagery. The dataset contains 2,148 image-mask pairs from 25 California wildfires, with acquisitions spanning July 2020 to August 2026. Each image is a 512x512-pixel, three-channel composite derived from Sentinel-2 Level-2A bands B12, B11 and B8A at 20 m spatial sampling. A fixed linear rendering is applied throughout the dataset. Corresponding masks distinguish background, SWIR-rule active fire and invalid observations. The masks were generated from shortwave-infrared brightness and near-infrared contrast, followed by constrained neighborhood growth. The release includes chip-level metadata and an incident-disjoint partition containing 18 training, three validation and four test fires. Among the image pairs, 841 contain active-fire labels; these labels occupy 0.0766% of all grid cells. A mask-blind analyst review covers 233 test chips and provides a separate assessment of the rule-generated labels at chip and connected-component levels. Reference training and evaluation code accompanies the data, including a ResNet-34 U-Net implementation with validation-based checkpoint and threshold selection. The archived images, masks, metadata and review annotations support research on rare-class segmentation, learning from algorithmic labels and transfer across fire incidents. The versioned dataset is deposited on Zenodo, with preparation and reuse software maintained in a public GitHub repository.",
+      "published": "2026-09-14T18:31:35Z",
+      "updated": "2026-09-14T18:31:35Z",
+      "arxiv_id": "2609.16199v1",
+      "abs_url": "http://arxiv.org/abs/2609.16199v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16199v1",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG",
+        "eess.SP",
+        "physics.geo-ph"
+      ],
+      "comment": "13 pages, 9 figures, 5 tables. Preprint submitted to Elsevier. Data: https://doi.org/10.5281/zenodo.22713948 Code: https://github.com/MohammadrezaNarimaniUCDavis/California_Sentinel2_Active_Fire_Dataset",
+      "code_url": "https://github.com/MohammadrezaNarimaniUCDavis/California_Sentinel2_Active_Fire_Dataset",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "语义分割",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 7,
+      "anchor_terms": [
+        "satellite image",
+        "satellite imagery",
+        "Sentinel-2"
+      ],
+      "matched_terms": [
+        "satellite",
+        "satellite image",
+        "satellite imagery",
+        "Sentinel-2",
+        "U-Net"
+      ],
+      "title_zh": "A Sentinel-2 benchmark dataset for deep-learning active-fire segmentation across 25 California wildfires",
+      "summary_zh": "This article describes an open image dataset for developing and evaluating active-fire segmentation methods in satellite imagery. The dataset contains 2,148 image-mask pairs from 25 California wildfires, with acquisitions spanning July 2020 to August 2026. Each image is a 512x512-pixel, three-channel composite derived from Sentinel-2 Level-2A bands B12, B11 and B8A at 20 m spatial sampling. A fixed linear rendering is applied throughout the dataset. Corresponding masks distinguish background, SWIR-rule active fire and invalid observations. The masks were generated from shortwave-infrared brightness and near-infrared contrast, followed by constrained neighborhood growth. The release includes chip-level metadata and an incident-disjoint partition containing 18 training, three validation and four test fires. Among the image pairs, 841 contain active-fire labels; these labels occupy 0.0766% of all grid cells. A mask-blind analyst review covers 233 test chips and provides a separate assessment of the rule-generated labels at chip and connected-component levels. Reference training and evaluation code accompanies the data, including a ResNet-34 U-Net implementation with validation-based checkpoint and threshold selection. The archived images, masks, metadata and review annotations support research on rare-class segmentation, learning from algorithmic labels and transfer across fire incidents. The versioned dataset is deposited on Zenodo, with preparation and reuse software maintained in a public GitHub repository."
+    },
+    {
+      "title": "Multisource Remote Sensing and Geospatial Analysis of Vineyard Wildfire Impacts and Resilience: The 2019 Kincade Fire",
+      "authors": [
+        "Parastoo Farajpoor",
+        "Mahla Ardebili Pour",
+        "Mohammad Bagher Ghiasi",
+        "Mohammadreza Narimani"
+      ],
+      "summary": "Working agricultural landscapes are often treated as background to wildfire disasters, even though they are managed fuel mosaics, productive assets, and parts of regional infrastructure systems. We examine vineyard wildfire resilience during the electrically initiated 2019 Kincade Fire in Sonoma County, California, using an open, event-anchored geospatial framework spanning 4,581 vineyard fields (8,813.2 ha), wildland vegetation, surveyed structures, roads, overhead smoke, and post-fire greenness. Sentinel-2, OpenET, gridMET, soils, terrain, NOAA smoke polygons, an ignition-date OpenStreetMap network, and three-dimensional data inventories were analyzed at native decision scales. Vineyard pixels showed substantially lower descriptive dNBR than wildland pixels inside the perimeter (means 0.130 and 0.337). This contrast did not identify a universal vineyard firebreak effect: a segment-clustered boundary model gave a small negative contrast at 100 m (tau = -0.0166) but changed across bandwidths, failed slope continuity, disappeared in a 100 m donut, and produced a wrong-signed placebo. A 250 m spatial GAM reversed the unconditional pattern: after conditioning on location, terrain, and water use, vineyard fraction was positively associated with dNBR, while residual Moran's I remained 0.519. Beyond spectral impact, all mapped vineyards intersected overhead smoke on at least one day (mean 7.78 potential smoke-days per field), 34.2% of road-network nodes were dead ends, and inside-perimeter vineyards showed a larger greenness deficit through 2021 (recovery ratios 0.815 inside and 0.854 outside). Lower immediate spectral impact therefore did not imply complete resilience. The study provides a reproducible urban-rural informatics template separating descriptive contrasts, conditional associations, exposure indicators, and recovery evidence for decisions in working landscapes.",
+      "published": "2026-09-14T18:06:35Z",
+      "updated": "2026-09-14T18:06:35Z",
+      "arxiv_id": "2609.16168v1",
+      "abs_url": "http://arxiv.org/abs/2609.16168v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16168v1",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "physics.ao-ph",
+        "physics.geo-ph",
+        "stat.AP"
+      ],
+      "comment": "18 pages, 11 figures, 4 tables. Preprint submitted to Frontiers. Data: https://doi.org/10.5281/zenodo.22713181 Code: https://github.com/MohammadrezaNarimaniUCDavis/Kincade_Vineyard_Wildfire_Resilience",
+      "code_url": "https://github.com/MohammadrezaNarimaniUCDavis/Kincade_Vineyard_Wildfire_Resilience",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "高光谱/多光谱"
+      ],
+      "topic": "高光谱/多光谱",
+      "score": 9,
+      "anchor_terms": [
+        "remote sensing",
+        "Sentinel-2"
+      ],
+      "matched_terms": [
+        "geospatial",
+        "remote sensing",
+        "Sentinel-2"
+      ],
+      "title_zh": "Multisource Remote Sensing and Geospatial Analysis of Vineyard Wildfire Impacts and Resilience: The 2019 Kincade Fire",
+      "summary_zh": "Working agricultural landscapes are often treated as background to wildfire disasters, even though they are managed fuel mosaics, productive assets, and parts of regional infrastructure systems. We examine vineyard wildfire resilience during the electrically initiated 2019 Kincade Fire in Sonoma County, California, using an open, event-anchored geospatial framework spanning 4,581 vineyard fields (8,813.2 ha), wildland vegetation, surveyed structures, roads, overhead smoke, and post-fire greenness. Sentinel-2, OpenET, gridMET, soils, terrain, NOAA smoke polygons, an ignition-date OpenStreetMap network, and three-dimensional data inventories were analyzed at native decision scales. Vineyard pixels showed substantially lower descriptive dNBR than wildland pixels inside the perimeter (means 0.130 and 0.337). This contrast did not identify a universal vineyard firebreak effect: a segment-clustered boundary model gave a small negative contrast at 100 m (tau = -0.0166) but changed across bandwidths, failed slope continuity, disappeared in a 100 m donut, and produced a wrong-signed placebo. A 250 m spatial GAM reversed the unconditional pattern: after conditioning on location, terrain, and water use, vineyard fraction was positively associated with dNBR, while residual Moran's I remained 0.519. Beyond spectral impact, all mapped vineyards intersected overhead smoke on at least one day (mean 7.78 potential smoke-days per field), 34.2% of road-network nodes were dead ends, and inside-perimeter vineyards showed a larger greenness deficit through 2021 (recovery ratios 0.815 inside and 0.854 outside). Lower immediate spectral impact therefore did not imply complete resilience. The study provides a reproducible urban-rural informatics template separating descriptive contrasts, conditional associations, exposure indicators, and recovery evidence for decisions in working landscapes."
+    },
+    {
+      "title": "Safe Error Correction for Language Models: Frozen-Base Adjustment with Capability Preservation",
+      "authors": [
+        "Gautam Kishore"
+      ],
+      "summary": "We study a practical question: can a small correction module fix errors in a frozen language model's outputs without degrading its base capabilities? We propose CRN v2, a lightweight logit-level correction module (~34M trainable parameters, 0.73% of the 4.65B text module) that sits atop a fully frozen Gemma 4 E2B model. The base model is never updated; only the correction module learns, via supervised fine-tuning followed by reference-free DPO on 83,400 error-correction pairs. On a 60-question domain exam (CEHRI: Certified Human-Robot Intelligence, covering facts, arithmetic, and implicit-goal reasoning), CRN v2 corrects 53.3% of base-model errors (reworded variant: 43.3%) while showing no degradation on tested capability benchmarks (MMLU/BoolQ N=200; car-wash N=8). A LoRA baseline at the matched CRN v1 budget (6.6M params, rank 19) achieves 83.3% correction but suffers 30-75% capability loss on the same benchmarks -- the correction-capability tradeoff. An ablation shows that the KL preservation term (lambda=0.1) is critical: lowering it to 0.01 degrades correction to 35.0%. A hidden-state injection variant at earlier layers (1.6M params, SFT-only) reaches 50.0%/55.8% but does not exceed logit correction; shallower injection (layer 4) drops to 30.0%/28.3%; multi-depth logit correction (~35M) reaches only 40%; and longer training (5,000 SFT + 2,000 DPO) stays at 53.3% -- none of the alternative configurations we tested exceeded the rank-128 logit result, consistent with a best-achieved result of ~53% rather than a floor. This is a study of a design principle (frozen base + logit correction + KL anchoring), not a claim of architectural novelty. All code, main-result weights, and evaluation scripts are released (deep variant as code only -- no trained deep checkpoints).",
+      "published": "2026-09-14T18:00:15Z",
+      "updated": "2026-09-14T18:00:15Z",
+      "arxiv_id": "2609.16145v1",
+      "abs_url": "http://arxiv.org/abs/2609.16145v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16145v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.NE"
+      ],
+      "comment": "10 pages, 4 tables. Code, weights, and evaluation scripts: https://github.com/eulogik/prajna and https://huggingface.co/eulogik/Prajna-CRNv2",
+      "code_url": "https://github.com/eulogik/prajna",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Safe Error Correction for Language Models: Frozen-Base Adjustment with Capability Preservation",
+      "summary_zh": "We study a practical question: can a small correction module fix errors in a frozen language model's outputs without degrading its base capabilities? We propose CRN v2, a lightweight logit-level correction module (~34M trainable parameters, 0.73% of the 4.65B text module) that sits atop a fully frozen Gemma 4 E2B model. The base model is never updated; only the correction module learns, via supervised fine-tuning followed by reference-free DPO on 83,400 error-correction pairs. On a 60-question domain exam (CEHRI: Certified Human-Robot Intelligence, covering facts, arithmetic, and implicit-goal reasoning), CRN v2 corrects 53.3% of base-model errors (reworded variant: 43.3%) while showing no degradation on tested capability benchmarks (MMLU/BoolQ N=200; car-wash N=8). A LoRA baseline at the matched CRN v1 budget (6.6M params, rank 19) achieves 83.3% correction but suffers 30-75% capability loss on the same benchmarks -- the correction-capability tradeoff. An ablation shows that the KL preservation term (lambda=0.1) is critical: lowering it to 0.01 degrades correction to 35.0%. A hidden-state injection variant at earlier layers (1.6M params, SFT-only) reaches 50.0%/55.8% but does not exceed logit correction; shallower injection (layer 4) drops to 30.0%/28.3%; multi-depth logit correction (~35M) reaches only 40%; and longer training (5,000 SFT + 2,000 DPO) stays at 53.3% -- none of the alternative configurations we tested exceeded the rank-128 logit result, consistent with a best-achieved result of ~53% rather than a floor. This is a study of a design principle (frozen base + logit correction + KL anchoring), not a claim of architectural novelty. All code, main-result weights, and evaluation scripts are released (deep variant as code only -- no trained deep checkpoints)."
+    },
+    {
+      "title": "LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence",
+      "authors": [
+        "Xingxuan Zhang",
+        "Gang Ren",
+        "Hao Yuan",
+        "Hao Zou",
+        "Hongze Tan",
+        "Hui Wang",
+        "Jianhao Song",
+        "Jiansheng Li",
+        "Jiayao Zhang",
+        "Jinghan Zhang",
+        "Kaifang Li",
+        "Lang Mo",
+        "Li Mao",
+        "Mingchao Hao",
+        "Nuo Xu",
+        "Rui Ding",
+        "Ruiji Zhang",
+        "Shuyang Li",
+        "Siyu Mei",
+        "Tianyang Zhang",
+        "Weiyang Mu",
+        "Yancheng Dong",
+        "Yongxian Wei",
+        "Yuan Xue",
+        "Yuanrui Wang",
+        "Yue He",
+        "Zijia Yang",
+        "Ziyun Li",
+        "Dongzhe Li",
+        "Fuqiang Wang",
+        "Jiandong Liu",
+        "Jiawei Chen",
+        "Jiaxin Du",
+        "Kaijie Cheng",
+        "Kehan Li",
+        "Lei Sun",
+        "Linjun Zhou",
+        "Ningbo Dai",
+        "Qi Wang",
+        "Renzhe Xu",
+        "Shaoxing Du",
+        "Shumeng Yang",
+        "Wang Lu",
+        "Wenjing Chu",
+        "Xiannan Huang",
+        "Xiaoyu Lin",
+        "Xing Ai",
+        "Xinyan Han",
+        "Xuanyue Li",
+        "Xuanyue Su",
+        "Xukun Zhang",
+        "Yan Lu",
+        "Yaxin Zhang",
+        "Yi Qin",
+        "Yifei Huang",
+        "Yihan Xu",
+        "Yongle Lv",
+        "Yuanyuan Jiang",
+        "Yushan Han",
+        "Peng Cui"
+      ],
+      "summary": "We introduce LimiX-2, a new model in the LimiX family, developed through model and data scaling guided by our previously established scaling laws. LimiX-2 adopts the Contextual Mechanism Networks (CMNs) paradigm and is pretrained with Context-Conditional Masked Modeling (CCMM). CMNs shifts the organizing principle of in-context learning from target-centric prediction to mechanism-oriented joint modeling. Rather than centering the network on the $p(y \\mid x, D_{\\mathrm{context}})$ objective of conventional tabular PFNs, it is designed around learning $p(x, y \\mid D_{\\mathrm{context}})$, a context-dependent representation of the joint structure underlying data generation. Pretraining uses synthetic datasets generated by structural causal models (SCMs) spanning diverse graph structures, functional mechanisms, and observation processes. Evaluations on TabArena, TALENT, and BCCO show that LimiX-2 outperforms current dataset-specific models and tabular foundation models. Beyond predictive performance, the CMN paradigm also promotes causal awareness in LimiX-2: its feature attention encodes direct causal relationships, enabling accurate causal skeleton recovery.",
+      "published": "2026-09-15T17:30:02Z",
+      "updated": "2026-09-15T17:30:02Z",
+      "arxiv_id": "2609.17488v1",
+      "abs_url": "http://arxiv.org/abs/2609.17488v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.17488v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 2,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning"
+      ],
+      "title_zh": "LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence",
+      "summary_zh": "We introduce LimiX-2, a new model in the LimiX family, developed through model and data scaling guided by our previously established scaling laws. LimiX-2 adopts the Contextual Mechanism Networks (CMNs) paradigm and is pretrained with Context-Conditional Masked Modeling (CCMM). CMNs shifts the organizing principle of in-context learning from target-centric prediction to mechanism-oriented joint modeling. Rather than centering the network on the $p(y \\mid x, D_{\\mathrm{context}})$ objective of conventional tabular PFNs, it is designed around learning $p(x, y \\mid D_{\\mathrm{context}})$, a context-dependent representation of the joint structure underlying data generation. Pretraining uses synthetic datasets generated by structural causal models (SCMs) spanning diverse graph structures, functional mechanisms, and observation processes. Evaluations on TabArena, TALENT, and BCCO show that LimiX-2 outperforms current dataset-specific models and tabular foundation models. Beyond predictive performance, the CMN paradigm also promotes causal awareness in LimiX-2: its feature attention encodes direct causal relationships, enabling accurate causal skeleton recovery."
+    },
+    {
+      "title": "Det-LIME: Detector-Aware, Multi-Instance Local Interpretable Model-Agnostic Explanations for Automated Marine Mammal Detection",
+      "authors": [
+        "Jiayi Zhou",
+        "David W. Johnston",
+        "Brinnae Bent"
+      ],
+      "summary": "Despite the rapid uptake of black-box object detectors in marine mammal research and monitoring, explainability techniques are rarely integrated into conservation workflows. Furthermore, most classification-oriented explainability tools are ill-suited to detection tasks involving imagery of social organisms or those with colonial life histories, as they ignore multiple detections within a scene and produce single-instance outputs that blur evidence across individuals. These methods also generate low-resolution, often biologically irrelevant visuals, limiting their utility for debugging, targeted data augmentation, and refined data collection. We proposed Det-LIME, a detector-aware, multi-instance adaptation of Local Interpretable Model-Agnostic Explanations (LIME) that produced instance-specific, box-aligned explanations by combining per-detection weighting, a proximity kernel that emphasizes regions near each box, and Intersection-over-Union-based matching to track the same instance across perturbations. We evaluated Det-LIME on aerial drone imagery for harbor seal detection, with an additional seabird case study to assess generality, and compared it with vanilla LIME, Stabilized LIME, Deterministic LIME, and gradient-based attribution methods. Using the Attribution Ratio and Max Saliency Hit Rate metrics, we showed that Det-LIME consistently improved multi-instance attribution. In practice, these higher-resolution, instance-aware explanations provide insight into model outputs and support post-processing, debugging, and actionable improvements in modeling and data collection or augmentation.",
+      "published": "2026-09-15T17:20:16Z",
+      "updated": "2026-09-15T17:20:16Z",
+      "arxiv_id": "2609.17479v1",
+      "abs_url": "http://arxiv.org/abs/2609.17479v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.17479v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "无人机/UAV",
+      "score": 4,
+      "anchor_terms": [
+        "drone"
+      ],
+      "matched_terms": [
+        "aerial",
+        "drone"
+      ],
+      "title_zh": "Det-LIME: Detector-Aware, Multi-Instance Local Interpretable Model-Agnostic Explanations for Automated Marine Mammal Detection",
+      "summary_zh": "Despite the rapid uptake of black-box object detectors in marine mammal research and monitoring, explainability techniques are rarely integrated into conservation workflows. Furthermore, most classification-oriented explainability tools are ill-suited to detection tasks involving imagery of social organisms or those with colonial life histories, as they ignore multiple detections within a scene and produce single-instance outputs that blur evidence across individuals. These methods also generate low-resolution, often biologically irrelevant visuals, limiting their utility for debugging, targeted data augmentation, and refined data collection. We proposed Det-LIME, a detector-aware, multi-instance adaptation of Local Interpretable Model-Agnostic Explanations (LIME) that produced instance-specific, box-aligned explanations by combining per-detection weighting, a proximity kernel that emphasizes regions near each box, and Intersection-over-Union-based matching to track the same instance across perturbations. We evaluated Det-LIME on aerial drone imagery for harbor seal detection, with an additional seabird case study to assess generality, and compared it with vanilla LIME, Stabilized LIME, Deterministic LIME, and gradient-based attribution methods. Using the Attribution Ratio and Max Saliency Hit Rate metrics, we showed that Det-LIME consistently improved multi-instance attribution. In practice, these higher-resolution, instance-aware explanations provide insight into model outputs and support post-processing, debugging, and actionable improvements in modeling and data collection or augmentation."
+    },
+    {
+      "title": "Multimodal Cultural Heritage Architectural Style Classification for Residential Buildings in the UAE Based on CLIP Embeddings and SVM",
+      "authors": [
+        "Ahmed Ammar Kubba",
+        "Manar Abu Talib",
+        "Iman Ibrahim",
+        "Qassim Nasir"
+      ],
+      "summary": "The analysis and classification of cultural heritage architectural styles remain challenging due to the complexity of visual images of buildings, which are highly relied on in traditional CNN-based classification approaches in comparison to textual descriptions, and the relative lack of non-western region-specific datasets. This paper addresses this gap by proposing a multimodal machine learning framework to analyze and classify Emirati residential architecture using OpenAI's CLIP model. We integrate visual features from images and textual features from expert descriptions into a unified 512-dimensional embedding, followed by dimensionality reduction with UMAP for visualization and unsupervised clustering using K-Means. Cluster labels, which are derived from manual analysis of the K-Means clusters, are used to train an SVM classifier for automated architectural style classification. Our approach achieves a classification accuracy of 98% across eight identified style clusters, higher than every other study in the literature, demonstrating the effectiveness of combining visual and textual modalities. Overall, this paper highlights the potential of using multimodal AI to support architectural heritage analysis, offering scalable and interpretable tools for exploring regional architectural identities.",
+      "published": "2026-09-15T13:41:36Z",
+      "updated": "2026-09-15T13:41:36Z",
+      "arxiv_id": "2609.17181v1",
+      "abs_url": "http://arxiv.org/abs/2609.17181v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.17181v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "8 pages, 8 figures, 3 tables, published at 15th International Conference on Intelligent Systems: Theories and Applications",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 5,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "CNN",
+        "unsupervised"
+      ],
+      "title_zh": "Multimodal Cultural Heritage Architectural Style Classification for Residential Buildings in the UAE Based on CLIP Embeddings and SVM",
+      "summary_zh": "The analysis and classification of cultural heritage architectural styles remain challenging due to the complexity of visual images of buildings, which are highly relied on in traditional CNN-based classification approaches in comparison to textual descriptions, and the relative lack of non-western region-specific datasets. This paper addresses this gap by proposing a multimodal machine learning framework to analyze and classify Emirati residential architecture using OpenAI's CLIP model. We integrate visual features from images and textual features from expert descriptions into a unified 512-dimensional embedding, followed by dimensionality reduction with UMAP for visualization and unsupervised clustering using K-Means. Cluster labels, which are derived from manual analysis of the K-Means clusters, are used to train an SVM classifier for automated architectural style classification. Our approach achieves a classification accuracy of 98% across eight identified style clusters, higher than every other study in the literature, demonstrating the effectiveness of combining visual and textual modalities. Overall, this paper highlights the potential of using multimodal AI to support architectural heritage analysis, offering scalable and interpretable tools for exploring regional architectural identities."
+    },
+    {
+      "title": "Continual Learning for Traversability Prediction with Uncertainty-Aware Adaptation",
+      "authors": [
+        "Hojin Lee",
+        "Yunho Lee",
+        "Daniel A Duecker",
+        "Cheolhyeon Kwon"
+      ],
+      "summary": "Traversability prediction is a critical component of autonomous navigation in unstructured environments, where complex and uncertain robot-terrain interactions pose significant challenges such as traction loss and dynamic instability. Despite recent progress in learning-based traversability prediction, these methods often fail to adapt to novel terrains. Even when adaptation is achieved, retaining experience from previously trained environments remains a challenge, a problem known as catastrophic forgetting. To address this challenge, we propose a continual learning framework for traversability prediction that incrementally adapts to new terrains using a generative experience recall model. A key virtue of the proposed framework is two folds: i) retain prior experience without storing past data; and ii) incorporate the uncertainty of the generated samples from the recall model, enabling uncertainty-aware adaptation. Real-world experiments with a skid-steering robot validate the effectiveness of the proposed framework, demonstrating its ability to adapt across a series of diverse environments while mitigating catastrophic forgetting.",
+      "published": "2026-09-15T13:07:14Z",
+      "updated": "2026-09-15T13:07:14Z",
+      "arxiv_id": "2609.17141v1",
+      "abs_url": "http://arxiv.org/abs/2609.17141v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.17141v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "Accepted version of the article published in IEEE Robotics and Automation Letters. DOI: 10.1109/LRA.2025.3619687",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 3,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "continual learning"
+      ],
+      "title_zh": "Continual Learning for Traversability Prediction with Uncertainty-Aware Adaptation",
+      "summary_zh": "Traversability prediction is a critical component of autonomous navigation in unstructured environments, where complex and uncertain robot-terrain interactions pose significant challenges such as traction loss and dynamic instability. Despite recent progress in learning-based traversability prediction, these methods often fail to adapt to novel terrains. Even when adaptation is achieved, retaining experience from previously trained environments remains a challenge, a problem known as catastrophic forgetting. To address this challenge, we propose a continual learning framework for traversability prediction that incrementally adapts to new terrains using a generative experience recall model. A key virtue of the proposed framework is two folds: i) retain prior experience without storing past data; and ii) incorporate the uncertainty of the generated samples from the recall model, enabling uncertainty-aware adaptation. Real-world experiments with a skid-steering robot validate the effectiveness of the proposed framework, demonstrating its ability to adapt across a series of diverse environments while mitigating catastrophic forgetting."
+    },
+    {
+      "title": "Distributed JEPA: A Self-Supervised Framework for Energy Forecasting",
+      "authors": [
+        "Liana Toderean",
+        "Tudor Cioara",
+        "Vasilis Michalakopoulos",
+        "Efstathios Sarantinopoulos",
+        "Ionut Anghel",
+        "Elissaios Sarmas"
+      ],
+      "summary": "Traditional energy forecasting solutions rely on task-specific supervision and energy asset representations, limiting transferability and the ability to capture general temporal dynamics across heterogeneous assets. We address this by proposing a distributed Joint Embedding Predictive Architecture (JEPA) for self-supervised learning from heterogeneous energy time-series. The framework predicts latent representations of masked temporal segments while integrating temporal observations and contextual information within a shared embedding space. To prevent representation collapse, training combines a latent-space predictive objective with covariance and temporal variance regularization. The evaluation was conducted on energy consumption and generation datasets under data-degradation scenarios and compared with a Transformer forecasting baseline. The learned representations remained stable (cosine similarity $\\approx 0.98$; effective rank 185-235). JEPA achieved performance comparable to a Transformer on building energy data, higher $R^2$ in 3/5 consumer clusters, and outperformed the baseline on 9/10 unseen PVs ($R^2$=0.73-0.88 vs. <0.45), while showing greater robustness to missing data.",
+      "published": "2026-09-15T11:36:20Z",
+      "updated": "2026-09-15T11:36:20Z",
+      "arxiv_id": "2609.17029v1",
+      "abs_url": "http://arxiv.org/abs/2609.17029v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.17029v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 6,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "robust",
+        "self-supervised",
+        "self-supervised learning",
+        "temporal",
+        "time-series",
+        "transformer"
+      ],
+      "title_zh": "Distributed JEPA: A Self-Supervised Framework for Energy Forecasting",
+      "summary_zh": "Traditional energy forecasting solutions rely on task-specific supervision and energy asset representations, limiting transferability and the ability to capture general temporal dynamics across heterogeneous assets. We address this by proposing a distributed Joint Embedding Predictive Architecture (JEPA) for self-supervised learning from heterogeneous energy time-series. The framework predicts latent representations of masked temporal segments while integrating temporal observations and contextual information within a shared embedding space. To prevent representation collapse, training combines a latent-space predictive objective with covariance and temporal variance regularization. The evaluation was conducted on energy consumption and generation datasets under data-degradation scenarios and compared with a Transformer forecasting baseline. The learned representations remained stable (cosine similarity $\\approx 0.98$; effective rank 185-235). JEPA achieved performance comparable to a Transformer on building energy data, higher $R^2$ in 3/5 consumer clusters, and outperformed the baseline on 9/10 unseen PVs ($R^2$=0.73-0.88 vs. <0.45), while showing greater robustness to missing data."
+    },
+    {
+      "title": "CLARE: Scalable Class-Incremental Continual Learning via a Sparsity-Based Framework",
+      "authors": [
+        "Yunxiang Fu",
+        "Meng Lou",
+        "Zicheng Liao",
+        "Yizhou Yu"
+      ],
+      "summary": "Continual learning must balance the learning of new knowledge with the retention of previously learned knowledge to incrementally learn tasks from a data stream without catastrophic forgetting. While leveraging pretrained models has significantly advanced continual learning, existing methods exhibit a scalability bottleneck when trained sequentially on many tasks, suffering from performance degradation due to inter-task interference and loss of plasticity. Inspired by evidence that sparse fine-tuning achieves performance comparable to full fine-tuning, this paper presents a novel sparsity-driven continual learning framework. Our continual learning method, termed CLARE, operates in two stages: it first identifies a sparse, task-critical parameter mask via a sparsity-inducing objective, then performs mask-constrained fine-tuning by only optimizing parameters selected by the mask. This two-stage sparse adapter mechanism enables all tasks to be accumulated within a shared adapter space while reducing destructive interference across tasks. Extensive experiments demonstrate the scalability of CLARE. On the long task-sequence benchmark Omnibenchmark-1k, CLARE outperforms strong baselines in final accuracy by a large margin, e.g, improving EASE by 4.64% and 13.34% after learning 100 tasks, respectively.",
+      "published": "2026-09-15T11:33:44Z",
+      "updated": "2026-09-15T11:33:44Z",
+      "arxiv_id": "2609.17026v1",
+      "abs_url": "http://arxiv.org/abs/2609.17026v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.17026v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "comment": "BMVC2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 8,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "adapter",
+        "catastrophic forgetting",
+        "class-incremental",
+        "continual learning",
+        "fine-tuning"
+      ],
+      "title_zh": "CLARE: Scalable Class-Incremental Continual Learning via a Sparsity-Based Framework",
+      "summary_zh": "Continual learning must balance the learning of new knowledge with the retention of previously learned knowledge to incrementally learn tasks from a data stream without catastrophic forgetting. While leveraging pretrained models has significantly advanced continual learning, existing methods exhibit a scalability bottleneck when trained sequentially on many tasks, suffering from performance degradation due to inter-task interference and loss of plasticity. Inspired by evidence that sparse fine-tuning achieves performance comparable to full fine-tuning, this paper presents a novel sparsity-driven continual learning framework. Our continual learning method, termed CLARE, operates in two stages: it first identifies a sparse, task-critical parameter mask via a sparsity-inducing objective, then performs mask-constrained fine-tuning by only optimizing parameters selected by the mask. This two-stage sparse adapter mechanism enables all tasks to be accumulated within a shared adapter space while reducing destructive interference across tasks. Extensive experiments demonstrate the scalability of CLARE. On the long task-sequence benchmark Omnibenchmark-1k, CLARE outperforms strong baselines in final accuracy by a large margin, e.g, improving EASE by 4.64% and 13.34% after learning 100 tasks, respectively."
+    },
+    {
+      "title": "AeroLat: Channel-Aware Latent Space Semantic Communication for Decentralized UAV Swarms",
+      "authors": [
+        "Rajdeep Ghosh",
+        "Goparaju Venkata Seshachala Sree Vatsava",
+        "Sudip Misra"
+      ],
+      "summary": "Communication in latent space offers an intriguing alternative to symbolic messages for decentralized autonomous Unmanned Aerial Vehicle (UAV) swarms operating over bandwidth-constrained, time-varying wireless links. However, when homogeneous frozen models are prompted with discretized perceptual inputs, their broadcast states collapse toward the shared prompt template. In view of this, we propose AeroLat, a channel-aware latent semantic communication framework that uses evidence injection. The resulting latent states are then passed through an explicit communication model that encompasses bandwidth-limited serialization, additive noise and information staleness, which facilitates a joint assessment of communication fidelity and swarm-level coordination. Across multi-seed simulations, AeroLat provably remains resilient to codec choice, faults and increasing swarm size. It consistently reproduces the latent-swarm anomaly, while no-whitening controls recover the collapse. In particular, AeroLat is capable of reducing false similarity by 97.5%.",
+      "published": "2026-09-15T10:26:23Z",
+      "updated": "2026-09-15T10:26:23Z",
+      "arxiv_id": "2609.16947v1",
+      "abs_url": "http://arxiv.org/abs/2609.16947v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16947v1",
+      "primary_category": "cs.NI",
+      "categories": [
+        "cs.NI",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV"
+      ],
+      "topic": "无人机/UAV",
+      "score": 5,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "AeroLat: Channel-Aware Latent Space Semantic Communication for Decentralized UAV Swarms",
+      "summary_zh": "Communication in latent space offers an intriguing alternative to symbolic messages for decentralized autonomous Unmanned Aerial Vehicle (UAV) swarms operating over bandwidth-constrained, time-varying wireless links. However, when homogeneous frozen models are prompted with discretized perceptual inputs, their broadcast states collapse toward the shared prompt template. In view of this, we propose AeroLat, a channel-aware latent semantic communication framework that uses evidence injection. The resulting latent states are then passed through an explicit communication model that encompasses bandwidth-limited serialization, additive noise and information staleness, which facilitates a joint assessment of communication fidelity and swarm-level coordination. Across multi-seed simulations, AeroLat provably remains resilient to codec choice, faults and increasing swarm size. It consistently reproduces the latent-swarm anomaly, while no-whitening controls recover the collapse. In particular, AeroLat is capable of reducing false similarity by 97.5%."
+    },
+    {
+      "title": "SPEAR NeXT Causal Latent Forecasting Across Multiple Horizons for Spectral Temporal Earth Representation Learning",
+      "authors": [
+        "Rajiv Ranjan",
+        "Udaiveer Singh",
+        "Shashank Tamaskar",
+        "Dharmendra Saraswat"
+      ],
+      "summary": "Earth observation is inherently dynamic, yet temporal information in many foundation models is learned through reconstruction, invariance, or retrospective sequence summarization. SPEAR NeXT is introduced as a compact pixel-wise multimodal spectral temporal foundation model in which temporal self supervision is formulated as past only, multi horizon latent Earth state prediction. Instantaneous states are first encoded by the pretrained SPEAR model from optical, radar, and environmental observations into compact 32 dimensional embeddings. Their temporal evolution is then modeled by a causally masked Trans former that predicts multiple future latent states from pre ceding observations. Relative temporal order is represented using Rotary Position Embeddings, while month and year embeddings encode seasonal phase and interannual con text.",
+      "published": "2026-09-15T09:04:10Z",
+      "updated": "2026-09-15T09:04:10Z",
+      "arxiv_id": "2609.16871v1",
+      "abs_url": "http://arxiv.org/abs/2609.16871v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16871v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "24 Pages",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "多模态融合",
+        "高光谱/多光谱"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "earth observation",
+        "foundation model",
+        "temporal"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "foundation model",
+        "temporal"
+      ],
+      "title_zh": "SPEAR NeXT Causal Latent Forecasting Across Multiple Horizons for Spectral Temporal Earth Representation Learning",
+      "summary_zh": "Earth observation is inherently dynamic, yet temporal information in many foundation models is learned through reconstruction, invariance, or retrospective sequence summarization. SPEAR NeXT is introduced as a compact pixel-wise multimodal spectral temporal foundation model in which temporal self supervision is formulated as past only, multi horizon latent Earth state prediction. Instantaneous states are first encoded by the pretrained SPEAR model from optical, radar, and environmental observations into compact 32 dimensional embeddings. Their temporal evolution is then modeled by a causally masked Trans former that predicts multiple future latent states from pre ceding observations. Relative temporal order is represented using Rotary Position Embeddings, while month and year embeddings encode seasonal phase and interannual con text."
+    },
+    {
+      "title": "HLC-GS: Risk-Map-Guided Height-Layer Consistency Gaussian Splatting for DSM Reconstruction from Optical Satellite Imagery",
+      "authors": [
+        "Jie Yang",
+        "Yingdong Pi",
+        "Qiyan Luo",
+        "Xiaoyu Wang",
+        "Lekang Wen",
+        "Mi Wang"
+      ],
+      "summary": "A Digital Surface Model (DSM) is a fundamental geospatial data product for representing the elevation of the Earth's surface. Recently, 3D Gaussian Splatting (3DGS) has shown considerable potential for DSM reconstruction from multi-view optical satellite imagery due to its explicit scene representation and efficient optimization. However, in 3DGS-based DSM generation, alpha-weighted aggregation of Gaussian altitudes may blend splats from different height layers at the same rendered pixel or DSM sampling location, producing non-physical intermediate elevations and height-layer mixing errors. To address this problem, we propose HLC-GS, a risk-map-guided height-layer consistency Gaussian Splatting method for DSM reconstruction from optical satellite imagery. HLC-GS consists of a risk map module, a dominant-layer reliability correction module, and a secondary-layer suppression module. The risk map localizes high-risk pixels with abnormal height dispersion and unreliable dominant-layer responses, while the latter two modules regularize unreliable dominant-layer responses and suppress weakly supported far secondary-layer responses. Extensive experiments are conducted on the DFC2019 and IARPA2016 datasets. Compared with six state-of-the-art DSM reconstruction methods, HLC-GS achieves better overall accuracy. Compared with the latest and precision-enhanced EOGS, HLC-GS reduces the average MAE from 1.46 m to 1.18 m and the average RMSE from 2.78 m to 2.58 m over the evaluated scenes, while improving PAG$_{2.5}$ from 86.09\\% to 88.61\\%. Overall, these results demonstrate that explicitly modeling per-pixel height-layer consistency alleviates height-layer mixing and improves the geometric quality of 3DGS-based DSM reconstruction from optical satellite imagery.",
+      "published": "2026-09-15T07:42:04Z",
+      "updated": "2026-09-15T07:42:04Z",
+      "arxiv_id": "2609.16772v1",
+      "abs_url": "http://arxiv.org/abs/2609.16772v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16772v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 10,
+      "anchor_terms": [
+        "satellite image",
+        "satellite imagery"
+      ],
+      "matched_terms": [
+        "digital surface model",
+        "DSM",
+        "geospatial",
+        "MAE",
+        "satellite",
+        "satellite image",
+        "satellite imagery"
+      ],
+      "title_zh": "HLC-GS: Risk-Map-Guided Height-Layer Consistency Gaussian Splatting for DSM Reconstruction from Optical Satellite Imagery",
+      "summary_zh": "A Digital Surface Model (DSM) is a fundamental geospatial data product for representing the elevation of the Earth's surface. Recently, 3D Gaussian Splatting (3DGS) has shown considerable potential for DSM reconstruction from multi-view optical satellite imagery due to its explicit scene representation and efficient optimization. However, in 3DGS-based DSM generation, alpha-weighted aggregation of Gaussian altitudes may blend splats from different height layers at the same rendered pixel or DSM sampling location, producing non-physical intermediate elevations and height-layer mixing errors. To address this problem, we propose HLC-GS, a risk-map-guided height-layer consistency Gaussian Splatting method for DSM reconstruction from optical satellite imagery. HLC-GS consists of a risk map module, a dominant-layer reliability correction module, and a secondary-layer suppression module. The risk map localizes high-risk pixels with abnormal height dispersion and unreliable dominant-layer responses, while the latter two modules regularize unreliable dominant-layer responses and suppress weakly supported far secondary-layer responses. Extensive experiments are conducted on the DFC2019 and IARPA2016 datasets. Compared with six state-of-the-art DSM reconstruction methods, HLC-GS achieves better overall accuracy. Compared with the latest and precision-enhanced EOGS, HLC-GS reduces the average MAE from 1.46 m to 1.18 m and the average RMSE from 2.78 m to 2.58 m over the evaluated scenes, while improving PAG$_{2.5}$ from 86.09\\% to 88.61\\%. Overall, these results demonstrate that explicitly modeling per-pixel height-layer consistency alleviates height-layer mixing and improves the geometric quality of 3DGS-based DSM reconstruction from optical satellite imagery."
+    },
+    {
+      "title": "TAME: Token Attribution and Masking for Emergent misalignment",
+      "authors": [
+        "Md Rayhanul Masud",
+        "Md Rizwan Parvez"
+      ],
+      "summary": "Fine-tuning an aligned language model on narrow, flawed data can induce harmful behavior far outside the training domain, known as emergent misalignment (EM). Prior work has localized EM in model weights, activations, and training documents, but it remains unclear which training tokens carry the relevant fine-tuning signal. We introduce TAME (Token Attribution and Masking for Emergent Misalignment), a three-stage framework: token attribution scores how strongly the fine-tuning update raises each response token's likelihood, using forward passes through a released LoRA adapter; signal characterization finds patterns among high-attribution tokens; and causal validation tests them by attribution-guided loss masking. On released EM organisms and a 6,849-example medical-advice split, attribution is concentrated (the top 5% of tokens hold 32% of the mass) and, in Llama, depleted for medical vocabulary but enriched for a register of unwarranted certainty, even after controlling for token rarity. Masking high-attribution tokens during fresh fine-tuning cuts EM by 23x in Llama and 36x in Qwen, with the perplexity cost concentrated on the targeted register rather than on medical content; an equal random mask leaves EM unchanged. In Llama, the attribution pattern suggests that EM-relevant signal lies more in how confidently flawed content is expressed than in its domain vocabulary; the causal masking effect itself holds across both model families.",
+      "published": "2026-09-15T07:30:01Z",
+      "updated": "2026-09-15T07:30:01Z",
+      "arxiv_id": "2609.16754v1",
+      "abs_url": "http://arxiv.org/abs/2609.16754v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16754v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "comment": "Accepted at EMNLP UncertaiNLP Workshop 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 3,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "TAME: Token Attribution and Masking for Emergent misalignment",
+      "summary_zh": "Fine-tuning an aligned language model on narrow, flawed data can induce harmful behavior far outside the training domain, known as emergent misalignment (EM). Prior work has localized EM in model weights, activations, and training documents, but it remains unclear which training tokens carry the relevant fine-tuning signal. We introduce TAME (Token Attribution and Masking for Emergent Misalignment), a three-stage framework: token attribution scores how strongly the fine-tuning update raises each response token's likelihood, using forward passes through a released LoRA adapter; signal characterization finds patterns among high-attribution tokens; and causal validation tests them by attribution-guided loss masking. On released EM organisms and a 6,849-example medical-advice split, attribution is concentrated (the top 5% of tokens hold 32% of the mass) and, in Llama, depleted for medical vocabulary but enriched for a register of unwarranted certainty, even after controlling for token rarity. Masking high-attribution tokens during fresh fine-tuning cuts EM by 23x in Llama and 36x in Qwen, with the perplexity cost concentrated on the targeted register rather than on medical content; an equal random mask leaves EM unchanged. In Llama, the attribution pattern suggests that EM-relevant signal lies more in how confidently flawed content is expressed than in its domain vocabulary; the causal masking effect itself holds across both model families."
+    },
+    {
+      "title": "GraLoD: Graphics-Inspired Continuous Level-of-Detail Learning for Image Restoration",
+      "authors": [
+        "Hu Gao",
+        "Lizhuang Ma",
+        "Yulong Chen"
+      ],
+      "summary": "The spatial support required for image restoration varies across degradation types, image regions, and reconstruction stages. However, most existing methods rely on predefined multi-scale hierarchies and aggregate features through fixed fusion or attention, leaving the representation scale itself largely determined by the network architecture. This limitation becomes more pronounced when a task-specific backbone is extended to heterogeneous degradations in all-in-one restoration. Inspired by level-of-detail (LOD) rendering in computer graphics, we propose GraLoD, a plug-and-play framework that treats restoration scale as a spatially varying and stage-dependent continuous variable. GraLoD reuses the native encoder hierarchy, aligns its multi-scale features into a shared LOD representation space, and predicts a stage-conditioned LOD field at each decoder stage. Each spatial location then continuously queries only two neighboring representation levels, enabling the effective restoration scale to adapt to both local image content and reconstruction progress. To prevent degenerate or arbitrary scale selection, we further introduce minimal-sufficient footprint calibration (MSFC) together with structure-aware regularization (SAR) to encourage restoration-effective and spatially coherent LOD assignments. GraLoD can be directly integrated into existing restoration backbones without redesigning their fundamental feature-processing blocks. Extensive experiments demonstrate consistent improvements in task-specific and all-in-one restoration.",
+      "published": "2026-09-15T03:22:22Z",
+      "updated": "2026-09-15T03:22:22Z",
+      "arxiv_id": "2609.16578v1",
+      "abs_url": "http://arxiv.org/abs/2609.16578v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16578v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "SAR遥感"
+      ],
+      "topic": "图像生成与重建",
+      "score": 5,
+      "anchor_terms": [
+        "SAR"
+      ],
+      "matched_terms": [
+        "image restoration",
+        "multi-scale",
+        "SAR"
+      ],
+      "title_zh": "GraLoD: Graphics-Inspired Continuous Level-of-Detail Learning for Image Restoration",
+      "summary_zh": "The spatial support required for image restoration varies across degradation types, image regions, and reconstruction stages. However, most existing methods rely on predefined multi-scale hierarchies and aggregate features through fixed fusion or attention, leaving the representation scale itself largely determined by the network architecture. This limitation becomes more pronounced when a task-specific backbone is extended to heterogeneous degradations in all-in-one restoration. Inspired by level-of-detail (LOD) rendering in computer graphics, we propose GraLoD, a plug-and-play framework that treats restoration scale as a spatially varying and stage-dependent continuous variable. GraLoD reuses the native encoder hierarchy, aligns its multi-scale features into a shared LOD representation space, and predicts a stage-conditioned LOD field at each decoder stage. Each spatial location then continuously queries only two neighboring representation levels, enabling the effective restoration scale to adapt to both local image content and reconstruction progress. To prevent degenerate or arbitrary scale selection, we further introduce minimal-sufficient footprint calibration (MSFC) together with structure-aware regularization (SAR) to encourage restoration-effective and spatially coherent LOD assignments. GraLoD can be directly integrated into existing restoration backbones without redesigning their fundamental feature-processing blocks. Extensive experiments demonstrate consistent improvements in task-specific and all-in-one restoration."
+    },
+    {
+      "title": "AsyncCouple-Flow: Asynchronous Cross-Modal Coupling and Flow Matching for Spatio-Temporal Forecasting",
+      "authors": [
+        "Zhixiang Wu",
+        "Yining Liu",
+        "Bo Zhao",
+        "Szu-Yu Chen",
+        "Huiran Duan",
+        "Chu Lin",
+        "Chuanguang Yang"
+      ],
+      "summary": "Multi-modal spatio-temporal forecasting (MM-STF) supports weather nowcasting, traffic prediction, and earth-system modeling by combining heterogeneous sources such as physical fields, satellite imagery, and in-situ sensors. Three obstacles persist: (i) modalities have different spatio-temporal sampling rates, forcing lossy interpolation onto a unified grid; (ii) modalities are frequently missing at deployment due to sensor outages or revisit gaps, while most methods train with full availability; and (iii) autoregressive decoders accumulate errors over long horizons, amplified by multi-modal conditioning. We propose AsyncCouple-Flow to address these issues jointly. A Modality-Aware Token Sparsification (MATS) module performs scale-aware tokenization and uses a shared importance scorer to select top-k tokens per timestep, producing equal-length sequences. An Asynchronous Cross-Modal Coupling Graph (ACCG) replaces fixed cross-attention with a learnable graph whose edges encode time offsets, semantic similarity, and modality-specific physical priors, enabling fusion under arbitrary asynchrony and missingness. A Flow-Matching Forecasting Head models multi-step prediction as a conditional ODE, trained with stochastic modality dropout and integrated jointly to avoid autoregressive drift. Experiments on ERA5+GOES+ISD weather forecasting and PEMS-BAY traffic prediction with multi-source side information show that AsyncCouple-Flow outperforms state-of-the-art baselines and remains robust with up to two missing modalities. The code will be released upon acceptance.",
+      "published": "2026-09-15T03:15:14Z",
+      "updated": "2026-09-15T03:15:14Z",
+      "arxiv_id": "2609.16573v1",
+      "abs_url": "http://arxiv.org/abs/2609.16573v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16573v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Accepted at the International Conference on Neural Information Processing (ICONIP 2026)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "多模态融合"
+      ],
+      "topic": "多模态融合",
+      "score": 5,
+      "anchor_terms": [
+        "satellite image",
+        "satellite imagery",
+        "temporal"
+      ],
+      "matched_terms": [
+        "cross-attention",
+        "robust",
+        "satellite",
+        "satellite image",
+        "satellite imagery",
+        "temporal",
+        "tokenization"
+      ],
+      "title_zh": "AsyncCouple-Flow: Asynchronous Cross-Modal Coupling and Flow Matching for Spatio-Temporal Forecasting",
+      "summary_zh": "Multi-modal spatio-temporal forecasting (MM-STF) supports weather nowcasting, traffic prediction, and earth-system modeling by combining heterogeneous sources such as physical fields, satellite imagery, and in-situ sensors. Three obstacles persist: (i) modalities have different spatio-temporal sampling rates, forcing lossy interpolation onto a unified grid; (ii) modalities are frequently missing at deployment due to sensor outages or revisit gaps, while most methods train with full availability; and (iii) autoregressive decoders accumulate errors over long horizons, amplified by multi-modal conditioning. We propose AsyncCouple-Flow to address these issues jointly. A Modality-Aware Token Sparsification (MATS) module performs scale-aware tokenization and uses a shared importance scorer to select top-k tokens per timestep, producing equal-length sequences. An Asynchronous Cross-Modal Coupling Graph (ACCG) replaces fixed cross-attention with a learnable graph whose edges encode time offsets, semantic similarity, and modality-specific physical priors, enabling fusion under arbitrary asynchrony and missingness. A Flow-Matching Forecasting Head models multi-step prediction as a conditional ODE, trained with stochastic modality dropout and integrated jointly to avoid autoregressive drift. Experiments on ERA5+GOES+ISD weather forecasting and PEMS-BAY traffic prediction with multi-source side information show that AsyncCouple-Flow outperforms state-of-the-art baselines and remains robust with up to two missing modalities. The code will be released upon acceptance."
+    },
+    {
+      "title": "Efficient Text-to-Image Generation: An Adaptive Step Schedule Controller for Diffusion Models",
+      "authors": [
+        "Kuluhan Binici",
+        "Cihan Acar",
+        "Shivam Aggarwal",
+        "Siying Liu",
+        "Tulika Mitra"
+      ],
+      "summary": "Text-to-image diffusion models often use a fixed number of denoising steps, balancing time costs and image quality. However, the optimal number of steps depends on the complexity of the input text prompt. We propose an adaptive diffusion controller that dynamically adjusts the number of steps to generate high-quality images efficiently, without additional model training. By leveraging a mixture of step schedules with varying step sizes and evaluating the error term discrepancy at each timestep, our method transitions between schedules to optimize performance. Experiments on COCO and DiffusionDB show that our approach reduces inference time while maintaining visual fidelity, offering a more efficient alternative for text-to-image diffusion models.",
+      "published": "2026-09-15T03:14:52Z",
+      "updated": "2026-09-15T03:14:52Z",
+      "arxiv_id": "2609.16572v1",
+      "abs_url": "http://arxiv.org/abs/2609.16572v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16572v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化"
+      ],
+      "topic": "图像生成与重建",
+      "score": 6,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "denoising",
+        "diffusion model",
+        "image generation"
+      ],
+      "title_zh": "Efficient Text-to-Image Generation: An Adaptive Step Schedule Controller for Diffusion Models",
+      "summary_zh": "Text-to-image diffusion models often use a fixed number of denoising steps, balancing time costs and image quality. However, the optimal number of steps depends on the complexity of the input text prompt. We propose an adaptive diffusion controller that dynamically adjusts the number of steps to generate high-quality images efficiently, without additional model training. By leveraging a mixture of step schedules with varying step sizes and evaluating the error term discrepancy at each timestep, our method transitions between schedules to optimize performance. Experiments on COCO and DiffusionDB show that our approach reduces inference time while maintaining visual fidelity, offering a more efficient alternative for text-to-image diffusion models."
+    },
+    {
+      "title": "What Does Layer-Importance Reveal About Transformers and State-Space Models?",
+      "authors": [
+        "Istabrak Abbes",
+        "Nizar Islah",
+        "Irina Rish",
+        "Sarath Chandar"
+      ],
+      "summary": "Transformers and state-space models (SSMs) are the two dominant families of sequence models, and a central open question is how far the analytical knowledge built for transformers transfers to SSMs. We address this through the lens of layer importance which underpins compression, selective fine-tuning, and interpretability across both families. We decompose layer importance into two distinct notions. \\emph{Necessity} captures how much the pretrained model depends on a layer's existing contribution, measured by the loss increase from bypassing it. \\emph{Plasticity} captures where the model absorbs new information during fine-tuning, measured by the magnitude of task-specific weight updates. Our analysis reveals that the two families behave fundamentally differently: in every evaluated residual transformer up to $14$B parameters, Necessity and Plasticity anti-align across depth, whereas in the evaluated Mamba-style SSMs they point to overlapping regions. The sign of this alignment also predicts downstream adaptation behavior. In the evaluated transformers, concentrating updates in the most plastic layers increases catastrophic forgetting, while this tier-dependent effect disappears in the evaluated Mamba-style SSMs.",
+      "published": "2026-09-15T02:34:13Z",
+      "updated": "2026-09-15T02:34:13Z",
+      "arxiv_id": "2609.16537v1",
+      "abs_url": "http://arxiv.org/abs/2609.16537v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16537v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "Mamba"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "fine-tuning",
+        "Mamba",
+        "transformer"
+      ],
+      "title_zh": "What Does Layer-Importance Reveal About Transformers and State-Space Models?",
+      "summary_zh": "Transformers and state-space models (SSMs) are the two dominant families of sequence models, and a central open question is how far the analytical knowledge built for transformers transfers to SSMs. We address this through the lens of layer importance which underpins compression, selective fine-tuning, and interpretability across both families. We decompose layer importance into two distinct notions. \\emph{Necessity} captures how much the pretrained model depends on a layer's existing contribution, measured by the loss increase from bypassing it. \\emph{Plasticity} captures where the model absorbs new information during fine-tuning, measured by the magnitude of task-specific weight updates. Our analysis reveals that the two families behave fundamentally differently: in every evaluated residual transformer up to $14$B parameters, Necessity and Plasticity anti-align across depth, whereas in the evaluated Mamba-style SSMs they point to overlapping regions. The sign of this alignment also predicts downstream adaptation behavior. In the evaluated transformers, concentrating updates in the most plastic layers increases catastrophic forgetting, while this tier-dependent effect disappears in the evaluated Mamba-style SSMs."
+    },
+    {
+      "title": "Multimodal Emergency Vehicle Classification via Audio-Visual Transformers and Knowledge Distillation",
+      "authors": [
+        "Vijay John",
+        "Amar Dabaja"
+      ],
+      "summary": "Emergency vehicle detection in autonomous driving is a safety-critical perception task that demands robustness under diverse and adverse real-world conditions. Existing approaches rely on a single modality, either audio or video, which leads to systematic failure when that modality is degraded: microphone-based systems fail in noisy urban environments, and camera-based systems fail at night or under occlusion. This report presents AVNet, a multimodal audio-visual transformer that classifies emergency vehicles (ambulance, fire engine, police car) and road background using both audio and video, while gracefully handling the absence of either modality at inference time. AVNet introduces three key contributions: (1) a temporally aligned cross-modal fusion module that performs second-level cross-attention between audio spectrogram tokens and video frame tokens, exploiting their exact temporal correspondence without any learned alignment mechanism; (2) learned null embeddings that substitute for missing modality tokens, enabling a single unified model to operate in audio-only, video-only, or joint audio-visual mode without retraining; and (3) a knowledge distillation training strategy in which specialist unimodal teacher models transfer inter-class dark knowledge into the multimodal student fusion branch via soft probability targets. Evaluated on 281 clips from the Google AudioSet dataset, AVNet achieves 66.6% overall accuracy in audio-visual mode, outperforming the audio-only branch by +10.4% and the video-only branch by +15.0%. The largest per-class gain is observed for the hardest class, Ambulance, where fusion achieves +29.5% over either unimodal branch alone, demonstrating that the two modalities provide complementary information that the aligned cross attention mechanism successfully exploits.",
+      "published": "2026-09-15T02:34:07Z",
+      "updated": "2026-09-15T02:34:07Z",
+      "arxiv_id": "2609.16535v1",
+      "abs_url": "http://arxiv.org/abs/2609.16535v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16535v1",
+      "primary_category": "cs.MM",
+      "categories": [
+        "cs.MM",
+        "cs.SD"
+      ],
+      "comment": "15 pages, 1 figure",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 10,
+      "anchor_terms": [
+        "crop"
+      ],
+      "matched_terms": [
+        "attention mechanism",
+        "CLIP",
+        "crop",
+        "cross-attention",
+        "knowledge distillation",
+        "modal fusion",
+        "robust",
+        "transformer",
+        "vehicle detection"
+      ],
+      "title_zh": "Multimodal Emergency Vehicle Classification via Audio-Visual Transformers and Knowledge Distillation",
+      "summary_zh": "Emergency vehicle detection in autonomous driving is a safety-critical perception task that demands robustness under diverse and adverse real-world conditions. Existing approaches rely on a single modality, either audio or video, which leads to systematic failure when that modality is degraded: microphone-based systems fail in noisy urban environments, and camera-based systems fail at night or under occlusion. This report presents AVNet, a multimodal audio-visual transformer that classifies emergency vehicles (ambulance, fire engine, police car) and road background using both audio and video, while gracefully handling the absence of either modality at inference time. AVNet introduces three key contributions: (1) a temporally aligned cross-modal fusion module that performs second-level cross-attention between audio spectrogram tokens and video frame tokens, exploiting their exact temporal correspondence without any learned alignment mechanism; (2) learned null embeddings that substitute for missing modality tokens, enabling a single unified model to operate in audio-only, video-only, or joint audio-visual mode without retraining; and (3) a knowledge distillation training strategy in which specialist unimodal teacher models transfer inter-class dark knowledge into the multimodal student fusion branch via soft probability targets. Evaluated on 281 clips from the Google AudioSet dataset, AVNet achieves 66.6% overall accuracy in audio-visual mode, outperforming the audio-only branch by +10.4% and the video-only branch by +15.0%. The largest per-class gain is observed for the hardest class, Ambulance, where fusion achieves +29.5% over either unimodal branch alone, demonstrating that the two modalities provide complementary information that the aligned cross attention mechanism successfully exploits."
+    },
+    {
+      "title": "Geospatial Metadata Improves Discoverability by Connecting Datasets Across Scientific Disciplines",
+      "authors": [
+        "Daniel Ebanks",
+        "Devika Jain"
+      ],
+      "summary": "Research data repositories are essential infrastructure for scientific inquiry and for ensuring that datasets follow FAIR (Findable, Accessible, Interoperable, and Reusable) principles. However, repository reuse depends on the quality and completeness of geospatial and thematic metadata, which researchers generally provide voluntarily. Given limited curation resources, it is unsurprising that even Harvard Dataverse, the world's largest general-purpose research repository, contains many incomplete metadata records. Missing fields represent lost information and reduce interoperability. We find that datasets with more missing metadata receive fewer downstream citations and have fewer resolvable connections to other datasets. The implications are particularly important for geospatial datasets: only 0.3% of research datasets include a bounding box, and most represent archival points rather than complete geographic shapes. Our analysis shows that geospatial metadata helps connect concepts across disciplines. After embedding Harvard Dataverse datasets in a metadata knowledge graph, we find that datasets are twice as likely to connect across scientific disciplines through shared geospatial metadata as through keywords. This suggests that geographic metadata is a more reliable basis for cross-disciplinary interoperability than keyword vocabularies, which often remain discipline-specific. We train and fine-tune a small language model using datasets from Harvard Dataverse. Through geospatial metadata enrichment, we increase the share of datasets from different disciplines connected through metadata elements from 58.5% to 63.2%.",
+      "published": "2026-09-15T01:40:36Z",
+      "updated": "2026-09-15T01:40:36Z",
+      "arxiv_id": "2609.16498v1",
+      "abs_url": "http://arxiv.org/abs/2609.16498v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16498v1",
+      "primary_category": "cs.DL",
+      "categories": [
+        "cs.DL",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "数据集/评测"
+      ],
+      "topic": "数据集/评测",
+      "score": 3,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial"
+      ],
+      "title_zh": "Geospatial Metadata Improves Discoverability by Connecting Datasets Across Scientific Disciplines",
+      "summary_zh": "Research data repositories are essential infrastructure for scientific inquiry and for ensuring that datasets follow FAIR (Findable, Accessible, Interoperable, and Reusable) principles. However, repository reuse depends on the quality and completeness of geospatial and thematic metadata, which researchers generally provide voluntarily. Given limited curation resources, it is unsurprising that even Harvard Dataverse, the world's largest general-purpose research repository, contains many incomplete metadata records. Missing fields represent lost information and reduce interoperability. We find that datasets with more missing metadata receive fewer downstream citations and have fewer resolvable connections to other datasets. The implications are particularly important for geospatial datasets: only 0.3% of research datasets include a bounding box, and most represent archival points rather than complete geographic shapes. Our analysis shows that geospatial metadata helps connect concepts across disciplines. After embedding Harvard Dataverse datasets in a metadata knowledge graph, we find that datasets are twice as likely to connect across scientific disciplines through shared geospatial metadata as through keywords. This suggests that geographic metadata is a more reliable basis for cross-disciplinary interoperability than keyword vocabularies, which often remain discipline-specific. We train and fine-tune a small language model using datasets from Harvard Dataverse. Through geospatial metadata enrichment, we increase the share of datasets from different disciplines connected through metadata elements from 58.5% to 63.2%."
+    },
+    {
+      "title": "UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner",
+      "authors": [
+        "Ghazal Farhani",
+        "Shabnam Shabani"
+      ],
+      "summary": "Vision-language models (VLMs) can generate routes directly from aerial imagery for off-road navigation, but their predictions provide no indication of reliability. We present UDAV, an Uncertainty-Driven Adaptive VLM Waypoint Planner for UAV-guided UGV navigation. UDAV draws multiple stochastic trajectory predictions, selects their medoid as a self-consistent nominal route, and estimates predictive uncertainty from their spatial dispersion. When the maximum uncertainty across interior waypoints exceeds a threshold, UDAV invokes a reconsideration stage; otherwise, it returns the medoid directly. We evaluate UDAV on 400 held-out trajectory queries from two UAV flights. Stochastic medoid selection reduces the mean average displacement error (ADE) from 147.4 pixels for a deterministic prediction to 115.9 pixels. The complete planner achieves a mean ADE of 110.4 pixels, a 25.1% reduction relative to deterministic planning, while producing valid trajectories for all queries. UDAV also yields the lowest 90th- and 95th-percentile errors among all evaluated configurations, including a higher-budget K=10 consensus baseline. Relative to the K=5 medoid, UDAV reduces these errors from 225.3 and 326.0 pixels to 199.0 and 290.8 pixels, respectively. These results demonstrate that stochastic VLM predictions provide both a stronger nominal route and an actionable uncertainty signal for selectively mitigating large planning errors.",
+      "published": "2026-09-14T21:30:49Z",
+      "updated": "2026-09-14T21:30:49Z",
+      "arxiv_id": "2609.16368v1",
+      "abs_url": "http://arxiv.org/abs/2609.16368v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16368v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "无人机/UAV"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 5,
+      "anchor_terms": [
+        "aerial image",
+        "aerial imagery",
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "aerial image",
+        "aerial imagery",
+        "UAV",
+        "VLM"
+      ],
+      "title_zh": "UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner",
+      "summary_zh": "Vision-language models (VLMs) can generate routes directly from aerial imagery for off-road navigation, but their predictions provide no indication of reliability. We present UDAV, an Uncertainty-Driven Adaptive VLM Waypoint Planner for UAV-guided UGV navigation. UDAV draws multiple stochastic trajectory predictions, selects their medoid as a self-consistent nominal route, and estimates predictive uncertainty from their spatial dispersion. When the maximum uncertainty across interior waypoints exceeds a threshold, UDAV invokes a reconsideration stage; otherwise, it returns the medoid directly. We evaluate UDAV on 400 held-out trajectory queries from two UAV flights. Stochastic medoid selection reduces the mean average displacement error (ADE) from 147.4 pixels for a deterministic prediction to 115.9 pixels. The complete planner achieves a mean ADE of 110.4 pixels, a 25.1% reduction relative to deterministic planning, while producing valid trajectories for all queries. UDAV also yields the lowest 90th- and 95th-percentile errors among all evaluated configurations, including a higher-budget K=10 consensus baseline. Relative to the K=5 medoid, UDAV reduces these errors from 225.3 and 326.0 pixels to 199.0 and 290.8 pixels, respectively. These results demonstrate that stochastic VLM predictions provide both a stronger nominal route and an actionable uncertainty signal for selectively mitigating large planning errors."
+    },
+    {
+      "title": "Multi-Label Proportion Learning for Sea-Ice Type Prediction",
+      "authors": [
+        "Samira Alkaee Taleghan",
+        "Younghyun Koo",
+        "Andrew P. Barrett",
+        "Farnoush Banaei-Kashani"
+      ],
+      "summary": "Sea-ice type prediction is important for climate monitoring, maritime navigation, and decision-making in polar regions. The main source of label data for this task is the ice chart, produced manually by ice analysts who interpret satellite imagery to delineate ice zones into polygons. Although ice charts are valuable, their production is labor-intensive and expensive, motivating recent efforts to automate the process using deep learning. However, deep learning models require patch-level (or pixel-level) label data for training, while ice charts provide only polygon-level annotations. As a workaround, supervised approaches often create approximate patch-level labels from polygon-level ice chart labels by assigning each sample the dominant ice type of its parent polygon. This approach enables supervised training but creates an ill-posed learning problem with intrinsically approximate solution. In this paper, we redefine sea-ice type prediction as a weakly supervised multi-label proportion learning problem to be able to directly use the polygon-level ice chart labels and avoid unnecessary label approximation for improved prediction accuracy. To address this problem, we propose a two-module framework where first Multiple Instance Learning (MIL) is used for water--ice classification, and then a multi-label proportion learning (MLPL) is introduced for ice-type composition prediction. We further extend this framework with a multimodal model that integrates SAR imagery with AMSR2 brightness temperatures and ERA5 reanalysis data through modality-guided auxiliary regularization. Evaluated on the AI4Arctic dataset, the SAR-only model reduces MAE by 14.5\\% and more than doubles mean ice-class F1 over the best supervised baseline. The multimodal model further reduces MAE by 21.5\\% and raises mean F1 by 41.2\\% over the SAR-only model, and by 52.7\\% over the supervised multimodal baseline.",
+      "published": "2026-09-14T21:09:44Z",
+      "updated": "2026-09-14T21:09:44Z",
+      "arxiv_id": "2609.16347v1",
+      "abs_url": "http://arxiv.org/abs/2609.16347v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16347v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "无监督与弱监督",
+        "多模态融合",
+        "SAR遥感",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "SAR",
+        "SAR image",
+        "SAR imagery",
+        "satellite image",
+        "satellite imagery",
+        "weakly supervised"
+      ],
+      "matched_terms": [
+        "MAE",
+        "SAR",
+        "SAR image",
+        "SAR imagery",
+        "satellite",
+        "satellite image",
+        "satellite imagery",
+        "weakly supervised"
+      ],
+      "title_zh": "Multi-Label Proportion Learning for Sea-Ice Type Prediction",
+      "summary_zh": "Sea-ice type prediction is important for climate monitoring, maritime navigation, and decision-making in polar regions. The main source of label data for this task is the ice chart, produced manually by ice analysts who interpret satellite imagery to delineate ice zones into polygons. Although ice charts are valuable, their production is labor-intensive and expensive, motivating recent efforts to automate the process using deep learning. However, deep learning models require patch-level (or pixel-level) label data for training, while ice charts provide only polygon-level annotations. As a workaround, supervised approaches often create approximate patch-level labels from polygon-level ice chart labels by assigning each sample the dominant ice type of its parent polygon. This approach enables supervised training but creates an ill-posed learning problem with intrinsically approximate solution. In this paper, we redefine sea-ice type prediction as a weakly supervised multi-label proportion learning problem to be able to directly use the polygon-level ice chart labels and avoid unnecessary label approximation for improved prediction accuracy. To address this problem, we propose a two-module framework where first Multiple Instance Learning (MIL) is used for water--ice classification, and then a multi-label proportion learning (MLPL) is introduced for ice-type composition prediction. We further extend this framework with a multimodal model that integrates SAR imagery with AMSR2 brightness temperatures and ERA5 reanalysis data through modality-guided auxiliary regularization. Evaluated on the AI4Arctic dataset, the SAR-only model reduces MAE by 14.5\\% and more than doubles mean ice-class F1 over the best supervised baseline. The multimodal model further reduces MAE by 21.5\\% and raises mean F1 by 41.2\\% over the SAR-only model, and by 52.7\\% over the supervised multimodal baseline."
+    },
+    {
+      "title": "Robust Fault Detection in Mechanical Multimodal Time Series via Self-Supervised Cross-Modal Reconstruction",
+      "authors": [
+        "Magnus Munk Jensen",
+        "Dorte Hammershøi",
+        "Rafał Wiśniewski",
+        "Olga Fink"
+      ],
+      "summary": "Fault detection is essential in industrial systems, enabling early identification of abnormal behaviour and improving safety, reliability, and operational efficiency. Modern systems increasingly rely on heterogeneous sensing modalities that capture complementary aspects of the underlying physical process. However, existing data-driven anomaly detection methods often process each modality independently or use simple feature-level fusion, limiting their ability to exploit cross-modal relationships that characterize normal system behaviour. Their performance also commonly assumes similar training and deployment distributions, whereas real-world operation is affected by changing operating conditions, environmental influences, and system degradation that induce distribution shifts and reduce detection performance, especially in unseen regimes. In this work, we propose a multimodal anomaly detection framework based on cross-modal reconstruction of heterogeneous time-series sensor data. Rather than modeling each modality independently, the framework learns system dynamics by reconstructing each modality from the others, thereby exploiting complementary information across modalities. This integrates information across sensing channels without requiring explicit temporal alignment or identical sampling rates, while improving robustness to sensor noise, missing measurements, and modality-specific disturbances. To address distribution shifts during real-world deployment, anomalies are identified using cross-modal reconstruction error and an adaptive test-time thresholding mechanism that adjusts to changing operating conditions. Experiments on three industrial case studies show strong fault detection performance and substantially improved robustness under out-of-distribution conditions, with the largest gains observed in the most challenging operating regimes.",
+      "published": "2026-09-14T20:24:53Z",
+      "updated": "2026-09-14T20:24:53Z",
+      "arxiv_id": "2609.16314v1",
+      "abs_url": "http://arxiv.org/abs/2609.16314v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16314v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "stat.AP"
+      ],
+      "comment": "Submitted to Reliability Engineering & System Safety",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "多模态融合"
+      ],
+      "topic": "时间序列与视频",
+      "score": 6,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "robust",
+        "self-supervised",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "Robust Fault Detection in Mechanical Multimodal Time Series via Self-Supervised Cross-Modal Reconstruction",
+      "summary_zh": "Fault detection is essential in industrial systems, enabling early identification of abnormal behaviour and improving safety, reliability, and operational efficiency. Modern systems increasingly rely on heterogeneous sensing modalities that capture complementary aspects of the underlying physical process. However, existing data-driven anomaly detection methods often process each modality independently or use simple feature-level fusion, limiting their ability to exploit cross-modal relationships that characterize normal system behaviour. Their performance also commonly assumes similar training and deployment distributions, whereas real-world operation is affected by changing operating conditions, environmental influences, and system degradation that induce distribution shifts and reduce detection performance, especially in unseen regimes. In this work, we propose a multimodal anomaly detection framework based on cross-modal reconstruction of heterogeneous time-series sensor data. Rather than modeling each modality independently, the framework learns system dynamics by reconstructing each modality from the others, thereby exploiting complementary information across modalities. This integrates information across sensing channels without requiring explicit temporal alignment or identical sampling rates, while improving robustness to sensor noise, missing measurements, and modality-specific disturbances. To address distribution shifts during real-world deployment, anomalies are identified using cross-modal reconstruction error and an adaptive test-time thresholding mechanism that adjusts to changing operating conditions. Experiments on three industrial case studies show strong fault detection performance and substantially improved robustness under out-of-distribution conditions, with the largest gains observed in the most challenging operating regimes."
+    },
+    {
+      "title": "Nationally Consistent, Locally Incomplete: A Bayesian Remote-Sensing Audit of Rooftop Photovoltaic Registries",
+      "authors": [
+        "Gabriel Kasmi",
+        "Yves-Marie Saint-Drenan",
+        "Laurent Dubus",
+        "Philippe Blanc"
+      ],
+      "summary": "Tracking the energy transition requires reliable statistics on renewable deployment. Rooftop photovoltaics (PV) are especially hard to track, owing to their decentralised nature, and the resulting inaccuracies in official statistics are known but not quantified. Remote sensing offers an independent way to identify rooftop PV systems. We introduce a Bayesian framework to estimate the ground-truth rooftop PV capacity from remote sensing detections, turning an imperfect detector into an uncertainty-aware measurement instrument. Applied to France, the corrected detections estimate a capacity of 4.03 GWp [3.96--4.11] (99% credible interval) of rooftop PV below 36 kWp, matching the transmission system operator's connection data within 3.3% nationally, while identifying local under-reports of up to 61% of local capacity. We also document and quantify a significant truncation bias in French rooftop PV open data. Beyond France, the approach paves the way for more reliable estimates of rooftop PV capacity worldwide.",
+      "published": "2026-09-14T19:50:02Z",
+      "updated": "2026-09-14T19:50:02Z",
+      "arxiv_id": "2609.16294v1",
+      "abs_url": "http://arxiv.org/abs/2609.16294v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16294v1",
+      "primary_category": "stat.AP",
+      "categories": [
+        "stat.AP",
+        "cs.LG"
+      ],
+      "comment": "47 pages, 5 tables, 15 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 2,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "remote sensing"
+      ],
+      "title_zh": "Nationally Consistent, Locally Incomplete: A Bayesian Remote-Sensing Audit of Rooftop Photovoltaic Registries",
+      "summary_zh": "Tracking the energy transition requires reliable statistics on renewable deployment. Rooftop photovoltaics (PV) are especially hard to track, owing to their decentralised nature, and the resulting inaccuracies in official statistics are known but not quantified. Remote sensing offers an independent way to identify rooftop PV systems. We introduce a Bayesian framework to estimate the ground-truth rooftop PV capacity from remote sensing detections, turning an imperfect detector into an uncertainty-aware measurement instrument. Applied to France, the corrected detections estimate a capacity of 4.03 GWp [3.96--4.11] (99% credible interval) of rooftop PV below 36 kWp, matching the transmission system operator's connection data within 3.3% nationally, while identifying local under-reports of up to 61% of local capacity. We also document and quantify a significant truncation bias in French rooftop PV open data. Beyond France, the approach paves the way for more reliable estimates of rooftop PV capacity worldwide."
+    },
+    {
+      "title": "Toward Governance-Aware Autonomous GIS: A Narrative Review of Ethical and Privacy Risks in LLM-Enabled GeoAI",
+      "authors": [
+        "Maya Subramanian",
+        "Devika Jain"
+      ],
+      "summary": "Geospatial artificial intelligence (GeoAI) powered by large language models (LLMs) is expanding the capacity to query, generate, and interpret spatial information through natural-language interfaces and agentic autonomous GIS workflows. This capability creates governance challenges that general AI ethics discussions do not fully capture, including passive location inference from mobility traces, spatially structured bias amplification driven by spatial autocorrelation and scale effects, hallucinated spatial facts, and uncertainty compounding across multimodal geospatial inputs. This narrative review identifies eight recurring issues in LLM-enabled GeoAI: data provenance and consent, spatial privacy and inference risk, algorithmic bias and spatial inequity, spatial mechanisms as structural risk (spatial autocorrelation, the modifiable areal unit problem, and scale effects), LLM-specific technical risks, explainability, policy and regulatory gaps, and public enablement and workforce development. For each issue, we characterize the underlying mechanism, ground it in an illustrative example from the literature, and assess the current state of technical or institutional responses, ranging from largely unaddressed to actively debated or subject to emerging policy. Building on this synthesis, we propose a governance-aware architecture for LLM-enabled autonomous GIS that maps each issue to enforceable controls and auditable artifacts across the geospatial data lifecycle, illustrated through a worked flood-response routing scenario. The review highlights a persistent evidence gap: proposed responses remain largely conceptual, and field-tested evaluations of governance controls for LLM-enabled GeoAI remain limited. We close by outlining a research agenda emphasizing empirical validation, spatially specific interpretability tools, and workforce training aligned with these emerging risks.",
+      "published": "2026-09-14T18:58:59Z",
+      "updated": "2026-09-14T18:58:59Z",
+      "arxiv_id": "2609.16232v1",
+      "abs_url": "http://arxiv.org/abs/2609.16232v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16232v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 7,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial",
+        "GIS",
+        "large language model",
+        "LLM"
+      ],
+      "title_zh": "Toward Governance-Aware Autonomous GIS: A Narrative Review of Ethical and Privacy Risks in LLM-Enabled GeoAI",
+      "summary_zh": "Geospatial artificial intelligence (GeoAI) powered by large language models (LLMs) is expanding the capacity to query, generate, and interpret spatial information through natural-language interfaces and agentic autonomous GIS workflows. This capability creates governance challenges that general AI ethics discussions do not fully capture, including passive location inference from mobility traces, spatially structured bias amplification driven by spatial autocorrelation and scale effects, hallucinated spatial facts, and uncertainty compounding across multimodal geospatial inputs. This narrative review identifies eight recurring issues in LLM-enabled GeoAI: data provenance and consent, spatial privacy and inference risk, algorithmic bias and spatial inequity, spatial mechanisms as structural risk (spatial autocorrelation, the modifiable areal unit problem, and scale effects), LLM-specific technical risks, explainability, policy and regulatory gaps, and public enablement and workforce development. For each issue, we characterize the underlying mechanism, ground it in an illustrative example from the literature, and assess the current state of technical or institutional responses, ranging from largely unaddressed to actively debated or subject to emerging policy. Building on this synthesis, we propose a governance-aware architecture for LLM-enabled autonomous GIS that maps each issue to enforceable controls and auditable artifacts across the geospatial data lifecycle, illustrated through a worked flood-response routing scenario. The review highlights a persistent evidence gap: proposed responses remain largely conceptual, and field-tested evaluations of governance controls for LLM-enabled GeoAI remain limited. We close by outlining a research agenda emphasizing empirical validation, spatially specific interpretability tools, and workforce training aligned with these emerging risks."
+    },
+    {
+      "title": "LLMs as Master Forgers: Generating Synthetic Time Series Data for Manufacturing",
+      "authors": [
+        "Mantek Singh",
+        "Jeshwanth Challagundla",
+        "Prateek Karnal",
+        "Gagan Ganapathy",
+        "Vineet Shah",
+        "Ridam Arora"
+      ],
+      "summary": "This paper presents a novel framework leveraging Large Language Models (LLMs) to generate synthetic time series data for manufacturing processes. Motivated by the scarcity of labeled time-series data in real-world manufacturing settings, which hinders the development of robust machine learning models, we explore the potential of LLMs to learn complex temporal dependencies and generate realistic synthetic data. Our approach involves fine-tuning pre-trained LLMs on manufacturing process instructions and employing a Retrieval Augmented Generation (RAG) technique to enhance data diversity and realism. We evaluate our method against traditional time series modeling techniques like ARIMA and LSTMs, using quantitative metrics, PCA analysis, and downstream task performance (anomaly detection). Results demonstrate that our LLM-driven framework outperforms these baselines, generating high-quality synthetic time series data that effectively captures temporal dependencies and statistical properties of real manufacturing data, leading to improvements in downstream task performance.",
+      "published": "2026-09-14T18:01:29Z",
+      "updated": "2026-09-14T18:01:29Z",
+      "arxiv_id": "2609.16155v1",
+      "abs_url": "http://arxiv.org/abs/2609.16155v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16155v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "7 pages, 4 figures. Published in the 2024 International Conference on Image Processing, Computer Vision and Machine Learning (ICICML)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 7,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "fine-tuning",
+        "large language model",
+        "LLM",
+        "robust",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "LLMs as Master Forgers: Generating Synthetic Time Series Data for Manufacturing",
+      "summary_zh": "This paper presents a novel framework leveraging Large Language Models (LLMs) to generate synthetic time series data for manufacturing processes. Motivated by the scarcity of labeled time-series data in real-world manufacturing settings, which hinders the development of robust machine learning models, we explore the potential of LLMs to learn complex temporal dependencies and generate realistic synthetic data. Our approach involves fine-tuning pre-trained LLMs on manufacturing process instructions and employing a Retrieval Augmented Generation (RAG) technique to enhance data diversity and realism. We evaluate our method against traditional time series modeling techniques like ARIMA and LSTMs, using quantitative metrics, PCA analysis, and downstream task performance (anomaly detection). Results demonstrate that our LLM-driven framework outperforms these baselines, generating high-quality synthetic time series data that effectively captures temporal dependencies and statistical properties of real manufacturing data, leading to improvements in downstream task performance."
+    },
+    {
+      "title": "Transfer Learning for Socioeconomic Estimation in Forced-Displacement Settings",
+      "authors": [
+        "Steven Ndung'u",
+        "Adel Daoud",
+        "Ismael Yacoubou Djima",
+        "Hai-Anh H. Dang",
+        "Patrick Michael Brock"
+      ],
+      "summary": "Progress in inclusive household surveys has strengthened socioeconomic evidence for forcibly displaced populations, providing indispensable benchmarks on living conditions and welfare. However, these surveys remain resource-intensive and periodic, while conditions can change between rounds, particularly in settings affected by fragility, conflict, and violence. More frequently updated, spatially granular complementary evidence is therefore needed to identify where socioeconomic conditions may be changing between survey rounds and to inform operational prioritization. Earth observation and machine learning offer a scalable source of spatially explicit socioeconomic information. However, tools developed for general populations have not been systematically adapted and evaluated in forced displacement settings, where living conditions, settlement patterns, and displacement impacts may differ substantially. We address this gap by adapting a multimodal spatiotemporal vision transformer, pretrained on Demographic and Health Survey data from approximately 1.2 million households across 36 African countries, to forced displacement and host community settings in South Sudan, Cameroon, and Zambia. We develop and evaluate the updated, adapted model using socioeconomic indices derived from UNHCR FDS and RMS data. Our results show that satellite-derived geospatial covariates explain up to 66% of the variation in socioeconomic outcomes in camp-intersecting grids, with a mean absolute error (MAE) of 4.37 index points, and 41% in non-camp-intersecting areas, with an MAE of 5.41. The framework complements and adds value to periodic household surveys by filling critical spatial and temporal data gaps with regularly updated, model-based socioeconomic estimates. These estimates sustain insight between survey rounds and support timely humanitarian prioritization and field verification.",
+      "published": "2026-09-14T15:55:57Z",
+      "updated": "2026-09-14T15:55:57Z",
+      "arxiv_id": "2609.15773v1",
+      "abs_url": "http://arxiv.org/abs/2609.15773v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15773v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "13 pages, 7 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 11,
+      "anchor_terms": [
+        "earth observation",
+        "geospatial",
+        "temporal",
+        "vision transformer"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "geospatial",
+        "MAE",
+        "satellite",
+        "temporal",
+        "transfer learning",
+        "transformer",
+        "vision transformer"
+      ],
+      "title_zh": "Transfer Learning for Socioeconomic Estimation in Forced-Displacement Settings",
+      "summary_zh": "Progress in inclusive household surveys has strengthened socioeconomic evidence for forcibly displaced populations, providing indispensable benchmarks on living conditions and welfare. However, these surveys remain resource-intensive and periodic, while conditions can change between rounds, particularly in settings affected by fragility, conflict, and violence. More frequently updated, spatially granular complementary evidence is therefore needed to identify where socioeconomic conditions may be changing between survey rounds and to inform operational prioritization. Earth observation and machine learning offer a scalable source of spatially explicit socioeconomic information. However, tools developed for general populations have not been systematically adapted and evaluated in forced displacement settings, where living conditions, settlement patterns, and displacement impacts may differ substantially. We address this gap by adapting a multimodal spatiotemporal vision transformer, pretrained on Demographic and Health Survey data from approximately 1.2 million households across 36 African countries, to forced displacement and host community settings in South Sudan, Cameroon, and Zambia. We develop and evaluate the updated, adapted model using socioeconomic indices derived from UNHCR FDS and RMS data. Our results show that satellite-derived geospatial covariates explain up to 66% of the variation in socioeconomic outcomes in camp-intersecting grids, with a mean absolute error (MAE) of 4.37 index points, and 41% in non-camp-intersecting areas, with an MAE of 5.41. The framework complements and adds value to periodic household surveys by filling critical spatial and temporal data gaps with regularly updated, model-based socioeconomic estimates. These estimates sustain insight between survey rounds and support timely humanitarian prioritization and field verification."
+    },
+    {
+      "title": "MambaMPD: A Mamba-Driven Segmentation Framework for Marine Pollution Detection from Remote Sensing Imagery",
+      "authors": [
+        "Shuaiyu Chen",
+        "Wei Han",
+        "Peng Ren",
+        "Chunbo Luo",
+        "Zeyu Fu"
+      ],
+      "summary": "Accurate marine pollution detection (MPD) is essential for protecting coastal ecosystems and marine biodiversity. Vision Mamba models have shown promise in remote-sensing semantic segmentation by efficiently capturing long-range dependencies and global context, yet their potential for MPD remains underexplored. MPD is particularly challenging because of low signal-to-noise ratios, fragmented pollution patterns, and indistinct boundaries caused by the visual similarity between pollutants and the surrounding sea. To address these issues, we propose MambaMPD, an enhanced Mamba-based framework incorporating two complementary structural priors: Frequency-Aware Augmentation (FAA) and multi-scale Edge-Guided Attention (EGA). FAA integrates wavelet transforms into the encoder to decompose features into multi-scale frequency subbands, enabling the model to capture low-frequency contextual semantics and high-frequency structural details needed to identify small, low-contrast, and irregular pollution patterns. EGA adaptively fuses hierarchical, Laplacian-derived boundary cues with deep semantic representations, refining encoder features before decoding to sharpen boundaries and reduce ambiguity in visually confusing, spatially fragmented scenes. Together, these modules improve sensitivity to subtle pollution signals while preserving fine boundary structures. A U-Net-style decoder with squeeze-and-excitation attention and deep supervision progressively restores and refines semantic and spatial information across scales. Extensive experiments on two benchmark MPD datasets show that MambaMPD achieves higher mIoU than competing methods while requiring substantially less computation than foundation-model-based approaches. On MADOS, it improves F1 by 3.6% over OSDMamba; on M4D, it raises Oil Spill IoU by 6.82% over TransOilSeg.",
+      "published": "2026-09-14T14:52:16Z",
+      "updated": "2026-09-14T14:52:16Z",
+      "arxiv_id": "2609.15676v1",
+      "abs_url": "http://arxiv.org/abs/2609.15676v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15676v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "基础模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 9,
+      "anchor_terms": [
+        "Mamba",
+        "remote sensing",
+        "semantic segmentation"
+      ],
+      "matched_terms": [
+        "Mamba",
+        "multi-scale",
+        "remote sensing",
+        "semantic segmentation",
+        "U-Net"
+      ],
+      "title_zh": "MambaMPD: A Mamba-Driven Segmentation Framework for Marine Pollution Detection from Remote Sensing Imagery",
+      "summary_zh": "Accurate marine pollution detection (MPD) is essential for protecting coastal ecosystems and marine biodiversity. Vision Mamba models have shown promise in remote-sensing semantic segmentation by efficiently capturing long-range dependencies and global context, yet their potential for MPD remains underexplored. MPD is particularly challenging because of low signal-to-noise ratios, fragmented pollution patterns, and indistinct boundaries caused by the visual similarity between pollutants and the surrounding sea. To address these issues, we propose MambaMPD, an enhanced Mamba-based framework incorporating two complementary structural priors: Frequency-Aware Augmentation (FAA) and multi-scale Edge-Guided Attention (EGA). FAA integrates wavelet transforms into the encoder to decompose features into multi-scale frequency subbands, enabling the model to capture low-frequency contextual semantics and high-frequency structural details needed to identify small, low-contrast, and irregular pollution patterns. EGA adaptively fuses hierarchical, Laplacian-derived boundary cues with deep semantic representations, refining encoder features before decoding to sharpen boundaries and reduce ambiguity in visually confusing, spatially fragmented scenes. Together, these modules improve sensitivity to subtle pollution signals while preserving fine boundary structures. A U-Net-style decoder with squeeze-and-excitation attention and deep supervision progressively restores and refines semantic and spatial information across scales. Extensive experiments on two benchmark MPD datasets show that MambaMPD achieves higher mIoU than competing methods while requiring substantially less computation than foundation-model-based approaches. On MADOS, it improves F1 by 3.6% over OSDMamba; on M4D, it raises Oil Spill IoU by 6.82% over TransOilSeg."
+    },
+    {
+      "title": "Principal-timestep Restricted Init via Sparse Matrix-decomposition in Flow-matching",
+      "authors": [
+        "Jiayang Gu",
+        "Zheng Fang",
+        "Lichaun Xiang",
+        "Fanghui Liu",
+        "Xu Cai",
+        "Hongkai Wen"
+      ],
+      "summary": "Flow-matching diffusion models have recently emerged as a strong paradigm for high-fidelity visual generation. However, their prohibitively high fine-tuning cost limits scalability to downstream tasks. While Low-Rank Adaptation (LoRA) combined with spectral initialization has demonstrated accelerated convergence and improved performance in autoregressive language models by better aligning gradient directions, we find that it fails to deliver similar gains in diffusion fine-tuning, often yielding marginal or even negative improvements over vanilla LoRA.We attribute this discrepancy to a fundamental mismatch between LoRA's low-rank parameterization and the intrinsically high-rank gradients induced by the flow-matching objective. In particular, stochastic timestep sampling introduces directionally heterogeneous gradient signals across training steps, leading to misaligned updates under low-rank constraints.To address this issue, we propose Prism-LoRA,a Principal-timestep Restricted Init via Sparse Matrix-decomposition framework that improves gradient alignment during fine-tuning. Our method consists of two key components: (i) principal timestep selection, which restricts initialization gradients to a subset of dominant timesteps to suppress effective gradient rank, and (ii) principal channel filtering, which removes task-irrelevant channels, enabling the one-step spectral initialization gradient to better align with the long-horizon optimization trajectory. Extensive experiments demonstrate that our method consistently improves both convergence speed and final performance across multiple diffusion fine-tuning benchmarks, including subject-driven generation, controllable generation, and deblurring, achieving not only performance improvement but also earlier stages of convergence over baseline LoRA and other spectral-init methods.",
+      "published": "2026-09-14T14:30:54Z",
+      "updated": "2026-09-14T14:30:54Z",
+      "arxiv_id": "2609.15643v1",
+      "abs_url": "http://arxiv.org/abs/2609.15643v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15643v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Principal-timestep Restricted Init via Sparse Matrix-decomposition in Flow-matching",
+      "summary_zh": "Flow-matching diffusion models have recently emerged as a strong paradigm for high-fidelity visual generation. However, their prohibitively high fine-tuning cost limits scalability to downstream tasks. While Low-Rank Adaptation (LoRA) combined with spectral initialization has demonstrated accelerated convergence and improved performance in autoregressive language models by better aligning gradient directions, we find that it fails to deliver similar gains in diffusion fine-tuning, often yielding marginal or even negative improvements over vanilla LoRA.We attribute this discrepancy to a fundamental mismatch between LoRA's low-rank parameterization and the intrinsically high-rank gradients induced by the flow-matching objective. In particular, stochastic timestep sampling introduces directionally heterogeneous gradient signals across training steps, leading to misaligned updates under low-rank constraints.To address this issue, we propose Prism-LoRA,a Principal-timestep Restricted Init via Sparse Matrix-decomposition framework that improves gradient alignment during fine-tuning. Our method consists of two key components: (i) principal timestep selection, which restricts initialization gradients to a subset of dominant timesteps to suppress effective gradient rank, and (ii) principal channel filtering, which removes task-irrelevant channels, enabling the one-step spectral initialization gradient to better align with the long-horizon optimization trajectory. Extensive experiments demonstrate that our method consistently improves both convergence speed and final performance across multiple diffusion fine-tuning benchmarks, including subject-driven generation, controllable generation, and deblurring, achieving not only performance improvement but also earlier stages of convergence over baseline LoRA and other spectral-init methods."
+    },
+    {
+      "title": "VideoScout: Learning Agentic Active Exploration with Adaptive Reasoning Pacing for Long Video Understanding",
+      "authors": [
+        "Weixin Xu",
+        "Zhenyu Yang",
+        "Bing Wang",
+        "Shengsheng Qian",
+        "Changsheng Xu"
+      ],
+      "summary": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress on short video understanding yet remain limited on long videos due to the limited visual context window. Prevailing approaches rely on uniform frame sampling or recent coarse-to-fine agentic zooming, both of which struggle to localize sparse, decisive evidence in sufficiently long videos. We formulate long video understanding as a \\textbf{Sequential Evidence Acquisition (SEA)} problem, in which an agent reads the video turn by turn along the temporal axis, deciding at each turn how fast to watch, what evidence to retain, when to revisit uncertain segments, and when to stop and answer. Inspired by this view, we propose \\textbf{VideoScout}, a multi-turn reasoning agent that instantiates the SEA paradigm through adaptive reasoning pacing. Specifically, by dynamically controlling the viewing pace, VideoScout enables efficient traversal of long videos within a bounded visual context window, allowing the agent to access more video content while balancing content analysis depth with reading efficiency. To train VideoScout, we construct VideoScout-66K, a set of over 66K high-quality exploration turns from 10K answer-verified trajectories, and adopt a two-stage pipeline: cold-start supervised fine-tuning teaches the agent per-turn output format, while the Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) algorithm performs trajectory-level reinforcement learning with a composite reward that jointly considers answer accuracy, output format compliance, and the temporal alignment between the agent's viewing progress and the teacher's answer timing measured by intersection-over-union (IoU). Extensive experiments on long video understanding and reasoning benchmarks demonstrate that our 7B model achieves strong performance compared with existing trained 7B agentic models.",
+      "published": "2026-09-14T14:04:03Z",
+      "updated": "2026-09-14T14:04:03Z",
+      "arxiv_id": "2609.15606v1",
+      "abs_url": "http://arxiv.org/abs/2609.15606v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15606v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 8,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "fine-tuning",
+        "large language model",
+        "LoRA",
+        "MLLM",
+        "multimodal large language model"
+      ],
+      "title_zh": "VideoScout: Learning Agentic Active Exploration with Adaptive Reasoning Pacing for Long Video Understanding",
+      "summary_zh": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress on short video understanding yet remain limited on long videos due to the limited visual context window. Prevailing approaches rely on uniform frame sampling or recent coarse-to-fine agentic zooming, both of which struggle to localize sparse, decisive evidence in sufficiently long videos. We formulate long video understanding as a \\textbf{Sequential Evidence Acquisition (SEA)} problem, in which an agent reads the video turn by turn along the temporal axis, deciding at each turn how fast to watch, what evidence to retain, when to revisit uncertain segments, and when to stop and answer. Inspired by this view, we propose \\textbf{VideoScout}, a multi-turn reasoning agent that instantiates the SEA paradigm through adaptive reasoning pacing. Specifically, by dynamically controlling the viewing pace, VideoScout enables efficient traversal of long videos within a bounded visual context window, allowing the agent to access more video content while balancing content analysis depth with reading efficiency. To train VideoScout, we construct VideoScout-66K, a set of over 66K high-quality exploration turns from 10K answer-verified trajectories, and adopt a two-stage pipeline: cold-start supervised fine-tuning teaches the agent per-turn output format, while the Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) algorithm performs trajectory-level reinforcement learning with a composite reward that jointly considers answer accuracy, output format compliance, and the temporal alignment between the agent's viewing progress and the teacher's answer timing measured by intersection-over-union (IoU). Extensive experiments on long video understanding and reasoning benchmarks demonstrate that our 7B model achieves strong performance compared with existing trained 7B agentic models."
+    },
+    {
+      "title": "A Unified Vision-Language Model for PSMA PET/CT Report Generation, Visual Question Answering, and Lesion Segmentation",
+      "authors": [
+        "Yang Xing",
+        "Jiong Wu",
+        "Savas Ozdemir",
+        "Yang Zhou",
+        "Boxiao Yu",
+        "Ying Zhang",
+        "Zheren Zhu",
+        "Chenyu You",
+        "Wei Shao",
+        "Yang Lu",
+        "Kang Wang",
+        "Tinsu Pan",
+        "Yang Yang",
+        "Kuang Gong"
+      ],
+      "summary": "Accurate PSMA PET/CT interpretation is central to prostate cancer management, yet existing PET/CT AI models typically address isolated tasks. We propose a unified PSMA PET/CT vision-language model for report generation, visual question answering, and lesion segmentation. The framework adopts an LLaVA-style architecture, comprising a PET/CT vision encoder, an MLP-Mixer projection module, a LoRA-tuned large language model, and a 3D segmentation branch. Training followed a four-stage strategy: vision encoder pretraining, projection-layer alignment, VLM fine-tuning, and final multitask tuning. Language tasks used 5,747 PSMA PET/CT datasets with paired reports, while segmentation used the PSMA subset of AutoPET. The model outperformed PET2REP and a CT-based baseline across standard report-generation metrics, improved performance across VQA question types, and achieved higher Dice and lesion-level overlap F1 than SegAnyPET and nnUNet. These results support the feasibility of a unified framework for structured, interactive, interpretable PSMA PET/CT analysis with voxel-level grounding within a single multitask model architecture.",
+      "published": "2026-09-14T14:02:43Z",
+      "updated": "2026-09-14T14:02:43Z",
+      "arxiv_id": "2609.15603v1",
+      "abs_url": "http://arxiv.org/abs/2609.15603v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15603v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "large language model",
+        "LLaVA",
+        "LoRA",
+        "VLM"
+      ],
+      "title_zh": "A Unified Vision-Language Model for PSMA PET/CT Report Generation, Visual Question Answering, and Lesion Segmentation",
+      "summary_zh": "Accurate PSMA PET/CT interpretation is central to prostate cancer management, yet existing PET/CT AI models typically address isolated tasks. We propose a unified PSMA PET/CT vision-language model for report generation, visual question answering, and lesion segmentation. The framework adopts an LLaVA-style architecture, comprising a PET/CT vision encoder, an MLP-Mixer projection module, a LoRA-tuned large language model, and a 3D segmentation branch. Training followed a four-stage strategy: vision encoder pretraining, projection-layer alignment, VLM fine-tuning, and final multitask tuning. Language tasks used 5,747 PSMA PET/CT datasets with paired reports, while segmentation used the PSMA subset of AutoPET. The model outperformed PET2REP and a CT-based baseline across standard report-generation metrics, improved performance across VQA question types, and achieved higher Dice and lesion-level overlap F1 than SegAnyPET and nnUNet. These results support the feasibility of a unified framework for structured, interactive, interpretable PSMA PET/CT analysis with voxel-level grounding within a single multitask model architecture."
+    },
+    {
+      "title": "Data-driven Prediction of Satellite-observed Avalanche Activity from Snowpack Simulations",
+      "authors": [
+        "Jakob Grahn",
+        "Filippo Maria Bianchi",
+        "Bert Kruyt",
+        "Karsten Müller"
+      ],
+      "summary": "Avalanche forecasting requires knowledge of snowpack conditions and recent avalanche activity, but field observations are sparse across large mountain regions. We explore whether SNOWPACK simulations can predict avalanche activity mapped by synthetic aperture radar (SAR). We compiled five winters of Sentinel-1 avalanche detections across Norway and parts of Sweden, alongside SNOWPACK simulations forced by numerical weather predictions on a 20 x 20 km grid at different elevations and predefined slope angles. A transformer used five days of SNOWPACK outputs to predict the following day's SAR-detected Avalanche Activity Index (SAR-AAI). This index weights larger debris more heavily, spreads detections across possible occurrence dates and normalises by modelled runout area. The model was trained on four winters and evaluated on one validation winter. Regional mean predicted and reference SAR-AAI correlated at r = 0.803 after averaging over complete six-day periods. The model followed broad changes in time and space but produced smoother predictions and underestimated the strongest activity. Agreement at the 20 km cell scale was weaker (r = 0.549) after the same averaging. These results come from a single training run without evaluation on an untouched winter. Satellite observations also contain missed and false detections and uncertain timing. The results therefore do not establish operational forecast skill, but suggest that regional SNOWPACK simulations contain information about broad variations in satellite-observed avalanche activity.",
+      "published": "2026-09-14T12:40:08Z",
+      "updated": "2026-09-14T12:40:08Z",
+      "arxiv_id": "2609.15485v1",
+      "abs_url": "http://arxiv.org/abs/2609.15485v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15485v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Proceedings paper for ISSW2026. 7 pages, 4 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "SAR遥感",
+        "数据集/评测"
+      ],
+      "topic": "SAR遥感",
+      "score": 7,
+      "anchor_terms": [
+        "SAR",
+        "Sentinel-1",
+        "synthetic aperture radar"
+      ],
+      "matched_terms": [
+        "SAR",
+        "satellite",
+        "Sentinel-1",
+        "synthetic aperture radar",
+        "transformer"
+      ],
+      "title_zh": "Data-driven Prediction of Satellite-observed Avalanche Activity from Snowpack Simulations",
+      "summary_zh": "Avalanche forecasting requires knowledge of snowpack conditions and recent avalanche activity, but field observations are sparse across large mountain regions. We explore whether SNOWPACK simulations can predict avalanche activity mapped by synthetic aperture radar (SAR). We compiled five winters of Sentinel-1 avalanche detections across Norway and parts of Sweden, alongside SNOWPACK simulations forced by numerical weather predictions on a 20 x 20 km grid at different elevations and predefined slope angles. A transformer used five days of SNOWPACK outputs to predict the following day's SAR-detected Avalanche Activity Index (SAR-AAI). This index weights larger debris more heavily, spreads detections across possible occurrence dates and normalises by modelled runout area. The model was trained on four winters and evaluated on one validation winter. Regional mean predicted and reference SAR-AAI correlated at r = 0.803 after averaging over complete six-day periods. The model followed broad changes in time and space but produced smoother predictions and underestimated the strongest activity. Agreement at the 20 km cell scale was weaker (r = 0.549) after the same averaging. These results come from a single training run without evaluation on an untouched winter. Satellite observations also contain missed and false detections and uncertain timing. The results therefore do not establish operational forecast skill, but suggest that regional SNOWPACK simulations contain information about broad variations in satellite-observed avalanche activity."
+    },
+    {
+      "title": "GSLAD: Prototype-Regularized Graph Structure Learning for Multivariate Time Series Anomaly Detection",
+      "authors": [
+        "Zepeng Zhang",
+        "Fuad Khuri",
+        "Keivan Faghih Niresi",
+        "Olga Fink"
+      ],
+      "summary": "Unsupervised multivariate time series anomaly detection methods typically identify anomalies through forecasting, reconstruction, or representation discrepancies. However, industrial faults may first alter inter-variable structural patterns while individual trajectories remain close to normal, resulting in weak anomaly signals. In this paper, we propose GSLAD, a prototype-regularized graph structure learning framework that uses structural deviations for anomaly scoring. GSLAD adopts a two-phase training strategy. First, a condition-aware graph learner and a graph-based forecaster are optimized with predictive supervision. The inferred normal graphs are then clustered into multiple structural prototypes representing different normal operating regimes, with edge-wise variability characterizing structural uncertainty. Deviations from these prototypes regularize the graph learner in the second phase, encouraging stable and regime-specific structural patterns. During inference, uncertainty-normalized structural deviation is combined with predictive deviation for anomaly scoring. Experiments on four industrial benchmarks demonstrate strong overall performance of GSLAD and confirm the effectiveness of structural deviation for anomaly detection and diagnosis.",
+      "published": "2026-09-14T12:37:48Z",
+      "updated": "2026-09-14T12:37:48Z",
+      "arxiv_id": "2609.15483v1",
+      "abs_url": "http://arxiv.org/abs/2609.15483v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15483v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 3,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "unsupervised"
+      ],
+      "title_zh": "GSLAD: Prototype-Regularized Graph Structure Learning for Multivariate Time Series Anomaly Detection",
+      "summary_zh": "Unsupervised multivariate time series anomaly detection methods typically identify anomalies through forecasting, reconstruction, or representation discrepancies. However, industrial faults may first alter inter-variable structural patterns while individual trajectories remain close to normal, resulting in weak anomaly signals. In this paper, we propose GSLAD, a prototype-regularized graph structure learning framework that uses structural deviations for anomaly scoring. GSLAD adopts a two-phase training strategy. First, a condition-aware graph learner and a graph-based forecaster are optimized with predictive supervision. The inferred normal graphs are then clustered into multiple structural prototypes representing different normal operating regimes, with edge-wise variability characterizing structural uncertainty. Deviations from these prototypes regularize the graph learner in the second phase, encouraging stable and regime-specific structural patterns. During inference, uncertainty-normalized structural deviation is combined with predictive deviation for anomaly scoring. Experiments on four industrial benchmarks demonstrate strong overall performance of GSLAD and confirm the effectiveness of structural deviation for anomaly detection and diagnosis."
+    },
+    {
+      "title": "ViCo-SAM3: Vision-Conditioned Alignment for Open-Vocabulary Camouflaged Object Segmentation",
+      "authors": [
+        "Qiangqiang Zhou",
+        "Wenjun Tang",
+        "Yong Chen",
+        "Dandan Zhu",
+        "Jiawei Xu"
+      ],
+      "summary": "Open-vocabulary camouflaged object segmentation (OVCOS) aims to segment unseen camouflaged objects under text guidance. We observe that SAM3 still suffers from a pronounced semantic gap between global textual semantics and fine-grained pixel-level visual cues in OVCOS. Meanwhile, fully fine-tuning the text encoder introduces heavy parameter overhead and risks overfitting to training categories, which compromises open-vocabulary representation flexibility. To address these issues, we propose ViCo-SAM3, a Vision-Conditioned alignment framework designed for OVCOS. Specifically, we introduce vision-conditioned (ViCo) module, which dynamically modulates text embeddings with global visual context, enabling textual representations to adapt to the current image content and thereby effectively bridging the semantic gap between vision and text. Building on this, we further design a vision-conditioned cross-modal binding (ViCoBind) module to enhance cross-modal interaction and semantic alignment between visual and textual representations. Without bells and whistles, ViCo-SAM3 achieves state-of-the-art performance on the OVCamo benchmark and demonstrates strong generalization.",
+      "published": "2026-09-14T11:44:31Z",
+      "updated": "2026-09-14T11:44:31Z",
+      "arxiv_id": "2609.15418v1",
+      "abs_url": "http://arxiv.org/abs/2609.15418v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15418v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "开放词汇与开放集",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 6,
+      "anchor_terms": [
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "open-vocabulary"
+      ],
+      "title_zh": "ViCo-SAM3: Vision-Conditioned Alignment for Open-Vocabulary Camouflaged Object Segmentation",
+      "summary_zh": "Open-vocabulary camouflaged object segmentation (OVCOS) aims to segment unseen camouflaged objects under text guidance. We observe that SAM3 still suffers from a pronounced semantic gap between global textual semantics and fine-grained pixel-level visual cues in OVCOS. Meanwhile, fully fine-tuning the text encoder introduces heavy parameter overhead and risks overfitting to training categories, which compromises open-vocabulary representation flexibility. To address these issues, we propose ViCo-SAM3, a Vision-Conditioned alignment framework designed for OVCOS. Specifically, we introduce vision-conditioned (ViCo) module, which dynamically modulates text embeddings with global visual context, enabling textual representations to adapt to the current image content and thereby effectively bridging the semantic gap between vision and text. Building on this, we further design a vision-conditioned cross-modal binding (ViCoBind) module to enhance cross-modal interaction and semantic alignment between visual and textual representations. Without bells and whistles, ViCo-SAM3 achieves state-of-the-art performance on the OVCamo benchmark and demonstrates strong generalization."
+    },
+    {
+      "title": "Distilling Foundation Models for Agentic What-If Reasoning:Cost, Latency, and Governance in a Hybrid LLM+SLM Architecture",
+      "authors": [
+        "Sourish Dey",
+        "Aditya Kumar"
+      ],
+      "summary": "Tabular foundation models deliver strong zero-training predictive performance via in-context learning, but their high inference latency makes them impractical as hot-path decision backends in interactive agentic loops. We distill a TabPFN teacher into a compact feed-forward student across a business-decision simulation on UCI Adult and five OpenML benchmarks: the classification head compresses 53.2M parameters to 8,546 (6,220x); the deployed two-head loan pipeline compresses 111.4M parameters to 17,059 (6,532x). The student retains 95.4-100.5% accuracy and 96.8-100.0% AUC, with the lowest accuracy retention on credit-g at 95.4%; an alpha = 0 hard-label control shows that the teacher's soft targets provide a 2.1-7.0 AUC point gain.",
+      "published": "2026-09-14T11:26:21Z",
+      "updated": "2026-09-14T11:26:21Z",
+      "arxiv_id": "2609.16091v1",
+      "abs_url": "http://arxiv.org/abs/2609.16091v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.16091v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "13 pages, 1 figure, 7 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning",
+        "LLM"
+      ],
+      "title_zh": "Distilling Foundation Models for Agentic What-If Reasoning:Cost, Latency, and Governance in a Hybrid LLM+SLM Architecture",
+      "summary_zh": "Tabular foundation models deliver strong zero-training predictive performance via in-context learning, but their high inference latency makes them impractical as hot-path decision backends in interactive agentic loops. We distill a TabPFN teacher into a compact feed-forward student across a business-decision simulation on UCI Adult and five OpenML benchmarks: the classification head compresses 53.2M parameters to 8,546 (6,220x); the deployed two-head loan pipeline compresses 111.4M parameters to 17,059 (6,532x). The student retains 95.4-100.5% accuracy and 96.8-100.0% AUC, with the lowest accuracy retention on credit-g at 95.4%; an alpha = 0 hard-label control shows that the teacher's soft targets provide a 2.1-7.0 AUC point gain."
+    },
+    {
+      "title": "Parameter-Efficient Adaptation of Pretrained Language Models for Time-Series Forecasting",
+      "authors": [
+        "Tamanna Kumavat",
+        "Georg Brunner",
+        "Kyriakos Flouris"
+      ],
+      "summary": "We study the adaptation of pretrained language models to univariate time-series forecasting through a parameter-efficient transfer learning framework, with the goal of understanding which design choices drive effective cross-modal transfer. While language models operate on discrete textual tokens, time series consist of continuous numerical observations with temporal dependencies. To bridge this modality gap, we project fixed-length time-series patches directly into the embedding space of a pretrained GPT-2 backbone, bypassing textual tokenization and treating the Transformer as a generic sequence encoder. Through controlled ablation studies on seven benchmark datasets spanning energy, weather, traffic, and finance, we analyze the effects of (i)~representation strategy (continuous embeddings versus textual serialisation), (ii)~adaptation regime (frozen backbone versus partial or full fine-tuning), (iii)~architectural components such as adapters, pooling strategies, and prediction heads, and (iv)~input context length. Continuous patch-based embeddings consistently outperform textual prompting and randomly initialised backbones. The adapted pipeline attains MASE within the range of specialised forecasting architectures while updating less than 1\\% of total model parameters. Results further indicate that freezing the pretrained backbone and training lightweight projection and adapter modules provides a favourable accuracy--efficiency trade-off with stable behaviour across varying context lengths.",
+      "published": "2026-09-14T10:30:59Z",
+      "updated": "2026-09-14T10:30:59Z",
+      "arxiv_id": "2609.15344v1",
+      "abs_url": "http://arxiv.org/abs/2609.15344v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15344v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 7,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "temporal",
+        "time-series",
+        "tokenization",
+        "transfer learning",
+        "transformer"
+      ],
+      "title_zh": "Parameter-Efficient Adaptation of Pretrained Language Models for Time-Series Forecasting",
+      "summary_zh": "We study the adaptation of pretrained language models to univariate time-series forecasting through a parameter-efficient transfer learning framework, with the goal of understanding which design choices drive effective cross-modal transfer. While language models operate on discrete textual tokens, time series consist of continuous numerical observations with temporal dependencies. To bridge this modality gap, we project fixed-length time-series patches directly into the embedding space of a pretrained GPT-2 backbone, bypassing textual tokenization and treating the Transformer as a generic sequence encoder. Through controlled ablation studies on seven benchmark datasets spanning energy, weather, traffic, and finance, we analyze the effects of (i)~representation strategy (continuous embeddings versus textual serialisation), (ii)~adaptation regime (frozen backbone versus partial or full fine-tuning), (iii)~architectural components such as adapters, pooling strategies, and prediction heads, and (iv)~input context length. Continuous patch-based embeddings consistently outperform textual prompting and randomly initialised backbones. The adapted pipeline attains MASE within the range of specialised forecasting architectures while updating less than 1\\% of total model parameters. Results further indicate that freezing the pretrained backbone and training lightweight projection and adapter modules provides a favourable accuracy--efficiency trade-off with stable behaviour across varying context lengths."
+    },
+    {
+      "title": "BioDCASE: Active Learning for Bioacoustics",
+      "authors": [
+        "Ben McEwen",
+        "Rupa Kurinchi-Vendhan",
+        "Shiqi Zhang",
+        "Lukas Rauch",
+        "Marek Herde",
+        "Sara Beery"
+      ],
+      "summary": "Ecological monitoring increasingly relies on machine learning models, whose performance depends on the quality and quantity of labelled data. However, obtaining these labels is costly, particularly in passive acoustic monitoring, where vast amounts of data are collected but only a small proportion can feasibly be annotated. Active learning addresses this bottleneck by prioritizing which samples should be labelled. However, progress is difficult to measure, because published methods are evaluated under different models, budgets, evaluation metrics and datasets. To address this challenge, we present the 2026 Active Learning for Bioacoustics BioDCASE challenge: a systematic evaluation of sampling methods designed to identify effective AL strategies. Participant methods were evaluated across four subsets composed of terrestrial and marine data. Across ten proposed sampling methods from seven teams, the top-ranked method achieved an area under the learning curve 26.4 % higher than random sampling at the same annotation budget, averaged over four data subsets. Significant variation in performance was observed across subsets, with the top-performing submission achieving a 67.1 % gain for the HSN subset over random sampling and a gain of 8 % for the ATBFL subset. Top-ranking submissions combined multiple acquisition signals, and diversity-based selection outperformed pure uncertainty sampling. Furthermore, there is evidence that transitioning from diversity-based to uncertainty-based selection and explicitly reducing redundancy within acquisition batches improve model training. There is also initial evidence that larger acquisition batch sizes may be increasingly beneficial later in the labelling process.",
+      "published": "2026-09-14T09:14:50Z",
+      "updated": "2026-09-14T09:14:50Z",
+      "arxiv_id": "2609.15255v1",
+      "abs_url": "http://arxiv.org/abs/2609.15255v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15255v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "comment": "This paper summarises the BioDCASE Active Learning for Bioacoustics data challenge. This paper was reviewed and accepted to the non-archival track of the ECCV Computer Vision for Ecology workshop via OpenReview",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "农业与生态",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 2,
+      "anchor_terms": [
+        "active learning"
+      ],
+      "matched_terms": [
+        "active learning"
+      ],
+      "title_zh": "BioDCASE: Active Learning for Bioacoustics",
+      "summary_zh": "Ecological monitoring increasingly relies on machine learning models, whose performance depends on the quality and quantity of labelled data. However, obtaining these labels is costly, particularly in passive acoustic monitoring, where vast amounts of data are collected but only a small proportion can feasibly be annotated. Active learning addresses this bottleneck by prioritizing which samples should be labelled. However, progress is difficult to measure, because published methods are evaluated under different models, budgets, evaluation metrics and datasets. To address this challenge, we present the 2026 Active Learning for Bioacoustics BioDCASE challenge: a systematic evaluation of sampling methods designed to identify effective AL strategies. Participant methods were evaluated across four subsets composed of terrestrial and marine data. Across ten proposed sampling methods from seven teams, the top-ranked method achieved an area under the learning curve 26.4 % higher than random sampling at the same annotation budget, averaged over four data subsets. Significant variation in performance was observed across subsets, with the top-performing submission achieving a 67.1 % gain for the HSN subset over random sampling and a gain of 8 % for the ATBFL subset. Top-ranking submissions combined multiple acquisition signals, and diversity-based selection outperformed pure uncertainty sampling. Furthermore, there is evidence that transitioning from diversity-based to uncertainty-based selection and explicitly reducing redundancy within acquisition batches improve model training. There is also initial evidence that larger acquisition batch sizes may be increasingly beneficial later in the labelling process."
+    },
+    {
+      "title": "Pre-PEFT Probing: Weight Statistics and Perturbation Robustness for Layer Selection in VLM Vision Encoders",
+      "authors": [
+        "Qingtao Xia",
+        "Jiahua Bao",
+        "Siyao Cheng",
+        "Jie Liu"
+      ],
+      "summary": "We propose a pre-fine-tuning probing method for Parameter-Efficient Fine-Tuning (PEFT) layer selection, aiming to obtain more stable and higher gains with fewer trainable parameters when adapting large vision--language models (VLMs). Unlike the common practice of applying LoRA and other adapters to all layers at once---where layer selection often relies on heuristic rules---we focus on the vision encoder and directly evaluate the \"adaptability'' of each Transformer layer. Specifically, we characterize each layer from two perspectives: (i) the statistical properties of its Q/K/V projection weights (e.g., norms and condition numbers); (ii) robustness under controlled parameter perturbations. We then systematically compare these indicators with the downstream performance gains brought by applying PEFT to a single layer. Across experiments covering seven benchmarks and five PEFT variants, we observe a consistent correlation: layers (or matrices) with larger weight norms and higher condition numbers are usually more robust to perturbations and are more likely to yield larger fine-tuning gains. These results show that distribution-statistics analysis and perturbation tests before fine-tuning can provide practical signals for adaptation-layer selection, thereby maintaining or improving performance while reducing trainable parameters.",
+      "published": "2026-09-14T08:49:31Z",
+      "updated": "2026-09-14T08:49:31Z",
+      "arxiv_id": "2609.15229v1",
+      "abs_url": "http://arxiv.org/abs/2609.15229v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15229v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "6 pages, 4 figures. Accepted at the 2026 International Joint Conference on Neural Networks (IJCNN 2026)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 11,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "LoRA",
+        "PEFT",
+        "robust",
+        "transformer",
+        "VLM"
+      ],
+      "title_zh": "Pre-PEFT Probing: Weight Statistics and Perturbation Robustness for Layer Selection in VLM Vision Encoders",
+      "summary_zh": "We propose a pre-fine-tuning probing method for Parameter-Efficient Fine-Tuning (PEFT) layer selection, aiming to obtain more stable and higher gains with fewer trainable parameters when adapting large vision--language models (VLMs). Unlike the common practice of applying LoRA and other adapters to all layers at once---where layer selection often relies on heuristic rules---we focus on the vision encoder and directly evaluate the \"adaptability'' of each Transformer layer. Specifically, we characterize each layer from two perspectives: (i) the statistical properties of its Q/K/V projection weights (e.g., norms and condition numbers); (ii) robustness under controlled parameter perturbations. We then systematically compare these indicators with the downstream performance gains brought by applying PEFT to a single layer. Across experiments covering seven benchmarks and five PEFT variants, we observe a consistent correlation: layers (or matrices) with larger weight norms and higher condition numbers are usually more robust to perturbations and are more likely to yield larger fine-tuning gains. These results show that distribution-statistics analysis and perturbation tests before fine-tuning can provide practical signals for adaptation-layer selection, thereby maintaining or improving performance while reducing trainable parameters."
+    },
+    {
+      "title": "EECTracker: Swarm Motion Prior-Guided Feature Compensation for Airborne Optical UAV Swarm Tracking",
+      "authors": [
+        "Zhaochen Chu",
+        "Tao Song",
+        "Ren Jin",
+        "Mingdong Jia",
+        "Defu Lin"
+      ],
+      "summary": "Airborne optical tracking of uncrewed aerial vehicle (UAV) swarms is challenging due to extremely small target scales, rapid viewpoint changes, and cluttered backgrounds, which can weaken target feature responses and lead to intermittent or temporarily missing detector responses. Existing multi-object tracking methods generally depend on reliable target-specific detector responses to maintain target states and identities across frames. When such responses become unreliable, target states cannot be reliably updated and cross-frame association cues become ambiguous, resulting in fragmented trajectories and identity switches. To address this problem, we propose EECTracker, a swarm-motion-prior-guided joint detection-and-tracking framework for airborne optical UAV swarm tracking. EECTracker constructs a probabilistic swarm motion prior from reliable historical tracklets to capture the shared short-term image-plane motion tendency of the swarm and its uncertainty, providing spatial guidance for cross-frame feature compensation. Building on this prior, we introduce Energy--Entropy Consistency Activation (EEC Activation) to evaluate motion-prior-conditioned feature consistency using feature residual energy and local residual entropy. The resulting Local EEC score guides pixel-level feature compensation by enhancing motion-prior-consistent feature responses in potential target regions while suppressing inconsistent background responses. Experiments on AIRMOT and UAVSwarm show that EECTracker achieves superior overall tracking performance compared with state-of-the-art methods. Compared with the strongest competing method SCT-MOT, EECTracker improves MOTA/IDF1 by 3.89/1.79 percentage points on AIRMOT and by 2.81/1.74 percentage points on UAVSwarm, while maintaining online inference speed.",
+      "published": "2026-09-14T07:57:47Z",
+      "updated": "2026-09-14T07:57:47Z",
+      "arxiv_id": "2609.15171v1",
+      "abs_url": "http://arxiv.org/abs/2609.15171v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15171v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "20 pages, 7 figures, 12 tables. This work has been submitted to the IEEE for possible publication.Copyright may be transferred without notice, after which this version may no longer be accessible",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV"
+      ],
+      "topic": "无人机/UAV",
+      "score": 7,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "airborne",
+        "UAV"
+      ],
+      "title_zh": "EECTracker: Swarm Motion Prior-Guided Feature Compensation for Airborne Optical UAV Swarm Tracking",
+      "summary_zh": "Airborne optical tracking of uncrewed aerial vehicle (UAV) swarms is challenging due to extremely small target scales, rapid viewpoint changes, and cluttered backgrounds, which can weaken target feature responses and lead to intermittent or temporarily missing detector responses. Existing multi-object tracking methods generally depend on reliable target-specific detector responses to maintain target states and identities across frames. When such responses become unreliable, target states cannot be reliably updated and cross-frame association cues become ambiguous, resulting in fragmented trajectories and identity switches. To address this problem, we propose EECTracker, a swarm-motion-prior-guided joint detection-and-tracking framework for airborne optical UAV swarm tracking. EECTracker constructs a probabilistic swarm motion prior from reliable historical tracklets to capture the shared short-term image-plane motion tendency of the swarm and its uncertainty, providing spatial guidance for cross-frame feature compensation. Building on this prior, we introduce Energy--Entropy Consistency Activation (EEC Activation) to evaluate motion-prior-conditioned feature consistency using feature residual energy and local residual entropy. The resulting Local EEC score guides pixel-level feature compensation by enhancing motion-prior-consistent feature responses in potential target regions while suppressing inconsistent background responses. Experiments on AIRMOT and UAVSwarm show that EECTracker achieves superior overall tracking performance compared with state-of-the-art methods. Compared with the strongest competing method SCT-MOT, EECTracker improves MOTA/IDF1 by 3.89/1.79 percentage points on AIRMOT and by 2.81/1.74 percentage points on UAVSwarm, while maintaining online inference speed."
+    },
+    {
+      "title": "ANASSA: An Agentic AI Orchestration Framework for Spatial Intelligence",
+      "authors": [
+        "Constantinos Papantoniou",
+        "Brian Hilton"
+      ],
+      "summary": "The emergence of large language models (LLMs) and large multimodal models (LMMs) has enabled a new class of agentic systems capable of integrating natural language understanding with tool-based execution. In geographic information systems (GIS), this shift is transforming traditional, expert-driven workflows into semiautonomous systems that can interpret user intent, construct spatial workflows, and execute geospatial analysis tasks. However, existing approaches remain limited by fragmented integration of reasoning, execution, and evaluation, particularly in complex, real-world environments. This study synthesizes recent advances in agentic GIS frameworks, benchmarks, and surveys to identify limitations in spatial reasoning, execution robustness, validation, governance, and evaluation. Building on these insights, it introduces ANASSA (Autonomous Neural Agents for Spatial Systems Architecture), an agentic AI orchestration framework that integrates structured spatial reasoning, multi-agent workflow orchestration, execution feedback, authoritative spatial validation, provenance, uncertainty handling, and human decision authority within a unified system design. The contribution is an architecture-level specification: eleven components across four layers, a six-step Geospatial AI Cognitive Loop, cross-component contracts, and governance mechanisms intended to make agentic geospatial workflows traceable, reproducible, and accountable. Empirical performance evaluation is reserved for implementation and deployment studies.",
+      "published": "2026-09-13T22:35:26Z",
+      "updated": "2026-09-13T22:35:26Z",
+      "arxiv_id": "2609.14824v1",
+      "abs_url": "http://arxiv.org/abs/2609.14824v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.14824v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 6,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial",
+        "GIS",
+        "large language model",
+        "robust",
+        "spatial reasoning"
+      ],
+      "title_zh": "ANASSA: An Agentic AI Orchestration Framework for Spatial Intelligence",
+      "summary_zh": "The emergence of large language models (LLMs) and large multimodal models (LMMs) has enabled a new class of agentic systems capable of integrating natural language understanding with tool-based execution. In geographic information systems (GIS), this shift is transforming traditional, expert-driven workflows into semiautonomous systems that can interpret user intent, construct spatial workflows, and execute geospatial analysis tasks. However, existing approaches remain limited by fragmented integration of reasoning, execution, and evaluation, particularly in complex, real-world environments. This study synthesizes recent advances in agentic GIS frameworks, benchmarks, and surveys to identify limitations in spatial reasoning, execution robustness, validation, governance, and evaluation. Building on these insights, it introduces ANASSA (Autonomous Neural Agents for Spatial Systems Architecture), an agentic AI orchestration framework that integrates structured spatial reasoning, multi-agent workflow orchestration, execution feedback, authoritative spatial validation, provenance, uncertainty handling, and human decision authority within a unified system design. The contribution is an architecture-level specification: eleven components across four layers, a six-step Geospatial AI Cognitive Loop, cross-component contracts, and governance mechanisms intended to make agentic geospatial workflows traceable, reproducible, and accountable. Empirical performance evaluation is reserved for implementation and deployment studies."
+    }
+  ]
+}
