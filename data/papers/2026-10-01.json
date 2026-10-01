@@ -1,0 +1,1325 @@
+{
+  "date": "2026-10-01",
+  "generated_at": "2026-10-01T08:03:55.582658+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 31,
+  "papers": [
+    {
+      "title": "OpenTSLM TeeMoE: A Unified Time-Series Language Model for Forecasting, Contextual Prediction, and Reasoning",
+      "authors": [
+        "Tony Chen",
+        "Timo Stoffregen",
+        "Maxwell Xu",
+        "Thomas Kaar",
+        "Martin Maritsch",
+        "Geremia Pompei",
+        "Nicolas Zumarraga",
+        "Robert Jakob",
+        "Paul Schmiedmayer",
+        "Patrick Langer",
+        "Juncheng Liu"
+      ],
+      "summary": "Real-world time-series applications increasingly require models that can handle time series forecasting, context-conditioned prediction, and language-based temporal reasoning. Yet current time-series foundation models remain fragmented across these capabilities: numerical specialists often provide the strongest forecasts, while language-based models offer broader contextual understanding and analysis. A central challenge is to unify these heterogeneous capabilities without reducing their individual performance. We introduce OpenTSLM TeeMoE, a generalist time-series language model that can forecast directly from observed time series, reason over textual context and temporal patterns, and synthesize and refine predictions from external numerical forecasting specialists. We independently train three low-rank experts for forecast aggregation, native forecasting, and temporal analysis over a shared backbone. A learned LoRA mixture-of-experts controller then weights their frozen parameter updates for each request. Our proposed model achieves strong performance on widely used benchmarks for time series forecasting, context-conditioned prediction, and language-based temporal reasoning, ranking among the top three on GIFT-Eval by mean MASE rank, Context is Key by RCRPS, and TimeSeriesExam by accuracy.",
+      "published": "2026-09-30T17:43:22Z",
+      "updated": "2026-09-30T17:43:22Z",
+      "arxiv_id": "2609.40265v1",
+      "abs_url": "http://arxiv.org/abs/2609.40265v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.40265v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "39 pages, 2 figures. Code: https://github.com/OpenTSLM/OpenTSLM-TeeMoE ; model: https://huggingface.co/OpenTSLM/TeeMoE",
+      "code_url": "https://github.com/OpenTSLM/OpenTSLM-TeeMoE",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "时间序列与视频",
+        "基础模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA",
+        "temporal"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "LoRA",
+        "temporal",
+        "temporal analysis",
+        "time-series"
+      ],
+      "title_zh": "OpenTSLM TeeMoE: A Unified Time-Series Language Model for Forecasting, Contextual Prediction, and Reasoning",
+      "summary_zh": "Real-world time-series applications increasingly require models that can handle time series forecasting, context-conditioned prediction, and language-based temporal reasoning. Yet current time-series foundation models remain fragmented across these capabilities: numerical specialists often provide the strongest forecasts, while language-based models offer broader contextual understanding and analysis. A central challenge is to unify these heterogeneous capabilities without reducing their individual performance. We introduce OpenTSLM TeeMoE, a generalist time-series language model that can forecast directly from observed time series, reason over textual context and temporal patterns, and synthesize and refine predictions from external numerical forecasting specialists. We independently train three low-rank experts for forecast aggregation, native forecasting, and temporal analysis over a shared backbone. A learned LoRA mixture-of-experts controller then weights their frozen parameter updates for each request. Our proposed model achieves strong performance on widely used benchmarks for time series forecasting, context-conditioned prediction, and language-based temporal reasoning, ranking among the top three on GIFT-Eval by mean MASE rank, Context is Key by RCRPS, and TimeSeriesExam by accuracy."
+    },
+    {
+      "title": "Hyperspectral Image Models: Technical Report",
+      "authors": [
+        "Tanishq Rachamalla",
+        "Aryan Das",
+        "Srishti Kaushik",
+        "Swalpa Kumar Roy"
+      ],
+      "summary": "Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet progress remains hindered by fragmented repositories, incompatible tensor conventions, and non standardized evaluation. Hyperspectral Image Models addresses these challenges through a modular framework unifying 55 representative models across six paradigms with a common registry, automatic 4D/5D tensor adaptation, and standardized constructors. It integrates 24 benchmark scenes from Airborne, Spaceborne, UAV, and Mars CRISM sensors, with caching, label remapping, PCA, explicit band selection or raw spectra, optional spatial max pooling, and arbitrary PxP patch extraction. To prevent inflated accuracy from overlapping windows, it supports class balanced random partitioning and spatially disjoint regional blocking with Chebyshev guard bands that eliminate train test pixel overlap. Experiments use a single config.yaml with deterministic seeds and complete provenance, generating LaTeX benchmark tables and classification maps. Across 1,320 model scene evaluations and 6,600 seeded runs, scene difficulty dominates architecture, with mean accuracy ranging from 96.40% on Botswana to 56.70% on Houston 2018, versus a 15 point spread across paradigm means. No paradigm universally dominates, while sub 1 M parameter models can match architectures two orders of magnitude larger. Code is publicly available at https://github.com/Tanishq251/Hyperspectral-Image-Models.",
+      "published": "2026-09-30T14:50:21Z",
+      "updated": "2026-09-30T14:50:21Z",
+      "arxiv_id": "2609.39871v1",
+      "abs_url": "http://arxiv.org/abs/2609.39871v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39871v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Documentation and benchmark library for hyperspectral image models",
+      "code_url": "https://github.com/Tanishq251/Hyperspectral-Image-Models",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "高光谱/多光谱",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 12,
+      "anchor_terms": [
+        "hyperspectral image",
+        "Mamba",
+        "remote sensing",
+        "UAV",
+        "vision transformer"
+      ],
+      "matched_terms": [
+        "airborne",
+        "graph neural network",
+        "hyperspectral",
+        "hyperspectral image",
+        "Mamba",
+        "remote sensing",
+        "spaceborne",
+        "transformer",
+        "UAV",
+        "vision transformer"
+      ],
+      "title_zh": "Hyperspectral Image Models: Technical Report",
+      "summary_zh": "Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet progress remains hindered by fragmented repositories, incompatible tensor conventions, and non standardized evaluation. Hyperspectral Image Models addresses these challenges through a modular framework unifying 55 representative models across six paradigms with a common registry, automatic 4D/5D tensor adaptation, and standardized constructors. It integrates 24 benchmark scenes from Airborne, Spaceborne, UAV, and Mars CRISM sensors, with caching, label remapping, PCA, explicit band selection or raw spectra, optional spatial max pooling, and arbitrary PxP patch extraction. To prevent inflated accuracy from overlapping windows, it supports class balanced random partitioning and spatially disjoint regional blocking with Chebyshev guard bands that eliminate train test pixel overlap. Experiments use a single config.yaml with deterministic seeds and complete provenance, generating LaTeX benchmark tables and classification maps. Across 1,320 model scene evaluations and 6,600 seeded runs, scene difficulty dominates architecture, with mean accuracy ranging from 96.40% on Botswana to 56.70% on Houston 2018, versus a 15 point spread across paradigm means. No paradigm universally dominates, while sub 1 M parameter models can match architectures two orders of magnitude larger. Code is publicly available at https://github.com/Tanishq251/Hyperspectral-Image-Models."
+    },
+    {
+      "title": "COBICount: Separating Object and Background Responses for Remote Sensing Object Counting Without Training on Target Data",
+      "authors": [
+        "Junjing Zheng",
+        "Zhiyi Zhou",
+        "Ningrui Yang",
+        "Hongying Meng"
+      ],
+      "summary": "Remote sensing object counting estimates how many buildings, vehicles, or ships appear in overhead images. Most supervised counters predict a density map, whose sum gives the object count, and assume similar categories, sizes, and backgrounds. Applying them across regions, sensors, or categories often requires target data or further training, which may be costly or unavailable. We study source-only counting. Training for the counting task and model selection use one group of images that shares an object category and similar imaging conditions, with one point marking each object. Target images and information remain unavailable until the model is fixed. This reduces data preparation but makes transfer harder. A model trained on one source may place high density values, called responses, on real objects and repeated background structures. Road edges, parking grids, roof boundaries, and water boundaries may then be counted as objects, creating candidate origin ambiguity. COBICount separates response generation, acceptance, and background suppression. Candidate Evidence (CE) generates possible responses. Candidate Acceptance (CA) keeps compact responses centered on objects. Bias Isolation (BI) reduces responses associated with repeated background structures. Their outputs form the final density map. Trained on RSOC Building and evaluated directly on DOTA Large Vehicle, Small Vehicle, and Ship, COBICount achieves the lowest mean absolute error (MAE) averaged over the target domains among the compared methods, 174.132. It uses 5.07 million parameters and 17.41 billion floating point operations for a 512x512 input. COBICount improves transfer without target data or training for each target. The code will be available at: https://github.com/yixuxi22/COBICount.",
+      "published": "2026-09-30T09:22:11Z",
+      "updated": "2026-09-30T09:22:11Z",
+      "arxiv_id": "2609.39366v1",
+      "abs_url": "http://arxiv.org/abs/2609.39366v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39366v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "19 pages, 7 figures",
+      "code_url": "https://github.com/yixuxi22/COBICount",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "目标检测",
+        "基础模型",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 6,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "DOTA",
+        "MAE",
+        "remote sensing"
+      ],
+      "title_zh": "COBICount: Separating Object and Background Responses for Remote Sensing Object Counting Without Training on Target Data",
+      "summary_zh": "Remote sensing object counting estimates how many buildings, vehicles, or ships appear in overhead images. Most supervised counters predict a density map, whose sum gives the object count, and assume similar categories, sizes, and backgrounds. Applying them across regions, sensors, or categories often requires target data or further training, which may be costly or unavailable. We study source-only counting. Training for the counting task and model selection use one group of images that shares an object category and similar imaging conditions, with one point marking each object. Target images and information remain unavailable until the model is fixed. This reduces data preparation but makes transfer harder. A model trained on one source may place high density values, called responses, on real objects and repeated background structures. Road edges, parking grids, roof boundaries, and water boundaries may then be counted as objects, creating candidate origin ambiguity. COBICount separates response generation, acceptance, and background suppression. Candidate Evidence (CE) generates possible responses. Candidate Acceptance (CA) keeps compact responses centered on objects. Bias Isolation (BI) reduces responses associated with repeated background structures. Their outputs form the final density map. Trained on RSOC Building and evaluated directly on DOTA Large Vehicle, Small Vehicle, and Ship, COBICount achieves the lowest mean absolute error (MAE) averaged over the target domains among the compared methods, 174.132. It uses 5.07 million parameters and 17.41 billion floating point operations for a 512x512 input. COBICount improves transfer without target data or training for each target. The code will be available at: https://github.com/yixuxi22/COBICount."
+    },
+    {
+      "title": "Recognition of Urbanized Areas in UAV-Derived Very-High-Resolution Visible-Light Imagery",
+      "authors": [
+        "Edyta Puniach",
+        "Wojciech Gruszczyński",
+        "Paweł Ćwiąkała",
+        "Katarzyna Strząbała",
+        "Elżbieta Pastucha"
+      ],
+      "summary": "This study compared classifiers that differentiate between urbanized and non-urbanized areas based on unmanned aerial vehicle (UAV)-acquired RGB imagery. The tested solutions in-cluded numerous vegetation indices (VIs) thresholding and neural networks (NNs). The analysis was conducted for two study areas for which surveys were carried out using different UAVs and cameras. The ground sampling distances for the study areas were 10 mm and 15 mm, respectively. Reference classification was performed manually, obtaining approximately 24 million classified pix-els for the first area and approximately 3.8 million for the second. This research study included an analysis of the impact of the season on the threshold values for the tested VIs and the impact of image patch size provided as inputs for the NNs on classification accuracy. The results of the con-ducted research study indicate a higher classification accuracy using NNs (about 96%) compared with the best of the tested VIs, i.e., Excess Blue (about 87%). Due to the highly imbalanced nature of the used datasets (non-urbanized areas constitute approximately 87% of the total datasets), the Mat-thews correlation coefficient was also used to assess the correctness of the classification. The analysis based on statistical measures was supplemented with a qualitative assessment of the classification results, which allowed the identification of the most important sources of differences in classification between VIs thresholding and NNs.",
+      "published": "2026-09-30T17:22:28Z",
+      "updated": "2026-09-30T17:22:28Z",
+      "arxiv_id": "2609.40212v1",
+      "abs_url": "http://arxiv.org/abs/2609.40212v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.40212v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 6,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "Recognition of Urbanized Areas in UAV-Derived Very-High-Resolution Visible-Light Imagery",
+      "summary_zh": "This study compared classifiers that differentiate between urbanized and non-urbanized areas based on unmanned aerial vehicle (UAV)-acquired RGB imagery. The tested solutions in-cluded numerous vegetation indices (VIs) thresholding and neural networks (NNs). The analysis was conducted for two study areas for which surveys were carried out using different UAVs and cameras. The ground sampling distances for the study areas were 10 mm and 15 mm, respectively. Reference classification was performed manually, obtaining approximately 24 million classified pix-els for the first area and approximately 3.8 million for the second. This research study included an analysis of the impact of the season on the threshold values for the tested VIs and the impact of image patch size provided as inputs for the NNs on classification accuracy. The results of the con-ducted research study indicate a higher classification accuracy using NNs (about 96%) compared with the best of the tested VIs, i.e., Excess Blue (about 87%). Due to the highly imbalanced nature of the used datasets (non-urbanized areas constitute approximately 87% of the total datasets), the Mat-thews correlation coefficient was also used to assess the correctness of the classification. The analysis based on statistical measures was supplemented with a qualitative assessment of the classification results, which allowed the identification of the most important sources of differences in classification between VIs thresholding and NNs."
+    },
+    {
+      "title": "Grounding Time-Series Foundation Models in Digital Twin Topology for Predictive Maintenance",
+      "authors": [
+        "Sizhe Ma",
+        "Katherine A. Flanigan",
+        "Mario Bergés"
+      ],
+      "summary": "Digital twins increasingly support downstream analytical tasks that depend on time-series data, motivating interest in time-series foundation models (TSFMs) as scalable backbones. However, TSFMs are primarily pretrained for temporal continuation and often underperform on unseen tasks such as regression, and systematic empirical comparisons against state-of-the-art dedicated models in digital twin contexts remain limited. This paper makes three contributions. First, we benchmark five well-known TSFMs with frozen backbones on remaining useful life (RUL) prediction using the C-MAPSS dataset, finding that multivariate architectures substantially outperform univariate ones, particularly under varying operating conditions. This raises a deeper question: when cross-channel dependencies can be modeled through pretrained weights, target-task adaptation, and digital twin-derived representations, how much does each contribute, and are they complementary? Second, we propose a topology-informed fusion approach in which topological constraints, derived from the asset structure the digital twin stores among its information models, explicitly shape cross-attention, so that fused representations respect the physical system's local connectivity rather than relying on unconstrained all-to-all interactions. Third, we conduct an ablation study across C-MAPSS subsets of varying operational complexity that isolates the three sources and their interactions. The sources prove complementary rather than redundant, and topology-constrained attention outperforms unconstrained fusion, though by a small margin, enabling a frozen TSFM informed by digital twin representations to remain competitive or in some cases exceed state-of-the-art performance on this regression task.",
+      "published": "2026-09-30T16:24:35Z",
+      "updated": "2026-09-30T16:24:35Z",
+      "arxiv_id": "2609.40071v1",
+      "abs_url": "http://arxiv.org/abs/2609.40071v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.40071v1",
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "cs.AI"
+      ],
+      "comment": "Submitted to Reliability Engineering \\& System Safety (RESS)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 5,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "cross-attention",
+        "foundation model",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "Grounding Time-Series Foundation Models in Digital Twin Topology for Predictive Maintenance",
+      "summary_zh": "Digital twins increasingly support downstream analytical tasks that depend on time-series data, motivating interest in time-series foundation models (TSFMs) as scalable backbones. However, TSFMs are primarily pretrained for temporal continuation and often underperform on unseen tasks such as regression, and systematic empirical comparisons against state-of-the-art dedicated models in digital twin contexts remain limited. This paper makes three contributions. First, we benchmark five well-known TSFMs with frozen backbones on remaining useful life (RUL) prediction using the C-MAPSS dataset, finding that multivariate architectures substantially outperform univariate ones, particularly under varying operating conditions. This raises a deeper question: when cross-channel dependencies can be modeled through pretrained weights, target-task adaptation, and digital twin-derived representations, how much does each contribute, and are they complementary? Second, we propose a topology-informed fusion approach in which topological constraints, derived from the asset structure the digital twin stores among its information models, explicitly shape cross-attention, so that fused representations respect the physical system's local connectivity rather than relying on unconstrained all-to-all interactions. Third, we conduct an ablation study across C-MAPSS subsets of varying operational complexity that isolates the three sources and their interactions. The sources prove complementary rather than redundant, and topology-constrained attention outperforms unconstrained fusion, though by a small margin, enabling a frozen TSFM informed by digital twin representations to remain competitive or in some cases exceed state-of-the-art performance on this regression task."
+    },
+    {
+      "title": "Super-Resolving Unseen Hyperspectral Sensors at Any Scale via Spatial Operators",
+      "authors": [
+        "Ji-Xuan He",
+        "Guohang Zhuang",
+        "Bo Junge",
+        "Tingyi Li",
+        "Lingchen",
+        "Miaomiao Cai",
+        "Yanan Qiao",
+        "Xiujin Liu",
+        "Junfeng Fang"
+      ],
+      "summary": "Achieving cross-sensor generalization and arbitrary-scale reconstruction with a single model remains challenging in hyperspectral super-resolution (HSR). Although recent methods support arbitrary-scale reconstruction, applying them to new sensors or scales beyond the training range often requires additional data and computation to maintain reconstruction quality. To address these challenges, we propose OmniHSR, which predicts band-shared spatial operators rather than spectral values. Cross-Spectral Mapping (CSM) resamples inputs with any number of bands to fixed reference positions and predicts local operators with Gaussian supports. Continuous Operator-Field Reconstruction (COFR) composes these operators into a continuous field and applies them to all original bands for arbitrary-scale reconstruction. Experiments demonstrate that operator prediction outperforms direct spectral-value prediction on all seven datasets. Trained solely on ARAD with only 0.538M parameters, OmniHSR outperforms all directly transferred baselines on six unseen datasets without target-domain training data or adaptation. Across twelve upsampling factors from $\\times2$ to $\\times48$, it improves average PSNR on Pavia U and Chikusei by 0.55 dB over the strongest baseline. It also surpasses baselines trained from scratch or adapted on the target sensor and achieves up to $36\\times$ faster inference. Our code will be publicly released soon.",
+      "published": "2026-09-30T15:12:47Z",
+      "updated": "2026-09-30T15:12:47Z",
+      "arxiv_id": "2609.39926v1",
+      "abs_url": "http://arxiv.org/abs/2609.39926v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39926v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "小样本与域泛化",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 4,
+      "anchor_terms": [
+        "super-resolution"
+      ],
+      "matched_terms": [
+        "hyperspectral",
+        "super-resolution"
+      ],
+      "title_zh": "Super-Resolving Unseen Hyperspectral Sensors at Any Scale via Spatial Operators",
+      "summary_zh": "Achieving cross-sensor generalization and arbitrary-scale reconstruction with a single model remains challenging in hyperspectral super-resolution (HSR). Although recent methods support arbitrary-scale reconstruction, applying them to new sensors or scales beyond the training range often requires additional data and computation to maintain reconstruction quality. To address these challenges, we propose OmniHSR, which predicts band-shared spatial operators rather than spectral values. Cross-Spectral Mapping (CSM) resamples inputs with any number of bands to fixed reference positions and predicts local operators with Gaussian supports. Continuous Operator-Field Reconstruction (COFR) composes these operators into a continuous field and applies them to all original bands for arbitrary-scale reconstruction. Experiments demonstrate that operator prediction outperforms direct spectral-value prediction on all seven datasets. Trained solely on ARAD with only 0.538M parameters, OmniHSR outperforms all directly transferred baselines on six unseen datasets without target-domain training data or adaptation. Across twelve upsampling factors from $\\times2$ to $\\times48$, it improves average PSNR on Pavia U and Chikusei by 0.55 dB over the strongest baseline. It also surpasses baselines trained from scratch or adapted on the target sensor and achieves up to $36\\times$ faster inference. Our code will be publicly released soon."
+    },
+    {
+      "title": "Dynamic LoRA-Experts and Prototype-Ensemble Matching for Class-Incremental Learning",
+      "authors": [
+        "Hongwei Zhao",
+        "Rui Liu",
+        "Yansong Liu"
+      ],
+      "summary": "Class-Incremental Learning (CIL) aims to continuously learn new classes without forgetting previously acquired knowledge. Parameter-efficient fine-tuning with pre-trained models reduces parameter overhead but can suffer from cumulative interference and suboptimal alignment between inference samples and specialized modules. We propose Dynamic LoRA-Experts and Prototype-Ensemble Matching (DLEPEM), a two-stage rehearsal-free framework. DLEPEM allocates a task-specific LoRA-Expert for each incremental task to reduce cross-task interference, then combines frozen pre-trained-model prototypes with task-adaptive LoRA-Expert prototypes for reliable task-level discrimination. Experiments on standard CIL and Few-Shot CIL benchmarks demonstrate strong performance under the evaluated protocols.",
+      "published": "2026-09-30T14:34:54Z",
+      "updated": "2026-09-30T14:34:54Z",
+      "arxiv_id": "2609.39839v1",
+      "abs_url": "http://arxiv.org/abs/2609.39839v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39839v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Published open-access article; 23 pages",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 7,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "class-incremental",
+        "fine-tuning",
+        "incremental learning",
+        "LoRA"
+      ],
+      "title_zh": "Dynamic LoRA-Experts and Prototype-Ensemble Matching for Class-Incremental Learning",
+      "summary_zh": "Class-Incremental Learning (CIL) aims to continuously learn new classes without forgetting previously acquired knowledge. Parameter-efficient fine-tuning with pre-trained models reduces parameter overhead but can suffer from cumulative interference and suboptimal alignment between inference samples and specialized modules. We propose Dynamic LoRA-Experts and Prototype-Ensemble Matching (DLEPEM), a two-stage rehearsal-free framework. DLEPEM allocates a task-specific LoRA-Expert for each incremental task to reduce cross-task interference, then combines frozen pre-trained-model prototypes with task-adaptive LoRA-Expert prototypes for reliable task-level discrimination. Experiments on standard CIL and Few-Shot CIL benchmarks demonstrate strong performance under the evaluated protocols."
+    },
+    {
+      "title": "A Comprehensive Benchmark of Source-Free Universal Domain Adaptation on Time Series Representations",
+      "authors": [
+        "Romain Mussard",
+        "Fannia Pacheco",
+        "Maxime Berar",
+        "Paul Honeine",
+        "Gilles Gasso"
+      ],
+      "summary": "Source-Free Universal Domain Adaptation (SF-UniDA) extends Universal Domain Adaptation by removing access to source data at adaptation time while still handling label-set mismatches between domains. Despite growing interest in this setting for image data, no benchmark exists for time series, which are more challenging. We present the first SF-UniDA benchmark on time series. In addition, we provide the first study of pretrained foundation models as feature extractors for time series domain adaptation. In this context, we identify a critical and previously underexplored limitation of all existing SF-UniDA methods: the inference threshold for unknown-sample rejection is highly sensitive. We address this by proposing a plug-in auto-thresholding module that can be integrated into any SF-UniDA method. Experiments on three well-known time series datasets confirm the suitability of this module. They also highlight that foundation models do not systematically outperform classical backbones and that SF-UniDA tailored for time series is yet to be developed.",
+      "published": "2026-09-30T14:18:26Z",
+      "updated": "2026-09-30T14:18:26Z",
+      "arxiv_id": "2609.39810v1",
+      "abs_url": "http://arxiv.org/abs/2609.39810v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39810v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "source-free"
+      ],
+      "matched_terms": [
+        "domain adaptation",
+        "foundation model",
+        "source-free"
+      ],
+      "title_zh": "A Comprehensive Benchmark of Source-Free Universal Domain Adaptation on Time Series Representations",
+      "summary_zh": "Source-Free Universal Domain Adaptation (SF-UniDA) extends Universal Domain Adaptation by removing access to source data at adaptation time while still handling label-set mismatches between domains. Despite growing interest in this setting for image data, no benchmark exists for time series, which are more challenging. We present the first SF-UniDA benchmark on time series. In addition, we provide the first study of pretrained foundation models as feature extractors for time series domain adaptation. In this context, we identify a critical and previously underexplored limitation of all existing SF-UniDA methods: the inference threshold for unknown-sample rejection is highly sensitive. We address this by proposing a plug-in auto-thresholding module that can be integrated into any SF-UniDA method. Experiments on three well-known time series datasets confirm the suitability of this module. They also highlight that foundation models do not systematically outperform classical backbones and that SF-UniDA tailored for time series is yet to be developed."
+    },
+    {
+      "title": "Determining Vertical Displacement of Agricultural Areas Using UAV-Photogrammetry and a Heteroscedastic Deep Learning Model",
+      "authors": [
+        "Wojciech Gruszczyński",
+        "Edyta Puniach",
+        "Paweł Ćwiąkała",
+        "Wojciech Matwij"
+      ],
+      "summary": "This article introduces an algorithm that uses a U-Net architecture to determine vertical ground surface displacements from unmanned aerial vehicle (UAV)-photogrammetry point clouds, offering an alternative to traditional ground filtering methods. Unlike con-ventional ground filters that rely on point cloud classification, the proposed approach em-ploys heteroscedastic regression. The U-Net model predicts the conditional expected val-ues of the elevation corrections, aiming to reduce the impact of vegetation on determined ground surface elevations. Concurrently, it estimates the logarithm of the elevation cor-rection variance, allowing for direct quantification of the uncertainty associated with each elevation correction value. The algorithm was evaluated using three metrics: the root mean square error (RMSE) of vertical displacements, the percentage of nodes with deter-mined displacement values, and the percentage of outliers among those values. Perfor-mance was assessed using the technique for order of preference by similarity to ideal so-lution (TOPSIS) method and compared against several ground-filter-based algorithms across four datasets, each including at least two time intervals. In most cases, the U-Net-based approach demonstrated a slight performance advantage over traditional ground filtering techniques. For example, for the U-Net-based algorithm, for one of the test da-tasets, the RMSE of the determined subsidences was 6.1 cm, the percentage of nodes with determined subsidences was 80.5%, and the percentage of outliers was 0.2%. For the same case, the algorithm based on the next best model (SMRF) allowed an RMSE of 7.7 cm to be obtained; for 77.3% of nodes, the subsidences were determined; and the percentage of outliers was 0.3%.",
+      "published": "2026-09-30T13:53:50Z",
+      "updated": "2026-09-30T13:53:50Z",
+      "arxiv_id": "2609.39756v1",
+      "abs_url": "http://arxiv.org/abs/2609.39756v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39756v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "LiDAR/点云",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 10,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "photogrammetry",
+        "point cloud",
+        "U-Net",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "Determining Vertical Displacement of Agricultural Areas Using UAV-Photogrammetry and a Heteroscedastic Deep Learning Model",
+      "summary_zh": "This article introduces an algorithm that uses a U-Net architecture to determine vertical ground surface displacements from unmanned aerial vehicle (UAV)-photogrammetry point clouds, offering an alternative to traditional ground filtering methods. Unlike con-ventional ground filters that rely on point cloud classification, the proposed approach em-ploys heteroscedastic regression. The U-Net model predicts the conditional expected val-ues of the elevation corrections, aiming to reduce the impact of vegetation on determined ground surface elevations. Concurrently, it estimates the logarithm of the elevation cor-rection variance, allowing for direct quantification of the uncertainty associated with each elevation correction value. The algorithm was evaluated using three metrics: the root mean square error (RMSE) of vertical displacements, the percentage of nodes with deter-mined displacement values, and the percentage of outliers among those values. Perfor-mance was assessed using the technique for order of preference by similarity to ideal so-lution (TOPSIS) method and compared against several ground-filter-based algorithms across four datasets, each including at least two time intervals. In most cases, the U-Net-based approach demonstrated a slight performance advantage over traditional ground filtering techniques. For example, for the U-Net-based algorithm, for one of the test da-tasets, the RMSE of the determined subsidences was 6.1 cm, the percentage of nodes with determined subsidences was 80.5%, and the percentage of outliers was 0.2%. For the same case, the algorithm based on the next best model (SMRF) allowed an RMSE of 7.7 cm to be obtained; for 77.3% of nodes, the subsidences were determined; and the percentage of outliers was 0.3%."
+    },
+    {
+      "title": "Validity-Preserving Hierarchical RL for Joint Routing and Switch Placement in EDA",
+      "authors": [
+        "Dorian Gailhard",
+        "Ugo Lecerf",
+        "Enzo Tartaglione",
+        "Donatello Conte",
+        "Jhony H. Giraldo"
+      ],
+      "summary": "Routing and switch placement are fundamental combinatorial optimization problems in chip design, requiring the joint optimization of routing topology and physical placement under strict structural, geometric and logical constraints. Existing approaches typically rely on carefully engineered heuristics that incorporate strong problem-specific biases to navigate the enormous space of possible designs. In this work, we introduce a hierarchical reinforcement learning framework for joint routing and switch placement at the level of logical communication routes. Starting from a minimal routing graph, our method progressively constructs increasingly expressive solutions through three coupled operations: switch expansion, switch placement, and route refinement. These operations preserve routing validity by construction, restricting exploration to feasible configurations where every communicating initiator-target pair has one assigned loop-free route. We explore the induced solution space using Gumbel Monte Carlo Tree Search, showing that neural-guided search substantially improves solution quality over non-learning optimization methods. Furthermore, pretraining across floorplans provides a strong initialization for fine-tuning on unseen instances.",
+      "published": "2026-09-30T13:49:10Z",
+      "updated": "2026-09-30T13:49:10Z",
+      "arxiv_id": "2609.39749v1",
+      "abs_url": "http://arxiv.org/abs/2609.39749v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39749v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Validity-Preserving Hierarchical RL for Joint Routing and Switch Placement in EDA",
+      "summary_zh": "Routing and switch placement are fundamental combinatorial optimization problems in chip design, requiring the joint optimization of routing topology and physical placement under strict structural, geometric and logical constraints. Existing approaches typically rely on carefully engineered heuristics that incorporate strong problem-specific biases to navigate the enormous space of possible designs. In this work, we introduce a hierarchical reinforcement learning framework for joint routing and switch placement at the level of logical communication routes. Starting from a minimal routing graph, our method progressively constructs increasingly expressive solutions through three coupled operations: switch expansion, switch placement, and route refinement. These operations preserve routing validity by construction, restricting exploration to feasible configurations where every communicating initiator-target pair has one assigned loop-free route. We explore the induced solution space using Gumbel Monte Carlo Tree Search, showing that neural-guided search substantially improves solution quality over non-learning optimization methods. Furthermore, pretraining across floorplans provides a strong initialization for fine-tuning on unseen instances."
+    },
+    {
+      "title": "ShieldCLIP: Selective Safety Alignment for Harmful Content Mitigation in Multimodal Foundation Models",
+      "authors": [
+        "Tobia Poppi",
+        "Silvia Cappelletti",
+        "Samuele Poppi",
+        "Marcella Cornia",
+        "Lorenzo Baraldi",
+        "Diego Garcia-Olano",
+        "Rita Cucchiara"
+      ],
+      "summary": "Multimodal encoders such as CLIP underlie many downstream systems, but their web-scale training data embed harmful associations that safety alignment must suppress without unnecessarily changing benign representations. Because ethical and practical constraints prevent collecting real unsafe content at scale, existing datasets pair safe real samples with generated counterparts, but label every generated sample unsafe, even when one modality is individually safe. To address this, we introduce ShieldCLIP, the first framework to condition safety alignment on the observed safety state of each modality rather than the origin of a sample, preserving safe content while redirecting only what is unsafe. We also introduce ViSUv2, a 195k-quadruplet dataset with independent per-modality safety labels across 578 concepts and 28 categories. Using these labels, ShieldCLIP defines a four-way conditional objective beyond pair-level supervision: safe content is anchored, unsafe modalities are redirected to their safe counterparts, mixed pairs update only the unsafe branch, and coherence is enforced when both are unsafe. We evaluate ShieldCLIP on cross-modal retrieval, text-to-image generation with Stable Diffusion v1.4 and SDXL, and image-to-text generation with LLaVA. Across these settings, ShieldCLIP consistently reduces harmful outputs over prior safety-aligned encoders and strong mitigation baselines, while preserving the utility of the original embedding space. Extensive ablation studies further show that both modality-specific supervision and the selective alignment objective contribute to these gains. Source code, trained models, and ViSUv2 (under a controlled-access protocol) will be made publicly available at https://aimagelab.github.io/ShieldCLIP/.",
+      "published": "2026-09-30T13:14:56Z",
+      "updated": "2026-09-30T13:14:56Z",
+      "arxiv_id": "2609.39688v1",
+      "abs_url": "http://arxiv.org/abs/2609.39688v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39688v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.MM"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "图像检索",
+        "基础模型",
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 9,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "cross-modal retrieval",
+        "foundation model",
+        "image generation",
+        "LLaVA",
+        "stable diffusion"
+      ],
+      "title_zh": "ShieldCLIP: Selective Safety Alignment for Harmful Content Mitigation in Multimodal Foundation Models",
+      "summary_zh": "Multimodal encoders such as CLIP underlie many downstream systems, but their web-scale training data embed harmful associations that safety alignment must suppress without unnecessarily changing benign representations. Because ethical and practical constraints prevent collecting real unsafe content at scale, existing datasets pair safe real samples with generated counterparts, but label every generated sample unsafe, even when one modality is individually safe. To address this, we introduce ShieldCLIP, the first framework to condition safety alignment on the observed safety state of each modality rather than the origin of a sample, preserving safe content while redirecting only what is unsafe. We also introduce ViSUv2, a 195k-quadruplet dataset with independent per-modality safety labels across 578 concepts and 28 categories. Using these labels, ShieldCLIP defines a four-way conditional objective beyond pair-level supervision: safe content is anchored, unsafe modalities are redirected to their safe counterparts, mixed pairs update only the unsafe branch, and coherence is enforced when both are unsafe. We evaluate ShieldCLIP on cross-modal retrieval, text-to-image generation with Stable Diffusion v1.4 and SDXL, and image-to-text generation with LLaVA. Across these settings, ShieldCLIP consistently reduces harmful outputs over prior safety-aligned encoders and strong mitigation baselines, while preserving the utility of the original embedding space. Extensive ablation studies further show that both modality-specific supervision and the selective alignment objective contribute to these gains. Source code, trained models, and ViSUv2 (under a controlled-access protocol) will be made publicly available at https://aimagelab.github.io/ShieldCLIP/."
+    },
+    {
+      "title": "Steering Fields: Adaptive Vector Fields for Safe Image Generation and Beyond",
+      "authors": [
+        "Simone Facchiano",
+        "Jan Eric Lenssen",
+        "Bernt Schiele",
+        "Wolfgang Stammer",
+        "Fabio Galasso",
+        "Jonas Fischer"
+      ],
+      "summary": "As state-of-the-art text-to-image flow models achieve near-photorealistic quality, controlling their outputs, e.g., suppressing harmful content while promoting benign alternatives, has become a central challenge. The current steering paradigm consists of adding a global steering vector to selected activations. While functional, a fixed and example-agnostic vector applied uniformly along the entire trajectory cannot adapt to the changing state of the generation and often causes unintended global changes. We introduce Steering Fields, a generalization of steering vectors that adaptively re-estimates the steering direction at each step of the generative process. Steering Fields operate on the noisy states of flow models, expose a continuous trade-off between steering strength and content preservation, and are compositional, enabling the simultaneous induction and inhibition of concepts, setting a new state of the art on safety steering benchmarks. Despite using no explicit spatial masks or object priors, the trajectory-adaptive estimation naturally preserves local structure, in a manner reminiscent of image editing. In fact, Steering Fields can serve as a structure-preserving image-editing technique that achieves state-of-the-art semantic fidelity (CLIP, VQAScore), while remaining model-agnostic and inversion-free.",
+      "published": "2026-09-30T12:06:48Z",
+      "updated": "2026-09-30T12:06:48Z",
+      "arxiv_id": "2609.39573v1",
+      "abs_url": "http://arxiv.org/abs/2609.39573v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39573v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 4,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "image generation"
+      ],
+      "title_zh": "Steering Fields: Adaptive Vector Fields for Safe Image Generation and Beyond",
+      "summary_zh": "As state-of-the-art text-to-image flow models achieve near-photorealistic quality, controlling their outputs, e.g., suppressing harmful content while promoting benign alternatives, has become a central challenge. The current steering paradigm consists of adding a global steering vector to selected activations. While functional, a fixed and example-agnostic vector applied uniformly along the entire trajectory cannot adapt to the changing state of the generation and often causes unintended global changes. We introduce Steering Fields, a generalization of steering vectors that adaptively re-estimates the steering direction at each step of the generative process. Steering Fields operate on the noisy states of flow models, expose a continuous trade-off between steering strength and content preservation, and are compositional, enabling the simultaneous induction and inhibition of concepts, setting a new state of the art on safety steering benchmarks. Despite using no explicit spatial masks or object priors, the trajectory-adaptive estimation naturally preserves local structure, in a manner reminiscent of image editing. In fact, Steering Fields can serve as a structure-preserving image-editing technique that achieves state-of-the-art semantic fidelity (CLIP, VQAScore), while remaining model-agnostic and inversion-free."
+    },
+    {
+      "title": "Hyperbolic Prototype Routing for Rehearsal-Free Class-Incremental Learning",
+      "authors": [
+        "HongWei Zhao",
+        "Rui Liu",
+        "Yong Chen"
+      ],
+      "summary": "Class-Incremental Learning (CIL) aims to continually learn new classes while preserving prior knowledge. Parameter-efficient fine-tuning with pre-trained models enables CIL with minimal parameter updates, but existing approaches still suffer from catastrophic forgetting caused by cumulative interference and suboptimal module-sample matching at inference. We propose Hyperbolic Prototype Routing (HyPro), a rehearsal-free framework for continual learning. HyPro allocates a dedicated LoRA-Expert module to each incremental task for isolated representation learning, then projects routing features onto a Poincare ball and performs geodesic nearest-prototype matching for reliable task-level discrimination. Extensive experiments on standard CIL and Few-Shot CIL benchmarks show that HyPro consistently improves average and final-stage accuracy over strong baselines.",
+      "published": "2026-09-30T11:50:35Z",
+      "updated": "2026-09-30T11:50:35Z",
+      "arxiv_id": "2609.39550v1",
+      "abs_url": "http://arxiv.org/abs/2609.39550v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39550v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "6 pages, supplementary material",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 8,
+      "anchor_terms": [
+        "continual learning",
+        "LoRA"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "class-incremental",
+        "continual learning",
+        "fine-tuning",
+        "incremental learning",
+        "LoRA"
+      ],
+      "title_zh": "Hyperbolic Prototype Routing for Rehearsal-Free Class-Incremental Learning",
+      "summary_zh": "Class-Incremental Learning (CIL) aims to continually learn new classes while preserving prior knowledge. Parameter-efficient fine-tuning with pre-trained models enables CIL with minimal parameter updates, but existing approaches still suffer from catastrophic forgetting caused by cumulative interference and suboptimal module-sample matching at inference. We propose Hyperbolic Prototype Routing (HyPro), a rehearsal-free framework for continual learning. HyPro allocates a dedicated LoRA-Expert module to each incremental task for isolated representation learning, then projects routing features onto a Poincare ball and performs geodesic nearest-prototype matching for reliable task-level discrimination. Extensive experiments on standard CIL and Few-Shot CIL benchmarks show that HyPro consistently improves average and final-stage accuracy over strong baselines."
+    },
+    {
+      "title": "Raw-Routed Mixture of Adapters: A Causal Intervention for Routing Collapse in Time Series Foundation Models",
+      "authors": [
+        "Hung Phan",
+        "Thuy T. Nguyen",
+        "Minh Ngoc Dinh",
+        "Nhat-Quang Tran"
+      ],
+      "summary": "Time series foundation models (TSFMs) commonly adapt to new data by attaching a single trainable head to a frozen backbone, a one-size-fits-all setup that underfits heterogeneous regimes. Replacing the head with a mixture of experts is the standard upgrade, but on instance-normalized backbones (the dominant TSFM design class) it fails: routing entropy collapses to zero and one expert absorbs every input, a failure we call normalization-induced routing collapse. Standard MoE rescue mechanisms do not repair it, because the cause is in the router's input, not its optimization. Pre-encoder normalization strips the statistics a router would need to tell regimes apart. A mutual-information decomposition makes this precise and yields a signal-ratio that, computed before training, predicts dataset vulnerability (Spearman $ρ= -0.88$). Eight causal controls, including a vision-modality replication, isolate instance normalization as the cause. The prescription is a minimal causal intervention: Raw-Routed Mixture of Adapters (RR-MoA), which routes on the raw, pre-normalization input. Under a strictly frozen backbone, RR-MoA wins 54/54 comparisons against the strongest fixed adapter and significantly outperforms LoRA, TRACE, AdaMix, and full fine-tuning. The effect generalizes across six backbones and an imputation task. Frozen RR-MoA also beats full fine-tuning by 12-79% (the Frozen Paradox); two architecturally distinct variants confirm the principle generalizes beyond this specific router.",
+      "published": "2026-09-30T10:18:59Z",
+      "updated": "2026-09-30T10:18:59Z",
+      "arxiv_id": "2609.39445v1",
+      "abs_url": "http://arxiv.org/abs/2609.39445v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39445v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "comment": "Accepted at NeurIPS 2026 (poster). 50 pages, 9 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "foundation model",
+        "LoRA"
+      ],
+      "title_zh": "Raw-Routed Mixture of Adapters: A Causal Intervention for Routing Collapse in Time Series Foundation Models",
+      "summary_zh": "Time series foundation models (TSFMs) commonly adapt to new data by attaching a single trainable head to a frozen backbone, a one-size-fits-all setup that underfits heterogeneous regimes. Replacing the head with a mixture of experts is the standard upgrade, but on instance-normalized backbones (the dominant TSFM design class) it fails: routing entropy collapses to zero and one expert absorbs every input, a failure we call normalization-induced routing collapse. Standard MoE rescue mechanisms do not repair it, because the cause is in the router's input, not its optimization. Pre-encoder normalization strips the statistics a router would need to tell regimes apart. A mutual-information decomposition makes this precise and yields a signal-ratio that, computed before training, predicts dataset vulnerability (Spearman $ρ= -0.88$). Eight causal controls, including a vision-modality replication, isolate instance normalization as the cause. The prescription is a minimal causal intervention: Raw-Routed Mixture of Adapters (RR-MoA), which routes on the raw, pre-normalization input. Under a strictly frozen backbone, RR-MoA wins 54/54 comparisons against the strongest fixed adapter and significantly outperforms LoRA, TRACE, AdaMix, and full fine-tuning. The effect generalizes across six backbones and an imputation task. Frozen RR-MoA also beats full fine-tuning by 12-79% (the Frozen Paradox); two architecturally distinct variants confirm the principle generalizes beyond this specific router."
+    },
+    {
+      "title": "CAST: Causal Advantage-Structured Training with Spatially Grounded Compositional Rewards for Diffusion Models",
+      "authors": [
+        "Shu Yu",
+        "Chaochao Lu"
+      ],
+      "summary": "Online reinforcement learning has been extended to flow matching for diffusion model (DM) image generation. However, this paradigm faces three limitations: (1) Window selection. Existing methods manually set the stochastic differential equation (SDE) sampling window, i.e., the denoising steps where exploration noise is injected. We instead determine it from each model's denoising trajectory. (2) Reward saturation. Current methods rely on scoring models trained on human annotations; we find that such scores are extremely high and nearly indistinguishable on the latest SOTA open-source DMs, making advantage estimation largely ineffective. (3) Sample inefficiency. A single scalar reward collapses different failure modes into almost identical scores, leaving minimal gradient guidance for targeted improvement. To address these issues, we propose CAST (Causal Advantage-Structured Training), an RL fine-tuning method for pretrained DMs, which (1) identifies the denoising step at which each model fixes the objects and their spatial arrangement in the image and uses that timing to set the SDE window, (2) decomposes each prompt via Causal Scene Graphs (CSG) into verifiable-atoms, i.e., minimal semantic units such as an object, count, attribute, or spatial relation that can each be checked independently, and rewards each atom separately, and (3) projects the signed atom-level advantages into pixel space through teacher-forced attention and uses them to spatially weight the SDE policy objective. We fine-tune two of the strongest open-source DMs, FLUX.2-dev and Qwen-Image-2512, with CAST, and evaluate them on GenEval 2, a compositional benchmark, and on Qwen-Image-Bench for overall quality. Within almost the same training budget, CAST's improvement over the base model on the most challenging GenEval 2 prompts is up to 3.07x that of Flow-GRPO, while overall generation quality also improves.",
+      "published": "2026-09-30T10:16:58Z",
+      "updated": "2026-09-30T10:16:58Z",
+      "arxiv_id": "2609.39441v1",
+      "abs_url": "http://arxiv.org/abs/2609.39441v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39441v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "Project page: https://opencausalab.github.io/CAST",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "图像描述与视觉推理",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 8,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "denoising",
+        "diffusion model",
+        "fine-tuning",
+        "image generation",
+        "LoRA",
+        "scene graph"
+      ],
+      "title_zh": "CAST: Causal Advantage-Structured Training with Spatially Grounded Compositional Rewards for Diffusion Models",
+      "summary_zh": "Online reinforcement learning has been extended to flow matching for diffusion model (DM) image generation. However, this paradigm faces three limitations: (1) Window selection. Existing methods manually set the stochastic differential equation (SDE) sampling window, i.e., the denoising steps where exploration noise is injected. We instead determine it from each model's denoising trajectory. (2) Reward saturation. Current methods rely on scoring models trained on human annotations; we find that such scores are extremely high and nearly indistinguishable on the latest SOTA open-source DMs, making advantage estimation largely ineffective. (3) Sample inefficiency. A single scalar reward collapses different failure modes into almost identical scores, leaving minimal gradient guidance for targeted improvement. To address these issues, we propose CAST (Causal Advantage-Structured Training), an RL fine-tuning method for pretrained DMs, which (1) identifies the denoising step at which each model fixes the objects and their spatial arrangement in the image and uses that timing to set the SDE window, (2) decomposes each prompt via Causal Scene Graphs (CSG) into verifiable-atoms, i.e., minimal semantic units such as an object, count, attribute, or spatial relation that can each be checked independently, and rewards each atom separately, and (3) projects the signed atom-level advantages into pixel space through teacher-forced attention and uses them to spatially weight the SDE policy objective. We fine-tune two of the strongest open-source DMs, FLUX.2-dev and Qwen-Image-2512, with CAST, and evaluate them on GenEval 2, a compositional benchmark, and on Qwen-Image-Bench for overall quality. Within almost the same training budget, CAST's improvement over the base model on the most challenging GenEval 2 prompts is up to 3.07x that of Flow-GRPO, while overall generation quality also improves."
+    },
+    {
+      "title": "PCB-MC: Missing Component Analysis in Printed Circuit Boards",
+      "authors": [
+        "Betsy Villa Brochero",
+        "Ian Gibson",
+        "Estefania Talavera"
+      ],
+      "summary": "Detecting missing components on printed circuit boards (PCBs) differs fundamentally from conventional object detection, as the model must localize components that are not present. We introduce PCB-MC, a curated dataset for missing component detection with footprint level annotations built on top of the RF100 dataset. The dataset contains 197 distinct board types, each corresponding to a unique PCB design, with multiple augmented samples per type. We also provide benchmark results on PCB-MC by evaluating a diverse set of supervised and unsupervised methods. To ensure fair evaluation, we propose board type aware cross validation splits that prevent layout leakage between training and test sets. Supervised models showcase high false negative rates on unseen board designs, and unsupervised anomaly detection methods fail entirely due to the lack of spatial alignment with a board specific reference. These results confirm that missing component detection on diverse PCB layouts remains an open challenge. We release PCB-MC and all training protocols to support reproducible research on structural absence detection in industrial inspection.",
+      "published": "2026-09-30T10:06:00Z",
+      "updated": "2026-09-30T10:06:00Z",
+      "arxiv_id": "2609.39427v1",
+      "abs_url": "http://arxiv.org/abs/2609.39427v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39427v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Preprint",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 4,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "object detection",
+        "unsupervised"
+      ],
+      "title_zh": "PCB-MC: Missing Component Analysis in Printed Circuit Boards",
+      "summary_zh": "Detecting missing components on printed circuit boards (PCBs) differs fundamentally from conventional object detection, as the model must localize components that are not present. We introduce PCB-MC, a curated dataset for missing component detection with footprint level annotations built on top of the RF100 dataset. The dataset contains 197 distinct board types, each corresponding to a unique PCB design, with multiple augmented samples per type. We also provide benchmark results on PCB-MC by evaluating a diverse set of supervised and unsupervised methods. To ensure fair evaluation, we propose board type aware cross validation splits that prevent layout leakage between training and test sets. Supervised models showcase high false negative rates on unseen board designs, and unsupervised anomaly detection methods fail entirely due to the lack of spatial alignment with a board specific reference. These results confirm that missing component detection on diverse PCB layouts remains an open challenge. We release PCB-MC and all training protocols to support reproducible research on structural absence detection in industrial inspection."
+    },
+    {
+      "title": "Decoupled and Distilled: Task-Adaptive LoRA-Teachers with Ensemble Knowledge Transfer for Few-Shot Class-Incremental Learning",
+      "authors": [
+        "Hongwei Zhao",
+        "Rui Liu",
+        "Yansong Liu",
+        "Zhiyuan Zou",
+        "Yong Chen"
+      ],
+      "summary": "Few-Shot Class-Incremental Learning (FSCIL) addresses the challenge of learning new classes from very limited samples while retaining knowledge of previously learned ones. Although parameter-efficient fine-tuning methods with pre-trained models show promise for class-incremental learning, strict gradient-based constraints can be unreliable under severe data scarcity, while multi-expert approaches can impose substantial inference-time costs. We propose TALON (Task-Adaptive LoRA-Teachers with Ensemble Knowledge Transfer), an inference-efficient FSCIL framework. TALON dynamically allocates an independent LoRA-Teacher to each incremental task for task-specific representation learning, then distills multiple frozen teachers into a unified LoRA-Student through Ensemble Knowledge Transfer, eliminating runtime module selection or generation. A semantic-guided distillation strategy weights teacher contributions by feature-space similarity to mitigate catastrophic forgetting and overfitting. Across three class-order runs, TALON achieves comparable or better mean average accuracy across four FSCIL benchmarks, obtaining 86.68 +/- 1.22% on CUB200, 90.39 +/- 0.27% on CIFAR100, 78.38 +/- 0.94% on ImageNet-R, and 96.34 +/- 0.33% on miniImageNet. TALON uses up to 33x fewer deployment parameters and reduces average inference time per task to 26.7 s, a 41.70% reduction relative to ASP.",
+      "published": "2026-09-30T09:38:27Z",
+      "updated": "2026-09-30T09:38:27Z",
+      "arxiv_id": "2609.39390v1",
+      "abs_url": "http://arxiv.org/abs/2609.39390v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39390v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Accepted manuscript; 46 pages, supplementary material",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 8,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "class-incremental",
+        "fine-tuning",
+        "incremental learning",
+        "LoRA"
+      ],
+      "title_zh": "Decoupled and Distilled: Task-Adaptive LoRA-Teachers with Ensemble Knowledge Transfer for Few-Shot Class-Incremental Learning",
+      "summary_zh": "Few-Shot Class-Incremental Learning (FSCIL) addresses the challenge of learning new classes from very limited samples while retaining knowledge of previously learned ones. Although parameter-efficient fine-tuning methods with pre-trained models show promise for class-incremental learning, strict gradient-based constraints can be unreliable under severe data scarcity, while multi-expert approaches can impose substantial inference-time costs. We propose TALON (Task-Adaptive LoRA-Teachers with Ensemble Knowledge Transfer), an inference-efficient FSCIL framework. TALON dynamically allocates an independent LoRA-Teacher to each incremental task for task-specific representation learning, then distills multiple frozen teachers into a unified LoRA-Student through Ensemble Knowledge Transfer, eliminating runtime module selection or generation. A semantic-guided distillation strategy weights teacher contributions by feature-space similarity to mitigate catastrophic forgetting and overfitting. Across three class-order runs, TALON achieves comparable or better mean average accuracy across four FSCIL benchmarks, obtaining 86.68 +/- 1.22% on CUB200, 90.39 +/- 0.27% on CIFAR100, 78.38 +/- 0.94% on ImageNet-R, and 96.34 +/- 0.33% on miniImageNet. TALON uses up to 33x fewer deployment parameters and reduces average inference time per task to 26.7 s, a 41.70% reduction relative to ASP."
+    },
+    {
+      "title": "Wavelet Flow Matching for Time Series",
+      "authors": [
+        "Lucas Poinsignon",
+        "Jorge da Silva Gonçalves",
+        "Samuel Ruipérez-Campillo",
+        "Julia E. Vogt"
+      ],
+      "summary": "Synthetic time series are increasingly used for data augmentation, privacy-preserving data sharing, and downstream model development, yet faithfully reproducing both multi-scale temporal structure and cross-channel dependencies remains challenging. We study multivariate time-series generation through flow matching in the wavelet domain. By operating on multilevel discrete wavelet coefficients rather than directly in the time domain, the model represents coarse structure and progressively finer details at separate scales. Their naturally different variances further induce an implicit coarse-to-fine generative process without requiring an explicit multi-scale schedule. Since the transform acts independently on each channel, we pair it with a channel-token transformer whose attention directly models cross-channel dependencies. Across seven benchmark datasets and four sequence lengths, our method is best or tied on a majority of dataset-metric combinations, with the largest and most consistent improvements in Context-FID and discriminative score.",
+      "published": "2026-09-30T09:25:21Z",
+      "updated": "2026-09-30T09:25:21Z",
+      "arxiv_id": "2609.39374v1",
+      "abs_url": "http://arxiv.org/abs/2609.39374v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39374v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "45 pages, including appendix; 11 figures, 13 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 3,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "multi-scale",
+        "temporal",
+        "time-series",
+        "transformer"
+      ],
+      "title_zh": "Wavelet Flow Matching for Time Series",
+      "summary_zh": "Synthetic time series are increasingly used for data augmentation, privacy-preserving data sharing, and downstream model development, yet faithfully reproducing both multi-scale temporal structure and cross-channel dependencies remains challenging. We study multivariate time-series generation through flow matching in the wavelet domain. By operating on multilevel discrete wavelet coefficients rather than directly in the time domain, the model represents coarse structure and progressively finer details at separate scales. Their naturally different variances further induce an implicit coarse-to-fine generative process without requiring an explicit multi-scale schedule. Since the transform acts independently on each channel, we pair it with a channel-token transformer whose attention directly models cross-channel dependencies. Across seven benchmark datasets and four sequence lengths, our method is best or tied on a majority of dataset-metric combinations, with the largest and most consistent improvements in Context-FID and discriminative score."
+    },
+    {
+      "title": "A Dynamical Theory of LoRA in Continual Learning",
+      "authors": [
+        "Théo Marchetta",
+        "Filippo Alessandroni",
+        "Alessandro Breccia",
+        "Alessandro Ingrosso",
+        "Federica Gerace"
+      ],
+      "summary": "Despite the widespread use of Low-Rank Adaptation (LoRA), little is known about its dynamics in continual learning and the mechanisms by which low-rank updates affect catastrophic forgetting. We provide an asymptotically exact dynamical characterization of LoRA in a solvable two-task teacher-student model. In the high-dimensional online-learning limit, we derive a closed system of ordinary differential equations for a finite set of macroscopic order parameters, yielding exact expressions for the generalization errors throughout both the initial Task 1 learning phase and the subsequent LoRA fine-tuning on Task 2. The theory quantitatively matches finite-dimensional simulations and exposes two characteristic effects of LoRA: low-rank adaptation reduces interference with features learned on the first task, but its initialization slows adaptation to the second task. Building on this mechanistic picture, we analyze a state-dependent masking strategy that freezes hidden units carrying the strongest first-task representations and restricts adaptation to the complementary subspace. This structural partitioning markedly reduces forgetting, while preserving plasticity on the new task. Our framework further clarifies the role of adapter rank: transfer improves only up to the intrinsic dimensionality of the target task and saturates beyond it, while forgetting continues to grow with rank. These results provide a dynamical and geometric account of how low-rank adaptation organizes information across sequential tasks and are qualitatively reproduced on a sequential MNIST benchmark.",
+      "published": "2026-09-30T09:22:13Z",
+      "updated": "2026-09-30T09:22:13Z",
+      "arxiv_id": "2609.39367v1",
+      "abs_url": "http://arxiv.org/abs/2609.39367v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39367v1",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cond-mat.stat-mech",
+        "cs.LG",
+        "math.PR",
+        "math.ST"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 7,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "catastrophic forgetting",
+        "continual learning",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "A Dynamical Theory of LoRA in Continual Learning",
+      "summary_zh": "Despite the widespread use of Low-Rank Adaptation (LoRA), little is known about its dynamics in continual learning and the mechanisms by which low-rank updates affect catastrophic forgetting. We provide an asymptotically exact dynamical characterization of LoRA in a solvable two-task teacher-student model. In the high-dimensional online-learning limit, we derive a closed system of ordinary differential equations for a finite set of macroscopic order parameters, yielding exact expressions for the generalization errors throughout both the initial Task 1 learning phase and the subsequent LoRA fine-tuning on Task 2. The theory quantitatively matches finite-dimensional simulations and exposes two characteristic effects of LoRA: low-rank adaptation reduces interference with features learned on the first task, but its initialization slows adaptation to the second task. Building on this mechanistic picture, we analyze a state-dependent masking strategy that freezes hidden units carrying the strongest first-task representations and restricts adaptation to the complementary subspace. This structural partitioning markedly reduces forgetting, while preserving plasticity on the new task. Our framework further clarifies the role of adapter rank: transfer improves only up to the intrinsic dimensionality of the target task and saturates beyond it, while forgetting continues to grow with rank. These results provide a dynamical and geometric account of how low-rank adaptation organizes information across sequential tasks and are qualitatively reproduced on a sequential MNIST benchmark."
+    },
+    {
+      "title": "WinoTS: Wavelet-based Self-Distillation for Time Series Models",
+      "authors": [
+        "Noam Major",
+        "Kathy Razmadze",
+        "Yoli Shavit"
+      ],
+      "summary": "Self-supervised pre-training of time series models is currently dominated by next-token prediction and reconstruction objectives. In continuous-valued domains, these paradigms often waste model capacity on high-frequency, point-wise noise at the expense of learning invariant structure. While invariance-based self-distillation has proven highly effective in computer vision, its application to temporal data remains largely underexplored. Effectively adapting such methods to time series requires carefully designed augmentations: spatial operations like cropping can shift the timing of repeating cycles or distort the signal, while basic jittering may provide limited variation. We introduce Wavelet-based self-distillation for time series (WinoTS), an invariance-based pre-training paradigm designed specifically for temporal signals. At its core, WinoTS leverages time-frequency augmentations to construct multi-scale structural views without distorting underlying signal dynamics. Across extensive evaluations, WinoTS outperforms state-of-the-art baselines in long-term forecasting, cross-domain zero-shot transfer, and unsupervised anomaly detection. Notably, linear probing on frozen WinoTS representations frequently surpasses fully supervised models trained from scratch. Systematic ablations demonstrate that WinoTS is a flexible, architecture-agnostic framework yielding gains across time series backbones, and establish that time-frequency transformations provide a principled alternative to vision-style spatial augmentations.",
+      "published": "2026-09-30T09:06:05Z",
+      "updated": "2026-09-30T09:06:05Z",
+      "arxiv_id": "2609.39337v1",
+      "abs_url": "http://arxiv.org/abs/2609.39337v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39337v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "multi-scale",
+        "pre-training",
+        "self-supervised",
+        "unsupervised",
+        "zero-shot"
+      ],
+      "title_zh": "WinoTS: Wavelet-based Self-Distillation for Time Series Models",
+      "summary_zh": "Self-supervised pre-training of time series models is currently dominated by next-token prediction and reconstruction objectives. In continuous-valued domains, these paradigms often waste model capacity on high-frequency, point-wise noise at the expense of learning invariant structure. While invariance-based self-distillation has proven highly effective in computer vision, its application to temporal data remains largely underexplored. Effectively adapting such methods to time series requires carefully designed augmentations: spatial operations like cropping can shift the timing of repeating cycles or distort the signal, while basic jittering may provide limited variation. We introduce Wavelet-based self-distillation for time series (WinoTS), an invariance-based pre-training paradigm designed specifically for temporal signals. At its core, WinoTS leverages time-frequency augmentations to construct multi-scale structural views without distorting underlying signal dynamics. Across extensive evaluations, WinoTS outperforms state-of-the-art baselines in long-term forecasting, cross-domain zero-shot transfer, and unsupervised anomaly detection. Notably, linear probing on frozen WinoTS representations frequently surpasses fully supervised models trained from scratch. Systematic ablations demonstrate that WinoTS is a flexible, architecture-agnostic framework yielding gains across time series backbones, and establish that time-frequency transformations provide a principled alternative to vision-style spatial augmentations."
+    },
+    {
+      "title": "GRPO Training Dynamics for Small Language Models",
+      "authors": [
+        "Rajat Ghosh",
+        "Vaishnavi Bhargava",
+        "Henry Wong",
+        "Aryan Singhal",
+        "Debojyoti Dutta"
+      ],
+      "summary": "Group Relative Policy Optimization (GRPO) has emerged as a memory-efficient reinforcement fine-tuning (RFT) technique for reasoning-intensive tasks. How- ever, GRPO training dynamics on small language models (SLMs) remain poorly understood, limiting its reliable adoption and reproducibility in open and resource- constrained environments. In this work, we present a systematic study of GRPO fine-tuning for SLMs ranging from 1.5B to 7B parameters under a practical single- node 8xA100 compute budget. Our study spans multiple model families and reasoning domains, including mathematics, coding, and multiple-choice question answering (MCQ) in science. Across these settings, we analyze how group size affects policy convergence, training stability, and downstream benchmark per- formance. We further characterize tensor-level update dynamics during GRPO training and investigate whether the choice of LoRA target modules and layers can improve the performance of GRPO-tuned models. While our initial GRPO-tuned models outperform their base counterparts on approximately 80% of mathematical benchmark evaluations, they demonstrate limited capability on MCQ and code reasoning tasks. Guided by our mechanistic evaluations, we refined our LoRA and reward-shaping configurations to improve performance in latter domains. These findings provide practical guidance for GRPO training for SLMs.",
+      "published": "2026-09-30T08:59:38Z",
+      "updated": "2026-09-30T08:59:38Z",
+      "arxiv_id": "2609.39321v1",
+      "abs_url": "http://arxiv.org/abs/2609.39321v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39321v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "GRPO Training Dynamics for Small Language Models",
+      "summary_zh": "Group Relative Policy Optimization (GRPO) has emerged as a memory-efficient reinforcement fine-tuning (RFT) technique for reasoning-intensive tasks. How- ever, GRPO training dynamics on small language models (SLMs) remain poorly understood, limiting its reliable adoption and reproducibility in open and resource- constrained environments. In this work, we present a systematic study of GRPO fine-tuning for SLMs ranging from 1.5B to 7B parameters under a practical single- node 8xA100 compute budget. Our study spans multiple model families and reasoning domains, including mathematics, coding, and multiple-choice question answering (MCQ) in science. Across these settings, we analyze how group size affects policy convergence, training stability, and downstream benchmark per- formance. We further characterize tensor-level update dynamics during GRPO training and investigate whether the choice of LoRA target modules and layers can improve the performance of GRPO-tuned models. While our initial GRPO-tuned models outperform their base counterparts on approximately 80% of mathematical benchmark evaluations, they demonstrate limited capability on MCQ and code reasoning tasks. Guided by our mechanistic evaluations, we refined our LoRA and reward-shaping configurations to improve performance in latter domains. These findings provide practical guidance for GRPO training for SLMs."
+    },
+    {
+      "title": "What Streaming Anomaly Detection Finds (and Misses) in Industrial Time Series",
+      "authors": [
+        "Magali Parrino",
+        "Antoine Ajenjo",
+        "Emmanuel Remy",
+        "Pierre Stephan",
+        "Paul Boniol"
+      ],
+      "summary": "EDF relies on continuous monitoring of its power plants to detect anomalies as soon as they occur. Given the absence of a universally optimal streaming method in unsupervised settings, we compare streaming methods with state-of-the-art TSAD models deployed online on a real nuclear power plant dataset. This work also evaluates Automated Anomaly Detection in a streaming context. Results show higher consistency for online TSAD and strong robustness from ensembling strategies.",
+      "published": "2026-09-30T08:04:26Z",
+      "updated": "2026-09-30T08:04:26Z",
+      "arxiv_id": "2609.39232v1",
+      "abs_url": "http://arxiv.org/abs/2609.39232v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39232v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 4,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "robust",
+        "unsupervised"
+      ],
+      "title_zh": "What Streaming Anomaly Detection Finds (and Misses) in Industrial Time Series",
+      "summary_zh": "EDF relies on continuous monitoring of its power plants to detect anomalies as soon as they occur. Given the absence of a universally optimal streaming method in unsupervised settings, we compare streaming methods with state-of-the-art TSAD models deployed online on a real nuclear power plant dataset. This work also evaluates Automated Anomaly Detection in a streaming context. Results show higher consistency for online TSAD and strong robustness from ensembling strategies."
+    },
+    {
+      "title": "DC-SAE: Deep Compression Semantic Autoencoder for Faster Diffusion Convergence",
+      "authors": [
+        "Xu Huang",
+        "Ye Huang",
+        "Zijun Liao",
+        "Yuwei Niu",
+        "Xiaojie Li",
+        "Menghan Zhou",
+        "De Wen Soh",
+        "Xiaotong Li",
+        "Daquan Zhou"
+      ],
+      "summary": "High-compression tokenizers are essential for scaling latent image generative models. However, aggressive compression creates a fundamental tradeoff between reconstruction fidelity and generation efficiency: high compression image encoder always increases the learning difficulty of diffusion training, resulting in slow model convergence. Recent representation autoencoders speed up the diffusion training by improving the latent feature's expressive capability by replacing VAE encoders with pretrained semantic encoders, yet they are typically limited to moderate compression and lose pixel-level details necessary for faithful reconstruction. To achieve both high compression and fast diffusion training, we propose DC-SAE, a Decoupled Compact Semantic Autoencoder designed for high-compression image generation with accelerated diffusion model convergence. DC-SAE consists of two key components: (1) a macro-level architecture design that leverages semantic encoders to enable higher compression ratios, and (2) a pixel-level encoder that preserves low-level details, ensuring high-fidelity image reconstruction. We empirically demonstrate that DC-SAE performs strongly on image generation tasks, achieving both compact latent representations and efficient training dynamics. Specifically, on the ImageNet dataset with $512 \\times 512$ resolution, DC-SAE achieves $32\\times$ spatial compression, with 29.79 PSNR and 3.37 gFID, substantially outperforming the previous state-of-the-art high-compression tokenizer baselines DC-AE by 13.5% and 54.9% on PSNR and gFID, respectively, maintaining comparable throughput and faster diffusion model training convergence. Beyond class-conditional generation, a $1.6$B-parameter DiT using DC-SAE achieves 0.84 on GenEval and 86.007 on DPG-Bench for text-to-image generation at $1024\\times1024$ resolution.",
+      "published": "2026-09-30T08:00:20Z",
+      "updated": "2026-09-30T08:00:20Z",
+      "arxiv_id": "2609.39222v1",
+      "abs_url": "http://arxiv.org/abs/2609.39222v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39222v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "16 pages, 5 figures. Project page: https://dagroup-pku.github.io/DCSAE",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "image generation"
+      ],
+      "title_zh": "DC-SAE: Deep Compression Semantic Autoencoder for Faster Diffusion Convergence",
+      "summary_zh": "High-compression tokenizers are essential for scaling latent image generative models. However, aggressive compression creates a fundamental tradeoff between reconstruction fidelity and generation efficiency: high compression image encoder always increases the learning difficulty of diffusion training, resulting in slow model convergence. Recent representation autoencoders speed up the diffusion training by improving the latent feature's expressive capability by replacing VAE encoders with pretrained semantic encoders, yet they are typically limited to moderate compression and lose pixel-level details necessary for faithful reconstruction. To achieve both high compression and fast diffusion training, we propose DC-SAE, a Decoupled Compact Semantic Autoencoder designed for high-compression image generation with accelerated diffusion model convergence. DC-SAE consists of two key components: (1) a macro-level architecture design that leverages semantic encoders to enable higher compression ratios, and (2) a pixel-level encoder that preserves low-level details, ensuring high-fidelity image reconstruction. We empirically demonstrate that DC-SAE performs strongly on image generation tasks, achieving both compact latent representations and efficient training dynamics. Specifically, on the ImageNet dataset with $512 \\times 512$ resolution, DC-SAE achieves $32\\times$ spatial compression, with 29.79 PSNR and 3.37 gFID, substantially outperforming the previous state-of-the-art high-compression tokenizer baselines DC-AE by 13.5% and 54.9% on PSNR and gFID, respectively, maintaining comparable throughput and faster diffusion model training convergence. Beyond class-conditional generation, a $1.6$B-parameter DiT using DC-SAE achieves 0.84 on GenEval and 86.007 on DPG-Bench for text-to-image generation at $1024\\times1024$ resolution."
+    },
+    {
+      "title": "How to Reduce Localization Ambiguity? Geometry-Semantic Constrained BEV Representation Learning for Satellite-Ground Localization",
+      "authors": [
+        "Junming Feng",
+        "Panwang Xia",
+        "Qiong Wu",
+        "Xudong Lu",
+        "Zeyu Jiao",
+        "Kun Lv",
+        "Zherong Wu",
+        "Yi Wan",
+        "Peifeng Ma",
+        "Li-Ta Hsu",
+        "Zhi Zheng"
+      ],
+      "summary": "Satellite-ground localization estimates the planar position and yaw orientation of a ground camera within a geo-referenced satellite image. Most recent methods map ground and satellite features into a shared bird's-eye-view (BEV) space and establish spatial correspondences. However, insufficient depth constraints can assign one ground feature to different distances along a viewing direction, creating geometric ambiguity in BEV feature placement. Similar appearances at different locations can also create descriptor matching ambiguity, while existing descriptor learning lacks explicit semantic supervision to distinguish them. We propose GeoSem-BEV, a geometry-semantic constrained BEV representation learning method. Radial depth supervision constrains distance assignment, and vertical height supervision constrains height aggregation. Shared explicit semantic supervision promotes consistent semantic predictions across views and helps distinguish locations with similar semantics. These constraints improve feature placement and descriptor discriminability, enhancing state-of-the-art BEV localization models. On VIGOR with unknown orientation, GeoSem-BEV reduces mean orientation error by 37.2% and 38.1% in the cross-area and same-area settings, respectively. The corresponding errors are reduced by 10.8% and 15.6% on DReSS-D. On KITTI-CVL, it reduces same-area mean orientation error by 26.8% under 10 degree orientation noise.",
+      "published": "2026-09-30T06:59:24Z",
+      "updated": "2026-09-30T06:59:24Z",
+      "arxiv_id": "2609.39127v1",
+      "abs_url": "http://arxiv.org/abs/2609.39127v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39127v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "10 pages, 2 figures, and 4 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 4,
+      "anchor_terms": [
+        "satellite image"
+      ],
+      "matched_terms": [
+        "satellite",
+        "satellite image"
+      ],
+      "title_zh": "How to Reduce Localization Ambiguity? Geometry-Semantic Constrained BEV Representation Learning for Satellite-Ground Localization",
+      "summary_zh": "Satellite-ground localization estimates the planar position and yaw orientation of a ground camera within a geo-referenced satellite image. Most recent methods map ground and satellite features into a shared bird's-eye-view (BEV) space and establish spatial correspondences. However, insufficient depth constraints can assign one ground feature to different distances along a viewing direction, creating geometric ambiguity in BEV feature placement. Similar appearances at different locations can also create descriptor matching ambiguity, while existing descriptor learning lacks explicit semantic supervision to distinguish them. We propose GeoSem-BEV, a geometry-semantic constrained BEV representation learning method. Radial depth supervision constrains distance assignment, and vertical height supervision constrains height aggregation. Shared explicit semantic supervision promotes consistent semantic predictions across views and helps distinguish locations with similar semantics. These constraints improve feature placement and descriptor discriminability, enhancing state-of-the-art BEV localization models. On VIGOR with unknown orientation, GeoSem-BEV reduces mean orientation error by 37.2% and 38.1% in the cross-area and same-area settings, respectively. The corresponding errors are reduced by 10.8% and 15.6% on DReSS-D. On KITTI-CVL, it reduces same-area mean orientation error by 26.8% under 10 degree orientation noise."
+    },
+    {
+      "title": "Beyond Text: LLM-Based Dimensional Emotion Evaluation in Multimodal Dialogue",
+      "authors": [
+        "Yutong Hu",
+        "Jinho Choi"
+      ],
+      "summary": "Emotion recognition in conversation has been widely studied, but applying Large Language Models (LLMs) to continuous dimensional emotion evaluation in multimodal dialogue remains largely unexplored. We propose an LLM-based framework that performs discrete emotion recognition and Valence-Arousal-Dominance (VAD) dimensional evaluation on IEMOCAP, incorporating acoustic cues as natural language descriptions following the SpeechCueLLM approach. We evaluate six models spanning the LLaMA, GPT, and Qwen families under zero-shot prompting, few-shot prompting, and LoRA fine-tuning. LoRA fine-tuned LLaMA models substantially outperform prompt-engineered GPT models on both tasks despite GPT's larger scale, a gap we attribute to domain adaptation rather than model capacity. Our best model achieves a Valence CCC of 0.7822, a new state-of-the-art on IEMOCAP. Ablation studies confirm that textual audio descriptions meaningfully improve smaller models (+3.5 to 3.6 weighted F1) while contributing little for the largest model, suggesting audio cues are most valuable when linguistic capacity is limited. The performance asymmetry across VAD dimensions closely mirrors the annotator agreement hierarchy in IEMOCAP's own annotations.",
+      "published": "2026-09-30T06:09:48Z",
+      "updated": "2026-09-30T06:09:48Z",
+      "arxiv_id": "2609.39072v1",
+      "abs_url": "http://arxiv.org/abs/2609.39072v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39072v1",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "comment": "15 pages, 6 figures, 11 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 7,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "domain adaptation",
+        "fine-tuning",
+        "large language model",
+        "LLM",
+        "LoRA",
+        "zero-shot"
+      ],
+      "title_zh": "Beyond Text: LLM-Based Dimensional Emotion Evaluation in Multimodal Dialogue",
+      "summary_zh": "Emotion recognition in conversation has been widely studied, but applying Large Language Models (LLMs) to continuous dimensional emotion evaluation in multimodal dialogue remains largely unexplored. We propose an LLM-based framework that performs discrete emotion recognition and Valence-Arousal-Dominance (VAD) dimensional evaluation on IEMOCAP, incorporating acoustic cues as natural language descriptions following the SpeechCueLLM approach. We evaluate six models spanning the LLaMA, GPT, and Qwen families under zero-shot prompting, few-shot prompting, and LoRA fine-tuning. LoRA fine-tuned LLaMA models substantially outperform prompt-engineered GPT models on both tasks despite GPT's larger scale, a gap we attribute to domain adaptation rather than model capacity. Our best model achieves a Valence CCC of 0.7822, a new state-of-the-art on IEMOCAP. Ablation studies confirm that textual audio descriptions meaningfully improve smaller models (+3.5 to 3.6 weighted F1) while contributing little for the largest model, suggesting audio cues are most valuable when linguistic capacity is limited. The performance asymmetry across VAD dimensions closely mirrors the annotator agreement hierarchy in IEMOCAP's own annotations."
+    },
+    {
+      "title": "Cycle-Aware Autoencoder with Cross-SignalConsistency for Railway Door Anomaly Detection",
+      "authors": [
+        "Ammar Bouketta",
+        "Smail Niar",
+        "Hamza Ouarnoughi",
+        "Eva Mutuzo Brindle"
+      ],
+      "summary": "Passenger access doors are safety-critical subsystems in railway vehicles, yet detecting abnormal door behavior in real operation is challenging because faults are rare, diverse, and often unlabeled. This paper addresses railway door condition monitoring as a cycle-level unsupervised anomaly detection problem, where each complete opening-dwell-closing cycle is treated as a single monitoring unit. We propose the Temporal Cycle-Aware Attention Autoencoder with Cross-Signal Consistency (TCAA-CS), trained exclusively on nominal cycles. It combines a dual-stream encoder that processes continuous physical measurements (position, current, voltage) and binary logical states (door-closed, door-locked) through separate 1D-CNN branches, an LSTM encoder with temporal attention pooling, and a triple hybrid anomaly score fusing reconstruction error, latent-space deviation, and phase-aware cross-signal consistency. The consistency term helps identify cases where individual signals appear plausible but their inter-signal relationships become physically or logically inconsistent. On real industrial data from a passenger train in commercial service, TCAA-CS achieves 93.8% recall, 97.3% precision, and a 0.5% false-alarm rate, outperforming representative unsupervised baselines. System-level evaluation on an NVIDIA Jetson AGX Xavier supports the feasibility of real-time onboard deployment.",
+      "published": "2026-09-30T05:38:29Z",
+      "updated": "2026-09-30T05:38:29Z",
+      "arxiv_id": "2609.39035v1",
+      "abs_url": "http://arxiv.org/abs/2609.39035v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39035v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "8 pages, 4 figures. Accepted and presented at the 29th Euromicro Conference on Digital System Design (DSD 2026)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 4,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "CNN",
+        "unsupervised"
+      ],
+      "title_zh": "Cycle-Aware Autoencoder with Cross-SignalConsistency for Railway Door Anomaly Detection",
+      "summary_zh": "Passenger access doors are safety-critical subsystems in railway vehicles, yet detecting abnormal door behavior in real operation is challenging because faults are rare, diverse, and often unlabeled. This paper addresses railway door condition monitoring as a cycle-level unsupervised anomaly detection problem, where each complete opening-dwell-closing cycle is treated as a single monitoring unit. We propose the Temporal Cycle-Aware Attention Autoencoder with Cross-Signal Consistency (TCAA-CS), trained exclusively on nominal cycles. It combines a dual-stream encoder that processes continuous physical measurements (position, current, voltage) and binary logical states (door-closed, door-locked) through separate 1D-CNN branches, an LSTM encoder with temporal attention pooling, and a triple hybrid anomaly score fusing reconstruction error, latent-space deviation, and phase-aware cross-signal consistency. The consistency term helps identify cases where individual signals appear plausible but their inter-signal relationships become physically or logically inconsistent. On real industrial data from a passenger train in commercial service, TCAA-CS achieves 93.8% recall, 97.3% precision, and a 0.5% false-alarm rate, outperforming representative unsupervised baselines. System-level evaluation on an NVIDIA Jetson AGX Xavier supports the feasibility of real-time onboard deployment."
+    },
+    {
+      "title": "Online Evolution Strategy for Flow-Matching VLA Policies via Self-Supervised Trajectory Distribution Optimization",
+      "authors": [
+        "Gongxin Yao",
+        "Yongsheng Zhao",
+        "Jiayin Deng",
+        "Deng Liang",
+        "Han Gao",
+        "Lei Zhao",
+        "Baoping Cheng"
+      ],
+      "summary": "Vision-Language-Action (VLA) models based on generative frameworks, such as Flow Matching, have recently achieved impressive performance in robotic manipulation. Unlike deterministic policies, Flow Matching enables VLA models to learn conditional action trajectory distributions, where latent noise vectors induce different actions under the same task scenario. However, we observe that these distributions are often ill-formed, with successful and failed behaviors coexisting while considerable probability mass remains in unfavorable regions. To this end, we propose Online-ES, an online adaptation framework for Flow Matching VLAs based on Evolution Strategy (ES), which refines the learned action trajectory distribution through interaction feedback. Instead of pruning the latent noise space, our method performs evolutionary exploration directly in the action trajectory space, where diverse trajectories generated by Flow Matching provide candidate solutions for adaptation. By perturbing sampled trajectories and evaluating their execution outcomes, we derive a self-supervised MSE objective that transfers the evolution direction from trajectory space into model parameter space. Mathematically, we prove that the proposed objective provides an unbiased estimator of the optimal evolution direction. Moreover, we also incorporate failure experiences as negative feedback to regularize the evolution direction, steering the policy away from previously explored failure regions. Experiments in both simulation and real-world environments demonstrate that Online-ES achieves policy improvement comparable to reinforcement fine-tuning, without learning a value model or computing advantages.",
+      "published": "2026-09-30T03:14:09Z",
+      "updated": "2026-09-30T03:14:09Z",
+      "arxiv_id": "2609.38855v1",
+      "abs_url": "http://arxiv.org/abs/2609.38855v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.38855v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "eess.SY"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA",
+        "self-supervised"
+      ],
+      "title_zh": "Online Evolution Strategy for Flow-Matching VLA Policies via Self-Supervised Trajectory Distribution Optimization",
+      "summary_zh": "Vision-Language-Action (VLA) models based on generative frameworks, such as Flow Matching, have recently achieved impressive performance in robotic manipulation. Unlike deterministic policies, Flow Matching enables VLA models to learn conditional action trajectory distributions, where latent noise vectors induce different actions under the same task scenario. However, we observe that these distributions are often ill-formed, with successful and failed behaviors coexisting while considerable probability mass remains in unfavorable regions. To this end, we propose Online-ES, an online adaptation framework for Flow Matching VLAs based on Evolution Strategy (ES), which refines the learned action trajectory distribution through interaction feedback. Instead of pruning the latent noise space, our method performs evolutionary exploration directly in the action trajectory space, where diverse trajectories generated by Flow Matching provide candidate solutions for adaptation. By perturbing sampled trajectories and evaluating their execution outcomes, we derive a self-supervised MSE objective that transfers the evolution direction from trajectory space into model parameter space. Mathematically, we prove that the proposed objective provides an unbiased estimator of the optimal evolution direction. Moreover, we also incorporate failure experiences as negative feedback to regularize the evolution direction, steering the policy away from previously explored failure regions. Experiments in both simulation and real-world environments demonstrate that Online-ES achieves policy improvement comparable to reinforcement fine-tuning, without learning a value model or computing advantages."
+    },
+    {
+      "title": "LEARN-TS: LLM-Enhanced Alignment and Reconstruction with Normality Guidance for Multivariate Time-Series Anomaly Detection",
+      "authors": [
+        "Jahyeob Koo",
+        "Kio Yun",
+        "Byoungmo Koo",
+        "Jun-Geol Baek"
+      ],
+      "summary": "Reconstruction errors in multivariate time-series anomaly detection may not reliably distinguish abnormal behavior from benign deviations. Language-derived semantics offer complementary context, but existing multimodal approaches may rely on time-associated paired textual information that is difficult to obtain consistently and is not provided by standard multivariate time-series anomaly detection benchmarks. This setting poses two challenges: (1) conditioning masked reconstruction on window-specific semantics without exposing exact numerical targets or anomaly-specific cues, and (2) using a window-independent concept of normality as a complementary semantic reference rather than an independent anomaly detector. We propose LLM-Enhanced Alignment and Reconstruction with Normality Guidance for Time Series (LEARN-TS), which uses a frozen language model to construct two role-separated semantic representations without requiring temporally paired external text. Window-specific observation semantics encode temporal and cross-variable context without exact numerical values to guide channel-shared patch-masked reconstruction. A fixed, dataset-agnostic normality prompt provides a window-independent semantic reference for aligning normal representations and estimating normality discrepancy. At inference, masking each temporal patch once yields timestamp-level reconstruction evidence, conditionally modulated by discrepancy from a separate unmasked view. Across four benchmarks, LEARN-TS achieves the highest mean performance in 13 of 16 dataset-metric comparisons. Controlled ablations examine observation conditioning, joint normality alignment and scoring, and reference content, showing dataset-dependent ranking benefits and modest average gains from semantic over random references.",
+      "published": "2026-09-30T02:19:41Z",
+      "updated": "2026-09-30T02:19:41Z",
+      "arxiv_id": "2609.38789v1",
+      "abs_url": "http://arxiv.org/abs/2609.38789v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.38789v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "24 pages, 7 figures, 13 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 6,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "LLM",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "LEARN-TS: LLM-Enhanced Alignment and Reconstruction with Normality Guidance for Multivariate Time-Series Anomaly Detection",
+      "summary_zh": "Reconstruction errors in multivariate time-series anomaly detection may not reliably distinguish abnormal behavior from benign deviations. Language-derived semantics offer complementary context, but existing multimodal approaches may rely on time-associated paired textual information that is difficult to obtain consistently and is not provided by standard multivariate time-series anomaly detection benchmarks. This setting poses two challenges: (1) conditioning masked reconstruction on window-specific semantics without exposing exact numerical targets or anomaly-specific cues, and (2) using a window-independent concept of normality as a complementary semantic reference rather than an independent anomaly detector. We propose LLM-Enhanced Alignment and Reconstruction with Normality Guidance for Time Series (LEARN-TS), which uses a frozen language model to construct two role-separated semantic representations without requiring temporally paired external text. Window-specific observation semantics encode temporal and cross-variable context without exact numerical values to guide channel-shared patch-masked reconstruction. A fixed, dataset-agnostic normality prompt provides a window-independent semantic reference for aligning normal representations and estimating normality discrepancy. At inference, masking each temporal patch once yields timestamp-level reconstruction evidence, conditionally modulated by discrepancy from a separate unmasked view. Across four benchmarks, LEARN-TS achieves the highest mean performance in 13 of 16 dataset-metric comparisons. Controlled ablations examine observation conditioning, joint normality alignment and scoring, and reference content, showing dataset-dependent ranking benefits and modest average gains from semantic over random references."
+    },
+    {
+      "title": "Template-Search Domain Adaptation via Multi-Stage Feature Alignment for Cross-Modal Object Tracking",
+      "authors": [
+        "Fereshteh Aghaee Meibodi",
+        "Amir Mehdi Soufi Enayati",
+        "Shadi Alijani",
+        "Homayoun Najjaran"
+      ],
+      "summary": "Visual object tracking typically assumes that the initial template and subsequent search frames share the same sensing modality. In practice, sensor availability or operation may change over time, creating a substantial representation gap between template and search frames. Unlike conventional multi-modal tracking where paired modalities are simultaneously available, cross-modal tracking requires localization when template and search frames originate from different active modalities. Accordingly, we introduce TSDA-Track, a Template-Search Domain Adaptation framework to reduce modality discrepancy during training. We investigate two feature alignment strategies. Pre-AFA TSDA-Track applies adversarial alignment before transformer's template-search interaction to suppress modality-specific bias. Enc-CFA TSDA-Track applies contrastive alignment to encoder representations after interaction to strengthen target-level cross-modal correspondence. Both variants retain a shared inference pipeline without modality-specific branches. Experiments on LasHeR, and zero-shot evaluations on RGBT234 and GTOT under multiple cross-modal protocols demonstrate improvements over representative state-of-the-art trackers. For instance, under the modality-switch protocol on RGBT234, Pre-AFA TSDA-Track achieves an SR/PR of 43.2/56.0, compared with 36.8/50.0 for ToMP-101 baseline. In addition, a study on Anti-UAV-024 further verifies the applicability of TSDA-Track to aerial tracking. Our study highlights the effectiveness of feature alignment domain adaptation for cross-modal tracking.",
+      "published": "2026-09-29T22:54:06Z",
+      "updated": "2026-09-29T22:54:06Z",
+      "arxiv_id": "2609.38637v1",
+      "abs_url": "http://arxiv.org/abs/2609.38637v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.38637v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "多模态融合",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 8,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "domain adaptation",
+        "transformer",
+        "UAV",
+        "zero-shot"
+      ],
+      "title_zh": "Template-Search Domain Adaptation via Multi-Stage Feature Alignment for Cross-Modal Object Tracking",
+      "summary_zh": "Visual object tracking typically assumes that the initial template and subsequent search frames share the same sensing modality. In practice, sensor availability or operation may change over time, creating a substantial representation gap between template and search frames. Unlike conventional multi-modal tracking where paired modalities are simultaneously available, cross-modal tracking requires localization when template and search frames originate from different active modalities. Accordingly, we introduce TSDA-Track, a Template-Search Domain Adaptation framework to reduce modality discrepancy during training. We investigate two feature alignment strategies. Pre-AFA TSDA-Track applies adversarial alignment before transformer's template-search interaction to suppress modality-specific bias. Enc-CFA TSDA-Track applies contrastive alignment to encoder representations after interaction to strengthen target-level cross-modal correspondence. Both variants retain a shared inference pipeline without modality-specific branches. Experiments on LasHeR, and zero-shot evaluations on RGBT234 and GTOT under multiple cross-modal protocols demonstrate improvements over representative state-of-the-art trackers. For instance, under the modality-switch protocol on RGBT234, Pre-AFA TSDA-Track achieves an SR/PR of 43.2/56.0, compared with 36.8/50.0 for ToMP-101 baseline. In addition, a study on Anti-UAV-024 further verifies the applicability of TSDA-Track to aerial tracking. Our study highlights the effectiveness of feature alignment domain adaptation for cross-modal tracking."
+    },
+    {
+      "title": "After a Decade: Bringing Shadow Removal into the Real World with Agentic Training Data",
+      "authors": [
+        "Shilin Hu",
+        "Jingyi Xu",
+        "Dimitris Samaras",
+        "Hieu Le"
+      ],
+      "summary": "Shadow removal looks nearly solved on established benchmarks, yet remains brittle in the real world. Models have advanced; the paired training data they rely on have barely changed in nearly a decade. The reason is simple: obtaining a shadow-free target requires removing the occluder while keeping the scene, camera, and illumination otherwise unchanged, making diverse paired data difficult to capture. Meanwhile, large shadow detection datasets already contain diverse real-world images and masks, but no shadow-free targets. To turn this abundant but incomplete data into paired supervision, we propose an offline agentic workflow combining physics-motivated generation, failure detection, feedback-driven retry, candidate selection, and deterministic correction. Using this workflow, we construct AgenticShadow, a dataset of 17,138 image-mask-target triplets spanning general scenes, faces, and remote sensing. Our construction workflow reduces Color Distribution Difference by 50.5% over previous shadow removal work, while training existing shadow removal models on AgenticShadow reduces cross-domain LAB RMSE by 19.7-37.5%.",
+      "published": "2026-09-29T22:10:33Z",
+      "updated": "2026-09-29T22:10:33Z",
+      "arxiv_id": "2609.38607v1",
+      "abs_url": "http://arxiv.org/abs/2609.38607v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.38607v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 3,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "remote sensing"
+      ],
+      "title_zh": "After a Decade: Bringing Shadow Removal into the Real World with Agentic Training Data",
+      "summary_zh": "Shadow removal looks nearly solved on established benchmarks, yet remains brittle in the real world. Models have advanced; the paired training data they rely on have barely changed in nearly a decade. The reason is simple: obtaining a shadow-free target requires removing the occluder while keeping the scene, camera, and illumination otherwise unchanged, making diverse paired data difficult to capture. Meanwhile, large shadow detection datasets already contain diverse real-world images and masks, but no shadow-free targets. To turn this abundant but incomplete data into paired supervision, we propose an offline agentic workflow combining physics-motivated generation, failure detection, feedback-driven retry, candidate selection, and deterministic correction. Using this workflow, we construct AgenticShadow, a dataset of 17,138 image-mask-target triplets spanning general scenes, faces, and remote sensing. Our construction workflow reduces Color Distribution Difference by 50.5% over previous shadow removal work, while training existing shadow removal models on AgenticShadow reduces cross-domain LAB RMSE by 19.7-37.5%."
+    },
+    {
+      "title": "Aperture: Training-Free Multiscale Concept Bottlenecks for Remote Sensing",
+      "authors": [
+        "Rishabh Mondal",
+        "Nipun Batra",
+        "Utkarsh Mall"
+      ],
+      "summary": "While earth observation models have advanced substantially, they still lack interpretability. While concept-bottleneck models provide interpretability and expert interaction, they are either too expensive to train for the remote sensing domain or perform poorly without annotation. We posit that in expert domains like remote sensing, such training-free models require both fine details in both image and concept space. In image space, we propose a multiscale concept bottleneck using greedy quadtree routing to locate small concepts. In concept space, we replace contrastive vision language models with pre-trained MLLMs and present a way to get reliable concept scores from them. We introduce APERTURE that blends concept scores at the global image and native concept-scale level to give state-ofthe-art training-free model performance. To test these models, introduce SiFC, a fine-grained concept-centric dataset across three countries, with human-reviewed class-level concept maps. On SiFC, APERTURE outperforms the best training-free baselines by more than 10 percentage points in macro F1-score, and notably also outperforms supervised concept bottleneck models. Targeted component-removal tests examine whether concept scores respond to changes in visual evidence, while temporal experiments show that descriptor updates improve recognition of technological changes without retraining.",
+      "published": "2026-09-29T22:09:36Z",
+      "updated": "2026-09-29T22:09:36Z",
+      "arxiv_id": "2609.38603v1",
+      "abs_url": "http://arxiv.org/abs/2609.38603v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.38603v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 8,
+      "anchor_terms": [
+        "earth observation",
+        "MLLM",
+        "remote sensing",
+        "temporal"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "MLLM",
+        "remote sensing",
+        "temporal",
+        "vision language model"
+      ],
+      "title_zh": "Aperture: Training-Free Multiscale Concept Bottlenecks for Remote Sensing",
+      "summary_zh": "While earth observation models have advanced substantially, they still lack interpretability. While concept-bottleneck models provide interpretability and expert interaction, they are either too expensive to train for the remote sensing domain or perform poorly without annotation. We posit that in expert domains like remote sensing, such training-free models require both fine details in both image and concept space. In image space, we propose a multiscale concept bottleneck using greedy quadtree routing to locate small concepts. In concept space, we replace contrastive vision language models with pre-trained MLLMs and present a way to get reliable concept scores from them. We introduce APERTURE that blends concept scores at the global image and native concept-scale level to give state-ofthe-art training-free model performance. To test these models, introduce SiFC, a fine-grained concept-centric dataset across three countries, with human-reviewed class-level concept maps. On SiFC, APERTURE outperforms the best training-free baselines by more than 10 percentage points in macro F1-score, and notably also outperforms supervised concept bottleneck models. Targeted component-removal tests examine whether concept scores respond to changes in visual evidence, while temporal experiments show that descriptor updates improve recognition of technological changes without retraining."
+    }
+  ]
+}
