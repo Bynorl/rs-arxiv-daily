@@ -1,0 +1,1021 @@
+{
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T07:45:39.112417+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 24,
+  "papers": [
+    {
+      "title": "Distillation of Tabular Foundation Models into Efficient Predictors",
+      "authors": [
+        "Minho Jeong",
+        "Dooho Lee",
+        "Jinmo Lee",
+        "Jaemin Yoo"
+      ],
+      "summary": "Tabular foundation models (TFMs) achieve strong predictive performance through in-context learning, yet repeatedly conditioning on labeled data makes inference expensive. Knowledge distillation can reduce this cost by transferring their predictive ability to lightweight, dataset-specific students. However, the dependence of TFM predictions on both a labeled context and a query introduces two design questions: how to construct teacher supervision and whether expanding query coverage improves distillation. We examine these questions across two TFMs and both neural and tree-based students, and derive an effective distillation recipe. The recipe uses the full labeled training set as teacher context and trains students solely on teacher predictions for observed and synthetic queries. On TabArena, the resulting students outperform their supervised trained tuned-and-ensembled counterparts by 57-98 Elo points. Applied unchanged to TALENT, the same recipe improves matched default students on 236-258 of 300 datasets and reduces median primary error by 4.0-6.4%. The distilled students also achieve median inference speedups of 3.0-21.6 times over their teachers, offering a practical trade-off between predictive performance and repeated inference cost. Code is available at https://github.com/nums-ai/TFM_Distillation .",
+      "published": "2026-10-01T10:31:22Z",
+      "updated": "2026-10-01T10:31:22Z",
+      "arxiv_id": "2610.01435v1",
+      "abs_url": "http://arxiv.org/abs/2610.01435v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01435v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/nums-ai/TFM_Distillation",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning",
+        "knowledge distillation"
+      ],
+      "title_zh": "Distillation of Tabular Foundation Models into Efficient Predictors",
+      "summary_zh": "Tabular foundation models (TFMs) achieve strong predictive performance through in-context learning, yet repeatedly conditioning on labeled data makes inference expensive. Knowledge distillation can reduce this cost by transferring their predictive ability to lightweight, dataset-specific students. However, the dependence of TFM predictions on both a labeled context and a query introduces two design questions: how to construct teacher supervision and whether expanding query coverage improves distillation. We examine these questions across two TFMs and both neural and tree-based students, and derive an effective distillation recipe. The recipe uses the full labeled training set as teacher context and trains students solely on teacher predictions for observed and synthetic queries. On TabArena, the resulting students outperform their supervised trained tuned-and-ensembled counterparts by 57-98 Elo points. Applied unchanged to TALENT, the same recipe improves matched default students on 236-258 of 300 datasets and reduces median primary error by 4.0-6.4%. The distilled students also achieve median inference speedups of 3.0-21.6 times over their teachers, offering a practical trade-off between predictive performance and repeated inference cost. Code is available at https://github.com/nums-ai/TFM_Distillation ."
+    },
+    {
+      "title": "OpenTSLM TeeMoE: A Unified Time-Series Language Model for Forecasting, Contextual Prediction, and Reasoning",
+      "authors": [
+        "Tony Chen",
+        "Timo Stoffregen",
+        "Maxwell Xu",
+        "Thomas Kaar",
+        "Martin Maritsch",
+        "Geremia Pompei",
+        "Nicolas Zumarraga",
+        "Robert Jakob",
+        "Paul Schmiedmayer",
+        "Patrick Langer",
+        "Juncheng Liu"
+      ],
+      "summary": "Real-world time-series applications increasingly require models that can handle time series forecasting, context-conditioned prediction, and language-based temporal reasoning. Yet current time-series foundation models remain fragmented across these capabilities: numerical specialists often provide the strongest forecasts, while language-based models offer broader contextual understanding and analysis. A central challenge is to unify these heterogeneous capabilities without reducing their individual performance. We introduce OpenTSLM TeeMoE, a generalist time-series language model that can forecast directly from observed time series, reason over textual context and temporal patterns, and synthesize and refine predictions from external numerical forecasting specialists. We independently train three low-rank experts for forecast aggregation, native forecasting, and temporal analysis over a shared backbone. A learned LoRA mixture-of-experts controller then weights their frozen parameter updates for each request. Our proposed model achieves strong performance on widely used benchmarks for time series forecasting, context-conditioned prediction, and language-based temporal reasoning, ranking among the top three on GIFT-Eval by mean MASE rank, Context is Key by RCRPS, and TimeSeriesExam by accuracy.",
+      "published": "2026-09-30T17:43:22Z",
+      "updated": "2026-09-30T17:43:22Z",
+      "arxiv_id": "2609.40265v1",
+      "abs_url": "http://arxiv.org/abs/2609.40265v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.40265v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "39 pages, 2 figures. Code: https://github.com/OpenTSLM/OpenTSLM-TeeMoE ; model: https://huggingface.co/OpenTSLM/TeeMoE",
+      "code_url": "https://github.com/OpenTSLM/OpenTSLM-TeeMoE",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "时间序列与视频",
+        "基础模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA",
+        "temporal"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "LoRA",
+        "temporal",
+        "temporal analysis",
+        "time-series"
+      ],
+      "title_zh": "OpenTSLM TeeMoE: A Unified Time-Series Language Model for Forecasting, Contextual Prediction, and Reasoning",
+      "summary_zh": "Real-world time-series applications increasingly require models that can handle time series forecasting, context-conditioned prediction, and language-based temporal reasoning. Yet current time-series foundation models remain fragmented across these capabilities: numerical specialists often provide the strongest forecasts, while language-based models offer broader contextual understanding and analysis. A central challenge is to unify these heterogeneous capabilities without reducing their individual performance. We introduce OpenTSLM TeeMoE, a generalist time-series language model that can forecast directly from observed time series, reason over textual context and temporal patterns, and synthesize and refine predictions from external numerical forecasting specialists. We independently train three low-rank experts for forecast aggregation, native forecasting, and temporal analysis over a shared backbone. A learned LoRA mixture-of-experts controller then weights their frozen parameter updates for each request. Our proposed model achieves strong performance on widely used benchmarks for time series forecasting, context-conditioned prediction, and language-based temporal reasoning, ranking among the top three on GIFT-Eval by mean MASE rank, Context is Key by RCRPS, and TimeSeriesExam by accuracy."
+    },
+    {
+      "title": "Harnessing Domain Specialists in Multimodal Mixture-of-Experts for Efficient Adaptation",
+      "authors": [
+        "Damiano Marsili",
+        "Raphi Kang",
+        "Aditya Mehta",
+        "Pietro Perona",
+        "Georgia Gkioxari"
+      ],
+      "summary": "Mixture-of-Experts (MoE) architectures scale model capacity through sparse computation, routing each token through only a small subset of experts. In this work, we explore whether this sparsity gives rise to emergent intrinsic organization in multimodal MoEs. We find that experts develop strong semantic specialization across modalities and domains despite not being explicitly trained for modularity. Building on this structure, we introduce ExpertLens, a data-free method that identifies domain-specialized experts directly from pretrained model weights by decoding router weights into semantically meaningful vocabulary tokens. We leverage this specialization for efficient multimodal adaptation by selectively fine-tuning experts relevant to a target domain. Across math, medical, and remote sensing tasks, ExpertLens matches or surpasses full fine-tuning while updating only 21.7 - 47.0% of model parameters and achieving a 4.0x average training speedup, and outperforms LoRA in both adaptation performance and training efficiency. These results show that sparsity introduced for efficiency can give rise to semantic modularity that is directly useful for efficient adaptation.",
+      "published": "2026-10-01T17:37:13Z",
+      "updated": "2026-10-01T17:37:13Z",
+      "arxiv_id": "2610.02123v1",
+      "abs_url": "http://arxiv.org/abs/2610.02123v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02123v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Project page: https://glab-caltech.github.io/expertlens/",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "多模态融合"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA",
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA",
+        "remote sensing"
+      ],
+      "title_zh": "Harnessing Domain Specialists in Multimodal Mixture-of-Experts for Efficient Adaptation",
+      "summary_zh": "Mixture-of-Experts (MoE) architectures scale model capacity through sparse computation, routing each token through only a small subset of experts. In this work, we explore whether this sparsity gives rise to emergent intrinsic organization in multimodal MoEs. We find that experts develop strong semantic specialization across modalities and domains despite not being explicitly trained for modularity. Building on this structure, we introduce ExpertLens, a data-free method that identifies domain-specialized experts directly from pretrained model weights by decoding router weights into semantically meaningful vocabulary tokens. We leverage this specialization for efficient multimodal adaptation by selectively fine-tuning experts relevant to a target domain. Across math, medical, and remote sensing tasks, ExpertLens matches or surpasses full fine-tuning while updating only 21.7 - 47.0% of model parameters and achieving a 4.0x average training speedup, and outperforms LoRA in both adaptation performance and training efficiency. These results show that sparsity introduced for efficiency can give rise to semantic modularity that is directly useful for efficient adaptation."
+    },
+    {
+      "title": "Form and Void: Entangled Composition through an Autonomous AI Agent",
+      "authors": [
+        "Shiwen Wang",
+        "Jian Yang",
+        "Xu Wang",
+        "Xincan Wang",
+        "Weiming Dong"
+      ],
+      "summary": "Positive and negative space is a fundamental principle in visual composition, supporting visually coherent forms and layered semantic relationships. Generating such compositions is challenging because it requires coordinated control over two semantic concepts that share a common boundary. Although recent text-to-image models and multimodal large language models (MLLMs) have achieved strong performance in image generation and visual understanding, positive-negative space generation remains difficult, particularly under direct single-pass prompting. In this work, we present the \\textbf{F}orm \\textbf{a}nd \\textbf{V}oid \\textbf{A}gent (\\textbf{FaV-A}), a multimodal agent designed for staged positive-negative space generation. FaV-A follows a progressive workflow: it first generates a base object, then analyzes its shape and spatial structure to identify candidate negative-space semantics, and finally produces compositional instructions for the final image generation stage. Experimental results and ablation analyses suggest that FaV-A provides a more effective framework than direct zero-shot MLLM baselines for producing visually coherent and semantically aligned positive-negative space compositions.",
+      "published": "2026-10-01T16:55:37Z",
+      "updated": "2026-10-01T16:55:37Z",
+      "arxiv_id": "2610.02045v1",
+      "abs_url": "http://arxiv.org/abs/2610.02045v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02045v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.MA"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "多模态融合"
+      ],
+      "topic": "图像生成与重建",
+      "score": 6,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation",
+        "large language model",
+        "MLLM",
+        "multimodal large language model",
+        "zero-shot"
+      ],
+      "title_zh": "Form and Void: Entangled Composition through an Autonomous AI Agent",
+      "summary_zh": "Positive and negative space is a fundamental principle in visual composition, supporting visually coherent forms and layered semantic relationships. Generating such compositions is challenging because it requires coordinated control over two semantic concepts that share a common boundary. Although recent text-to-image models and multimodal large language models (MLLMs) have achieved strong performance in image generation and visual understanding, positive-negative space generation remains difficult, particularly under direct single-pass prompting. In this work, we present the \\textbf{F}orm \\textbf{a}nd \\textbf{V}oid \\textbf{A}gent (\\textbf{FaV-A}), a multimodal agent designed for staged positive-negative space generation. FaV-A follows a progressive workflow: it first generates a base object, then analyzes its shape and spatial structure to identify candidate negative-space semantics, and finally produces compositional instructions for the final image generation stage. Experimental results and ablation analyses suggest that FaV-A provides a more effective framework than direct zero-shot MLLM baselines for producing visually coherent and semantically aligned positive-negative space compositions."
+    },
+    {
+      "title": "Unsupervised Domain Adaptation for Enhanced Radiometer Image Precipitation Estimation using Conditional Flow Matching",
+      "authors": [
+        "Victor Enescu",
+        "Assaad Zeghina",
+        "Matthieu Meignin",
+        "Nicolas Viltard",
+        "Cécile Mallet"
+      ],
+      "summary": "Deep generative networks have recently achieved unprecedented performance in precise image and video editing using sophisticated textual prompts. However, the effectiveness of such models heavily depends on access to very large supervised and annotated image datasets, which can be very difficult to obtain. This is particularly true for satellite instruments, which very rarely overlap with labelled data, and suffer from domain shifts in the rare occasions they do. In this paper, we investigate the potential of flow matching models for unsupervised domain adaptation of satellite radiometer images. Our main contribution is a novel unsupervised method that achieves precise domain alignment by leveraging parts of the deterministic ordinary differential equations in flow matching models, conditioned on different satellite instruments. A key strength of our approach is its ability to preserve essential information while adapting across any domains since the perturbations are in theory bijective. Extensive experiments conducted on the GPM-Core constellation show the benefit of our conditional domain adaptation, particularly in improving rain precipitation estimation from radiometer imagery.",
+      "published": "2026-10-01T15:40:49Z",
+      "updated": "2026-10-01T15:40:49Z",
+      "arxiv_id": "2610.01890v1",
+      "abs_url": "http://arxiv.org/abs/2610.01890v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01890v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 7,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "domain adaptation",
+        "satellite",
+        "unsupervised"
+      ],
+      "title_zh": "Unsupervised Domain Adaptation for Enhanced Radiometer Image Precipitation Estimation using Conditional Flow Matching",
+      "summary_zh": "Deep generative networks have recently achieved unprecedented performance in precise image and video editing using sophisticated textual prompts. However, the effectiveness of such models heavily depends on access to very large supervised and annotated image datasets, which can be very difficult to obtain. This is particularly true for satellite instruments, which very rarely overlap with labelled data, and suffer from domain shifts in the rare occasions they do. In this paper, we investigate the potential of flow matching models for unsupervised domain adaptation of satellite radiometer images. Our main contribution is a novel unsupervised method that achieves precise domain alignment by leveraging parts of the deterministic ordinary differential equations in flow matching models, conditioned on different satellite instruments. A key strength of our approach is its ability to preserve essential information while adapting across any domains since the perturbations are in theory bijective. Extensive experiments conducted on the GPM-Core constellation show the benefit of our conditional domain adaptation, particularly in improving rain precipitation estimation from radiometer imagery."
+    },
+    {
+      "title": "From Pixels to Policy: A Multi-Agent System for Intervention and Geo-Spatial Decision Support",
+      "authors": [
+        "Hosam Elgendy",
+        "Utkarsh Mall"
+      ],
+      "summary": "Urban environments are shaped by design choices with long-term implications for health, safety, and quality of life, yet evaluating proposed interventions remains costly, time-consuming, and often impractical. Existing geospatial vision methods largely focus on monitoring urban indicators from aerial and street-view imagery, rather than proposing interventions and estimating their effects on such indicators. Moving beyond recognition, we introduce the problem of discovering interventions that improve target indicators for a given aerial or street-view image. We argue that a black-box indicator model, combined with a generative editing model, can serve as an implicit digital twin for testing intervention hypotheses. We present VIDA-Geo , a multi-agent system that explores this intervention space by coordinating segmentation, diffusion-based inpainting, and indicator scoring models to produce interventions that are both perceptually realistic and aligned with real-world policies. We evaluate our system on 8 indicators across aerial and street-view imagery, measuring changes in factors such as perceived safety and greenery. Our approach outperforms existing baselines in many cases, achieving up to 2X higher perceptual quality and policy alignment scores. Finally, our model provides users with multiple candidate interventions, supporting an expert city-planner-in-the-loop workflow.",
+      "published": "2026-10-01T15:29:11Z",
+      "updated": "2026-10-01T15:29:11Z",
+      "arxiv_id": "2610.01870v1",
+      "abs_url": "http://arxiv.org/abs/2610.01870v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01870v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 5,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "aerial",
+        "geospatial"
+      ],
+      "title_zh": "From Pixels to Policy: A Multi-Agent System for Intervention and Geo-Spatial Decision Support",
+      "summary_zh": "Urban environments are shaped by design choices with long-term implications for health, safety, and quality of life, yet evaluating proposed interventions remains costly, time-consuming, and often impractical. Existing geospatial vision methods largely focus on monitoring urban indicators from aerial and street-view imagery, rather than proposing interventions and estimating their effects on such indicators. Moving beyond recognition, we introduce the problem of discovering interventions that improve target indicators for a given aerial or street-view image. We argue that a black-box indicator model, combined with a generative editing model, can serve as an implicit digital twin for testing intervention hypotheses. We present VIDA-Geo , a multi-agent system that explores this intervention space by coordinating segmentation, diffusion-based inpainting, and indicator scoring models to produce interventions that are both perceptually realistic and aligned with real-world policies. We evaluate our system on 8 indicators across aerial and street-view imagery, measuring changes in factors such as perceived safety and greenery. Our approach outperforms existing baselines in many cases, achieving up to 2X higher perceptual quality and policy alignment scores. Finally, our model provides users with multiple candidate interventions, supporting an expert city-planner-in-the-loop workflow."
+    },
+    {
+      "title": "Cog-VADU: A Training-Free Cognitive Reasoning Framework for Video Anomaly Detection and Understanding",
+      "authors": [
+        "Mohd Ubaid Wani",
+        "Sara Atito",
+        "Josef Kittler",
+        "Muhammad Awais"
+      ],
+      "summary": "Video Anomaly Detection (VAD) aims to temporally localize abnormal events in videos. Most existing approaches rely on dataset-specific training and curated annotations, limiting generalization in open-set scenarios. Recent zero-shot methods based on Large Vision- Language Models (LVLMs) alleviate this dependency but often lack temporal continuity and structured reasoning. We propose Cog-VADU, a fully training-free framework that reformulates VAD as a sequential cognitive reasoning task. Cog-VADU introduces Chain-of- Anomaly Detection Thought Prompting (CoADTP), which unrolls an LVLM into a recurrent reasoning chain across video segments. By propagating structured rationales over time, the model maintains implicit temporal memory, enabling robust discrimination between com- plex anomalies and high-motion normal activities. To improve reliability, we further design a cross-modal re-ranking stage that aligns textual rationales with visual embeddings, enforcing semantic consistency and temporal coherence for refined and stable predictions. Extensive experiments on multiple public VAD benchmarks demonstrate that Cog-VADU achieves competitive zero-shot performance. Moreover, cross-model evaluations show that CoADTP consistently enhances reasoning-based anomaly detection in a model-agnostic manner, pro- viding interpretable and generalizable anomaly understanding for real-world applications.",
+      "published": "2026-10-01T14:18:32Z",
+      "updated": "2026-10-01T14:18:32Z",
+      "arxiv_id": "2610.01754v1",
+      "abs_url": "http://arxiv.org/abs/2610.01754v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01754v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "Published in Transactions on Machine Learning Research (TMLR), 2026. 39 pages",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "开放词汇与开放集",
+        "小样本与域泛化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 7,
+      "anchor_terms": [
+        "open-set"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "generalizable",
+        "open-set",
+        "robust",
+        "zero-shot"
+      ],
+      "title_zh": "Cog-VADU: A Training-Free Cognitive Reasoning Framework for Video Anomaly Detection and Understanding",
+      "summary_zh": "Video Anomaly Detection (VAD) aims to temporally localize abnormal events in videos. Most existing approaches rely on dataset-specific training and curated annotations, limiting generalization in open-set scenarios. Recent zero-shot methods based on Large Vision- Language Models (LVLMs) alleviate this dependency but often lack temporal continuity and structured reasoning. We propose Cog-VADU, a fully training-free framework that reformulates VAD as a sequential cognitive reasoning task. Cog-VADU introduces Chain-of- Anomaly Detection Thought Prompting (CoADTP), which unrolls an LVLM into a recurrent reasoning chain across video segments. By propagating structured rationales over time, the model maintains implicit temporal memory, enabling robust discrimination between com- plex anomalies and high-motion normal activities. To improve reliability, we further design a cross-modal re-ranking stage that aligns textual rationales with visual embeddings, enforcing semantic consistency and temporal coherence for refined and stable predictions. Extensive experiments on multiple public VAD benchmarks demonstrate that Cog-VADU achieves competitive zero-shot performance. Moreover, cross-model evaluations show that CoADTP consistently enhances reasoning-based anomaly detection in a model-agnostic manner, pro- viding interpretable and generalizable anomaly understanding for real-world applications."
+    },
+    {
+      "title": "FedLore: Communication and Memory Efficient Federated Learning via Shared Gradient Low-Rank Projection",
+      "authors": [
+        "Junkang Liu"
+      ],
+      "summary": "Federated training of foundation models is constrained by client memory and communication costs. LoRA-based methods reduce these costs through low-rank adapters, but their fixed rank budget can limit adaptation. Gradient low-rank optimization offers greater flexibility, yet independently chosen client subspaces create a problem we term \\emph{subspace fragmentation}: local projections interact with data heterogeneity to bias aggregated directions, while aggregation can increase update rank and communication cost. Thus, accurate local gradient compression need not preserve global descent. We propose \\texttt{FedLore}, which shares a low-rank optimization basis within each round and refreshes it across rounds. The shared basis enables exact aggregation in low-rank coordinates and eliminates the identified projection bias. Subspace refresh allows the accumulated model update to exceed the per-round rank budget. We characterize the aggregation bias and establish an $O(T^{-1/2})$ stationarity bound for the projected-SGD variant under a global-gradient coverage condition and standard smoothness and variance assumptions, with bounded gradient heterogeneity. Experiments on vision and language tasks, including federated pre-training, show that \\texttt{FedLore} outperforms the evaluated low-rank adapter baselines and matches or exceeds full-parameter training, while reducing communication and optimizer-state memory.",
+      "published": "2026-10-01T12:56:25Z",
+      "updated": "2026-10-01T12:56:25Z",
+      "arxiv_id": "2610.01620v1",
+      "abs_url": "http://arxiv.org/abs/2610.01620v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01620v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "foundation model",
+        "LoRA",
+        "pre-training"
+      ],
+      "title_zh": "FedLore: Communication and Memory Efficient Federated Learning via Shared Gradient Low-Rank Projection",
+      "summary_zh": "Federated training of foundation models is constrained by client memory and communication costs. LoRA-based methods reduce these costs through low-rank adapters, but their fixed rank budget can limit adaptation. Gradient low-rank optimization offers greater flexibility, yet independently chosen client subspaces create a problem we term \\emph{subspace fragmentation}: local projections interact with data heterogeneity to bias aggregated directions, while aggregation can increase update rank and communication cost. Thus, accurate local gradient compression need not preserve global descent. We propose \\texttt{FedLore}, which shares a low-rank optimization basis within each round and refreshes it across rounds. The shared basis enables exact aggregation in low-rank coordinates and eliminates the identified projection bias. Subspace refresh allows the accumulated model update to exceed the per-round rank budget. We characterize the aggregation bias and establish an $O(T^{-1/2})$ stationarity bound for the projected-SGD variant under a global-gradient coverage condition and standard smoothness and variance assumptions, with bounded gradient heterogeneity. Experiments on vision and language tasks, including federated pre-training, show that \\texttt{FedLore} outperforms the evaluated low-rank adapter baselines and matches or exceeds full-parameter training, while reducing communication and optimizer-state memory."
+    },
+    {
+      "title": "Managing Context and Communication in Distributed Agentic UAV Swarms",
+      "authors": [
+        "Andrea Iannoli",
+        "Ivan Zyrianoff",
+        "Angelo Trotta",
+        "Lorenzo Gigli",
+        "Marco Di Felice"
+      ],
+      "summary": "Unmanned aerial vehicle (UAV) swarms increasingly rely on language-model agents to provide adaptive mission-level reasoning in uncertain environments. Fully distributed control, in which each UAV hosts an independent Small Language Model (SLM), removes reliance on a centralized coordinator but introduces an information-management problem: long-running interaction histories can degrade the reasoning context, while indiscriminate information dissemination increases communication and inference overhead. We address these challenges with a distributed UAV-agent architecture that enables continuous local SLM control through an event-driven reason-act-observe lifecycle. Runtime knowledge is represented as structured atomic notes and organized into core, local, and peer-specific memory. A deterministic interest-aware gossip engine selectively disseminates these notes according to recipient-specific semantic novelty and recency. We evaluate the architecture using ten UAVs in a simulated search-and-rescue mission. Our approach completes all experimental runs, whereas unrestricted flooding messages completes only 70-85\\%, and delegating forwarding decisions to the SLM prevents mission completion in every run. Compared with unrestricted flooding, our approach approximately halves inference-token consumption, reduces transmitted data, and achieves lower survivor-count error.",
+      "published": "2026-10-01T12:30:29Z",
+      "updated": "2026-10-01T12:30:29Z",
+      "arxiv_id": "2610.01569v1",
+      "abs_url": "http://arxiv.org/abs/2610.01569v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01569v1",
+      "primary_category": "cs.MA",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG",
+        "cs.NI",
+        "cs.RO"
+      ],
+      "comment": "12 pages, 4 figures. This paper has been accepted for presentation at the 24th IEEE Consumer Communications & Networking Conference 2027 (CCNC 2027)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV"
+      ],
+      "topic": "无人机/UAV",
+      "score": 5,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "Managing Context and Communication in Distributed Agentic UAV Swarms",
+      "summary_zh": "Unmanned aerial vehicle (UAV) swarms increasingly rely on language-model agents to provide adaptive mission-level reasoning in uncertain environments. Fully distributed control, in which each UAV hosts an independent Small Language Model (SLM), removes reliance on a centralized coordinator but introduces an information-management problem: long-running interaction histories can degrade the reasoning context, while indiscriminate information dissemination increases communication and inference overhead. We address these challenges with a distributed UAV-agent architecture that enables continuous local SLM control through an event-driven reason-act-observe lifecycle. Runtime knowledge is represented as structured atomic notes and organized into core, local, and peer-specific memory. A deterministic interest-aware gossip engine selectively disseminates these notes according to recipient-specific semantic novelty and recency. We evaluate the architecture using ten UAVs in a simulated search-and-rescue mission. Our approach completes all experimental runs, whereas unrestricted flooding messages completes only 70-85\\%, and delegating forwarding decisions to the SLM prevents mission completion in every run. Compared with unrestricted flooding, our approach approximately halves inference-token consumption, reduces transmitted data, and achieves lower survivor-count error."
+    },
+    {
+      "title": "Range-GRPO: Policy Optimization via Pairwise Relations among Reward Intervals",
+      "authors": [
+        "Ryunyi Lee",
+        "Kangjun Noh",
+        "Somin Kim",
+        "Heedong Kim",
+        "Kyungwoo Song"
+      ],
+      "summary": "As the use of large language models (LLMs) expands, post-training has become increasingly important for adapting them to downstream tasks. However, obtaining reliable supervision remains costly, especially in domains without reference answers or executable verifiers. LLM-as-a-Judge provides scalable pseudo-rewards for unlabeled responses, but a single point score does not explicitly represent reward uncertainty. This motivates representing pseudo-rewards as conformally calibrated reward ranges. We propose Range-GRPO, a semi-supervised post-training framework that combines limited labeled data with unlabeled prompts. In Group Relative Policy Optimization (GRPO), learning signals depend on relative reward comparisons within each rollout group. The proposed objective compares reward ranges pairwise rather than reducing them to point rewards, allowing interval uncertainty to affect both the magnitude and direction of these signals. Our theoretical analysis characterizes this distinction and shows that the proposed objective recovers the Dr.GRPO advantage when all reward ranges collapse to points. Empirically, Range-GRPO achieves the highest in-distribution and out-of-distribution average performance among the evaluated semi-supervised methods while requiring fewer training resources.",
+      "published": "2026-10-01T12:16:34Z",
+      "updated": "2026-10-01T12:16:34Z",
+      "arxiv_id": "2610.01548v1",
+      "abs_url": "http://arxiv.org/abs/2610.01548v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01548v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 3,
+      "anchor_terms": [
+        "semi-supervised"
+      ],
+      "matched_terms": [
+        "large language model",
+        "LLM",
+        "semi-supervised"
+      ],
+      "title_zh": "Range-GRPO: Policy Optimization via Pairwise Relations among Reward Intervals",
+      "summary_zh": "As the use of large language models (LLMs) expands, post-training has become increasingly important for adapting them to downstream tasks. However, obtaining reliable supervision remains costly, especially in domains without reference answers or executable verifiers. LLM-as-a-Judge provides scalable pseudo-rewards for unlabeled responses, but a single point score does not explicitly represent reward uncertainty. This motivates representing pseudo-rewards as conformally calibrated reward ranges. We propose Range-GRPO, a semi-supervised post-training framework that combines limited labeled data with unlabeled prompts. In Group Relative Policy Optimization (GRPO), learning signals depend on relative reward comparisons within each rollout group. The proposed objective compares reward ranges pairwise rather than reducing them to point rewards, allowing interval uncertainty to affect both the magnitude and direction of these signals. Our theoretical analysis characterizes this distinction and shows that the proposed objective recovers the Dr.GRPO advantage when all reward ranges collapse to points. Empirically, Range-GRPO achieves the highest in-distribution and out-of-distribution average performance among the evaluated semi-supervised methods while requiring fewer training resources."
+    },
+    {
+      "title": "FedFit: Federated Fine-Tuning of LLMs via Vector-Bank Parameterization and Quantization",
+      "authors": [
+        "Hang Zou",
+        "Chao Zhang",
+        "Yuzhi Yang",
+        "Yu Tian",
+        "Samson Lasaulce",
+        "Mérouane Debbah"
+      ],
+      "summary": "Federated Learning (FL) enables privacy-preserving fine-tuning of Large Language Models (LLMs), yet the massive communication overhead remains a critical bottleneck. Furthermore, applying Low-Rank Adaptation (LoRA) in FL faces a fundamental \"aggregation dilemma\" between the accurate Sum-of-Products (SoP) and the communication-efficient Product-of-Sums (PoS) implementations. To tackle these challenges, we propose FedFit. First, to significantly reduce communication overhead, we introduce a disjoint shared vector-bank parameterization that reconstructs high-dimensional adapter matrices from two compact and disjoint global vector banks. Second, to address the aggregation dilemma, we devise an alternating optimization schedule. By cycling between decoupled single-bank updates (which allow for accurate aggregation) and joint updates corrected by a Residual Spectral Aggregation mechanism, we resolve the conflict between SoP and PoS. Additionally, we integrate blockwise quantization with client-side error feedback to further compress the transmitted vectors. Furthermore, we establish theoretical convergence guarantees for the proposed algorithm. Extensive experiments on Qwen2.5 models demonstrate that FedFit achieves perplexity performance comparable to standard federated LoRA methods, while providing compression ratios up to 100x higher.",
+      "published": "2026-10-01T12:09:46Z",
+      "updated": "2026-10-01T12:09:46Z",
+      "arxiv_id": "2610.01537v1",
+      "abs_url": "http://arxiv.org/abs/2610.01537v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01537v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "高光谱/多光谱"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "large language model",
+        "LoRA"
+      ],
+      "title_zh": "FedFit: Federated Fine-Tuning of LLMs via Vector-Bank Parameterization and Quantization",
+      "summary_zh": "Federated Learning (FL) enables privacy-preserving fine-tuning of Large Language Models (LLMs), yet the massive communication overhead remains a critical bottleneck. Furthermore, applying Low-Rank Adaptation (LoRA) in FL faces a fundamental \"aggregation dilemma\" between the accurate Sum-of-Products (SoP) and the communication-efficient Product-of-Sums (PoS) implementations. To tackle these challenges, we propose FedFit. First, to significantly reduce communication overhead, we introduce a disjoint shared vector-bank parameterization that reconstructs high-dimensional adapter matrices from two compact and disjoint global vector banks. Second, to address the aggregation dilemma, we devise an alternating optimization schedule. By cycling between decoupled single-bank updates (which allow for accurate aggregation) and joint updates corrected by a Residual Spectral Aggregation mechanism, we resolve the conflict between SoP and PoS. Additionally, we integrate blockwise quantization with client-side error feedback to further compress the transmitted vectors. Furthermore, we establish theoretical convergence guarantees for the proposed algorithm. Extensive experiments on Qwen2.5 models demonstrate that FedFit achieves perplexity performance comparable to standard federated LoRA methods, while providing compression ratios up to 100x higher."
+    },
+    {
+      "title": "No Model Required: Text Entropy Rate Filtering Mitigates Iterative Fine-Tuning Collapse",
+      "authors": [
+        "Lewis Mitchell"
+      ],
+      "summary": "Iterative fine-tuning on synthetic data causes \\emph{model collapse}: output diversity narrows as rare patterns are progressively lost, a signature most visible as phrase-level repetition. Existing mitigations either require model log-probabilities, an external oracle, or continued access to real human data. Here we develop a new approach grounded in mathematical information theory: the non-parametric Kontoyiannis entropy rate estimator $h_k$, computed entirely from raw text via match-length statistics, with no model of any kind. We show that this is in fact a \\emph{superior} training-data filter on text-diversity metrics in a fully-synthetic, single-lineage fine-tuning setting. In a six-generation QLoRA collapse experiment on Llama-3.1-8B, logprob-based filtering (the most established model-access-requiring baseline) provides no significant text-diversity benefit on any metric ($p > 0.23$), whereas $h_k$-filtering yields $+42\\%$ unique trigrams, $+30\\%$ vocabulary, and $-19\\%$ repetition (all $p < 0.001$). We validate $h_k$ as a cross-domain entropy proxy ($β= 0.924$, $R^2 = 0.746$) and collapse detector ($ρ= +0.454$, $p < 0.0001$) across 4~domains, 2~temperatures, 2~generator--scorer model pairs, and 1{,}520 generated documents. Our results demonstrate that information theoretic approaches to collapse mitigation are efficient, and suggest new approaches for maintaining multi-agent diversity.",
+      "published": "2026-10-01T11:36:55Z",
+      "updated": "2026-10-01T11:36:55Z",
+      "arxiv_id": "2610.01493v1",
+      "abs_url": "http://arxiv.org/abs/2610.01493v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01493v1",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IT",
+        "physics.data-an",
+        "stat.ML"
+      ],
+      "comment": "17 pages, 8 figures, NeurIPS 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "高效微调与轻量化"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 3,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "No Model Required: Text Entropy Rate Filtering Mitigates Iterative Fine-Tuning Collapse",
+      "summary_zh": "Iterative fine-tuning on synthetic data causes \\emph{model collapse}: output diversity narrows as rare patterns are progressively lost, a signature most visible as phrase-level repetition. Existing mitigations either require model log-probabilities, an external oracle, or continued access to real human data. Here we develop a new approach grounded in mathematical information theory: the non-parametric Kontoyiannis entropy rate estimator $h_k$, computed entirely from raw text via match-length statistics, with no model of any kind. We show that this is in fact a \\emph{superior} training-data filter on text-diversity metrics in a fully-synthetic, single-lineage fine-tuning setting. In a six-generation QLoRA collapse experiment on Llama-3.1-8B, logprob-based filtering (the most established model-access-requiring baseline) provides no significant text-diversity benefit on any metric ($p > 0.23$), whereas $h_k$-filtering yields $+42\\%$ unique trigrams, $+30\\%$ vocabulary, and $-19\\%$ repetition (all $p < 0.001$). We validate $h_k$ as a cross-domain entropy proxy ($β= 0.924$, $R^2 = 0.746$) and collapse detector ($ρ= +0.454$, $p < 0.0001$) across 4~domains, 2~temperatures, 2~generator--scorer model pairs, and 1{,}520 generated documents. Our results demonstrate that information theoretic approaches to collapse mitigation are efficient, and suggest new approaches for maintaining multi-agent diversity."
+    },
+    {
+      "title": "ALFRED: Requirement-driven development of an open-source mobile manipulator for long-term plant monitoring",
+      "authors": [
+        "Ciarán Miceal Johnson",
+        "Christopher Quail",
+        "Garry Ellard",
+        "Alistair McConnell",
+        "Steve Tonneau",
+        "Fernando Auat Cheein"
+      ],
+      "summary": "Tracking seasonal change in crops and forests requires observing the same plants repeatedly. Ground robots can do this at close range, and a manipulator gives their sensors more viewpoints. Yet the robots behind long-term field datasets are rarely released with their design files, and how a robot's own structure limits arm reach and occludes its sensors is seldom compared between builds. We present ALFRED, an open-source mobile manipulator built from commercially available components. It carries a six-degree-of-freedom arm, LiDAR, RGB-D cameras, RTK GNSS and an IMU on an Ackermann-steered base, all mounted on a reconfigurable aluminium strut frame, and runs containerised ROS software. It was developed through four builds against six requirements for repeated outdoor deployment: durability, modularity, repairability, sensing reach, endurance and reproducibility. Model-based analysis of the last three builds shows the usable share of the arm's reachable poses rising from 34.0% to 60.0% and then 66.1%, and ray casting shows that only the final build keeps the frame-mounted LiDAR's horizontal view clear both forwards and backwards. ALFRED completed a year of monthly forest surveys (528 traversals) without missing a scheduled collection. This was despite battery degradation, reconfiguration for another researcher's study, and the parallel development of ALFRED 2.0 for autonomous crop-row operation, with each switch between builds taking about six hours. The deployment also showed that mechanical modularity is only as dependable as the robot description that tracks it.",
+      "published": "2026-10-01T11:15:58Z",
+      "updated": "2026-10-01T11:15:58Z",
+      "arxiv_id": "2610.01477v1",
+      "abs_url": "http://arxiv.org/abs/2610.01477v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01477v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AR",
+        "cs.CV"
+      ],
+      "comment": "36 pages, 19 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "crop"
+      ],
+      "matched_terms": [
+        "crop",
+        "LiDAR"
+      ],
+      "title_zh": "ALFRED: Requirement-driven development of an open-source mobile manipulator for long-term plant monitoring",
+      "summary_zh": "Tracking seasonal change in crops and forests requires observing the same plants repeatedly. Ground robots can do this at close range, and a manipulator gives their sensors more viewpoints. Yet the robots behind long-term field datasets are rarely released with their design files, and how a robot's own structure limits arm reach and occludes its sensors is seldom compared between builds. We present ALFRED, an open-source mobile manipulator built from commercially available components. It carries a six-degree-of-freedom arm, LiDAR, RGB-D cameras, RTK GNSS and an IMU on an Ackermann-steered base, all mounted on a reconfigurable aluminium strut frame, and runs containerised ROS software. It was developed through four builds against six requirements for repeated outdoor deployment: durability, modularity, repairability, sensing reach, endurance and reproducibility. Model-based analysis of the last three builds shows the usable share of the arm's reachable poses rising from 34.0% to 60.0% and then 66.1%, and ray casting shows that only the final build keeps the frame-mounted LiDAR's horizontal view clear both forwards and backwards. ALFRED completed a year of monthly forest surveys (528 traversals) without missing a scheduled collection. This was despite battery degradation, reconfiguration for another researcher's study, and the parallel development of ALFRED 2.0 for autonomous crop-row operation, with each switch between builds taking about six hours. The deployment also showed that mechanical modularity is only as dependable as the robot description that tracks it."
+    },
+    {
+      "title": "The Impact of Processing Parameters on High-Accuracy Measurements in UAV Photogrammetry",
+      "authors": [
+        "Paweł Ćwiąkała",
+        "Edyta Puniach",
+        "Elżbieta Pastucha",
+        "Wojciech Gruszczyński"
+      ],
+      "summary": "Unmanned aerial vehicle (UAV) photogrammetry is increasingly used in applications requiring high accuracy, such as determining ground surface changes caused by landslides, mining, or microrelief transformation. While acquisition strategies have been widely studied, the influence of the processing workflow-particularly Bundle Block Adjustment parameter settings-remains insufficiently explored. This study addresses this gap through a systematic, full-factorial evaluation of 768 processing variants applied to ten UAV datasets collected over 1.5 years in a 220 ha study area. Eight key parameters were analysed. The results show substantial variability in final 3D accuracy: the best performing variant achieved a root mean square error (RMSE) of 16 mm, whereas the weakest reached 303 mm. The most influential factors were the number of ground control points, the application of additional camera calibration corrections, and the use of the Post-Processing Kinematic GNSS method for determining camera projection center coordinates. The study also evaluates how workflow optimization affects the accuracy of displacement, tilt changes, and horizontal strain determination. While random displacement errors remained stable (RMSE of ~6-7 mm), systematic errors were significantly reduced by over half in all axes, with vertical median absolute error decreasing from 14 mm to 7 mm in the optimized configuration compared to the baseline previously used by the authors. This study provides the first large-scale, practice-oriented assessment of how processing parameter selection shapes the accuracy of both photogrammetric products and deformation indices determination. The results offer actionable guidance for developing more robust and repeatable UAV photogrammetry workflows tailored to high-precision monitoring.",
+      "published": "2026-10-01T10:34:05Z",
+      "updated": "2026-10-01T10:34:05Z",
+      "arxiv_id": "2610.01438v1",
+      "abs_url": "http://arxiv.org/abs/2610.01438v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01438v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "无人机/UAV",
+      "score": 9,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "photogrammetry",
+        "robust",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "The Impact of Processing Parameters on High-Accuracy Measurements in UAV Photogrammetry",
+      "summary_zh": "Unmanned aerial vehicle (UAV) photogrammetry is increasingly used in applications requiring high accuracy, such as determining ground surface changes caused by landslides, mining, or microrelief transformation. While acquisition strategies have been widely studied, the influence of the processing workflow-particularly Bundle Block Adjustment parameter settings-remains insufficiently explored. This study addresses this gap through a systematic, full-factorial evaluation of 768 processing variants applied to ten UAV datasets collected over 1.5 years in a 220 ha study area. Eight key parameters were analysed. The results show substantial variability in final 3D accuracy: the best performing variant achieved a root mean square error (RMSE) of 16 mm, whereas the weakest reached 303 mm. The most influential factors were the number of ground control points, the application of additional camera calibration corrections, and the use of the Post-Processing Kinematic GNSS method for determining camera projection center coordinates. The study also evaluates how workflow optimization affects the accuracy of displacement, tilt changes, and horizontal strain determination. While random displacement errors remained stable (RMSE of ~6-7 mm), systematic errors were significantly reduced by over half in all axes, with vertical median absolute error decreasing from 14 mm to 7 mm in the optimized configuration compared to the baseline previously used by the authors. This study provides the first large-scale, practice-oriented assessment of how processing parameter selection shapes the accuracy of both photogrammetric products and deformation indices determination. The results offer actionable guidance for developing more robust and repeatable UAV photogrammetry workflows tailored to high-precision monitoring."
+    },
+    {
+      "title": "Learning Rate Transfer for Hybrid Transformer-SSM Architectures",
+      "authors": [
+        "Jimin Seo",
+        "Gyubok Lee",
+        "Yeonsik Jo",
+        "Kiwoong Yoo",
+        "Yeongoon Kim",
+        "Minhae Oh",
+        "Jin Woo Koo",
+        "Suhwan Kim",
+        "Nakyung Lee",
+        "Minsik Seol",
+        "Idris Nechnech",
+        "Jaehyeon Kim",
+        "Giho Lee",
+        "Jungwoo Lee"
+      ],
+      "summary": "We study learning rate (LR) scaling for hybrid architectures combining Transformer and State-Space Model (SSM) blocks, a class adopted by several recent production language models. In particular, we focus on the gap between the theoretical scaling rules derived for SSMs under zero-order-hold (ZOH) discretization at infinite width with growing state size, and the field-standard practical implementations using simplified-ZOH Mamba at fixed state size. Surprisingly, in this practical regime hybrid architectures achieve a near-zero LR transfer gap across widths 256-2048 and depths 4-32 up to billion-parameter scale using only the original $μ$P prescription, even though SSM operations fall outside its Tensor Programs representability conditions and every parameterization we test fails the standard coordinate-check diagnostic of $μ$P correctness. We attribute this to a two-condition decomposition of LR transfer in hybrid architectures: a global update-to-weight invariance, enforced by $μ$P's initialization and LR scaling; and a local per-component balance, provided by AdamW's per-parameter normalization. Our observations show that the optimal LR is invariant to width up to 8$\\times$, that this width invariance holds across depth, sequence length, batch size, and Transformer-to-SSM ratio, and that it transfers to Nemotron-H, a production hybrid outside our custom architecture set. We hope these findings fill the gap between theoretical scaling rules and practical hybrid implementations, and stimulate further research toward bridging it.",
+      "published": "2026-10-01T06:46:03Z",
+      "updated": "2026-10-01T06:46:03Z",
+      "arxiv_id": "2610.01172v1",
+      "abs_url": "http://arxiv.org/abs/2610.01172v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01172v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Accepted at NeurIPS 2026. 42 pages, 14 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "Mamba"
+      ],
+      "matched_terms": [
+        "Mamba",
+        "SSM",
+        "transformer"
+      ],
+      "title_zh": "Learning Rate Transfer for Hybrid Transformer-SSM Architectures",
+      "summary_zh": "We study learning rate (LR) scaling for hybrid architectures combining Transformer and State-Space Model (SSM) blocks, a class adopted by several recent production language models. In particular, we focus on the gap between the theoretical scaling rules derived for SSMs under zero-order-hold (ZOH) discretization at infinite width with growing state size, and the field-standard practical implementations using simplified-ZOH Mamba at fixed state size. Surprisingly, in this practical regime hybrid architectures achieve a near-zero LR transfer gap across widths 256-2048 and depths 4-32 up to billion-parameter scale using only the original $μ$P prescription, even though SSM operations fall outside its Tensor Programs representability conditions and every parameterization we test fails the standard coordinate-check diagnostic of $μ$P correctness. We attribute this to a two-condition decomposition of LR transfer in hybrid architectures: a global update-to-weight invariance, enforced by $μ$P's initialization and LR scaling; and a local per-component balance, provided by AdamW's per-parameter normalization. Our observations show that the optimal LR is invariant to width up to 8$\\times$, that this width invariance holds across depth, sequence length, batch size, and Transformer-to-SSM ratio, and that it transfers to Nemotron-H, a production hybrid outside our custom architecture set. We hope these findings fill the gap between theoretical scaling rules and practical hybrid implementations, and stimulate further research toward bridging it."
+    },
+    {
+      "title": "MVDG: Efficient Multi-view 3D Disambiguation on Unconstrained Real-World Images",
+      "authors": [
+        "Hanyuan Xiao",
+        "Gonglin Chen",
+        "Haolin Xiong",
+        "Wenbin Teng",
+        "Haiwei Chen",
+        "Yajie Zhao"
+      ],
+      "summary": "Illusory matches between distinct yet visually similar 3D surfaces--doppelgangers--remain a fundamental obstacle for large-scale, in-the-wild 3D reconstruction and visual localization. Prior work mitigates this issue with pairwise classifiers, but this design limits multi-view contextual reasoning and incurs O(n^2) inference complexity for downstream structure-from-motion (SfM). We present MVDG, a scalable multi-view disambiguation framework built on the 3D foundation model VGGT, which jointly reasons over an arbitrary number of multiview images. By incorporating 3D-aware multi-view features, our method reduces dependence on pairwise comparisons by encoding and decoding views in a single pass. We further observe that direct multi-view fine-tuning of VGGT can be unstable under noisy supervision; motivated by label ambiguity in Doppelgangers, we construct a pseudo-pairwise training set from AerialMegaDepth and show that fine-tuning on sampled subsets yields stable optimization and strong generalization to held-out scenes. Finally, because full SfM evaluation (even with faster pipelines such as GLOMAP) remains expensive, we process a pseudo-pairwise dataset for efficient validation; we derive a predictive relationship between regular SfM metrics and the classification accuracy on this pseudo-pairwise test. Experiments show that our method achieves comparable pairwise accuracy while improving both SfM accuracy and inference speed over baselines.",
+      "published": "2026-10-01T05:41:05Z",
+      "updated": "2026-10-01T05:41:05Z",
+      "arxiv_id": "2610.01098v1",
+      "abs_url": "http://arxiv.org/abs/2610.01098v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01098v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "3D reconstruction",
+        "foundation model"
+      ],
+      "matched_terms": [
+        "3D reconstruction",
+        "aerial",
+        "fine-tuning",
+        "foundation model"
+      ],
+      "title_zh": "MVDG: Efficient Multi-view 3D Disambiguation on Unconstrained Real-World Images",
+      "summary_zh": "Illusory matches between distinct yet visually similar 3D surfaces--doppelgangers--remain a fundamental obstacle for large-scale, in-the-wild 3D reconstruction and visual localization. Prior work mitigates this issue with pairwise classifiers, but this design limits multi-view contextual reasoning and incurs O(n^2) inference complexity for downstream structure-from-motion (SfM). We present MVDG, a scalable multi-view disambiguation framework built on the 3D foundation model VGGT, which jointly reasons over an arbitrary number of multiview images. By incorporating 3D-aware multi-view features, our method reduces dependence on pairwise comparisons by encoding and decoding views in a single pass. We further observe that direct multi-view fine-tuning of VGGT can be unstable under noisy supervision; motivated by label ambiguity in Doppelgangers, we construct a pseudo-pairwise training set from AerialMegaDepth and show that fine-tuning on sampled subsets yields stable optimization and strong generalization to held-out scenes. Finally, because full SfM evaluation (even with faster pipelines such as GLOMAP) remains expensive, we process a pseudo-pairwise dataset for efficient validation; we derive a predictive relationship between regular SfM metrics and the classification accuracy on this pseudo-pairwise test. Experiments show that our method achieves comparable pairwise accuracy while improving both SfM accuracy and inference speed over baselines."
+    },
+    {
+      "title": "Towards Automatic Video Annotation with ASH: Zero-Shot Open-Vocabulary Multi-Object Tracking and Segmentation",
+      "authors": [
+        "Arash Rocky",
+        "Q. M. Jonathan Wu"
+      ],
+      "summary": "Memory-attention-based Video Instance Segmentation (VIS) methods have demonstrated strong zero-shot tracking capability, yet their substantial memory requirements confine them to short video clips and their single-prompt inference design makes multi-category open-vocabulary tracking computationally prohibitive. This work introduces two contributions toward fully automated tracking annotation of arbitrary video. The Generalized Presence Token (GPT) reformulates SAM3's inference pipeline to process N text prompts simultaneously via virtual prompt batching, reducing image encoding cost from O(N) to O(1) with no modifications to any learned component. The Annotation and Segmentation Handler (ASH) extends any memory-attention VIS tracker to sequences of arbitrary length through overlapping temporal chunks with IoU-based inter-chunk identity matching, requiring no dataset-specific training. Instantiated on SAM3, the resulting pipeline -- SAM3-ASH -- achieves state-of-the-art HOTA on MOTS20 under fully zero-shot conditions and remains competitive with trained specialists across seven additional benchmarks, while peak GPU memory consumption stays below 25 GB, establishing a practical baseline for scalable, training-free automated video annotation.",
+      "published": "2026-10-01T04:09:48Z",
+      "updated": "2026-10-01T04:09:48Z",
+      "arxiv_id": "2610.01022v1",
+      "abs_url": "http://arxiv.org/abs/2610.01022v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01022v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "实例分割",
+        "开放词汇与开放集",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "实例分割",
+      "score": 9,
+      "anchor_terms": [
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "instance segmentation",
+        "open-vocabulary",
+        "zero-shot"
+      ],
+      "title_zh": "Towards Automatic Video Annotation with ASH: Zero-Shot Open-Vocabulary Multi-Object Tracking and Segmentation",
+      "summary_zh": "Memory-attention-based Video Instance Segmentation (VIS) methods have demonstrated strong zero-shot tracking capability, yet their substantial memory requirements confine them to short video clips and their single-prompt inference design makes multi-category open-vocabulary tracking computationally prohibitive. This work introduces two contributions toward fully automated tracking annotation of arbitrary video. The Generalized Presence Token (GPT) reformulates SAM3's inference pipeline to process N text prompts simultaneously via virtual prompt batching, reducing image encoding cost from O(N) to O(1) with no modifications to any learned component. The Annotation and Segmentation Handler (ASH) extends any memory-attention VIS tracker to sequences of arbitrary length through overlapping temporal chunks with IoU-based inter-chunk identity matching, requiring no dataset-specific training. Instantiated on SAM3, the resulting pipeline -- SAM3-ASH -- achieves state-of-the-art HOTA on MOTS20 under fully zero-shot conditions and remains competitive with trained specialists across seven additional benchmarks, while peak GPU memory consumption stays below 25 GB, establishing a practical baseline for scalable, training-free automated video annotation."
+    },
+    {
+      "title": "Generalist Representation, Specialist Detection: TS-Router for Time-Series Anomaly Detection",
+      "authors": [
+        "Tian Lan",
+        "Yifei Gao",
+        "Yimeng Lu",
+        "Xuming An",
+        "Meng Wang",
+        "Yue Pan",
+        "Wenjun He",
+        "Chenghao Liu",
+        "Chen Zhang"
+      ],
+      "summary": "Time-series anomaly detection (TSAD) is difficult to generalize across datasets because heterogeneous temporal dynamics imply different notions of normality and favor different detection criteria. While time-series foundation models provide transferable representations, coupling them with a fixed anomaly-scoring mechanism can overlook this variation. This motivates a different perspective on foundation-model-based TSAD: using foundation models to coordinate specialized anomaly criteria rather than directly imposing a universal one. Based on this view, we propose \\textbf{TS-Router}, a generalist-representation, specialist-detection framework that estimates the relative competence of heterogeneous anomaly detectors from pretrained temporal representations and selects suitable specialists for each target series. To avoid relying on specialist-performance labels from real tasks, we derive soft competence supervision from specialists' relative performance on labeled simulated tasks. At deployment, routing requires no target anomaly labels, and only the selected specialists are fitted unsupervisedly on the target series. We bound Top-\\(k\\) set-competence regret under representation coverage and conditional competence stability. Across 16 real-world benchmarks and four complementary evaluation metrics, TS-Router achieves the best overall average rank. Controlled ablations with multiple frozen TSFM encoders further support the use of pretrained representations for competence estimation and adaptive specialist selection. The code is available at https://anonymous.4open.science/r/TS-Router-D8FF.",
+      "published": "2026-10-01T03:15:18Z",
+      "updated": "2026-10-01T03:15:18Z",
+      "arxiv_id": "2610.00978v1",
+      "abs_url": "http://arxiv.org/abs/2610.00978v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00978v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 6,
+      "anchor_terms": [
+        "temporal",
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "foundation model",
+        "temporal",
+        "time-series",
+        "unsupervised"
+      ],
+      "title_zh": "Generalist Representation, Specialist Detection: TS-Router for Time-Series Anomaly Detection",
+      "summary_zh": "Time-series anomaly detection (TSAD) is difficult to generalize across datasets because heterogeneous temporal dynamics imply different notions of normality and favor different detection criteria. While time-series foundation models provide transferable representations, coupling them with a fixed anomaly-scoring mechanism can overlook this variation. This motivates a different perspective on foundation-model-based TSAD: using foundation models to coordinate specialized anomaly criteria rather than directly imposing a universal one. Based on this view, we propose \\textbf{TS-Router}, a generalist-representation, specialist-detection framework that estimates the relative competence of heterogeneous anomaly detectors from pretrained temporal representations and selects suitable specialists for each target series. To avoid relying on specialist-performance labels from real tasks, we derive soft competence supervision from specialists' relative performance on labeled simulated tasks. At deployment, routing requires no target anomaly labels, and only the selected specialists are fitted unsupervisedly on the target series. We bound Top-\\(k\\) set-competence regret under representation coverage and conditional competence stability. Across 16 real-world benchmarks and four complementary evaluation metrics, TS-Router achieves the best overall average rank. Controlled ablations with multiple frozen TSFM encoders further support the use of pretrained representations for competence estimation and adaptive specialist selection. The code is available at https://anonymous.4open.science/r/TS-Router-D8FF."
+    },
+    {
+      "title": "Clock Diffusion: Efficient Semi-Autoregressive Continuous Diffusion Language Models",
+      "authors": [
+        "Yair Schiff",
+        "Omer Belhasin",
+        "Roy Uziel",
+        "Matan Rusanovsky",
+        "Ran Zilberstein",
+        "Marianne Arriola",
+        "Gilad Turok",
+        "Guanghan Wang",
+        "Volodymyr Kuleshov",
+        "Michael Elad"
+      ],
+      "summary": "Recent works on continuous diffusion for discrete data have demonstrated performance on par with comparable discrete diffusion models. However, these continuous counterparts lack key features that are essential to practical use as language models, namely variable-length generation and support for a key-value cache, and they still lag behind the frontier of autoregressive and discrete diffusion quality. In this work, we address these limitations. We do so by introducing a model parameterization that uses position-dependent noise schedules to define semi-autoregressive (SAR) continuous diffusion language models (DLMs). Together with efficient training and sampling algorithms, we call this framework Clock Diffusion, and we present two special cases of our method: block and sliding window generation. We then define ClockDLMs, a family of Gaussian DLMs based on sliding window Clock Diffusion that attain state-of-the-art diffusion likelihood bounds on OpenWebText, even beating the performant block SAR discrete diffusion models. ClockDLMs trained on TinyGSM also substantially outperform continuous baselines on the GSM8K benchmark and match and exceed comparable SAR discrete diffusion models. Finally, building on our parameterization, we propose more efficient samplers that we dub Cache Grab, which adapt techniques from accelerated inference in discrete diffusion, such as committing tokens whose probabilities exceed a confidence threshold and self-speculative decoding, further improving our models' quality and efficiency.",
+      "published": "2026-10-01T01:17:31Z",
+      "updated": "2026-10-01T01:17:31Z",
+      "arxiv_id": "2610.00894v1",
+      "abs_url": "http://arxiv.org/abs/2610.00894v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00894v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "SAR遥感",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 2,
+      "anchor_terms": [
+        "diffusion model"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "SAR"
+      ],
+      "title_zh": "Clock Diffusion: Efficient Semi-Autoregressive Continuous Diffusion Language Models",
+      "summary_zh": "Recent works on continuous diffusion for discrete data have demonstrated performance on par with comparable discrete diffusion models. However, these continuous counterparts lack key features that are essential to practical use as language models, namely variable-length generation and support for a key-value cache, and they still lag behind the frontier of autoregressive and discrete diffusion quality. In this work, we address these limitations. We do so by introducing a model parameterization that uses position-dependent noise schedules to define semi-autoregressive (SAR) continuous diffusion language models (DLMs). Together with efficient training and sampling algorithms, we call this framework Clock Diffusion, and we present two special cases of our method: block and sliding window generation. We then define ClockDLMs, a family of Gaussian DLMs based on sliding window Clock Diffusion that attain state-of-the-art diffusion likelihood bounds on OpenWebText, even beating the performant block SAR discrete diffusion models. ClockDLMs trained on TinyGSM also substantially outperform continuous baselines on the GSM8K benchmark and match and exceed comparable SAR discrete diffusion models. Finally, building on our parameterization, we propose more efficient samplers that we dub Cache Grab, which adapt techniques from accelerated inference in discrete diffusion, such as committing tokens whose probabilities exceed a confidence threshold and self-speculative decoding, further improving our models' quality and efficiency."
+    },
+    {
+      "title": "Lang3DSeg: Annotation-Free Open-Vocabulary 3D Segmentation with Point Transformers",
+      "authors": [
+        "Cigdem Kokenoz",
+        "Amir Salarpour",
+        "Alkim Domeke",
+        "Christopher Salas",
+        "Pedram MohajerAnsari",
+        "Long Cheng",
+        "Mert D. Pesé",
+        "Bing Li"
+      ],
+      "summary": "Accurate 3D semantic perception is critical for safe autonomous navigation. However, supervised LiDAR segmentation remains tied to closed taxonomies and to the cost of point-wise manual annotation. Open-vocabulary methods avoid that cost by projecting the output of 2D vision-language models onto LiDAR and distilling it into a 3D network. These methods rely almost exclusively on voxel-based sparse convolutions, and point transformers have so far been limited to indoor environments, where 3D data is dense and bounded. We present Lang3DSeg, which establishes a point transformer as the backbone for annotation-free open-vocabulary segmentation of outdoor 3D LiDAR, and is trained from scratch without geometric pre-training. This training paradigm necessitates addressing the inherent noise in 2D-to-3D label projections; specifically, naive projection often suffers from depth ambiguity, where points behind an object are erroneously assigned its semantic label. We therefore composite masks using an explicit class-priority rule and truncate each projected instance at the first gap in its depth distribution, correcting the projection error directly rather than averaging it over registered sequences. Lang3DSeg achieves 52.8% mIoU on nuScenes validation and 41.4% on SemanticKITTI, the highest among published annotation-free methods on both benchmarks. Every 3D semantic segmentation is on a single LiDAR sweep, and inference operates in real-time without running vision-language models.",
+      "published": "2026-10-01T00:15:47Z",
+      "updated": "2026-10-01T00:15:47Z",
+      "arxiv_id": "2610.00855v1",
+      "abs_url": "http://arxiv.org/abs/2610.00855v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00855v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "comment": "9 pages, 3 figures, 4 tables. Submitted to IEEE ICRA 2027",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "开放词汇与开放集",
+        "基础模型",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "多模态融合",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 10,
+      "anchor_terms": [
+        "open-vocabulary",
+        "semantic segmentation"
+      ],
+      "matched_terms": [
+        "LiDAR",
+        "open-vocabulary",
+        "pre-training",
+        "semantic segmentation",
+        "transformer"
+      ],
+      "title_zh": "Lang3DSeg: Annotation-Free Open-Vocabulary 3D Segmentation with Point Transformers",
+      "summary_zh": "Accurate 3D semantic perception is critical for safe autonomous navigation. However, supervised LiDAR segmentation remains tied to closed taxonomies and to the cost of point-wise manual annotation. Open-vocabulary methods avoid that cost by projecting the output of 2D vision-language models onto LiDAR and distilling it into a 3D network. These methods rely almost exclusively on voxel-based sparse convolutions, and point transformers have so far been limited to indoor environments, where 3D data is dense and bounded. We present Lang3DSeg, which establishes a point transformer as the backbone for annotation-free open-vocabulary segmentation of outdoor 3D LiDAR, and is trained from scratch without geometric pre-training. This training paradigm necessitates addressing the inherent noise in 2D-to-3D label projections; specifically, naive projection often suffers from depth ambiguity, where points behind an object are erroneously assigned its semantic label. We therefore composite masks using an explicit class-priority rule and truncate each projected instance at the first gap in its depth distribution, correcting the projection error directly rather than averaging it over registered sequences. Lang3DSeg achieves 52.8% mIoU on nuScenes validation and 41.4% on SemanticKITTI, the highest among published annotation-free methods on both benchmarks. Every 3D semantic segmentation is on a single LiDAR sweep, and inference operates in real-time without running vision-language models."
+    },
+    {
+      "title": "SmoothOperator: Enhancing Representations for Fine-grained Open-set Recognition via Modulated Label Smoothing",
+      "authors": [
+        "Thiru Thillai Nadarasar Bahavan",
+        "Yu Xia",
+        "Sachith Seneviratne",
+        "Saman Halgamuge"
+      ],
+      "summary": "Open Set Recognition (OSR) aims to enable models to accurately classify known classes while rejecting samples from unseen classes. A key challenge in OSR lies in the inability to model the unbounded distribution of unknown classes during training, often leading to the misclassification of samples from these classes. Rather than modeling unknowns, recent work shapes the feature space so that known classes are compact and well separated, and spherical representation learning methods have achieved strong results this way. Label smoothing has been identified as one of the key drivers of this success, yet it applies the same coefficient to every training sample, regardless of how well each sample is already embedded. We show that the spherical representation learning objectives used in OSR share a single alignment--uniformity structure in which labels enter only through the alignment term. Label smoothing therefore acts as an alignment dial, and a fixed coefficient sets this dial to the same value for every sample. We propose a plug-in, SmoothOperator (SmoothOP), which sets the smoothing coefficient of each sample from its \\textbf{prominence}, an embedding-space signal measuring how clearly the sample's own class stands out against its strongest competing class. Our method integrates into four existing spherical representation learning methods at minimal training overhead. SmoothOP assigns strong smoothing to samples with high prominence, which reduces their alignment and relaxes their pull. On the Semantic Shift Benchmark, SmoothOP-augmented variants generally outperform their base objectives across datasets, degrees of semantic shift, and OSR post-processors, with gains of up to 4.7\\% in AUROC, OSCR, and closed-set accuracy.",
+      "published": "2026-10-01T00:08:35Z",
+      "updated": "2026-10-01T00:08:35Z",
+      "arxiv_id": "2610.00851v1",
+      "abs_url": "http://arxiv.org/abs/2610.00851v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00851v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "开放词汇与开放集",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 3,
+      "anchor_terms": [
+        "open-set"
+      ],
+      "matched_terms": [
+        "open-set"
+      ],
+      "title_zh": "SmoothOperator: Enhancing Representations for Fine-grained Open-set Recognition via Modulated Label Smoothing",
+      "summary_zh": "Open Set Recognition (OSR) aims to enable models to accurately classify known classes while rejecting samples from unseen classes. A key challenge in OSR lies in the inability to model the unbounded distribution of unknown classes during training, often leading to the misclassification of samples from these classes. Rather than modeling unknowns, recent work shapes the feature space so that known classes are compact and well separated, and spherical representation learning methods have achieved strong results this way. Label smoothing has been identified as one of the key drivers of this success, yet it applies the same coefficient to every training sample, regardless of how well each sample is already embedded. We show that the spherical representation learning objectives used in OSR share a single alignment--uniformity structure in which labels enter only through the alignment term. Label smoothing therefore acts as an alignment dial, and a fixed coefficient sets this dial to the same value for every sample. We propose a plug-in, SmoothOperator (SmoothOP), which sets the smoothing coefficient of each sample from its \\textbf{prominence}, an embedding-space signal measuring how clearly the sample's own class stands out against its strongest competing class. Our method integrates into four existing spherical representation learning methods at minimal training overhead. SmoothOP assigns strong smoothing to samples with high prominence, which reduces their alignment and relaxes their pull. On the Semantic Shift Benchmark, SmoothOP-augmented variants generally outperform their base objectives across datasets, degrees of semantic shift, and OSR post-processors, with gains of up to 4.7\\% in AUROC, OSCR, and closed-set accuracy."
+    },
+    {
+      "title": "FedMAD: Modulation-Aware Directional Aggregation for Federated Learning in Remote Sensing Image Classification",
+      "authors": [
+        "Barış Büyüktaş",
+        "Begüm Demir"
+      ],
+      "summary": "Federated learning (FL) has recently attracted increasing attention in remote sensing (RS) since it enables collaborative model training across decentralized RS image archives without requiring direct access to local data. However, FL performance significantly degrades when the data distributions between clients are heterogeneous, which often occurs due to geographical differences, seasonal changes, and varying image acquisition and atmospheric conditions. To address this challenge, in this letter, we propose a novel personalized FL framework (denoted as FedMAD) for RS image classification problems. The proposed framework separates globally shared representation parameters from client-specific adaptation parameters to preserve client-specific features while maintaining globally transferable representations. This is achieved by integrating lightweight modulation modules and local batch normalization layers into the backbone network. Although globally shared parameters are collaboratively optimized between clients, client-specific parameters remain local to preserve domain-specific feature characteristics. In addition, FedMAD introduces a modulation-aware directional aggregation strategy that dynamically adjusts the importance of aggregation for each client according to the alignment of local modulation updates. This allows the global optimization process to suppress conflicting client updates originating from heterogeneous data distributions while enhancing the contribution of clients with consistent adaptation behaviors. The experimental results obtained on the BigEarthNet-S2 and EuroSAT datasets demonstrate the effectiveness of FedMAD compared to state-of-the-art FL algorithms under heterogeneous RS data distributions. The code of the proposed framework will be publicly available at https://git.tu-berlin.de/rsim/fedmad.",
+      "published": "2026-09-30T20:36:37Z",
+      "updated": "2026-09-30T20:36:37Z",
+      "arxiv_id": "2610.00693v1",
+      "abs_url": "http://arxiv.org/abs/2610.00693v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00693v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "场景分类",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "场景分类",
+      "score": 14,
+      "anchor_terms": [
+        "BigEarthNet",
+        "EuroSAT dataset",
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "BigEarthNet",
+        "EuroSAT",
+        "EuroSAT dataset",
+        "image classification",
+        "remote sensing"
+      ],
+      "title_zh": "FedMAD: Modulation-Aware Directional Aggregation for Federated Learning in Remote Sensing Image Classification",
+      "summary_zh": "Federated learning (FL) has recently attracted increasing attention in remote sensing (RS) since it enables collaborative model training across decentralized RS image archives without requiring direct access to local data. However, FL performance significantly degrades when the data distributions between clients are heterogeneous, which often occurs due to geographical differences, seasonal changes, and varying image acquisition and atmospheric conditions. To address this challenge, in this letter, we propose a novel personalized FL framework (denoted as FedMAD) for RS image classification problems. The proposed framework separates globally shared representation parameters from client-specific adaptation parameters to preserve client-specific features while maintaining globally transferable representations. This is achieved by integrating lightweight modulation modules and local batch normalization layers into the backbone network. Although globally shared parameters are collaboratively optimized between clients, client-specific parameters remain local to preserve domain-specific feature characteristics. In addition, FedMAD introduces a modulation-aware directional aggregation strategy that dynamically adjusts the importance of aggregation for each client according to the alignment of local modulation updates. This allows the global optimization process to suppress conflicting client updates originating from heterogeneous data distributions while enhancing the contribution of clients with consistent adaptation behaviors. The experimental results obtained on the BigEarthNet-S2 and EuroSAT datasets demonstrate the effectiveness of FedMAD compared to state-of-the-art FL algorithms under heterogeneous RS data distributions. The code of the proposed framework will be publicly available at https://git.tu-berlin.de/rsim/fedmad."
+    },
+    {
+      "title": "Backdoor Purification for LoRA-Tuned LLMs via Null-Space Projection",
+      "authors": [
+        "Jianwei Li",
+        "Jung-Eun Kim"
+      ],
+      "summary": "With the rapid adoption of large language models (LLMs) and parameter-efficient fine-tuning (PEFT) methods, the risk of backdoor attacks has become more severe. Existing backdoor purification methods typically rely on at least one of the strong assumptions, such as prior knowledge of triggers, access to clean references, or aggressive retraining, and they often lack comprehensive evaluations. These constraints substantially limit their practical applicability. To overcome these challenges, our work proposes purifying LoRA-tuned LLMs without these assumptions and even without post-hoc retraining of the suspect parameters. Our objective is to significantly reduce the attack success rates (ASR) while preserving both (i) the base model's general capabilities and (ii) the new downstream skills learned through the adapter. Through a series of ablation studies, we progressively scale our approach from a single layer in a text classification setting to a full-parameter LLM in the generative task. Through careful data curation and feature approximation, we extract high-fidelity backdoor directions and, for each layer or head, construct orthogonal null spaces in both the input and output channels, onto which the LoRA updates are projected. Empirically, our null-space projection method reduces the ASR from nearly 100% to less than 10%, while preserving the base model's benign performance and the adapter's learned abilities during downstream task adaptation.",
+      "published": "2026-09-30T20:28:34Z",
+      "updated": "2026-09-30T20:28:34Z",
+      "arxiv_id": "2610.00685v1",
+      "abs_url": "http://arxiv.org/abs/2610.00685v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00685v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "comment": "NeurIPS 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 8,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "large language model",
+        "LLM",
+        "LoRA",
+        "PEFT"
+      ],
+      "title_zh": "Backdoor Purification for LoRA-Tuned LLMs via Null-Space Projection",
+      "summary_zh": "With the rapid adoption of large language models (LLMs) and parameter-efficient fine-tuning (PEFT) methods, the risk of backdoor attacks has become more severe. Existing backdoor purification methods typically rely on at least one of the strong assumptions, such as prior knowledge of triggers, access to clean references, or aggressive retraining, and they often lack comprehensive evaluations. These constraints substantially limit their practical applicability. To overcome these challenges, our work proposes purifying LoRA-tuned LLMs without these assumptions and even without post-hoc retraining of the suspect parameters. Our objective is to significantly reduce the attack success rates (ASR) while preserving both (i) the base model's general capabilities and (ii) the new downstream skills learned through the adapter. Through a series of ablation studies, we progressively scale our approach from a single layer in a text classification setting to a full-parameter LLM in the generative task. Through careful data curation and feature approximation, we extract high-fidelity backdoor directions and, for each layer or head, construct orthogonal null spaces in both the input and output channels, onto which the LoRA updates are projected. Empirically, our null-space projection method reduces the ASR from nearly 100% to less than 10%, while preserving the base model's benign performance and the adapter's learned abilities during downstream task adaptation."
+    },
+    {
+      "title": "Rules Amortize, Pairings Don't: Linguistic Structure Determines What Latent Task Representations Can Replace In-Context Learning",
+      "authors": [
+        "Gunmay Jhingran"
+      ],
+      "summary": "In-context learning (ICL) can be amortized into latent objects (task vectors, function vectors, context vectors) that recover few-shot behavior at zero-shot inference cost, but recent theory shows a static vector acts as a single synthetic demonstration and must fail on high-rank mappings such as word-level bijections. We ask a linguistic version of this question: which linguistic operations can be amortized out of the prompt? We train a 2.6M-parameter network that reads the geometry of a few-shot support set (centroid, principal subspace, spectrum, computed once and cached) and produces an input-conditioned additive update to the query's residual stream at a mid-depth layer of a frozen GPT-2-large/XL. Across eight inflectional directions and one lexical relation, under a canonical split that bars inverted-pair leakage between directions, three regimes emerge. On forward inflection, where 10-shot ICL is strong (0.67-0.89) and extracted task vectors collapse (<=0.06), the transform matches ICL at strictly zero-shot per-query cost. On lemmatization directions, which frozen GPT-2 can execute but 10 demonstrations systematically fail to convey (ICL 0.13-0.48 at 1.5B), the transform is not capped by ICL at all: it reaches 0.78-0.92, up to +72 points over ICL (past to present: 0.85 vs. 0.13). On arbitrary pairings (antonymy) every amortizer plateaus near half of ICL at every scale, capacity, and seed tested. Controls show the support manifold acts as a causally necessary task fingerprint: wrong-task manifolds collapse accuracy to <=0.06, query-only variants cannot disambiguate tasks sharing an input space, and leave-one-task-out transfer is zero. Productive rules amortize into latent task representations, sometimes better than prompting can convey them; memorized pairings do not.",
+      "published": "2026-09-30T18:15:17Z",
+      "updated": "2026-09-30T18:15:17Z",
+      "arxiv_id": "2610.00526v1",
+      "abs_url": "http://arxiv.org/abs/2610.00526v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00526v1",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "comment": "Accepted to the NeurIPS 2026 Workshop on Linguistic Principles for Foundation Models (LP4FM). 5 pages",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning",
+        "zero-shot"
+      ],
+      "title_zh": "Rules Amortize, Pairings Don't: Linguistic Structure Determines What Latent Task Representations Can Replace In-Context Learning",
+      "summary_zh": "In-context learning (ICL) can be amortized into latent objects (task vectors, function vectors, context vectors) that recover few-shot behavior at zero-shot inference cost, but recent theory shows a static vector acts as a single synthetic demonstration and must fail on high-rank mappings such as word-level bijections. We ask a linguistic version of this question: which linguistic operations can be amortized out of the prompt? We train a 2.6M-parameter network that reads the geometry of a few-shot support set (centroid, principal subspace, spectrum, computed once and cached) and produces an input-conditioned additive update to the query's residual stream at a mid-depth layer of a frozen GPT-2-large/XL. Across eight inflectional directions and one lexical relation, under a canonical split that bars inverted-pair leakage between directions, three regimes emerge. On forward inflection, where 10-shot ICL is strong (0.67-0.89) and extracted task vectors collapse (<=0.06), the transform matches ICL at strictly zero-shot per-query cost. On lemmatization directions, which frozen GPT-2 can execute but 10 demonstrations systematically fail to convey (ICL 0.13-0.48 at 1.5B), the transform is not capped by ICL at all: it reaches 0.78-0.92, up to +72 points over ICL (past to present: 0.85 vs. 0.13). On arbitrary pairings (antonymy) every amortizer plateaus near half of ICL at every scale, capacity, and seed tested. Controls show the support manifold acts as a causally necessary task fingerprint: wrong-task manifolds collapse accuracy to <=0.06, query-only variants cannot disambiguate tasks sharing an input space, and leave-one-task-out transfer is zero. Productive rules amortize into latent task representations, sometimes better than prompting can convey them; memorized pairings do not."
+    }
+  ]
+}
