@@ -1,0 +1,1420 @@
+{
+  "date": "2026-10-07",
+  "generated_at": "2026-10-07T07:57:54.822312+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 33,
+  "papers": [
+    {
+      "title": "Data Leakage in Patch-Based Hyperspectral Image Classification: Quantifying the Impact of Spatial Overlap",
+      "authors": [
+        "Mohammed Q. Alkhatib"
+      ],
+      "summary": "Patch-based learning improves hyperspectral image (HSI) classification by exploiting local spectral-spatial information, but random train-test sampling from the same image can cause spatial patch overlap, leading to data leakage and optimistic performance estimates. This paper investigates same-class train-test spatial overlap in patch-based HSI classification using two measures: overlap percentage (OP), which quantifies the global amount of overlapped testing patch pixels, and average overlap ratio (AOR), which measures the local severity among affected testing patches. Experiments on the Pavia University dataset compare random and non-random spatial sampling using SVM, MLP, 2D-CNN, 3D-CNN, ViT, and MorpMamba. The results show that deep patch-based models achieve high accuracy under random sampling, with 3D-CNN reaching 96.17% Overall Accuracy (OA), but drop substantially under non-random spatial sampling, where 3D-CNN decreases to 55.20% and ViT and 2D-CNN drop by 40.71 and 38.81 percentage points (PP), respectively. Patch-size analysis further shows that increasing the patch size from 5x5 to 19x19 raises the random-sampling overlap percentage from 23.28% to 77.02%. These findings demonstrate that random patch-based evaluation can substantially inflate classification performance, especially for models that strongly exploit spatial context. The code associated with this paper is available at: https://github.com/mqalkhatib/Data_Leakage_in_HSI_Classification.",
+      "published": "2026-10-06T17:55:05Z",
+      "updated": "2026-10-06T17:55:05Z",
+      "arxiv_id": "2610.08770v1",
+      "abs_url": "http://arxiv.org/abs/2610.08770v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08770v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "paper accepted for presentation at IEEE-WHISPERS",
+      "code_url": "https://github.com/mqalkhatib/Data_Leakage_in_HSI_Classification",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "场景分类",
+        "基础模型",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "场景分类",
+      "score": 13,
+      "anchor_terms": [
+        "hyperspectral image",
+        "Mamba"
+      ],
+      "matched_terms": [
+        "CNN",
+        "hyperspectral",
+        "hyperspectral image",
+        "hyperspectral image classification",
+        "image classification",
+        "Mamba",
+        "ViT"
+      ],
+      "title_zh": "Data Leakage in Patch-Based Hyperspectral Image Classification: Quantifying the Impact of Spatial Overlap",
+      "summary_zh": "Patch-based learning improves hyperspectral image (HSI) classification by exploiting local spectral-spatial information, but random train-test sampling from the same image can cause spatial patch overlap, leading to data leakage and optimistic performance estimates. This paper investigates same-class train-test spatial overlap in patch-based HSI classification using two measures: overlap percentage (OP), which quantifies the global amount of overlapped testing patch pixels, and average overlap ratio (AOR), which measures the local severity among affected testing patches. Experiments on the Pavia University dataset compare random and non-random spatial sampling using SVM, MLP, 2D-CNN, 3D-CNN, ViT, and MorpMamba. The results show that deep patch-based models achieve high accuracy under random sampling, with 3D-CNN reaching 96.17% Overall Accuracy (OA), but drop substantially under non-random spatial sampling, where 3D-CNN decreases to 55.20% and ViT and 2D-CNN drop by 40.71 and 38.81 percentage points (PP), respectively. Patch-size analysis further shows that increasing the patch size from 5x5 to 19x19 raises the random-sampling overlap percentage from 23.28% to 77.02%. These findings demonstrate that random patch-based evaluation can substantially inflate classification performance, especially for models that strongly exploit spatial context. The code associated with this paper is available at: https://github.com/mqalkhatib/Data_Leakage_in_HSI_Classification."
+    },
+    {
+      "title": "MemFLoRA: Memory-Floor LoRA for CNN Adaptation at the Edge",
+      "authors": [
+        "Mehmet Emre Akbulut",
+        "Johannes Geier",
+        "Ulf Schlichtmann"
+      ],
+      "summary": "On-device learning is necessary when the model encounters user-,sensor-, or environment-specific shifts after deployment. Although parameter-efficient fine-tuning (PEFT) methods, particularly Low-Rank Adaptation (LoRA) variants, enable efficient adaptation at the edge, the limiting resource for Convolutional Neural Network (CNN) adaptation is often not the number of trainable parameters but the activation state that must be retained until the backward pass. This paper introduces Memory-Floor LoRA (MemFLoRA), a low-rank CNN adapter built around a memory-first design principle rather than a direct application of transformer-oriented LoRA. Instead of merely reducing trainable weights, we define an activation-memory-floor criterion: trainable backward computations must not depend on full-width layer inputs. The resulting adapter freezes the down-projection, trains a scale-matched up-projection, and combines eval-mode backbone normalization with activation-minimal backward rules, reducing saved state to the low-rank branch. Evaluated on three Human Activity Recognition (HAR) datasets and two CNN backbones under subject, body-location, and sensor-placement shifts, MemFLoRA reduces saved-activation memory by 98.5-98.7% and peak training-state memory by 94.9-97.3% relative to full fine-tuning, while matching or exceeding CNN PEFT baselines.",
+      "published": "2026-10-06T16:51:20Z",
+      "updated": "2026-10-06T16:51:20Z",
+      "arxiv_id": "2610.08669v1",
+      "abs_url": "http://arxiv.org/abs/2610.08669v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08669v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "Accepted at the 32nd Asia and South Pacific Design Automation Conference (ASP-DAC 2027), January 25-28, 2027, Tokyo, Japan. Code: https://github.com/mehmetemreakbulut/MemFLoRA",
+      "code_url": "https://github.com/mehmetemreakbulut/MemFLoRA",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 9,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "CNN",
+        "convolutional neural network",
+        "fine-tuning",
+        "LoRA",
+        "PEFT",
+        "transformer"
+      ],
+      "title_zh": "MemFLoRA: Memory-Floor LoRA for CNN Adaptation at the Edge",
+      "summary_zh": "On-device learning is necessary when the model encounters user-,sensor-, or environment-specific shifts after deployment. Although parameter-efficient fine-tuning (PEFT) methods, particularly Low-Rank Adaptation (LoRA) variants, enable efficient adaptation at the edge, the limiting resource for Convolutional Neural Network (CNN) adaptation is often not the number of trainable parameters but the activation state that must be retained until the backward pass. This paper introduces Memory-Floor LoRA (MemFLoRA), a low-rank CNN adapter built around a memory-first design principle rather than a direct application of transformer-oriented LoRA. Instead of merely reducing trainable weights, we define an activation-memory-floor criterion: trainable backward computations must not depend on full-width layer inputs. The resulting adapter freezes the down-projection, trains a scale-matched up-projection, and combines eval-mode backbone normalization with activation-minimal backward rules, reducing saved state to the low-rank branch. Evaluated on three Human Activity Recognition (HAR) datasets and two CNN backbones under subject, body-location, and sensor-placement shifts, MemFLoRA reduces saved-activation memory by 98.5-98.7% and peak training-state memory by 94.9-97.3% relative to full fine-tuning, while matching or exceeding CNN PEFT baselines."
+    },
+    {
+      "title": "RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models",
+      "authors": [
+        "Dongchen Si",
+        "Di Wang",
+        "Mingzhen Xu",
+        "Jing Zhang",
+        "Bo Du",
+        "Liangpei Zhang"
+      ],
+      "summary": "Remote sensing scene classification is a fundamental task in Earth observation and geospatial analysis. Existing approaches mainly follow three paradigms: task-specific visual classification, vision-language similarity matching, and autoregressive multimodal generation. However, visual classifiers rely on predefined label spaces, CLIP-based methods perform recognition through static image-text alignment, and multimodal large language models (MLLMs) introduce unnecessary token-level generation for classification tasks with explicit candidate categories. To address these limitations, we propose RSJEV, a one-pass multimodal decision framework for remote sensing scene classification. Unlike conventional MLLMs that formulate classification as autoregressive text generation, RSJEV reformulates scene classification as a candidate-conditioned multimodal discriminative decision process, where visual representations, task instructions, and candidate category semantics are jointly modeled. Specifically, we introduce a OnePass Decider that extracts multimodal decision states and directly estimates category probabilities within the candidate category space, eliminating autoregressive decoding while preserving vision-language interactions. Extensive experiments on three widely used remote sensing scene classification benchmarks, including UC Merced, AID, and NWPU-RESISC45, demonstrate that RSJEV achieves superior classification performance compared with representative CNN-, Transformer-, Mamba-, CLIP-, and MLLM-based methods. Moreover, RSJEV significantly reduces inference costs and achieves a better accuracy-efficiency trade-off with only a compact 0.8B-parameter model. These results demonstrate the effectiveness of state-conditioned multimodal decision making for efficient remote sensing image understanding. The code will be available at https://github.com/Dongtcs/RSJEV.",
+      "published": "2026-10-06T15:28:36Z",
+      "updated": "2026-10-06T15:28:36Z",
+      "arxiv_id": "2610.08539v1",
+      "abs_url": "http://arxiv.org/abs/2610.08539v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08539v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/Dongtcs/RSJEV",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "目标检测",
+        "场景分类",
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 34,
+      "anchor_terms": [
+        "CLIP",
+        "earth observation",
+        "geospatial",
+        "Mamba",
+        "MLLM",
+        "multimodal large language model",
+        "remote sensing",
+        "scene classification"
+      ],
+      "matched_terms": [
+        "AID",
+        "CLIP",
+        "CNN",
+        "earth observation",
+        "geospatial",
+        "large language model",
+        "Mamba",
+        "MLLM",
+        "multimodal large language model",
+        "NWPU",
+        "remote sensing",
+        "remote sensing scene classification"
+      ],
+      "title_zh": "RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models",
+      "summary_zh": "Remote sensing scene classification is a fundamental task in Earth observation and geospatial analysis. Existing approaches mainly follow three paradigms: task-specific visual classification, vision-language similarity matching, and autoregressive multimodal generation. However, visual classifiers rely on predefined label spaces, CLIP-based methods perform recognition through static image-text alignment, and multimodal large language models (MLLMs) introduce unnecessary token-level generation for classification tasks with explicit candidate categories. To address these limitations, we propose RSJEV, a one-pass multimodal decision framework for remote sensing scene classification. Unlike conventional MLLMs that formulate classification as autoregressive text generation, RSJEV reformulates scene classification as a candidate-conditioned multimodal discriminative decision process, where visual representations, task instructions, and candidate category semantics are jointly modeled. Specifically, we introduce a OnePass Decider that extracts multimodal decision states and directly estimates category probabilities within the candidate category space, eliminating autoregressive decoding while preserving vision-language interactions. Extensive experiments on three widely used remote sensing scene classification benchmarks, including UC Merced, AID, and NWPU-RESISC45, demonstrate that RSJEV achieves superior classification performance compared with representative CNN-, Transformer-, Mamba-, CLIP-, and MLLM-based methods. Moreover, RSJEV significantly reduces inference costs and achieves a better accuracy-efficiency trade-off with only a compact 0.8B-parameter model. These results demonstrate the effectiveness of state-conditioned multimodal decision making for efficient remote sensing image understanding. The code will be available at https://github.com/Dongtcs/RSJEV."
+    },
+    {
+      "title": "Two Halves are More than One: Phase-wise Velocity Distillation for Fast and High-Quality Image Generation",
+      "authors": [
+        "Zhen Guo",
+        "Rongyuan Wu",
+        "Qiaosi Yi",
+        "Chenxi Xie",
+        "Xinyu Wei",
+        "Lei Zhang"
+      ],
+      "summary": "Recent diffusion-based image generation backbones have grown substantially in scale, making the network inference cost increase rapidly. While diffusion distillation techniques can reduce the number of inference steps, high-quality image generation within a single full-backbone-forward compute budget remains challenging. Existing one-step methods typically allocate this budget to a single evaluation of a monolithic student. However, approximating the heterogeneous coarse-to-fine transport with a single monolithic mapping is difficult and often leads to over-smoothed outputs. To address this issue, we propose Phase-wise Velocity Distillation (PVD), which partitions the generation timeline into a coarse and a fine phase, and models the transition within each phase via the average velocity. A dedicated half-sized expert is assigned to each phase, decoupling structural composition from detail refinement while keeping the cumulative computation equivalent to one full-backbone forward pass. We show that the use of two half-sized phase-specific experts outperforms a single full-size monolithic student. On class-conditional image generation, PVD achieves an FID of 1.48 on ImageNet 256 x 256. On more complex text-to-image (T2I) tasks, PVD-distilled models (Stable Diffusion 3.5-Medium, FLUX.1-dev, Qwen-Image) produce results competitive with their multi-step teachers, significantly outperforming prior distillation methods. Moreover, across the evaluated T2I backbones, PVD reduces active parameters by 49.10-50.89% and peak VRAM by 45.76-48.36% compared to the corresponding teachers. Source code and distilled models are available at https://github.com/PolyU-VCLab/PVD.",
+      "published": "2026-10-06T10:03:30Z",
+      "updated": "2026-10-06T10:03:30Z",
+      "arxiv_id": "2610.08070v1",
+      "abs_url": "http://arxiv.org/abs/2610.08070v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08070v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/PolyU-VCLab/PVD",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "图像生成与重建",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 4,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation",
+        "stable diffusion"
+      ],
+      "title_zh": "Two Halves are More than One: Phase-wise Velocity Distillation for Fast and High-Quality Image Generation",
+      "summary_zh": "Recent diffusion-based image generation backbones have grown substantially in scale, making the network inference cost increase rapidly. While diffusion distillation techniques can reduce the number of inference steps, high-quality image generation within a single full-backbone-forward compute budget remains challenging. Existing one-step methods typically allocate this budget to a single evaluation of a monolithic student. However, approximating the heterogeneous coarse-to-fine transport with a single monolithic mapping is difficult and often leads to over-smoothed outputs. To address this issue, we propose Phase-wise Velocity Distillation (PVD), which partitions the generation timeline into a coarse and a fine phase, and models the transition within each phase via the average velocity. A dedicated half-sized expert is assigned to each phase, decoupling structural composition from detail refinement while keeping the cumulative computation equivalent to one full-backbone forward pass. We show that the use of two half-sized phase-specific experts outperforms a single full-size monolithic student. On class-conditional image generation, PVD achieves an FID of 1.48 on ImageNet 256 x 256. On more complex text-to-image (T2I) tasks, PVD-distilled models (Stable Diffusion 3.5-Medium, FLUX.1-dev, Qwen-Image) produce results competitive with their multi-step teachers, significantly outperforming prior distillation methods. Moreover, across the evaluated T2I backbones, PVD reduces active parameters by 49.10-50.89% and peak VRAM by 45.76-48.36% compared to the corresponding teachers. Source code and distilled models are available at https://github.com/PolyU-VCLab/PVD."
+    },
+    {
+      "title": "Towards One-for-All Foundation Model for Attributed Graph Clustering",
+      "authors": [
+        "Yunhui Liu",
+        "Xudong Jin",
+        "Kang Zhang",
+        "Danshuo An",
+        "Yu Xing",
+        "Te Song",
+        "Jia Liu",
+        "Tieke He"
+      ],
+      "summary": "Attributed graph clustering aims to discover node groups by jointly exploiting node attributes and graph topology, yet its unsupervised nature makes model selection and adaptation inherently difficult. Existing methods typically train and tune a separate model for each input graph, leading to costly and fragile pipelines that often fail to transfer across graphs with different feature spaces, structural patterns, and attribute-structure correlations. In this paper, we study a one-for-all alternative: can a single model be trained once and directly applied to diverse attributed graphs without graph-specific training, fine-tuning, or hyperparameter search? We propose OFAG, a foundation model for attributed graph clustering. Building upon Prior-data Fitted Networks, OFAG learns a reusable clustering inference strategy from synthetic attributed graphs generated under broad priors over latent clusters, node attributes, and graph structures. To handle incompatible feature spaces across graphs, OFAG adopts a dimension-agnostic signal-wise graph encoder that treats each feature channel as a graph signal and models its response to shared graph filters. The model is trained with a hyperspherical clustering objective, producing clustering-friendly node representations in a single forward pass at inference time. On ten datasets, one frozen OFAG model achieves the best mean performance and average rank across NMI, ACC, ARI, and F1, while completing all ten datasets in 12.43 minutes total---over 6* faster than the second-fastest baseline and nearly 28* faster than the second-best on clustering quality. Our code and pretrained checkpoint are available at https://github.com/Cloudy1225/OFAG, allowing practitioners to directly apply OFAG to their own attributed graph datasets without additional training or tuning.",
+      "published": "2026-10-06T05:13:38Z",
+      "updated": "2026-10-06T05:13:38Z",
+      "arxiv_id": "2610.07778v1",
+      "abs_url": "http://arxiv.org/abs/2610.07778v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07778v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/Cloudy1225/OFAG",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "foundation model",
+        "unsupervised"
+      ],
+      "title_zh": "Towards One-for-All Foundation Model for Attributed Graph Clustering",
+      "summary_zh": "Attributed graph clustering aims to discover node groups by jointly exploiting node attributes and graph topology, yet its unsupervised nature makes model selection and adaptation inherently difficult. Existing methods typically train and tune a separate model for each input graph, leading to costly and fragile pipelines that often fail to transfer across graphs with different feature spaces, structural patterns, and attribute-structure correlations. In this paper, we study a one-for-all alternative: can a single model be trained once and directly applied to diverse attributed graphs without graph-specific training, fine-tuning, or hyperparameter search? We propose OFAG, a foundation model for attributed graph clustering. Building upon Prior-data Fitted Networks, OFAG learns a reusable clustering inference strategy from synthetic attributed graphs generated under broad priors over latent clusters, node attributes, and graph structures. To handle incompatible feature spaces across graphs, OFAG adopts a dimension-agnostic signal-wise graph encoder that treats each feature channel as a graph signal and models its response to shared graph filters. The model is trained with a hyperspherical clustering objective, producing clustering-friendly node representations in a single forward pass at inference time. On ten datasets, one frozen OFAG model achieves the best mean performance and average rank across NMI, ACC, ARI, and F1, while completing all ten datasets in 12.43 minutes total---over 6* faster than the second-fastest baseline and nearly 28* faster than the second-best on clustering quality. Our code and pretrained checkpoint are available at https://github.com/Cloudy1225/OFAG, allowing practitioners to directly apply OFAG to their own attributed graph datasets without additional training or tuning."
+    },
+    {
+      "title": "CETUS: How Far Do Representations Trained on Earth Transfer to Cassini SAR of Titan?",
+      "authors": [
+        "Kevin Lee"
+      ],
+      "summary": "Cassini synthetic aperture radar (SAR) images reveal the dunes, plains, and lake basins of Titan, providing an instance of representations learned from Earth imagery for planetary terrain classification. Cross-domain Evaluation of Earth-to-Titan Transfer Using SAR (CETUS) compares features from DINOv2, DOFA and CROMA with classical image measurements and features from an untrained vision transformer on the U.S. Geological Survey's Cassini SAR mosaic. The classifiers learn terrain labels from an expert geomorphological map and predict those labels in geographically separate Titan regions. Under logistic regression settings, pretrained encoders achieve higher mean macro F1 than the combined classical features. Encoder rankings change when feature scaling, optimization, and regularization change together. Further training on Titan improves DINOv2 performance, degrades DOFA performance, and leads to mixed results for CROMA under the tested settings. Architectural and input processing differences prevent these comparisons from isolating the effect of pretraining. Classifier fitting and performance on individual terrain classes matter when assessing representation transfer for planetary mapping. Since the map draws partly on the same radar observations, the scores measure agreement with expert interpretation.",
+      "published": "2026-10-06T01:11:34Z",
+      "updated": "2026-10-06T01:11:34Z",
+      "arxiv_id": "2610.07576v1",
+      "abs_url": "http://arxiv.org/abs/2610.07576v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07576v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "eess.IV"
+      ],
+      "comment": "Research work at NASA Jet Propulsion Laboratory. Available at: https://github.com/magnaprog/CETUS",
+      "code_url": "https://github.com/magnaprog/CETUS",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "小样本与域泛化",
+        "光学遥感",
+        "SAR遥感",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "SAR",
+        "synthetic aperture radar",
+        "vision transformer"
+      ],
+      "matched_terms": [
+        "SAR",
+        "synthetic aperture radar",
+        "transformer",
+        "vision transformer"
+      ],
+      "title_zh": "CETUS: How Far Do Representations Trained on Earth Transfer to Cassini SAR of Titan?",
+      "summary_zh": "Cassini synthetic aperture radar (SAR) images reveal the dunes, plains, and lake basins of Titan, providing an instance of representations learned from Earth imagery for planetary terrain classification. Cross-domain Evaluation of Earth-to-Titan Transfer Using SAR (CETUS) compares features from DINOv2, DOFA and CROMA with classical image measurements and features from an untrained vision transformer on the U.S. Geological Survey's Cassini SAR mosaic. The classifiers learn terrain labels from an expert geomorphological map and predict those labels in geographically separate Titan regions. Under logistic regression settings, pretrained encoders achieve higher mean macro F1 than the combined classical features. Encoder rankings change when feature scaling, optimization, and regularization change together. Further training on Titan improves DINOv2 performance, degrades DOFA performance, and leads to mixed results for CROMA under the tested settings. Architectural and input processing differences prevent these comparisons from isolating the effect of pretraining. Classifier fitting and performance on individual terrain classes matter when assessing representation transfer for planetary mapping. Since the map draws partly on the same radar observations, the scores measure agreement with expert interpretation."
+    },
+    {
+      "title": "Decoupling What from Where: How Should a Small GUI Grounding Model Receive the Action Type?",
+      "authors": [
+        "Aadi Chauhan",
+        "Arthur Ilyasov"
+      ],
+      "summary": "A GUI agent decides which action to take and where to take it; we ask how a small grounding model should receive the action type. Fine-tuning Qwen2-VL-2B with LoRA on Android in the Wild, we compare a flat baseline with five ways of supplying the type under matched data, compute, and decoding: an auxiliary loss, a hard-routed action word, an additive learned embedding, a prepended learned token, and the type written into the prompt. With five seeds, an episode-clustered bootstrap, and seed-level paired tests, the ranking on a mixed stream is clear: the auxiliary loss, the additive embedding, and the prompt word each gain five to seven hit@0.10 points over the baseline, while hard routing and the prepended token are not distinguishable from it. Much of that gain is protection from a preprocessing choice of ours rather than a spatial prior. Our serializer clamps the off-screen touch point AITW records for type events to the origin; that class degrades the baseline's click grounding, and removing it lifts the baseline by nearly seven points, after which no mechanism's hit rate beats it and the intervals exclude a two-point effect, though the auxiliary loss still shortens the average miss; on a stream of taps and swipes none helps. Whether this generalizes beyond one serialization is open. For deployment, the pipeline's margin over the baseline with predicted rather than gold types is not established (+0.016, 95% interval [-0.017, +0.052]), and a wrong type collapses every model conditioned at inference. The prepended token does not help at the shared learning rate, where its rows barely move from initialization; trained ten times faster it reaches the level of the other three, with a margin three seeds do not establish. We also document a silent failure: injecting conditioning through inputs_embeds makes Qwen2-VL fall back to 1-D positions for image tokens, costing nine points.",
+      "published": "2026-10-05T21:50:50Z",
+      "updated": "2026-10-05T21:50:50Z",
+      "arxiv_id": "2610.07444v1",
+      "abs_url": "http://arxiv.org/abs/2610.07444v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07444v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "comment": "18 pages, 4 figures, 12 tables. Code and per-example logs are available at https://github.com/aadcha/action-conditioned-gui-agent",
+      "code_url": "https://github.com/aadcha/action-conditioned-gui-agent",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 3,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Decoupling What from Where: How Should a Small GUI Grounding Model Receive the Action Type?",
+      "summary_zh": "A GUI agent decides which action to take and where to take it; we ask how a small grounding model should receive the action type. Fine-tuning Qwen2-VL-2B with LoRA on Android in the Wild, we compare a flat baseline with five ways of supplying the type under matched data, compute, and decoding: an auxiliary loss, a hard-routed action word, an additive learned embedding, a prepended learned token, and the type written into the prompt. With five seeds, an episode-clustered bootstrap, and seed-level paired tests, the ranking on a mixed stream is clear: the auxiliary loss, the additive embedding, and the prompt word each gain five to seven hit@0.10 points over the baseline, while hard routing and the prepended token are not distinguishable from it. Much of that gain is protection from a preprocessing choice of ours rather than a spatial prior. Our serializer clamps the off-screen touch point AITW records for type events to the origin; that class degrades the baseline's click grounding, and removing it lifts the baseline by nearly seven points, after which no mechanism's hit rate beats it and the intervals exclude a two-point effect, though the auxiliary loss still shortens the average miss; on a stream of taps and swipes none helps. Whether this generalizes beyond one serialization is open. For deployment, the pipeline's margin over the baseline with predicted rather than gold types is not established (+0.016, 95% interval [-0.017, +0.052]), and a wrong type collapses every model conditioned at inference. The prepended token does not help at the shared learning rate, where its rows barely move from initialization; trained ten times faster it reaches the level of the other three, with a margin three seeds do not establish. We also document a silent failure: injecting conditioning through inputs_embeds makes Qwen2-VL fall back to 1-D positions for image tokens, costing nine points."
+    },
+    {
+      "title": "What Words Keep of a Place: Zero-Shot Language Reasoning for Cross-View Geo-Localization",
+      "authors": [
+        "Ayesh Abu Lehyeh",
+        "Jay Hwasung Jung",
+        "Safwan Wshah"
+      ],
+      "summary": "Cross-view geo-localization is commonly solved as an image retrieval problem, matching a ground-level image against a database of satellite tiles through a jointly trained embedding. Such models are accurate, but they need large paired supervision and cannot show what evidence supports a match. In this paper, we study a different question: how much of this task can be solved through language alone? We prompt a multimodal large language model (MLLM) to describe each ground panorama and each satellite tile as structured text, and localize by comparing these descriptions. No component is trained. We evaluate on 9,826 VIGOR pairs from four U.S. cities, in three settings. First, the descriptions are faithful but not discriminative. They agree closely across the two views, yet ranking the full pool by description similarity almost never returns the correct tile (0.39% Recall@1). Second, we narrow the pool to ten neighboring tiles, as a coarse prior would do. The same descriptions now become useful: an MLLM judge that scores structural consistency doubles random ranking and matches a strong lexical baseline. It also states which fields of the two descriptions agree and which conflict, which an embedding distance cannot do, and which we see as a step toward interpretable localization. Third, we place the judge on a trained visual retriever. On the queries it ranks wrongly, reranking from images works, while reranking from our descriptions does not (23.5% against 10.7% Recall@1). Scene structure survives the conversion into language, while the fine appearance detail needed to separate nearby places does not. Code and prompts are publicly available at https://github.com/AyeshAbuLehyeh/GeoLingual.",
+      "published": "2026-10-05T19:11:38Z",
+      "updated": "2026-10-05T19:11:38Z",
+      "arxiv_id": "2610.07269v1",
+      "abs_url": "http://arxiv.org/abs/2610.07269v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07269v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "Accepted at NeurIPS 2026 Workshop Physical World AI: Geometry, Characteristics, and Multimodal Sensing",
+      "code_url": "https://github.com/AyeshAbuLehyeh/GeoLingual",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "图像检索",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "多模态融合"
+      ],
+      "topic": "图像检索",
+      "score": 9,
+      "anchor_terms": [
+        "image retrieval",
+        "MLLM",
+        "multimodal large language model"
+      ],
+      "matched_terms": [
+        "image retrieval",
+        "large language model",
+        "MLLM",
+        "multimodal large language model",
+        "satellite",
+        "zero-shot"
+      ],
+      "title_zh": "What Words Keep of a Place: Zero-Shot Language Reasoning for Cross-View Geo-Localization",
+      "summary_zh": "Cross-view geo-localization is commonly solved as an image retrieval problem, matching a ground-level image against a database of satellite tiles through a jointly trained embedding. Such models are accurate, but they need large paired supervision and cannot show what evidence supports a match. In this paper, we study a different question: how much of this task can be solved through language alone? We prompt a multimodal large language model (MLLM) to describe each ground panorama and each satellite tile as structured text, and localize by comparing these descriptions. No component is trained. We evaluate on 9,826 VIGOR pairs from four U.S. cities, in three settings. First, the descriptions are faithful but not discriminative. They agree closely across the two views, yet ranking the full pool by description similarity almost never returns the correct tile (0.39% Recall@1). Second, we narrow the pool to ten neighboring tiles, as a coarse prior would do. The same descriptions now become useful: an MLLM judge that scores structural consistency doubles random ranking and matches a strong lexical baseline. It also states which fields of the two descriptions agree and which conflict, which an embedding distance cannot do, and which we see as a step toward interpretable localization. Third, we place the judge on a trained visual retriever. On the queries it ranks wrongly, reranking from images works, while reranking from our descriptions does not (23.5% against 10.7% Recall@1). Scene structure survives the conversion into language, while the fine appearance detail needed to separate nearby places does not. Code and prompts are publicly available at https://github.com/AyeshAbuLehyeh/GeoLingual."
+    },
+    {
+      "title": "Closing the Context Gap: Activation Alignment for Tabular In-Context Learning",
+      "authors": [
+        "Yoel Zeldes"
+      ],
+      "summary": "Tabular foundation models perform in-context learning (ICL) by conditioning predictions on labeled training examples provided as context. Unlike traditional models that separate training from inference, these models must process all training examples in every forward pass, making each prediction expensive. Restricting the number of training examples reduces this cost but substantially degrades performance. Instead of discarding context, we propose activation alignment, a method that leverages the full context to teach a model how to behave when seeing only a subset. This is achieved by training a lightweight linear transformation on synthetic unlabeled data to map the intermediate activations of a data-constrained \"student\" (using partial context) toward those of a full-context \"teacher\" (using all data). Training the aligner requires no GPU and converges in seconds to minutes on commodity hardware. We evaluate on 38 classification datasets from the TabArena benchmark using the leading two tabular foundation models, TabPFN-3 and TabFM. Across all context budgets, the aligned student yields broad, statistically significant improvements over the unaligned baseline for both models. In low-data regimes, alignment recovers nearly half of the teacher's predictive advantage. The method provides a practical, low-overhead approach to achieving the inference speed of compact contexts while closing a significant fraction of the performance gap to the full-context teacher.",
+      "published": "2026-10-05T16:48:02Z",
+      "updated": "2026-10-05T16:48:02Z",
+      "arxiv_id": "2610.06679v1",
+      "abs_url": "http://arxiv.org/abs/2610.06679v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06679v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "14 pages, 4 figures, 1 table. Code: https://github.com/yoel-zeldes/tabalign",
+      "code_url": "https://github.com/yoel-zeldes/tabalign",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning"
+      ],
+      "title_zh": "Closing the Context Gap: Activation Alignment for Tabular In-Context Learning",
+      "summary_zh": "Tabular foundation models perform in-context learning (ICL) by conditioning predictions on labeled training examples provided as context. Unlike traditional models that separate training from inference, these models must process all training examples in every forward pass, making each prediction expensive. Restricting the number of training examples reduces this cost but substantially degrades performance. Instead of discarding context, we propose activation alignment, a method that leverages the full context to teach a model how to behave when seeing only a subset. This is achieved by training a lightweight linear transformation on synthetic unlabeled data to map the intermediate activations of a data-constrained \"student\" (using partial context) toward those of a full-context \"teacher\" (using all data). Training the aligner requires no GPU and converges in seconds to minutes on commodity hardware. We evaluate on 38 classification datasets from the TabArena benchmark using the leading two tabular foundation models, TabPFN-3 and TabFM. Across all context budgets, the aligned student yields broad, statistically significant improvements over the unaligned baseline for both models. In low-data regimes, alignment recovers nearly half of the teacher's predictive advantage. The method provides a practical, low-overhead approach to achieving the inference speed of compact contexts while closing a significant fraction of the performance gap to the full-context teacher."
+    },
+    {
+      "title": "MoonGS: High-quality Representation of the Lunar Surface via Gaussian Splatting Using Robust Depth Features from Image Pairs",
+      "authors": [
+        "Yun Jiang",
+        "Bo Zheng",
+        "Yingying Zhang",
+        "Xueming Xiao",
+        "Tao Hu",
+        "Hutao Cui",
+        "Zhiguo Meng",
+        "Ke Gao",
+        "Yang Gao",
+        "Meibao Yao"
+      ],
+      "summary": "High-quality 3D reconstruction of lunar terrain from sparse rover images is indispensable for autonomous lunar exploration, but remains challenging because viewpoint overlap is insufficient, surface textures are weak, and data volume is limited. We propose MoonGS, the first feed-forward 3D Gaussian Splatting framework tailored to lunar scenes. Given only two input images, MoonGS predicts pixel-aligned Gaussian primitives in a single forward pass and renders photorealistic novel views without any per-scene optimization. MoonGS (i) adopts an adaptable backbone design that seamlessly integrates advanced vision foundation models to extract robust depth features; (ii) integrates semantic priors in two manners: merging semantic cues with visual features to refine Gaussian parameter estimation, and adopting a semantic ranking loss that regularizes background depth; and (iii) employs an entropy-guided heuristic resampling strategy to augment sparse observations by selecting the most informative distant viewpoints with negligible overhead. Experiments on the LuSNAR benchmark and our synthetic weak-texture MoonBlender dataset show that MoonGS surpasses state-of-the-art feed-forward NeRF/3DGS baselines by +4.9 dB PSNR, +0.29 SSIM, and 40\\% lower LPIPS while maintaining sub-second inference. Furthermore, we validate the broad applicability of our framework by demonstrating that it effectively leverages state-of-the-art backbones, including VGGT, to significantly boost performance. Qualitative evaluations on Chang'e mission imagery also show the best visual quality among compared methods, indicating robustness on real lunar data. The source code and dataset are publicly available at https://github.com/InRobots/MoonBlender.",
+      "published": "2026-10-05T15:46:50Z",
+      "updated": "2026-10-05T15:46:50Z",
+      "arxiv_id": "2610.07110v1",
+      "abs_url": "http://arxiv.org/abs/2610.07110v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07110v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/InRobots/MoonBlender",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "高效微调与轻量化",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "LoRA",
+        "robust"
+      ],
+      "title_zh": "MoonGS: High-quality Representation of the Lunar Surface via Gaussian Splatting Using Robust Depth Features from Image Pairs",
+      "summary_zh": "High-quality 3D reconstruction of lunar terrain from sparse rover images is indispensable for autonomous lunar exploration, but remains challenging because viewpoint overlap is insufficient, surface textures are weak, and data volume is limited. We propose MoonGS, the first feed-forward 3D Gaussian Splatting framework tailored to lunar scenes. Given only two input images, MoonGS predicts pixel-aligned Gaussian primitives in a single forward pass and renders photorealistic novel views without any per-scene optimization. MoonGS (i) adopts an adaptable backbone design that seamlessly integrates advanced vision foundation models to extract robust depth features; (ii) integrates semantic priors in two manners: merging semantic cues with visual features to refine Gaussian parameter estimation, and adopting a semantic ranking loss that regularizes background depth; and (iii) employs an entropy-guided heuristic resampling strategy to augment sparse observations by selecting the most informative distant viewpoints with negligible overhead. Experiments on the LuSNAR benchmark and our synthetic weak-texture MoonBlender dataset show that MoonGS surpasses state-of-the-art feed-forward NeRF/3DGS baselines by +4.9 dB PSNR, +0.29 SSIM, and 40\\% lower LPIPS while maintaining sub-second inference. Furthermore, we validate the broad applicability of our framework by demonstrating that it effectively leverages state-of-the-art backbones, including VGGT, to significantly boost performance. Qualitative evaluations on Chang'e mission imagery also show the best visual quality among compared methods, indicating robustness on real lunar data. The source code and dataset are publicly available at https://github.com/InRobots/MoonBlender."
+    },
+    {
+      "title": "WareFly-VLA: A Vision-Language-Action Framework for UAV Navigation and Human Tracking in Smart Warehouses",
+      "authors": [
+        "Thinh D. Le",
+        "Son T. Nguyen",
+        "Duong Q. Nguyen",
+        "Dung D. Le",
+        "Ngo Anh Vien",
+        "H. Nguyen-Xuan"
+      ],
+      "summary": "Vision-Language-Action (VLA) models have achieved impressive results in robotic manipulation and ground-mobile navigation, yet language-conditioned control of unmanned aerial vehicles (UAVs) in smart warehouses remains largely unexplored, hindered by the lack of benchmarks that jointly provide continuous low-level flight actions, fine-grained natural-language target descriptions, and realistic industrial environments. This paper introduces WareFly-VLA, a photorealistic UAV VLA framework and dataset for language-guided human search, localization, and tracking in warehouse environments. It contains 507 human-teleoperated flight episodes and 8,504 high-resolution RGB transitions collected in NVIDIA Isaac Sim, each paired with a human-written appearance description of the target worker and a synchronized four-degree-of-freedom control command. Two aerial tasks are covered: target approach and person following, under occlusion, long-range search, altitude variation, and clutter. A unified benchmark of four open-source VLA architectures (SmolVLA, GR00T N1.7, pi_0 and OpenVLA) is established under a leakage-free episode-level protocol at two control rates. The results show that language-conditioned aerial control in warehouses is far from solved: performance drops substantially under strict generalization settings, continuous action modeling consistently outperforms discrete action tokenization, only the forward channel is reliably learnable from a single frame, and current foundation-model interfaces transfer poorly from ground and humanoid embodiments to aerial platforms. The synchronized video, language, action, pose, and difficulty annotations further support world-model research. The dataset, baselines, and evaluation protocol are released to support language-grounded aerial autonomy in smart warehouses.",
+      "published": "2026-10-06T15:21:14Z",
+      "updated": "2026-10-06T15:21:14Z",
+      "arxiv_id": "2610.08526v1",
+      "abs_url": "http://arxiv.org/abs/2610.08526v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08526v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "comment": "41 pages, 35 figures, 11 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 7,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "tokenization",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "WareFly-VLA: A Vision-Language-Action Framework for UAV Navigation and Human Tracking in Smart Warehouses",
+      "summary_zh": "Vision-Language-Action (VLA) models have achieved impressive results in robotic manipulation and ground-mobile navigation, yet language-conditioned control of unmanned aerial vehicles (UAVs) in smart warehouses remains largely unexplored, hindered by the lack of benchmarks that jointly provide continuous low-level flight actions, fine-grained natural-language target descriptions, and realistic industrial environments. This paper introduces WareFly-VLA, a photorealistic UAV VLA framework and dataset for language-guided human search, localization, and tracking in warehouse environments. It contains 507 human-teleoperated flight episodes and 8,504 high-resolution RGB transitions collected in NVIDIA Isaac Sim, each paired with a human-written appearance description of the target worker and a synchronized four-degree-of-freedom control command. Two aerial tasks are covered: target approach and person following, under occlusion, long-range search, altitude variation, and clutter. A unified benchmark of four open-source VLA architectures (SmolVLA, GR00T N1.7, pi_0 and OpenVLA) is established under a leakage-free episode-level protocol at two control rates. The results show that language-conditioned aerial control in warehouses is far from solved: performance drops substantially under strict generalization settings, continuous action modeling consistently outperforms discrete action tokenization, only the forward channel is reliably learnable from a single frame, and current foundation-model interfaces transfer poorly from ground and humanoid embodiments to aerial platforms. The synchronized video, language, action, pose, and difficulty annotations further support world-model research. The dataset, baselines, and evaluation protocol are released to support language-grounded aerial autonomy in smart warehouses."
+    },
+    {
+      "title": "Catastrophic Forgetting in Sequential Thermal Anti-UAV Detection: The Role of Scale-Conditioned Gradient Imbalance",
+      "authors": [
+        "Khac Duc Giang Nguyen",
+        "Seyed Sahand Mohammadi Ziabari",
+        "Ali Mohammed Mansoor Alsahag"
+      ],
+      "summary": "Counter-UAV systems based on thermal infrared detection must stay accurate as operational datasets evolve, yet sequential fine-tuning causes catastrophic forgetting of prior tasks, a problem that remains insufficiently characterized in this domain. This continual-learning study measures the stability-plasticity trade-off in YOLOMG, a YOLOv5-based detector run as a single thermal-infrared stream with the motion channel disabled, trained sequentially across three anti-UAV benchmarks of rising scale difficulty: Anti-UAV-RGBT, Anti-UAV410, and CST Anti-UAV. Naive fine-tuning on CST yields a Forgetting Measure of -0.605 against the Stage 1 ceiling, corresponding to a 90% capability loss, with -0.572 occurring in Stage 3 alone. In contrast, knowledge distillation from a frozen teacher is associated with FM = -0.033 +/- 0.004 across three seeds, corresponding to 95% retention. Because no Stage 2 no-KD control is included, this result establishes retention under KD training rather than a causal KD effect. Per-stratum analysis shows large-target detection collapsing to near zero within the first epoch, despite an inter-stage cosine similarity of 0.987 over the gradient-updated weights, pointing to scale-conditioned gradient imbalance, rather than weight drift, as a candidate mechanism. Scale-Stratified Herding (SSH), a 300-exemplar buffer balanced across four UAV size strata, roughly halves the forgetting (FM = -0.605 to -0.311) and keeps large-target detection non-zero. An ablation attributes the gain primarily to scale stratification rather than herding: random-stratified replay performs at least as well (FM = -0.221 versus -0.311 for SSH). These replay results are single-seed and should therefore be treated as preliminary.",
+      "published": "2026-10-06T13:18:10Z",
+      "updated": "2026-10-06T13:18:10Z",
+      "arxiv_id": "2610.08315v1",
+      "abs_url": "http://arxiv.org/abs/2610.08315v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08315v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "基础模型",
+        "高效微调与轻量化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 9,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "fine-tuning",
+        "knowledge distillation",
+        "thermal infrared",
+        "UAV",
+        "YOLO"
+      ],
+      "title_zh": "Catastrophic Forgetting in Sequential Thermal Anti-UAV Detection: The Role of Scale-Conditioned Gradient Imbalance",
+      "summary_zh": "Counter-UAV systems based on thermal infrared detection must stay accurate as operational datasets evolve, yet sequential fine-tuning causes catastrophic forgetting of prior tasks, a problem that remains insufficiently characterized in this domain. This continual-learning study measures the stability-plasticity trade-off in YOLOMG, a YOLOv5-based detector run as a single thermal-infrared stream with the motion channel disabled, trained sequentially across three anti-UAV benchmarks of rising scale difficulty: Anti-UAV-RGBT, Anti-UAV410, and CST Anti-UAV. Naive fine-tuning on CST yields a Forgetting Measure of -0.605 against the Stage 1 ceiling, corresponding to a 90% capability loss, with -0.572 occurring in Stage 3 alone. In contrast, knowledge distillation from a frozen teacher is associated with FM = -0.033 +/- 0.004 across three seeds, corresponding to 95% retention. Because no Stage 2 no-KD control is included, this result establishes retention under KD training rather than a causal KD effect. Per-stratum analysis shows large-target detection collapsing to near zero within the first epoch, despite an inter-stage cosine similarity of 0.987 over the gradient-updated weights, pointing to scale-conditioned gradient imbalance, rather than weight drift, as a candidate mechanism. Scale-Stratified Herding (SSH), a 300-exemplar buffer balanced across four UAV size strata, roughly halves the forgetting (FM = -0.605 to -0.311) and keeps large-target detection non-zero. An ablation attributes the gain primarily to scale stratification rather than herding: random-stratified replay performs at least as well (FM = -0.221 versus -0.311 for SSH). These replay results are single-seed and should therefore be treated as preliminary."
+    },
+    {
+      "title": "The Standardization Trap: Certifying Joint Label Processing in Tabular Foundation Models",
+      "authors": [
+        "Duong Nguyen",
+        "Nicolas Chesneau",
+        "Milan Bhan"
+      ],
+      "summary": "Linear regression and kernel smoothing offer tractable explanations of in-context learning: in both, the features determine the weight assigned to each context label. However, whether this fixed-weight account describes pretrained tabular foundation models (TFMs) remains unclear. Testing this account using derivatives runs into a standardization trap: public TFM packages standardize the labels before the model sees them, yet ordinary derivatives also reflect behavior outside the set of standardized labels, making a model appear nonlinear even when every prediction it makes agrees with a fixed-weight map. We propose two certificates that depend only on predictions at standardized labels and can reject two distinct explanations: fixed-weight prediction and sums of independent nonlinear label transformations. Across the five public TFMs that we evaluate, our certificates show that changing one context label alters how other labels influence the prediction, a behavior we call joint processing. We further find that joint processing emerges with training and that attention scores carry most of the measured interaction. Together, these findings motivate TFM explanations that account for how context labels change the influence of individual examples.",
+      "published": "2026-10-06T13:18:06Z",
+      "updated": "2026-10-06T13:18:06Z",
+      "arxiv_id": "2610.08314v1",
+      "abs_url": "http://arxiv.org/abs/2610.08314v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08314v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning"
+      ],
+      "title_zh": "The Standardization Trap: Certifying Joint Label Processing in Tabular Foundation Models",
+      "summary_zh": "Linear regression and kernel smoothing offer tractable explanations of in-context learning: in both, the features determine the weight assigned to each context label. However, whether this fixed-weight account describes pretrained tabular foundation models (TFMs) remains unclear. Testing this account using derivatives runs into a standardization trap: public TFM packages standardize the labels before the model sees them, yet ordinary derivatives also reflect behavior outside the set of standardized labels, making a model appear nonlinear even when every prediction it makes agrees with a fixed-weight map. We propose two certificates that depend only on predictions at standardized labels and can reject two distinct explanations: fixed-weight prediction and sums of independent nonlinear label transformations. Across the five public TFMs that we evaluate, our certificates show that changing one context label alters how other labels influence the prediction, a behavior we call joint processing. We further find that joint processing emerges with training and that attention scores carry most of the measured interaction. Together, these findings motivate TFM explanations that account for how context labels change the influence of individual examples."
+    },
+    {
+      "title": "How Many Independent Samples Does a Satellite Image Contain? Generalization Bounds for Spatially Dependent Data",
+      "authors": [
+        "Robin Young"
+      ],
+      "summary": "Machine learning classifiers for remote sensing imagery are typically evaluated as though every pixel were an independent sample. Spatial autocorrelation violates this assumption, since neighboring pixels carry redundant information which inflates sample sizes. How many independent samples does a satellite image actually contain? For an $n \\times n$ image whose spatial correlation persists over a range of $r$ pixels, the effective sample size is $Θ(n^2/r^2)$, not $n^2$. We prove this as a finite-sample upper bound for classifiers on spatially correlated data, and show via a matching lower bound that the rate is tight, and no algorithm can do better. We extend the results to images with directional correlation and spatially varying correlation structure. Our result justifies spatial cross-validation since block holdout with separation proportional to the correlation range achieves optimal generalization guarantees, while random holdout can underestimate confidence interval widths by a factor proportional to $r$. We validate the theory on synthetic data and satellite image tiles from three sensors (Landsat 8, Sentinel-2, and Sentinel-1).",
+      "published": "2026-10-06T12:14:34Z",
+      "updated": "2026-10-06T12:14:34Z",
+      "arxiv_id": "2610.08227v1",
+      "abs_url": "http://arxiv.org/abs/2610.08227v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08227v1",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "SAR遥感",
+        "高光谱/多光谱"
+      ],
+      "topic": "SAR遥感",
+      "score": 9,
+      "anchor_terms": [
+        "Landsat",
+        "remote sensing",
+        "satellite image",
+        "Sentinel-1",
+        "Sentinel-2"
+      ],
+      "matched_terms": [
+        "Landsat",
+        "remote sensing",
+        "satellite",
+        "satellite image",
+        "Sentinel-1",
+        "Sentinel-2"
+      ],
+      "title_zh": "How Many Independent Samples Does a Satellite Image Contain? Generalization Bounds for Spatially Dependent Data",
+      "summary_zh": "Machine learning classifiers for remote sensing imagery are typically evaluated as though every pixel were an independent sample. Spatial autocorrelation violates this assumption, since neighboring pixels carry redundant information which inflates sample sizes. How many independent samples does a satellite image actually contain? For an $n \\times n$ image whose spatial correlation persists over a range of $r$ pixels, the effective sample size is $Θ(n^2/r^2)$, not $n^2$. We prove this as a finite-sample upper bound for classifiers on spatially correlated data, and show via a matching lower bound that the rate is tight, and no algorithm can do better. We extend the results to images with directional correlation and spatially varying correlation structure. Our result justifies spatial cross-validation since block holdout with separation proportional to the correlation range achieves optimal generalization guarantees, while random holdout can underestimate confidence interval widths by a factor proportional to $r$. We validate the theory on synthetic data and satellite image tiles from three sensors (Landsat 8, Sentinel-2, and Sentinel-1)."
+    },
+    {
+      "title": "A Riemannian Geometry for Low-rank Adaptation",
+      "authors": [
+        "Shoichiro Takeda",
+        "Shin'ya Yamaguchi",
+        "Satoshi Suzuki",
+        "Yasunori Akagi"
+      ],
+      "summary": "Low-rank adaptation (LoRA) is widely used as a parameter-efficient fine-tuning technique for pre-trained deep neural networks, which approximates the weight update via full fine-tuning by a low-rank matrix $BA^\\top$. This parameterization leads to the equivalence relation $(B, A) \\sim (BG^{-1}, AG^\\top)$ for any invertible matrix $G$ because $BA^\\top = BG^{-1}(AG^\\top)^\\top$ and thus both pairs yield the same loss value. This relation induces a quotient manifold where matrices $(BG^{-1}, AG^\\top)$ for all $G$ are identified, eliminating redundant directions along which the loss value remains unchanged. To respect the geometry of this manifold, the original search space is endowed with a Riemannian metric that is invariant under the equivalence relation. Such a metric induces preconditioning at each gradient step and ensures that each weight update via LoRA changes the loss value, leading to efficient optimization. In this paper, we propose a new Riemannian metric that is specifically tailored to LoRA to close the gap to full fine-tuning at the weight level. We theoretically show that LoRA with our preconditioning induced by this metric satisfies the following two properties at each iteration: (i) The weight update follows the direction closest to the gradient of full fine-tuning within the subspace of first-order weight changes allowed by the LoRA parameterization. (ii) The updated weight matrix is closer in Frobenius norm to that of full fine-tuning than the updated weight matrices of LoRA with conventional preconditioning and without preconditioning. These theoretical insights suggest that our preconditioning makes LoRA better approximate full fine-tuning, thereby leading to more efficient optimization. Experiments show the effectiveness and efficiency of our preconditioning for LoRA on fine-tuning tasks with language and vision domains.",
+      "published": "2026-10-06T09:47:31Z",
+      "updated": "2026-10-06T09:47:31Z",
+      "arxiv_id": "2610.08049v1",
+      "abs_url": "http://arxiv.org/abs/2610.08049v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08049v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "A Riemannian Geometry for Low-rank Adaptation",
+      "summary_zh": "Low-rank adaptation (LoRA) is widely used as a parameter-efficient fine-tuning technique for pre-trained deep neural networks, which approximates the weight update via full fine-tuning by a low-rank matrix $BA^\\top$. This parameterization leads to the equivalence relation $(B, A) \\sim (BG^{-1}, AG^\\top)$ for any invertible matrix $G$ because $BA^\\top = BG^{-1}(AG^\\top)^\\top$ and thus both pairs yield the same loss value. This relation induces a quotient manifold where matrices $(BG^{-1}, AG^\\top)$ for all $G$ are identified, eliminating redundant directions along which the loss value remains unchanged. To respect the geometry of this manifold, the original search space is endowed with a Riemannian metric that is invariant under the equivalence relation. Such a metric induces preconditioning at each gradient step and ensures that each weight update via LoRA changes the loss value, leading to efficient optimization. In this paper, we propose a new Riemannian metric that is specifically tailored to LoRA to close the gap to full fine-tuning at the weight level. We theoretically show that LoRA with our preconditioning induced by this metric satisfies the following two properties at each iteration: (i) The weight update follows the direction closest to the gradient of full fine-tuning within the subspace of first-order weight changes allowed by the LoRA parameterization. (ii) The updated weight matrix is closer in Frobenius norm to that of full fine-tuning than the updated weight matrices of LoRA with conventional preconditioning and without preconditioning. These theoretical insights suggest that our preconditioning makes LoRA better approximate full fine-tuning, thereby leading to more efficient optimization. Experiments show the effectiveness and efficiency of our preconditioning for LoRA on fine-tuning tasks with language and vision domains."
+    },
+    {
+      "title": "TICDA: Tabular In-Context Data Attribution",
+      "authors": [
+        "Yacine Benihaddadene",
+        "Milan Bhan",
+        "Eliot Dugelay",
+        "Mohammed Jawhar",
+        "Benjamin Wong",
+        "Nicolas Chesneau",
+        "Duong Nguyen"
+      ],
+      "summary": "Tabular foundation models (TFMs) achieve strong predictive performance by conditioning on labeled demonstrations provided in context, without any parameter update. Yet how individual demonstrations shape a given prediction remains poorly understood. This gap matters in practice: the context is often assembled from whatever labeled data is available, potentially leading to the inclusion of mislabeled, redundant, or low-quality examples that degrade performance. Standard data attribution methods do not transfer to the TFM setting: resampling-based approaches such as DemoShapley require a combinatorial number of forward passes, and gradient-based estimators such as influence functions require computing training point's effect on the model parameters, which in-context learning never updates. We introduce TICDA, a method that measures the influence of every demonstration in the context directly from linear surrogates trained on TFM latent embeddings, in a single forward pass and at negligible cost. We show that TICDA offers the best compromise against competitors across four tasks: detecting labeling errors, curating context to preserve predictive accuracy while lowering inference cost, producing attribution scores that transfer across TFMs, and supporting an acquisition strategy for efficient active learning.",
+      "published": "2026-10-06T08:55:27Z",
+      "updated": "2026-10-06T08:55:27Z",
+      "arxiv_id": "2610.07996v1",
+      "abs_url": "http://arxiv.org/abs/2610.07996v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07996v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "active learning",
+        "foundation model",
+        "in-context learning"
+      ],
+      "title_zh": "TICDA: Tabular In-Context Data Attribution",
+      "summary_zh": "Tabular foundation models (TFMs) achieve strong predictive performance by conditioning on labeled demonstrations provided in context, without any parameter update. Yet how individual demonstrations shape a given prediction remains poorly understood. This gap matters in practice: the context is often assembled from whatever labeled data is available, potentially leading to the inclusion of mislabeled, redundant, or low-quality examples that degrade performance. Standard data attribution methods do not transfer to the TFM setting: resampling-based approaches such as DemoShapley require a combinatorial number of forward passes, and gradient-based estimators such as influence functions require computing training point's effect on the model parameters, which in-context learning never updates. We introduce TICDA, a method that measures the influence of every demonstration in the context directly from linear surrogates trained on TFM latent embeddings, in a single forward pass and at negligible cost. We show that TICDA offers the best compromise against competitors across four tasks: detecting labeling errors, curating context to preserve predictive accuracy while lowering inference cost, producing attribution scores that transfer across TFMs, and supporting an acquisition strategy for efficient active learning."
+    },
+    {
+      "title": "Towards benchmarking Western Bluebird detection in the wild",
+      "authors": [
+        "Estela Monserrat Arriaga Santana",
+        "Julian Rosas Scull",
+        "Ibeth P. Alarcón",
+        "Bibiana Montoya",
+        "Aylin Sosa Mejía",
+        "Hugo Jair Escalante"
+      ],
+      "summary": "Bird monitoring in natural environments is challenging due to the small size of some species of birds relative to the scene, background clutter, variability in illumination, and the observers' viewpoint. Progress is further limited by the scarcity of large-scale, realistic datasets, which are essential for understanding behavioral patterns. To address this gap, we introduce a new benchmark dataset for the detection and segmentation of Western bluebirds (Sialia Mexicana), comprising over 6,000 labeled images from 41 recording sessions. The dataset features high-resolution (4K) in-the-wild images in which birds occupy only a small fraction of the image. We evaluated supervised detectors, open-vocabulary models under zero-shot and fine-tuned settings, and segmentation approaches. Supervised detectors remain the most reliable overall, with Faster R-CNN achieving the highest detection mAP and RT-DETR offering the best precision-recall trade-off. Open-vocabulary models perform poorly in zero-shot settings; however, fine-tuning substantially improves their performance, with YOLO-World becoming competitive with supervised methods and achieving the highest precision, F1-score, and mAP@0.5. For segmentation, supervised methods significantly outperform Grounded-SAM and SAM 3: Mask R-CNN achieves the highest mask mAP, while YOLOv8-Seg provides the best precision and fastest inference. A diagnostic analysis further shows that failures are not explained by object size alone, but by a combination of apparent scale, brightness, contrast, clutter, blur, crowding, and recording-session variation. Overall, our findings highlight the difficulty of zero-shot bird detection in cluttered ecological scenes and underscore the importance of domain adaptation in small-object settings.",
+      "published": "2026-10-06T05:56:05Z",
+      "updated": "2026-10-06T05:56:05Z",
+      "arxiv_id": "2610.07802v1",
+      "abs_url": "http://arxiv.org/abs/2610.07802v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07802v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "15 pages, 4 figures, 10 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "实例分割",
+        "开放词汇与开放集",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 11,
+      "anchor_terms": [
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "CNN",
+        "DETR",
+        "domain adaptation",
+        "fine-tuning",
+        "Mask R-CNN",
+        "open-vocabulary",
+        "SAM",
+        "YOLO",
+        "zero-shot"
+      ],
+      "title_zh": "Towards benchmarking Western Bluebird detection in the wild",
+      "summary_zh": "Bird monitoring in natural environments is challenging due to the small size of some species of birds relative to the scene, background clutter, variability in illumination, and the observers' viewpoint. Progress is further limited by the scarcity of large-scale, realistic datasets, which are essential for understanding behavioral patterns. To address this gap, we introduce a new benchmark dataset for the detection and segmentation of Western bluebirds (Sialia Mexicana), comprising over 6,000 labeled images from 41 recording sessions. The dataset features high-resolution (4K) in-the-wild images in which birds occupy only a small fraction of the image. We evaluated supervised detectors, open-vocabulary models under zero-shot and fine-tuned settings, and segmentation approaches. Supervised detectors remain the most reliable overall, with Faster R-CNN achieving the highest detection mAP and RT-DETR offering the best precision-recall trade-off. Open-vocabulary models perform poorly in zero-shot settings; however, fine-tuning substantially improves their performance, with YOLO-World becoming competitive with supervised methods and achieving the highest precision, F1-score, and mAP@0.5. For segmentation, supervised methods significantly outperform Grounded-SAM and SAM 3: Mask R-CNN achieves the highest mask mAP, while YOLOv8-Seg provides the best precision and fastest inference. A diagnostic analysis further shows that failures are not explained by object size alone, but by a combination of apparent scale, brightness, contrast, clutter, blur, crowding, and recording-session variation. Overall, our findings highlight the difficulty of zero-shot bird detection in cluttered ecological scenes and underscore the importance of domain adaptation in small-object settings."
+    },
+    {
+      "title": "Adversarially Trained Linear Transformers Are Optimal Robust In-Context Learners for Gaussian Mixtures",
+      "authors": [
+        "Soichiro Kumano"
+      ],
+      "summary": "Adversarial training is one of the most reliable defenses against adversarial attacks, but its high computational cost must generally be paid anew for each task. Robust foundation models offer a promising alternative: adversarially pretrain a model once and then transfer its robustness to downstream tasks through lightweight adaptation. However, a fundamental question remains open: can robustness acquired during pretraining transfer to unseen tasks without further adversarial training? In this study, we answer this question affirmatively. A single model adversarially pretrained at scale can achieve optimal robustness on new tasks without additional task-specific training. Specifically, we show that, for a family of Gaussian-mixture classification tasks, a sufficiently deep linear transformer adversarially trained across tasks can asymptotically attain the robust Bayes error on previously unseen tasks through in-context learning from clean demonstrations. By contrast, a standardly trained model cannot. We further analyze convergence under gradient flow, an accuracy--robustness trade-off, and demonstration complexity.",
+      "published": "2026-10-06T04:51:08Z",
+      "updated": "2026-10-06T04:51:08Z",
+      "arxiv_id": "2610.07754v1",
+      "abs_url": "http://arxiv.org/abs/2610.07754v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07754v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "stat.ML"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 7,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning",
+        "robust",
+        "transformer"
+      ],
+      "title_zh": "Adversarially Trained Linear Transformers Are Optimal Robust In-Context Learners for Gaussian Mixtures",
+      "summary_zh": "Adversarial training is one of the most reliable defenses against adversarial attacks, but its high computational cost must generally be paid anew for each task. Robust foundation models offer a promising alternative: adversarially pretrain a model once and then transfer its robustness to downstream tasks through lightweight adaptation. However, a fundamental question remains open: can robustness acquired during pretraining transfer to unseen tasks without further adversarial training? In this study, we answer this question affirmatively. A single model adversarially pretrained at scale can achieve optimal robustness on new tasks without additional task-specific training. Specifically, we show that, for a family of Gaussian-mixture classification tasks, a sufficiently deep linear transformer adversarially trained across tasks can asymptotically attain the robust Bayes error on previously unseen tasks through in-context learning from clean demonstrations. By contrast, a standardly trained model cannot. We further analyze convergence under gradient flow, an accuracy--robustness trade-off, and demonstration complexity."
+    },
+    {
+      "title": "What Frame-Level Labels Can and Cannot Do for Small-UAV Point Detection in Thermal Video",
+      "authors": [
+        "Wonbin Son",
+        "Gyumum Choi",
+        "Junil Seo",
+        "Hyungjoon Kim"
+      ],
+      "summary": "The growing use of unmanned aerial vehicles (UAVs) has increased the importance of image-based UAV detection. Learning-based detectors are trained on imagery and annotations, with annotation type determining the information available during training. We focus on learning localization from frame-level target presence/absence labels when sensor or scene changes make spatial annotations for additional training burdensome. We analyze the detection capability, learning behavior, and potential applications of an existing architecture for point detection of small UAVs, trained with presence/absence labels and requiring no external detector. The architecture freezes spatial features learned through classification and trains a readout with the same frame labels to produce spatial score maps and point detections. On two thermal infrared datasets, CST Anti-UAV and Anti-UAV410, we evaluate localization hit rates and detection rates under false-alarm constraints, analyze the effects of training stages, label allocation, synthesis, and model configuration, and compare with bounding-box detectors. We also explore potential applications on Airborne Object Tracking (AOT) using its visible-light imagery and frame labels. Classification training strengthened target-related spatial responses, while readout training helped extract them consistently. Distributing similar label counts across more videos yielded higher localization hit rates, while synthesis effects varied by dataset and evaluation criterion. Higher localization hit rates did not always improve detection under false-alarm constraints, and failures remained when target signals were weak relative to background variation and under cross-dataset transfer. These findings provide guidance on label allocation, spatial representations and readouts, synthesis, and false-alarm control.",
+      "published": "2026-10-06T03:58:26Z",
+      "updated": "2026-10-06T03:58:26Z",
+      "arxiv_id": "2610.07705v1",
+      "abs_url": "http://arxiv.org/abs/2610.07705v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07705v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 8,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "airborne",
+        "thermal infrared",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "What Frame-Level Labels Can and Cannot Do for Small-UAV Point Detection in Thermal Video",
+      "summary_zh": "The growing use of unmanned aerial vehicles (UAVs) has increased the importance of image-based UAV detection. Learning-based detectors are trained on imagery and annotations, with annotation type determining the information available during training. We focus on learning localization from frame-level target presence/absence labels when sensor or scene changes make spatial annotations for additional training burdensome. We analyze the detection capability, learning behavior, and potential applications of an existing architecture for point detection of small UAVs, trained with presence/absence labels and requiring no external detector. The architecture freezes spatial features learned through classification and trains a readout with the same frame labels to produce spatial score maps and point detections. On two thermal infrared datasets, CST Anti-UAV and Anti-UAV410, we evaluate localization hit rates and detection rates under false-alarm constraints, analyze the effects of training stages, label allocation, synthesis, and model configuration, and compare with bounding-box detectors. We also explore potential applications on Airborne Object Tracking (AOT) using its visible-light imagery and frame labels. Classification training strengthened target-related spatial responses, while readout training helped extract them consistently. Distributing similar label counts across more videos yielded higher localization hit rates, while synthesis effects varied by dataset and evaluation criterion. Higher localization hit rates did not always improve detection under false-alarm constraints, and failures remained when target signals were weak relative to background variation and under cross-dataset transfer. These findings provide guidance on label allocation, spatial representations and readouts, synthesis, and false-alarm control."
+    },
+    {
+      "title": "RBMatch: Dual-Level Class Rebalancing for Semi-Supervised Building Footprint Extraction",
+      "authors": [
+        "Akil Ahmad Taki",
+        "Shaikh Anowarul Fattah"
+      ],
+      "summary": "Accurate building footprint extraction from high-resolution remote sensing imagery is essential for urban planning, disaster response, and environmental monitoring. However, obtaining dense pixel-level annotations is costly, motivating the use of semi-supervised learning (SSL) to leverage unlabeled imagery. In remote sensing, severe foreground--background imbalance poses a particular challenge for self-training, as it can bias pseudo-label generation and the resulting unsupervised optimization toward the majority background class. We show that addressing this imbalance at only one stage is insufficient: balancing pseudo-label selection alone does not prevent background bias from re-emerging during unsupervised loss optimization, a failure mode we term \\emph{imbalance leak}. To address this issue, we propose \\textbf{RBMatch}, a dual-level class-rebalancing framework that jointly regulates pseudo-label generation and unsupervised optimization. RBMatch combines a supervised learning pathway with a self-training module comprising three components: adaptive class-specific thresholding (ACT) for balanced pseudo-label selection, confidence-aware class-balanced reweighting (CACBR) for mitigating class bias in the unsupervised loss, and distribution alignment (DAL) for matching the predicted unlabeled-data distribution to the labeled-data prior. Experiments on the WHU, INRIA, and Massachusetts building footprint datasets across labeled ratios of 1%--10% show that RBMatch consistently achieves the best building IoU and F1-score among the evaluated methods. The improvement is most pronounced on the highly imbalanced Massachusetts dataset, where RBMatch improves IoU by 1.37 points over the strongest baseline at a 1% labeling ratio and is the only method to outperform the fully supervised baseline across all twelve dataset--ratio settings.",
+      "published": "2026-10-06T03:40:14Z",
+      "updated": "2026-10-06T03:40:14Z",
+      "arxiv_id": "2610.07698v1",
+      "abs_url": "http://arxiv.org/abs/2610.07698v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07698v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "灾害与应急监测",
+        "城市与基础设施",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 14,
+      "anchor_terms": [
+        "building footprint",
+        "remote sensing",
+        "semi-supervised",
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "building footprint",
+        "building footprint extraction",
+        "remote sensing",
+        "semi-supervised",
+        "unsupervised",
+        "WHU"
+      ],
+      "title_zh": "RBMatch: Dual-Level Class Rebalancing for Semi-Supervised Building Footprint Extraction",
+      "summary_zh": "Accurate building footprint extraction from high-resolution remote sensing imagery is essential for urban planning, disaster response, and environmental monitoring. However, obtaining dense pixel-level annotations is costly, motivating the use of semi-supervised learning (SSL) to leverage unlabeled imagery. In remote sensing, severe foreground--background imbalance poses a particular challenge for self-training, as it can bias pseudo-label generation and the resulting unsupervised optimization toward the majority background class. We show that addressing this imbalance at only one stage is insufficient: balancing pseudo-label selection alone does not prevent background bias from re-emerging during unsupervised loss optimization, a failure mode we term \\emph{imbalance leak}. To address this issue, we propose \\textbf{RBMatch}, a dual-level class-rebalancing framework that jointly regulates pseudo-label generation and unsupervised optimization. RBMatch combines a supervised learning pathway with a self-training module comprising three components: adaptive class-specific thresholding (ACT) for balanced pseudo-label selection, confidence-aware class-balanced reweighting (CACBR) for mitigating class bias in the unsupervised loss, and distribution alignment (DAL) for matching the predicted unlabeled-data distribution to the labeled-data prior. Experiments on the WHU, INRIA, and Massachusetts building footprint datasets across labeled ratios of 1%--10% show that RBMatch consistently achieves the best building IoU and F1-score among the evaluated methods. The improvement is most pronounced on the highly imbalanced Massachusetts dataset, where RBMatch improves IoU by 1.37 points over the strongest baseline at a 1% labeling ratio and is the only method to outperform the fully supervised baseline across all twelve dataset--ratio settings."
+    },
+    {
+      "title": "Hub for Outliers, Spokes for Inliers: Uniform Latent Space Construction for Dual-Mismatched Semi-Supervised Learning",
+      "authors": [
+        "Li Yuan",
+        "Yaxin Hou",
+        "Jiawei Tang",
+        "Yongbiao Gao",
+        "Yuheng Jia"
+      ],
+      "summary": "Semi-supervised learning typically assumes that labeled and unlabeled data share an identical class distribution and label space. However, this setting is often violated: unlabeled data may be imbalanced and contain unknown class samples, causing mismatches in both class distribution and label space. Such dual mismatch leads to majority classes dominating the latent space and unknown class samples being overconfidently misclassified, degrading feature discriminability and pseudo-label quality. To address this, we propose a hub-spoke latent geometry, where known classes are uniformly distributed around a central hub and each class forms compact clusters around its prototype, while the hub provides an anchor for a low-evidence region specifically designed for high-uncertainty unknown class samples. Integrated with an evidence-based classifier, this geometry ultimately enhances feature discriminability and uncertainty separation by mitigating majority-class domination through structured feature organization and guiding high-uncertainty unknown class samples toward the hub. Extensive experiments show that our method outperforms state-of-the-art methods, with a maximum improvement of 3.25% across various settings.",
+      "published": "2026-10-06T01:55:51Z",
+      "updated": "2026-10-06T01:55:51Z",
+      "arxiv_id": "2610.07610v1",
+      "abs_url": "http://arxiv.org/abs/2610.07610v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07610v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Equal contribution by Li Yuan and Yaxin Hou. Corresponding author: Yuheng Jia. Emails: {yuan-li,yaxin,230259148,yhjia}@seu.edu.cn, gaoyb@qlu.edu.cn. 18 pages",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 2,
+      "anchor_terms": [
+        "semi-supervised"
+      ],
+      "matched_terms": [
+        "semi-supervised"
+      ],
+      "title_zh": "Hub for Outliers, Spokes for Inliers: Uniform Latent Space Construction for Dual-Mismatched Semi-Supervised Learning",
+      "summary_zh": "Semi-supervised learning typically assumes that labeled and unlabeled data share an identical class distribution and label space. However, this setting is often violated: unlabeled data may be imbalanced and contain unknown class samples, causing mismatches in both class distribution and label space. Such dual mismatch leads to majority classes dominating the latent space and unknown class samples being overconfidently misclassified, degrading feature discriminability and pseudo-label quality. To address this, we propose a hub-spoke latent geometry, where known classes are uniformly distributed around a central hub and each class forms compact clusters around its prototype, while the hub provides an anchor for a low-evidence region specifically designed for high-uncertainty unknown class samples. Integrated with an evidence-based classifier, this geometry ultimately enhances feature discriminability and uncertainty separation by mitigating majority-class domination through structured feature organization and guiding high-uncertainty unknown class samples toward the hub. Extensive experiments show that our method outperforms state-of-the-art methods, with a maximum improvement of 3.25% across various settings."
+    },
+    {
+      "title": "TAFFY: A Task-Adaptive Tabular Foundation Model with In-Context Diversity",
+      "authors": [
+        "Zijian Li",
+        "Xiangchen Song",
+        "Gongxu Luo",
+        "Jie Qiao",
+        "Ruichu Cai",
+        "Zhenhao Chen",
+        "Xinshuai Dong",
+        "Fan Feng",
+        "Guangyi Chen",
+        "Kun Zhang"
+      ],
+      "summary": "Recent progress in tabular foundation models suggests that training on synthetic tasks can substantially improve in-context learning capabilities, with overall performance largely depending on how well models can infer task-specific predictive relationships from the available context during inference. In this paper, we introduce TAFFY, a tabular foundation model with an In-Context Diversity Prior and a Task-Conditioned Looped Transformer that strengthen this ability. Specifically, to construct each synthetic pretraining context, the In-Context Diversity Prior samples from multiple related environments derived via controlled interventions and distribution shifts on a shared causal process. This in-context diversity encourages the model to learn a more comprehensive and task-specific representation. Moreover, the Task-Conditioned Looped Transformer iteratively and selectively applies a shared group of Transformer blocks to refine contextual representations, with a task-conditioned gate modulating the final hidden-state update. This enables task-adaptive iterative refinement. Together, these components encourage the model to identify predictive relationships from contextual contrasts during pretraining and dynamically modulate context integration for each task. Across six classification and five regression benchmark datasets, TAFFY attains the lowest average rank.",
+      "published": "2026-10-06T00:46:01Z",
+      "updated": "2026-10-06T00:46:01Z",
+      "arxiv_id": "2610.07559v1",
+      "abs_url": "http://arxiv.org/abs/2610.07559v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07559v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning",
+        "transformer"
+      ],
+      "title_zh": "TAFFY: A Task-Adaptive Tabular Foundation Model with In-Context Diversity",
+      "summary_zh": "Recent progress in tabular foundation models suggests that training on synthetic tasks can substantially improve in-context learning capabilities, with overall performance largely depending on how well models can infer task-specific predictive relationships from the available context during inference. In this paper, we introduce TAFFY, a tabular foundation model with an In-Context Diversity Prior and a Task-Conditioned Looped Transformer that strengthen this ability. Specifically, to construct each synthetic pretraining context, the In-Context Diversity Prior samples from multiple related environments derived via controlled interventions and distribution shifts on a shared causal process. This in-context diversity encourages the model to learn a more comprehensive and task-specific representation. Moreover, the Task-Conditioned Looped Transformer iteratively and selectively applies a shared group of Transformer blocks to refine contextual representations, with a task-conditioned gate modulating the final hidden-state update. This enables task-adaptive iterative refinement. Together, these components encourage the model to identify predictive relationships from contextual contrasts during pretraining and dynamically modulate context integration for each task. Across six classification and five regression benchmark datasets, TAFFY attains the lowest average rank."
+    },
+    {
+      "title": "Which and When to Admit: Gradient Admission for Data-Centric Small Language Model Finetuning",
+      "authors": [
+        "Hongyu Cao",
+        "Yanchi Liu",
+        "Kunpeng Liu",
+        "Xujiang Zhao",
+        "Wei Cheng",
+        "Zhengzhang Chen",
+        "Yanjie Fu",
+        "Haifeng Chen"
+      ],
+      "summary": "LoRA fine-tuning adapts small language models (SLMs) to heterogeneous instruction data within a low-rank update subspace, making it vulnerable to three structural problems: conflicting gradients that cancel, static data selection that cannot track evolving learning dynamics, and subspace saturation that causes later updates to overwrite useful directions. We argue that effective adaptation therefore requires controlling which data-induced gradients enter the LoRA subspace and when. We propose GRADE (GRadient-Aligned Data-centric rEcipe), a data-centric framework combining two mechanisms: a state-aware selector that continually admits samples aligned with the evolving multi-task gradient field, and a self-calibrating step-level gate that rejects updates likely to cause destructive overwrite near saturation. Across three current-generation backbones and a heterogeneous seven-dataset instruction pool, GRADE outperforms strong data-selection and PEFT-stabilization baselines in accuracy and robustness. It is the only method to improve consistently over standard LoRA on every architecture, while producing more coherent gradient trajectories and less destructive overwrite. These results show that successful SLM adaptation depends not only on which data are selected, but also on which gradients are allowed to enter and persist in the constrained update subspace.",
+      "published": "2026-10-06T00:34:38Z",
+      "updated": "2026-10-06T00:34:38Z",
+      "arxiv_id": "2610.07553v1",
+      "abs_url": "http://arxiv.org/abs/2610.07553v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07553v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA",
+        "PEFT",
+        "robust"
+      ],
+      "title_zh": "Which and When to Admit: Gradient Admission for Data-Centric Small Language Model Finetuning",
+      "summary_zh": "LoRA fine-tuning adapts small language models (SLMs) to heterogeneous instruction data within a low-rank update subspace, making it vulnerable to three structural problems: conflicting gradients that cancel, static data selection that cannot track evolving learning dynamics, and subspace saturation that causes later updates to overwrite useful directions. We argue that effective adaptation therefore requires controlling which data-induced gradients enter the LoRA subspace and when. We propose GRADE (GRadient-Aligned Data-centric rEcipe), a data-centric framework combining two mechanisms: a state-aware selector that continually admits samples aligned with the evolving multi-task gradient field, and a self-calibrating step-level gate that rejects updates likely to cause destructive overwrite near saturation. Across three current-generation backbones and a heterogeneous seven-dataset instruction pool, GRADE outperforms strong data-selection and PEFT-stabilization baselines in accuracy and robustness. It is the only method to improve consistently over standard LoRA on every architecture, while producing more coherent gradient trajectories and less destructive overwrite. These results show that successful SLM adaptation depends not only on which data are selected, but also on which gradients are allowed to enter and persist in the constrained update subspace."
+    },
+    {
+      "title": "Harmful SFT Leaves a Continuous Trace in LLM Checkpoint Updates",
+      "authors": [
+        "Ziqun Bao",
+        "Xinyu Zhang",
+        "Yuchen Shao",
+        "Chengcheng Wan"
+      ],
+      "summary": "Safety auditing of post-trained large language models typically relies on model behavior, requiring model execution and depending on the coverage of available evaluations. This work asks a different question: Do the target behaviors optimized during supervised fine-tuning (SFT) leave readable evidence directly in checkpoint updates? We find that harmful-compliance SFT induces a continuous, objective-dependent ordering in checkpoint-update space. Using a reference geometry defined by pure harmful-compliance, safety-targeted, and benign-utility SFT, we find that a checkpoint-level coordinate s_H tracks controlled harmful-objective composition with Spearman correlations of 0.986-0.992 across four 7-8B backbones, with the same ordering persisting at larger model scales. Matched compliance-versus-refusal controls show that this checkpoint trace reflects the SFT objective rather than harmful-input exposure, while additional controls rule out simple explanations based on harmful-example count or generic training intensity. Building on this structure, we introduce TRACE, a weights-only auditing method that localizes an unknown checkpoint update relative to frozen harmful and non-harmful reference prototypes and converts this geometry into a continuous harmful-objective score. TRACE requires neither model queries nor access to the unknown SFT data, and can be evaluated directly from checkpoint updates. Across distribution shifts, unseen data, different SFT configurations, partial checkpoint access, and LoRA/full-parameter fine-tuning, the trace remains stable and is positively associated with independently measured attack success rates. TRACE remains informative even at low harmful-objective proportions, providing a complementary auditing signal when behavioral evaluation is unavailable or incomplete. Code is available at https://anonymous.4open.science/r/Code4TRACE-54D3.",
+      "published": "2026-10-05T23:28:45Z",
+      "updated": "2026-10-05T23:28:45Z",
+      "arxiv_id": "2610.07518v1",
+      "abs_url": "http://arxiv.org/abs/2610.07518v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07518v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "large language model",
+        "LLM",
+        "LoRA"
+      ],
+      "title_zh": "Harmful SFT Leaves a Continuous Trace in LLM Checkpoint Updates",
+      "summary_zh": "Safety auditing of post-trained large language models typically relies on model behavior, requiring model execution and depending on the coverage of available evaluations. This work asks a different question: Do the target behaviors optimized during supervised fine-tuning (SFT) leave readable evidence directly in checkpoint updates? We find that harmful-compliance SFT induces a continuous, objective-dependent ordering in checkpoint-update space. Using a reference geometry defined by pure harmful-compliance, safety-targeted, and benign-utility SFT, we find that a checkpoint-level coordinate s_H tracks controlled harmful-objective composition with Spearman correlations of 0.986-0.992 across four 7-8B backbones, with the same ordering persisting at larger model scales. Matched compliance-versus-refusal controls show that this checkpoint trace reflects the SFT objective rather than harmful-input exposure, while additional controls rule out simple explanations based on harmful-example count or generic training intensity. Building on this structure, we introduce TRACE, a weights-only auditing method that localizes an unknown checkpoint update relative to frozen harmful and non-harmful reference prototypes and converts this geometry into a continuous harmful-objective score. TRACE requires neither model queries nor access to the unknown SFT data, and can be evaluated directly from checkpoint updates. Across distribution shifts, unseen data, different SFT configurations, partial checkpoint access, and LoRA/full-parameter fine-tuning, the trace remains stable and is positively associated with independently measured attack success rates. TRACE remains informative even at low harmful-objective proportions, providing a complementary auditing signal when behavioral evaluation is unavailable or incomplete. Code is available at https://anonymous.4open.science/r/Code4TRACE-54D3."
+    },
+    {
+      "title": "AccentCL: Robust Accent Classification with Incremental Expansion",
+      "authors": [
+        "Mu-Ruei Tseng",
+        "Waris Quamer",
+        "Ghady Nasrallah",
+        "Ricardo Gutierrez-Osuna"
+      ],
+      "summary": "Accent classifiers are typically trained with a fixed label inventory and cannot accommodate new accent categories as new data becomes available. Moreover, accented speech corpora often exhibit substantial class imbalance and/or domain shift due to differences in recording conditions across corpora. We present AccentCL, a class-incremental learning framework for English accent classification that is robust to class imbalance and cross-corpus domain shift. AccentCL extracts multi-layer representations from a frozen Whisper-Large-v3 encoder, optimized with an imbalance-aware cross-entropy loss to reduce bias toward the majority accent classes and a domain mean alignment loss that minimizes distributional mean shift across training corpora. The label space is then expanded via replay-based continual learning, using the frozen base model for knowledge retention and an old-to-new margin loss to reduce overprediction on newly added classes. On a five-class accent classification task, AccentCL achieves 77.1% balanced accuracy and a 76.9% macro-averaged F1 score. We further evaluate the model's ability to incrementally incorporate two new accent categories: Spanish-accented and Chinese-accented English. When adding Spanish-accented English to the pretrained model, AccentCL attains an F1 of 83.3% on the new class while retaining 77.3% balanced accuracy on the base classes. When subsequently adding Chinese-accented English, it achieves 61.8% F1 on the new class while preserving 77.6% balanced accuracy on the previously learned classes. These results show that AccentCL enables robust regional accent classification while allowing new accent categories to be added without full retraining.",
+      "published": "2026-10-05T21:34:23Z",
+      "updated": "2026-10-05T21:34:23Z",
+      "arxiv_id": "2610.07426v1",
+      "abs_url": "http://arxiv.org/abs/2610.07426v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07426v1",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "comment": "Published in Proceedings of IEEE Spoken Language Technology Workshop (SLT) 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 5,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "class-incremental",
+        "continual learning",
+        "incremental learning",
+        "robust"
+      ],
+      "title_zh": "AccentCL: Robust Accent Classification with Incremental Expansion",
+      "summary_zh": "Accent classifiers are typically trained with a fixed label inventory and cannot accommodate new accent categories as new data becomes available. Moreover, accented speech corpora often exhibit substantial class imbalance and/or domain shift due to differences in recording conditions across corpora. We present AccentCL, a class-incremental learning framework for English accent classification that is robust to class imbalance and cross-corpus domain shift. AccentCL extracts multi-layer representations from a frozen Whisper-Large-v3 encoder, optimized with an imbalance-aware cross-entropy loss to reduce bias toward the majority accent classes and a domain mean alignment loss that minimizes distributional mean shift across training corpora. The label space is then expanded via replay-based continual learning, using the frozen base model for knowledge retention and an old-to-new margin loss to reduce overprediction on newly added classes. On a five-class accent classification task, AccentCL achieves 77.1% balanced accuracy and a 76.9% macro-averaged F1 score. We further evaluate the model's ability to incrementally incorporate two new accent categories: Spanish-accented and Chinese-accented English. When adding Spanish-accented English to the pretrained model, AccentCL attains an F1 of 83.3% on the new class while retaining 77.3% balanced accuracy on the base classes. When subsequently adding Chinese-accented English, it achieves 61.8% F1 on the new class while preserving 77.6% balanced accuracy on the previously learned classes. These results show that AccentCL enables robust regional accent classification while allowing new accent categories to be added without full retraining."
+    },
+    {
+      "title": "WildMatch: Weakly Supervised Image Matcher Adaptation for Wildlife Re-Identification",
+      "authors": [
+        "Turhan Can Kargin",
+        "Piotr Kubaty",
+        "Ekaterina Rostovskaya",
+        "Izabela Wierzbowska",
+        "Bartosz Zieliński",
+        "Marcin Przewięźlikowski"
+      ],
+      "summary": "Individual animal re-identification from camera-trap imagery is an instance retrieval problem central to non-invasive wildlife monitoring: a query image must retrieve the correct individual from a reference set of known animals. This requires computer vision models to recognize distinctive local patterns in fur, skin, or other visual markings. Current approaches either learn global embeddings as a classification problem, requiring many labeled images per individual while largely ignoring local evidence, or apply off-the-shelf, domain-agnostic image matchers. Although such matchers are pretrained on large and diverse image collections, adapting them to wildlife imagery is challenging because available datasets are small and lack correspondence-level annotations. We study weakly supervised adaptation of a pretrained keypoint matcher using only identity labels, without keypoint-level or geometric correspondence ground truth. We mine informative image pairs with the pretrained matcher, derive weak positive and negative supervision from identity agreement, and contrastively fine-tune the matching network to strengthen correspondences for same-identity pairs and suppress them for different identities. Across open-source wildlife re-identification datasets, our approach improves accuracy over off-the-shelf matchers and a state-of-the-art local--global fusion method. Under an open-world protocol with held-out individuals, it learns a transferable correspondence prior rather than memorizing training identities. To our knowledge, this is the first study of matcher-level, identity-supervised adaptation for animal re-identification. Our method enables data-efficient specialization of image matching models to wildlife domains using identity annotations already available in typical monitoring datasets.",
+      "published": "2026-10-05T20:54:45Z",
+      "updated": "2026-10-05T20:54:45Z",
+      "arxiv_id": "2610.07384v1",
+      "abs_url": "http://arxiv.org/abs/2610.07384v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07384v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "comment": "15 pages, 7 figures, 3 tables. Project page: https://wildmatch.gmum.net",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "开放词汇与开放集",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 3,
+      "anchor_terms": [
+        "weakly supervised"
+      ],
+      "matched_terms": [
+        "weakly supervised"
+      ],
+      "title_zh": "WildMatch: Weakly Supervised Image Matcher Adaptation for Wildlife Re-Identification",
+      "summary_zh": "Individual animal re-identification from camera-trap imagery is an instance retrieval problem central to non-invasive wildlife monitoring: a query image must retrieve the correct individual from a reference set of known animals. This requires computer vision models to recognize distinctive local patterns in fur, skin, or other visual markings. Current approaches either learn global embeddings as a classification problem, requiring many labeled images per individual while largely ignoring local evidence, or apply off-the-shelf, domain-agnostic image matchers. Although such matchers are pretrained on large and diverse image collections, adapting them to wildlife imagery is challenging because available datasets are small and lack correspondence-level annotations. We study weakly supervised adaptation of a pretrained keypoint matcher using only identity labels, without keypoint-level or geometric correspondence ground truth. We mine informative image pairs with the pretrained matcher, derive weak positive and negative supervision from identity agreement, and contrastively fine-tune the matching network to strengthen correspondences for same-identity pairs and suppress them for different identities. Across open-source wildlife re-identification datasets, our approach improves accuracy over off-the-shelf matchers and a state-of-the-art local--global fusion method. Under an open-world protocol with held-out individuals, it learns a transferable correspondence prior rather than memorizing training identities. To our knowledge, this is the first study of matcher-level, identity-supervised adaptation for animal re-identification. Our method enables data-efficient specialization of image matching models to wildlife domains using identity annotations already available in typical monitoring datasets."
+    },
+    {
+      "title": "GeoWM: Efficient Direct World Modeling in Explicit Geometry",
+      "authors": [
+        "Mehrdad Noori",
+        "Guile Wu",
+        "Sam Hosseini",
+        "Dongfeng Bai"
+      ],
+      "summary": "Modeling 3D scene geometry and its evolution over time is essential for autonomous driving and robotics. A common paradigm is to use world models to predict future images or latent representations of the environment and subsequently recover geometry from these predictions. However, this paradigm does not explicitly model geometric structure and typically relies on recursive rollouts to reach longer prediction horizons, leading to error accumulation and increasing computational cost. To address these limitations, we present GeoWM, a geometry world model that directly forecasts future scene geometry at specified future horizons without recursive rollout. The key idea is to leverage a geometry foundation model to transform observed RGB frames into a geometric history, which conditions a flow-matching transformer to predict the scene geometry at a specified future horizon. We further show that a lightweight camera-motion predictor can accurately estimate the future viewpoint, and that projecting the observed geometry into the predicted viewpoint provides an effective geometric prior for future geometry forecasting. Extensive experiments on four datasets spanning urban driving, aerial flight, and dynamic manipulation demonstrate that GeoWM outperforms the evaluated world models in forecasting depth, camera pose, and 3D scene geometry, while substantially reducing inference time at longer horizons.",
+      "published": "2026-10-05T20:52:18Z",
+      "updated": "2026-10-05T20:52:18Z",
+      "arxiv_id": "2610.07381v1",
+      "abs_url": "http://arxiv.org/abs/2610.07381v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07381v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "foundation model"
+      ],
+      "matched_terms": [
+        "aerial",
+        "foundation model",
+        "transformer"
+      ],
+      "title_zh": "GeoWM: Efficient Direct World Modeling in Explicit Geometry",
+      "summary_zh": "Modeling 3D scene geometry and its evolution over time is essential for autonomous driving and robotics. A common paradigm is to use world models to predict future images or latent representations of the environment and subsequently recover geometry from these predictions. However, this paradigm does not explicitly model geometric structure and typically relies on recursive rollouts to reach longer prediction horizons, leading to error accumulation and increasing computational cost. To address these limitations, we present GeoWM, a geometry world model that directly forecasts future scene geometry at specified future horizons without recursive rollout. The key idea is to leverage a geometry foundation model to transform observed RGB frames into a geometric history, which conditions a flow-matching transformer to predict the scene geometry at a specified future horizon. We further show that a lightweight camera-motion predictor can accurately estimate the future viewpoint, and that projecting the observed geometry into the predicted viewpoint provides an effective geometric prior for future geometry forecasting. Extensive experiments on four datasets spanning urban driving, aerial flight, and dynamic manipulation demonstrate that GeoWM outperforms the evaluated world models in forecasting depth, camera pose, and 3D scene geometry, while substantially reducing inference time at longer horizons."
+    },
+    {
+      "title": "Internalizing Agent Experience into Diffusion Model Weights via On-Policy Context Distillation",
+      "authors": [
+        "Wenxuan Wang",
+        "Zekai Liu",
+        "Weinan Zhang",
+        "Yu Cheng",
+        "Yang Yang"
+      ],
+      "summary": "Wrapping an image generation model in an agentic harness can effectively boost Text-to-Image task performance: the harness can leverage memory, skills, workflow orchestration, result verification, and iterative refinement to continually construct and revise prompts, thereby eliciting better images. These gains, however, remain external to the diffusion model and are realized only while the full harness runs. We propose Diffusion On-Policy Context Distillation (D-OPCD), which treats the agent-improved prompt as privileged context and distills the knowledge encoded in the agent harness into the weights of the diffusion model, so that the model retains part of the harness's benefit when conditioned on the original query alone. Using a Text-to-Image agent equipped with our proposed Auto Skill Evolver (ASE), we show that D-OPCD can internalize harness capabilities into the generator's weights, raising the average direct-generation score from 60.52 to 65.09 across four benchmarks. With this knowledge absorbed into the weights, the harness can shed its saturated skills and resume evolving: a second ASE round on the updated generator improves on a skill-free harness by additional 1.83 points, pointing toward text-to-image systems in which harness and model keep improving each other through continual co-evolution.",
+      "published": "2026-10-05T18:50:09Z",
+      "updated": "2026-10-05T18:50:09Z",
+      "arxiv_id": "2610.07250v1",
+      "abs_url": "http://arxiv.org/abs/2610.07250v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07250v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "27 pages, 11 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "image generation"
+      ],
+      "title_zh": "Internalizing Agent Experience into Diffusion Model Weights via On-Policy Context Distillation",
+      "summary_zh": "Wrapping an image generation model in an agentic harness can effectively boost Text-to-Image task performance: the harness can leverage memory, skills, workflow orchestration, result verification, and iterative refinement to continually construct and revise prompts, thereby eliciting better images. These gains, however, remain external to the diffusion model and are realized only while the full harness runs. We propose Diffusion On-Policy Context Distillation (D-OPCD), which treats the agent-improved prompt as privileged context and distills the knowledge encoded in the agent harness into the weights of the diffusion model, so that the model retains part of the harness's benefit when conditioned on the original query alone. Using a Text-to-Image agent equipped with our proposed Auto Skill Evolver (ASE), we show that D-OPCD can internalize harness capabilities into the generator's weights, raising the average direct-generation score from 60.52 to 65.09 across four benchmarks. With this knowledge absorbed into the weights, the harness can shed its saturated skills and resume evolving: a second ASE round on the updated generator improves on a skill-free harness by additional 1.83 points, pointing toward text-to-image systems in which harness and model keep improving each other through continual co-evolution."
+    },
+    {
+      "title": "Conditional Flow Matching for Transport Between Markov Processes",
+      "authors": [
+        "Syamantak Kumar",
+        "Dheeraj Nagaraj",
+        "Saptarshi Roy",
+        "Purnamrita Sarkar"
+      ],
+      "summary": "Motivated by sequence-to-sequence transport in the context time-series domain adaptation, we study the problem of transportation between trajectories of Markov processes. Given a limited number of trajectories from source distribution and the target distribution, we formulate a flow matching based algorithm which learns a transport map from the source to target trajectory distribution, while preserving the Markov structure. We show that this is consistent in the population limit and derive finite-sample error bounds under mixing time assumptions, following the analysis of classical statistical problems including regression (Nagaraj et al., 2020), principal component analysis (Kumar and Sarkar, 2023), and matrix concentration (Neeman et al., 2024) in the Markov setting. We complement that with a lower-bound construction showing that a mixing-time dependent sample complexity is unavoidable even with regular Gaussian conditional transitions. We evaluate on synthetic and real-world data. For image retrieval from electroencephalography (EEG) on THINGS-EEG2 (Gifford et al., 2022), the task is to identify the viewed image from EEG signals captured from human subjects, which suffers from high inter subject variability. We augment the ENIGMA decoder (Kneeland et al., 2026) with a conditional flow before its subject-specific temporal map. This improves mean top-5 retrieval accuracy from 43.87% to 49.05%, an 11.82% relative improvement.",
+      "published": "2026-10-05T18:35:47Z",
+      "updated": "2026-10-05T18:35:47Z",
+      "arxiv_id": "2610.07229v1",
+      "abs_url": "http://arxiv.org/abs/2610.07229v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07229v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "图像检索",
+        "小样本与域泛化"
+      ],
+      "topic": "时间序列与视频",
+      "score": 3,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "domain adaptation",
+        "image retrieval",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "Conditional Flow Matching for Transport Between Markov Processes",
+      "summary_zh": "Motivated by sequence-to-sequence transport in the context time-series domain adaptation, we study the problem of transportation between trajectories of Markov processes. Given a limited number of trajectories from source distribution and the target distribution, we formulate a flow matching based algorithm which learns a transport map from the source to target trajectory distribution, while preserving the Markov structure. We show that this is consistent in the population limit and derive finite-sample error bounds under mixing time assumptions, following the analysis of classical statistical problems including regression (Nagaraj et al., 2020), principal component analysis (Kumar and Sarkar, 2023), and matrix concentration (Neeman et al., 2024) in the Markov setting. We complement that with a lower-bound construction showing that a mixing-time dependent sample complexity is unavoidable even with regular Gaussian conditional transitions. We evaluate on synthetic and real-world data. For image retrieval from electroencephalography (EEG) on THINGS-EEG2 (Gifford et al., 2022), the task is to identify the viewed image from EEG signals captured from human subjects, which suffers from high inter subject variability. We augment the ENIGMA decoder (Kneeland et al., 2026) with a conditional flow before its subject-specific temporal map. This improves mean top-5 retrieval accuracy from 43.87% to 49.05%, an 11.82% relative improvement."
+    },
+    {
+      "title": "Reward-Driven Learning under Prompt-Level Differential Privacy",
+      "authors": [
+        "Jiachen Zhao",
+        "Antonia Januszewicz",
+        "Taeho Jung"
+      ],
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) trains a language model on problems that may themselves be confidential, and the trained model can reveal which problems it saw. We study RLVR under prompt-level differential privacy: the released weights must be (ε,δ)-differentially private with respect to the presence of any one training problem. Taking the group of responses to one prompt as the privacy record, our method aggregates their gradients, clips the prompt's contribution once, adds Gaussian noise, and composes the privacy loss across updates, so the budget depends on neither the number of responses per prompt nor the clipping norm; to our knowledge this is the first differential privacy guarantee for RLVR training. We train Qwen2.5-1.5B-Instruct with LoRA at a per-run budget of ε=8 and compare, on the same prompts and at the same budget, a control that removes only the reward signal and two private supervised fine-tuning recipes. The reward signal improves accuracy over the control by 2.65 points on MATH and 3.24 on GSM8K, in every seed; the improvement survives a format-robust scorer, at 1.3 points on MATH, and is not explained by response length. At the same budget the private model outperforms both supervised recipes on MATH and GSM8K by 2.3 to 3.8 points, retains 85--90% of the gain of non-private GRPO on these tasks, and on MATH the noise of an eightfold tighter budget costs at most 1.2 points. The reward effect also carries to CommonsenseQA, an exploratory non-mathematical task. Verifier feedback thus remains a usable learning signal under prompt-level privacy.",
+      "published": "2026-10-05T18:26:21Z",
+      "updated": "2026-10-05T18:26:21Z",
+      "arxiv_id": "2610.07212v1",
+      "abs_url": "http://arxiv.org/abs/2610.07212v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07212v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "fine-tuning",
+        "LoRA",
+        "robust"
+      ],
+      "title_zh": "Reward-Driven Learning under Prompt-Level Differential Privacy",
+      "summary_zh": "Reinforcement learning with verifiable rewards (RLVR) trains a language model on problems that may themselves be confidential, and the trained model can reveal which problems it saw. We study RLVR under prompt-level differential privacy: the released weights must be (ε,δ)-differentially private with respect to the presence of any one training problem. Taking the group of responses to one prompt as the privacy record, our method aggregates their gradients, clips the prompt's contribution once, adds Gaussian noise, and composes the privacy loss across updates, so the budget depends on neither the number of responses per prompt nor the clipping norm; to our knowledge this is the first differential privacy guarantee for RLVR training. We train Qwen2.5-1.5B-Instruct with LoRA at a per-run budget of ε=8 and compare, on the same prompts and at the same budget, a control that removes only the reward signal and two private supervised fine-tuning recipes. The reward signal improves accuracy over the control by 2.65 points on MATH and 3.24 on GSM8K, in every seed; the improvement survives a format-robust scorer, at 1.3 points on MATH, and is not explained by response length. At the same budget the private model outperforms both supervised recipes on MATH and GSM8K by 2.3 to 3.8 points, retains 85--90% of the gain of non-private GRPO on these tasks, and on MATH the noise of an eightfold tighter budget costs at most 1.2 points. The reward effect also carries to CommonsenseQA, an exploratory non-mathematical task. Verifier feedback thus remains a usable learning signal under prompt-level privacy."
+    },
+    {
+      "title": "S2PD: Serial-to-Parallel Diffusion for Physically and Logically Consistent Video Generation",
+      "authors": [
+        "Jeffrey Hu",
+        "Daniel Olmeda Reino",
+        "Ayush Tewari"
+      ],
+      "summary": "Bidirectional video diffusion models denoise entire videos in parallel, yet when trained on effectively unlimited in-distribution data from procedural generators, continue to violate physical laws and simple symbolic rules. We introduce Serial-to-Parallel Diffusion (S2PD), which performs autoregressive diffusion at high noise before switching to parallel diffusion at low noise. The autoregressive phase provides the serial computation needed to coordinate interdependent events and produce valid state transitions while the parallel phase jointly refines the entire video and reduces sampling time relative to fully serial generation. We implement S2PD with two architectures: a pixel-space diffusion transformer trained from scratch and a pretrained video model adapted through LoRA fine-tuning with causal attention. Across games, physical simulations, and real video, S2PD follows rules more reliably than matched bidirectional baselines and generates videos with greater temporal stability and sampling efficiency than other serial methods.",
+      "published": "2026-10-05T17:59:35Z",
+      "updated": "2026-10-05T17:59:35Z",
+      "arxiv_id": "2610.06847v1",
+      "abs_url": "http://arxiv.org/abs/2610.06847v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06847v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Project Page: https://jefequien.github.io/S2PD/",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化"
+      ],
+      "topic": "图像生成与重建",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "fine-tuning",
+        "LoRA",
+        "transformer"
+      ],
+      "title_zh": "S2PD: Serial-to-Parallel Diffusion for Physically and Logically Consistent Video Generation",
+      "summary_zh": "Bidirectional video diffusion models denoise entire videos in parallel, yet when trained on effectively unlimited in-distribution data from procedural generators, continue to violate physical laws and simple symbolic rules. We introduce Serial-to-Parallel Diffusion (S2PD), which performs autoregressive diffusion at high noise before switching to parallel diffusion at low noise. The autoregressive phase provides the serial computation needed to coordinate interdependent events and produce valid state transitions while the parallel phase jointly refines the entire video and reduces sampling time relative to fully serial generation. We implement S2PD with two architectures: a pixel-space diffusion transformer trained from scratch and a pretrained video model adapted through LoRA fine-tuning with causal attention. Across games, physical simulations, and real video, S2PD follows rules more reliably than matched bidirectional baselines and generates videos with greater temporal stability and sampling efficiency than other serial methods."
+    },
+    {
+      "title": "Extending Dynamic World Surface Water Mapping to Sentinel-1 with AlphaEarth Embeddings",
+      "authors": [
+        "Rohit Mukherjee",
+        "Frederick Policelli",
+        "Beth Tellman",
+        "TC Chakraborty",
+        "Jonathan Giezendanner",
+        "Jonathan A. Sullivan",
+        "Ning Sun"
+      ],
+      "summary": "Dynamic World (DW) maps land use and land cover globally at 10 m from Sentinel-2 (S2) imagery, but only for cloud-free observations, which limits where and when surface water can be mapped. We use the DW water class as weak supervision for a Sentinel-1 (S1) synthetic aperture radar (SAR) model so that DW-like water maps can be produced for every S1 acquisition. Google's AlphaEarth Foundations (AEF) annual embedding supplies spatial context, while S1 backscatter supplies the acquisition-time observation. On 53 globally distributed scenes with independent annotations of 3 m PlanetScope imagery acquired within 48 h of the S1 overpass, the S1-only model already reaches a pooled water intersection over union (IoU) of 0.77, comparable to 0.75 for the operational OPERA DSWx-S1 product, and adding AEF raises it to 0.85. The fused model improves on the S1-only model on 44 of 53 scenes and exceeds OPERA on 48, and on the independent S1S2-Water benchmark it reaches 0.94, compared with 0.87 for OPERA. Optical land-cover products can thus provide scalable training labels for SAR surface water mapping.",
+      "published": "2026-10-05T17:01:41Z",
+      "updated": "2026-10-05T17:01:41Z",
+      "arxiv_id": "2610.06704v1",
+      "abs_url": "http://arxiv.org/abs/2610.06704v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06704v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "8 pages, 3 figures, 5 tables; includes 3 pages of supplementary material",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "场景分类",
+        "光学遥感",
+        "SAR遥感",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 8,
+      "anchor_terms": [
+        "SAR",
+        "Sentinel-1",
+        "Sentinel-2",
+        "synthetic aperture radar"
+      ],
+      "matched_terms": [
+        "land cover",
+        "land use",
+        "SAR",
+        "Sentinel-1",
+        "Sentinel-2",
+        "synthetic aperture radar"
+      ],
+      "title_zh": "Extending Dynamic World Surface Water Mapping to Sentinel-1 with AlphaEarth Embeddings",
+      "summary_zh": "Dynamic World (DW) maps land use and land cover globally at 10 m from Sentinel-2 (S2) imagery, but only for cloud-free observations, which limits where and when surface water can be mapped. We use the DW water class as weak supervision for a Sentinel-1 (S1) synthetic aperture radar (SAR) model so that DW-like water maps can be produced for every S1 acquisition. Google's AlphaEarth Foundations (AEF) annual embedding supplies spatial context, while S1 backscatter supplies the acquisition-time observation. On 53 globally distributed scenes with independent annotations of 3 m PlanetScope imagery acquired within 48 h of the S1 overpass, the S1-only model already reaches a pooled water intersection over union (IoU) of 0.77, comparable to 0.75 for the operational OPERA DSWx-S1 product, and adding AEF raises it to 0.85. The fused model improves on the S1-only model on 44 of 53 scenes and exceeds OPERA on 48, and on the independent S1S2-Water benchmark it reaches 0.94, compared with 0.87 for OPERA. Optical land-cover products can thus provide scalable training labels for SAR surface water mapping."
+    },
+    {
+      "title": "A Fine-Grained Analysis of the LoRA Fine-Tuning Landscape with Implications for Data Selection",
+      "authors": [
+        "Bowen Zhang",
+        "Changrui Fang",
+        "Xinsong Ma",
+        "Jiaye Teng",
+        "Ziye Ma"
+      ],
+      "summary": "Low-Rank Adaptation (LoRA) has become a standard approach for parameter-efficient fine-tuning, yet a fundamental practical question remains unresolved: how should the adapter rank be chosen? An overly small rank may lead to a poorly conditioned optimization landscape, whereas an unnecessarily large rank sacrifices the efficiency that motivates LoRA in the first place. Existing theoretical analyses provide only limited guidance on this trade-off, and their guarantees are typically established under restrictive theoretical settings. We address this gap by developing a substantially sharper landscape theory for LoRA, building on modern results from nonconvex low-rank matrix sensing. Our central insight is that the appropriate adapter rank should depend on the quality of the data-induced optimization geometry, rather than on the model alone. To formalize this connection, we introduce LoRA-RIP, a data-dependent restricted-isometry metric that characterizes the conditioning of the cross-entropy (CE) objective along LoRA-relevant low-rank directions. We prove that sufficient rank over-parameterization, with the required rank explicitly determined by the LoRA-RIP constant, eliminates spurious local minima, thereby extending existing RIP-based guarantees beyond the classical 1/3 regime. This characterization further enables principled data selection under a fixed rank budget. Experiments across language and vision tasks support these theoretical predictions, showing that rank and data quality are two coupled resources that should be jointly considered for more efficient and reliable LoRA fine-tuning.",
+      "published": "2026-10-05T15:39:08Z",
+      "updated": "2026-10-05T15:39:08Z",
+      "arxiv_id": "2610.06542v1",
+      "abs_url": "http://arxiv.org/abs/2610.06542v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06542v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "A Fine-Grained Analysis of the LoRA Fine-Tuning Landscape with Implications for Data Selection",
+      "summary_zh": "Low-Rank Adaptation (LoRA) has become a standard approach for parameter-efficient fine-tuning, yet a fundamental practical question remains unresolved: how should the adapter rank be chosen? An overly small rank may lead to a poorly conditioned optimization landscape, whereas an unnecessarily large rank sacrifices the efficiency that motivates LoRA in the first place. Existing theoretical analyses provide only limited guidance on this trade-off, and their guarantees are typically established under restrictive theoretical settings. We address this gap by developing a substantially sharper landscape theory for LoRA, building on modern results from nonconvex low-rank matrix sensing. Our central insight is that the appropriate adapter rank should depend on the quality of the data-induced optimization geometry, rather than on the model alone. To formalize this connection, we introduce LoRA-RIP, a data-dependent restricted-isometry metric that characterizes the conditioning of the cross-entropy (CE) objective along LoRA-relevant low-rank directions. We prove that sufficient rank over-parameterization, with the required rank explicitly determined by the LoRA-RIP constant, eliminates spurious local minima, thereby extending existing RIP-based guarantees beyond the classical 1/3 regime. This characterization further enables principled data selection under a fixed rank budget. Experiments across language and vision tasks support these theoretical predictions, showing that rank and data quality are two coupled resources that should be jointly considered for more efficient and reliable LoRA fine-tuning."
+    }
+  ]
+}
