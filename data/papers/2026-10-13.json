@@ -1,0 +1,1566 @@
+{
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T08:44:47.719007+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 36,
+  "papers": [
+    {
+      "title": "Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment",
+      "authors": [
+        "Ali Shibli",
+        "Andrea Nascetti",
+        "Yifang Ban"
+      ],
+      "summary": "Geospatial foundation models can support disaster damage assessment, but high accuracy on familiar disasters may hide shortcut learning: prediction from event or scene characteristics rather than evidence that transfers to a new disaster. We study embeddings from TerraMind, Prithvi-EO-2.0, DOFA, and DINOv3 on the multi-disaster datasets xView2 and BRIGHT. Holding out an entire disaster, instead of randomly splitting image tiles, reduces mean balanced accuracy from 0.807 to 0.638 on xView2 and from 0.818 to 0.568 on BRIGHT. Four sets of tests examine what information supports prediction: event and acquisition context, before/after image inputs, building count, and correct image pairing. Pre-event images remain predictive, and a classifier given only the annotated number of buildings reaches balanced accuracy of 0.629 and 0.653. Combining before/after features performs best on average on xView2, but does not improve over pre-only features on BRIGHT. Shuffling image pairs within the same disaster and damage class causes modest losses. Motivated by these findings, we test whether feature transformations learned only from training disasters improve generalization to unseen disasters. These transformations improve performance, with supervised contrastive learning performing best on xView2 and PCA on BRIGHT. Our results highlight the importance of evaluation on unseen domains for assessing model robustness and show that simple feature-level transformations can improve generalization. Code and experiments can be found at https://github.com/alishibli97/gfm-shortcut-learning.",
+      "published": "2026-10-09T15:50:49Z",
+      "updated": "2026-10-09T15:50:49Z",
+      "arxiv_id": "2610.13766v1",
+      "abs_url": "http://arxiv.org/abs/2610.13766v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13766v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "NeurIPS REO Workshop 2026",
+      "code_url": "https://github.com/alishibli97/gfm-shortcut-learning",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "目标检测",
+        "基础模型",
+        "无监督与弱监督",
+        "灾害与应急监测",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 22,
+      "anchor_terms": [
+        "foundation model",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model"
+      ],
+      "matched_terms": [
+        "contrastive learning",
+        "damage assessment",
+        "foundation model",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model",
+        "GFM",
+        "robust",
+        "xView"
+      ],
+      "title_zh": "Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment",
+      "summary_zh": "Geospatial foundation models can support disaster damage assessment, but high accuracy on familiar disasters may hide shortcut learning: prediction from event or scene characteristics rather than evidence that transfers to a new disaster. We study embeddings from TerraMind, Prithvi-EO-2.0, DOFA, and DINOv3 on the multi-disaster datasets xView2 and BRIGHT. Holding out an entire disaster, instead of randomly splitting image tiles, reduces mean balanced accuracy from 0.807 to 0.638 on xView2 and from 0.818 to 0.568 on BRIGHT. Four sets of tests examine what information supports prediction: event and acquisition context, before/after image inputs, building count, and correct image pairing. Pre-event images remain predictive, and a classifier given only the annotated number of buildings reaches balanced accuracy of 0.629 and 0.653. Combining before/after features performs best on average on xView2, but does not improve over pre-only features on BRIGHT. Shuffling image pairs within the same disaster and damage class causes modest losses. Motivated by these findings, we test whether feature transformations learned only from training disasters improve generalization to unseen disasters. These transformations improve performance, with supervised contrastive learning performing best on xView2 and PCA on BRIGHT. Our results highlight the importance of evaluation on unseen domains for assessing model robustness and show that simple feature-level transformations can improve generalization. Code and experiments can be found at https://github.com/alishibli97/gfm-shortcut-learning."
+    },
+    {
+      "title": "Not All Dimensions Are Equal: Outlier-Aware Attention Linearization with Grouped Quadratic Kernels",
+      "authors": [
+        "Weiqi Sun",
+        "Qianyue Wu",
+        "Wenjia Wang",
+        "Tianyang Hu"
+      ],
+      "summary": "Linearizing softmax attention offers a route to efficient Transformer inference, but preserving pretrained attention remains challenging. We identify an important source of approximation error overlooked by standard linearization methods: a small number of outlier dimensions contribute disproportionately to query-key dot products and account for a large fraction of the approximation error. Motivated by this heterogeneity, we propose Outlier-Aware Attention Linearization (OAL), a dimension-aware method for constructing quadratic attention approximations. Starting from a second-order Taylor approximation, we introduce a Hadamard-product formulation that makes individual query-key contributions explicit. This formulation relaxes globally shared coefficients to support dimension-specific linear terms and cross-dimensional quadratic interactions while preserving separable evaluation. To retain this flexibility with fewer parameters, OAL groups dimensions with similar contribution scales to share coefficients, while allowing distinct treatment of the few outliers. The resulting positive quadratic kernel is calibrated against pretrained attention outputs and admits linear-time evaluation with respect to sequence length for fixed head dimensions. On Qwen2.5-0.5B, OAL reduces frozen-attention output relative MSE by approximately 8.9% compared with DiJiang. Replacing middle-layer attention modules and jointly fine-tuning the kernel coefficients with LoRA further lowers WikiText-103 perplexity from 31.71 to 27.50 compared with a learned global quadratic, while improving accuracy on PIQA, HellaSwag, and ARC-E. These results demonstrate the value of outlier-aware dimension grouping for both attention approximation and pretrained-model conversion. The code is available at https://github.com/wuqianyue09/OAL",
+      "published": "2026-10-09T14:40:19Z",
+      "updated": "2026-10-09T14:40:19Z",
+      "arxiv_id": "2610.13674v1",
+      "abs_url": "http://arxiv.org/abs/2610.13674v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13674v1",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/wuqianyue09/OAL",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 3,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA",
+        "transformer"
+      ],
+      "title_zh": "Not All Dimensions Are Equal: Outlier-Aware Attention Linearization with Grouped Quadratic Kernels",
+      "summary_zh": "Linearizing softmax attention offers a route to efficient Transformer inference, but preserving pretrained attention remains challenging. We identify an important source of approximation error overlooked by standard linearization methods: a small number of outlier dimensions contribute disproportionately to query-key dot products and account for a large fraction of the approximation error. Motivated by this heterogeneity, we propose Outlier-Aware Attention Linearization (OAL), a dimension-aware method for constructing quadratic attention approximations. Starting from a second-order Taylor approximation, we introduce a Hadamard-product formulation that makes individual query-key contributions explicit. This formulation relaxes globally shared coefficients to support dimension-specific linear terms and cross-dimensional quadratic interactions while preserving separable evaluation. To retain this flexibility with fewer parameters, OAL groups dimensions with similar contribution scales to share coefficients, while allowing distinct treatment of the few outliers. The resulting positive quadratic kernel is calibrated against pretrained attention outputs and admits linear-time evaluation with respect to sequence length for fixed head dimensions. On Qwen2.5-0.5B, OAL reduces frozen-attention output relative MSE by approximately 8.9% compared with DiJiang. Replacing middle-layer attention modules and jointly fine-tuning the kernel coefficients with LoRA further lowers WikiText-103 perplexity from 31.71 to 27.50 compared with a learned global quadratic, while improving accuracy on PIQA, HellaSwag, and ARC-E. These results demonstrate the value of outlier-aware dimension grouping for both attention approximation and pretrained-model conversion. The code is available at https://github.com/wuqianyue09/OAL"
+    },
+    {
+      "title": "Benchmarking Answer-Grounding Consistency in Remote Sensing Visual Question Answering",
+      "authors": [
+        "Ping Guo",
+        "Zhiqi Huang",
+        "Xinran Li",
+        "Linkun Yu",
+        "Jingyin Pei",
+        "Kamata Seiichiro"
+      ],
+      "summary": "In grounded remote sensing visual question answering, a model produces a textual answer and identifies relevant objects in the image as grounding evidence. Existing evaluations measure answer correctness and localization quality, but do not directly assess answer-grounding consistency. We propose the Answer-Evidence Support Protocol (AESP) to assess this consistency through evidence support: whether the grounding evidence supports the model's own answer. AESP applies task-specific rules to existence, counting, and comparison questions. We further construct the Grounded Remote Sensing Visual Question Answering (G-RSVQA) benchmark, containing 15,027 samples with questions, reference answers, and all related object-level annotations. Experiments on seven grounded vision--language models reveal failures of evidence support across all three question types. Up to 50.82% of correct answers in the evidence evaluation subset are not supported by the provided grounding evidence.",
+      "published": "2026-10-09T14:15:50Z",
+      "updated": "2026-10-09T14:15:50Z",
+      "arxiv_id": "2610.13636v1",
+      "abs_url": "http://arxiv.org/abs/2610.13636v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13636v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Under review at ICASSP 2027. Code available at https://github.com/pingggg516/AESP-Evaluation",
+      "code_url": "https://github.com/pingggg516/AESP-Evaluation",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "图像描述与视觉推理",
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 4,
+      "anchor_terms": [
+        "remote sensing",
+        "visual question answering"
+      ],
+      "matched_terms": [
+        "remote sensing",
+        "visual question answering"
+      ],
+      "title_zh": "Benchmarking Answer-Grounding Consistency in Remote Sensing Visual Question Answering",
+      "summary_zh": "In grounded remote sensing visual question answering, a model produces a textual answer and identifies relevant objects in the image as grounding evidence. Existing evaluations measure answer correctness and localization quality, but do not directly assess answer-grounding consistency. We propose the Answer-Evidence Support Protocol (AESP) to assess this consistency through evidence support: whether the grounding evidence supports the model's own answer. AESP applies task-specific rules to existence, counting, and comparison questions. We further construct the Grounded Remote Sensing Visual Question Answering (G-RSVQA) benchmark, containing 15,027 samples with questions, reference answers, and all related object-level annotations. Experiments on seven grounded vision--language models reveal failures of evidence support across all three question types. Up to 50.82% of correct answers in the evidence evaluation subset are not supported by the provided grounding evidence."
+    },
+    {
+      "title": "Multi-Modal Graph Neural Network-Inspired Vessel Identification and Tracking for UAV-Based Maritime Surveillance",
+      "authors": [
+        "Chenjie Zhao",
+        "Jiangtian Nie",
+        "Jiawen Kang",
+        "Yuxu Lu",
+        "Ryan Wen Liu"
+      ],
+      "summary": "The unmanned aerial vehicle (UAV)-based maritime surveillance is becoming an important part of maritime Internet of Things (IoT) and intelligent transportation systems. It provides a flexible and cost-effective way to large-scale maritime traffic monitoring. However, achieving robust situational awareness remains challenging in practical maritime environments. The main challenges arise from heterogeneous sensing modalities, adverse imaging conditions, and spatial misalignment caused by UAV motion. To address these problems, this paper proposes an airborne multi-modal graph learning-driven framework, termed AMGT, for vessel identification and tracking in UAV-assisted maritime IoT. Specifically, visible and infrared images are first aligned and fused through a multi-parameter perspective transformation model. This improves visual perception under low visibility and complex illumination conditions. Automatic identification system (AIS) messages are then temporally synchronized using interpolation and linear prediction. To detect small and oriented vessels, we develop a mixed-modality MAir-YOLOv8-OBB detector, followed by the MAir-SORT algorithm for stable vessel tracking. We further design a graph learning-driven association network to model temporal dynamics and spatial dependencies among vessels and between vessels and UAVs. A motion-aware coordinate unification (MCU) strategy is also introduced to reduce nonlinear misalignment caused by UAV motion. Experiments on the MAP-M2UAV50 dataset show that AMGT achieves high accuracy and efficiency. The results demonstrate its potential for UAV-assisted maritime IoT applications, including vessel monitoring, traffic situational awareness, and intelligent maritime transportation services. The dataset and code will be available at https://github.com/MAPGroup/AMGT.",
+      "published": "2026-10-09T08:37:39Z",
+      "updated": "2026-10-09T08:37:39Z",
+      "arxiv_id": "2610.13220v1",
+      "abs_url": "http://arxiv.org/abs/2610.13220v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13220v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/MAPGroup/AMGT",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "目标检测",
+        "多模态融合",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 11,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "airborne",
+        "graph neural network",
+        "robust",
+        "UAV",
+        "unmanned aerial vehicle",
+        "YOLO"
+      ],
+      "title_zh": "Multi-Modal Graph Neural Network-Inspired Vessel Identification and Tracking for UAV-Based Maritime Surveillance",
+      "summary_zh": "The unmanned aerial vehicle (UAV)-based maritime surveillance is becoming an important part of maritime Internet of Things (IoT) and intelligent transportation systems. It provides a flexible and cost-effective way to large-scale maritime traffic monitoring. However, achieving robust situational awareness remains challenging in practical maritime environments. The main challenges arise from heterogeneous sensing modalities, adverse imaging conditions, and spatial misalignment caused by UAV motion. To address these problems, this paper proposes an airborne multi-modal graph learning-driven framework, termed AMGT, for vessel identification and tracking in UAV-assisted maritime IoT. Specifically, visible and infrared images are first aligned and fused through a multi-parameter perspective transformation model. This improves visual perception under low visibility and complex illumination conditions. Automatic identification system (AIS) messages are then temporally synchronized using interpolation and linear prediction. To detect small and oriented vessels, we develop a mixed-modality MAir-YOLOv8-OBB detector, followed by the MAir-SORT algorithm for stable vessel tracking. We further design a graph learning-driven association network to model temporal dynamics and spatial dependencies among vessels and between vessels and UAVs. A motion-aware coordinate unification (MCU) strategy is also introduced to reduce nonlinear misalignment caused by UAV motion. Experiments on the MAP-M2UAV50 dataset show that AMGT achieves high accuracy and efficiency. The results demonstrate its potential for UAV-assisted maritime IoT applications, including vessel monitoring, traffic situational awareness, and intelligent maritime transportation services. The dataset and code will be available at https://github.com/MAPGroup/AMGT."
+    },
+    {
+      "title": "Learning Representations to Guide Pixel Diffusion Transformers",
+      "authors": [
+        "Zihao Pan",
+        "Mengting Chen",
+        "Cheng Shi",
+        "Taihang Hu",
+        "Zhengrong Yue",
+        "Zikang Wang",
+        "Yuan Wang",
+        "Wei Li",
+        "Sibei Yang"
+      ],
+      "summary": "Visual representations are largely developed for understanding, yet what makes them useful for generation remains unclear. We study this question in pixel diffusion transformers and uncover two key insights. First, better representation quality does not necessarily translate into greater generative utility, as externally aligned semantics can be progressively lost during pixel synthesis. Second, architectural separation with specialized pixel decoders mainly redistributes semantic and spatial modeling, without necessarily yielding representations better suited to generation. These insights suggest that a useful generative representation must be both properly formed and actively exploited. Motivated by these insights, we introduce Representation Guidance (RG), which directly forms and exploits internal representations while retaining a plain Transformer architecture. A low-dimensional bottleneck forces generation-relevant information into a compact representation, which is then explicitly used to guide decoder generation by modifying the flow-matching target according to its induced prediction offset. RG learns clearer semantic and spatial structure while scaling efficiently in both parameters and computation. On ImageNet 256x256, RG-L/16 with only 459M parameters outperforms substantially larger pixel diffusion transformers, while RG-XL/16 achieves an FID of 1.55. RG further reaches an FID of 1.74 at 512x512 and extends to text-to-image generation, achieving 0.89 on GenEval and 87.1 on DPG-Bench.",
+      "published": "2026-10-09T04:23:13Z",
+      "updated": "2026-10-09T04:23:13Z",
+      "arxiv_id": "2610.12978v1",
+      "abs_url": "http://arxiv.org/abs/2610.12978v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12978v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "26 pages. Code: https://github.com/Pan-Zihao/Representation-Guidance Project page: https://pan-zihao.github.io/Representation-Guidance",
+      "code_url": "https://github.com/Pan-Zihao/Representation-Guidance",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 4,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation",
+        "transformer"
+      ],
+      "title_zh": "Learning Representations to Guide Pixel Diffusion Transformers",
+      "summary_zh": "Visual representations are largely developed for understanding, yet what makes them useful for generation remains unclear. We study this question in pixel diffusion transformers and uncover two key insights. First, better representation quality does not necessarily translate into greater generative utility, as externally aligned semantics can be progressively lost during pixel synthesis. Second, architectural separation with specialized pixel decoders mainly redistributes semantic and spatial modeling, without necessarily yielding representations better suited to generation. These insights suggest that a useful generative representation must be both properly formed and actively exploited. Motivated by these insights, we introduce Representation Guidance (RG), which directly forms and exploits internal representations while retaining a plain Transformer architecture. A low-dimensional bottleneck forces generation-relevant information into a compact representation, which is then explicitly used to guide decoder generation by modifying the flow-matching target according to its induced prediction offset. RG learns clearer semantic and spatial structure while scaling efficiently in both parameters and computation. On ImageNet 256x256, RG-L/16 with only 459M parameters outperforms substantially larger pixel diffusion transformers, while RG-XL/16 achieves an FID of 1.55. RG further reaches an FID of 1.74 at 512x512 and extends to text-to-image generation, achieving 0.89 on GenEval and 87.1 on DPG-Bench."
+    },
+    {
+      "title": "Structure-Aware Matching for Robust UAV Thermal-to-Satellite Geo-Localization",
+      "authors": [
+        "Chun Liu",
+        "Yuxin Wang",
+        "Zhenxiang Huo",
+        "Linlin Zhu",
+        "Tao Xu",
+        "Henggang Han"
+      ],
+      "summary": "UAV thermal-to-satellite geo-localization localizes UAVs by matching real-time thermal images against georeferenced satellite images, enabling autonomous navigation in GNSS-denied and low-visibility conditions. However, substantial cross-modal disparities in color, brightness and viewpoint hinder conventional appearance-based methods from establishing reliable correspondences. While existing approaches predominantly address global modality shifts, they overlook the invariant scene structures inherently shared between thermal and satellite views. To bridge this gap, we propose SAMF, a Structure-Aware Matching Framework that explicitly exploits stable cross-modal structural cues to improve UAV thermal geolocalization. Specifically, the Directional Structure Enhancement Module (DSEM) strengthens robust structural representations by capturing directional and low-frequency spatial patterns, and the Modality-Aware Affine Remapping Module (MARM) subsequently applies affine correction to these enhanced features, further promoting cross-modal alignment. Additionally, we introduce the Thermal-UAV-Paired benchmark derived from the Thermal-UAV dataset. Extensive experiments on both the Boson-nighttime and Thermal-UAV-Paired datasets show that SAMF achieves state-of-the-art performance. Ablation studies further validate the effectiveness and synergistic complementarity of DSEM and MARM. The code and dataset are released at: https://github.com/YuxinWang879/SAMF.git.",
+      "published": "2026-10-09T00:38:22Z",
+      "updated": "2026-10-09T00:38:22Z",
+      "arxiv_id": "2610.12835v1",
+      "abs_url": "http://arxiv.org/abs/2610.12835v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12835v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/YuxinWang879/SAMF.git",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "多模态融合",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "多模态融合",
+      "score": 8,
+      "anchor_terms": [
+        "satellite image",
+        "satellite images",
+        "UAV"
+      ],
+      "matched_terms": [
+        "robust",
+        "satellite",
+        "satellite image",
+        "satellite images",
+        "UAV"
+      ],
+      "title_zh": "Structure-Aware Matching for Robust UAV Thermal-to-Satellite Geo-Localization",
+      "summary_zh": "UAV thermal-to-satellite geo-localization localizes UAVs by matching real-time thermal images against georeferenced satellite images, enabling autonomous navigation in GNSS-denied and low-visibility conditions. However, substantial cross-modal disparities in color, brightness and viewpoint hinder conventional appearance-based methods from establishing reliable correspondences. While existing approaches predominantly address global modality shifts, they overlook the invariant scene structures inherently shared between thermal and satellite views. To bridge this gap, we propose SAMF, a Structure-Aware Matching Framework that explicitly exploits stable cross-modal structural cues to improve UAV thermal geolocalization. Specifically, the Directional Structure Enhancement Module (DSEM) strengthens robust structural representations by capturing directional and low-frequency spatial patterns, and the Modality-Aware Affine Remapping Module (MARM) subsequently applies affine correction to these enhanced features, further promoting cross-modal alignment. Additionally, we introduce the Thermal-UAV-Paired benchmark derived from the Thermal-UAV dataset. Extensive experiments on both the Boson-nighttime and Thermal-UAV-Paired datasets show that SAMF achieves state-of-the-art performance. Ablation studies further validate the effectiveness and synergistic complementarity of DSEM and MARM. The code and dataset are released at: https://github.com/YuxinWang879/SAMF.git."
+    },
+    {
+      "title": "From Surface to Depth: Towards Cognitive Appraisal Reasoning in Multimodal Emotion Understanding",
+      "authors": [
+        "Jia Li",
+        "Yichao He",
+        "Yangchen Yu",
+        "Qiankun Li",
+        "Xinyi Li",
+        "Baiyi Ye",
+        "Zhenzhen Hu",
+        "Richang Hong",
+        "Erik Cambria"
+      ],
+      "summary": "Recent multimodal large language models (MLLMs) increasingly incorporate explainable reasoning for emotion understanding. However, reasoning based mainly on observable affective cues can reduce emotion understanding to superficial cue-label associations, giving rise to the Clever Hans effect. Such shortcuts become unreliable when affective cues are implicit, conflicting across modalities, linguistically misleading, or obscured by redundant details. In contrast, human emotions are shaped by how individuals interpret and evaluate surrounding events beyond observable cues. Inspired by appraisal theories of emotion, we formulate multimodal emotion understanding as a progression from perception to cognitive appraisal, and introduce a dataset, a model, and a benchmark to support this novel paradigm. CogEmo-40K is a large-scale instruction-tuning dataset constructed through a perception-to-appraisal pipeline to elicit evidence-grounded reasoning across six cognitive appraisal dimensions underlying emotion. CogEmo-MoE is a compact sparse MLLM that introduces interleaved MoE blocks for appraisal-specific adaptation, enabling effective appraisal reasoning at a substantially smaller scale than typical emotion MLLMs. CogEmo-Bench introduces an Appraisal Evidence Quality Score (AEQS) to assess cognitive-affective understanding across six complementary appraisal dimensions, addressing the limitation of conventional emotion metrics that evaluate what emotion is predicted but not why it arises. Extensive experiments show that our paradigm not only leads CogEmo-Bench, but also exhibits strong cross-domain generalization. Our findings suggest that perception-to-appraisal reasoning can move beyond surface-level cue-label associations toward more reliable multimodal emotion understanding and closer cognitive alignment between MLLMs and humans.",
+      "published": "2026-10-08T13:14:39Z",
+      "updated": "2026-10-08T13:14:39Z",
+      "arxiv_id": "2610.11918v1",
+      "abs_url": "http://arxiv.org/abs/2610.11918v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.11918v1",
+      "primary_category": "cs.MM",
+      "categories": [
+        "cs.MM",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "comment": "34 pages, 10 figures, Project page: https://github.com/MSA-LMC/CogEmo",
+      "code_url": "https://github.com/MSA-LMC/CogEmo",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 4,
+      "anchor_terms": [
+        "domain generalization"
+      ],
+      "matched_terms": [
+        "domain generalization",
+        "large language model",
+        "MLLM",
+        "multimodal large language model"
+      ],
+      "title_zh": "From Surface to Depth: Towards Cognitive Appraisal Reasoning in Multimodal Emotion Understanding",
+      "summary_zh": "Recent multimodal large language models (MLLMs) increasingly incorporate explainable reasoning for emotion understanding. However, reasoning based mainly on observable affective cues can reduce emotion understanding to superficial cue-label associations, giving rise to the Clever Hans effect. Such shortcuts become unreliable when affective cues are implicit, conflicting across modalities, linguistically misleading, or obscured by redundant details. In contrast, human emotions are shaped by how individuals interpret and evaluate surrounding events beyond observable cues. Inspired by appraisal theories of emotion, we formulate multimodal emotion understanding as a progression from perception to cognitive appraisal, and introduce a dataset, a model, and a benchmark to support this novel paradigm. CogEmo-40K is a large-scale instruction-tuning dataset constructed through a perception-to-appraisal pipeline to elicit evidence-grounded reasoning across six cognitive appraisal dimensions underlying emotion. CogEmo-MoE is a compact sparse MLLM that introduces interleaved MoE blocks for appraisal-specific adaptation, enabling effective appraisal reasoning at a substantially smaller scale than typical emotion MLLMs. CogEmo-Bench introduces an Appraisal Evidence Quality Score (AEQS) to assess cognitive-affective understanding across six complementary appraisal dimensions, addressing the limitation of conventional emotion metrics that evaluate what emotion is predicted but not why it arises. Extensive experiments show that our paradigm not only leads CogEmo-Bench, but also exhibits strong cross-domain generalization. Our findings suggest that perception-to-appraisal reasoning can move beyond surface-level cue-label associations toward more reliable multimodal emotion understanding and closer cognitive alignment between MLLMs and humans."
+    },
+    {
+      "title": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
+      "authors": [
+        "Bhanu Tokas",
+        "Rahul Nair",
+        "Rockwell Jackson",
+        "Hannah Kerner"
+      ],
+      "summary": "Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret models using human-understandable concepts. Existing concept-based methods can only interpret classification and regression models. They require access to model weights or large concept-annotated datasets, and most methods cannot provide image-level attribution. We propose Hide and Seek (HnS), a new method for concept-level attribution that does not require access to model weights or labeled concept datasets. HnS can interpret a wide range of vision models. Given a concept and image set, HnS retrieves concept-aligned images using a vision-language model, localizes the concept within each image, masks the localized region, and measures attribution from the change in the black-box model's output between the original and masked images. This enables faithful attribution by directly measuring the model's behavior and supporting local attributions. We validated HnS on CelebA and COCO-Stuff. Compared to existing methods, HnS showed better agreement with ground-truth attributions. We demonstrated the applicability of HnS on diverse tasks, including image captioning and satellite image segmentation, where no existing concept attribution method can be used. We provided our anonymous code in the supplementary material.",
+      "published": "2026-10-09T17:56:59Z",
+      "updated": "2026-10-09T17:56:59Z",
+      "arxiv_id": "2610.13935v1",
+      "abs_url": "http://arxiv.org/abs/2610.13935v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13935v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 4,
+      "anchor_terms": [
+        "image captioning",
+        "satellite image"
+      ],
+      "matched_terms": [
+        "image captioning",
+        "satellite",
+        "satellite image"
+      ],
+      "title_zh": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
+      "summary_zh": "Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret models using human-understandable concepts. Existing concept-based methods can only interpret classification and regression models. They require access to model weights or large concept-annotated datasets, and most methods cannot provide image-level attribution. We propose Hide and Seek (HnS), a new method for concept-level attribution that does not require access to model weights or labeled concept datasets. HnS can interpret a wide range of vision models. Given a concept and image set, HnS retrieves concept-aligned images using a vision-language model, localizes the concept within each image, masks the localized region, and measures attribution from the change in the black-box model's output between the original and masked images. This enables faithful attribution by directly measuring the model's behavior and supporting local attributions. We validated HnS on CelebA and COCO-Stuff. Compared to existing methods, HnS showed better agreement with ground-truth attributions. We demonstrated the applicability of HnS on diverse tasks, including image captioning and satellite image segmentation, where no existing concept attribution method can be used. We provided our anonymous code in the supplementary material."
+    },
+    {
+      "title": "Revisiting the Task of Building Damage Assessment by Satellite Imaging",
+      "authors": [
+        "Anthony Cioppa",
+        "Virgile Blua",
+        "Sébastien Piérard",
+        "Pietro Ceccato",
+        "Marc Van Droogenbroeck"
+      ],
+      "summary": "Natural disasters such as earthquakes, tropical storms, and floods cause extensive damage to buildings, and rapid, reliable damage maps are essential to guide emergency response. Automating this task, referred to as building damage assessment (BDA), from satellite imagery, has become an active research topic at the intersection of remote sensing, computer vision, and machine learning, particularly since supervised deep learning methods were shown to outperform earlier handcrafted approaches. Yet, despite a decade of intense activity and the release of several large-scale datasets, the field lacks a shared foundation. This chapter revisits the task of BDA from first principles, organized around three pillars: data, evaluation, and methods. We first clarify the candidate task for- mulations and argue for a sensor-agnostic, instance-based definition that tolerates missing pre-event imagery. We then review existing datasets along the axes of sensing modality, temporal configuration, and geographic coverage. On the evaluation side, we show that prevailing practices, largely based on a single aggregate score, are theoretically fragile, and we lay the foundations of a more informative, ranking-based, multi-score protocol. We further review methods ranging from task-specific deep networks to recent Earth observation foundation models, noticing that generalization to unseen events and regions remains an open difficulty. Finally, we discuss how these elements can inform the organization of a BDA challenge, including cross-validation, challenge, and private data-sharing setups designed to build trust between developers and users.",
+      "published": "2026-10-09T17:07:03Z",
+      "updated": "2026-10-09T17:07:03Z",
+      "arxiv_id": "2610.13857v1",
+      "abs_url": "http://arxiv.org/abs/2610.13857v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13857v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "82 pages, 2 figures, 9 tables, 160 references",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "灾害与应急监测",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 14,
+      "anchor_terms": [
+        "earth observation",
+        "earth observation foundation model",
+        "flood",
+        "foundation model",
+        "remote sensing",
+        "satellite image",
+        "satellite imagery",
+        "temporal"
+      ],
+      "matched_terms": [
+        "damage assessment",
+        "earth observation",
+        "earth observation foundation model",
+        "flood",
+        "foundation model",
+        "remote sensing",
+        "satellite",
+        "satellite image",
+        "satellite imagery",
+        "temporal"
+      ],
+      "title_zh": "Revisiting the Task of Building Damage Assessment by Satellite Imaging",
+      "summary_zh": "Natural disasters such as earthquakes, tropical storms, and floods cause extensive damage to buildings, and rapid, reliable damage maps are essential to guide emergency response. Automating this task, referred to as building damage assessment (BDA), from satellite imagery, has become an active research topic at the intersection of remote sensing, computer vision, and machine learning, particularly since supervised deep learning methods were shown to outperform earlier handcrafted approaches. Yet, despite a decade of intense activity and the release of several large-scale datasets, the field lacks a shared foundation. This chapter revisits the task of BDA from first principles, organized around three pillars: data, evaluation, and methods. We first clarify the candidate task for- mulations and argue for a sensor-agnostic, instance-based definition that tolerates missing pre-event imagery. We then review existing datasets along the axes of sensing modality, temporal configuration, and geographic coverage. On the evaluation side, we show that prevailing practices, largely based on a single aggregate score, are theoretically fragile, and we lay the foundations of a more informative, ranking-based, multi-score protocol. We further review methods ranging from task-specific deep networks to recent Earth observation foundation models, noticing that generalization to unseen events and regions remains an open difficulty. Finally, we discuss how these elements can inform the organization of a BDA challenge, including cross-validation, challenge, and private data-sharing setups designed to build trust between developers and users."
+    },
+    {
+      "title": "Dream to Remember: Continual Steering of Generalist Robot Policies with World Models",
+      "authors": [
+        "Bahey Tharwat",
+        "Iman Nematollahi",
+        "Marvin Alles",
+        "Xingyuan Zhang",
+        "Akshay L Chandra",
+        "Abhinav Valada"
+      ],
+      "summary": "Generalist robot policies are trained with imitation learning and are bounded by the quality and coverage of their demonstrations. Reinforcement learning can improve and extend them, either by fine-tuning the policy weights or by training a small module to steer the input noise of a frozen generative policy. When tasks arrive sequentially, both approaches suffer from catastrophic forgetting. Fine-tuning on a task degrades prior tasks, and steering only shifts forgetting to the shared steering module. We propose Dream to Remember (D2R), which continually steers a frozen generalist policy toward new tasks, while retaining its earlier skills. As the steering module learns a new task, a frozen pretrained world model rehearses prior tasks through imagined rollouts, anchoring the module to its earlier behavior without a replay buffer or new data. When the world model is faithful enough, D2R learns the new task entirely in imagination. Otherwise, it learns the task in the environment while using the world model only to rehearse prior tasks. On CALVIN, D2R improves eight tasks in sequence entirely in imagination, raising average success from 63.7% to 74.8%, while LoRA fine-tuning on the same sequence drops it to 11.7%. With a frozen off-the-shelf generalist policy and world model, $π_0$ and A2World, D2R learns unseen LIBERO-90 tasks in the environment while keeping $π_0$'s performance on the LIBERO suites it was fine-tuned on, even though the world model is not accurate enough for policy optimization. Finally, on a real Franka robot, D2R improves three tasks in sequence entirely in imagination while retaining the earlier improvements.",
+      "published": "2026-10-09T16:28:01Z",
+      "updated": "2026-10-09T16:28:01Z",
+      "arxiv_id": "2610.13816v1",
+      "abs_url": "http://arxiv.org/abs/2610.13816v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13816v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Dream to Remember: Continual Steering of Generalist Robot Policies with World Models",
+      "summary_zh": "Generalist robot policies are trained with imitation learning and are bounded by the quality and coverage of their demonstrations. Reinforcement learning can improve and extend them, either by fine-tuning the policy weights or by training a small module to steer the input noise of a frozen generative policy. When tasks arrive sequentially, both approaches suffer from catastrophic forgetting. Fine-tuning on a task degrades prior tasks, and steering only shifts forgetting to the shared steering module. We propose Dream to Remember (D2R), which continually steers a frozen generalist policy toward new tasks, while retaining its earlier skills. As the steering module learns a new task, a frozen pretrained world model rehearses prior tasks through imagined rollouts, anchoring the module to its earlier behavior without a replay buffer or new data. When the world model is faithful enough, D2R learns the new task entirely in imagination. Otherwise, it learns the task in the environment while using the world model only to rehearse prior tasks. On CALVIN, D2R improves eight tasks in sequence entirely in imagination, raising average success from 63.7% to 74.8%, while LoRA fine-tuning on the same sequence drops it to 11.7%. With a frozen off-the-shelf generalist policy and world model, $π_0$ and A2World, D2R learns unseen LIBERO-90 tasks in the environment while keeping $π_0$'s performance on the LIBERO suites it was fine-tuned on, even though the world model is not accurate enough for policy optimization. Finally, on a real Franka robot, D2R improves three tasks in sequence entirely in imagination while retaining the earlier improvements."
+    },
+    {
+      "title": "CUBE: Class-conditioned Unknown Boundary Evidence for Open-Set Insect Species Recognition",
+      "authors": [
+        "Hao Tan",
+        "Qimin Zhang",
+        "Zhe Xiao",
+        "Zekai Zuo",
+        "Wanting Liu",
+        "Jinghui Qin"
+      ],
+      "summary": "Open-set insect species recognition faces significant challenges when deployed in real-world biodiversity scenarios, particularly when encountering unknown species that are visually close to known training classes. Unlike generic out-of-distribution samples, fine-grained unknown insects are often not visually anomalous. They instead tend to appear near the decision boundary of specific known species, leading to unreliable closed-set predictions. To address these challenges, we propose \\textbf{Class-conditioned Unknown Boundary Evidence (CUBE)}, a novel evidence-based framework that models unknownness around each known species rather than as a single global unknown class. Our key idea is to evaluate a test sample relative to the known species it most closely resembles, enabling local rejection for visually confusable unknown insects. CUBE learns class-conditioned boundary evidence from auxiliary species, preserves auxiliary species as shadow references during inference, and incorporates taxonomic candidate calibration to verify biological plausibility. When ecological metadata is available, we further introduce CUBE-E, which adds a lightweight location-consistency term without modifying the visual backbone. Experiments on the Open-Insect C-America benchmark show that CUBE achieves superior performance, outperforming state-of-the-art baselines with 95.8\\%, 98.7\\%, and 99.1\\% AUROC on local, non-local, and non-moth unknown splits, respectively, while maintaining 94.9\\% closed-set accuracy. With ecological metadata, CUBE-E further improves the results to 96.0\\%, 99.7\\%, and 99.5\\% AUROC with 95.2\\% closed-set accuracy.",
+      "published": "2026-10-09T13:57:13Z",
+      "updated": "2026-10-09T13:57:13Z",
+      "arxiv_id": "2610.13610v1",
+      "abs_url": "http://arxiv.org/abs/2610.13610v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13610v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "5 pages, 1 figure, 3 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "开放词汇与开放集",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 3,
+      "anchor_terms": [
+        "open-set"
+      ],
+      "matched_terms": [
+        "open-set"
+      ],
+      "title_zh": "CUBE: Class-conditioned Unknown Boundary Evidence for Open-Set Insect Species Recognition",
+      "summary_zh": "Open-set insect species recognition faces significant challenges when deployed in real-world biodiversity scenarios, particularly when encountering unknown species that are visually close to known training classes. Unlike generic out-of-distribution samples, fine-grained unknown insects are often not visually anomalous. They instead tend to appear near the decision boundary of specific known species, leading to unreliable closed-set predictions. To address these challenges, we propose \\textbf{Class-conditioned Unknown Boundary Evidence (CUBE)}, a novel evidence-based framework that models unknownness around each known species rather than as a single global unknown class. Our key idea is to evaluate a test sample relative to the known species it most closely resembles, enabling local rejection for visually confusable unknown insects. CUBE learns class-conditioned boundary evidence from auxiliary species, preserves auxiliary species as shadow references during inference, and incorporates taxonomic candidate calibration to verify biological plausibility. When ecological metadata is available, we further introduce CUBE-E, which adds a lightweight location-consistency term without modifying the visual backbone. Experiments on the Open-Insect C-America benchmark show that CUBE achieves superior performance, outperforming state-of-the-art baselines with 95.8\\%, 98.7\\%, and 99.1\\% AUROC on local, non-local, and non-moth unknown splits, respectively, while maintaining 94.9\\% closed-set accuracy. With ecological metadata, CUBE-E further improves the results to 96.0\\%, 99.7\\%, and 99.5\\% AUROC with 95.2\\% closed-set accuracy."
+    },
+    {
+      "title": "MOSAIC: Multi-Scale Object-Centric Slot Adaptation with Image-Guided Prototype Conditioning for Remote Sensing Image Super-Resolution",
+      "authors": [
+        "Liuqian Wang",
+        "Hanyu Xie",
+        "Rongzhen Zhao",
+        "Qi Ming",
+        "Chunjie Ma",
+        "Wentao Chao",
+        "Yufei Gao",
+        "Chengming Liu",
+        "Lei Shi"
+      ],
+      "summary": "Pretrained diffusion Transformers provide powerful generative priors for image restoration, yet adapting them to structure-sensitive tasks remains challenging. Existing methods mainly rely on dense low-resolution features as conditions, which often entangle salient objects with dominant backgrounds and provide limited abstraction for recurring structures across scales and samples. We propose MOSAIC, an object-centric representation learning framework that learns compact structural conditions for generative model adaptation. MOSAIC organizes degraded observations into structural slots that capture complementary object-level and layout-level evidence, integrates them across resolutions, and retrieves recurring priors from a shared prototype memory to complement incomplete image-specific information. The resulting representations are injected into selected layers of a frozen diffusion Transformer through lightweight residual modulation, preserving its pretrained generative prior. We instantiate MOSAIC for remote sensing image super-resolution, where small objects, repetitive structures, and large-scale variation provide a challenging testbed. Experiments on UCMerced, AID, and RSSCN7 show consistent PSNR improvements across $\\times 2$ and $\\times 4$ settings and favorable LPIPS results at $\\times 4$. Qualitative results further demonstrate improved preservation of small objects, structural boundaries, and repetitive spatial patterns.",
+      "published": "2026-10-09T13:03:57Z",
+      "updated": "2026-10-09T13:03:57Z",
+      "arxiv_id": "2610.13547v1",
+      "abs_url": "http://arxiv.org/abs/2610.13547v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13547v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "场景分类",
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 12,
+      "anchor_terms": [
+        "remote sensing",
+        "small object",
+        "super-resolution"
+      ],
+      "matched_terms": [
+        "AID",
+        "image restoration",
+        "multi-scale",
+        "remote sensing",
+        "small object",
+        "super-resolution",
+        "transformer"
+      ],
+      "title_zh": "MOSAIC: Multi-Scale Object-Centric Slot Adaptation with Image-Guided Prototype Conditioning for Remote Sensing Image Super-Resolution",
+      "summary_zh": "Pretrained diffusion Transformers provide powerful generative priors for image restoration, yet adapting them to structure-sensitive tasks remains challenging. Existing methods mainly rely on dense low-resolution features as conditions, which often entangle salient objects with dominant backgrounds and provide limited abstraction for recurring structures across scales and samples. We propose MOSAIC, an object-centric representation learning framework that learns compact structural conditions for generative model adaptation. MOSAIC organizes degraded observations into structural slots that capture complementary object-level and layout-level evidence, integrates them across resolutions, and retrieves recurring priors from a shared prototype memory to complement incomplete image-specific information. The resulting representations are injected into selected layers of a frozen diffusion Transformer through lightweight residual modulation, preserving its pretrained generative prior. We instantiate MOSAIC for remote sensing image super-resolution, where small objects, repetitive structures, and large-scale variation provide a challenging testbed. Experiments on UCMerced, AID, and RSSCN7 show consistent PSNR improvements across $\\times 2$ and $\\times 4$ settings and favorable LPIPS results at $\\times 4$. Qualitative results further demonstrate improved preservation of small objects, structural boundaries, and repetitive spatial patterns."
+    },
+    {
+      "title": "Knowing Whether, Not Just Where: Anchor-Probing Distillation for Open-Set Remote Sensing Visual Grounding",
+      "authors": [
+        "Zhihao Chang",
+        "Lei Zhai",
+        "Shuyuan Yang",
+        "Zhixi Feng"
+      ],
+      "summary": "Open-set visual grounding in remote sensing requires models to determine not only where a queried object is located, but also whether the image provides sufficient evidence for the query at all. Existing closed-set grounding models, however, tend to return plausible boxes even for absent objects, blurring localization confidence with genuine Visual Support. We introduce AnchorProbe-Distill (APD), a teacher-student framework that recasts open-set grounding as Visual Support learning. APD builds on the insight that supported queries should induce coherent spatial anchors, whereas unsupported or mismatched queries tend to produce unstable or misleading localization patterns. APD-T therefore uses the Original Query as a Reference Anchor to interpret query perturbations: Semantic-Preserving Queries retain the annotated target, Near-Category Ambiguous Queries are resolved according to whether they form a reliable alternative anchor or collapse onto the Reference Anchor, and Far-Category Counterfactual Queries provide rejection supervision. This reference-aware reasoning is distilled into APD-S, enabling unified localization and rejection from a single image--query pair. Experiments show that APD enables the resulting model to reject absent targets while also improving its localization of present targets.",
+      "published": "2026-10-09T12:55:42Z",
+      "updated": "2026-10-09T12:55:42Z",
+      "arxiv_id": "2610.13535v1",
+      "abs_url": "http://arxiv.org/abs/2610.13535v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13535v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "开放词汇与开放集",
+        "图像描述与视觉推理",
+        "视觉-语言模型"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 18,
+      "anchor_terms": [
+        "open-set",
+        "open-set remote sensing",
+        "remote sensing",
+        "remote sensing visual grounding",
+        "visual grounding"
+      ],
+      "matched_terms": [
+        "open-set",
+        "open-set remote sensing",
+        "remote sensing",
+        "remote sensing visual grounding",
+        "visual grounding"
+      ],
+      "title_zh": "Knowing Whether, Not Just Where: Anchor-Probing Distillation for Open-Set Remote Sensing Visual Grounding",
+      "summary_zh": "Open-set visual grounding in remote sensing requires models to determine not only where a queried object is located, but also whether the image provides sufficient evidence for the query at all. Existing closed-set grounding models, however, tend to return plausible boxes even for absent objects, blurring localization confidence with genuine Visual Support. We introduce AnchorProbe-Distill (APD), a teacher-student framework that recasts open-set grounding as Visual Support learning. APD builds on the insight that supported queries should induce coherent spatial anchors, whereas unsupported or mismatched queries tend to produce unstable or misleading localization patterns. APD-T therefore uses the Original Query as a Reference Anchor to interpret query perturbations: Semantic-Preserving Queries retain the annotated target, Near-Category Ambiguous Queries are resolved according to whether they form a reliable alternative anchor or collapse onto the Reference Anchor, and Far-Category Counterfactual Queries provide rejection supervision. This reference-aware reasoning is distilled into APD-S, enabling unified localization and rejection from a single image--query pair. Experiments show that APD enables the resulting model to reject absent targets while also improving its localization of present targets."
+    },
+    {
+      "title": "Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics",
+      "authors": [
+        "Filipe Moura Da Silva",
+        "Cláubio Landney Lima Bandeira"
+      ],
+      "summary": "Forecasting desertification has received far less attention than mapping it. We use a convolutional LSTM (ConvLSTM) trained on ten annual Earth Observation (EO) variables (2000-2023) over the semi-arid state of Ceará, Brazil, on a 256x206 grid at roughly 2.2 km resolution, to measure how much of the year-to-year evolution of a MapBiomas-derived degradation index (IDV) can be predicted from satellite data. The network predicts a bounded change on top of the last observed state, is trained in two stages (single-step, then recursive rollout) and is evaluated on a contiguous spatial and temporal holdout. State-wide mean IDV rose from 0.238 to 0.350 between 2000 and 2023, about 0.005 per year, but cell-level change is dominated by year-to-year jumps, and a gradient-boosting model given all channels explains only 4.7% of its variance. Against this ceiling, the ConvLSTM lowers RMSE relative to persistence by 1.6% one year ahead and 4.4% four years ahead in a held-out southern band (p < 0.001), beats persistence with a constant drift and reproduces 53-69% of the regional drift. Drift-aware baselines only help from the third year onward, by up to 4.4% in RMSE at six years. An earlier formulation that redrew the whole field each year predicted changes unrelated to the observed ones (correlation -0.06) and produced a spurious decline when run recursively. Channel knockouts suggest that elevation and EVI degrade the forecast, while slope and aspect have no measurable effect. Monte Carlo dropout and stochastic scenario maps convey the uncertainty that the expected-value forecast hides. Under climatological forcing, mean IDV rises from 0.350 in 2023 to 0.370 in 2030. EO-based desertification forecasting is therefore reliable for the regional trend, not for individual cells.",
+      "published": "2026-10-09T11:20:07Z",
+      "updated": "2026-10-09T11:20:07Z",
+      "arxiv_id": "2610.13406v1",
+      "abs_url": "http://arxiv.org/abs/2610.13406v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13406v1",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.LG"
+      ],
+      "comment": "14 pages, 10 figures, 7 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "农业与生态"
+      ],
+      "topic": "农业与生态",
+      "score": 6,
+      "anchor_terms": [
+        "earth observation",
+        "temporal"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "satellite",
+        "temporal"
+      ],
+      "title_zh": "Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics",
+      "summary_zh": "Forecasting desertification has received far less attention than mapping it. We use a convolutional LSTM (ConvLSTM) trained on ten annual Earth Observation (EO) variables (2000-2023) over the semi-arid state of Ceará, Brazil, on a 256x206 grid at roughly 2.2 km resolution, to measure how much of the year-to-year evolution of a MapBiomas-derived degradation index (IDV) can be predicted from satellite data. The network predicts a bounded change on top of the last observed state, is trained in two stages (single-step, then recursive rollout) and is evaluated on a contiguous spatial and temporal holdout. State-wide mean IDV rose from 0.238 to 0.350 between 2000 and 2023, about 0.005 per year, but cell-level change is dominated by year-to-year jumps, and a gradient-boosting model given all channels explains only 4.7% of its variance. Against this ceiling, the ConvLSTM lowers RMSE relative to persistence by 1.6% one year ahead and 4.4% four years ahead in a held-out southern band (p < 0.001), beats persistence with a constant drift and reproduces 53-69% of the regional drift. Drift-aware baselines only help from the third year onward, by up to 4.4% in RMSE at six years. An earlier formulation that redrew the whole field each year predicted changes unrelated to the observed ones (correlation -0.06) and produced a spurious decline when run recursively. Channel knockouts suggest that elevation and EVI degrade the forecast, while slope and aspect have no measurable effect. Monte Carlo dropout and stochastic scenario maps convey the uncertainty that the expected-value forecast hides. Under climatological forcing, mean IDV rises from 0.350 in 2023 to 0.370 in 2030. EO-based desertification forecasting is therefore reliable for the regional trend, not for individual cells."
+    },
+    {
+      "title": "PlacePulse: Learning Transferable Place Representations from Structural Geographic Data",
+      "authors": [
+        "Lucía García-Duarte",
+        "Miguel Álvarez",
+        "Diego Vicente",
+        "Javier Pérez Trufero",
+        "Javier de la Torre"
+      ],
+      "summary": "Geospatial machine learning often depends on task-specific feature engineering over large collections of sociodemographic, business, and environmental variables. Geospatial foundation models offer reusable representations of place, but leading approaches typically encode dynamic signals, such as mobility and search activity, or visual signals from satellite imagery. Few models represent the static structural composition of places (who lives and works there, which businesses operate there, and which risks they face) as transferable embeddings at fine spatial resolution. We introduce PlacePulse, a structural geospatial foundation model that compresses 572 attributes, expanded to 2,288 inputs through H3 neighborhood aggregates, into 256-dimensional unit-norm embeddings for 1,055,537 H3 resolution-7 cells in the United States. We also introduce a reusable two-axis benchmark that separates intrinsic representation quality from downstream predictive utility across multiple targets and spatial supports. Intrinsically, the embeddings reconstruct standardized inputs with mean $R^2 = 0.853$, use 251 of 256 approximately decorrelated dimensions, and show strong spatial organization, with Moran's $I = 0.93$ on the leading principal component and autocorrelation persisting beyond the input radius. Extrinsically, across 74 held-out targets from 12 external sources and four spatial supports, PlacePulse outperforms a dimensionality-matched feature-selection baseline on targets unrelated to the training inputs and is competitive with Google's Population Dynamics Foundation Model, leading on health, economic, election, economic-mobility and social-vulnerability outcomes, with relative strengths that vary by domain. These findings position structural composition as a distinct and complementary modality for geospatial foundation models, not simply a fallback where behavioral or imagery data are unavailable.",
+      "published": "2026-10-09T11:05:26Z",
+      "updated": "2026-10-09T11:05:26Z",
+      "arxiv_id": "2610.13390v1",
+      "abs_url": "http://arxiv.org/abs/2610.13390v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13390v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "42 pages, 11 figures, 12 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 8,
+      "anchor_terms": [
+        "foundation model",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model",
+        "satellite image",
+        "satellite imagery"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model",
+        "satellite",
+        "satellite image",
+        "satellite imagery"
+      ],
+      "title_zh": "PlacePulse: Learning Transferable Place Representations from Structural Geographic Data",
+      "summary_zh": "Geospatial machine learning often depends on task-specific feature engineering over large collections of sociodemographic, business, and environmental variables. Geospatial foundation models offer reusable representations of place, but leading approaches typically encode dynamic signals, such as mobility and search activity, or visual signals from satellite imagery. Few models represent the static structural composition of places (who lives and works there, which businesses operate there, and which risks they face) as transferable embeddings at fine spatial resolution. We introduce PlacePulse, a structural geospatial foundation model that compresses 572 attributes, expanded to 2,288 inputs through H3 neighborhood aggregates, into 256-dimensional unit-norm embeddings for 1,055,537 H3 resolution-7 cells in the United States. We also introduce a reusable two-axis benchmark that separates intrinsic representation quality from downstream predictive utility across multiple targets and spatial supports. Intrinsically, the embeddings reconstruct standardized inputs with mean $R^2 = 0.853$, use 251 of 256 approximately decorrelated dimensions, and show strong spatial organization, with Moran's $I = 0.93$ on the leading principal component and autocorrelation persisting beyond the input radius. Extrinsically, across 74 held-out targets from 12 external sources and four spatial supports, PlacePulse outperforms a dimensionality-matched feature-selection baseline on targets unrelated to the training inputs and is competitive with Google's Population Dynamics Foundation Model, leading on health, economic, election, economic-mobility and social-vulnerability outcomes, with relative strengths that vary by domain. These findings position structural composition as a distinct and complementary modality for geospatial foundation models, not simply a fallback where behavioral or imagery data are unavailable."
+    },
+    {
+      "title": "SWE-Critix: Post-Training Generalist Verifiers for Assessing Coding-Agent Trajectories",
+      "authors": [
+        "Jiajun Hu",
+        "Chun Yong Chong"
+      ],
+      "summary": "Coding agents are increasingly deployed for end-to-end software engineering tasks, where a readily available oracle evaluator that defines the success criteria is often absent. This motivates verifications for coding agents that can reliably judge and explain their behavior. However, verification is non-trivial as coding agents are increasingly capable of solving long-horizon software engineering tasks. Their execution trajectories can be extremely long, containing hundreds of iterative interactions with code repositories and external tools. Existing verifiers either rely on general-purpose LLMs without specialized training or train dedicated critics that predominantly focus on producing scalar rewards, highlighting the relatively limited exploration of training-based generalist verification. We introduce SWE-Critix, a post-training pipeline for training generalist verifiers of coding-agent trajectories. Given a task and its execution trajectory, the learned verifier predicts the completion label and generates a natural-language analysis that explains its judgment. Our pipeline combines supervised fine-tuning (SFT) with reinforcement learning (RL) and trains a series of 30B models on trajectories from CodeForge-Preview. On a held-out test set, SWE-Critix improves classification accuracy from 57% for the base Qwen3-30B-A3B reasoning model to 66% after SFT and 78% after RL. We release our models, datasets, and training code to facilitate further research.",
+      "published": "2026-10-09T10:30:21Z",
+      "updated": "2026-10-09T10:30:21Z",
+      "arxiv_id": "2610.13356v1",
+      "abs_url": "http://arxiv.org/abs/2610.13356v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13356v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "SWE-Critix: Post-Training Generalist Verifiers for Assessing Coding-Agent Trajectories",
+      "summary_zh": "Coding agents are increasingly deployed for end-to-end software engineering tasks, where a readily available oracle evaluator that defines the success criteria is often absent. This motivates verifications for coding agents that can reliably judge and explain their behavior. However, verification is non-trivial as coding agents are increasingly capable of solving long-horizon software engineering tasks. Their execution trajectories can be extremely long, containing hundreds of iterative interactions with code repositories and external tools. Existing verifiers either rely on general-purpose LLMs without specialized training or train dedicated critics that predominantly focus on producing scalar rewards, highlighting the relatively limited exploration of training-based generalist verification. We introduce SWE-Critix, a post-training pipeline for training generalist verifiers of coding-agent trajectories. Given a task and its execution trajectory, the learned verifier predicts the completion label and generates a natural-language analysis that explains its judgment. Our pipeline combines supervised fine-tuning (SFT) with reinforcement learning (RL) and trains a series of 30B models on trajectories from CodeForge-Preview. On a held-out test set, SWE-Critix improves classification accuracy from 57% for the base Qwen3-30B-A3B reasoning model to 66% after SFT and 78% after RL. We release our models, datasets, and training code to facilitate further research."
+    },
+    {
+      "title": "Understanding Mamba-3 Through Oscillatory Dynamics",
+      "authors": [
+        "Shutian Liang",
+        "Yue Song"
+      ],
+      "summary": "Mamba-3 introduces input-dependent rotations into recurrent state updates, but their contribution beyond state retention remains unclear. We interpret these ro- tations as underdamped second-order dynamics, providing a framework for in- vestigating the role of oscillation in sequence modeling. Controlled comparisons show that underdamped dynamics outperform non-oscillatory damping regimes on state-tracking tasks, while language-model pretraining demonstrates benefits for long-context prediction and length generalization. Interventions in pretrained models further establish the importance of learned phase, and state analysis sug- gests that rotation regulates how retained information combines with incoming up- dates. Taken together, these findings identify underdamped dynamics as a useful mechanism for recurrent computation and suggest that oscillation supports long- context processing by regulating how information accumulates.",
+      "published": "2026-10-09T10:16:58Z",
+      "updated": "2026-10-09T10:16:58Z",
+      "arxiv_id": "2610.13341v1",
+      "abs_url": "http://arxiv.org/abs/2610.13341v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13341v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型"
+      ],
+      "topic": "基础模型",
+      "score": 2,
+      "anchor_terms": [
+        "Mamba"
+      ],
+      "matched_terms": [
+        "Mamba"
+      ],
+      "title_zh": "Understanding Mamba-3 Through Oscillatory Dynamics",
+      "summary_zh": "Mamba-3 introduces input-dependent rotations into recurrent state updates, but their contribution beyond state retention remains unclear. We interpret these ro- tations as underdamped second-order dynamics, providing a framework for in- vestigating the role of oscillation in sequence modeling. Controlled comparisons show that underdamped dynamics outperform non-oscillatory damping regimes on state-tracking tasks, while language-model pretraining demonstrates benefits for long-context prediction and length generalization. Interventions in pretrained models further establish the importance of learned phase, and state analysis sug- gests that rotation regulates how retained information combines with incoming up- dates. Taken together, these findings identify underdamped dynamics as a useful mechanism for recurrent computation and suggest that oscillation supports long- context processing by regulating how information accumulates."
+    },
+    {
+      "title": "Monarch-MoE: Structured Experts for Multimodal Continual Instruction Tuning",
+      "authors": [
+        "Xi Zhang",
+        "Boyu Diao",
+        "Zesen Chen",
+        "Ruiqi Liu",
+        "Hangda Liu",
+        "Yongjun Xu"
+      ],
+      "summary": "Learning new tasks in multimodal continual instruction tuning can cause catastrophic forgetting of previously acquired knowledge. Although multi-expert LoRA distributes learning across experts, updates to a dense low-rank expert can still affect many output features. We introduce Monarch-MoE, which replaces the dense factors in LoRA experts with block-diagonal factors connected by a fixed permutation. This structure provides blockwise gradient isolation: individual block-pair updates affect only one output block, while connections between all input and output blocks are maintained. To make these compact experts practical on memory-limited hardware, we combine batched computation, fused forward operators, and an optimized backward pass. Across three continual-learning methods evaluated on MLLM-DCL and UCIT with LLaVA-1.5-7B, Monarch-MoE improves first-task retention while reducing adapter parameters by approximately 75% and 50%, respectively. In the main comparison, first-task forgetting is as low as 0.52 percentage points on MLLM-DCL and 0.10 on UCIT, with method-dependent trade-offs in final performance. Our implementation supports fine-tuning and inference on a single 24 GB RTX 4090, with lower measured memory use and competitive runtime in the evaluated settings. Together, these algorithmic and systems improvements make structured experts a practical option for continual adaptation on memory-limited hardware.",
+      "published": "2026-10-09T08:33:41Z",
+      "updated": "2026-10-09T08:33:41Z",
+      "arxiv_id": "2610.13215v1",
+      "abs_url": "http://arxiv.org/abs/2610.13215v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13215v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "25 pages, 3 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "多模态融合"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 8,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "catastrophic forgetting",
+        "fine-tuning",
+        "instruction tuning",
+        "LLaVA",
+        "LoRA",
+        "MLLM"
+      ],
+      "title_zh": "Monarch-MoE: Structured Experts for Multimodal Continual Instruction Tuning",
+      "summary_zh": "Learning new tasks in multimodal continual instruction tuning can cause catastrophic forgetting of previously acquired knowledge. Although multi-expert LoRA distributes learning across experts, updates to a dense low-rank expert can still affect many output features. We introduce Monarch-MoE, which replaces the dense factors in LoRA experts with block-diagonal factors connected by a fixed permutation. This structure provides blockwise gradient isolation: individual block-pair updates affect only one output block, while connections between all input and output blocks are maintained. To make these compact experts practical on memory-limited hardware, we combine batched computation, fused forward operators, and an optimized backward pass. Across three continual-learning methods evaluated on MLLM-DCL and UCIT with LLaVA-1.5-7B, Monarch-MoE improves first-task retention while reducing adapter parameters by approximately 75% and 50%, respectively. In the main comparison, first-task forgetting is as low as 0.52 percentage points on MLLM-DCL and 0.10 on UCIT, with method-dependent trade-offs in final performance. Our implementation supports fine-tuning and inference on a single 24 GB RTX 4090, with lower measured memory use and competitive runtime in the evaluated settings. Together, these algorithmic and systems improvements make structured experts a practical option for continual adaptation on memory-limited hardware."
+    },
+    {
+      "title": "Prediction-Informed Landing Window Planning for UAV Landing on USV in High Sea States",
+      "authors": [
+        "Kaizhen Li",
+        "Xi Zhou",
+        "Dan Zhang",
+        "Xiaowei Li"
+      ],
+      "summary": "Autonomous landing of unmanned aerial vehicle (UAV) on unmanned surface vehicle (USV) is difficult in high sea states. Existing hierarchical landing methods often infer future USV motion only implicitly from short observation histories, which limits their ability to adapt to severe and rapidly changing sea conditions. This paper presents a prediction-informed hierarchical control framework. A pretrained model is developed to explicitly predict the USV attitude during high-level landing decisions. The prediction helps identify suitable landing windows and choose the right touchdown time, while a conventional low-level flight controller maintains UAV stability and tracks motion commands. To evaluate the framework under realistic disturbances, a real-sim validation setup is constructed in which USV-motion data collected in real sea conditions are transferred to a MuJoCo USV. The experiments demonstrate the feasibility of using explicit attitude prediction to improve landing-window selection and support timing-aware UAV landing planning in rapidly varying marine environments.",
+      "published": "2026-10-09T08:12:13Z",
+      "updated": "2026-10-09T08:12:13Z",
+      "arxiv_id": "2610.13190v1",
+      "abs_url": "http://arxiv.org/abs/2610.13190v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13190v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV"
+      ],
+      "topic": "无人机/UAV",
+      "score": 5,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "Prediction-Informed Landing Window Planning for UAV Landing on USV in High Sea States",
+      "summary_zh": "Autonomous landing of unmanned aerial vehicle (UAV) on unmanned surface vehicle (USV) is difficult in high sea states. Existing hierarchical landing methods often infer future USV motion only implicitly from short observation histories, which limits their ability to adapt to severe and rapidly changing sea conditions. This paper presents a prediction-informed hierarchical control framework. A pretrained model is developed to explicitly predict the USV attitude during high-level landing decisions. The prediction helps identify suitable landing windows and choose the right touchdown time, while a conventional low-level flight controller maintains UAV stability and tracks motion commands. To evaluate the framework under realistic disturbances, a real-sim validation setup is constructed in which USV-motion data collected in real sea conditions are transferred to a MuJoCo USV. The experiments demonstrate the feasibility of using explicit attitude prediction to improve landing-window selection and support timing-aware UAV landing planning in rapidly varying marine environments."
+    },
+    {
+      "title": "Measurable Semantic 3D Gaussian Splatting with Joint Region and Depth Supervision for Interactive Building Inspection",
+      "authors": [
+        "Yi Zhang",
+        "Tian Tan",
+        "Ray Kai Leung Su"
+      ],
+      "summary": "Image-based 3D reconstruction provides a scalable representation for building inspection and maintenance. However, photorealistic reconstruction alone does not fully provide the geometric measurability, semantic structure, and interactive information access required for engineering applications. This study proposes a measurable semantic 3D Gaussian Splatting (3DGS) framework with region and depth supervision for interactive building inspection from multi-view imagery. Mask-based region supervision suppresses irrelevant backgrounds and focuses optimization on target regions. Point-wise depth supervision guides Gaussian centers toward physical surfaces using reference geometry derived from multi-view stereo (MVS) point clouds, providing geometric anchors for measuring physical dimensions and areas. A semantic Gaussian field associates learnable class features with individual Gaussian primitives, enabling semantic rendering and component-level inspection. These capabilities are operationalized through AEC-SplatTwin, an interactive building inspection platform supporting real-time visualization, semantic analysis, quantitative measurement, and multimodal large language model (MLLM)-assisted interaction. On the synthetic UAV-inspection QuakeCity and smartphone-captured HKUPB datasets, the framework reduces Gaussian-center depth MAE by 58.1% and 86.8%, while its semantic field achieves mIoU values of 0.8529 and 0.8642. On HKUPB, the mean relative errors for height, width, and area measurements are 0.33%, 1.07%, and 0.60%. These results show that the proposed framework extends 3DGS beyond visual reconstruction into a measurable, semantically structured, and interactive engineering representation for building inspection.",
+      "published": "2026-10-09T07:33:37Z",
+      "updated": "2026-10-09T07:33:37Z",
+      "arxiv_id": "2610.13143v1",
+      "abs_url": "http://arxiv.org/abs/2610.13143v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13143v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "多模态融合",
+        "LiDAR/点云",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 7,
+      "anchor_terms": [
+        "3D reconstruction",
+        "UAV"
+      ],
+      "matched_terms": [
+        "3D reconstruction",
+        "large language model",
+        "MAE",
+        "MLLM",
+        "multimodal large language model",
+        "point cloud",
+        "UAV"
+      ],
+      "title_zh": "Measurable Semantic 3D Gaussian Splatting with Joint Region and Depth Supervision for Interactive Building Inspection",
+      "summary_zh": "Image-based 3D reconstruction provides a scalable representation for building inspection and maintenance. However, photorealistic reconstruction alone does not fully provide the geometric measurability, semantic structure, and interactive information access required for engineering applications. This study proposes a measurable semantic 3D Gaussian Splatting (3DGS) framework with region and depth supervision for interactive building inspection from multi-view imagery. Mask-based region supervision suppresses irrelevant backgrounds and focuses optimization on target regions. Point-wise depth supervision guides Gaussian centers toward physical surfaces using reference geometry derived from multi-view stereo (MVS) point clouds, providing geometric anchors for measuring physical dimensions and areas. A semantic Gaussian field associates learnable class features with individual Gaussian primitives, enabling semantic rendering and component-level inspection. These capabilities are operationalized through AEC-SplatTwin, an interactive building inspection platform supporting real-time visualization, semantic analysis, quantitative measurement, and multimodal large language model (MLLM)-assisted interaction. On the synthetic UAV-inspection QuakeCity and smartphone-captured HKUPB datasets, the framework reduces Gaussian-center depth MAE by 58.1% and 86.8%, while its semantic field achieves mIoU values of 0.8529 and 0.8642. On HKUPB, the mean relative errors for height, width, and area measurements are 0.33%, 1.07%, and 0.60%. These results show that the proposed framework extends 3DGS beyond visual reconstruction into a measurable, semantically structured, and interactive engineering representation for building inspection."
+    },
+    {
+      "title": "Benchmarking Embedding Geometries and Clustering Algorithms for Unsupervised Patent Claim Classification",
+      "authors": [
+        "Sujith Subramanian",
+        "P N Bhargav Teja",
+        "Susen Sarkar",
+        "Rajasekhara Reddy Duvvuru Muni"
+      ],
+      "summary": "Prior-art retrieval systems are structurally organized around classification codes, making cross-code discovery difficult. This paper asks if an unsupervised representation trained on patent text can recover relevant connections that code-restricted search cannot, and if hyperbolic space helps. We trained a hyperbolic and a matched Euclidean Variational Autoencoder (VAE) on 45,000 US patents (96 runs, 6 seeds). The hyperbolic model retrieves genuinely cross-category prior art 52% more often than the Euclidean model (18.76% vs. 12.34% of top-10 results, 3,000 queries). This represents a practical gain for the motivating search problem. The hyperbolic model agrees less with official classification (NMI 0.2392 vs. 0.3206), which we explain geometrically: the two measures capture different goals, and only one aligns with prior-art search needs. In a study of 10 technology domains (50,000 more patents), we find that a domain's classification breadth--the number of distinct CPC subgroups spanned--predicts approach performance (Pearson r=-0.642, p=0.045, N=10), and that patents per subgroup is an even stronger predictor (r=0.715, p=0.020). This provides a checkable signal for practitioners to determine where the method is most valuable. We report all findings with statistical transparency and release a complete, 91-test automated implementation.",
+      "published": "2026-10-09T05:02:37Z",
+      "updated": "2026-10-09T05:02:37Z",
+      "arxiv_id": "2610.12997v1",
+      "abs_url": "http://arxiv.org/abs/2610.12997v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12997v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 2,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "unsupervised"
+      ],
+      "title_zh": "Benchmarking Embedding Geometries and Clustering Algorithms for Unsupervised Patent Claim Classification",
+      "summary_zh": "Prior-art retrieval systems are structurally organized around classification codes, making cross-code discovery difficult. This paper asks if an unsupervised representation trained on patent text can recover relevant connections that code-restricted search cannot, and if hyperbolic space helps. We trained a hyperbolic and a matched Euclidean Variational Autoencoder (VAE) on 45,000 US patents (96 runs, 6 seeds). The hyperbolic model retrieves genuinely cross-category prior art 52% more often than the Euclidean model (18.76% vs. 12.34% of top-10 results, 3,000 queries). This represents a practical gain for the motivating search problem. The hyperbolic model agrees less with official classification (NMI 0.2392 vs. 0.3206), which we explain geometrically: the two measures capture different goals, and only one aligns with prior-art search needs. In a study of 10 technology domains (50,000 more patents), we find that a domain's classification breadth--the number of distinct CPC subgroups spanned--predicts approach performance (Pearson r=-0.642, p=0.045, N=10), and that patents per subgroup is an even stronger predictor (r=0.715, p=0.020). This provides a checkable signal for practitioners to determine where the method is most valuable. We report all findings with statistical transparency and release a complete, 91-test automated implementation."
+    },
+    {
+      "title": "Diffusion Precipitation Generation with Medium-range Weather Forecasting",
+      "authors": [
+        "Guowen Li",
+        "Yang Liu",
+        "Mengxuan Chen",
+        "Jiashun Cheng",
+        "Haoyuan Liang",
+        "Shilei Cao",
+        "Yujie Wang",
+        "Juepeng Zheng",
+        "Fang Wang",
+        "Yerong Feng",
+        "Meng Jin",
+        "Hong Cheng",
+        "Yutong Lu",
+        "Haohuan Fu"
+      ],
+      "summary": "Accurate daily precipitation forecasts are important for weather-sensitive decisions. Although recent Weather Foundation Models (WFMs) have achieved significant progress, they are trained on reanalysis data, which exhibit regional and intensity-dependent biases. Since retraining WFMs on observation-based targets is costly, we study Dynamics-Precipitation Decoupling, a plug-and-play framework that uses a separately trained generator to map non-precipitation forecasts from a frozen weather model to observation-aligned daily precipitation. Its key challenges are to capture heterogeneous rainfall distributions and align daily accumulations with atmospheric signals that evolve across space and time. To address them, we train a diffusion generator conditional on atmospheric states and satellite-gauge estimates of precipitation. A multi-scale recurrent encoder summarizes atmospheric evolution, while cross-attention aligns atmospheric and precipitation features during denoising. Extensive evaluation of various backbones, including Pangu-Weather, GraphCast, and HRES, on global and regional forecasting shows improved daily precipitation accuracy and event detection, with better representation of localized accumulation patterns. Global ensemble evaluation shows lower Brier scores than ENS and training-from-scratch GenCast at all reported lead times, with lower CRPS in most comparisons. Remarkably, a heavy-rainfall case study using 2,288 stations in China further supports improved daily accumulation patterns and event detection against ground observations.",
+      "published": "2026-10-09T04:21:30Z",
+      "updated": "2026-10-09T04:21:30Z",
+      "arxiv_id": "2610.12976v1",
+      "abs_url": "http://arxiv.org/abs/2610.12976v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12976v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "基础模型",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 6,
+      "anchor_terms": [
+        "foundation model"
+      ],
+      "matched_terms": [
+        "cross-attention",
+        "denoising",
+        "foundation model",
+        "multi-scale",
+        "satellite"
+      ],
+      "title_zh": "Diffusion Precipitation Generation with Medium-range Weather Forecasting",
+      "summary_zh": "Accurate daily precipitation forecasts are important for weather-sensitive decisions. Although recent Weather Foundation Models (WFMs) have achieved significant progress, they are trained on reanalysis data, which exhibit regional and intensity-dependent biases. Since retraining WFMs on observation-based targets is costly, we study Dynamics-Precipitation Decoupling, a plug-and-play framework that uses a separately trained generator to map non-precipitation forecasts from a frozen weather model to observation-aligned daily precipitation. Its key challenges are to capture heterogeneous rainfall distributions and align daily accumulations with atmospheric signals that evolve across space and time. To address them, we train a diffusion generator conditional on atmospheric states and satellite-gauge estimates of precipitation. A multi-scale recurrent encoder summarizes atmospheric evolution, while cross-attention aligns atmospheric and precipitation features during denoising. Extensive evaluation of various backbones, including Pangu-Weather, GraphCast, and HRES, on global and regional forecasting shows improved daily precipitation accuracy and event detection, with better representation of localized accumulation patterns. Global ensemble evaluation shows lower Brier scores than ENS and training-from-scratch GenCast at all reported lead times, with lower CRPS in most comparisons. Remarkably, a heavy-rainfall case study using 2,288 stations in China further supports improved daily accumulation patterns and event detection against ground observations."
+    },
+    {
+      "title": "Sparse Dictionary Learning for Measure-Valued Data via Linearized Optimal Transport: Efficient Algorithms and Sample Complexity",
+      "authors": [
+        "Brendan Mallery",
+        "Shuchin Aeron",
+        "James Murphy"
+      ],
+      "summary": "We study dictionary learning for probability measure-valued data by embedding measures into Hilbert spaces using features derived from optimal transport geometry. We learn data-adapted dictionaries through sparse autoencoder parameterizations, producing fast, scalable representations of probability measures as sparse finite-dimensional codes. The resulting framework combines the rich, geometric structure of optimal transport with the interpretability and efficiency of sparse representation learning. We demonstrate its utility across diverse data modalities, including hyperspectral images, geometric point clouds, and document embeddings in large language model latent spaces. We also prove generalization bounds for sparse dictionary learning objectives on broad classes of $L^2$-valued measure embeddings, expressed in terms of the metric complexity of the atom class. For optimal transport and entropic transport map dictionaries, we derive new covering number bounds that yield explicit rates. Together, our computational and theoretical results support a new, scalable model for representation learning in the space of probability measures via embedding into Hilbert spaces.",
+      "published": "2026-10-09T03:15:08Z",
+      "updated": "2026-10-09T03:15:08Z",
+      "arxiv_id": "2610.12924v1",
+      "abs_url": "http://arxiv.org/abs/2610.12924v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12924v1",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "高光谱/多光谱",
+        "LiDAR/点云"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 3,
+      "anchor_terms": [
+        "hyperspectral image"
+      ],
+      "matched_terms": [
+        "hyperspectral",
+        "hyperspectral image",
+        "large language model",
+        "point cloud"
+      ],
+      "title_zh": "Sparse Dictionary Learning for Measure-Valued Data via Linearized Optimal Transport: Efficient Algorithms and Sample Complexity",
+      "summary_zh": "We study dictionary learning for probability measure-valued data by embedding measures into Hilbert spaces using features derived from optimal transport geometry. We learn data-adapted dictionaries through sparse autoencoder parameterizations, producing fast, scalable representations of probability measures as sparse finite-dimensional codes. The resulting framework combines the rich, geometric structure of optimal transport with the interpretability and efficiency of sparse representation learning. We demonstrate its utility across diverse data modalities, including hyperspectral images, geometric point clouds, and document embeddings in large language model latent spaces. We also prove generalization bounds for sparse dictionary learning objectives on broad classes of $L^2$-valued measure embeddings, expressed in terms of the metric complexity of the atom class. For optimal transport and entropic transport map dictionaries, we derive new covering number bounds that yield explicit rates. Together, our computational and theoretical results support a new, scalable model for representation learning in the space of probability measures via embedding into Hilbert spaces."
+    },
+    {
+      "title": "A Lightweight Velocity Correction Framework for Improving Instruction Following in Few-Step Text-to-Image Generation",
+      "authors": [
+        "Yating Gao",
+        "Zhenlong Zhu",
+        "Wen Zihao",
+        "Lenan Zhang",
+        "Jiexiong Wang",
+        "Yang Yang",
+        "Guanjun Jiang",
+        "Yixiong Zou",
+        "Takuya Maekawa"
+      ],
+      "summary": "Few-step text-to-image generators produce high-quality images with few network forward passes, yet struggle with complex prompts involving multiple subjects, interactions, spatial relations, counting, and attribute binding. Can these errors be reduced without changing the generator's parameters or increasing its forward-pass count? We propose a lightweight correction framework for a frozen 6B-parameter generator. The generator predicts velocities that determine how its intermediate image representation is updated; a corrector with fewer than 20M parameters learns residual adjustments at selected sampling steps. Because earlier corrections change the states encountered at later steps, our On-Trajectory Flow-Bridge Supervision derives residual targets at the states actually reached during corrected generation. A single corrector is shared across selected steps and runs in parallel with the generator. Only the corrector is trained, requiring neither reward optimization nor re-distillation. To our knowledge, this is the first framework for lightweight velocity-residual adaptation of fully frozen few-step text-to-image generators that preserves their original sampling schedule and forward-pass count. On our target complex-scene distribution, the framework achieves a +17.60-percentage-point NetWin over frozen Z-Image-Turbo in pairwise instruction-following evaluation, with only 26.9 ms (0.84%) additional end-to-end latency per image and no increase in backbone evaluations.",
+      "published": "2026-10-09T02:43:49Z",
+      "updated": "2026-10-09T02:43:49Z",
+      "arxiv_id": "2610.12899v1",
+      "abs_url": "http://arxiv.org/abs/2610.12899v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12899v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation"
+      ],
+      "title_zh": "A Lightweight Velocity Correction Framework for Improving Instruction Following in Few-Step Text-to-Image Generation",
+      "summary_zh": "Few-step text-to-image generators produce high-quality images with few network forward passes, yet struggle with complex prompts involving multiple subjects, interactions, spatial relations, counting, and attribute binding. Can these errors be reduced without changing the generator's parameters or increasing its forward-pass count? We propose a lightweight correction framework for a frozen 6B-parameter generator. The generator predicts velocities that determine how its intermediate image representation is updated; a corrector with fewer than 20M parameters learns residual adjustments at selected sampling steps. Because earlier corrections change the states encountered at later steps, our On-Trajectory Flow-Bridge Supervision derives residual targets at the states actually reached during corrected generation. A single corrector is shared across selected steps and runs in parallel with the generator. Only the corrector is trained, requiring neither reward optimization nor re-distillation. To our knowledge, this is the first framework for lightweight velocity-residual adaptation of fully frozen few-step text-to-image generators that preserves their original sampling schedule and forward-pass count. On our target complex-scene distribution, the framework achieves a +17.60-percentage-point NetWin over frozen Z-Image-Turbo in pairwise instruction-following evaluation, with only 26.9 ms (0.84%) additional end-to-end latency per image and no increase in backbone evaluations."
+    },
+    {
+      "title": "CoGameReg: Cooperative-Game-Based Collaborative Semi-Supervised Regression for Seismic Reservoir Property Prediction",
+      "authors": [
+        "Zhiyu Guo",
+        "Jiwei Jia",
+        "Lei Li"
+      ],
+      "summary": "Accurate estimation of reservoir properties from seismic data remains challenging when well-log labels are sparse but three-dimensional seismic observations are abundant. We present CoGameReg, a cooperative-game-based semi-supervised regression framework that uses contribution-weighted predictions of heterogeneous regressors to construct shared pseudo-labels. This design makes each regressor's influence explicit in the learning targets generated for unlabeled seismic samples under sparse well control. The Tri-Game Shapley mechanism combines a rank-MSE performance game with a pairwise consistency game to estimate nonnegative regressor weights from labeled training data. These weights remain fixed during collaborative training and are reused for final prediction fusion. Candidate pseudo-labels are screened using a common local k-nearest-neighbor error-reduction criterion before retraining. We evaluate CoGameReg on 10 public regression datasets, a synthetic three-dimensional P-wave velocity prediction task, and a field water-saturation application. The benchmark advantage is most pronounced at the 2.5% labeled-data ratio and decreases as supervision increases. CoGameReg obtains the best blind-well metrics in the synthetic experiment. In the field application, predictions clipped to 0-100% yield a pooled coefficient of determination of 0.5942, a root mean square error of 5.7441 percentage points, and a Pearson correlation of 0.8265 across three blind wells. CoGameReg has the highest Pearson correlation among the four field methods. The results support the use of CoGameReg to integrate sparse well labels with dense seismic attributes, with performance varying across metrics and well locations.",
+      "published": "2026-10-09T02:20:13Z",
+      "updated": "2026-10-09T02:20:13Z",
+      "arxiv_id": "2610.12884v1",
+      "abs_url": "http://arxiv.org/abs/2610.12884v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12884v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 3,
+      "anchor_terms": [
+        "semi-supervised"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "semi-supervised"
+      ],
+      "title_zh": "CoGameReg: Cooperative-Game-Based Collaborative Semi-Supervised Regression for Seismic Reservoir Property Prediction",
+      "summary_zh": "Accurate estimation of reservoir properties from seismic data remains challenging when well-log labels are sparse but three-dimensional seismic observations are abundant. We present CoGameReg, a cooperative-game-based semi-supervised regression framework that uses contribution-weighted predictions of heterogeneous regressors to construct shared pseudo-labels. This design makes each regressor's influence explicit in the learning targets generated for unlabeled seismic samples under sparse well control. The Tri-Game Shapley mechanism combines a rank-MSE performance game with a pairwise consistency game to estimate nonnegative regressor weights from labeled training data. These weights remain fixed during collaborative training and are reused for final prediction fusion. Candidate pseudo-labels are screened using a common local k-nearest-neighbor error-reduction criterion before retraining. We evaluate CoGameReg on 10 public regression datasets, a synthetic three-dimensional P-wave velocity prediction task, and a field water-saturation application. The benchmark advantage is most pronounced at the 2.5% labeled-data ratio and decreases as supervision increases. CoGameReg obtains the best blind-well metrics in the synthetic experiment. In the field application, predictions clipped to 0-100% yield a pooled coefficient of determination of 0.5942, a root mean square error of 5.7441 percentage points, and a Pearson correlation of 0.8265 across three blind wells. CoGameReg has the highest Pearson correlation among the four field methods. The results support the use of CoGameReg to integrate sparse well labels with dense seismic attributes, with performance varying across metrics and well locations."
+    },
+    {
+      "title": "HART: Hybrid Attention-RWKV Time series Foundation Model",
+      "authors": [
+        "Qingwen Lin",
+        "Boyan Xu",
+        "Shifeng Xie",
+        "Zhifeng Hao",
+        "Keli Zhang",
+        "Ruichu Cai"
+      ],
+      "summary": "Non-autoregressive multi-step forecasting (NAF) enables time series foundation models to predict an entire future horizon in a single forward pass. Despite its strong sequence modeling capabilities, RWKV-7 exhibits long-horizon degradation in our NAF experiments. In this setup, future patches are represented as missing inputs, requiring the recurrent state to evolve across the prediction horizon without new observations. Our analysis of RWKV-7's generalized delta rule suggests a mechanism we term Placeholder Idling Decay (PID): repeated state transitions can attenuate historical information when placeholder-driven writes provide insufficient compensation. Layer-wise analysis reveals reduced state-injection norms in most layers, while transition-matrix norms remain similar between historical and prediction regions, consistent with PID. Motivated by this analysis, we propose HART, a Hybrid Attention-RWKV Time-series Foundation Model that alternates attention and RWKV blocks, combining direct access to historical tokens with recurrent temporal modeling. Controlled experiments on GIFT-Eval and TIME-Benchmark show that HART improves over pure RWKV at medium and long horizons while maintaining comparable short-horizon performance, and achieves better aggregate performance than a comparably sized pure Transformer. With 36M parameters, HART achieves long-horizon MASE comparable to Toto-2.0-1B on GIFT-Eval (0.752 vs. 0.754), using approximately 1/28 of its parameters.",
+      "published": "2026-10-09T02:19:20Z",
+      "updated": "2026-10-09T02:19:20Z",
+      "arxiv_id": "2610.12883v1",
+      "abs_url": "http://arxiv.org/abs/2610.12883v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12883v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 4,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "temporal",
+        "time-series",
+        "transformer"
+      ],
+      "title_zh": "HART: Hybrid Attention-RWKV Time series Foundation Model",
+      "summary_zh": "Non-autoregressive multi-step forecasting (NAF) enables time series foundation models to predict an entire future horizon in a single forward pass. Despite its strong sequence modeling capabilities, RWKV-7 exhibits long-horizon degradation in our NAF experiments. In this setup, future patches are represented as missing inputs, requiring the recurrent state to evolve across the prediction horizon without new observations. Our analysis of RWKV-7's generalized delta rule suggests a mechanism we term Placeholder Idling Decay (PID): repeated state transitions can attenuate historical information when placeholder-driven writes provide insufficient compensation. Layer-wise analysis reveals reduced state-injection norms in most layers, while transition-matrix norms remain similar between historical and prediction regions, consistent with PID. Motivated by this analysis, we propose HART, a Hybrid Attention-RWKV Time-series Foundation Model that alternates attention and RWKV blocks, combining direct access to historical tokens with recurrent temporal modeling. Controlled experiments on GIFT-Eval and TIME-Benchmark show that HART improves over pure RWKV at medium and long horizons while maintaining comparable short-horizon performance, and achieves better aggregate performance than a comparably sized pure Transformer. With 36M parameters, HART achieves long-horizon MASE comparable to Toto-2.0-1B on GIFT-Eval (0.752 vs. 0.754), using approximately 1/28 of its parameters."
+    },
+    {
+      "title": "Mind the Spatial Gap: A Benchmark for Geospatial Reasoning and Constrained Spatial Editing",
+      "authors": [
+        "Zheng Ren",
+        "Yanning Wang",
+        "Ziheng Huang",
+        "Fei Huang",
+        "Shiqi Wang",
+        "Ziqian Ye",
+        "Yang Yue"
+      ],
+      "summary": "Understanding and manipulating spatial relations is fundamental to AI systems that reason about physical environments and construct grounded world models. However, existing evaluations of multimodal large language models (MLLMs) for spatial reasoning rely predominantly on static question-answering (QA) over small-scale or synthetic scenes, rarely probing whether models can modify spatial configurations while satisfying explicit geometric constraints. We introduce GeoSpatialBench, a benchmark designed to evaluate an escalating progression of spatial cognition, ranging from spatial relation understanding and geometric reasoning to constrained spatial editing. Grounded in real-world urban data across six geographically diverse cities, GeoSpatialBench evaluates a comprehensive taxonomy of 28 topological, directional, metric, and ordering relations across structured GeoJSON and map image modalities, with ground-truth references and constraints verified via GIS operations. Our empirical evaluation across frontier MLLMs uncovers a stark spatial gap: structured GeoJSON consistently outperforms map images, with multimodal combinations offering no reliable gain over GeoJSON alone, and while models show reasonable competence on qualitative topological and ordering, performance drops on quantitative metric relations. Crucially, editing performance on ordering relations declines relative to QA, and most failed edits violate at least one specified spatial constraint. These results highlight a gap between passively recognizing spatial relations and actively manipulating geometric configurations. GeoSpatialBench provides an open, rigorous diagnostic testbed to benchmark these spatial limitations, laying essential empirical groundwork for physically grounded world models and embodied spatial AI.",
+      "published": "2026-10-09T02:16:52Z",
+      "updated": "2026-10-09T02:16:52Z",
+      "arxiv_id": "2610.12881v1",
+      "abs_url": "http://arxiv.org/abs/2610.12881v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12881v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "15 pages, 6 figures, 4 tables. Under Review at ICLR 2027",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 9,
+      "anchor_terms": [
+        "geospatial",
+        "MLLM",
+        "multimodal large language model"
+      ],
+      "matched_terms": [
+        "geospatial",
+        "GIS",
+        "large language model",
+        "MLLM",
+        "multimodal large language model",
+        "spatial reasoning"
+      ],
+      "title_zh": "Mind the Spatial Gap: A Benchmark for Geospatial Reasoning and Constrained Spatial Editing",
+      "summary_zh": "Understanding and manipulating spatial relations is fundamental to AI systems that reason about physical environments and construct grounded world models. However, existing evaluations of multimodal large language models (MLLMs) for spatial reasoning rely predominantly on static question-answering (QA) over small-scale or synthetic scenes, rarely probing whether models can modify spatial configurations while satisfying explicit geometric constraints. We introduce GeoSpatialBench, a benchmark designed to evaluate an escalating progression of spatial cognition, ranging from spatial relation understanding and geometric reasoning to constrained spatial editing. Grounded in real-world urban data across six geographically diverse cities, GeoSpatialBench evaluates a comprehensive taxonomy of 28 topological, directional, metric, and ordering relations across structured GeoJSON and map image modalities, with ground-truth references and constraints verified via GIS operations. Our empirical evaluation across frontier MLLMs uncovers a stark spatial gap: structured GeoJSON consistently outperforms map images, with multimodal combinations offering no reliable gain over GeoJSON alone, and while models show reasonable competence on qualitative topological and ordering, performance drops on quantitative metric relations. Crucially, editing performance on ordering relations declines relative to QA, and most failed edits violate at least one specified spatial constraint. These results highlight a gap between passively recognizing spatial relations and actively manipulating geometric configurations. GeoSpatialBench provides an open, rigorous diagnostic testbed to benchmark these spatial limitations, laying essential empirical groundwork for physically grounded world models and embodied spatial AI."
+    },
+    {
+      "title": "NV-Tesseract-AD: Curriculum-Enhanced Conditional Diffusion for Multivariate Time-Series Anomaly Detection",
+      "authors": [
+        "Aditi Gautam",
+        "Manikandan Ravikiran",
+        "Saira Qureshi",
+        "Sena Fatma Ekiz",
+        "Charan Jagwani",
+        "Mahmoud Elhadidy",
+        "Sanjeev Roka"
+      ],
+      "summary": "We propose NV-Tesseract-AD, a curriculum learning-enhanced conditional diffusion framework for multivariate time-series anomaly detection. Our central hypothesis is that reconstruction difficulty can be explicitly structured along two complementary axes, masking severity and diffusion noise level, and that training from easier to harder tasks along both axes simultaneously stabilizes optimization and improves residual discriminability. We integrate a Transformer-based diffusion backbone with a three-stage dual curriculum over masking ratios and diffusion timesteps, retaining anomalous samples throughout training and relying on structured corruption to drive self-supervised representation learning. We evaluate NV-Tesseract-AD under two regimes: in-distribution training on the TSB-UAD-M corpus and strict zero-shot transfer to ten EasyTSAD benchmark families without per-dataset tuning. The dual-axis curriculum produces masking-invariant reconstruction, confirmed by a near-zero loss gap between complementary masking strategies within the first training stage, and yields an approximately 3.7-fold improvement in F1 and a 56 percent reduction in MSE relative to a non-curriculum baseline. Zero-shot performance reaches F1 = 0.984 on NAB and F1 = 0.948 on NormA. Weaker results on heterogeneous families are traced to unsupervised threshold calibration rather than reconstruction quality, identifying calibration as the dominant remaining detection bottleneck. Accelerated inference via DPM-Solver++ reduces sampling cost by a factor of 3.5 to 5.7 at the dataset level but couples to thresholding behavior, establishing that the sampler and threshold must be validated jointly. Together, these findings demonstrate that aligning diffusion denoising difficulty with curriculum learning principles provides a principled and practical approach for robust anomaly detection in complex multivariate time series.",
+      "published": "2026-10-08T22:06:40Z",
+      "updated": "2026-10-08T22:06:40Z",
+      "arxiv_id": "2610.12754v1",
+      "abs_url": "http://arxiv.org/abs/2610.12754v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12754v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "时间序列与视频",
+        "基础模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 10,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "denoising",
+        "robust",
+        "self-supervised",
+        "time-series",
+        "transformer",
+        "unsupervised",
+        "zero-shot"
+      ],
+      "title_zh": "NV-Tesseract-AD: Curriculum-Enhanced Conditional Diffusion for Multivariate Time-Series Anomaly Detection",
+      "summary_zh": "We propose NV-Tesseract-AD, a curriculum learning-enhanced conditional diffusion framework for multivariate time-series anomaly detection. Our central hypothesis is that reconstruction difficulty can be explicitly structured along two complementary axes, masking severity and diffusion noise level, and that training from easier to harder tasks along both axes simultaneously stabilizes optimization and improves residual discriminability. We integrate a Transformer-based diffusion backbone with a three-stage dual curriculum over masking ratios and diffusion timesteps, retaining anomalous samples throughout training and relying on structured corruption to drive self-supervised representation learning. We evaluate NV-Tesseract-AD under two regimes: in-distribution training on the TSB-UAD-M corpus and strict zero-shot transfer to ten EasyTSAD benchmark families without per-dataset tuning. The dual-axis curriculum produces masking-invariant reconstruction, confirmed by a near-zero loss gap between complementary masking strategies within the first training stage, and yields an approximately 3.7-fold improvement in F1 and a 56 percent reduction in MSE relative to a non-curriculum baseline. Zero-shot performance reaches F1 = 0.984 on NAB and F1 = 0.948 on NormA. Weaker results on heterogeneous families are traced to unsupervised threshold calibration rather than reconstruction quality, identifying calibration as the dominant remaining detection bottleneck. Accelerated inference via DPM-Solver++ reduces sampling cost by a factor of 3.5 to 5.7 at the dataset level but couples to thresholding behavior, establishing that the sampler and threshold must be validated jointly. Together, these findings demonstrate that aligning diffusion denoising difficulty with curriculum learning principles provides a principled and practical approach for robust anomaly detection in complex multivariate time series."
+    },
+    {
+      "title": "KITE: A Knowledge-Injected Temporal Encoder for Time-Series Event Forecasting",
+      "authors": [
+        "Jonas Petersen",
+        "Pratik Jawahar",
+        "Riccardo Maggioni",
+        "Gian-Alessandro Lombardi",
+        "Matteo Cozzi",
+        "Marek Gajewski",
+        "Federico Martelli",
+        "Camilla Mazzoleni",
+        "Philipp Christian Petersen"
+      ],
+      "summary": "Forecasting rare, high-cost events in multivariate time-series systems is hard because their precursors are seldom observed, so a purely data-driven model has little to learn from. The engineers who run these systems, however, hold knowledge that precedes such events, information absent from the scarce labels. We call this a semantic prior and inject it into a self-supervised event forecaster through two switchable mechanisms, a covariate mechanism and an attention-bias mechanism, each the identity at its null, so one architecture serves every prior type with no per-dataset architecture search. A prior helps when it supplies information the observed window does not already contain: in a short context an informative prior beats no prior in-domain (pooled h-AUROC over the no-prior baseline: a periodicity clock +14%, p<0.001; a conservation residual +47% at a 0.25 label fraction), and a working prior transfers out-of-domain (+53%), substituting for feature transfer, while priors the window already recovers stay inert and the attention-bias mechanism shows no measurable gain. KITE is a switchable, attributable route to contextual conditioning, and a substrate for scaling toward cross-domain, pretrained time-series foundation world models that carry their governing structure explicitly.",
+      "published": "2026-10-08T21:35:42Z",
+      "updated": "2026-10-08T21:35:42Z",
+      "arxiv_id": "2610.12738v1",
+      "abs_url": "http://arxiv.org/abs/2610.12738v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12738v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "FMTS, NeurIPS 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 3,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "self-supervised",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "KITE: A Knowledge-Injected Temporal Encoder for Time-Series Event Forecasting",
+      "summary_zh": "Forecasting rare, high-cost events in multivariate time-series systems is hard because their precursors are seldom observed, so a purely data-driven model has little to learn from. The engineers who run these systems, however, hold knowledge that precedes such events, information absent from the scarce labels. We call this a semantic prior and inject it into a self-supervised event forecaster through two switchable mechanisms, a covariate mechanism and an attention-bias mechanism, each the identity at its null, so one architecture serves every prior type with no per-dataset architecture search. A prior helps when it supplies information the observed window does not already contain: in a short context an informative prior beats no prior in-domain (pooled h-AUROC over the no-prior baseline: a periodicity clock +14%, p<0.001; a conservation residual +47% at a 0.25 label fraction), and a working prior transfers out-of-domain (+53%), substituting for feature transfer, while priors the window already recovers stay inert and the attention-bias mechanism shows no measurable gain. KITE is a switchable, attributable route to contextual conditioning, and a substrate for scaling toward cross-domain, pretrained time-series foundation world models that carry their governing structure explicitly."
+    },
+    {
+      "title": "A Categorical Atlas of Parameter-Efficient Fine-Tuning: Cones, Orbits, and Gauges",
+      "authors": [
+        "Xiaoyu Li",
+        "Zhizhou Sha",
+        "Chiwun Yang",
+        "Dai Shi"
+      ],
+      "summary": "Parameter-efficient fine-tuning has hundreds of methods, usually compared by parameter count and benchmark score. We compare them as maps. A pretrained checkpoint is a base point in weight space, and a weight-space method is a smooth map from a small parameter space that starts at that point. These maps form a slice category in which the frozen model is initial and full fine-tuning terminal. Three invariants of the map do most of the work. Its image near the base point governs expressivity, through the first-order image, the dimension, a min-cut bound on rank and whether that point is smooth or an apex. Its fibres, with the optimizer's metric, govern training dynamics. Base change moves the base point and covers splitting initialisations, quantisation, restarts and merging. We prove, for example, that zero-initialised LoRA, and Householder reflection adaptation at its default start under stated rank and parity conditions, begin at the apex of a cone; that no exact initialisation lets LoRA reach an update of rank above twice its own; that exactly orthogonal methods never change a weight's singular values in exact arithmetic, however often they are merged; that under Adam with no epsilon, weight decay or clipping and one shared schedule, LoRA+ from the standard zero initialisation follows exactly the trajectory of plain LoRA with its scale multiplied by the learning-rate ratio; that Adam with shared hyperparameters respects only the signed permutations inside LoRA's continuous symmetry group of full-rank factors; and that the activation function decides when a scaling adapter folds into preceding weights. We classify 382 methods from 138 papers by seven coordinates read off their formulas, with 403 simulation arrows and 485 obstructions. Every numbered result is proved in full, and results due to others are credited where we re-derive them.",
+      "published": "2026-10-08T21:10:58Z",
+      "updated": "2026-10-08T21:10:58Z",
+      "arxiv_id": "2610.12728v1",
+      "abs_url": "http://arxiv.org/abs/2610.12728v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12728v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "CLIP",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "A Categorical Atlas of Parameter-Efficient Fine-Tuning: Cones, Orbits, and Gauges",
+      "summary_zh": "Parameter-efficient fine-tuning has hundreds of methods, usually compared by parameter count and benchmark score. We compare them as maps. A pretrained checkpoint is a base point in weight space, and a weight-space method is a smooth map from a small parameter space that starts at that point. These maps form a slice category in which the frozen model is initial and full fine-tuning terminal. Three invariants of the map do most of the work. Its image near the base point governs expressivity, through the first-order image, the dimension, a min-cut bound on rank and whether that point is smooth or an apex. Its fibres, with the optimizer's metric, govern training dynamics. Base change moves the base point and covers splitting initialisations, quantisation, restarts and merging. We prove, for example, that zero-initialised LoRA, and Householder reflection adaptation at its default start under stated rank and parity conditions, begin at the apex of a cone; that no exact initialisation lets LoRA reach an update of rank above twice its own; that exactly orthogonal methods never change a weight's singular values in exact arithmetic, however often they are merged; that under Adam with no epsilon, weight decay or clipping and one shared schedule, LoRA+ from the standard zero initialisation follows exactly the trajectory of plain LoRA with its scale multiplied by the learning-rate ratio; that Adam with shared hyperparameters respects only the signed permutations inside LoRA's continuous symmetry group of full-rank factors; and that the activation function decides when a scaling adapter folds into preceding weights. We classify 382 methods from 138 papers by seven coordinates read off their formulas, with 403 simulation arrows and 485 obstructions. Every numbered result is proved in full, and results due to others are credited where we re-derive them."
+    },
+    {
+      "title": "GeoFitBench-LLM: A Benchmark for Assessing Large Language Models' Capabilities in Geospatial Data Requirements Elicitation for Geo-Analytic Tasks",
+      "authors": [
+        "Amirhossein Vahdat",
+        "Thierry Badard",
+        "Luc Lamontagne"
+      ],
+      "summary": "Large language models are becoming central to GeoAI systems, yet their evaluation rarely considers the elicitation of geospatial data requirements. This omission is critical as retrieval oriented geo-analytic tasks cannot be supported reliably without first identifying the necessary datasets and constraints. GeoFitBench-LLM is introduced as a benchmark for assessing whether LLMs can infer the datasets, the supporting resources and the constraints required by geo-analytic requests in natural language. The benchmark is structured around two reasoning dimensions, Spatio-Temporal Relational and Semantic Grounding, reflecting long-standing challenges in geospatial information retrieval and related natural language tasks. Ground truth requirements are encoded in a fixed, provider-independent schema for reproducible evaluation of resource identification and attribute-level specification. Experiments on seven models under minimal prompting indicate that identifying the necessary resources is often achievable, with GPT-5.4 Thinking achieving the best result by recovering the complete set of resources in 66.67% of benchmark requests. Results further indicate that accurate fitness-for-use specification remains more difficult as inferential demands increase.",
+      "published": "2026-10-08T19:45:40Z",
+      "updated": "2026-10-08T19:45:40Z",
+      "arxiv_id": "2610.12669v1",
+      "abs_url": "http://arxiv.org/abs/2610.12669v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12669v1",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "comment": "Presented as an Oral Presentation Paper at GeoAI 2026, Ghent, Belgium. Also available on Zenodo",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 7,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial",
+        "large language model",
+        "LLM"
+      ],
+      "title_zh": "GeoFitBench-LLM: A Benchmark for Assessing Large Language Models' Capabilities in Geospatial Data Requirements Elicitation for Geo-Analytic Tasks",
+      "summary_zh": "Large language models are becoming central to GeoAI systems, yet their evaluation rarely considers the elicitation of geospatial data requirements. This omission is critical as retrieval oriented geo-analytic tasks cannot be supported reliably without first identifying the necessary datasets and constraints. GeoFitBench-LLM is introduced as a benchmark for assessing whether LLMs can infer the datasets, the supporting resources and the constraints required by geo-analytic requests in natural language. The benchmark is structured around two reasoning dimensions, Spatio-Temporal Relational and Semantic Grounding, reflecting long-standing challenges in geospatial information retrieval and related natural language tasks. Ground truth requirements are encoded in a fixed, provider-independent schema for reproducible evaluation of resource identification and attribute-level specification. Experiments on seven models under minimal prompting indicate that identifying the necessary resources is often achievable, with GPT-5.4 Thinking achieving the best result by recovering the complete set of resources in 66.67% of benchmark requests. Results further indicate that accurate fitness-for-use specification remains more difficult as inferential demands increase."
+    },
+    {
+      "title": "Machine Learning and Time-Series Foundation Models for Day-Ahead Electricity Forecasting in a University Building",
+      "authors": [
+        "Amey Vasulkar",
+        "Samuel Kernan Freire",
+        "Arie-Willem de Leeuw",
+        "Tadeo-Baldiri Salcedo-Rahola"
+      ],
+      "summary": "Day-ahead electricity forecasts can help building operators schedule heating, ventilation, and other services around anticipated demand. Choosing a forecasting model also requires balancing accuracy with its forecast-time inputs, local training, and computational requirements. We benchmark statistical, machine-learning, recurrent neural-network, and pretrained TimesFM models for a university building. We use chronological validation and evaluate all configurations on the same 57 test days, comparing accuracy across workdays, weekends, and holidays alongside local fitting and forecasting time. Weather covariates use retrospective observations. TimesFM 3.0 with covariates achieves the lowest overall errors, reducing mean absolute error by approximately 43\\% relative to weekly seasonal-naive forecasting. XGBoost remains competitive, although paired daily comparisons do not establish a clear mean-absolute-error advantage for TimesFM. TimesFM also performs strongly using only past electricity consumption. Adding covariates improves its holiday forecasts but slightly worsens workday and weekend forecasts, leaving overall mean absolute error almost unchanged. TimesFM requires no building-specific weight training, while XGBoost offers rapid local fitting and inference. The evaluated LSTM takes longer to fit without outperforming either approach. An exploratory historical evaluation reveals seasonal variation, while a separate weather-source comparison produces only small changes in the selected TimesFM configuration's accuracy. These results support pretrained TimesFM as a strong initial forecasting baseline for this building, with XGBoost as a competitive locally fitted alternative. Covariates are particularly useful when improved holiday forecasts justify the additional input preparation.",
+      "published": "2026-10-08T19:00:09Z",
+      "updated": "2026-10-08T19:00:09Z",
+      "arxiv_id": "2610.12638v1",
+      "abs_url": "http://arxiv.org/abs/2610.12638v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12638v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "LoRA",
+        "time-series"
+      ],
+      "title_zh": "Machine Learning and Time-Series Foundation Models for Day-Ahead Electricity Forecasting in a University Building",
+      "summary_zh": "Day-ahead electricity forecasts can help building operators schedule heating, ventilation, and other services around anticipated demand. Choosing a forecasting model also requires balancing accuracy with its forecast-time inputs, local training, and computational requirements. We benchmark statistical, machine-learning, recurrent neural-network, and pretrained TimesFM models for a university building. We use chronological validation and evaluate all configurations on the same 57 test days, comparing accuracy across workdays, weekends, and holidays alongside local fitting and forecasting time. Weather covariates use retrospective observations. TimesFM 3.0 with covariates achieves the lowest overall errors, reducing mean absolute error by approximately 43\\% relative to weekly seasonal-naive forecasting. XGBoost remains competitive, although paired daily comparisons do not establish a clear mean-absolute-error advantage for TimesFM. TimesFM also performs strongly using only past electricity consumption. Adding covariates improves its holiday forecasts but slightly worsens workday and weekend forecasts, leaving overall mean absolute error almost unchanged. TimesFM requires no building-specific weight training, while XGBoost offers rapid local fitting and inference. The evaluated LSTM takes longer to fit without outperforming either approach. An exploratory historical evaluation reveals seasonal variation, while a separate weather-source comparison produces only small changes in the selected TimesFM configuration's accuracy. These results support pretrained TimesFM as a strong initial forecasting baseline for this building, with XGBoost as a competitive locally fitted alternative. Covariates are particularly useful when improved holiday forecasts justify the additional input preparation."
+    },
+    {
+      "title": "BudgetPix: Compute-Adaptive Tokenization for Pixel-Space Image Diffusion",
+      "authors": [
+        "Ozgur Kara",
+        "Yujia Chen",
+        "Daniel Watson",
+        "David Forsyth",
+        "James Matthew Rehg",
+        "Wen-Sheng Chu",
+        "Du Tran"
+      ],
+      "summary": "Most image generation models rely on uniform tokenization, allocating the exact same computational budget to equally-sized image patches. This static paradigm cannot adapt to different resource constraints at inference time, and yields suboptimal quality-cost tradeoff by devoting the same effort to both plain backgrounds and intricate details. We propose BudgetPix, an adaptive tokenization framework that dynamically allocates compute based on visual complexity and spatial layout, enabling flexible computational budgeting at inference time. BudgetPix comprises three key components: (1) an adaptive encoder that maps a fixed-size image to a variable-length token sequence using an entropy-guided quadtree alongside a multi-scale patch embedder; (2) a scale-aware decoder reconstructs fixed-resolution images from multi-scale token sets; and (3) a flexible training and sampling schedule that enables pixel-space denoisers to operate across variable token counts. BudgetPix seamlessly integrates with existing pixel-space diffusion architectures, enabling a single checkpoint to be operated at a wide range of compute budgets. Evaluated on text-to-image generation, BudgetPix matches the fidelity of MiniT2I-L at $512^2$ and PixelDiT at $1024^2$ using just 25% of the original compute budget. In class-conditional generation using a MeanFlow backbone, BudgetPix requires merely 60% of the full compute budget to produce images with near-zero quality degradation, observing a marginal 0.8-point increase in FID. Comprehensive assessments by human and VLM judges confirm that BudgetPix establishes a significantly improved quality-efficiency tradeoff over prior budget-adaptive baselines. More details are available at our project page: https://karaozgur.com/BudgetPix",
+      "published": "2026-10-08T16:54:40Z",
+      "updated": "2026-10-08T16:54:40Z",
+      "arxiv_id": "2610.12307v1",
+      "abs_url": "http://arxiv.org/abs/2610.12307v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12307v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "More details are available at our project page: https://karaozgur.com/BudgetPix",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "视觉-语言模型"
+      ],
+      "topic": "图像生成与重建",
+      "score": 6,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation",
+        "multi-scale",
+        "tokenization",
+        "VLM"
+      ],
+      "title_zh": "BudgetPix: Compute-Adaptive Tokenization for Pixel-Space Image Diffusion",
+      "summary_zh": "Most image generation models rely on uniform tokenization, allocating the exact same computational budget to equally-sized image patches. This static paradigm cannot adapt to different resource constraints at inference time, and yields suboptimal quality-cost tradeoff by devoting the same effort to both plain backgrounds and intricate details. We propose BudgetPix, an adaptive tokenization framework that dynamically allocates compute based on visual complexity and spatial layout, enabling flexible computational budgeting at inference time. BudgetPix comprises three key components: (1) an adaptive encoder that maps a fixed-size image to a variable-length token sequence using an entropy-guided quadtree alongside a multi-scale patch embedder; (2) a scale-aware decoder reconstructs fixed-resolution images from multi-scale token sets; and (3) a flexible training and sampling schedule that enables pixel-space denoisers to operate across variable token counts. BudgetPix seamlessly integrates with existing pixel-space diffusion architectures, enabling a single checkpoint to be operated at a wide range of compute budgets. Evaluated on text-to-image generation, BudgetPix matches the fidelity of MiniT2I-L at $512^2$ and PixelDiT at $1024^2$ using just 25% of the original compute budget. In class-conditional generation using a MeanFlow backbone, BudgetPix requires merely 60% of the full compute budget to produce images with near-zero quality degradation, observing a marginal 0.8-point increase in FID. Comprehensive assessments by human and VLM judges confirm that BudgetPix establishes a significantly improved quality-efficiency tradeoff over prior budget-adaptive baselines. More details are available at our project page: https://karaozgur.com/BudgetPix"
+    },
+    {
+      "title": "RIFT: Relative Isolation From Trees For Anomaly Detection",
+      "authors": [
+        "Mark Daniel Szalai",
+        "Gabor Horvath"
+      ],
+      "summary": "Isolation Forest (IF) is a widely used baseline for unsupervised anomaly detection. Recent studies provide a closed-form expression for the infinite-forest limit for one-dimensional data. Inspired by the geometric interpretation of this formula, we introduce RIFT (Relative Isolation From Trees), a deterministic anomaly detection method that generates the minimum spanning tree and scores each point by the sum of the apparent sizes of tree edges as viewed from that point. For one-dimensional data, the RIFT score recovers the closed-form IF limit exactly. In higher dimensions, it provides a parameter-free generalization that is deterministic, robust to varying density and clustered anomalies and avoids the axis-parallel artifacts of IF. We further propose an ensemble variant for large datasets. Experiments on synthetic data and the ADBench benchmark demonstrate that the accuracy is comparable to IF, while the ensemble variant exhibits significantly lower variance across random seeds.",
+      "published": "2026-10-08T16:22:42Z",
+      "updated": "2026-10-08T16:22:42Z",
+      "arxiv_id": "2610.12244v1",
+      "abs_url": "http://arxiv.org/abs/2610.12244v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12244v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 4,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "robust",
+        "unsupervised"
+      ],
+      "title_zh": "RIFT: Relative Isolation From Trees For Anomaly Detection",
+      "summary_zh": "Isolation Forest (IF) is a widely used baseline for unsupervised anomaly detection. Recent studies provide a closed-form expression for the infinite-forest limit for one-dimensional data. Inspired by the geometric interpretation of this formula, we introduce RIFT (Relative Isolation From Trees), a deterministic anomaly detection method that generates the minimum spanning tree and scores each point by the sum of the apparent sizes of tree edges as viewed from that point. For one-dimensional data, the RIFT score recovers the closed-form IF limit exactly. In higher dimensions, it provides a parameter-free generalization that is deterministic, robust to varying density and clustered anomalies and avoids the axis-parallel artifacts of IF. We further propose an ensemble variant for large datasets. Experiments on synthetic data and the ADBench benchmark demonstrate that the accuracy is comparable to IF, while the ensemble variant exhibits significantly lower variance across random seeds."
+    },
+    {
+      "title": "AdaCast: Conditional Parameter Generation for Adaptive Time Series Forecasting",
+      "authors": [
+        "Darahaas Nallagatla",
+        "Darryl Cherian Jacob",
+        "Pan He"
+      ],
+      "summary": "Time-series foundation models (TSFMs) have achieved strong forecasting performance across domains. However, most adaptation methods remain static. Existing all-in-one methods learn a single set of dataset-level parameter updates and apply the same adapted model to every input. As a result, they cannot adapt the model parameters to the temporal patterns, seasonality and dynamics of each input time series. This limits their ability to produce forecasts that are tailored to heterogeneous inputs. To address this limitation, we propose AdaCast, a conditional parameter generation framework for time-series forecasting. AdaCast uses a generator to produce input-specific low-rank parameter updates for a frozen pretrained TSFM. These updates adapt the model to each input during both training and inference. Across six public benchmarks, AdaCast consistently outperforms static adaptation baseline in in-domain forecasting and improves zero-shot generalization to held-out datasets across domains. These results demonstrate that conditional parameter generation provides an effective approach for adaptive forecasting.",
+      "published": "2026-10-08T16:21:19Z",
+      "updated": "2026-10-08T16:21:19Z",
+      "arxiv_id": "2610.12240v1",
+      "abs_url": "http://arxiv.org/abs/2610.12240v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12240v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 3,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "temporal",
+        "time-series",
+        "zero-shot"
+      ],
+      "title_zh": "AdaCast: Conditional Parameter Generation for Adaptive Time Series Forecasting",
+      "summary_zh": "Time-series foundation models (TSFMs) have achieved strong forecasting performance across domains. However, most adaptation methods remain static. Existing all-in-one methods learn a single set of dataset-level parameter updates and apply the same adapted model to every input. As a result, they cannot adapt the model parameters to the temporal patterns, seasonality and dynamics of each input time series. This limits their ability to produce forecasts that are tailored to heterogeneous inputs. To address this limitation, we propose AdaCast, a conditional parameter generation framework for time-series forecasting. AdaCast uses a generator to produce input-specific low-rank parameter updates for a frozen pretrained TSFM. These updates adapt the model to each input during both training and inference. Across six public benchmarks, AdaCast consistently outperforms static adaptation baseline in in-domain forecasting and improves zero-shot generalization to held-out datasets across domains. These results demonstrate that conditional parameter generation provides an effective approach for adaptive forecasting."
+    },
+    {
+      "title": "AI-Based On-Board Maritime Object Detection for Earth Observation Payload Data Reduction on Versal Embedded Hardware",
+      "authors": [
+        "Thomas Goudemant",
+        "Aurélien Bobey",
+        "Omar Hlimi",
+        "Marjorie Bellizzi"
+      ],
+      "summary": "Very-high-resolution Earth-observation satellites acquire more data than they can store and downlink, while in maritime surveillance the vessels cover a tiny fraction of each scene. We study onboard vessel detection as a way to select what is downlinked, which reduces the data according to its content rather than coding every pixel; it is complementary to conventional onboard compression. The work follows three axes. (i) Data and algorithm: a controlled dataset is generated from 68 annotated Maxar scenes with 43 vessel classes, and a YOLOX-S detector is trained on it. (ii) Embedded deployment: the detector is quantized and deployed on the DPU of a Versal VC1902, with a limited loss of detection quality and a processing time of a few seconds per scene. (iii) Data reduction: we propose several downlink modes, from metadata only (box, class and score of each detection) to image crops around vessels, tiles holding detections, or the whole scene with a degraded background, and estimate from the measured detection errors the trade-off each offers between the vessels kept and the volume downlinked. On our dense harbor and coastal scenes, tiles keep 98% of the vessels with 29% of the scene volume, and crops 83% with 3%.",
+      "published": "2026-10-08T15:48:00Z",
+      "updated": "2026-10-09T09:26:28Z",
+      "arxiv_id": "2610.12182v2",
+      "abs_url": "http://arxiv.org/abs/2610.12182v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.12182v2",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "8 pages. Accepted at the 10th On-Board Payload Data Compression Workshop (OBPDC 2026), Barcelona, Spain, 12-14 October 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 9,
+      "anchor_terms": [
+        "crop",
+        "earth observation",
+        "object detection"
+      ],
+      "matched_terms": [
+        "crop",
+        "earth observation",
+        "object detection",
+        "satellite",
+        "YOLO"
+      ],
+      "title_zh": "AI-Based On-Board Maritime Object Detection for Earth Observation Payload Data Reduction on Versal Embedded Hardware",
+      "summary_zh": "Very-high-resolution Earth-observation satellites acquire more data than they can store and downlink, while in maritime surveillance the vessels cover a tiny fraction of each scene. We study onboard vessel detection as a way to select what is downlinked, which reduces the data according to its content rather than coding every pixel; it is complementary to conventional onboard compression. The work follows three axes. (i) Data and algorithm: a controlled dataset is generated from 68 annotated Maxar scenes with 43 vessel classes, and a YOLOX-S detector is trained on it. (ii) Embedded deployment: the detector is quantized and deployed on the DPU of a Versal VC1902, with a limited loss of detection quality and a processing time of a few seconds per scene. (iii) Data reduction: we propose several downlink modes, from metadata only (box, class and score of each detection) to image crops around vessels, tiles holding detections, or the whole scene with a degraded background, and estimate from the measured detection errors the trade-off each offers between the vessels kept and the volume downlinked. On our dense harbor and coastal scenes, tiles keep 98% of the vessels with 29% of the scene volume, and crops 83% with 3%."
+    }
+  ]
+}
