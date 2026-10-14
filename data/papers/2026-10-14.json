@@ -1,0 +1,1235 @@
+{
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T06:55:26.469904+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 28,
+  "papers": [
+    {
+      "title": "Deficit-Driven Stratified Acquisition for Building STRATA-S12: An Open SAR-Optical Corpus for Self-Supervised Learning",
+      "authors": [
+        "Christian Sanchez-Leon",
+        "Dongming Chen",
+        "Dongqi Wang"
+      ],
+      "summary": "Building a co-registered SAR-optical corpus for self-supervised Earth Observation is above all an acquisition problem, yet the main multi-modal datasets are collected opportunistically, with no per-stratum quota control and no mechanism against the geographic dropout that non-uniform cloud cover leaves behind. We present Deficit-Driven Stratified Acquisition (DDSA), an algorithm that treats building a co-registered Sentinel-1/Sentinel-2 corpus as a constrained maximum-coverage problem over a hemisphere-corrected (class x season x region) stratification, enforces strict temporal pairing and a multi-stage quality gate, and closes the loop during acquisition with a human-in-the-loop deficit-repair stage. Measured on its own product, the algorithm yields three results a single-pass acquisition cannot report. Deficit-driven ordering makes a partial run a covering one: it holds every one of the 192 strata populated from the first few percent of the budget, where an abundance-first order leaves most strata empty until the end. Whether a failed attempt can be recovered depends on the temporal persistence of its cause, not the kind of defect: geometric failures such as nodata are among the most repairable (eta = 41.4%) while cloud is among the least (eta = 18.8%), because a cloudy location is cloudy on most dates of its season. The repair loop supplies 39.5% of the released pairs at no measurable quality cost, with 89.8% surviving manual review. The quality guarantee has a price: 2,928,370 acquisition attempts produced 740,746 released pairs. We release the corpus, STRATA-S12, with STAC/PDS4-aligned FAIR sidecars, and a pre-registered linear-probe check confirms it is fit for self-supervised pre-training. A metadata-level coverage comparison against SSL4EO-S12 and SEN12MS situates the corpus over a shared frame; systematic cross-corpus and cross-method comparison is left to follow-up work.",
+      "published": "2026-10-13T04:03:57Z",
+      "updated": "2026-10-13T04:03:57Z",
+      "arxiv_id": "2610.17680v1",
+      "abs_url": "http://arxiv.org/abs/2610.17680v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17680v1",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "55 pages. Dataset on Hugging Face: https://huggingface.co/datasets/chsanleo/strata-s12 - archived on Zenodo: STRATA-S12 corpus https://doi.org/10.5281/zenodo.22699047 ; reduced subset (D_lite) https://doi.org/10.5281/zenodo.22646276",
+      "code_url": "https://huggingface.co/datasets/chsanleo/strata-s12",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "变化检测",
+        "基础模型",
+        "无监督与弱监督",
+        "多模态融合",
+        "SAR遥感",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "变化检测",
+      "score": 17,
+      "anchor_terms": [
+        "earth observation",
+        "SEN12MS",
+        "Sentinel-1",
+        "Sentinel-2",
+        "temporal"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "pre-training",
+        "SAR",
+        "self-supervised",
+        "self-supervised learning",
+        "SEN12MS",
+        "Sentinel-1",
+        "Sentinel-2",
+        "temporal"
+      ],
+      "title_zh": "Deficit-Driven Stratified Acquisition for Building STRATA-S12: An Open SAR-Optical Corpus for Self-Supervised Learning",
+      "summary_zh": "Building a co-registered SAR-optical corpus for self-supervised Earth Observation is above all an acquisition problem, yet the main multi-modal datasets are collected opportunistically, with no per-stratum quota control and no mechanism against the geographic dropout that non-uniform cloud cover leaves behind. We present Deficit-Driven Stratified Acquisition (DDSA), an algorithm that treats building a co-registered Sentinel-1/Sentinel-2 corpus as a constrained maximum-coverage problem over a hemisphere-corrected (class x season x region) stratification, enforces strict temporal pairing and a multi-stage quality gate, and closes the loop during acquisition with a human-in-the-loop deficit-repair stage. Measured on its own product, the algorithm yields three results a single-pass acquisition cannot report. Deficit-driven ordering makes a partial run a covering one: it holds every one of the 192 strata populated from the first few percent of the budget, where an abundance-first order leaves most strata empty until the end. Whether a failed attempt can be recovered depends on the temporal persistence of its cause, not the kind of defect: geometric failures such as nodata are among the most repairable (eta = 41.4%) while cloud is among the least (eta = 18.8%), because a cloudy location is cloudy on most dates of its season. The repair loop supplies 39.5% of the released pairs at no measurable quality cost, with 89.8% surviving manual review. The quality guarantee has a price: 2,928,370 acquisition attempts produced 740,746 released pairs. We release the corpus, STRATA-S12, with STAC/PDS4-aligned FAIR sidecars, and a pre-registered linear-probe check confirms it is fit for self-supervised pre-training. A metadata-level coverage comparison against SSL4EO-S12 and SEN12MS situates the corpus over a shared frame; systematic cross-corpus and cross-method comparison is left to follow-up work."
+    },
+    {
+      "title": "CÆNL: Collapse-Based Active Neural Learning with Objective-Aligned Representation Control",
+      "authors": [
+        "Saad Alqithami"
+      ],
+      "summary": "Active learning changes the representations used to acquire subsequent labels. We study this interaction through Collapse-Based Active Neural Learning (CÆNL), which separates acquisition, Dynamic Collapse Regularization (DCR), and its coefficient policy. DCR penalizes a normalized within-class to between-class scatter residual above a frozen reference, with a separate class-separation safeguard. Fixed, scheduled, deterministic-feedback, and learned-feedback policies apply this objective. The analysis establishes scatter invariances, conditional local descent, and coefficient bounds, and shows why clean geometry alone cannot guarantee input robustness. Six-seed classification comparisons are complemented by a 104-run study with separate control selection and ten-seed evaluations on each of two backbones. At 60% annotations on ImageNet-100, entropy acquisition with DCR and MACC-Lite reaches 73.420 +/- 0.512% accuracy on ResNet-50 and 73.086 +/- 0.397% on ResNet-18 (mean +/- seed SD), exceeding entropy alone by 1.742 and 1.834 percentage points. Both gains survive Holm correction under paired-t and exact sign-flip tests, with unchanged feedback settings across backbones. Independently tuned constants attain slightly higher mean accuracy; the paired comparisons establish neither adaptive superiority nor equivalence. Separate six-seed spectral studies yield a small fixed-regularization C4 loss reduction, worse CIFAR-10 diffusion FID, and inconclusive AudioCaps captioning effects. Earlier classification studies find near-zero AutoAttack accuracy at L-infinity radius 8/255 and no added benefit from learned control. The results support the evaluated combined classification treatment and identify the task dependence of geometry-informed regularization.",
+      "published": "2026-10-13T00:12:58Z",
+      "updated": "2026-10-13T00:12:58Z",
+      "arxiv_id": "2610.17509v1",
+      "abs_url": "http://arxiv.org/abs/2610.17509v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17509v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "comment": "Code and numerical reproduction: https://github.com/alqithami/CANL",
+      "code_url": "https://github.com/alqithami/CANL",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "图像描述与视觉推理",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 3,
+      "anchor_terms": [
+        "active learning"
+      ],
+      "matched_terms": [
+        "active learning",
+        "robust"
+      ],
+      "title_zh": "CÆNL: Collapse-Based Active Neural Learning with Objective-Aligned Representation Control",
+      "summary_zh": "Active learning changes the representations used to acquire subsequent labels. We study this interaction through Collapse-Based Active Neural Learning (CÆNL), which separates acquisition, Dynamic Collapse Regularization (DCR), and its coefficient policy. DCR penalizes a normalized within-class to between-class scatter residual above a frozen reference, with a separate class-separation safeguard. Fixed, scheduled, deterministic-feedback, and learned-feedback policies apply this objective. The analysis establishes scatter invariances, conditional local descent, and coefficient bounds, and shows why clean geometry alone cannot guarantee input robustness. Six-seed classification comparisons are complemented by a 104-run study with separate control selection and ten-seed evaluations on each of two backbones. At 60% annotations on ImageNet-100, entropy acquisition with DCR and MACC-Lite reaches 73.420 +/- 0.512% accuracy on ResNet-50 and 73.086 +/- 0.397% on ResNet-18 (mean +/- seed SD), exceeding entropy alone by 1.742 and 1.834 percentage points. Both gains survive Holm correction under paired-t and exact sign-flip tests, with unchanged feedback settings across backbones. Independently tuned constants attain slightly higher mean accuracy; the paired comparisons establish neither adaptive superiority nor equivalence. Separate six-seed spectral studies yield a small fixed-regularization C4 loss reduction, worse CIFAR-10 diffusion FID, and inconclusive AudioCaps captioning effects. Earlier classification studies find near-zero AutoAttack accuracy at L-infinity radius 8/255 and no added benefit from learned control. The results support the evaluated combined classification treatment and identify the task dependence of geometry-informed regularization."
+    },
+    {
+      "title": "CartoVec: General-Purpose Location Embeddings from Open Map Data",
+      "authors": [
+        "Furkan Gursoy"
+      ],
+      "summary": "Geographic coordinates are common inputs in applied machine learning, but latitude and longitude describe position rather than the surrounding environment. Image-grounded location encoders learn this context from satellite or ground-level imagery; structured open map data offers another source of supervision whose utility for continuous coordinate encoders remains less explored. We introduce CartoVec, a coordinate encoder trained to predict Overture-derived land cover, land use, transportation, place and connectivity targets at multiple spatial scales, without image inputs or downstream-task labels. We evaluate frozen embeddings on Census outcomes, Airbnb prices and Philadelphia crime in the US Northeast using spatial block cross-validation. CartoVec has the highest mean performance on most Census outcomes and the highest average across the full suite, with several comparisons close across folds. The findings support open map data as a practical source of reusable location representations with a coordinate-to-vector interface that requires no map lookup at inference. The open-weight model is available at https://huggingface.co/gursoyfurkan/CartoVec.",
+      "published": "2026-10-12T17:55:25Z",
+      "updated": "2026-10-12T17:55:25Z",
+      "arxiv_id": "2610.17190v1",
+      "abs_url": "http://arxiv.org/abs/2610.17190v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17190v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "physics.geo-ph"
+      ],
+      "comment": "16 pages, 4 figures",
+      "code_url": "https://huggingface.co/gursoyfurkan/CartoVec",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "语义分割",
+        "场景分类",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 4,
+      "anchor_terms": [
+        "land use"
+      ],
+      "matched_terms": [
+        "land cover",
+        "land use",
+        "satellite"
+      ],
+      "title_zh": "CartoVec: General-Purpose Location Embeddings from Open Map Data",
+      "summary_zh": "Geographic coordinates are common inputs in applied machine learning, but latitude and longitude describe position rather than the surrounding environment. Image-grounded location encoders learn this context from satellite or ground-level imagery; structured open map data offers another source of supervision whose utility for continuous coordinate encoders remains less explored. We introduce CartoVec, a coordinate encoder trained to predict Overture-derived land cover, land use, transportation, place and connectivity targets at multiple spatial scales, without image inputs or downstream-task labels. We evaluate frozen embeddings on Census outcomes, Airbnb prices and Philadelphia crime in the US Northeast using spatial block cross-validation. CartoVec has the highest mean performance on most Census outcomes and the highest average across the full suite, with several comparisons close across folds. The findings support open map data as a practical source of reusable location representations with a coordinate-to-vector interface that requires no map lookup at inference. The open-weight model is available at https://huggingface.co/gursoyfurkan/CartoVec."
+    },
+    {
+      "title": "The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement",
+      "authors": [
+        "Sijie Zhao",
+        "Zeqi Zhou",
+        "Heli Qi",
+        "Xuanchao Fu",
+        "Zhuo Zheng",
+        "Junshi Xia",
+        "Junjue Wang",
+        "Weihao Xuan",
+        "Naoto Yokoya"
+      ],
+      "summary": "Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do.",
+      "published": "2026-10-13T17:57:51Z",
+      "updated": "2026-10-13T17:57:51Z",
+      "arxiv_id": "2610.18845v1",
+      "abs_url": "http://arxiv.org/abs/2610.18845v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18845v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "comment": "Ongoing project",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "SAR遥感",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 10,
+      "anchor_terms": [
+        "earth observation",
+        "remote sensing",
+        "SAR"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "multispectral",
+        "remote sensing",
+        "SAR",
+        "time-series"
+      ],
+      "title_zh": "The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement",
+      "summary_zh": "Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do."
+    },
+    {
+      "title": "Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response",
+      "authors": [
+        "Georgios Angelidis",
+        "Aggelos Psiris",
+        "Spyridon Evangelatos",
+        "Thomas Lagkas",
+        "Panagiotis Sarigiannidis",
+        "Iraklis Varlamis",
+        "Georgios Th. Papadopoulos"
+      ],
+      "summary": "Agentic remote sensing is evaluated on how many questions it can answer, whereas crisis response depends on whether its answers can be relied on and how much of the decision can safely be handed to the agent. This paper argues that \\emph{autonomy should be earned, not assumed}: An Earth-Observation (EO) agent should be granted autonomy in proportion to demonstrated reliability, epistemic honesty and verifiability. The position is supported by an evidential meta-analysis of twelve agentic RS/EO/GIS benchmark studies from peer-reviewed venues. Only one repeats runs, three contain unanswerable tasks and none measures calibration. Their own tables show that completed workflows are often not correct (task success exceeds tool-call correctness by up to 54pp on identical queries), that the gap to an expert trajectory widens overall with trajectory length (from 7 to 56pp), and that capability does not predict abstention (Spearman r from -0.25 to 0.50, all n.s.). The paper then contributes three EO-specific trust properties, an autonomy ladder for crisis EO tasks, and a readiness protocol that replays archived emergency activations before any live use. In this context, current evidence justifies assistive roles only.",
+      "published": "2026-10-13T17:39:23Z",
+      "updated": "2026-10-13T17:39:23Z",
+      "arxiv_id": "2610.18789v1",
+      "abs_url": "http://arxiv.org/abs/2610.18789v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18789v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CY"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "数据集/评测"
+      ],
+      "topic": "数据集/评测",
+      "score": 5,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "GIS",
+        "remote sensing"
+      ],
+      "title_zh": "Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response",
+      "summary_zh": "Agentic remote sensing is evaluated on how many questions it can answer, whereas crisis response depends on whether its answers can be relied on and how much of the decision can safely be handed to the agent. This paper argues that \\emph{autonomy should be earned, not assumed}: An Earth-Observation (EO) agent should be granted autonomy in proportion to demonstrated reliability, epistemic honesty and verifiability. The position is supported by an evidential meta-analysis of twelve agentic RS/EO/GIS benchmark studies from peer-reviewed venues. Only one repeats runs, three contain unanswerable tasks and none measures calibration. Their own tables show that completed workflows are often not correct (task success exceeds tool-call correctness by up to 54pp on identical queries), that the gap to an expert trajectory widens overall with trajectory length (from 7 to 56pp), and that capability does not predict abstention (Spearman r from -0.25 to 0.50, all n.s.). The paper then contributes three EO-specific trust properties, an autonomy ladder for crisis EO tasks, and a readiness protocol that replays archived emergency activations before any live use. In this context, current evidence justifies assistive roles only."
+    },
+    {
+      "title": "MajorTOM:Elliot Pretrain, A Multi-Sensor, Multi-Temporal Pretraining Dataset for Earth Observation",
+      "authors": [
+        "Carmen Oliver Huidobro",
+        "Mikolaj Czerkawski",
+        "Kevin Monsalvez-Pozo",
+        "Cesar Aybar",
+        "Gustau Camps-Valls",
+        "Oscar J. Pellicer-Valero"
+      ],
+      "summary": "Pretraining generalist Earth observation foundation models requires data that combine several sensors, varied temporal sampling and, increasingly, text, yet open datasets rarely provide all three in one consistent, easily accessible form. We introduce MajorTOM:Elliot Pretrain, a collection of 279,166 tiles of 10 km drawn from the Major-TOM grid by clustering AlphaEarth embeddings. Each tile stacks Sentinel-2 L1C, Landsat-8/9, Sentinel-1 RTC, Copernicus DEM and ESA WorldCover on a shared 1056x1056-pixel, 10 m grid, complemented by cloud masks, OpenStreetMap entities and ERA5 weather. The tiles are partitioned into three temporal regimes, Monotemporal (250,000 tiles, one acquisition), Monthly (12,500 tiles, twelve acquisitions spread over the annual cycle) and Burst (16,666 tiles, six acquisitions within 30 days), and are released as 6.3 TB of Cloud Optimized GeoTIFFs indexed by TACO v3 Parquet metadata, a standard that allows cloud streaming, efficient data access, and filtering before any pixel is read. A companion library derives sensor-tagged fact sheets, captions and 16 families of vision-language tasks from these layers at load time. We test our design choices in short pretraining runs of OlmoEarth-Base. First, a 25% subset of Major-TOM Core-S2L2A curated with AlphaEarth embeddings matches or exceeds the full corpus on 8 of 9 benchmarks. Second, on Elliot-Pretrain, adding Landsat-8/9 improves or matches Sentinel-2 only pretraining on every benchmark. Third, using DEM and WorldCover as prediction targets during pretraining further improves 8 of 9 benchmarks, while giving the same maps to the encoder as inputs degrades 5 of 9. Fourth, Sentinel-1 helps on 7 of 9 benchmarks, particularly on benchmarks with radar inputs. Fifth, rule-based captions match a small language model at no cost. The dataset is openly available at https://source.coop/major-tom/elliot-pretrain.",
+      "published": "2026-10-13T16:03:15Z",
+      "updated": "2026-10-13T16:03:15Z",
+      "arxiv_id": "2610.18624v1",
+      "abs_url": "http://arxiv.org/abs/2610.18624v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18624v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "时间序列与视频",
+        "基础模型",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "SAR遥感",
+        "高光谱/多光谱",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 14,
+      "anchor_terms": [
+        "earth observation",
+        "earth observation foundation model",
+        "foundation model",
+        "Landsat",
+        "Sentinel-1",
+        "Sentinel-2",
+        "temporal"
+      ],
+      "matched_terms": [
+        "DEM",
+        "earth observation",
+        "earth observation foundation model",
+        "foundation model",
+        "Landsat",
+        "multi-temporal",
+        "Sentinel-1",
+        "Sentinel-2",
+        "temporal"
+      ],
+      "title_zh": "MajorTOM:Elliot Pretrain, A Multi-Sensor, Multi-Temporal Pretraining Dataset for Earth Observation",
+      "summary_zh": "Pretraining generalist Earth observation foundation models requires data that combine several sensors, varied temporal sampling and, increasingly, text, yet open datasets rarely provide all three in one consistent, easily accessible form. We introduce MajorTOM:Elliot Pretrain, a collection of 279,166 tiles of 10 km drawn from the Major-TOM grid by clustering AlphaEarth embeddings. Each tile stacks Sentinel-2 L1C, Landsat-8/9, Sentinel-1 RTC, Copernicus DEM and ESA WorldCover on a shared 1056x1056-pixel, 10 m grid, complemented by cloud masks, OpenStreetMap entities and ERA5 weather. The tiles are partitioned into three temporal regimes, Monotemporal (250,000 tiles, one acquisition), Monthly (12,500 tiles, twelve acquisitions spread over the annual cycle) and Burst (16,666 tiles, six acquisitions within 30 days), and are released as 6.3 TB of Cloud Optimized GeoTIFFs indexed by TACO v3 Parquet metadata, a standard that allows cloud streaming, efficient data access, and filtering before any pixel is read. A companion library derives sensor-tagged fact sheets, captions and 16 families of vision-language tasks from these layers at load time. We test our design choices in short pretraining runs of OlmoEarth-Base. First, a 25% subset of Major-TOM Core-S2L2A curated with AlphaEarth embeddings matches or exceeds the full corpus on 8 of 9 benchmarks. Second, on Elliot-Pretrain, adding Landsat-8/9 improves or matches Sentinel-2 only pretraining on every benchmark. Third, using DEM and WorldCover as prediction targets during pretraining further improves 8 of 9 benchmarks, while giving the same maps to the encoder as inputs degrades 5 of 9. Fourth, Sentinel-1 helps on 7 of 9 benchmarks, particularly on benchmarks with radar inputs. Fifth, rule-based captions match a small language model at no cost. The dataset is openly available at https://source.coop/major-tom/elliot-pretrain."
+    },
+    {
+      "title": "How Low Can You Go: Fine-Tuning LLMs with Bayesian Optimization (LlMBO)",
+      "authors": [
+        "Aditya Kulkarni",
+        "Davide Sartor",
+        "Carlos Soto",
+        "Nathan Wycoff"
+      ],
+      "summary": "Recently, Morris et al. introduced TinyLoRA, a strategy for LLM fine-tuning which introduces arbitrarily few parameters, and demonstrated accuracy improvements using less than $10$ parameters rather than the ${\\gtrsim 10,000}$ typically demanded by LoRA-based methods. However, that study continued to use gradient-based local search methods of the kind deployed for training multi-billion parameter LLMs in the first place. This article is predicated on the observation that, in the low dimensional setting, global optimization methods become tractable, unlocking Large language Model Bayesian Optimization (LlMBO). LlMBO is sample-efficient, gradient-free, memory-light, parallelizes across devices without synchronization, and, unlike policy-gradient methods, can optimize greedy-decoding accuracy directly. We describe numerical experiments comparing LlMBO against GRPO on fine-tuning tasks for a variety of models on a math benchmark suite which show that LlMBO can be a suitable alternative in this regime, matching or exceeding GRPO's fine tuning gains, while using a fraction of the compute and memory.",
+      "published": "2026-10-13T14:58:27Z",
+      "updated": "2026-10-13T14:58:27Z",
+      "arxiv_id": "2610.18504v1",
+      "abs_url": "http://arxiv.org/abs/2610.18504v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18504v1",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "large language model",
+        "LLM",
+        "LoRA"
+      ],
+      "title_zh": "How Low Can You Go: Fine-Tuning LLMs with Bayesian Optimization (LlMBO)",
+      "summary_zh": "Recently, Morris et al. introduced TinyLoRA, a strategy for LLM fine-tuning which introduces arbitrarily few parameters, and demonstrated accuracy improvements using less than $10$ parameters rather than the ${\\gtrsim 10,000}$ typically demanded by LoRA-based methods. However, that study continued to use gradient-based local search methods of the kind deployed for training multi-billion parameter LLMs in the first place. This article is predicated on the observation that, in the low dimensional setting, global optimization methods become tractable, unlocking Large language Model Bayesian Optimization (LlMBO). LlMBO is sample-efficient, gradient-free, memory-light, parallelizes across devices without synchronization, and, unlike policy-gradient methods, can optimize greedy-decoding accuracy directly. We describe numerical experiments comparing LlMBO against GRPO on fine-tuning tasks for a variety of models on a math benchmark suite which show that LlMBO can be a suitable alternative in this regime, matching or exceeding GRPO's fine tuning gains, while using a fraction of the compute and memory."
+    },
+    {
+      "title": "Resource-Efficient 3D Shape and Orientation Estimation of Road Users using Roadside RGB Camera and 3D Radar",
+      "authors": [
+        "Shiva Agrawal",
+        "Savankumar Bhanderi",
+        "Gordon Elger"
+      ],
+      "summary": "End-to-end deep learning pipelines for camera-radar 3D object detection are well established in driver assistance systems and autonomous vehicles; however, adapting them to roadside-mounted infrastructure presents significant challenges. On vehicles, sensor heights, pitch angles, and relative geometries remain largely uniform, allowing end-to-end models to generalize effectively. On the contrary, roadside sensor installations vary drastically in height, tilt, and field of view across locations, rendering end-to-end models prone to failure and difficult to adapt without massive location-specific datasets. Hence, instead of designing a complex end-to-end pipeline for direct 3D bounding box estimation, a low-cost, resource-efficient two-stage approach is proposed for real-time 3D shape and orientation estimation. The first stage utilizes any off-the-shelf, state-of-the-art method to extract 2D camera bounding boxes and associated 3D radar points for each road user. The proposed second stage then processes these inputs to construct 3D oriented bounding boxes where radar data determines 3D position, predefined templates define size for each road user, and a tiny neural network predicts a site-specific and optimized yaw angle. The algorithm is successfully validated at a curved road with a junction for pedestrians, bicycles, and cars, where it achieves 25 frames per second on an NVIDIA Jetson ORIN for real-time applications.",
+      "published": "2026-10-13T13:58:01Z",
+      "updated": "2026-10-13T13:58:01Z",
+      "arxiv_id": "2610.18417v1",
+      "abs_url": "http://arxiv.org/abs/2610.18417v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18417v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "Accepted at the 18th IEEE Symposium Sensor Data Fusion: Trends, Solutions and Applications (SDF 2026), Bonn, Germany",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 6,
+      "anchor_terms": [
+        "object detection"
+      ],
+      "matched_terms": [
+        "object detection",
+        "oriented bounding box"
+      ],
+      "title_zh": "Resource-Efficient 3D Shape and Orientation Estimation of Road Users using Roadside RGB Camera and 3D Radar",
+      "summary_zh": "End-to-end deep learning pipelines for camera-radar 3D object detection are well established in driver assistance systems and autonomous vehicles; however, adapting them to roadside-mounted infrastructure presents significant challenges. On vehicles, sensor heights, pitch angles, and relative geometries remain largely uniform, allowing end-to-end models to generalize effectively. On the contrary, roadside sensor installations vary drastically in height, tilt, and field of view across locations, rendering end-to-end models prone to failure and difficult to adapt without massive location-specific datasets. Hence, instead of designing a complex end-to-end pipeline for direct 3D bounding box estimation, a low-cost, resource-efficient two-stage approach is proposed for real-time 3D shape and orientation estimation. The first stage utilizes any off-the-shelf, state-of-the-art method to extract 2D camera bounding boxes and associated 3D radar points for each road user. The proposed second stage then processes these inputs to construct 3D oriented bounding boxes where radar data determines 3D position, predefined templates define size for each road user, and a tiny neural network predicts a site-specific and optimized yaw angle. The algorithm is successfully validated at a curved road with a junction for pedestrians, bicycles, and cars, where it achieves 25 frames per second on an NVIDIA Jetson ORIN for real-time applications."
+    },
+    {
+      "title": "Overcoming Catastrophic Forgetting: Continual Learning for Radar Waveform Classification",
+      "authors": [
+        "Mohamed Rabie",
+        "Chinthana J. Panagamuwa",
+        "Konstantinos G. Kyriakopoulos"
+      ],
+      "summary": "Automated radar waveform recognition classifies the waveform and modulation type of a received signal. As new waveform variants appear over time, a deployed classifier must learn them without retraining from scratch. Catastrophic Forgetting occurs when learning new waveforms overwrites prior knowledge. Continual Learning (CL) methods tackle this challenge, but prior radar studies only evaluate a few methods on narrow benchmarks. Practitioners lack evidence on which method to deploy or which mechanisms are effective. This work presents the first large-scale benchmark of continual learning for radar waveform recognition. Eighteen CL methods are evaluated on a sequential ten-task problem, drawn from four public datasets spanning 54 waveforms, under task- and class-incremental (TIL, CIL) settings and single- and multi-epoch regimes. Methods that retain data from old tasks lead both TIL and CIL settings. Plain replay alone closes 77-88% of the gap between the lower and upper practical limits under TIL, but only 46-55% under CIL. The internal mechanisms of the leading methods are ablated and statistically tested to identify effective mechanisms. Each ablation is paired against its full method over n=6 training seeds, topped up to n=12 when inconclusive, and p-values are Holm-Bonferroni corrected within each method's family. Ablation results show that several mechanisms confer smaller but statistically significant gains. Combining these mechanisms improves the leading F1 score by 3.4-5.5% and 2.7-4.9% under TIL and CIL, respectively, and the combined models exceed every benchmarked method in both settings for all SNRs. These results give researchers of radar waveform classification systems a mechanism-level basis for design.",
+      "published": "2026-10-13T13:49:50Z",
+      "updated": "2026-10-13T13:49:50Z",
+      "arxiv_id": "2610.18404v1",
+      "abs_url": "http://arxiv.org/abs/2610.18404v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18404v1",
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "cs.LG"
+      ],
+      "comment": "15 pages, 5 figures, 16 tables. Submitted to IEEE Transactions on Aerospace and Electronic Systems",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "数据集/评测"
+      ],
+      "topic": "数据集/评测",
+      "score": 5,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "class-incremental",
+        "continual learning"
+      ],
+      "title_zh": "Overcoming Catastrophic Forgetting: Continual Learning for Radar Waveform Classification",
+      "summary_zh": "Automated radar waveform recognition classifies the waveform and modulation type of a received signal. As new waveform variants appear over time, a deployed classifier must learn them without retraining from scratch. Catastrophic Forgetting occurs when learning new waveforms overwrites prior knowledge. Continual Learning (CL) methods tackle this challenge, but prior radar studies only evaluate a few methods on narrow benchmarks. Practitioners lack evidence on which method to deploy or which mechanisms are effective. This work presents the first large-scale benchmark of continual learning for radar waveform recognition. Eighteen CL methods are evaluated on a sequential ten-task problem, drawn from four public datasets spanning 54 waveforms, under task- and class-incremental (TIL, CIL) settings and single- and multi-epoch regimes. Methods that retain data from old tasks lead both TIL and CIL settings. Plain replay alone closes 77-88% of the gap between the lower and upper practical limits under TIL, but only 46-55% under CIL. The internal mechanisms of the leading methods are ablated and statistically tested to identify effective mechanisms. Each ablation is paired against its full method over n=6 training seeds, topped up to n=12 when inconclusive, and p-values are Holm-Bonferroni corrected within each method's family. Ablation results show that several mechanisms confer smaller but statistically significant gains. Combining these mechanisms improves the leading F1 score by 3.4-5.5% and 2.7-4.9% under TIL and CIL, respectively, and the combined models exceed every benchmarked method in both settings for all SNRs. These results give researchers of radar waveform classification systems a mechanism-level basis for design."
+    },
+    {
+      "title": "ReDiS: Reasoning-Diagnosis Self-Evolution for Multimodal Reasoning in Remote Sensing",
+      "authors": [
+        "Yi Liu",
+        "Wentao Jiang",
+        "Shuo Ni",
+        "Zhiming Luo",
+        "Di Wang",
+        "Zengmao Wang",
+        "Jing Zhang",
+        "Bo Du"
+      ],
+      "summary": "Multimodal large language models (MLLMs) have shown strong potential for remote sensing understanding, yet reliable reasoning remains challenging when tasks require fine-grained visual grounding and multi-step inference. Existing approaches typically rely on either costly pre-constructed reasoning trajectories or self-generated signals such as response consistency, which can reinforce shared errors and provide unreliable supervision. We introduce \\textbf{Reasoning--Diagnosis Self-Evolution (ReDiS)}, a framework that separates reasoning exploration from candidate evaluation while allowing the two processes to evolve jointly. ReDiS instantiates two role-specific experts from a shared multimodal backbone: a \\textbf{Reasoner} that explores diverse visual evidence--answer candidates and a \\textbf{Diagnoser} that jointly evaluates the complete candidate set and provides credibility-aware feedback. As the Reasoner evolves, it exposes new candidate distributions and failure modes; the Diagnoser adapts to these changes and, in turn, reshapes the learning signal for subsequent exploration. To handle groups in which all sampled answers are incorrect and group-relative advantages vanish, we further introduce \\textbf{Failure-Triggered Recovery (FTR)}, which provides minimal outcome-level correction without prescribing intermediate reasoning trajectories. Experiments on LHRS-Bench, MME-RS, and CHOICE show consistent improvements over Qwen3.5 backbones at 0.8B, 2B, and 4B scales. ReDiS improves category-averaged accuracy by 6.47 percentage points at 0.8B, while ReDiS-4B achieves the highest average performance among the compared remote sensing MLLMs.",
+      "published": "2026-10-13T13:38:02Z",
+      "updated": "2026-10-13T13:38:02Z",
+      "arxiv_id": "2610.18388v1",
+      "abs_url": "http://arxiv.org/abs/2610.18388v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18388v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 12,
+      "anchor_terms": [
+        "LoRA",
+        "MLLM",
+        "multimodal large language model",
+        "remote sensing",
+        "visual grounding"
+      ],
+      "matched_terms": [
+        "large language model",
+        "LoRA",
+        "MLLM",
+        "multimodal large language model",
+        "remote sensing",
+        "remote sensing MLLM",
+        "visual grounding"
+      ],
+      "title_zh": "ReDiS: Reasoning-Diagnosis Self-Evolution for Multimodal Reasoning in Remote Sensing",
+      "summary_zh": "Multimodal large language models (MLLMs) have shown strong potential for remote sensing understanding, yet reliable reasoning remains challenging when tasks require fine-grained visual grounding and multi-step inference. Existing approaches typically rely on either costly pre-constructed reasoning trajectories or self-generated signals such as response consistency, which can reinforce shared errors and provide unreliable supervision. We introduce \\textbf{Reasoning--Diagnosis Self-Evolution (ReDiS)}, a framework that separates reasoning exploration from candidate evaluation while allowing the two processes to evolve jointly. ReDiS instantiates two role-specific experts from a shared multimodal backbone: a \\textbf{Reasoner} that explores diverse visual evidence--answer candidates and a \\textbf{Diagnoser} that jointly evaluates the complete candidate set and provides credibility-aware feedback. As the Reasoner evolves, it exposes new candidate distributions and failure modes; the Diagnoser adapts to these changes and, in turn, reshapes the learning signal for subsequent exploration. To handle groups in which all sampled answers are incorrect and group-relative advantages vanish, we further introduce \\textbf{Failure-Triggered Recovery (FTR)}, which provides minimal outcome-level correction without prescribing intermediate reasoning trajectories. Experiments on LHRS-Bench, MME-RS, and CHOICE show consistent improvements over Qwen3.5 backbones at 0.8B, 2B, and 4B scales. ReDiS improves category-averaged accuracy by 6.47 percentage points at 0.8B, while ReDiS-4B achieves the highest average performance among the compared remote sensing MLLMs."
+    },
+    {
+      "title": "Hallucination-aware Faithful Reasoning in Remote Sensing",
+      "authors": [
+        "Yi Liu",
+        "Jing Zhang",
+        "Xiang Feng",
+        "Xiaoyu Tian",
+        "Haonan Guo",
+        "Di Wang",
+        "Zengmao Wang",
+        "Bo Du"
+      ],
+      "summary": "Multimodal large language models (MLLMs) have demonstrated promising capabilities for remote sensing reasoning, yet they frequently generate visually unsupported reasoning that contradicts the visual evidence. Existing post-training methods optimize primarily for final-answer correctness, providing limited supervision for identifying and correcting hallucinations that arise during the reasoning process. To address this limitation, we propose \\textbf{FaithRS}, a hallucination-aware self-reflection framework for faithful reasoning in remote sensing. We first construct \\textbf{SFHD-43K}, a dataset of 43K structured, fine-grained hallucination annotations, and train a detector to identify hallucination types, underlying causes, and supporting visual evidence. FaithRS then incorporates this diagnostic feedback into a Safe Detector-Guided Corrective Rollout framework, where a safety-aware gate selectively determines whether and how to revise the response. Training is driven by a composite reward that jointly optimizes answer accuracy, reasoning faithfulness, hallucination reduction, format compliance, and revision safety. Experiments with Qwen3.5 backbones (0.8B, 4B, and 9B) show consistent improvements across four remote sensing benchmarks, with gains of up to 11.64 points.",
+      "published": "2026-10-13T13:28:00Z",
+      "updated": "2026-10-13T13:28:00Z",
+      "arxiv_id": "2610.18369v1",
+      "abs_url": "http://arxiv.org/abs/2610.18369v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18369v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 7,
+      "anchor_terms": [
+        "MLLM",
+        "multimodal large language model",
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "large language model",
+        "MLLM",
+        "multimodal large language model",
+        "remote sensing"
+      ],
+      "title_zh": "Hallucination-aware Faithful Reasoning in Remote Sensing",
+      "summary_zh": "Multimodal large language models (MLLMs) have demonstrated promising capabilities for remote sensing reasoning, yet they frequently generate visually unsupported reasoning that contradicts the visual evidence. Existing post-training methods optimize primarily for final-answer correctness, providing limited supervision for identifying and correcting hallucinations that arise during the reasoning process. To address this limitation, we propose \\textbf{FaithRS}, a hallucination-aware self-reflection framework for faithful reasoning in remote sensing. We first construct \\textbf{SFHD-43K}, a dataset of 43K structured, fine-grained hallucination annotations, and train a detector to identify hallucination types, underlying causes, and supporting visual evidence. FaithRS then incorporates this diagnostic feedback into a Safe Detector-Guided Corrective Rollout framework, where a safety-aware gate selectively determines whether and how to revise the response. Training is driven by a composite reward that jointly optimizes answer accuracy, reasoning faithfulness, hallucination reduction, format compliance, and revision safety. Experiments with Qwen3.5 backbones (0.8B, 4B, and 9B) show consistent improvements across four remote sensing benchmarks, with gains of up to 11.64 points."
+    },
+    {
+      "title": "CityCode: Building Agent-Operable 3D Cities from Sparse Aerial Observations",
+      "authors": [
+        "Jiahui Sun",
+        "Ran Bi",
+        "Yifei Liu",
+        "Xiaolong Zhou",
+        "Yishuo Xu",
+        "Yuanqi Li",
+        "Congcong Zhu",
+        "Lei Yang",
+        "Yanwen Guo",
+        "Zhihang Zhong",
+        "Hongjie Zhang"
+      ],
+      "summary": "Urban spatial intelligence calls for 3D cities that agents can measure, interpret, and modify across successive tasks. Maintaining such cities as persistent, code-based states requires lightweight acquisition and support for consistent state updates without repeated dense reconstruction. We therefore formulate a new setting for grounded urban world construction: generating large-scale, instance-level parameterized 3D cities from one low-altitude aerial RGB image per region and known camera parameters, while recovering metrically scaled buildings and explicit road geometry and connectivity. We introduce CityCode, an agent-operable representation that unifies metric geometry, urban topology, visual semantics, and 3D assets through persistent entity identities, with dependency-aware versioned execution for validated updates and historical restoration. We further develop Air2Code to construct this representation by combining visual structure extraction with adapted metric depth estimation. To address occlusion and incomplete coverage, recovered structure and observed appearance guide generative completion and subsequent structure-aware 3D generation for buildings and backgrounds. Experiments on CitySample-Aerial and UrbanScene3D demonstrate substantially more accurate metric structure recovery and superior visual fidelity to the target cities compared with the evaluated baselines. Across 50 task chains of 50 steps each, CityCode supports continued querying, editing, planning, and historical restoration over evolving city states. Together, CityCode and Air2Code turn sparse aerial observations into persistent, agent-operable urban worlds for long-horizon urban spatial intelligence.",
+      "published": "2026-10-13T13:14:17Z",
+      "updated": "2026-10-13T13:14:17Z",
+      "arxiv_id": "2610.18342v1",
+      "abs_url": "http://arxiv.org/abs/2610.18342v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18342v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "13 pages, 4 figures;",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "LiDAR/点云",
+        "无人机/UAV"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 4,
+      "anchor_terms": [
+        "depth estimation"
+      ],
+      "matched_terms": [
+        "aerial",
+        "depth estimation"
+      ],
+      "title_zh": "CityCode: Building Agent-Operable 3D Cities from Sparse Aerial Observations",
+      "summary_zh": "Urban spatial intelligence calls for 3D cities that agents can measure, interpret, and modify across successive tasks. Maintaining such cities as persistent, code-based states requires lightweight acquisition and support for consistent state updates without repeated dense reconstruction. We therefore formulate a new setting for grounded urban world construction: generating large-scale, instance-level parameterized 3D cities from one low-altitude aerial RGB image per region and known camera parameters, while recovering metrically scaled buildings and explicit road geometry and connectivity. We introduce CityCode, an agent-operable representation that unifies metric geometry, urban topology, visual semantics, and 3D assets through persistent entity identities, with dependency-aware versioned execution for validated updates and historical restoration. We further develop Air2Code to construct this representation by combining visual structure extraction with adapted metric depth estimation. To address occlusion and incomplete coverage, recovered structure and observed appearance guide generative completion and subsequent structure-aware 3D generation for buildings and backgrounds. Experiments on CitySample-Aerial and UrbanScene3D demonstrate substantially more accurate metric structure recovery and superior visual fidelity to the target cities compared with the evaluated baselines. Across 50 task chains of 50 steps each, CityCode supports continued querying, editing, planning, and historical restoration over evolving city states. Together, CityCode and Air2Code turn sparse aerial observations into persistent, agent-operable urban worlds for long-horizon urban spatial intelligence."
+    },
+    {
+      "title": "Omni-RS: Unifying Multi-Task Understanding and Generation in Remote Sensing",
+      "authors": [
+        "Pan Yin. Shuai Yang",
+        "Yuanhao Liu",
+        "Datao Tang",
+        "Jialin Li",
+        "Hao Wang",
+        "Pei Liu",
+        "Kaiyu Li",
+        "Cong Zhao",
+        "Xiangyong Cao"
+      ],
+      "summary": "Practical remote sensing applications often require both understanding and generation capabilities for the same geographic scene. However, most existing methods address either understanding or generation in isolation, while existing unified remote sensing models' generative ability is limited to text-to-image. To bridge this gap, we propose Omni-RS, a unified framework supporting four remote sensing understanding tasks and five generation tasks. Specifically, we introduce the \"Scene-Guided Two-Stage Training\" strategy, which first adapts a multimodal large language model to remote sensing understanding and then uses its hidden states to guide a diffusion transformer for image generation. To enable joint learning across diverse generation tasks, we construct UniGen, a unified multi-task generation dataset, by organizing heterogeneous remote sensing data into a unified format. Furthermore, we introduce \"Detailed Visual Conditioning\", which uses visual conditions encoded by a VAE to guide the generation process, thereby supporting additional generation tasks that require reference images. Extensive experiments demonstrate that Omni-RS performs exceptionally well in understanding tasks and has achieved outstanding results in a variety of generative tasks.",
+      "published": "2026-10-13T13:02:27Z",
+      "updated": "2026-10-13T13:02:27Z",
+      "arxiv_id": "2610.18323v1",
+      "abs_url": "http://arxiv.org/abs/2610.18323v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18323v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 8,
+      "anchor_terms": [
+        "image generation",
+        "multimodal large language model",
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "image generation",
+        "large language model",
+        "multimodal large language model",
+        "remote sensing",
+        "transformer"
+      ],
+      "title_zh": "Omni-RS: Unifying Multi-Task Understanding and Generation in Remote Sensing",
+      "summary_zh": "Practical remote sensing applications often require both understanding and generation capabilities for the same geographic scene. However, most existing methods address either understanding or generation in isolation, while existing unified remote sensing models' generative ability is limited to text-to-image. To bridge this gap, we propose Omni-RS, a unified framework supporting four remote sensing understanding tasks and five generation tasks. Specifically, we introduce the \"Scene-Guided Two-Stage Training\" strategy, which first adapts a multimodal large language model to remote sensing understanding and then uses its hidden states to guide a diffusion transformer for image generation. To enable joint learning across diverse generation tasks, we construct UniGen, a unified multi-task generation dataset, by organizing heterogeneous remote sensing data into a unified format. Furthermore, we introduce \"Detailed Visual Conditioning\", which uses visual conditions encoded by a VAE to guide the generation process, thereby supporting additional generation tasks that require reference images. Extensive experiments demonstrate that Omni-RS performs exceptionally well in understanding tasks and has achieved outstanding results in a variety of generative tasks."
+    },
+    {
+      "title": "PING: physics informed graph neural network for advection-diffusion processes with applications to solar power forecasting",
+      "authors": [
+        "Jelena Simeunović",
+        "Baptiste Schubnel",
+        "Pierre-Jean Alet",
+        "Pascal Frossard",
+        "Rafael E. Carrillo"
+      ],
+      "summary": "Advection-diffusion plays an essential role in transport phenomena such as atmospheric and cloud dynamics. Improved forecasting of cloud motion, in turn, enhances solar power production forecasts and facilitates the integration of additional photovoltaic (PV) sources into the power grid. However, both classical numerical models and emerging deep learning approaches face challenges when applied to spatially irregular sensor networks such as those formed by weather stations. In this work, we adopt a graph signal processing perspective and model advection-diffusion particles as signals on a graph to capture the dynamics of these processes. We introduce a Physics-Informed Graph Neural Network (PING) for forecasting future advection-diffusion particle concentrations on irregular grids. The model incorporates a discretized advection-diffusion equation as a soft constraint in the loss function to guide learning toward physically consistent solutions. This model is on par with state of the art models on synthetic and real transport phenomena datasets, including sea surface temperature and cloud index datasets. Furthermore, the PING model is successfully coupled with models for forecasting PV power production. This hybrid approach leverages data fusion from ground-based sensors at PV stations and satellite images with cloud concentration to improve the accuracy of intra-day PV power production.",
+      "published": "2026-10-13T12:33:11Z",
+      "updated": "2026-10-13T12:33:11Z",
+      "arxiv_id": "2610.18280v1",
+      "abs_url": "http://arxiv.org/abs/2610.18280v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18280v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "comment": "23 pages, 11 figures, submitted to the International Journal of Forecasting",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "多模态融合",
+      "score": 4,
+      "anchor_terms": [
+        "satellite image",
+        "satellite images"
+      ],
+      "matched_terms": [
+        "graph neural network",
+        "satellite",
+        "satellite image",
+        "satellite images"
+      ],
+      "title_zh": "PING: physics informed graph neural network for advection-diffusion processes with applications to solar power forecasting",
+      "summary_zh": "Advection-diffusion plays an essential role in transport phenomena such as atmospheric and cloud dynamics. Improved forecasting of cloud motion, in turn, enhances solar power production forecasts and facilitates the integration of additional photovoltaic (PV) sources into the power grid. However, both classical numerical models and emerging deep learning approaches face challenges when applied to spatially irregular sensor networks such as those formed by weather stations. In this work, we adopt a graph signal processing perspective and model advection-diffusion particles as signals on a graph to capture the dynamics of these processes. We introduce a Physics-Informed Graph Neural Network (PING) for forecasting future advection-diffusion particle concentrations on irregular grids. The model incorporates a discretized advection-diffusion equation as a soft constraint in the loss function to guide learning toward physically consistent solutions. This model is on par with state of the art models on synthetic and real transport phenomena datasets, including sea surface temperature and cloud index datasets. Furthermore, the PING model is successfully coupled with models for forecasting PV power production. This hybrid approach leverages data fusion from ground-based sensors at PV stations and satellite images with cloud concentration to improve the accuracy of intra-day PV power production."
+    },
+    {
+      "title": "APT: Feedback-Driven Agentic Post-Training for Text-to-Image Generation",
+      "authors": [
+        "Sirui Zhang",
+        "Fangyun Wei",
+        "Dong Chen",
+        "Jinjing Zhao",
+        "Yitong Wang",
+        "Yunuo Chen",
+        "Baining Guo",
+        "Zheng-Jun Zha"
+      ],
+      "summary": "Post-training is crucial for improving text-to-image models, yet existing pipelines typically rely on manually curated training data and fixed training distributions. We introduce APT (Agentic Post-Training), a fully automated framework that adaptively post-trains a base model according to its evolving capability profile. APT coordinates three agents to construct evaluation sets from user requirements, diagnose model-specific strengths and failure modes, and generate reinforcement learning data with an adaptive prompt distribution that emphasizes underperforming capabilities. By repeatedly evaluating, diagnosing, and updating the generator, APT lets the current model's behavior shape its next training tasks, forming a feedback loop inspired by recursive self-improvement. For general-purpose settings without user-specified evaluation scenarios, we further develop an evaluation harness that enables broad and diverse evaluation set generation. Experiments across multiple base models, benchmarks, and generation architectures demonstrate that APT is model-agnostic, benchmark-agnostic, architecture-agnostic, and fully automated.",
+      "published": "2026-10-13T10:14:23Z",
+      "updated": "2026-10-13T10:14:23Z",
+      "arxiv_id": "2610.18097v1",
+      "abs_url": "http://arxiv.org/abs/2610.18097v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18097v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation"
+      ],
+      "title_zh": "APT: Feedback-Driven Agentic Post-Training for Text-to-Image Generation",
+      "summary_zh": "Post-training is crucial for improving text-to-image models, yet existing pipelines typically rely on manually curated training data and fixed training distributions. We introduce APT (Agentic Post-Training), a fully automated framework that adaptively post-trains a base model according to its evolving capability profile. APT coordinates three agents to construct evaluation sets from user requirements, diagnose model-specific strengths and failure modes, and generate reinforcement learning data with an adaptive prompt distribution that emphasizes underperforming capabilities. By repeatedly evaluating, diagnosing, and updating the generator, APT lets the current model's behavior shape its next training tasks, forming a feedback loop inspired by recursive self-improvement. For general-purpose settings without user-specified evaluation scenarios, we further develop an evaluation harness that enables broad and diverse evaluation set generation. Experiments across multiple base models, benchmarks, and generation architectures demonstrate that APT is model-agnostic, benchmark-agnostic, architecture-agnostic, and fully automated."
+    },
+    {
+      "title": "Failure Recovery via Belief Updates and World Modeling for Long-Horizon Agents",
+      "authors": [
+        "Xiyang Wu",
+        "Zhichao Liu",
+        "Shengxin zhang",
+        "Zongxia Li",
+        "Ming Li",
+        "Tianyi Zhou",
+        "Dinesh Manocha"
+      ],
+      "summary": "Long-horizon agents often struggle to recover from failures whose causes lie several steps earlier, beyond what local reflection or backtracking can resolve. We introduce BELIEFWEAVER, a framework that combines persistent evidence across attempts with prospective reasoning over repair directions. It maintains a relational belief state over frontiers, attempts, observations, and checkpoints. Execution evidence updates related frontier priorities across attempts and rollback, while diagnostic evidence gates execution. An implicit world model (IWM) evaluates repair hypotheses, predicts progress, and identifies relations among frontiers to guide exploration. We further distill these recurring IWM reasoning components into a 9B student through supervised fine-tuning and on-policy distillation (OPD). Across three terminal-based benchmarks, BELIEFWEAVER improves aggregate final score by 5.1 percentage points over native Terminus-2 continuation, with positive trends in exploration efficiency. The distilled 9B student improves final score by 9.8 percentage points over the reported native baseline while reducing estimated teacher API cost by 54.8% relative to the matched teacher. These results show that persistent evidence and prospective reasoning can improve recovery in long-horizon agent tasks while substantially reducing reliance on teacher-model inference.",
+      "published": "2026-10-13T10:05:06Z",
+      "updated": "2026-10-13T10:05:06Z",
+      "arxiv_id": "2610.18082v1",
+      "abs_url": "http://arxiv.org/abs/2610.18082v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18082v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Failure Recovery via Belief Updates and World Modeling for Long-Horizon Agents",
+      "summary_zh": "Long-horizon agents often struggle to recover from failures whose causes lie several steps earlier, beyond what local reflection or backtracking can resolve. We introduce BELIEFWEAVER, a framework that combines persistent evidence across attempts with prospective reasoning over repair directions. It maintains a relational belief state over frontiers, attempts, observations, and checkpoints. Execution evidence updates related frontier priorities across attempts and rollback, while diagnostic evidence gates execution. An implicit world model (IWM) evaluates repair hypotheses, predicts progress, and identifies relations among frontiers to guide exploration. We further distill these recurring IWM reasoning components into a 9B student through supervised fine-tuning and on-policy distillation (OPD). Across three terminal-based benchmarks, BELIEFWEAVER improves aggregate final score by 5.1 percentage points over native Terminus-2 continuation, with positive trends in exploration efficiency. The distilled 9B student improves final score by 9.8 percentage points over the reported native baseline while reducing estimated teacher API cost by 54.8% relative to the matched teacher. These results show that persistent evidence and prospective reasoning can improve recovery in long-horizon agent tasks while substantially reducing reliance on teacher-model inference."
+    },
+    {
+      "title": "inLoRA-MINT: Internal Representations for Auditing Training Data in Domain-adapted LLMs",
+      "authors": [
+        "Gonzalo Mancera",
+        "Julian Fierrez",
+        "Aythami Morales",
+        "Ruben Tolosana",
+        "Daniel DeAlcala",
+        "Francisco Jurado"
+      ],
+      "summary": "This work investigates the application of the Membership Inference Test (MINT) to large language models (LLMs) fine-tuned with LoRA, aiming to determine whether specific samples were used during training and address concerns about data privacy, leakage, and transparency. Building on our previous LoRA-MINT framework, which relies exclusively on perplexity under a strict black-box setting, we propose an approach based on intermediate model representations, including activations and parameter-dependent signals. These representations enable a MINT classifier to distinguish training from non-training samples without requiring full access to model parameters. We evaluated the method on four LLMs (Qwen, Phi-4, DeepSeek-V3, and LLaMA 3.2-3B) fine-tuned on three datasets covering medical, mathematical, and academic reasoning tasks. Results show consistent performance across architectures and domains, achieving scores between 95% and 98%, with robustness to variations in model configurations and data distributions. The proposed approach enables efficient auditing of sensitive training data and supports data provenance and compliance with emerging privacy and AI governance regulations. Although our experiments focus on LoRA-based fine-tuning, the methodology can be extended to other LLM adaptation techniques and, more broadly, to other AI models.",
+      "published": "2026-10-13T09:40:58Z",
+      "updated": "2026-10-13T09:40:58Z",
+      "arxiv_id": "2610.18051v1",
+      "abs_url": "http://arxiv.org/abs/2610.18051v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18051v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 7,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "large language model",
+        "LLM",
+        "LoRA",
+        "robust"
+      ],
+      "title_zh": "inLoRA-MINT: Internal Representations for Auditing Training Data in Domain-adapted LLMs",
+      "summary_zh": "This work investigates the application of the Membership Inference Test (MINT) to large language models (LLMs) fine-tuned with LoRA, aiming to determine whether specific samples were used during training and address concerns about data privacy, leakage, and transparency. Building on our previous LoRA-MINT framework, which relies exclusively on perplexity under a strict black-box setting, we propose an approach based on intermediate model representations, including activations and parameter-dependent signals. These representations enable a MINT classifier to distinguish training from non-training samples without requiring full access to model parameters. We evaluated the method on four LLMs (Qwen, Phi-4, DeepSeek-V3, and LLaMA 3.2-3B) fine-tuned on three datasets covering medical, mathematical, and academic reasoning tasks. Results show consistent performance across architectures and domains, achieving scores between 95% and 98%, with robustness to variations in model configurations and data distributions. The proposed approach enables efficient auditing of sensitive training data and supports data provenance and compliance with emerging privacy and AI governance regulations. Although our experiments focus on LoRA-based fine-tuning, the methodology can be extended to other LLM adaptation techniques and, more broadly, to other AI models."
+    },
+    {
+      "title": "Uncertainty-Aware Semi-Supervised Framework with Supervised Contrastive Learning for Sugarcane Leaf Disease Detection",
+      "authors": [
+        "Shalini Dangi",
+        "Divya Teja",
+        "Omkar Kabde",
+        "Shahid Shafi Dar",
+        "Nagendra Kumar"
+      ],
+      "summary": "Sugarcane leaf diseases severely impact crop yield and quality, making accurate and timely detection critical for sustainable agriculture. Conventional deep learning models for plant disease detection depend on large annotated datasets, which are expensive to obtain and challenging to prepare due to challenges commonly observed across crop disease detection tasks, including (i) high intra-class variation caused by diverse symptom expressions across growth stages, (ii) subtle inter-class similarities between diseased and healthy tissues, and (iii) the risk of noisy labels degrading model reliability. To handle these challenges, we presented an Uncertainty-aware Mean-Teacher based Semi-Supervised Learning Disease Detection Network (U-SSDNet) that leverages unlabeled data while maintaining robustness. First, discrete wavelet transform preprocessing is applied to enhance lesion visibility and reduce intra- class variation. Subsequently, the KL divergence is employed to refine the pseudo-labels and reduce the impact of confirmation bias. At the same time, supervised contrastive learning is applied to make the features more distin- guishable and improve the separation among different classes. Experimental evaluations on sugarcane leaf disease datasets, considered a representative case study, demonstrate that the proposed approach achieves performance close to that of fully supervised models while requiring far fewer annotated samples and consistently outperforms state-of-the-art supervised and semi-supervised approaches.",
+      "published": "2026-10-13T08:58:00Z",
+      "updated": "2026-10-13T08:58:00Z",
+      "arxiv_id": "2610.17996v1",
+      "abs_url": "http://arxiv.org/abs/2610.17996v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17996v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "semi-supervised"
+      ],
+      "matched_terms": [
+        "contrastive learning",
+        "robust",
+        "semi-supervised"
+      ],
+      "title_zh": "Uncertainty-Aware Semi-Supervised Framework with Supervised Contrastive Learning for Sugarcane Leaf Disease Detection",
+      "summary_zh": "Sugarcane leaf diseases severely impact crop yield and quality, making accurate and timely detection critical for sustainable agriculture. Conventional deep learning models for plant disease detection depend on large annotated datasets, which are expensive to obtain and challenging to prepare due to challenges commonly observed across crop disease detection tasks, including (i) high intra-class variation caused by diverse symptom expressions across growth stages, (ii) subtle inter-class similarities between diseased and healthy tissues, and (iii) the risk of noisy labels degrading model reliability. To handle these challenges, we presented an Uncertainty-aware Mean-Teacher based Semi-Supervised Learning Disease Detection Network (U-SSDNet) that leverages unlabeled data while maintaining robustness. First, discrete wavelet transform preprocessing is applied to enhance lesion visibility and reduce intra- class variation. Subsequently, the KL divergence is employed to refine the pseudo-labels and reduce the impact of confirmation bias. At the same time, supervised contrastive learning is applied to make the features more distin- guishable and improve the separation among different classes. Experimental evaluations on sugarcane leaf disease datasets, considered a representative case study, demonstrate that the proposed approach achieves performance close to that of fully supervised models while requiring far fewer annotated samples and consistently outperforms state-of-the-art supervised and semi-supervised approaches."
+    },
+    {
+      "title": "Sea-Net: A Small and Inherently Interpretable Neural Network for Time Series Classification",
+      "authors": [
+        "Ubaid Ur Rehman",
+        "Tanmoy Mondal"
+      ],
+      "summary": "Traditional time-series classification methods often operate as black boxes, providing a class prediction without indicating which time point or time interval within the series led to that prediction. To improve temporal interpretability, MILLET (Multiple Instance Learning with Temporal Explanation), which combines an InceptionTime encoder with Conjunctive Pooling, provides both classification and temporal explanations. However, MILLET contains approximately 424 K parameters, making it unsuitable for deployment on resource-constrained micro-controllers, and it achieves an overall time-series accuracy of 0.888 and an explanation score of 0.681 NDCG@n. We therefore propose SEA-Net, a lightweight architecture using small multi-scale depthwise-separable convolutional TSC encoders and improved Multiple Instance Learning (MIL) pooling heads. Our SEA-Net bottleneck encoder with Top-k pooling achieves 0.931 accuracy and 0.765 NDCG@n with only 41 K parameters. Another variant, using a gated encoder with Top-k pooling, achieves 0.955 accuracy and 0.750 NDCG@n with 62 K parameters. These results demonstrate that lightweight architectures can maintain strong classification performance and temporal explanations while substantially reducing model size. The proposed variants address specific limitations of the pooling strategy used by MILLET, providing a practical direction for interpretable time-series classification on resource-constrained edge devices.",
+      "published": "2026-10-13T08:24:45Z",
+      "updated": "2026-10-13T08:24:45Z",
+      "arxiv_id": "2610.17939v1",
+      "abs_url": "http://arxiv.org/abs/2610.17939v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17939v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "高效微调与轻量化"
+      ],
+      "topic": "时间序列与视频",
+      "score": 3,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "multi-scale",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "Sea-Net: A Small and Inherently Interpretable Neural Network for Time Series Classification",
+      "summary_zh": "Traditional time-series classification methods often operate as black boxes, providing a class prediction without indicating which time point or time interval within the series led to that prediction. To improve temporal interpretability, MILLET (Multiple Instance Learning with Temporal Explanation), which combines an InceptionTime encoder with Conjunctive Pooling, provides both classification and temporal explanations. However, MILLET contains approximately 424 K parameters, making it unsuitable for deployment on resource-constrained micro-controllers, and it achieves an overall time-series accuracy of 0.888 and an explanation score of 0.681 NDCG@n. We therefore propose SEA-Net, a lightweight architecture using small multi-scale depthwise-separable convolutional TSC encoders and improved Multiple Instance Learning (MIL) pooling heads. Our SEA-Net bottleneck encoder with Top-k pooling achieves 0.931 accuracy and 0.765 NDCG@n with only 41 K parameters. Another variant, using a gated encoder with Top-k pooling, achieves 0.955 accuracy and 0.750 NDCG@n with 62 K parameters. These results demonstrate that lightweight architectures can maintain strong classification performance and temporal explanations while substantially reducing model size. The proposed variants address specific limitations of the pooling strategy used by MILLET, providing a practical direction for interpretable time-series classification on resource-constrained edge devices."
+    },
+    {
+      "title": "TStruct: Learning Shared Temporal Structures for Long-Term Time-Series Forecasting",
+      "authors": [
+        "Yangze Li",
+        "Zhengyang Zhou",
+        "Qihe Huang",
+        "Pengkun Wang",
+        "Binwu Wang",
+        "Yang Wang"
+      ],
+      "summary": "Long-term time series forecasting requires temporal dependency modeling that remains stable and generalizable under temporal distribution shifts. However, real-world time series are often noisy and non-stationary, making deep learning models prone to fitting incidental temporal interactions in the training data. A key question is whether there exist temporal relationship structures that recur across different temporal positions and variables. We analyze temporal relationship matrices on commonly used time series datasets and find that samples from different temporal positions and different variables exhibit shared dominant temporal relationship structures. This indicates that temporal relationship structures contain patterns that recur stably across samples and variables. To learn such shared structures, we propose \\textbf{T}emporal \\textbf{Struct}ure Network (\\textbf{TStruct}), a simple yet effective network for directly learning shared and generalizable temporal dependencies. Specifically, TStruct directly parameterizes a set of shared temporal dependency matrices and generates normalized combination weights using dynamic sample information and static variable priors. These weights represent a soft allocation of each sample-variable pair over shared temporal dependency structures, enabling the model to generate adaptive temporal dependency matrices under shared structural constraints, rather than fitting incidental interactions in a fully unconstrained manner. Notably, this simple structure-aware design consistently outperforms several strong baselines across all datasets, achieving superior accuracy while maintaining high computational efficiency.",
+      "published": "2026-10-13T07:24:58Z",
+      "updated": "2026-10-13T07:24:58Z",
+      "arxiv_id": "2610.17864v1",
+      "abs_url": "http://arxiv.org/abs/2610.17864v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17864v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "This paper has been accepted to NeurIPS 2026(Main Track)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 3,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "generalizable",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "TStruct: Learning Shared Temporal Structures for Long-Term Time-Series Forecasting",
+      "summary_zh": "Long-term time series forecasting requires temporal dependency modeling that remains stable and generalizable under temporal distribution shifts. However, real-world time series are often noisy and non-stationary, making deep learning models prone to fitting incidental temporal interactions in the training data. A key question is whether there exist temporal relationship structures that recur across different temporal positions and variables. We analyze temporal relationship matrices on commonly used time series datasets and find that samples from different temporal positions and different variables exhibit shared dominant temporal relationship structures. This indicates that temporal relationship structures contain patterns that recur stably across samples and variables. To learn such shared structures, we propose \\textbf{T}emporal \\textbf{Struct}ure Network (\\textbf{TStruct}), a simple yet effective network for directly learning shared and generalizable temporal dependencies. Specifically, TStruct directly parameterizes a set of shared temporal dependency matrices and generates normalized combination weights using dynamic sample information and static variable priors. These weights represent a soft allocation of each sample-variable pair over shared temporal dependency structures, enabling the model to generate adaptive temporal dependency matrices under shared structural constraints, rather than fitting incidental interactions in a fully unconstrained manner. Notably, this simple structure-aware design consistently outperforms several strong baselines across all datasets, achieving superior accuracy while maintaining high computational efficiency."
+    },
+    {
+      "title": "MMTA: Benchmarking Multimodal Temporal Analysis with Time Series, Text, and Vision",
+      "authors": [
+        "Ziyang Zhang",
+        "Shenyi Li",
+        "Yilin Wang",
+        "Ziyun Cui",
+        "Bowen Zhou",
+        "Wen Wu",
+        "Chao Zhang"
+      ],
+      "summary": "Time-series analysis is increasingly studied in multimodal settings, yet most benchmarks pair temporal signals with text or with visualizations derived from the same signal. This leaves open whether multimodal large language models (MLLMs) can integrate time series with real-world visual evidence. We introduce MMTA (multimodal temporal analysis), a benchmark of tri-modal tasks with diverse cross-modal complementarity patterns among time series, text, and vision. MMTA spans nine domains -- robotics, autonomous driving, human action, manufacturing, AR assistance, healthcare, recommendation, finance, and climate -- under video+TS and image+TS layouts, with a 3,524-sample test split covering classification and forecasting. The benchmark standardizes heterogeneous real-world sources into a shared schema with domain-specific prompts, provenance documentation, and success-weighted metrics that penalize both wrong answers and failed generations. Evaluating eight open-source and proprietary MLLMs reveals a shared bottleneck: representing time series as text creates very long token sequences and weakens fine-grained alignment with visual evidence, especially in long-video settings. We then introduce TimeOmni-v, a multimodal LLM extension with a dedicated time-series encoder, temporal positional alignment, modality-aware token layout, and a forecasting head. TimeOmni-v improves long-video classification and time-series inference efficiency, showing that MMTA not only exposes representation and grounding failures but also motivates targeted model design.",
+      "published": "2026-10-13T07:20:58Z",
+      "updated": "2026-10-13T07:20:58Z",
+      "arxiv_id": "2610.17856v1",
+      "abs_url": "http://arxiv.org/abs/2610.17856v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17856v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "Accepted at the NeurIPS 2026 Evaluations and Datasets Track. Project page: https://windowso.github.io/MMTA/",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 7,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "large language model",
+        "LLM",
+        "MLLM",
+        "multimodal large language model",
+        "temporal",
+        "temporal analysis",
+        "time-series"
+      ],
+      "title_zh": "MMTA: Benchmarking Multimodal Temporal Analysis with Time Series, Text, and Vision",
+      "summary_zh": "Time-series analysis is increasingly studied in multimodal settings, yet most benchmarks pair temporal signals with text or with visualizations derived from the same signal. This leaves open whether multimodal large language models (MLLMs) can integrate time series with real-world visual evidence. We introduce MMTA (multimodal temporal analysis), a benchmark of tri-modal tasks with diverse cross-modal complementarity patterns among time series, text, and vision. MMTA spans nine domains -- robotics, autonomous driving, human action, manufacturing, AR assistance, healthcare, recommendation, finance, and climate -- under video+TS and image+TS layouts, with a 3,524-sample test split covering classification and forecasting. The benchmark standardizes heterogeneous real-world sources into a shared schema with domain-specific prompts, provenance documentation, and success-weighted metrics that penalize both wrong answers and failed generations. Evaluating eight open-source and proprietary MLLMs reveals a shared bottleneck: representing time series as text creates very long token sequences and weakens fine-grained alignment with visual evidence, especially in long-video settings. We then introduce TimeOmni-v, a multimodal LLM extension with a dedicated time-series encoder, temporal positional alignment, modality-aware token layout, and a forecasting head. TimeOmni-v improves long-video classification and time-series inference efficiency, showing that MMTA not only exposes representation and grounding failures but also motivates targeted model design."
+    },
+    {
+      "title": "Autonomous 3D Visual-Thermal Inspection for Utility-Scale Solar Farms",
+      "authors": [
+        "Lachlan Tychsen-Smith",
+        "Mark Cox",
+        "Brett Wood",
+        "David Haddon",
+        "Kenrick Anderson",
+        "Benjamin Duck",
+        "Jim O'Malley",
+        "Noel W Duffy",
+        "Peyman Moghadam"
+      ],
+      "summary": "Utility-scale photovoltaic (PV) inspection is dominated by aerial surveys, which are effective for identifying module-level hot cells but provide limited visibility of critical components located under the array, including connectors, cabling, fasteners and structural elements. These assets are difficult to inspect consistently at scale, and their defects are often spatially small, partially occluded and difficult to localise from isolated images. We present an automated 3D visual-thermal inspection system (Tricorder) for under-panel PV asset inspection. The approach combines LiDAR-inertial Simultaneous Localization and Mapping (SLAM) with geometrically calibrated RGB and thermal imagery and machine-learning-based object detection and segmentation. Detected assets are associated with the reconstructed 3D environment, allowing visual and thermal observations from multiple viewpoints to be spatially fused and localised. We demonstrate the approach on utility-scale PV data for MC4 connector detection and connection-state recognition, thermal anomaly identification, and detection of structural components including bolts, nuts and torque tubes. The results demonstrate a pathway from image-based inspection toward spatially grounded autonomous inspection, where defects are detected and linked to specific assets and their 3D locations within the solar farm.",
+      "published": "2026-10-13T05:43:11Z",
+      "updated": "2026-10-13T05:43:11Z",
+      "arxiv_id": "2610.17762v1",
+      "abs_url": "http://arxiv.org/abs/2610.17762v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17762v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "comment": "Accepted at the 2026 Asia-Pacific Solar Research Conference (APSRC 2026), Canberra, Australia, 1-3 December 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "LiDAR/点云"
+      ],
+      "topic": "目标检测",
+      "score": 5,
+      "anchor_terms": [
+        "object detection"
+      ],
+      "matched_terms": [
+        "aerial",
+        "LiDAR",
+        "object detection"
+      ],
+      "title_zh": "Autonomous 3D Visual-Thermal Inspection for Utility-Scale Solar Farms",
+      "summary_zh": "Utility-scale photovoltaic (PV) inspection is dominated by aerial surveys, which are effective for identifying module-level hot cells but provide limited visibility of critical components located under the array, including connectors, cabling, fasteners and structural elements. These assets are difficult to inspect consistently at scale, and their defects are often spatially small, partially occluded and difficult to localise from isolated images. We present an automated 3D visual-thermal inspection system (Tricorder) for under-panel PV asset inspection. The approach combines LiDAR-inertial Simultaneous Localization and Mapping (SLAM) with geometrically calibrated RGB and thermal imagery and machine-learning-based object detection and segmentation. Detected assets are associated with the reconstructed 3D environment, allowing visual and thermal observations from multiple viewpoints to be spatially fused and localised. We demonstrate the approach on utility-scale PV data for MC4 connector detection and connection-state recognition, thermal anomaly identification, and detection of structural components including bolts, nuts and torque tubes. The results demonstrate a pathway from image-based inspection toward spatially grounded autonomous inspection, where defects are detected and linked to specific assets and their 3D locations within the solar farm."
+    },
+    {
+      "title": "Low-Altitude Agentic Networks: From UAV Connectivity to Workflow-Driven Capability Orchestration",
+      "authors": [
+        "Baolin Chong",
+        "Fuhui Zhou",
+        "Qihui Wu",
+        "Ran Tu"
+      ],
+      "summary": "Low-altitude platforms are evolving from connected sensing nodes into autonomous agents capable of bounded task interpretation, skill invocation, and local decision making. Increasing the intelligence of individual unmanned aerial vehicles (UAVs), however, does not resolve the organization problem that arises when mission workflows depend on capabilities distributed across multiple platforms and provider feasibility changes with network, resource, and mobility conditions. We propose low-altitude agentic networking as a task-level networking paradigm and develop a reference architecture that separates workflow logic from executor identity. Within a validated domain-specific workflow space, each ready operation is translated into a capability requirement and dynamically bound to an agent that remains feasible under current conditions. Task contracts and structured evidence govern workflow execution, while routine provider and link changes are handled through workflow-preserving local adaptation before high-level repair is invoked. A trace-calibrated discrete-event case study identifies a bounded operating region: conventional organization remains effective for simple workflows under stable conditions, whereas agentic networking becomes beneficial when workflow dependencies are tightly coupled, capability feasibility changes during execution, and viable local recovery paths remain available.",
+      "published": "2026-10-13T03:14:04Z",
+      "updated": "2026-10-13T03:14:04Z",
+      "arxiv_id": "2610.17642v1",
+      "abs_url": "http://arxiv.org/abs/2610.17642v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17642v1",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV"
+      ],
+      "topic": "无人机/UAV",
+      "score": 7,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "Low-Altitude Agentic Networks: From UAV Connectivity to Workflow-Driven Capability Orchestration",
+      "summary_zh": "Low-altitude platforms are evolving from connected sensing nodes into autonomous agents capable of bounded task interpretation, skill invocation, and local decision making. Increasing the intelligence of individual unmanned aerial vehicles (UAVs), however, does not resolve the organization problem that arises when mission workflows depend on capabilities distributed across multiple platforms and provider feasibility changes with network, resource, and mobility conditions. We propose low-altitude agentic networking as a task-level networking paradigm and develop a reference architecture that separates workflow logic from executor identity. Within a validated domain-specific workflow space, each ready operation is translated into a capability requirement and dynamically bound to an agent that remains feasible under current conditions. Task contracts and structured evidence govern workflow execution, while routine provider and link changes are handled through workflow-preserving local adaptation before high-level repair is invoked. A trace-calibrated discrete-event case study identifies a bounded operating region: conventional organization remains effective for simple workflows under stable conditions, whereas agentic networking becomes beneficial when workflow dependencies are tightly coupled, capability feasibility changes during execution, and viable local recovery paths remain available."
+    },
+    {
+      "title": "MemAct: Streaming Spatial Understanding with Memory and Active Exploration",
+      "authors": [
+        "Yuxi Wei",
+        "Wei Huang",
+        "Qirui Chen",
+        "Lu Hou",
+        "Xiaojuan Qi"
+      ],
+      "summary": "Spatial understanding is essential for embodied agents navigating and interacting with the physical world. As observations arrive incrementally, agents must reason in a streaming manner. Yet streaming understanding must also be closed-loop: task-relevant evidence may require both recalling past observations and actively acquiring new views. Existing streaming approaches largely emphasize processing incoming observations, leaving task-driven active exploration underexplored. We introduce MemAct, a framework for streaming spatial understanding with memory and action. A shared vision--language model incrementally writes structured historical memory, retrieves records and past frames on demand, and acquires additional evidence through movement and turning. Retrieved evidence and action observations inform subsequent decisions, enabling the agent to continue exploring or answer within a unified reasoning loop. We develop the MemAct suite, a data generation pipeline and collection across real and simulated environments, with approximately 1M training examples for spatial reasoning, memory writing, retrieval, and exploration. Its MemAct-bench comprises 20,000 main QA pairs evaluating current-observation understanding, historical evidence use, and active exploration, plus 2,000 separate Timing questions. MemAct combines supervised fine-tuning for memory and interaction with counterfactual action optimization using cumulative evidence gains, action costs, and terminal answer quality to improve exploration and stopping decisions. Experiments show that MemAct outperforms existing spatial understanding and streaming baselines and approaches frontier multimodal models on MemAct-bench while retaining streaming inference efficiency.",
+      "published": "2026-10-13T03:08:40Z",
+      "updated": "2026-10-13T03:08:40Z",
+      "arxiv_id": "2610.17640v1",
+      "abs_url": "http://arxiv.org/abs/2610.17640v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17640v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA",
+        "spatial reasoning"
+      ],
+      "title_zh": "MemAct: Streaming Spatial Understanding with Memory and Active Exploration",
+      "summary_zh": "Spatial understanding is essential for embodied agents navigating and interacting with the physical world. As observations arrive incrementally, agents must reason in a streaming manner. Yet streaming understanding must also be closed-loop: task-relevant evidence may require both recalling past observations and actively acquiring new views. Existing streaming approaches largely emphasize processing incoming observations, leaving task-driven active exploration underexplored. We introduce MemAct, a framework for streaming spatial understanding with memory and action. A shared vision--language model incrementally writes structured historical memory, retrieves records and past frames on demand, and acquires additional evidence through movement and turning. Retrieved evidence and action observations inform subsequent decisions, enabling the agent to continue exploring or answer within a unified reasoning loop. We develop the MemAct suite, a data generation pipeline and collection across real and simulated environments, with approximately 1M training examples for spatial reasoning, memory writing, retrieval, and exploration. Its MemAct-bench comprises 20,000 main QA pairs evaluating current-observation understanding, historical evidence use, and active exploration, plus 2,000 separate Timing questions. MemAct combines supervised fine-tuning for memory and interaction with counterfactual action optimization using cumulative evidence gains, action costs, and terminal answer quality to improve exploration and stopping decisions. Experiments show that MemAct outperforms existing spatial understanding and streaming baselines and approaches frontier multimodal models on MemAct-bench while retaining streaming inference efficiency."
+    },
+    {
+      "title": "Releasing the Inner Jev: A Simple Recipe for Open Decision Models",
+      "authors": [
+        "Jonathan Geuter",
+        "Andrew Cheng",
+        "David Alvarez-Melis"
+      ],
+      "summary": "LLM-based decision-making systems, also called System One models, have recently gained popularity, most notably through Jev (Almeida, 2026). Given a typed input state, a question, and a set of options, they return a probability for each option in a single forward pass, without text generation. We show that existing open instruction-tuned language models can achieve comparable performance \\textit{without any additional training}, by reading out answers from letters (A, B, C, etc.) in the model's output logits at the last token position. Furthermore, we show how a simple supervised fine-tuning recipe can improve their performance further. We evaluate four open instruction-tuned language models: Gemma 4 31B, Gemma 4 12B, Qwen3.6-27B, and Qwen3.5-4B. We fine-tune each using LoRA and a decision head initialized from a slice of the language model head. Furthermore, we introduce OpenDecisions, a novel 2,352-question validation dataset designed to reflect the task composition of JevBench (JevBench main- tainers, 2026) and which computes a Capability score based on accuracy and calibration metrics. Without fine-tuning, Gemma 4 31B scores 79.6 on OpenDecisions, compared to Jev's 80.1. After undergoing our fine-tuning recipe, it scores 84.4 on OpenDecisions and 81.5 on JevBench v1.7, outperforming Jev by 4.3 and 4.4 Capability points respectively and setting a new state-of-the-art on OpenDecisions. On a suite of public decision datasets, our models achieve accuracy comparable to Jev, with lower calibration error. Our results show that open language models already possess System One capabilities, and with simple fine-tuning they outperform Jev on a wide range of decision tasks. We release our models, serving code, and OpenDecisions.",
+      "published": "2026-10-12T17:59:37Z",
+      "updated": "2026-10-12T17:59:37Z",
+      "arxiv_id": "2610.17205v1",
+      "abs_url": "http://arxiv.org/abs/2610.17205v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17205v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "23 pages, 5 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 3,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LLM",
+        "LoRA"
+      ],
+      "title_zh": "Releasing the Inner Jev: A Simple Recipe for Open Decision Models",
+      "summary_zh": "LLM-based decision-making systems, also called System One models, have recently gained popularity, most notably through Jev (Almeida, 2026). Given a typed input state, a question, and a set of options, they return a probability for each option in a single forward pass, without text generation. We show that existing open instruction-tuned language models can achieve comparable performance \\textit{without any additional training}, by reading out answers from letters (A, B, C, etc.) in the model's output logits at the last token position. Furthermore, we show how a simple supervised fine-tuning recipe can improve their performance further. We evaluate four open instruction-tuned language models: Gemma 4 31B, Gemma 4 12B, Qwen3.6-27B, and Qwen3.5-4B. We fine-tune each using LoRA and a decision head initialized from a slice of the language model head. Furthermore, we introduce OpenDecisions, a novel 2,352-question validation dataset designed to reflect the task composition of JevBench (JevBench main- tainers, 2026) and which computes a Capability score based on accuracy and calibration metrics. Without fine-tuning, Gemma 4 31B scores 79.6 on OpenDecisions, compared to Jev's 80.1. After undergoing our fine-tuning recipe, it scores 84.4 on OpenDecisions and 81.5 on JevBench v1.7, outperforming Jev by 4.3 and 4.4 Capability points respectively and setting a new state-of-the-art on OpenDecisions. On a suite of public decision datasets, our models achieve accuracy comparable to Jev, with lower calibration error. Our results show that open language models already possess System One capabilities, and with simple fine-tuning they outperform Jev on a wide range of decision tasks. We release our models, serving code, and OpenDecisions."
+    },
+    {
+      "title": "A unified three-branch deep learning framework for automated detection and counting of wildlife in aerial imagery",
+      "authors": [
+        "Zeyu Xu",
+        "Tiejun Wang",
+        "Andrew Skidmore",
+        "Megan Claase",
+        "Harry Wells",
+        "Isla Duporge",
+        "Ramiro D. Crego",
+        "Richard Lamprey"
+      ],
+      "summary": "Automating aerial wildlife surveys requires reliable animal detection, consistent delineation of observation strips, and correction for repeated coverage between successive images. We present a unified three-branch deep learning framework that integrates these tasks through WildSeg, WildMatch and WildDet. WildSeg combines rod segmentation with geometric refinement to delineate counting strips from aircraft-mounted markers. WildMatch uses teacher-student distillation to learn dense image correspondences and identify overlapping survey areas without relying on geolocation metadata. WildDet combines dual-scale detection with feature fusion, density supervision and empty-image gating to support animal detection and counting. We evaluated the framework using oblique aerial imagery of four antelope species from the Great Nile Migration Landscape in South Sudan. WildSeg achieved reliable rod extraction, while WildMatch approached teacher-level accuracy with a substantially lighter and faster model. Both modules maintained high accuracy on resized images, improving processing efficiency. WildDet improved detection performance across all four species and reduced detection-based count MAE, RMSE and mean bias by 21.0%, 4.6% and 27.8%, respectively, relative to YOLO11. By connecting spatial survey constraints with animal detection, the framework provides a practical and computationally efficient approach to processing large aerial image collections for wildlife monitoring and population surveys.",
+      "published": "2026-10-12T16:30:12Z",
+      "updated": "2026-10-12T16:30:12Z",
+      "arxiv_id": "2610.17067v1",
+      "abs_url": "http://arxiv.org/abs/2610.17067v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17067v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "基础模型",
+        "高效微调与轻量化",
+        "多模态融合",
+        "无人机/UAV"
+      ],
+      "topic": "目标检测",
+      "score": 7,
+      "anchor_terms": [
+        "aerial image",
+        "aerial imagery"
+      ],
+      "matched_terms": [
+        "aerial",
+        "aerial image",
+        "aerial imagery",
+        "feature fusion",
+        "MAE",
+        "YOLO"
+      ],
+      "title_zh": "A unified three-branch deep learning framework for automated detection and counting of wildlife in aerial imagery",
+      "summary_zh": "Automating aerial wildlife surveys requires reliable animal detection, consistent delineation of observation strips, and correction for repeated coverage between successive images. We present a unified three-branch deep learning framework that integrates these tasks through WildSeg, WildMatch and WildDet. WildSeg combines rod segmentation with geometric refinement to delineate counting strips from aircraft-mounted markers. WildMatch uses teacher-student distillation to learn dense image correspondences and identify overlapping survey areas without relying on geolocation metadata. WildDet combines dual-scale detection with feature fusion, density supervision and empty-image gating to support animal detection and counting. We evaluated the framework using oblique aerial imagery of four antelope species from the Great Nile Migration Landscape in South Sudan. WildSeg achieved reliable rod extraction, while WildMatch approached teacher-level accuracy with a substantially lighter and faster model. Both modules maintained high accuracy on resized images, improving processing efficiency. WildDet improved detection performance across all four species and reduced detection-based count MAE, RMSE and mean bias by 21.0%, 4.6% and 27.8%, respectively, relative to YOLO11. By connecting spatial survey constraints with animal detection, the framework provides a practical and computationally efficient approach to processing large aerial image collections for wildlife monitoring and population surveys."
+    },
+    {
+      "title": "MaskSense: Confronting the Visual Exploration Trap in Masked Image Generation",
+      "authors": [
+        "Yawen Shao",
+        "Jie Xiao",
+        "Kai Zhu",
+        "Yu Liu",
+        "Hongchen Luo",
+        "Xueyang Fu",
+        "Yang Cao",
+        "Wei Zhai",
+        "Zheng-Jun Zha"
+      ],
+      "summary": "Reinforcement learning (RL) has shown strong potential for aligning generative models with human intent, but adapting RL to masked generative models (MGMs) remains largely underexplored. Existing approaches that directly adapt Group Relative Policy Optimization (GRPO) to MGMs leave a foundational conflict unaddressed: MGMs' exploitative decoding nature is inherently at odds with the exploratory diversity that GRPO presupposes. In this work, we reveal a structural decoding bias termed the visual exploration trap: confidence-based sampling trades the exploration of diverse subject realizations for the greedy resolution of low-uncertainty background regions, causing premature collapse of the generative exploration space and starving GRPO of the rollout diversity it depends on. To this end, we propose MaskSense, a novel RL framework for MGMs that confronts the visual exploration trap at both the sampling and optimization stages. Specifically, we introduce a semantic anchored routing sampling mechanism that leverages semantic priors to preserve high-entropy subject token exploration while amplifying intra-group reward variance through exploratory-exploitative routing to yield more discriminative advantage estimates. Furthermore, we design a global entropy transition anchoring strategy to identify the most consequential decoding steps and concentrate gradient updates on them. Extensive experiments on multiple text-to-image benchmarks demonstrate that MaskSense substantially improves upon the base model, with GenEval accuracy improving from 54% to 86% and HPS from 28.89 to 36.39, achieving state-of-the-art performance.",
+      "published": "2026-10-12T15:52:58Z",
+      "updated": "2026-10-12T15:52:58Z",
+      "arxiv_id": "2610.17009v1",
+      "abs_url": "http://arxiv.org/abs/2610.17009v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17009v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Accepted to NeurIPS 2026. Project Page: https://yawen-shao.github.io/MaskSense/",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 5,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation",
+        "LoRA"
+      ],
+      "title_zh": "MaskSense: Confronting the Visual Exploration Trap in Masked Image Generation",
+      "summary_zh": "Reinforcement learning (RL) has shown strong potential for aligning generative models with human intent, but adapting RL to masked generative models (MGMs) remains largely underexplored. Existing approaches that directly adapt Group Relative Policy Optimization (GRPO) to MGMs leave a foundational conflict unaddressed: MGMs' exploitative decoding nature is inherently at odds with the exploratory diversity that GRPO presupposes. In this work, we reveal a structural decoding bias termed the visual exploration trap: confidence-based sampling trades the exploration of diverse subject realizations for the greedy resolution of low-uncertainty background regions, causing premature collapse of the generative exploration space and starving GRPO of the rollout diversity it depends on. To this end, we propose MaskSense, a novel RL framework for MGMs that confronts the visual exploration trap at both the sampling and optimization stages. Specifically, we introduce a semantic anchored routing sampling mechanism that leverages semantic priors to preserve high-entropy subject token exploration while amplifying intra-group reward variance through exploratory-exploitative routing to yield more discriminative advantage estimates. Furthermore, we design a global entropy transition anchoring strategy to identify the most consequential decoding steps and concentrate gradient updates on them. Extensive experiments on multiple text-to-image benchmarks demonstrate that MaskSense substantially improves upon the base model, with GenEval accuracy improving from 54% to 86% and HPS from 28.89 to 36.39, achieving state-of-the-art performance."
+    },
+    {
+      "title": "TabGift: A Context-Efficient Foundation Model for Tabular Data Generation",
+      "authors": [
+        "Yu-Sheng Li",
+        "Jun-Peng Jiang",
+        "Han-Jia Ye"
+      ],
+      "summary": "Tabular data generation aims to synthesize realistic samples from limited observations while faithfully capturing the underlying data distribution. Tabular foundation models (TFMs), pretrained on diverse tabular tasks and adapted through in-context learning, have demonstrated strong predictive capabilities, suggesting the potential of extending this paradigm to tabular data generation. However, the strong predictive performance of TFMs often relies on sufficiently large context sets, whereas tabular generation is typically needed precisely when target data are scarce. Extending the foundation-model paradigm to generation therefore requires reliable distribution inference from only a limited context. To this end, we propose TabGift, a context-efficient tabular foundation model enabling both efficient distribution modeling and effective generation from only a few context samples. TabGift maps heterogeneous tables into a shared latent space with a pretrained tabular encoder, where an in-context diffusion model learns to denoise latent samples conditioned on a small set of clean examples. This design transfers generative priors across datasets and enables distribution inference from limited context, while a lightweight dataset-specific MLP decoder maps generated representations back to the original data space. Experiments on 7 classification and 11 regression datasets show that TabGift consistently outperforms representative baselines in synthetic data quality, with particularly strong gains under limited-context settings, while achieving substantially faster adaptation and generation.",
+      "published": "2026-10-12T15:43:52Z",
+      "updated": "2026-10-12T15:43:52Z",
+      "arxiv_id": "2610.16990v1",
+      "abs_url": "http://arxiv.org/abs/2610.16990v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16990v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 4,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "foundation model",
+        "in-context learning"
+      ],
+      "title_zh": "TabGift: A Context-Efficient Foundation Model for Tabular Data Generation",
+      "summary_zh": "Tabular data generation aims to synthesize realistic samples from limited observations while faithfully capturing the underlying data distribution. Tabular foundation models (TFMs), pretrained on diverse tabular tasks and adapted through in-context learning, have demonstrated strong predictive capabilities, suggesting the potential of extending this paradigm to tabular data generation. However, the strong predictive performance of TFMs often relies on sufficiently large context sets, whereas tabular generation is typically needed precisely when target data are scarce. Extending the foundation-model paradigm to generation therefore requires reliable distribution inference from only a limited context. To this end, we propose TabGift, a context-efficient tabular foundation model enabling both efficient distribution modeling and effective generation from only a few context samples. TabGift maps heterogeneous tables into a shared latent space with a pretrained tabular encoder, where an in-context diffusion model learns to denoise latent samples conditioned on a small set of clean examples. This design transfers generative priors across datasets and enables distribution inference from limited context, while a lightweight dataset-specific MLP decoder maps generated representations back to the original data space. Experiments on 7 classification and 11 regression datasets show that TabGift consistently outperforms representative baselines in synthetic data quality, with particularly strong gains under limited-context settings, while achieving substantially faster adaptation and generation."
+    }
+  ]
+}
