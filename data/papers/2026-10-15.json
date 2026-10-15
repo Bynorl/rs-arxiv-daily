@@ -1,0 +1,980 @@
+{
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T06:44:57.704070+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 23,
+  "papers": [
+    {
+      "title": "Are We Overthinking One-Step Generation?",
+      "authors": [
+        "Woobin Park",
+        "Jaeyeon Kim",
+        "Yilun Du",
+        "Sitan Chen",
+        "Bohyung Han"
+      ],
+      "summary": "Diffusion and flow matching are now dominant frameworks for generative modeling in continuous domains, but they typically require multiple network evaluations at inference. This has motivated extensive research on one-step generative modeling primarily built on diffusion and flow, though existing approaches often rely on complex training machinery. In this work, we introduce Priming Models, a simple two-stage framework for training one-step generators. Motivated by the difficulty of distributional training from scratch, Priming Models are first trained on a reconstruction objective, e.g., pixel-space denoising at a fixed noise level, before undergoing feature-space distributional post-training. Our central scientific finding is that this simple reconstruction stage is already enough to entirely alleviate the difficulty of distributional training. Empirically, across class-conditional image generation, text-to-image generation, and world modeling, Priming Models significantly advance the Pareto frontier of training compute vs. generation quality. On ImageNet at $256 \\times 256$ resolution, we achieve a state-of-the-art FID of $1.19$ among one-step generators using approximately one-tenth the training compute of prior methods with comparable FID. We open-source our codebase at https://github.com/JaeyeonKim01/priming.",
+      "published": "2026-10-14T15:14:43Z",
+      "updated": "2026-10-14T15:14:43Z",
+      "arxiv_id": "2610.20331v1",
+      "abs_url": "http://arxiv.org/abs/2610.20331v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20331v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/JaeyeonKim01/priming",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "图像生成与重建",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 2,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "denoising",
+        "image generation"
+      ],
+      "title_zh": "Are We Overthinking One-Step Generation?",
+      "summary_zh": "Diffusion and flow matching are now dominant frameworks for generative modeling in continuous domains, but they typically require multiple network evaluations at inference. This has motivated extensive research on one-step generative modeling primarily built on diffusion and flow, though existing approaches often rely on complex training machinery. In this work, we introduce Priming Models, a simple two-stage framework for training one-step generators. Motivated by the difficulty of distributional training from scratch, Priming Models are first trained on a reconstruction objective, e.g., pixel-space denoising at a fixed noise level, before undergoing feature-space distributional post-training. Our central scientific finding is that this simple reconstruction stage is already enough to entirely alleviate the difficulty of distributional training. Empirically, across class-conditional image generation, text-to-image generation, and world modeling, Priming Models significantly advance the Pareto frontier of training compute vs. generation quality. On ImageNet at $256 \\times 256$ resolution, we achieve a state-of-the-art FID of $1.19$ among one-step generators using approximately one-tenth the training compute of prior methods with comparable FID. We open-source our codebase at https://github.com/JaeyeonKim01/priming."
+    },
+    {
+      "title": "ReGRA: Residual-Gradient Adaptation for Complementary Low-Rank Fine-Tuning",
+      "authors": [
+        "Fanyao Li",
+        "Yuxi Liu",
+        "Xiaohao Liu",
+        "He Chang",
+        "Zhaoxin Wang",
+        "Zhulin Tao"
+      ],
+      "summary": "Low-rank adaptation (LoRA) enables parameter-efficient fine-tuning by learning low-rank weight updates. Increasing rank expands adaptation capacity, but does not guarantee that all learned directions improve downstream performance. In a diagnostic experiment with rank-16 LoRA, we show that retaining only the top singular components achieves the best performance, whereas adding further components degrades it. Motivated by this, we propose Residual-Gradient Adaptation (ReGRA), a two-stage method for making more effective use of a fixed rank budget. After the first stage, ReGRA estimates task gradients on a calibration set and removes their projections onto the two-sided subspace induced by the first-stage update. It then aggregates the residual-gradient directions to initialize a second-stage adapter without changing the first-stage update. An orthogonality regularizer encourages the two updates to capture complementary directions. Both updates can be merged into the pretrained weights, incurring no additional inference overhead. Across diverse benchmark sets, ReGRA achieves stronger performance than alternatives with the same total rank and even matches LoRA adapters with twice the rank. Ablation studies and further analysis support the contribution of its core design choices. Code is available at https://github.com/Fanyao-Li/ReGRA.",
+      "published": "2026-10-14T07:23:50Z",
+      "updated": "2026-10-14T07:23:50Z",
+      "arxiv_id": "2610.19700v1",
+      "abs_url": "http://arxiv.org/abs/2610.19700v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19700v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/Fanyao-Li/ReGRA",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "ReGRA: Residual-Gradient Adaptation for Complementary Low-Rank Fine-Tuning",
+      "summary_zh": "Low-rank adaptation (LoRA) enables parameter-efficient fine-tuning by learning low-rank weight updates. Increasing rank expands adaptation capacity, but does not guarantee that all learned directions improve downstream performance. In a diagnostic experiment with rank-16 LoRA, we show that retaining only the top singular components achieves the best performance, whereas adding further components degrades it. Motivated by this, we propose Residual-Gradient Adaptation (ReGRA), a two-stage method for making more effective use of a fixed rank budget. After the first stage, ReGRA estimates task gradients on a calibration set and removes their projections onto the two-sided subspace induced by the first-stage update. It then aggregates the residual-gradient directions to initialize a second-stage adapter without changing the first-stage update. An orthogonality regularizer encourages the two updates to capture complementary directions. Both updates can be merged into the pretrained weights, incurring no additional inference overhead. Across diverse benchmark sets, ReGRA achieves stronger performance than alternatives with the same total rank and even matches LoRA adapters with twice the rank. Ablation studies and further analysis support the contribution of its core design choices. Code is available at https://github.com/Fanyao-Li/ReGRA."
+    },
+    {
+      "title": "Spectral World Renderer: Unified 3D Hyperspectral Unmixing",
+      "authors": [
+        "Chia-Ming Lee",
+        "Yu-Jou Hsiao",
+        "Ming-Ching Chang",
+        "Xin Li",
+        "Yu-Lun Liu",
+        "Chih-Chung Hsu"
+      ],
+      "summary": "Cameras and the foundation models built on them recognize what a 3D scene contains, but not what it is made of: surfaces of the same colour can be different materials. Hyperspectral unmixing explains each spectrum as a mixture of material signatures, yet in 3D it is applied to rendered images after the views are composited, or tied to slow implicit fields, and no multi-view data with known composition exist to check the result. We present the Spectral World Renderer (SWR), which unifies world generation and unmixing. A coding agent builds executable 3D worlds that are rendered with measured spectra, so every hyperspectral image comes with exact labels and sub-pixel proportions; the resulting SWR-Bench provides eight indoor and outdoor worlds in which decompositions can be verified. SWR then unmixes inside rendering: each Gaussian of a compact 3D representation is decoded into material abundances before compositing, so one render yields spectra and material maps, and any surface can be queried by material name, a clicked pixel or a reference spectrum. Without material labels, SWR identifies materials best in all eight worlds, has the best mean PSNR on real captures, trains 3.7-12.9x faster than unmixing baselines, renders 34.9 labelled views/s and separates same-coloured materials.",
+      "published": "2026-10-14T03:40:05Z",
+      "updated": "2026-10-14T03:40:05Z",
+      "arxiv_id": "2610.19520v1",
+      "abs_url": "http://arxiv.org/abs/2610.19520v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19520v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "comment": "Project page: https://ming053l.github.io/Spectral-World-Renderer/ Code: https://github.com/ming053l/Spectral-World-Renderer Dataset: https://huggingface.co/datasets/ming0531/SWR-Bench",
+      "code_url": "https://github.com/ming053l/Spectral-World-Renderer",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 9,
+      "anchor_terms": [
+        "foundation model",
+        "hyperspectral image"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "hyperspectral",
+        "hyperspectral image",
+        "hyperspectral unmixing"
+      ],
+      "title_zh": "Spectral World Renderer: Unified 3D Hyperspectral Unmixing",
+      "summary_zh": "Cameras and the foundation models built on them recognize what a 3D scene contains, but not what it is made of: surfaces of the same colour can be different materials. Hyperspectral unmixing explains each spectrum as a mixture of material signatures, yet in 3D it is applied to rendered images after the views are composited, or tied to slow implicit fields, and no multi-view data with known composition exist to check the result. We present the Spectral World Renderer (SWR), which unifies world generation and unmixing. A coding agent builds executable 3D worlds that are rendered with measured spectra, so every hyperspectral image comes with exact labels and sub-pixel proportions; the resulting SWR-Bench provides eight indoor and outdoor worlds in which decompositions can be verified. SWR then unmixes inside rendering: each Gaussian of a compact 3D representation is decoded into material abundances before compositing, so one render yields spectra and material maps, and any surface can be queried by material name, a clicked pixel or a reference spectrum. Without material labels, SWR identifies materials best in all eight worlds, has the best mean PSNR on real captures, trains 3.7-12.9x faster than unmixing baselines, renders 34.9 labelled views/s and separates same-coloured materials."
+    },
+    {
+      "title": "Learning to Select Features with Manifold Deep Unfolding PCA",
+      "authors": [
+        "Jingjing Liu",
+        "Pei Tai",
+        "Xianchao Xiu",
+        "Wanquan Liu"
+      ],
+      "summary": "Unsupervised feature selection (UFS) is of great significance in image processing and pattern recognition. Nevertheless, existing model-based methods often rely on manually tuned hyperparameters, while deep learning-based methods generally require massive training data. To address these issues, this paper proposes an efficient manifold deep unfolding feature selection network (MDUFS-Net). Technically, we first incorporate the $\\ell_{2,0}$-norm into the classic principal component analysis (PCA) framework, then unfold the alternating direction method of multipliers (ADMM)-based iterative algorithm into an end-to-end trainable network, thereby enabling automatic parameter learning. Moreover, a manifold optimization strategy is developed to improve the numerical robustness. On this basis, we further extend MDUFS-Net into an enhanced variant called MDUFS-Net+ by introducing the $\\ell_{0}$-norm for more discriminative feature representations. Extensive experiments validate that our proposed MDUFS-Net and MDUFS-Net+ outperform state-of-the-art methods in the UFS task, with promising performance in clustering. Our code is available at https://github.com/xianchaoxiu/MDUFS.",
+      "published": "2026-10-14T02:28:39Z",
+      "updated": "2026-10-14T02:28:39Z",
+      "arxiv_id": "2610.19436v1",
+      "abs_url": "http://arxiv.org/abs/2610.19436v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19436v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/xianchaoxiu/MDUFS",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "无监督与弱监督",
+        "高效微调与轻量化"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 3,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "robust",
+        "unsupervised"
+      ],
+      "title_zh": "Learning to Select Features with Manifold Deep Unfolding PCA",
+      "summary_zh": "Unsupervised feature selection (UFS) is of great significance in image processing and pattern recognition. Nevertheless, existing model-based methods often rely on manually tuned hyperparameters, while deep learning-based methods generally require massive training data. To address these issues, this paper proposes an efficient manifold deep unfolding feature selection network (MDUFS-Net). Technically, we first incorporate the $\\ell_{2,0}$-norm into the classic principal component analysis (PCA) framework, then unfold the alternating direction method of multipliers (ADMM)-based iterative algorithm into an end-to-end trainable network, thereby enabling automatic parameter learning. Moreover, a manifold optimization strategy is developed to improve the numerical robustness. On this basis, we further extend MDUFS-Net into an enhanced variant called MDUFS-Net+ by introducing the $\\ell_{0}$-norm for more discriminative feature representations. Extensive experiments validate that our proposed MDUFS-Net and MDUFS-Net+ outperform state-of-the-art methods in the UFS task, with promising performance in clustering. Our code is available at https://github.com/xianchaoxiu/MDUFS."
+    },
+    {
+      "title": "Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance",
+      "authors": [
+        "Zhefei Gong",
+        "Hefeifei Jiang",
+        "Zehao Wang",
+        "Jiachen Li"
+      ],
+      "summary": "Mobile Manipulation (MoMa) is a cornerstone of autonomous robotic systems, yet real-world fine-tuning remains a formidable challenge because of high-dimensional action spaces and intricate coupling between heterogeneous modules. In this paper, we propose HiRe-MoMa (Hierarchical Residual Mobile Manipulation), a systematic framework for stable and sample-efficient real-world fine-tuning of complex MoMa systems. At its core, HiRe-MoMa adopts a Hierarchical Residual Architecture that fine-tunes a frozen base policy. A Policy-Agnostic Residual learns additive corrections atop the base policy, while Hierarchical Decoupling splits the residual into mobile-base and manipulator-arm heads with unidirectional conditioning, mitigating gradient interference and aligning corrections with the platform's physical hierarchy. To improve sample efficiency in data-expensive real-world settings, we propose Expert-Guided Value Alignment, which leverages sparse human interventions with under 20% training coverage to reshape the critic's value landscape, effectively guiding autonomous exploration through expert priors. Extensive real-world experiments on the TIAGo++ platform demonstrate that HiRe-MoMa consistently enhances task performance with only around 30 minutes of online interaction, regardless of the base policy architecture. To our knowledge, this is among the first frameworks to enable efficient on-robot fine-tuning for mobile manipulation in the real world, providing a practical paradigm for deploying complex robotic systems in dynamic, human-centric environments. Further details can be found on our project website: https://hire-moma.github.io/",
+      "published": "2026-10-14T17:59:52Z",
+      "updated": "2026-10-14T17:59:52Z",
+      "arxiv_id": "2610.20607v1",
+      "abs_url": "http://arxiv.org/abs/2610.20607v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20607v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "Conference on Robot Learning (CoRL 2026); Project Website: https://hire-moma.github.io/",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance",
+      "summary_zh": "Mobile Manipulation (MoMa) is a cornerstone of autonomous robotic systems, yet real-world fine-tuning remains a formidable challenge because of high-dimensional action spaces and intricate coupling between heterogeneous modules. In this paper, we propose HiRe-MoMa (Hierarchical Residual Mobile Manipulation), a systematic framework for stable and sample-efficient real-world fine-tuning of complex MoMa systems. At its core, HiRe-MoMa adopts a Hierarchical Residual Architecture that fine-tunes a frozen base policy. A Policy-Agnostic Residual learns additive corrections atop the base policy, while Hierarchical Decoupling splits the residual into mobile-base and manipulator-arm heads with unidirectional conditioning, mitigating gradient interference and aligning corrections with the platform's physical hierarchy. To improve sample efficiency in data-expensive real-world settings, we propose Expert-Guided Value Alignment, which leverages sparse human interventions with under 20% training coverage to reshape the critic's value landscape, effectively guiding autonomous exploration through expert priors. Extensive real-world experiments on the TIAGo++ platform demonstrate that HiRe-MoMa consistently enhances task performance with only around 30 minutes of online interaction, regardless of the base policy architecture. To our knowledge, this is among the first frameworks to enable efficient on-robot fine-tuning for mobile manipulation in the real world, providing a practical paradigm for deploying complex robotic systems in dynamic, human-centric environments. Further details can be found on our project website: https://hire-moma.github.io/"
+    },
+    {
+      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "authors": [
+        "Weichen Lyu",
+        "Chong Xia",
+        "Mingyu Dong",
+        "Long Xu",
+        "Shengjun Zhang",
+        "Yueqi Duan"
+      ],
+      "summary": "3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive construction processes involving global planning, fine-grained alignment, and physical simulation. To address these challenges, we propose PhySGA, a Physics-Space Grounded Agentic Framework for 3D composition via agent exploration and physical simulation, enabling the universal interactive assembly of rigid, articulated, and deformable objects. Directly applying vanilla LLMs or VLMs to this task proves insufficient, as current models inherently lack grounded physical understanding and interactive construction experience. To overcome this limitation, we design a collaborative feedforward-feedback architecture: an Assembly Agent focuses on geometric and kinematic reasoning for global step planning and coarse adjustment, while a Critic Agent reasons over contact dynamics for simulator state diagnosis and fine-grained closed-loop correction. Furthermore, Action Routers map semantic planning and analysis onto executable physical primitives within the simulator, while a task-specific Self-Evolving Skill Library distills historical trial-and-error feedback into reusable experiences, boosting success rates and minimizing exploration attempts. Extensive experiments within Isaac Sim demonstrate that PhySGA significantly surpasses existing methods in relation fidelity, physical plausibility, and visual quality.",
+      "published": "2026-10-14T17:47:24Z",
+      "updated": "2026-10-14T17:47:24Z",
+      "arxiv_id": "2610.20560v1",
+      "abs_url": "http://arxiv.org/abs/2610.20560v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20560v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "comment": "Project Page: https://agenticei.github.io/PhySGA-page/",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "generalizable",
+        "large language model",
+        "LoRA"
+      ],
+      "title_zh": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "summary_zh": "3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive construction processes involving global planning, fine-grained alignment, and physical simulation. To address these challenges, we propose PhySGA, a Physics-Space Grounded Agentic Framework for 3D composition via agent exploration and physical simulation, enabling the universal interactive assembly of rigid, articulated, and deformable objects. Directly applying vanilla LLMs or VLMs to this task proves insufficient, as current models inherently lack grounded physical understanding and interactive construction experience. To overcome this limitation, we design a collaborative feedforward-feedback architecture: an Assembly Agent focuses on geometric and kinematic reasoning for global step planning and coarse adjustment, while a Critic Agent reasons over contact dynamics for simulator state diagnosis and fine-grained closed-loop correction. Furthermore, Action Routers map semantic planning and analysis onto executable physical primitives within the simulator, while a task-specific Self-Evolving Skill Library distills historical trial-and-error feedback into reusable experiences, boosting success rates and minimizing exploration attempts. Extensive experiments within Isaac Sim demonstrate that PhySGA significantly surpasses existing methods in relation fidelity, physical plausibility, and visual quality."
+    },
+    {
+      "title": "Detection of Potato Plant Leaf Diseases using Convolutional Neural Networks",
+      "authors": [
+        "Haimanot Bitew Alemayehu",
+        "Simachew Melaku Ayalew",
+        "Chilotie Desalew Mengesha",
+        "Ayisheshim Almaw Bogale",
+        "Anteneh Birhan Yenew",
+        "Abrham Tegegne Bogale"
+      ],
+      "summary": "Potato is an important food-security crop in Ethiopia, but its production is affected by foliar diseases, particularly early blight and late blight. This study develops a lightweight convolutional neural network (CNN) to classify potato leaves into three categories: healthy, early blight, and late blight. The proposed model was trained using 2,215 images from the PlantVillage dataset and evaluated on an independent field dataset containing 247 images collected from potato farms in Banja, Awi Zone, Ethiopia. On PlantVillage, the model achieved 99.04% training accuracy, 98.21% validation accuracy, and 98.66% test accuracy. On the field dataset, it achieved 90.28% accuracy. The study also compares the proposed CNN with VGG16 and MobileNetV2 in terms of classification performance and computational efficiency. The proposed model contains 446,787 trainable parameters, occupies approximately 1.70 MB, and requires an average of 5.58 seconds per training epoch in the reported experimental setup, compared with 9.96 seconds for VGG16 and 7.68 seconds for MobileNetV2. The results demonstrate the potential of a compact CNN for potato leaf disease classification and highlight the importance of independent field evaluation, where image conditions are more variable than in controlled benchmark datasets. The proposed approach may support preliminary disease identification for smallholder farmers in Ethiopia and similar agricultural settings.",
+      "published": "2026-10-14T17:36:33Z",
+      "updated": "2026-10-14T17:36:33Z",
+      "arxiv_id": "2610.20544v1",
+      "abs_url": "http://arxiv.org/abs/2610.20544v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20544v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "9 pages, 4 figures, 4 tables. The study presents a lightweight CNN for three-class potato leaf disease classification and evaluates it on PlantVillage and an independent field dataset collected in Banja, Awi Zone, Ethiopia",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 3,
+      "anchor_terms": [
+        "crop"
+      ],
+      "matched_terms": [
+        "CNN",
+        "convolutional neural network",
+        "crop"
+      ],
+      "title_zh": "Detection of Potato Plant Leaf Diseases using Convolutional Neural Networks",
+      "summary_zh": "Potato is an important food-security crop in Ethiopia, but its production is affected by foliar diseases, particularly early blight and late blight. This study develops a lightweight convolutional neural network (CNN) to classify potato leaves into three categories: healthy, early blight, and late blight. The proposed model was trained using 2,215 images from the PlantVillage dataset and evaluated on an independent field dataset containing 247 images collected from potato farms in Banja, Awi Zone, Ethiopia. On PlantVillage, the model achieved 99.04% training accuracy, 98.21% validation accuracy, and 98.66% test accuracy. On the field dataset, it achieved 90.28% accuracy. The study also compares the proposed CNN with VGG16 and MobileNetV2 in terms of classification performance and computational efficiency. The proposed model contains 446,787 trainable parameters, occupies approximately 1.70 MB, and requires an average of 5.58 seconds per training epoch in the reported experimental setup, compared with 9.96 seconds for VGG16 and 7.68 seconds for MobileNetV2. The results demonstrate the potential of a compact CNN for potato leaf disease classification and highlight the importance of independent field evaluation, where image conditions are more variable than in controlled benchmark datasets. The proposed approach may support preliminary disease identification for smallholder farmers in Ethiopia and similar agricultural settings."
+    },
+    {
+      "title": "OrionMoE-v1.0: A Mixture-of-Experts Foundation Model for Tabular In-Context Learning",
+      "authors": [
+        "Mohamed Bouadi",
+        "Nassim Bouarour",
+        "Aditya Tanna",
+        "Vinay Kumar Sankarapu"
+      ],
+      "summary": "Tabular foundation models enable in-context learning by predicting unseen observations from a labeled support table without task-specific parameter updates. Despite recent advances, most existing approaches rely on dense architectures that apply the same transformations across features and datasets. We introduce OrionMoE-Small, a compact tabular foundation model that combines distribution-aware representations with dataset-conditioned sparse mixture-of-experts computation. Built on a dual-axis Transformer architecture, OrionMoE-Small selectively activates experts along the feature axis, with routing decisions informed by both individual feature representations and the broader dataset context. This design enables adaptive allocation of computation across heterogeneous tabular problems while retaining a shared computational pathway across tasks. OrionMoE-Small is pretrained entirely on synthetic classification tasks generated from a structured causal prior and performs downstream prediction without gradient-based adaptation. Experiments across multiple tabular benchmarks demonstrate competitive performance against substantially larger foundation models, with particularly strong results on small-context and high-dimensional datasets. Further analysis reveals favorable relative performance under class imbalance and highlights the importance of feature composition.",
+      "published": "2026-10-14T16:13:12Z",
+      "updated": "2026-10-14T16:13:12Z",
+      "arxiv_id": "2610.20418v1",
+      "abs_url": "http://arxiv.org/abs/2610.20418v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20418v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning",
+        "transformer"
+      ],
+      "title_zh": "OrionMoE-v1.0: A Mixture-of-Experts Foundation Model for Tabular In-Context Learning",
+      "summary_zh": "Tabular foundation models enable in-context learning by predicting unseen observations from a labeled support table without task-specific parameter updates. Despite recent advances, most existing approaches rely on dense architectures that apply the same transformations across features and datasets. We introduce OrionMoE-Small, a compact tabular foundation model that combines distribution-aware representations with dataset-conditioned sparse mixture-of-experts computation. Built on a dual-axis Transformer architecture, OrionMoE-Small selectively activates experts along the feature axis, with routing decisions informed by both individual feature representations and the broader dataset context. This design enables adaptive allocation of computation across heterogeneous tabular problems while retaining a shared computational pathway across tasks. OrionMoE-Small is pretrained entirely on synthetic classification tasks generated from a structured causal prior and performs downstream prediction without gradient-based adaptation. Experiments across multiple tabular benchmarks demonstrate competitive performance against substantially larger foundation models, with particularly strong results on small-context and high-dimensional datasets. Further analysis reveals favorable relative performance under class imbalance and highlights the importance of feature composition."
+    },
+    {
+      "title": "Hybrid supervised instance segmentation by learning label noise suppression",
+      "authors": [
+        "Linwei Chen",
+        "Ying Fu",
+        "Shaodi You",
+        "Hongzhe Liu"
+      ],
+      "summary": "To reach top accuracy, current fully supervised instance segmentation methods severely rely on large-scale pixel-wise labeled datasets. They are usually expensive and time-consuming to obtain. Though weakly or semi-supervised methods utilize cheap bounding box labeled, image-level labeled or unlabeled samples to save the labeling cost, their performance is largely sacrificed. To save labeling cost without losing much performance, in this paper, we present a pipeline that can utilize economical bounding box labels and accurate pixel-wise labels in a hybrid way. Specifically, we design two ancillary models to learn label noise suppression and obtain accurate pseudo pixel-wise labels from bounding box labels for training. One is designed to suppress mislabeling between foreground and background, and the other is designed to suppress noise from mislabeling of instances. Moreover, we exploit category-aware spatial attention module, category constraint module, instance constraint module, and self-learning training approach to improve the accuracy of pseudo labels. Experiments on the PASCAL VOC 2012 and the Cityscapes datasets show that our method can achieve competitive performance with much less labeling cost.",
+      "published": "2026-10-14T16:10:03Z",
+      "updated": "2026-10-14T16:10:03Z",
+      "arxiv_id": "2610.20412v1",
+      "abs_url": "http://arxiv.org/abs/2610.20412v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20412v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "实例分割",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "实例分割",
+      "score": 4,
+      "anchor_terms": [
+        "semi-supervised"
+      ],
+      "matched_terms": [
+        "instance segmentation",
+        "semi-supervised"
+      ],
+      "title_zh": "Hybrid supervised instance segmentation by learning label noise suppression",
+      "summary_zh": "To reach top accuracy, current fully supervised instance segmentation methods severely rely on large-scale pixel-wise labeled datasets. They are usually expensive and time-consuming to obtain. Though weakly or semi-supervised methods utilize cheap bounding box labeled, image-level labeled or unlabeled samples to save the labeling cost, their performance is largely sacrificed. To save labeling cost without losing much performance, in this paper, we present a pipeline that can utilize economical bounding box labels and accurate pixel-wise labels in a hybrid way. Specifically, we design two ancillary models to learn label noise suppression and obtain accurate pseudo pixel-wise labels from bounding box labels for training. One is designed to suppress mislabeling between foreground and background, and the other is designed to suppress noise from mislabeling of instances. Moreover, we exploit category-aware spatial attention module, category constraint module, instance constraint module, and self-learning training approach to improve the accuracy of pseudo labels. Experiments on the PASCAL VOC 2012 and the Cityscapes datasets show that our method can achieve competitive performance with much less labeling cost."
+    },
+    {
+      "title": "Few-Shot Adaptation for Anomalous Sound Detection at Low False-Positive Rate",
+      "authors": [
+        "Simone Lugani",
+        "Christof Pichler",
+        "Hannes Wegleiter",
+        "Christoph Feilmayr",
+        "Rodolfo Zunino",
+        "Edoardo Ragusa"
+      ],
+      "summary": "Reliable fault detection is crucial for industrial machinery in large-scale facilities, where unexpected failures can cause costly downtime and production interruptions. Although acoustic monitoring provides a scalable solution for machine condition monitoring, its deployment is often constrained by high false-positive rates. We propose a two-step approach to automatic anomalous sound detection: first, when only normal operating audio samples are available, a regularized unsupervised model is deployed; then, after the first machine fault, a few-shot adaptation strategy exploits the anomalous samples acquired during the fault to improve the system. This adaptation increases the area under the precision-recall curve (AUPR) from 23.0 to 64.0 and improves detection in the low false-positive-rate region, with the partial area under the receiver operating characteristic curve (pAUROC) increasing from 39.6 to 72.8. We also show that covariance regularization improves both prediction accuracy and training stability in the unsupervised model. These results provide a practical strategy for acoustic anomaly detection systems, enabling improved accuracy and reduced false alarms.",
+      "published": "2026-10-14T09:51:03Z",
+      "updated": "2026-10-14T09:51:03Z",
+      "arxiv_id": "2610.19893v1",
+      "abs_url": "http://arxiv.org/abs/2610.19893v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19893v1",
+      "primary_category": "cs.SD",
+      "categories": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "无监督与弱监督"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 2,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "unsupervised"
+      ],
+      "title_zh": "Few-Shot Adaptation for Anomalous Sound Detection at Low False-Positive Rate",
+      "summary_zh": "Reliable fault detection is crucial for industrial machinery in large-scale facilities, where unexpected failures can cause costly downtime and production interruptions. Although acoustic monitoring provides a scalable solution for machine condition monitoring, its deployment is often constrained by high false-positive rates. We propose a two-step approach to automatic anomalous sound detection: first, when only normal operating audio samples are available, a regularized unsupervised model is deployed; then, after the first machine fault, a few-shot adaptation strategy exploits the anomalous samples acquired during the fault to improve the system. This adaptation increases the area under the precision-recall curve (AUPR) from 23.0 to 64.0 and improves detection in the low false-positive-rate region, with the partial area under the receiver operating characteristic curve (pAUROC) increasing from 39.6 to 72.8. We also show that covariance regularization improves both prediction accuracy and training stability in the unsupervised model. These results provide a practical strategy for acoustic anomaly detection systems, enabling improved accuracy and reduced false alarms."
+    },
+    {
+      "title": "CoDy: Codec Dynamics as Complementary Priors for Unsupervised Temporal Action Localization",
+      "authors": [
+        "Tianyu Yan",
+        "Qingyi Yang",
+        "Qin Yang",
+        "Xufei Guo",
+        "Yuan Tang",
+        "Rui Wang",
+        "Yixue Hao",
+        "Long Hu"
+      ],
+      "summary": "Unsupervised temporal action localization (UTAL) aims to identify action categories and localize their temporal boundaries without annotation supervision. Existing methods typically derive supervision for both tasks solely from RGB and optical-flow representations, often resulting in noisy category assignments and inaccurate temporal boundaries. In this work, we reveal an overlooked property of video codecs: group-of-pictures quantization patterns preserve category-discriminative dynamics, while motion-vector and residual variations exhibit pronounced responses around action transitions. Based on this insight, we propose CoDy, a codec dynamics-guided framework that exploits the codec as complementary information to the visual view for UTAL. CoDy integrates a codec-enhanced view with RGB and flow through confidence-aware consensus clustering, producing reliable soft pseudo-labels. It further converts codec dynamics into a class-agnostic boundary prior, which supervises visual boundary learning and guides proposal initialization and iterative refinement. The codec branches are only used during the training stage and introduce no extra codec-side computation at inference. Extensive experiments on THUMOS14 and ActivityNet v1.3 demonstrate that CoDy consistently outperforms existing UTAL methods and achieves state-of-the-art localization performance. These results establish codec signals as effective annotation-free priors for jointly inferring which actions occur and when they occur.",
+      "published": "2026-10-14T09:33:46Z",
+      "updated": "2026-10-14T09:33:46Z",
+      "arxiv_id": "2610.19880v1",
+      "abs_url": "http://arxiv.org/abs/2610.19880v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19880v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "开放词汇与开放集",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 3,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "unsupervised"
+      ],
+      "title_zh": "CoDy: Codec Dynamics as Complementary Priors for Unsupervised Temporal Action Localization",
+      "summary_zh": "Unsupervised temporal action localization (UTAL) aims to identify action categories and localize their temporal boundaries without annotation supervision. Existing methods typically derive supervision for both tasks solely from RGB and optical-flow representations, often resulting in noisy category assignments and inaccurate temporal boundaries. In this work, we reveal an overlooked property of video codecs: group-of-pictures quantization patterns preserve category-discriminative dynamics, while motion-vector and residual variations exhibit pronounced responses around action transitions. Based on this insight, we propose CoDy, a codec dynamics-guided framework that exploits the codec as complementary information to the visual view for UTAL. CoDy integrates a codec-enhanced view with RGB and flow through confidence-aware consensus clustering, producing reliable soft pseudo-labels. It further converts codec dynamics into a class-agnostic boundary prior, which supervises visual boundary learning and guides proposal initialization and iterative refinement. The codec branches are only used during the training stage and introduce no extra codec-side computation at inference. Extensive experiments on THUMOS14 and ActivityNet v1.3 demonstrate that CoDy consistently outperforms existing UTAL methods and achieves state-of-the-art localization performance. These results establish codec signals as effective annotation-free priors for jointly inferring which actions occur and when they occur."
+    },
+    {
+      "title": "SPARS: A Stability-Plasticity-Aware Region Selection Framework for Continual Learning",
+      "authors": [
+        "Teif Aldaajani",
+        "Huda Hakami",
+        "Maha A. Thafar"
+      ],
+      "summary": "Continual learning aims to acquire new knowledge while retaining previously learned knowledge. However, updating shared parameters when learning new tasks often overwrites existing knowledge, causing catastrophic forgetting. Memory replay methods mitigate catastrophic forgetting but rely on previous samples, raising privacy, memory, and scalability concerns. On the other hand, parameter isolation-based methods preserve learned knowledge but may limit knowledge transfer, whereas regularization promotes adaptability but remains susceptible to interference between old and new tasks. To maintain the stability-plasticity trade-off, this paper proposes Stability-Plasticity-Aware Region Selection (SPARS), a replay-free hybrid framework combining global parameter isolation with localized parameter regularization. SPARS estimates parameter importance using either the Fisher Information Matrix (FIM) or a novel Confidence Score (CS) estimator that leverages logit sensitivity and achieves comparable performance to FIM without requiring labelled data. Based on parameter importance, SPARS partitions parameters into three importance-aware regions namely, winning, neighboring, and non-important parameter regions. Each region receives a different adaptation strategy: selective freezing, soft regularization, or unrestricted learning based on its role in the stability-plasticity trade-off. To mitigate classifier bias in class-incremental learning, we employ Quadratic Discriminant Analysis to improve performance on previously learned classes .Experiments on CIFAR-10 and TinyImageNet demonstrate consistent improvement in average incremental accuracy over existing isolation- and regularization-based methods across task- and class-incremental learning. On TinyImageNet, SPARS achieves the best performance with 6% improvement for class-incremental learning while retaining over 60% of parameters for future tasks.",
+      "published": "2026-10-14T09:32:01Z",
+      "updated": "2026-10-14T09:32:01Z",
+      "arxiv_id": "2610.19876v1",
+      "abs_url": "http://arxiv.org/abs/2610.19876v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19876v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 5,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "class-incremental",
+        "continual learning",
+        "incremental learning"
+      ],
+      "title_zh": "SPARS: A Stability-Plasticity-Aware Region Selection Framework for Continual Learning",
+      "summary_zh": "Continual learning aims to acquire new knowledge while retaining previously learned knowledge. However, updating shared parameters when learning new tasks often overwrites existing knowledge, causing catastrophic forgetting. Memory replay methods mitigate catastrophic forgetting but rely on previous samples, raising privacy, memory, and scalability concerns. On the other hand, parameter isolation-based methods preserve learned knowledge but may limit knowledge transfer, whereas regularization promotes adaptability but remains susceptible to interference between old and new tasks. To maintain the stability-plasticity trade-off, this paper proposes Stability-Plasticity-Aware Region Selection (SPARS), a replay-free hybrid framework combining global parameter isolation with localized parameter regularization. SPARS estimates parameter importance using either the Fisher Information Matrix (FIM) or a novel Confidence Score (CS) estimator that leverages logit sensitivity and achieves comparable performance to FIM without requiring labelled data. Based on parameter importance, SPARS partitions parameters into three importance-aware regions namely, winning, neighboring, and non-important parameter regions. Each region receives a different adaptation strategy: selective freezing, soft regularization, or unrestricted learning based on its role in the stability-plasticity trade-off. To mitigate classifier bias in class-incremental learning, we employ Quadratic Discriminant Analysis to improve performance on previously learned classes .Experiments on CIFAR-10 and TinyImageNet demonstrate consistent improvement in average incremental accuracy over existing isolation- and regularization-based methods across task- and class-incremental learning. On TinyImageNet, SPARS achieves the best performance with 6% improvement for class-incremental learning while retaining over 60% of parameters for future tasks."
+    },
+    {
+      "title": "FPV-CRASH: A Dataset for Offline Crash Moment Localization in Drone First-Person-View Videos",
+      "authors": [
+        "Jifan Zhang",
+        "Tingyu Wang",
+        "Qian Liu",
+        "Zhedong Zheng"
+      ],
+      "summary": "Crash Moment Localization aims to localize the major physical impact that interrupts controlled flight in an onboard first-person-view (FPV) video recorded by a drone, thereby providing a temporal reference for retrospective crash analysis in aerial robotics. However, existing crash-video datasets predominantly target surveillance or dash-camera footage, and their annotation schemes and task formulations are not designed for temporal localization of the major physical impact in UAV onboard FPV videos. To address this gap, we present FPV-CRASH, a dataset and fixed-protocol reference evaluation for offline Crash Moment Localization in drone FPV videos. FPV-CRASH contains 1,052 drone FPV clips (526 Crash and 526 Normal); each Crash clip has a single-frame reference annotation for the Crash Moment, and every clip is paired with four English captions automatically generated from sampled frames and the known Crash/Normal label. Normal clips carry no timestamp target and provide training-time background supervision. The captions support an auxiliary Text-to-Video Retrieval task, whereas localization inference remains video-only. We further provide a heatmap-based reference model that estimates a continuous Crash Moment timestamp from sparsely sampled frames. Under the fixed, non-source-disjoint clip-level protocol, the reference model reduces MAE from 1.12 s for the strongest fixed timing-prior baseline to 0.56 s (a 50% relative reduction) and achieves a median absolute error (MedAE) of 0.33 s; the fraction of clips localized within 0.5 s rises from 37.14% to 65.71%. The release includes annotations, available source video identifiers and URLs, clipping metadata, fixed split lists, and preprocessing code so that the reportable portion can be reconstructed without redistributing source footage. At submission time, all source-compilation URLs remained accessible.",
+      "published": "2026-10-14T08:32:57Z",
+      "updated": "2026-10-14T08:32:57Z",
+      "arxiv_id": "2610.19785v1",
+      "abs_url": "http://arxiv.org/abs/2610.19785v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19785v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "8 pages, 4 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "基础模型",
+        "视觉-语言模型",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 8,
+      "anchor_terms": [
+        "CLIP",
+        "drone",
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "CLIP",
+        "drone",
+        "MAE",
+        "UAV"
+      ],
+      "title_zh": "FPV-CRASH: A Dataset for Offline Crash Moment Localization in Drone First-Person-View Videos",
+      "summary_zh": "Crash Moment Localization aims to localize the major physical impact that interrupts controlled flight in an onboard first-person-view (FPV) video recorded by a drone, thereby providing a temporal reference for retrospective crash analysis in aerial robotics. However, existing crash-video datasets predominantly target surveillance or dash-camera footage, and their annotation schemes and task formulations are not designed for temporal localization of the major physical impact in UAV onboard FPV videos. To address this gap, we present FPV-CRASH, a dataset and fixed-protocol reference evaluation for offline Crash Moment Localization in drone FPV videos. FPV-CRASH contains 1,052 drone FPV clips (526 Crash and 526 Normal); each Crash clip has a single-frame reference annotation for the Crash Moment, and every clip is paired with four English captions automatically generated from sampled frames and the known Crash/Normal label. Normal clips carry no timestamp target and provide training-time background supervision. The captions support an auxiliary Text-to-Video Retrieval task, whereas localization inference remains video-only. We further provide a heatmap-based reference model that estimates a continuous Crash Moment timestamp from sparsely sampled frames. Under the fixed, non-source-disjoint clip-level protocol, the reference model reduces MAE from 1.12 s for the strongest fixed timing-prior baseline to 0.56 s (a 50% relative reduction) and achieves a median absolute error (MedAE) of 0.33 s; the fraction of clips localized within 0.5 s rises from 37.14% to 65.71%. The release includes annotations, available source video identifiers and URLs, clipping metadata, fixed split lists, and preprocessing code so that the reportable portion can be reconstructed without redistributing source footage. At submission time, all source-compilation URLs remained accessible."
+    },
+    {
+      "title": "CORE: Contrast-and-Reflect for Self-Supervised Prompt Optimization in Anomaly Synthesis",
+      "authors": [
+        "Haoxiang Rao",
+        "Fang Zhao",
+        "Zhao Wang",
+        "Weijia Li",
+        "Chenyang Si",
+        "Caifeng Shan"
+      ],
+      "summary": "Industrial anomaly detection (AD) is bottlenecked by the scarcity of anomalous samples, making high-fidelity anomaly synthesis crucial for improving downstream performance. However, existing methods either rely on scarce real anomaly references or auxiliary data, while lacking complex reasoning and iterative optimization capabilities for generating realistic defects in open-set scenarios. To address these challenges, we propose CORE, a cost-efficient and training-free prompt optimization framework based on Large Multimodal Models (LMMs), which unifies zero-shot and one-shot anomaly synthesis. CORE first introduces an Anomaly Context Grounding module to transform sparse user context into defect-aware generation context, which is subsequently instantiated as structured anomaly prompts that disentangle normal-region preservation from anomaly-specific variation, enabling controllable and faithful defect generation. Furthermore, CORE autonomously refines prompts through a self-supervised contrast-and-reflect mechanism. This design empowers general-purpose LMMs to synthesize realistic anomalies under both zero-shot and one-shot settings without task-specific training. Extensive experiments on MVTec-AD and VisA demonstrate that CORE synthesizes realistic and diverse anomalies, yielding superior improvements in downstream AD performance. Furthermore, its model-agnostic and plug-and-play paradigm enables effortless integration with diverse LMMs, facilitating adaptation to unseen open-set scenarios.",
+      "published": "2026-10-14T05:33:36Z",
+      "updated": "2026-10-14T05:33:36Z",
+      "arxiv_id": "2610.19610v1",
+      "abs_url": "http://arxiv.org/abs/2610.19610v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19610v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "9 pages, 4 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "开放词汇与开放集",
+        "基础模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "多模态融合"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 6,
+      "anchor_terms": [
+        "open-set"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "open-set",
+        "self-supervised",
+        "zero-shot"
+      ],
+      "title_zh": "CORE: Contrast-and-Reflect for Self-Supervised Prompt Optimization in Anomaly Synthesis",
+      "summary_zh": "Industrial anomaly detection (AD) is bottlenecked by the scarcity of anomalous samples, making high-fidelity anomaly synthesis crucial for improving downstream performance. However, existing methods either rely on scarce real anomaly references or auxiliary data, while lacking complex reasoning and iterative optimization capabilities for generating realistic defects in open-set scenarios. To address these challenges, we propose CORE, a cost-efficient and training-free prompt optimization framework based on Large Multimodal Models (LMMs), which unifies zero-shot and one-shot anomaly synthesis. CORE first introduces an Anomaly Context Grounding module to transform sparse user context into defect-aware generation context, which is subsequently instantiated as structured anomaly prompts that disentangle normal-region preservation from anomaly-specific variation, enabling controllable and faithful defect generation. Furthermore, CORE autonomously refines prompts through a self-supervised contrast-and-reflect mechanism. This design empowers general-purpose LMMs to synthesize realistic anomalies under both zero-shot and one-shot settings without task-specific training. Extensive experiments on MVTec-AD and VisA demonstrate that CORE synthesizes realistic and diverse anomalies, yielding superior improvements in downstream AD performance. Furthermore, its model-agnostic and plug-and-play paradigm enables effortless integration with diverse LMMs, facilitating adaptation to unseen open-set scenarios."
+    },
+    {
+      "title": "DTDD: Divergence-Triggered Dynamic Distillation for Reliable On-Policy Supervision",
+      "authors": [
+        "Qijia He",
+        "Zequn Li",
+        "Spencer Luo",
+        "Tianle Chen",
+        "Pradyumna Narayana",
+        "Zixian Ma",
+        "Ranjay Krishna",
+        "Lan Nie",
+        "Sugato Basu"
+      ],
+      "summary": "On-policy distillation (OPD) provides dense token-level supervision on student rollouts, but this supervision can become unreliable when the student and teacher diverge, either because of a large initial policy gap or compounding errors in long-horizon reasoning and tool use. We introduce Divergence-Triggered Dynamic Distillation (DTDD), an adaptive OPD framework that uses segment-level student-teacher divergence to trigger teacher takeover during training. When divergence triggers an intervention during reasoning, the student prefix continues to receive standard OPD supervision. The teacher then generates a recovery suffix, which the student learns through behavior cloning, using cross-entropy on the teacher-generated tokens. We evaluate DTDD in three regimes: long-horizon reasoning, distillation from a base initialization without offline supervised fine-tuning (SFT), and multi-turn agents. We also compare alternative trigger designs and teacher-intervention rates. DTDD reduces the post-warmup peak gradient norm by $8.6\\times$ and, from a base initialization, reaches $21.3\\%$ held-out math accuracy in $2.6\\times$ fewer optimizer updates than OPD; both methods finish near $22\\%$. It improves best-observed performance by $4.8$ and $4.1$ percentage points on ALFWorld with LoRA and agentic code, respectively. Ablations show that segment-averaged triggers outperform token-spike triggers. Behavior cloning is also more effective than the tested OPD surrogate for training teacher-generated recoveries. Across 23 experimental arms, takeover tends to help when the teacher substantially outperforms the OPD-trained student, provided that the teacher can recover from student-visited states, the student can learn those recoveries, and teacher intervention is neither excessive nor insufficient.",
+      "published": "2026-10-13T23:26:26Z",
+      "updated": "2026-10-13T23:26:26Z",
+      "arxiv_id": "2610.19302v1",
+      "abs_url": "http://arxiv.org/abs/2610.19302v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19302v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "DTDD: Divergence-Triggered Dynamic Distillation for Reliable On-Policy Supervision",
+      "summary_zh": "On-policy distillation (OPD) provides dense token-level supervision on student rollouts, but this supervision can become unreliable when the student and teacher diverge, either because of a large initial policy gap or compounding errors in long-horizon reasoning and tool use. We introduce Divergence-Triggered Dynamic Distillation (DTDD), an adaptive OPD framework that uses segment-level student-teacher divergence to trigger teacher takeover during training. When divergence triggers an intervention during reasoning, the student prefix continues to receive standard OPD supervision. The teacher then generates a recovery suffix, which the student learns through behavior cloning, using cross-entropy on the teacher-generated tokens. We evaluate DTDD in three regimes: long-horizon reasoning, distillation from a base initialization without offline supervised fine-tuning (SFT), and multi-turn agents. We also compare alternative trigger designs and teacher-intervention rates. DTDD reduces the post-warmup peak gradient norm by $8.6\\times$ and, from a base initialization, reaches $21.3\\%$ held-out math accuracy in $2.6\\times$ fewer optimizer updates than OPD; both methods finish near $22\\%$. It improves best-observed performance by $4.8$ and $4.1$ percentage points on ALFWorld with LoRA and agentic code, respectively. Ablations show that segment-averaged triggers outperform token-spike triggers. Behavior cloning is also more effective than the tested OPD surrogate for training teacher-generated recoveries. Across 23 experimental arms, takeover tends to help when the teacher substantially outperforms the OPD-trained student, provided that the teacher can recover from student-visited states, the student can learn those recoveries, and teacher intervention is neither excessive nor insufficient."
+    },
+    {
+      "title": "Exploring Interpretability in Deep Learning-Based Forest Classification - Separating Similar Forest Classes using Sentinel-2 Time Series",
+      "authors": [
+        "Maximilian Kirsch",
+        "Christine Preisach"
+      ],
+      "summary": "The ecological insurance theory posits that diverse forests are more resilient and better able to adapt to changing environmental conditions. Increasing drought and heat stress in Central Europe promotes mixed forests for maintaining ecosystem services. However, a diverse species distribution complicates remote sensing-based species mapping, as distinguishing pure from mixed species compositions at the pixel level remains challenging. We evaluated the potential of recurrent neural networks (RNNs) for tree-species classification from Sentinel-2 time series and investigated the spectral-temporal features underlying class discrimination, with particular emphasis on separating pure from mixed Norway spruce pixels. We compared RNN classification models with Random Forest (RF) and Extreme Gradient Boosting (XGBoost) and used Integrated Gradients (IG) to quantify feature attributions across spectral bands and time. The best-performing RNN achieved a Macro-F1 score of 0.851 on the test data, outperforming XGBoost by 0.012 and Random Forest by 0.103. Beyond classification performance, the attribution analysis revealed distinct spectral-temporal patterns associated with the separation of pure and mixed Norway spruce pixels. Attribution values increased particularly after approximately day of year (DOY) 125, while B11 showed the strongest contribution during periods of increasing spectral divergence between the two classes. These findings show that recurrent models can provide competitive classification performance while also revealing the phenological periods and spectral regions that are most relevant for distinguishing closely related forest compositions. Combining time-series classification with explainability therefore provides additional insight into the spectral-temporal mechanisms underlying tree-species discrimination and may support more detailed mapping of mixed forest structures.",
+      "published": "2026-10-13T22:44:10Z",
+      "updated": "2026-10-13T22:44:10Z",
+      "arxiv_id": "2610.19270v1",
+      "abs_url": "http://arxiv.org/abs/2610.19270v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19270v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "高光谱/多光谱"
+      ],
+      "topic": "时间序列与视频",
+      "score": 5,
+      "anchor_terms": [
+        "remote sensing",
+        "Sentinel-2",
+        "temporal",
+        "time series"
+      ],
+      "matched_terms": [
+        "remote sensing",
+        "Sentinel-2",
+        "temporal",
+        "time series",
+        "time-series"
+      ],
+      "title_zh": "Exploring Interpretability in Deep Learning-Based Forest Classification - Separating Similar Forest Classes using Sentinel-2 Time Series",
+      "summary_zh": "The ecological insurance theory posits that diverse forests are more resilient and better able to adapt to changing environmental conditions. Increasing drought and heat stress in Central Europe promotes mixed forests for maintaining ecosystem services. However, a diverse species distribution complicates remote sensing-based species mapping, as distinguishing pure from mixed species compositions at the pixel level remains challenging. We evaluated the potential of recurrent neural networks (RNNs) for tree-species classification from Sentinel-2 time series and investigated the spectral-temporal features underlying class discrimination, with particular emphasis on separating pure from mixed Norway spruce pixels. We compared RNN classification models with Random Forest (RF) and Extreme Gradient Boosting (XGBoost) and used Integrated Gradients (IG) to quantify feature attributions across spectral bands and time. The best-performing RNN achieved a Macro-F1 score of 0.851 on the test data, outperforming XGBoost by 0.012 and Random Forest by 0.103. Beyond classification performance, the attribution analysis revealed distinct spectral-temporal patterns associated with the separation of pure and mixed Norway spruce pixels. Attribution values increased particularly after approximately day of year (DOY) 125, while B11 showed the strongest contribution during periods of increasing spectral divergence between the two classes. These findings show that recurrent models can provide competitive classification performance while also revealing the phenological periods and spectral regions that are most relevant for distinguishing closely related forest compositions. Combining time-series classification with explainability therefore provides additional insight into the spectral-temporal mechanisms underlying tree-species discrimination and may support more detailed mapping of mixed forest structures."
+    },
+    {
+      "title": "Agronomic Characterization and Time-Series UAV Phenotyping to Support Field Pea Breeding in Iowa",
+      "authors": [
+        "Yanben Shen",
+        "Joscif Raigne",
+        "Asheesh Singh",
+        "Arti Singh"
+      ],
+      "summary": "Field pea has gained interest in the Midwest U.S. and has the potential to benefit Iowa cropping systems. This study evaluated 17 accessions and 7 Canadian varieties for agronomic and seed yield performance. This study found that PI accession trials exhibit genetic diversity in phenology and canopy traits, whereas the Canadian elite varieties demonstrated great yield potential under Iowa conditions. The accession genotypes matured between 75 DAP (late June) and 95 DAP (late July) across six site-years. The top-yielding Canadian varieties averaged 1961 kg/ha across two site-years. To comprehensively assess field pea performance, this study extracted time-series Unmanned Aerial Vehicle(UAV)-derived traits, assessed UAV-derived traits, and evaluated their correlations with multiple agronomic traits and yield. The results found that UAV-derived time-series canopy area was the most yield-relevant trait (r = 0.63) among all UAV-derived canopy features, vegetation indices, and manually collected measurements. Compared with yield, UAV-derived canopy area showed higher selection reliability (H2 = 0.87, CV = 13.46%), making it suitable for phenotypic selection and accelerating Midwest field pea breeding programs. This study identifies useful UAV-derived features for pea breeding and demonstrates the value of integrating diverse germplasm, elite commercial varieties, and time-series UAV phenotyping. Combining genetic variation from the accession trial with the yield potential of high-performing commercial varieties provides valuable breeding materials and phenotyping strategies for developing locally adapted, high-yielding field pea varieties for future production in the Midwest.",
+      "published": "2026-10-13T20:21:52Z",
+      "updated": "2026-10-13T20:21:52Z",
+      "arxiv_id": "2610.19154v1",
+      "abs_url": "http://arxiv.org/abs/2610.19154v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19154v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "无人机/UAV",
+        "农业与生态"
+      ],
+      "topic": "时间序列与视频",
+      "score": 9,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "phenology",
+        "time-series",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "Agronomic Characterization and Time-Series UAV Phenotyping to Support Field Pea Breeding in Iowa",
+      "summary_zh": "Field pea has gained interest in the Midwest U.S. and has the potential to benefit Iowa cropping systems. This study evaluated 17 accessions and 7 Canadian varieties for agronomic and seed yield performance. This study found that PI accession trials exhibit genetic diversity in phenology and canopy traits, whereas the Canadian elite varieties demonstrated great yield potential under Iowa conditions. The accession genotypes matured between 75 DAP (late June) and 95 DAP (late July) across six site-years. The top-yielding Canadian varieties averaged 1961 kg/ha across two site-years. To comprehensively assess field pea performance, this study extracted time-series Unmanned Aerial Vehicle(UAV)-derived traits, assessed UAV-derived traits, and evaluated their correlations with multiple agronomic traits and yield. The results found that UAV-derived time-series canopy area was the most yield-relevant trait (r = 0.63) among all UAV-derived canopy features, vegetation indices, and manually collected measurements. Compared with yield, UAV-derived canopy area showed higher selection reliability (H2 = 0.87, CV = 13.46%), making it suitable for phenotypic selection and accelerating Midwest field pea breeding programs. This study identifies useful UAV-derived features for pea breeding and demonstrates the value of integrating diverse germplasm, elite commercial varieties, and time-series UAV phenotyping. Combining genetic variation from the accession trial with the yield potential of high-performing commercial varieties provides valuable breeding materials and phenotyping strategies for developing locally adapted, high-yielding field pea varieties for future production in the Midwest."
+    },
+    {
+      "title": "The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding",
+      "authors": [
+        "Georgios Angelidis",
+        "Aggelos Psiris",
+        "Maria Vakalopoulou",
+        "Georgios Th. Papadopoulos",
+        "Giorgos Sfikas",
+        "Iraklis Varlamis"
+      ],
+      "summary": "Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measures the wrong aspect, and supports the claim with a convergent meta-analysis of a broad set of published results, organized in four evidence tiers, in which a claim becomes a position only when collected evidence agrees. Parameter scale exhibits a median of +3.4 accuracy points per tenfold increase on aerial benchmarks, far below a human gap of at least 19 points, whereas acquisition conditions control perception, as 315 of 318 evaluations in 19 within-paper contrasts lose accuracy when conditions such as altitude, view, object size or time horizon become harder. No aerial benchmark in the corpus combines video input with per-task human and random baselines, competence collapses from answering to acting in closed-loop navigation, and the same MLLMs score higher on the aerial benchmark than on ground spatial ones, but lower on studies that test cross-view geometry. From these findings the current study derives five falsifiable principles and proposes the AVU-Card, a reporting card for aerial video benchmarks",
+      "published": "2026-10-13T19:39:34Z",
+      "updated": "2026-10-13T19:39:34Z",
+      "arxiv_id": "2610.19102v1",
+      "abs_url": "http://arxiv.org/abs/2610.19102v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19102v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "12 pages, 3 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 10,
+      "anchor_terms": [
+        "MLLM",
+        "multimodal large language model",
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "aerial",
+        "large language model",
+        "MLLM",
+        "multimodal large language model",
+        "remote sensing"
+      ],
+      "title_zh": "The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding",
+      "summary_zh": "Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measures the wrong aspect, and supports the claim with a convergent meta-analysis of a broad set of published results, organized in four evidence tiers, in which a claim becomes a position only when collected evidence agrees. Parameter scale exhibits a median of +3.4 accuracy points per tenfold increase on aerial benchmarks, far below a human gap of at least 19 points, whereas acquisition conditions control perception, as 315 of 318 evaluations in 19 within-paper contrasts lose accuracy when conditions such as altitude, view, object size or time horizon become harder. No aerial benchmark in the corpus combines video input with per-task human and random baselines, competence collapses from answering to acting in closed-loop navigation, and the same MLLMs score higher on the aerial benchmark than on ground spatial ones, but lower on studies that test cross-view geometry. From these findings the current study derives five falsifiable principles and proposes the AVU-Card, a reporting card for aerial video benchmarks"
+    },
+    {
+      "title": "RingNav: Task-Shaped Circular Memory for Visual Heading",
+      "authors": [
+        "Naitri Rajyaguru",
+        "Aryan Tajne",
+        "Stephen Jardim",
+        "Cornelia Fermuller",
+        "Yiannis Aloimonos"
+      ],
+      "summary": "Tiny robots have limited computation and memory, yet visual navigation systems often maintain more state than a task requires. We ask whether persistent memory can instead be shaped by the task. We present \\textbf{RingNav}, a \\(10.6\\)k--parameter visual heading estimator that constrains its memory to the circular manifold \\(S^1\\). RingNav learns only the turn between consecutive images, while heading is composed directly on the circle. On the TartanAir Visual SLAM Challenge, RingNav reduces mean absolute turn error by \\(27\\%\\) and accumulated heading error over $4$ sec by \\(15\\%\\) relative to a similarly sized learned-memory model. The structured update also gives exactly zero turn for identical frames and exact cancellation under sequence reversal. Without fine-tuning, RingNav transfers to real-world drone experiments and continues estimating heading under severe visual degradation. RingNav runs at $27.3$Hz on Raspberry Pi Zero 2W and can be deployed on an ultra-low power GAP8 processor at $33.4$Hz.",
+      "published": "2026-10-13T18:33:46Z",
+      "updated": "2026-10-13T18:33:46Z",
+      "arxiv_id": "2610.19044v1",
+      "abs_url": "http://arxiv.org/abs/2610.19044v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19044v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "comment": "9 pages, 5 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "无人机/UAV"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 3,
+      "anchor_terms": [
+        "drone"
+      ],
+      "matched_terms": [
+        "drone",
+        "fine-tuning"
+      ],
+      "title_zh": "RingNav: Task-Shaped Circular Memory for Visual Heading",
+      "summary_zh": "Tiny robots have limited computation and memory, yet visual navigation systems often maintain more state than a task requires. We ask whether persistent memory can instead be shaped by the task. We present \\textbf{RingNav}, a \\(10.6\\)k--parameter visual heading estimator that constrains its memory to the circular manifold \\(S^1\\). RingNav learns only the turn between consecutive images, while heading is composed directly on the circle. On the TartanAir Visual SLAM Challenge, RingNav reduces mean absolute turn error by \\(27\\%\\) and accumulated heading error over $4$ sec by \\(15\\%\\) relative to a similarly sized learned-memory model. The structured update also gives exactly zero turn for identical frames and exact cancellation under sequence reversal. Without fine-tuning, RingNav transfers to real-world drone experiments and continues estimating heading under severe visual degradation. RingNav runs at $27.3$Hz on Raspberry Pi Zero 2W and can be deployed on an ultra-low power GAP8 processor at $33.4$Hz."
+    },
+    {
+      "title": "Data Density Scaling Laws for Image Self-Distillation",
+      "authors": [
+        "Alvard Barseghyan",
+        "Ani Vanyan",
+        "Hakob Tamazyan",
+        "Hrant Khachatrian"
+      ],
+      "summary": "Current scaling law formulations suggest that increasing the number of unique samples in a dataset improves model performance, while repeated exposure to the same samples provides diminishing value. In this work, we examine this assumption for image self-distillation models. Through systematic experiments across diverse datasets, namely Maxar, SATLAS, Waymo, nuPlan, Ego4D, ImageNet, and YFCC15M, we demonstrate that the effects of sample repetition on downstream performance are non-trivial and dataset-dependent. We identify settings where repeatedly training on a smaller random subset can outperform training on a larger set of unique samples. This finding highlights a limitation of existing scaling laws. To address this gap, we propose a modified version of a Chinchilla-style scaling law that explicitly accounts for two factors: the number of unique samples and repetition per sample. This formulation provides a framework for understanding data-compute trade-offs and improves prediction in some regimes where repetition plays a central role, although its benefits are not consistent across datasets. Finally, we examine how subset selection and augmentation affect downstream performance.",
+      "published": "2026-10-13T18:08:51Z",
+      "updated": "2026-10-13T18:08:51Z",
+      "arxiv_id": "2610.19013v1",
+      "abs_url": "http://arxiv.org/abs/2610.19013v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19013v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "25 pages, 11 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "数据集/评测"
+      ],
+      "topic": "数据集/评测",
+      "score": 4,
+      "anchor_terms": [
+        "SatLas"
+      ],
+      "matched_terms": [
+        "SatLas"
+      ],
+      "title_zh": "Data Density Scaling Laws for Image Self-Distillation",
+      "summary_zh": "Current scaling law formulations suggest that increasing the number of unique samples in a dataset improves model performance, while repeated exposure to the same samples provides diminishing value. In this work, we examine this assumption for image self-distillation models. Through systematic experiments across diverse datasets, namely Maxar, SATLAS, Waymo, nuPlan, Ego4D, ImageNet, and YFCC15M, we demonstrate that the effects of sample repetition on downstream performance are non-trivial and dataset-dependent. We identify settings where repeatedly training on a smaller random subset can outperform training on a larger set of unique samples. This finding highlights a limitation of existing scaling laws. To address this gap, we propose a modified version of a Chinchilla-style scaling law that explicitly accounts for two factors: the number of unique samples and repetition per sample. This formulation provides a framework for understanding data-compute trade-offs and improves prediction in some regimes where repetition plays a central role, although its benefits are not consistent across datasets. Finally, we examine how subset selection and augmentation affect downstream performance."
+    },
+    {
+      "title": "The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement",
+      "authors": [
+        "Sijie Zhao",
+        "Zeqi Zhou",
+        "Heli Qi",
+        "Xuanchao Fu",
+        "Zhuo Zheng",
+        "Junshi Xia",
+        "Junjue Wang",
+        "Weihao Xuan",
+        "Naoto Yokoya"
+      ],
+      "summary": "Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do.",
+      "published": "2026-10-13T17:57:51Z",
+      "updated": "2026-10-13T17:57:51Z",
+      "arxiv_id": "2610.18845v1",
+      "abs_url": "http://arxiv.org/abs/2610.18845v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18845v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "comment": "Ongoing project",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "SAR遥感",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 10,
+      "anchor_terms": [
+        "earth observation",
+        "remote sensing",
+        "SAR"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "multispectral",
+        "remote sensing",
+        "SAR",
+        "time-series"
+      ],
+      "title_zh": "The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement",
+      "summary_zh": "Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do."
+    },
+    {
+      "title": "Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response",
+      "authors": [
+        "Georgios Angelidis",
+        "Aggelos Psiris",
+        "Spyridon Evangelatos",
+        "Thomas Lagkas",
+        "Panagiotis Sarigiannidis",
+        "Iraklis Varlamis",
+        "Georgios Th. Papadopoulos"
+      ],
+      "summary": "Agentic remote sensing is evaluated on how many questions it can answer, whereas crisis response depends on whether its answers can be relied on and how much of the decision can safely be handed to the agent. This paper argues that \\emph{autonomy should be earned, not assumed}: An Earth-Observation (EO) agent should be granted autonomy in proportion to demonstrated reliability, epistemic honesty and verifiability. The position is supported by an evidential meta-analysis of twelve agentic RS/EO/GIS benchmark studies from peer-reviewed venues. Only one repeats runs, three contain unanswerable tasks and none measures calibration. Their own tables show that completed workflows are often not correct (task success exceeds tool-call correctness by up to 54pp on identical queries), that the gap to an expert trajectory widens overall with trajectory length (from 7 to 56pp), and that capability does not predict abstention (Spearman r from -0.25 to 0.50, all n.s.). The paper then contributes three EO-specific trust properties, an autonomy ladder for crisis EO tasks, and a readiness protocol that replays archived emergency activations before any live use. In this context, current evidence justifies assistive roles only.",
+      "published": "2026-10-13T17:39:23Z",
+      "updated": "2026-10-13T17:39:23Z",
+      "arxiv_id": "2610.18789v1",
+      "abs_url": "http://arxiv.org/abs/2610.18789v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18789v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CY"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "数据集/评测"
+      ],
+      "topic": "数据集/评测",
+      "score": 5,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "GIS",
+        "remote sensing"
+      ],
+      "title_zh": "Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response",
+      "summary_zh": "Agentic remote sensing is evaluated on how many questions it can answer, whereas crisis response depends on whether its answers can be relied on and how much of the decision can safely be handed to the agent. This paper argues that \\emph{autonomy should be earned, not assumed}: An Earth-Observation (EO) agent should be granted autonomy in proportion to demonstrated reliability, epistemic honesty and verifiability. The position is supported by an evidential meta-analysis of twelve agentic RS/EO/GIS benchmark studies from peer-reviewed venues. Only one repeats runs, three contain unanswerable tasks and none measures calibration. Their own tables show that completed workflows are often not correct (task success exceeds tool-call correctness by up to 54pp on identical queries), that the gap to an expert trajectory widens overall with trajectory length (from 7 to 56pp), and that capability does not predict abstention (Spearman r from -0.25 to 0.50, all n.s.). The paper then contributes three EO-specific trust properties, an autonomy ladder for crisis EO tasks, and a readiness protocol that replays archived emergency activations before any live use. In this context, current evidence justifies assistive roles only."
+    },
+    {
+      "title": "MajorTOM:Elliot Pretrain, A Multi-Sensor, Multi-Temporal Pretraining Dataset for Earth Observation",
+      "authors": [
+        "Carmen Oliver Huidobro",
+        "Mikolaj Czerkawski",
+        "Kevin Monsalvez-Pozo",
+        "Cesar Aybar",
+        "Gustau Camps-Valls",
+        "Oscar J. Pellicer-Valero"
+      ],
+      "summary": "Pretraining generalist Earth observation foundation models requires data that combine several sensors, varied temporal sampling and, increasingly, text, yet open datasets rarely provide all three in one consistent, easily accessible form. We introduce MajorTOM:Elliot Pretrain, a collection of 279,166 tiles of 10 km drawn from the Major-TOM grid by clustering AlphaEarth embeddings. Each tile stacks Sentinel-2 L1C, Landsat-8/9, Sentinel-1 RTC, Copernicus DEM and ESA WorldCover on a shared 1056x1056-pixel, 10 m grid, complemented by cloud masks, OpenStreetMap entities and ERA5 weather. The tiles are partitioned into three temporal regimes, Monotemporal (250,000 tiles, one acquisition), Monthly (12,500 tiles, twelve acquisitions spread over the annual cycle) and Burst (16,666 tiles, six acquisitions within 30 days), and are released as 6.3 TB of Cloud Optimized GeoTIFFs indexed by TACO v3 Parquet metadata, a standard that allows cloud streaming, efficient data access, and filtering before any pixel is read. A companion library derives sensor-tagged fact sheets, captions and 16 families of vision-language tasks from these layers at load time. We test our design choices in short pretraining runs of OlmoEarth-Base. First, a 25% subset of Major-TOM Core-S2L2A curated with AlphaEarth embeddings matches or exceeds the full corpus on 8 of 9 benchmarks. Second, on Elliot-Pretrain, adding Landsat-8/9 improves or matches Sentinel-2 only pretraining on every benchmark. Third, using DEM and WorldCover as prediction targets during pretraining further improves 8 of 9 benchmarks, while giving the same maps to the encoder as inputs degrades 5 of 9. Fourth, Sentinel-1 helps on 7 of 9 benchmarks, particularly on benchmarks with radar inputs. Fifth, rule-based captions match a small language model at no cost. The dataset is openly available at https://source.coop/major-tom/elliot-pretrain.",
+      "published": "2026-10-13T16:03:15Z",
+      "updated": "2026-10-13T16:03:15Z",
+      "arxiv_id": "2610.18624v1",
+      "abs_url": "http://arxiv.org/abs/2610.18624v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18624v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "时间序列与视频",
+        "基础模型",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "SAR遥感",
+        "高光谱/多光谱",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 14,
+      "anchor_terms": [
+        "earth observation",
+        "earth observation foundation model",
+        "foundation model",
+        "Landsat",
+        "Sentinel-1",
+        "Sentinel-2",
+        "temporal"
+      ],
+      "matched_terms": [
+        "DEM",
+        "earth observation",
+        "earth observation foundation model",
+        "foundation model",
+        "Landsat",
+        "multi-temporal",
+        "Sentinel-1",
+        "Sentinel-2",
+        "temporal"
+      ],
+      "title_zh": "MajorTOM:Elliot Pretrain, A Multi-Sensor, Multi-Temporal Pretraining Dataset for Earth Observation",
+      "summary_zh": "Pretraining generalist Earth observation foundation models requires data that combine several sensors, varied temporal sampling and, increasingly, text, yet open datasets rarely provide all three in one consistent, easily accessible form. We introduce MajorTOM:Elliot Pretrain, a collection of 279,166 tiles of 10 km drawn from the Major-TOM grid by clustering AlphaEarth embeddings. Each tile stacks Sentinel-2 L1C, Landsat-8/9, Sentinel-1 RTC, Copernicus DEM and ESA WorldCover on a shared 1056x1056-pixel, 10 m grid, complemented by cloud masks, OpenStreetMap entities and ERA5 weather. The tiles are partitioned into three temporal regimes, Monotemporal (250,000 tiles, one acquisition), Monthly (12,500 tiles, twelve acquisitions spread over the annual cycle) and Burst (16,666 tiles, six acquisitions within 30 days), and are released as 6.3 TB of Cloud Optimized GeoTIFFs indexed by TACO v3 Parquet metadata, a standard that allows cloud streaming, efficient data access, and filtering before any pixel is read. A companion library derives sensor-tagged fact sheets, captions and 16 families of vision-language tasks from these layers at load time. We test our design choices in short pretraining runs of OlmoEarth-Base. First, a 25% subset of Major-TOM Core-S2L2A curated with AlphaEarth embeddings matches or exceeds the full corpus on 8 of 9 benchmarks. Second, on Elliot-Pretrain, adding Landsat-8/9 improves or matches Sentinel-2 only pretraining on every benchmark. Third, using DEM and WorldCover as prediction targets during pretraining further improves 8 of 9 benchmarks, while giving the same maps to the encoder as inputs degrades 5 of 9. Fourth, Sentinel-1 helps on 7 of 9 benchmarks, particularly on benchmarks with radar inputs. Fifth, rule-based captions match a small language model at no cost. The dataset is openly available at https://source.coop/major-tom/elliot-pretrain."
+    }
+  ]
+}
