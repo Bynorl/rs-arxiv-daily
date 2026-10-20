@@ -1,0 +1,1518 @@
+{
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T06:53:38.393192+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 36,
+  "papers": [
+    {
+      "title": "Scaling Parameter-Efficient Fine-Tuning for Brain Encoding",
+      "authors": [
+        "Zhuofan Josh Ying",
+        "Guanglong Sun",
+        "Nolan Ho",
+        "Kieran Liu",
+        "Rui Yang",
+        "Andrew Chen",
+        "Nikolaus Kriegeskorte",
+        "Pony Ma",
+        "Hossein Adeli"
+      ],
+      "summary": "Brain encoding models aim to predict neural responses to stimuli. The most widely used approach fits readouts from frozen pretrained backbones. Using neural data to train large models from scratch or fully fine-tune them after task-pretraining has proven difficult because neural data is costly and limited. We show that parameter-efficient fine-tuning (PEFT) enables us to effectively adapt very large pretrained backbones for brain encoding with a small number of trainable parameters. To make it computationally practical, we exploit the backbone's causal structure to predict multiple timepoints in a single pass instead of using sliding windows, significantly reducing feature-extraction cost. This enables efficient fine-tuning of multimodal backbones with up to 104B parameters, the largest model adapted for brain encoding to our knowledge. Trained with a low-rank adapter (LoRA) and a lightweight readout, our approach consistently improves brain encoding performance across nine diverse multimodal backbones. On the same Qwen3-Omni backbone as the prior state-of-the-art (SoTA), our method BrainLoRA achieves the best published performance on the Algonauts 2025 Challenge. We also show the adapted multimodal backbones remain interpretable: modality attribution recovers the canonical sensory topography that prior work often obtains by construction from separate unimodal encoders, and neural adaptation increases the contribution of audio inputs and cross-modal mixing within the backbone. To scale out the number of adapted models, we develop a multi-LoRA kernel that accelerates joint training of multiple LoRAs on a shared backbone. This enables an ensemble of 200+ adapted models that ranks first on the public Algonauts post-challenge leaderboard at the time of writing. Together, our results highlight PEFT as an efficient and powerful paradigm for brain encoding.",
+      "published": "2026-10-19T17:46:08Z",
+      "updated": "2026-10-19T17:46:08Z",
+      "arxiv_id": "2610.26802v1",
+      "abs_url": "http://arxiv.org/abs/2610.26802v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26802v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "38 pages, 13 figures, 20 tables. Code available at https://github.com/zfying/brain-lora",
+      "code_url": "https://github.com/zfying/brain-lora",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "高效微调与轻量化",
+        "多模态融合"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "large model",
+        "LoRA",
+        "PEFT"
+      ],
+      "title_zh": "Scaling Parameter-Efficient Fine-Tuning for Brain Encoding",
+      "summary_zh": "Brain encoding models aim to predict neural responses to stimuli. The most widely used approach fits readouts from frozen pretrained backbones. Using neural data to train large models from scratch or fully fine-tune them after task-pretraining has proven difficult because neural data is costly and limited. We show that parameter-efficient fine-tuning (PEFT) enables us to effectively adapt very large pretrained backbones for brain encoding with a small number of trainable parameters. To make it computationally practical, we exploit the backbone's causal structure to predict multiple timepoints in a single pass instead of using sliding windows, significantly reducing feature-extraction cost. This enables efficient fine-tuning of multimodal backbones with up to 104B parameters, the largest model adapted for brain encoding to our knowledge. Trained with a low-rank adapter (LoRA) and a lightweight readout, our approach consistently improves brain encoding performance across nine diverse multimodal backbones. On the same Qwen3-Omni backbone as the prior state-of-the-art (SoTA), our method BrainLoRA achieves the best published performance on the Algonauts 2025 Challenge. We also show the adapted multimodal backbones remain interpretable: modality attribution recovers the canonical sensory topography that prior work often obtains by construction from separate unimodal encoders, and neural adaptation increases the contribution of audio inputs and cross-modal mixing within the backbone. To scale out the number of adapted models, we develop a multi-LoRA kernel that accelerates joint training of multiple LoRAs on a shared backbone. This enables an ensemble of 200+ adapted models that ranks first on the public Algonauts post-challenge leaderboard at the time of writing. Together, our results highlight PEFT as an efficient and powerful paradigm for brain encoding."
+    },
+    {
+      "title": "CARNet: End-to-End Coupled Association-Recognition Network for Fine-Grained Multi-Drone Collaborative Detection",
+      "authors": [
+        "Zhao Zhang",
+        "Ruigang Fu",
+        "Yu Zhang",
+        "Jiajun Xiang",
+        "Zixuan Xiao",
+        "Ping Zhong"
+      ],
+      "summary": "Multi-drone collaborative detection aims to enhance target recognition by leveraging complementary observations from overlapping aerial viewpoints. Existing approaches typically follow a two-stage pipeline that first establishes cross-view correspondences and then performs fusion-based recognition. However, this decomposition suffers from inconsistent optimization objectives, redundant pairwise modeling, and irreversible error propagation, where incorrect associations inevitably undermine subsequent recognition performance. To overcome these limitations, we propose the Coupled Association-Recognition Network (CARNet), a unified framework that jointly optimizes cross-view target association and recognition fusion through a shared target-pair representation. To improve association reliability in densely populated scenes with visually similar targets, CARNet explicitly incorporates spatial cues into pairwise relation modeling. Moreover, we introduce two complementary causal-inspired intervention strategies: the first enhances cross-view association by emphasizing appearance-confusing pairs, while the second bolsters the robustness of fusion-based recognition by learning stable multi-view representations under incomplete visual evidence. In addition, we present MDMT-CD, a fine-grained extension of the MDMT dataset that enriches the original vehicle annotations with detailed category labels, providing the first benchmark specifically designed for multi-drone collaborative vehicle detection. Extensive experiments demonstrate that CARNet consistently outperforms existing state-of-the-art methods. The MDMT-CD dataset and source code will be available at https://github.com/bigdreaming11/CARNet.",
+      "published": "2026-10-19T12:56:48Z",
+      "updated": "2026-10-19T12:56:48Z",
+      "arxiv_id": "2610.26312v1",
+      "abs_url": "http://arxiv.org/abs/2610.26312v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26312v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/bigdreaming11/CARNet",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "目标检测",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "目标检测",
+      "score": 7,
+      "anchor_terms": [
+        "drone"
+      ],
+      "matched_terms": [
+        "aerial",
+        "drone",
+        "robust",
+        "vehicle detection"
+      ],
+      "title_zh": "CARNet: End-to-End Coupled Association-Recognition Network for Fine-Grained Multi-Drone Collaborative Detection",
+      "summary_zh": "Multi-drone collaborative detection aims to enhance target recognition by leveraging complementary observations from overlapping aerial viewpoints. Existing approaches typically follow a two-stage pipeline that first establishes cross-view correspondences and then performs fusion-based recognition. However, this decomposition suffers from inconsistent optimization objectives, redundant pairwise modeling, and irreversible error propagation, where incorrect associations inevitably undermine subsequent recognition performance. To overcome these limitations, we propose the Coupled Association-Recognition Network (CARNet), a unified framework that jointly optimizes cross-view target association and recognition fusion through a shared target-pair representation. To improve association reliability in densely populated scenes with visually similar targets, CARNet explicitly incorporates spatial cues into pairwise relation modeling. Moreover, we introduce two complementary causal-inspired intervention strategies: the first enhances cross-view association by emphasizing appearance-confusing pairs, while the second bolsters the robustness of fusion-based recognition by learning stable multi-view representations under incomplete visual evidence. In addition, we present MDMT-CD, a fine-grained extension of the MDMT dataset that enriches the original vehicle annotations with detailed category labels, providing the first benchmark specifically designed for multi-drone collaborative vehicle detection. Extensive experiments demonstrate that CARNet consistently outperforms existing state-of-the-art methods. The MDMT-CD dataset and source code will be available at https://github.com/bigdreaming11/CARNet."
+    },
+    {
+      "title": "Adversarial Post-Training of Foundation Models for High-Frequency Trading",
+      "authors": [
+        "Alexandre Bismuth",
+        "Kang Li",
+        "Aramis Marti-Shahandeh",
+        "Valentin Mohl",
+        "Jakob Foerster",
+        "Anisoara Calinescu"
+      ],
+      "summary": "While autoregressive foundation models trained on limit order book (LOB) data show state-of-the-art performance for market simulation, pre-training with cross-entropy neither penalizes the compounding of sampling errors over free-running rollouts nor targets desired market properties. We introduce a post-training method for LOB foundation models using a Wasserstein generative adversarial network (GAN) objective. A critic, trained online on rollouts through the true, non-differentiable matching engine, guides updates from evolution strategies over rank-4 LoRA perturbations of the pre-trained generator, under a KL trust region. For efficiency, we use EGGROLL (Evolution Guided GeneRal Optimisation via Low-rank Learning), a memory-efficient variant of evolution strategies. On a held-out panel, adversarial post-training improves LOB-Bench realism by 17.6% (WS-21) and 17.0% (Mean-$L_1$), while selection-matched random-perturbation and compute-matched continued-pre-training controls yield no improvement. Post-training is thus a necessary stage that more pre-training does not replace. Per-position divergence measurements show that it slows error accumulation over 500-message rollouts from $3.1\\times$ to $2.3\\times$. Adversarial post-training is also inexpensive, requiring under 50M training tokens and 12 GPU-hours per seed, three orders of magnitude below the 48B-token pre-training budget. Ablations over critic inputs, optimizers, and the population-rollout trade-off, together with an analysis of reward hacking, yield practical design guidelines for adversarial post-training.",
+      "published": "2026-10-19T00:15:10Z",
+      "updated": "2026-10-19T00:15:10Z",
+      "arxiv_id": "2610.25604v1",
+      "abs_url": "http://arxiv.org/abs/2610.25604v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25604v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Accepted at the 7th ACM International Conference on AI in Finance (ICAIF '26), Milan, Italy. 9 pages, 5 figures, 4 tables. Code: https://github.com/alexandre-bismuth/WGAN-Post-Training",
+      "code_url": "https://github.com/alexandre-bismuth/WGAN-Post-Training",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "图像生成与重建",
+        "基础模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "图像生成与重建",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "GAN",
+        "generative adversarial network",
+        "LoRA",
+        "pre-training"
+      ],
+      "title_zh": "Adversarial Post-Training of Foundation Models for High-Frequency Trading",
+      "summary_zh": "While autoregressive foundation models trained on limit order book (LOB) data show state-of-the-art performance for market simulation, pre-training with cross-entropy neither penalizes the compounding of sampling errors over free-running rollouts nor targets desired market properties. We introduce a post-training method for LOB foundation models using a Wasserstein generative adversarial network (GAN) objective. A critic, trained online on rollouts through the true, non-differentiable matching engine, guides updates from evolution strategies over rank-4 LoRA perturbations of the pre-trained generator, under a KL trust region. For efficiency, we use EGGROLL (Evolution Guided GeneRal Optimisation via Low-rank Learning), a memory-efficient variant of evolution strategies. On a held-out panel, adversarial post-training improves LOB-Bench realism by 17.6% (WS-21) and 17.0% (Mean-$L_1$), while selection-matched random-perturbation and compute-matched continued-pre-training controls yield no improvement. Post-training is thus a necessary stage that more pre-training does not replace. Per-position divergence measurements show that it slows error accumulation over 500-message rollouts from $3.1\\times$ to $2.3\\times$. Adversarial post-training is also inexpensive, requiring under 50M training tokens and 12 GPU-hours per seed, three orders of magnitude below the 48B-token pre-training budget. Ablations over critic inputs, optimizers, and the population-rollout trade-off, together with an analysis of reward hacking, yield practical design guidelines for adversarial post-training."
+    },
+    {
+      "title": "Structured Relevance Determination and Channel Additive Gaussian Processes for Image Data",
+      "authors": [
+        "Harald Roßels",
+        "Ludovico Scarton"
+      ],
+      "summary": "We introduce radial basis function (RBF) kernels for Gaussian processes that use structured hyperparameter sharing for image-valued inputs. For high-dimensional inputs such as images, a fully anisotropic RBF kernel assigns a separate lengthscale to each input dimension, which can introduce many hyperparameters and may lead to overfitting and poorly calibrated predictive uncertainty when data are limited. We propose structured relevance determination by tying lengthscales across groups of adjacent pixels and within each colour channel. This yields patch-wise and channel-wise constrained anisotropic RBF parametrisations that reduce the number of independently learned lengthscales. We further introduce channel-additive Gaussian processes for multi-channel images and combine them with structured relevance determination, resulting in a parameter-efficient decomposition of the latent function into components defined on channel subsets, enabling some non-local generalisation. The proposed kernels are evaluated on MNIST and a compact binary aircraft-detection dataset of low-resolution RGB satellite image chips. We also show how channel-wise structured relevance determination can be incorporated into convolutional Gaussian processes. We observe improved predictive performance compared to isotropic and fully anisotropic RBF baselines.",
+      "published": "2026-10-18T16:36:55Z",
+      "updated": "2026-10-18T16:36:55Z",
+      "arxiv_id": "2610.25385v1",
+      "abs_url": "http://arxiv.org/abs/2610.25385v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25385v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Code: https://github.com/hrosse/structrd-caddgp",
+      "code_url": "https://github.com/hrosse/structrd-caddgp",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "satellite image"
+      ],
+      "matched_terms": [
+        "satellite",
+        "satellite image"
+      ],
+      "title_zh": "Structured Relevance Determination and Channel Additive Gaussian Processes for Image Data",
+      "summary_zh": "We introduce radial basis function (RBF) kernels for Gaussian processes that use structured hyperparameter sharing for image-valued inputs. For high-dimensional inputs such as images, a fully anisotropic RBF kernel assigns a separate lengthscale to each input dimension, which can introduce many hyperparameters and may lead to overfitting and poorly calibrated predictive uncertainty when data are limited. We propose structured relevance determination by tying lengthscales across groups of adjacent pixels and within each colour channel. This yields patch-wise and channel-wise constrained anisotropic RBF parametrisations that reduce the number of independently learned lengthscales. We further introduce channel-additive Gaussian processes for multi-channel images and combine them with structured relevance determination, resulting in a parameter-efficient decomposition of the latent function into components defined on channel subsets, enabling some non-local generalisation. The proposed kernels are evaluated on MNIST and a compact binary aircraft-detection dataset of low-resolution RGB satellite image chips. We also show how channel-wise structured relevance determination can be incorporated into convolutional Gaussian processes. We observe improved predictive performance compared to isotropic and fully anisotropic RBF baselines."
+    },
+    {
+      "title": "HCFM: Helmholtz Component Flow Matching for Time Series Anomaly Detection",
+      "authors": [
+        "Shyam Sundar Saravanan",
+        "Tie Luo",
+        "Sanjay Madria"
+      ],
+      "summary": "Flow Matching (FM) is an efficient simulation-free approach for training flow-based generative models, making it a promising foundation for scalable time-series anomaly detection (TSAD). However, standard FM learns a monolithic vector field in which nominal transport and local density-changing behavior are entangled. This creates a central challenge for TSAD; local expansion and contraction carry crucial anomaly-sensitive information, yet isolating this signal requires expensive Jacobian-trace estimation over the entire field. We propose \\emph{Helmholtz Component Flow Matching} (HCFM), an unsupervised TSAD framework that parameterizes the vector field prediction network with separate transport, compression, and residual heads. The transport head is constrained to be divergence-free, so divergence estimation is restricted to the compression head, while a lightweight residual head absorbs the remaining mismatch. This structured parameterization improves scalability and detection performance by separating volume-preserving nominal transport from density-changing compression, yielding cleaner anomaly signals from distinct deviations of nominal behavior. Experiments on large-scale univariate and multivariate TSAD benchmarks show that HCFM consistently improves detection accuracy while maintaining efficient inference compared with 16 baselines. The code is available at https://github.com/TrustAIoT/HCFM__time-series-anomaly/",
+      "published": "2026-10-18T06:58:40Z",
+      "updated": "2026-10-18T06:58:40Z",
+      "arxiv_id": "2610.25059v1",
+      "abs_url": "http://arxiv.org/abs/2610.25059v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25059v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DB"
+      ],
+      "comment": "To appear as a conference paper in ICDE 2027",
+      "code_url": "https://github.com/TrustAIoT/HCFM__time-series-anomaly/",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "时间序列与视频",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 4,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "time-series",
+        "unsupervised"
+      ],
+      "title_zh": "HCFM: Helmholtz Component Flow Matching for Time Series Anomaly Detection",
+      "summary_zh": "Flow Matching (FM) is an efficient simulation-free approach for training flow-based generative models, making it a promising foundation for scalable time-series anomaly detection (TSAD). However, standard FM learns a monolithic vector field in which nominal transport and local density-changing behavior are entangled. This creates a central challenge for TSAD; local expansion and contraction carry crucial anomaly-sensitive information, yet isolating this signal requires expensive Jacobian-trace estimation over the entire field. We propose \\emph{Helmholtz Component Flow Matching} (HCFM), an unsupervised TSAD framework that parameterizes the vector field prediction network with separate transport, compression, and residual heads. The transport head is constrained to be divergence-free, so divergence estimation is restricted to the compression head, while a lightweight residual head absorbs the remaining mismatch. This structured parameterization improves scalability and detection performance by separating volume-preserving nominal transport from density-changing compression, yielding cleaner anomaly signals from distinct deviations of nominal behavior. Experiments on large-scale univariate and multivariate TSAD benchmarks show that HCFM consistently improves detection accuracy while maintaining efficient inference compared with 16 baselines. The code is available at https://github.com/TrustAIoT/HCFM__time-series-anomaly/"
+    },
+    {
+      "title": "Text-to-Image Generative Modeling Without Language Pretraining",
+      "authors": [
+        "Keshigeyan Chandrasegaran",
+        "Yue Zhao",
+        "Armin W. Thomas",
+        "Ehsan Adeli",
+        "Jiajun Wu",
+        "Juan Carlos Niebles",
+        "Li Fei-Fei",
+        "Michael Poli"
+      ],
+      "summary": "Modern text-to-image (T2I) systems use internet-scale language pretraining for text-conditioned image generation. We ask whether language pretraining is necessary for strong T2I generation. We introduce Halcyon, a family of early-fusion multimodal autoregressive models pretrained entirely from scratch on GPIC, a dataset of 100M image-text pairs. Halcyon-0.52B outperforms LlamaGen-XL/8 (48.0 vs. 63.3 gFD) with 18.2$\\times$ less pretraining compute. Further, Halcyon-1.6B outperforms JiT-T2I-XXL/8++ (35.3 vs. 41.0 gFD) with 275$\\times$ less pretraining compute. Controlled experiments show that text-only pretraining does not improve T2I generation. Halcyon also learns image captioning by replacing caption dropout with I2T supervision, maintaining competitive T2I generation quality under the same pretraining budget. We show that strong T2I systems can be trained from scratch without internet-scale language pretraining. Code and models are available at https://cs.stanford.edu/~keshik/halcyon",
+      "published": "2026-10-19T17:59:59Z",
+      "updated": "2026-10-19T17:59:59Z",
+      "arxiv_id": "2610.26863v1",
+      "abs_url": "http://arxiv.org/abs/2610.26863v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26863v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "comment": "27 pages; Project website: https://cs.stanford.edu/~keshik/halcyon",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "图像描述与视觉推理",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image captioning",
+        "image generation"
+      ],
+      "title_zh": "Text-to-Image Generative Modeling Without Language Pretraining",
+      "summary_zh": "Modern text-to-image (T2I) systems use internet-scale language pretraining for text-conditioned image generation. We ask whether language pretraining is necessary for strong T2I generation. We introduce Halcyon, a family of early-fusion multimodal autoregressive models pretrained entirely from scratch on GPIC, a dataset of 100M image-text pairs. Halcyon-0.52B outperforms LlamaGen-XL/8 (48.0 vs. 63.3 gFD) with 18.2$\\times$ less pretraining compute. Further, Halcyon-1.6B outperforms JiT-T2I-XXL/8++ (35.3 vs. 41.0 gFD) with 275$\\times$ less pretraining compute. Controlled experiments show that text-only pretraining does not improve T2I generation. Halcyon also learns image captioning by replacing caption dropout with I2T supervision, maintaining competitive T2I generation quality under the same pretraining budget. We show that strong T2I systems can be trained from scratch without internet-scale language pretraining. Code and models are available at https://cs.stanford.edu/~keshik/halcyon"
+    },
+    {
+      "title": "WeAct: Dynamic Weight Switching as Agent Actions",
+      "authors": [
+        "Rui Shi",
+        "Xunjian Yin",
+        "Jiacheng Sang",
+        "Zichuan Liu",
+        "Shuyan Zhou"
+      ],
+      "summary": "Long-horizon agents must learn heterogeneous capabilities from interleaved trajectories. Updating shared parameters to learn new capabilities can degrade previously acquired ones, resulting in catastrophic forgetting. As a trajectory unfolds, different stages may require different capabilities, yet conventional joint training and static adapter merging maintain a fixed parameter configuration throughout execution. We introduce WeAct (Weight-level Internal Actions), which trains independent capability-specific LoRA adapters over a frozen backbone and adds adapter selection to the agent's action space. These internal actions use the model's native tool-calling interface for on-demand capability composition in a shared context. Across eight deep-research benchmarks, Qwen3-32B with WeAct improves average accuracy by 6.2% relative to full fine-tuning counterparts despite using less compute, and by 27.5% relative to the strongest static LoRA-merging method. WeAct also supports modular continual adaptation, by adding a new code computation adapter to expand the agent's capabilities and updating the existing writing adapter to improve report quality. Both updates leave the backbone and other adapters unchanged, supporting modular continual adaptation in agents.",
+      "published": "2026-10-19T17:59:19Z",
+      "updated": "2026-10-19T17:59:19Z",
+      "arxiv_id": "2610.26847v1",
+      "abs_url": "http://arxiv.org/abs/2610.26847v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26847v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "comment": "24 pages, 14 figures, 12 tables, including references and appendices",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "catastrophic forgetting",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "WeAct: Dynamic Weight Switching as Agent Actions",
+      "summary_zh": "Long-horizon agents must learn heterogeneous capabilities from interleaved trajectories. Updating shared parameters to learn new capabilities can degrade previously acquired ones, resulting in catastrophic forgetting. As a trajectory unfolds, different stages may require different capabilities, yet conventional joint training and static adapter merging maintain a fixed parameter configuration throughout execution. We introduce WeAct (Weight-level Internal Actions), which trains independent capability-specific LoRA adapters over a frozen backbone and adds adapter selection to the agent's action space. These internal actions use the model's native tool-calling interface for on-demand capability composition in a shared context. Across eight deep-research benchmarks, Qwen3-32B with WeAct improves average accuracy by 6.2% relative to full fine-tuning counterparts despite using less compute, and by 27.5% relative to the strongest static LoRA-merging method. WeAct also supports modular continual adaptation, by adding a new code computation adapter to expand the agent's capabilities and updating the existing writing adapter to improve report quality. Both updates leave the backbone and other adapters unchanged, supporting modular continual adaptation in agents."
+    },
+    {
+      "title": "PlanarCityLoc: Breaking Silhouette Ambiguity in LoD Aerial Localization via 3D Planes",
+      "authors": [
+        "Oussema Dhaouadi",
+        "Shao Jie Hu-Chen",
+        "Jakob Gollreiter",
+        "Samir Jusufi",
+        "Nikolas Rieger",
+        "Caroline Wendlandt",
+        "Christian Wender",
+        "Jingfeng Mao",
+        "Guangming Wang",
+        "Zuria Bauer",
+        "Marc Pollefeys",
+        "Daniel Cremers",
+        "Olaf Wysocki"
+      ],
+      "summary": "Aerial visual localization is crucial for autonomous drone navigation in urban environments where GNSS signals are often degraded. Lightweight textureless Level-of-Detail (LoD) city models provide a geometric map alternative to textured assets. Existing silhouette-based methods rely on image-space alignment, which can leave different camera poses indistinguishable and favor incorrect poses when segmentation errors distort the building outlines. We present PlanarCityLoc, which moves beyond silhouette overlap by leveraging the planar geometry of building facades and roofs. Following geometry-aware initialization, we match image-side planar patches to LoD model planes and use the resulting 3D-to-2D correspondences to refine pose with Perspective-n-Point (PnP). The framework uses off-the-shelf geometry and segmentation models without dataset-specific training or fine-tuning. Experiments on UAVD4L-LoDv2 and Swiss-EPFLv2 achieve state-of-the-art localization recall among the evaluated off-the-shelf LoD-based methods. By grounding image-space alignment in 3D planes, PlanarCityLoc enables more accurate aerial localization with lightweight, textureless city maps.",
+      "published": "2026-10-19T16:58:14Z",
+      "updated": "2026-10-19T16:58:14Z",
+      "arxiv_id": "2610.26729v1",
+      "abs_url": "http://arxiv.org/abs/2610.26729v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26729v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "WACV 2027 - Project page: https://tum-vision.github.io/PlanarCityLoc/",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 6,
+      "anchor_terms": [
+        "drone"
+      ],
+      "matched_terms": [
+        "aerial",
+        "drone",
+        "fine-tuning"
+      ],
+      "title_zh": "PlanarCityLoc: Breaking Silhouette Ambiguity in LoD Aerial Localization via 3D Planes",
+      "summary_zh": "Aerial visual localization is crucial for autonomous drone navigation in urban environments where GNSS signals are often degraded. Lightweight textureless Level-of-Detail (LoD) city models provide a geometric map alternative to textured assets. Existing silhouette-based methods rely on image-space alignment, which can leave different camera poses indistinguishable and favor incorrect poses when segmentation errors distort the building outlines. We present PlanarCityLoc, which moves beyond silhouette overlap by leveraging the planar geometry of building facades and roofs. Following geometry-aware initialization, we match image-side planar patches to LoD model planes and use the resulting 3D-to-2D correspondences to refine pose with Perspective-n-Point (PnP). The framework uses off-the-shelf geometry and segmentation models without dataset-specific training or fine-tuning. Experiments on UAVD4L-LoDv2 and Swiss-EPFLv2 achieve state-of-the-art localization recall among the evaluated off-the-shelf LoD-based methods. By grounding image-space alignment in 3D planes, PlanarCityLoc enables more accurate aerial localization with lightweight, textureless city maps."
+    },
+    {
+      "title": "Wet-Biased Data Pipelines Mislead the Training and Evaluation of Generative Precipitation Nowcasting",
+      "authors": [
+        "Christoph Metzl",
+        "Stefan Kapsreiter",
+        "Kianusch Vahid Yousefnia",
+        "Virginia Poli",
+        "Richard Müller",
+        "Frank Krüger",
+        "Tobias Bölle"
+      ],
+      "summary": "Generative models for precipitation nowcasting are trained and evaluated predominantly on wet-biased datasets, which over-represent precipitation events to emphasize rare extremes. Selecting test cases based on target observations is known to favor forecasts that match the selected distribution rather than the intended deployment distribution. We show analytically how this target-dependent sampling also shifts the conditional distribution learned by generative models. When training and test sampling match, even an ideal model learns precisely the distribution favored by evaluation, allowing the evaluation bias to conceal the training bias. Using a fixed satellite-to-radar diffusion model, we demonstrate that target-dependent test sampling can reverse the calibration assessment. The model appears under-predictive on a wet-biased test set but over-predictive on a deployment-representative test set. This result is replicated outside the model's training domain after a seven-year gap. Utilizing classifier-free guidance as an example, we demonstrate how the contradictory calibration assessment can misdirect downstream model development.",
+      "published": "2026-10-19T14:28:28Z",
+      "updated": "2026-10-19T14:28:28Z",
+      "arxiv_id": "2610.26486v1",
+      "abs_url": "http://arxiv.org/abs/2610.26486v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26486v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "comment": "63 pages, 7 figures and 3 tables in the main text, 11 supplementary figures and 9 supplementary tables. This work has been submitted to npj Climate and Atmospheric Science",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "diffusion model"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "satellite"
+      ],
+      "title_zh": "Wet-Biased Data Pipelines Mislead the Training and Evaluation of Generative Precipitation Nowcasting",
+      "summary_zh": "Generative models for precipitation nowcasting are trained and evaluated predominantly on wet-biased datasets, which over-represent precipitation events to emphasize rare extremes. Selecting test cases based on target observations is known to favor forecasts that match the selected distribution rather than the intended deployment distribution. We show analytically how this target-dependent sampling also shifts the conditional distribution learned by generative models. When training and test sampling match, even an ideal model learns precisely the distribution favored by evaluation, allowing the evaluation bias to conceal the training bias. Using a fixed satellite-to-radar diffusion model, we demonstrate that target-dependent test sampling can reverse the calibration assessment. The model appears under-predictive on a wet-biased test set but over-predictive on a deployment-representative test set. This result is replicated outside the model's training domain after a seven-year gap. Utilizing classifier-free guidance as an example, we demonstrate how the contradictory calibration assessment can misdirect downstream model development."
+    },
+    {
+      "title": "When Guidance Becomes a Guard: Early Interception of Unsafe Inputs in Text-to-Image Generation",
+      "authors": [
+        "Yanchun Li",
+        "Yujin Wu",
+        "Gangkai Shen",
+        "Ming Yang",
+        "Li Zeng",
+        "Xianlong Wang",
+        "Hangtao Zhang",
+        "Shujuan Tian"
+      ],
+      "summary": "Text-to-image diffusion models can produce unsafe content, while output filtering intervenes only after synthesis. We investigate whether native generation signals enable early detection of unsafe and adversarial inputs. We find that classifier-free guidance exposes strong safety signals in conditional responses, accessible through compact statistics and linear readouts. Based on this finding, we propose Conditional Semantic Trajectory Interception (CSTI), which aggregates activation contrasts between conditional and unconditional responses at early checkpoints for calibrated risk detection. CSTI fits concept-specific detectors using canonical concept and safe examples, without attack samples, intermediate image decoding, or generator modification. Across five generators, four adversarial attack collections, and two general NSFW datasets, CSTI achieves the strongest overall performance among six baselines at a matched 5% FPR. Early interception reduces generation latency by over 60% on intercepted paths. These results demonstrate the effectiveness of native conditional responses for early safety interception.",
+      "published": "2026-10-19T14:09:22Z",
+      "updated": "2026-10-19T14:09:22Z",
+      "arxiv_id": "2610.26452v1",
+      "abs_url": "http://arxiv.org/abs/2610.26452v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26452v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 4,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "image generation"
+      ],
+      "title_zh": "When Guidance Becomes a Guard: Early Interception of Unsafe Inputs in Text-to-Image Generation",
+      "summary_zh": "Text-to-image diffusion models can produce unsafe content, while output filtering intervenes only after synthesis. We investigate whether native generation signals enable early detection of unsafe and adversarial inputs. We find that classifier-free guidance exposes strong safety signals in conditional responses, accessible through compact statistics and linear readouts. Based on this finding, we propose Conditional Semantic Trajectory Interception (CSTI), which aggregates activation contrasts between conditional and unconditional responses at early checkpoints for calibrated risk detection. CSTI fits concept-specific detectors using canonical concept and safe examples, without attack samples, intermediate image decoding, or generator modification. Across five generators, four adversarial attack collections, and two general NSFW datasets, CSTI achieves the strongest overall performance among six baselines at a matched 5% FPR. Early interception reduces generation latency by over 60% on intercepted paths. These results demonstrate the effectiveness of native conditional responses for early safety interception."
+    },
+    {
+      "title": "An Empirical Study of Parameter-Efficient Fine-Tuning for Mixture-of-Experts LLMs",
+      "authors": [
+        "Minglei Li",
+        "Peng Ye",
+        "Haonan He",
+        "Jingqi Ye",
+        "Qingyu Yang",
+        "Tao Chen"
+      ],
+      "summary": "Parameter-efficient fine-tuning (PEFT) methods are critical for adapting large models under resource-constrained settings. However, as mixture-of-experts (MoE) architectures, which offer efficient inference at massive parameter scales, gain increasing prevalence in the community, a critical gap arising from the lack of systematic recipes for applying PEFT to MoE models. To narrow this gap, we conduct a large-scale systematic study that investigates a set of essential design recipes, including which modules should be adapted, which granularity should be used to adapt MoE modules, which PEFT method to use, and to what extent should the load-balancing objective be used, across three MoE backbones on downstream tasks and general knowledge tasks. Our experiments yield several key insights. First, adapting MoE experts alone achieves the highest downstream performance with competitive general capability retention under a comparable parameter budget. Second, native expert-weight updates offer a better downstream--retention trade-off than adapters that bypass experts or entire MoE modules. Third, LoRA and DoRA together define the strongest operating region for high downstream accuracy among the evaluated PEFT methods. Fourth, no nonzero load-balancing coefficient Pareto-dominates the zero baseline. We finally evaluate a weight-level redesign of MoE$^2$-LoRA on Qwen3. Moving its module-level bypass pool into native expert weights improves all four upstream endpoints by 2.4 to 17.9 points with 17% fewer trainable parameters and a 3.2-point average downstream cost.",
+      "published": "2026-10-19T13:28:03Z",
+      "updated": "2026-10-19T13:28:03Z",
+      "arxiv_id": "2610.26370v1",
+      "abs_url": "http://arxiv.org/abs/2610.26370v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26370v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "large model",
+        "LoRA",
+        "PEFT"
+      ],
+      "title_zh": "An Empirical Study of Parameter-Efficient Fine-Tuning for Mixture-of-Experts LLMs",
+      "summary_zh": "Parameter-efficient fine-tuning (PEFT) methods are critical for adapting large models under resource-constrained settings. However, as mixture-of-experts (MoE) architectures, which offer efficient inference at massive parameter scales, gain increasing prevalence in the community, a critical gap arising from the lack of systematic recipes for applying PEFT to MoE models. To narrow this gap, we conduct a large-scale systematic study that investigates a set of essential design recipes, including which modules should be adapted, which granularity should be used to adapt MoE modules, which PEFT method to use, and to what extent should the load-balancing objective be used, across three MoE backbones on downstream tasks and general knowledge tasks. Our experiments yield several key insights. First, adapting MoE experts alone achieves the highest downstream performance with competitive general capability retention under a comparable parameter budget. Second, native expert-weight updates offer a better downstream--retention trade-off than adapters that bypass experts or entire MoE modules. Third, LoRA and DoRA together define the strongest operating region for high downstream accuracy among the evaluated PEFT methods. Fourth, no nonzero load-balancing coefficient Pareto-dominates the zero baseline. We finally evaluate a weight-level redesign of MoE$^2$-LoRA on Qwen3. Moving its module-level bypass pool into native expert weights improves all four upstream endpoints by 2.4 to 17.9 points with 17% fewer trainable parameters and a 3.2-point average downstream cost."
+    },
+    {
+      "title": "A Generic On-Board AI Processing Chain for Earth Observation: From Application Development to Embedded Deployment and Mission-Level Orchestration",
+      "authors": [
+        "Michel-Fran{\\c c}ois Foulon",
+        "Liz Ramos Medina",
+        "Thomas Goudemant",
+        "Clotilde Szywala",
+        "Virgile Robles",
+        "Cl{é}ment Petitjean",
+        "Ad{è}le Hankache",
+        "Omar Hlimi"
+      ],
+      "summary": "Earth observation satellites acquire more data than they can downlink. Extracting information on board with artificial intelligence (AI) turns the satellite into a data-reduction stage that downlinks compact products, such as masks or detections, instead of full scenes; deploying it in a mission, however, involves the whole processing chain and not only the neural network. We present a generic on-board AI processing chain along three axes, with wildfire segmentation as the worked example among ship detection and cloud segmentation. (i) The AI model is tuned (spectral-band selection, input normalization), quantized to 8-bit integers (int8) and ported to an AMD Versal VCK190, with its excellent segmentation performance preserved on the board. (ii) A modular tiler-inference-mosaicer workflow, reused unchanged across applications, brings the tile-level model to scene level, turning a full acquisition into a scene-level mask or detection list. (iii) Each step is packaged as a unikernel and orchestrated on board by ORCHIDE, a cloud-native orchestrator. The chain is characterized end to end, from the standalone execution on the target to its execution under orchestration with parallel workflows on a representative test bench. Beyond AI inference on individual tiles, this approach aims at increasing the maturity of on-board AI deployment by addressing a complete processing chain, from the acquired scene to the mission-level execution.",
+      "published": "2026-10-19T13:08:45Z",
+      "updated": "2026-10-19T13:08:45Z",
+      "arxiv_id": "2610.26340v1",
+      "abs_url": "http://arxiv.org/abs/2610.26340v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26340v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.AR",
+        "cs.DC"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "目标检测",
+        "高光谱/多光谱"
+      ],
+      "topic": "目标检测",
+      "score": 6,
+      "anchor_terms": [
+        "earth observation"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "satellite",
+        "ship detection"
+      ],
+      "title_zh": "A Generic On-Board AI Processing Chain for Earth Observation: From Application Development to Embedded Deployment and Mission-Level Orchestration",
+      "summary_zh": "Earth observation satellites acquire more data than they can downlink. Extracting information on board with artificial intelligence (AI) turns the satellite into a data-reduction stage that downlinks compact products, such as masks or detections, instead of full scenes; deploying it in a mission, however, involves the whole processing chain and not only the neural network. We present a generic on-board AI processing chain along three axes, with wildfire segmentation as the worked example among ship detection and cloud segmentation. (i) The AI model is tuned (spectral-band selection, input normalization), quantized to 8-bit integers (int8) and ported to an AMD Versal VCK190, with its excellent segmentation performance preserved on the board. (ii) A modular tiler-inference-mosaicer workflow, reused unchanged across applications, brings the tile-level model to scene level, turning a full acquisition into a scene-level mask or detection list. (iii) Each step is packaged as a unikernel and orchestrated on board by ORCHIDE, a cloud-native orchestrator. The chain is characterized end to end, from the standalone execution on the target to its execution under orchestration with parallel workflows on a representative test bench. Beyond AI inference on individual tiles, this approach aims at increasing the maturity of on-board AI deployment by addressing a complete processing chain, from the acquired scene to the mission-level execution."
+    },
+    {
+      "title": "OceanTensorCube and ST-MMT: A Multimodal Data and Transformer System for Seven-Day Forecasting of Pyropia Bleaching",
+      "authors": [
+        "Gwangjin Kim",
+        "Cheolyoung Jang",
+        "Yosep Jo"
+      ],
+      "summary": "Bleaching of cultured Pyropia (laver) causes losses in Korean seaweed farming. We present a system that forecasts bleaching seven days ahead for farm clusters. OceanTensorCube aligns 32 channels from public marine, meteorological, ocean-model and satellite sources on a 30 m grid, and ST-MMT, a 9.2-million-parameter spatiotemporal transformer with hub-style multi-head cross-attention between variable groups, maps a 14-day input window to a seven-day-ahead bleaching probability. On the validation set, a six-seed ensemble detects every reported positive at a false-alarm rate of at most 3.5%, an upper bound because the report-based labels are positive-unlabeled. A same-date control on separately trained models indicates that the architecture discriminates between clusters when the calendar is held fixed. We also report the system's weaknesses: skill falls steeply as the quarterly nutrient survey ages (ROC-AUC 0.94 at 30 days, 0.53 at 129 days), and a single LSTM on cluster-average series outperforms a single ST-MMT, with only the ensemble leading at the operating point. We describe the labeling procedure, the evaluation protocol and the operational gate that withholds forecasts when inputs are stale. The forecasting service is operated at https://oceantensor.ai.kr.",
+      "published": "2026-10-19T11:36:34Z",
+      "updated": "2026-10-19T11:36:34Z",
+      "arxiv_id": "2610.26209v1",
+      "abs_url": "http://arxiv.org/abs/2610.26209v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26209v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "27 pages. Forecasting service: https://oceantensor.ai.kr",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "多模态融合",
+      "score": 5,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "cross-attention",
+        "satellite",
+        "temporal",
+        "transformer"
+      ],
+      "title_zh": "OceanTensorCube and ST-MMT: A Multimodal Data and Transformer System for Seven-Day Forecasting of Pyropia Bleaching",
+      "summary_zh": "Bleaching of cultured Pyropia (laver) causes losses in Korean seaweed farming. We present a system that forecasts bleaching seven days ahead for farm clusters. OceanTensorCube aligns 32 channels from public marine, meteorological, ocean-model and satellite sources on a 30 m grid, and ST-MMT, a 9.2-million-parameter spatiotemporal transformer with hub-style multi-head cross-attention between variable groups, maps a 14-day input window to a seven-day-ahead bleaching probability. On the validation set, a six-seed ensemble detects every reported positive at a false-alarm rate of at most 3.5%, an upper bound because the report-based labels are positive-unlabeled. A same-date control on separately trained models indicates that the architecture discriminates between clusters when the calendar is held fixed. We also report the system's weaknesses: skill falls steeply as the quarterly nutrient survey ages (ROC-AUC 0.94 at 30 days, 0.53 at 129 days), and a single LSTM on cluster-average series outperforms a single ST-MMT, with only the ensemble leading at the operating point. We describe the labeling procedure, the evaluation protocol and the operational gate that withholds forecasts when inputs are stale. The forecasting service is operated at https://oceantensor.ai.kr."
+    },
+    {
+      "title": "TaQFormer: A Treatment-as-Query Transformer with Data-Fusion for Multidimensional Treatment Modeling in Coupon Allocation",
+      "authors": [
+        "Jiahong Li",
+        "Zeqin Yang",
+        "Yu Xiang",
+        "Zhifan Jiang",
+        "Jingqi Ma",
+        "Enzheng Hua",
+        "Jixing Xu",
+        "Jun Wu",
+        "Fei Wang",
+        "Enyun Yu",
+        "Jiecheng Guo"
+      ],
+      "summary": "We study coupon allocation on an online marketplace offering multiple service categories. Issuing coupons requires choosing a vector of category-specific discounts, accounting for both their direct effects and cross-category demand shifts. We present TaQFormer, a treatment-as-query Transformer for this multidimensional treatment setting. Each treatment coordinate is represented as a query token, allowing cross-attention to estimate the response to the full treatment vector. To combine large but policy-biased observational logs with a smaller stream of randomized controlled trial data, we use a two-stage pipeline: observational pretraining learns general outcome patterns, followed by LoRA fine-tuning on RCT data with a request-specific fusion gate. We evaluate the resulting system through the checks required for production, including offline uplift metrics, treatment-parallel serving, latency monitoring, and a 14-day online A/B test. At essentially the same subsidy cost rate, \\model increases business value per user by 1.26\\% over the production baseline and significantly outperforms both the production baseline and the RCT-only model, while meeting the latency budget. It was subsequently rolled out to all marketplace traffic and has operated at full scale for several months as of October 2026. The deployment illustrates how multidimensional treatment modeling and observational pretraining, combined with adaptation using RCT data, can support effective joint discount decisions in production.",
+      "published": "2026-10-19T11:27:46Z",
+      "updated": "2026-10-19T11:27:46Z",
+      "arxiv_id": "2610.26199v1",
+      "abs_url": "http://arxiv.org/abs/2610.26199v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26199v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "cross-attention",
+        "fine-tuning",
+        "LoRA",
+        "transformer"
+      ],
+      "title_zh": "TaQFormer: A Treatment-as-Query Transformer with Data-Fusion for Multidimensional Treatment Modeling in Coupon Allocation",
+      "summary_zh": "We study coupon allocation on an online marketplace offering multiple service categories. Issuing coupons requires choosing a vector of category-specific discounts, accounting for both their direct effects and cross-category demand shifts. We present TaQFormer, a treatment-as-query Transformer for this multidimensional treatment setting. Each treatment coordinate is represented as a query token, allowing cross-attention to estimate the response to the full treatment vector. To combine large but policy-biased observational logs with a smaller stream of randomized controlled trial data, we use a two-stage pipeline: observational pretraining learns general outcome patterns, followed by LoRA fine-tuning on RCT data with a request-specific fusion gate. We evaluate the resulting system through the checks required for production, including offline uplift metrics, treatment-parallel serving, latency monitoring, and a 14-day online A/B test. At essentially the same subsidy cost rate, \\model increases business value per user by 1.26\\% over the production baseline and significantly outperforms both the production baseline and the RCT-only model, while meeting the latency budget. It was subsequently rolled out to all marketplace traffic and has operated at full scale for several months as of October 2026. The deployment illustrates how multidimensional treatment modeling and observational pretraining, combined with adaptation using RCT data, can support effective joint discount decisions in production."
+    },
+    {
+      "title": "Scenario Generalization and Sector Transfer in Real Surface Irrigation Surrogate Modelling with Tabular Models",
+      "authors": [
+        "Alessandro Cagiano",
+        "M. Aybars Seyhan",
+        "Fabiola Gangi",
+        "Matteo Zignani",
+        "Daniele Masseroni"
+      ],
+      "summary": "Surface irrigation planning requires screening many operating conditions and spatial configurations, while high-fidelity shallow-water-equation (SWE) simulations are expensive. We study tabular surrogate models for predicting maximum water height from drone-derived field morphology, terrain, hydrological, spatial, and scenario descriptors, where each row represents a spatial cell under one irrigation scenario. To assess deployment feasibility, we evaluate gradient-boosted trees, neural tabular models, AutoML, and tabular foundation models (TFMs) under two regimes: same-sector generalization, where a model predicts unseen scenarios after observing a limited set of configurations in the same sector, and sector-out transfer, where knowledge learned from source sectors is transferred to an unseen sector. The main findings are twofold: a) under the evaluated fixed 8/32 same-sector split, surrogates achieve strong performance, especially with raw spatial coordinates; b) sector-out transfer is substantially harder because the target sector has different coordinates and geometry. Sector-frame normalization of spatial coordinates improves transfer across similarly structured sectors, but does not solve cross-shape generalization. Overall, tabular surrogates appear useful for same-sector scenario screening under this fixed split, while robust transfer to unseen sectors remains open.",
+      "published": "2026-10-19T08:30:44Z",
+      "updated": "2026-10-19T08:30:44Z",
+      "arxiv_id": "2610.26005v1",
+      "abs_url": "http://arxiv.org/abs/2610.26005v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26005v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Accepted at MACLEAN 2026 (Workshop on Machine Learning for Earth Observation), held in conjunction with ECML PKDD 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "无人机/UAV"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "earth observation",
+        "foundation model"
+      ],
+      "matched_terms": [
+        "drone",
+        "earth observation",
+        "foundation model",
+        "robust"
+      ],
+      "title_zh": "Scenario Generalization and Sector Transfer in Real Surface Irrigation Surrogate Modelling with Tabular Models",
+      "summary_zh": "Surface irrigation planning requires screening many operating conditions and spatial configurations, while high-fidelity shallow-water-equation (SWE) simulations are expensive. We study tabular surrogate models for predicting maximum water height from drone-derived field morphology, terrain, hydrological, spatial, and scenario descriptors, where each row represents a spatial cell under one irrigation scenario. To assess deployment feasibility, we evaluate gradient-boosted trees, neural tabular models, AutoML, and tabular foundation models (TFMs) under two regimes: same-sector generalization, where a model predicts unseen scenarios after observing a limited set of configurations in the same sector, and sector-out transfer, where knowledge learned from source sectors is transferred to an unseen sector. The main findings are twofold: a) under the evaluated fixed 8/32 same-sector split, surrogates achieve strong performance, especially with raw spatial coordinates; b) sector-out transfer is substantially harder because the target sector has different coordinates and geometry. Sector-frame normalization of spatial coordinates improves transfer across similarly structured sectors, but does not solve cross-shape generalization. Overall, tabular surrogates appear useful for same-sector scenario screening under this fixed split, while robust transfer to unseen sectors remains open."
+    },
+    {
+      "title": "ClueFlow: Learning Long-Horizon Search through Attributed Research-State Transitions",
+      "authors": [
+        "Yicheng Wang",
+        "Wentao Tan",
+        "Yidan Huang",
+        "Yifei Liu",
+        "Qiong Cao"
+      ],
+      "summary": "Long-horizon search requires agents to acquire relevant evidence and integrate it into an evolving research state. Existing methods maintain research states to guide exploration or assign turn-level progress signals, yet grounding these signals in explicit, attributable state changes remains underexplored. We introduce ClueFlow, which learns long-horizon search from attributed research-state transitions. ClueFlow constructs Source-State-Final attribution chains that connect evidence-acquiring browser actions, Evidence and Candidate updates, and the final answer supported by those updates. During search, ClueFlow records typed state changes and potentially supporting browser actions, then applies gold-conditioned semantic validation and source tracing after execution. We use this attribution to guide both supervised fine-tuning and reinforcement learning. During SFT, attribution selects which decisions receive supervision with their original interaction contexts. During Turn-PPO, the same attribution augments outcome-based turn advantages with credit assigned along the Source-State-Final chains. Transition-level validation also recovers useful supervision from gold-consistent state changes in trajectories with incorrect final answers. We evaluate ClueFlow across two Qwen backbones and four search benchmarks spanning live-web and fixed-corpus settings, observing consistent gains from SFT and further improvements from PPO. With Qwen3.5-35B-A3B, ClueFlow achieves 60.0% accuracy on BrowseComp and 72.0% on BrowseComp-Plus. In controlled BrowseComp-Plus experiments, attribution-guided SFT matches all-turn exact-context SFT using about 30% of the training tokens, while attribution-guided PPO outperforms outcome-only PPO by 4.1 pp. These results demonstrate that state-transition attribution enables efficient supervision and effective credit assignment for long-horizon search agents.",
+      "published": "2026-10-19T08:07:35Z",
+      "updated": "2026-10-19T08:07:35Z",
+      "arxiv_id": "2610.25980v1",
+      "abs_url": "http://arxiv.org/abs/2610.25980v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25980v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "25 pages, 2 figures, 8 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "ClueFlow: Learning Long-Horizon Search through Attributed Research-State Transitions",
+      "summary_zh": "Long-horizon search requires agents to acquire relevant evidence and integrate it into an evolving research state. Existing methods maintain research states to guide exploration or assign turn-level progress signals, yet grounding these signals in explicit, attributable state changes remains underexplored. We introduce ClueFlow, which learns long-horizon search from attributed research-state transitions. ClueFlow constructs Source-State-Final attribution chains that connect evidence-acquiring browser actions, Evidence and Candidate updates, and the final answer supported by those updates. During search, ClueFlow records typed state changes and potentially supporting browser actions, then applies gold-conditioned semantic validation and source tracing after execution. We use this attribution to guide both supervised fine-tuning and reinforcement learning. During SFT, attribution selects which decisions receive supervision with their original interaction contexts. During Turn-PPO, the same attribution augments outcome-based turn advantages with credit assigned along the Source-State-Final chains. Transition-level validation also recovers useful supervision from gold-consistent state changes in trajectories with incorrect final answers. We evaluate ClueFlow across two Qwen backbones and four search benchmarks spanning live-web and fixed-corpus settings, observing consistent gains from SFT and further improvements from PPO. With Qwen3.5-35B-A3B, ClueFlow achieves 60.0% accuracy on BrowseComp and 72.0% on BrowseComp-Plus. In controlled BrowseComp-Plus experiments, attribution-guided SFT matches all-turn exact-context SFT using about 30% of the training tokens, while attribution-guided PPO outperforms outcome-only PPO by 4.1 pp. These results demonstrate that state-transition attribution enables efficient supervision and effective credit assignment for long-horizon search agents."
+    },
+    {
+      "title": "Is it RL or Data? A Controlled Comparison of GRPO and Rejection-Sampling Fine-Tuning",
+      "authors": [
+        "Lakshya Chaudhry"
+      ],
+      "summary": "Bauer et al. (2026) showed that in low-data reinforcement learning with verifiable rewards, training GRPO on mixed-difficulty prompts gives up to 5x the sample efficiency of easy-only prompts. They did not test whether this benefit is specific to GRPO, or whether another post-training method given the same data would obtain it too. We test this on their procedural counting task with Qwen3-4B-Base and LoRA, comparing GRPO to rejection-sampling fine-tuning (RFT) on the same prompts, verifier and token cap. Six primary arms cross the two methods with three prompt sets (Easy, Mixed, and a Curated subset of prompts the base model sometimes solves, which makes GRPO's implicit filter explicit). We use three seeds per arm. Hypotheses and falsifiers were registered before training. To rule out a poorly tuned baseline, RFT receives a 27-run hyperparameter sweep, while GRPO uses Bauer et al.'s recipe unchanged. GRPO outperforms RFT at every prompt set: by 10.9 points on held-out test problems with curated prompts, and, in post hoc comparisons with matched rollout budgets, by 8.4 and 9.2 points on the easy and mixed prompts. On test the advantage survives the least favorable treatment of truncated completions; out of distribution, truncation prevents a conclusion. Curating prompts does not help RFT (-2.7 points). Mixed-difficulty data helps RFT (+3.7 points), while for GRPO the evidence is inconclusive. A secondary iterated-RFT arm, which resamples from the current policy, recovers 3.2 of the 10.9-point gap (about 30%). These are controlled measurements on one synthetic task family and one base model with three seeds per arm.",
+      "published": "2026-10-19T05:26:20Z",
+      "updated": "2026-10-19T05:26:20Z",
+      "arxiv_id": "2610.25812v1",
+      "abs_url": "http://arxiv.org/abs/2610.25812v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25812v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "20 pages, 4 figures, 11 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 3,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Is it RL or Data? A Controlled Comparison of GRPO and Rejection-Sampling Fine-Tuning",
+      "summary_zh": "Bauer et al. (2026) showed that in low-data reinforcement learning with verifiable rewards, training GRPO on mixed-difficulty prompts gives up to 5x the sample efficiency of easy-only prompts. They did not test whether this benefit is specific to GRPO, or whether another post-training method given the same data would obtain it too. We test this on their procedural counting task with Qwen3-4B-Base and LoRA, comparing GRPO to rejection-sampling fine-tuning (RFT) on the same prompts, verifier and token cap. Six primary arms cross the two methods with three prompt sets (Easy, Mixed, and a Curated subset of prompts the base model sometimes solves, which makes GRPO's implicit filter explicit). We use three seeds per arm. Hypotheses and falsifiers were registered before training. To rule out a poorly tuned baseline, RFT receives a 27-run hyperparameter sweep, while GRPO uses Bauer et al.'s recipe unchanged. GRPO outperforms RFT at every prompt set: by 10.9 points on held-out test problems with curated prompts, and, in post hoc comparisons with matched rollout budgets, by 8.4 and 9.2 points on the easy and mixed prompts. On test the advantage survives the least favorable treatment of truncated completions; out of distribution, truncation prevents a conclusion. Curating prompts does not help RFT (-2.7 points). Mixed-difficulty data helps RFT (+3.7 points), while for GRPO the evidence is inconclusive. A secondary iterated-RFT arm, which resamples from the current policy, recovers 3.2 of the 10.9-point gap (about 30%). These are controlled measurements on one synthetic task family and one base model with three seeds per arm."
+    },
+    {
+      "title": "Communication-Efficient Federated Domain Generalization in Edge Networks via Dynamic Prototype Regulation",
+      "authors": [
+        "Yuankun Xia",
+        "Hui Wang",
+        "Ling Yuan",
+        "Ziyu Hong",
+        "Di Yin",
+        "Yufeng Zhou"
+      ],
+      "summary": "Federated learning (FL) is a distributed paradigm for Internet of Things (IoT) edge networks. However, deploying Vision-Language Models (VLMs) over wireless edge networks presents distinct challenges: large model parameters increase uplink transmission latency over bandwidth-constrained fading channels, and non-independent and identically distributed (Non-IID) data exacerbates client drift. Existing feature alignment solutions often introduce auxiliary computations that consume time slots allocated for wireless parameter transmission, increasing the likelihood of straggler dropouts under system delay constraints. To address these issues, we propose DPGR-GCAM, a communication-efficient federated domain generalization framework. By employing a dual-parameter-efficient fine-tuning (PEFT) architecture, we design a channel-aware tiered transmission mechanism that adaptively truncates payloads to maximize node survival rates under fading conditions. To mitigate client drift, we introduce the Gradient-Conflict Aware Modulation (GCAM) mechanism. GCAM operates within the low-dimensional feature manifold to dynamically resolve multi-objective optimization conflicts with minimal edge computation latency, thereby reducing computation-induced network outages. Experiments demonstrate that DPGR-GCAM improves cross-domain generalization and sustains convergence under network fading scenarios with a 10\\% client participation rate.",
+      "published": "2026-10-19T05:19:48Z",
+      "updated": "2026-10-19T05:19:48Z",
+      "arxiv_id": "2610.25810v1",
+      "abs_url": "http://arxiv.org/abs/2610.25810v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25810v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "domain generalization"
+      ],
+      "matched_terms": [
+        "domain generalization",
+        "fine-tuning",
+        "large model",
+        "PEFT"
+      ],
+      "title_zh": "Communication-Efficient Federated Domain Generalization in Edge Networks via Dynamic Prototype Regulation",
+      "summary_zh": "Federated learning (FL) is a distributed paradigm for Internet of Things (IoT) edge networks. However, deploying Vision-Language Models (VLMs) over wireless edge networks presents distinct challenges: large model parameters increase uplink transmission latency over bandwidth-constrained fading channels, and non-independent and identically distributed (Non-IID) data exacerbates client drift. Existing feature alignment solutions often introduce auxiliary computations that consume time slots allocated for wireless parameter transmission, increasing the likelihood of straggler dropouts under system delay constraints. To address these issues, we propose DPGR-GCAM, a communication-efficient federated domain generalization framework. By employing a dual-parameter-efficient fine-tuning (PEFT) architecture, we design a channel-aware tiered transmission mechanism that adaptively truncates payloads to maximize node survival rates under fading conditions. To mitigate client drift, we introduce the Gradient-Conflict Aware Modulation (GCAM) mechanism. GCAM operates within the low-dimensional feature manifold to dynamically resolve multi-objective optimization conflicts with minimal edge computation latency, thereby reducing computation-induced network outages. Experiments demonstrate that DPGR-GCAM improves cross-domain generalization and sustains convergence under network fading scenarios with a 10\\% client participation rate."
+    },
+    {
+      "title": "See the Future, Classify the Present: Stochastic Latent World Modeling for Hyperspectral Images",
+      "authors": [
+        "Muhammad Ahmad",
+        "Gemine Vivone",
+        "Ronny Hänsch",
+        "Ahmed Sohaib",
+        "Manuel Mazzara",
+        "Danfeng Hong"
+      ],
+      "summary": "Hyperspectral image classification (HSIC) relies on static spatial-spectral representations learned from labeled samples, limiting its ability to model structured dependencies in the latent representation space. To address this limitation, this work proposes Stochastic Latent World Modeling (LWM), a trajectory-based representation-learning framework that enriches classification through stochastic latent-state prediction. Given a hyperspectral patch, LWM tokenizes and encodes spectral and spatial information separately using dedicated transformer branches, then fuses their outputs into a unified representation. This representation is further organized into an environment state that captures center, neighborhood, spectral, and global contextual information. A stochastic latent transition module then predicts multiple future latent states through Gaussian parameterization and reparameterization, with recurrent refinement used to model dependencies across successive states. The resulting latent trajectory is adaptively aggregated by a rollout planner to construct a planned representation, which is integrated with the base representation for final classification. By extending static spatial-spectral encoding with stochastic multi-step latent-state modeling, LWM enables the classifier to exploit structured dependencies in the representation space and provides richer features for HSIC. Across five benchmark datasets, LWM achieves overall accuracies ranging from 89.21% to 99.52%, demonstrating consistent classification performance under limited-label settings.",
+      "published": "2026-10-19T04:48:23Z",
+      "updated": "2026-10-19T04:48:23Z",
+      "arxiv_id": "2610.25781v1",
+      "abs_url": "http://arxiv.org/abs/2610.25781v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25781v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "18 pages, 11 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "场景分类",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "场景分类",
+      "score": 8,
+      "anchor_terms": [
+        "hyperspectral image"
+      ],
+      "matched_terms": [
+        "hyperspectral",
+        "hyperspectral image",
+        "hyperspectral image classification",
+        "image classification",
+        "transformer"
+      ],
+      "title_zh": "See the Future, Classify the Present: Stochastic Latent World Modeling for Hyperspectral Images",
+      "summary_zh": "Hyperspectral image classification (HSIC) relies on static spatial-spectral representations learned from labeled samples, limiting its ability to model structured dependencies in the latent representation space. To address this limitation, this work proposes Stochastic Latent World Modeling (LWM), a trajectory-based representation-learning framework that enriches classification through stochastic latent-state prediction. Given a hyperspectral patch, LWM tokenizes and encodes spectral and spatial information separately using dedicated transformer branches, then fuses their outputs into a unified representation. This representation is further organized into an environment state that captures center, neighborhood, spectral, and global contextual information. A stochastic latent transition module then predicts multiple future latent states through Gaussian parameterization and reparameterization, with recurrent refinement used to model dependencies across successive states. The resulting latent trajectory is adaptively aggregated by a rollout planner to construct a planned representation, which is integrated with the base representation for final classification. By extending static spatial-spectral encoding with stochastic multi-step latent-state modeling, LWM enables the classifier to exploit structured dependencies in the representation space and provides richer features for HSIC. Across five benchmark datasets, LWM achieves overall accuracies ranging from 89.21% to 99.52%, demonstrating consistent classification performance under limited-label settings."
+    },
+    {
+      "title": "MT-CC: Multi-Group Temperature Scaling for Asymmetric Calibration Behavior in Class-Incremental Learning",
+      "authors": [
+        "Sungjun Yun",
+        "Yonghee Choi",
+        "Dong-Jun Han"
+      ],
+      "summary": "As deep neural networks are required to continuously adapt to evolving data, class-incremental learning (CIL) has become an active research area. However, most existing works primarily focus on improving accuracy while overlooking confidence calibration, which measures the trustworthiness of the model's predictions. Although temperature scaling (TS) is effective for static calibration, it has rarely been explored in continual settings where data distributions evolve over time. In this paper, we introduce Multi-Group Temperature Scaling for Continual Calibration (MT-CC), a novel post-hoc calibration framework that addresses the asymmetric calibration behavior in CIL, where the rate of confidence changes does not align with the rate of accuracy degradation across tasks, leading to different levels of miscalibration. Our key contribution is to design multiple temperature parameters through a lightweight grouping network that separates samples by confidence statistics and task-aware signals in CIL. Furthermore, a Groupwise Difference-between-Confidence-and-Accuracy (GDCA) regularization is incorporated to promote intra-group consistency. Experiments demonstrate that MT-CC significantly improves calibration performance while maintaining accuracy, offering a principled framework for reliable continual learning.",
+      "published": "2026-10-19T02:37:09Z",
+      "updated": "2026-10-19T02:37:09Z",
+      "arxiv_id": "2610.25689v1",
+      "abs_url": "http://arxiv.org/abs/2610.25689v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25689v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "Accepted at NeurIPS 2026 (Spotlight). 28 pages",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 5,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "class-incremental",
+        "continual learning",
+        "incremental learning"
+      ],
+      "title_zh": "MT-CC: Multi-Group Temperature Scaling for Asymmetric Calibration Behavior in Class-Incremental Learning",
+      "summary_zh": "As deep neural networks are required to continuously adapt to evolving data, class-incremental learning (CIL) has become an active research area. However, most existing works primarily focus on improving accuracy while overlooking confidence calibration, which measures the trustworthiness of the model's predictions. Although temperature scaling (TS) is effective for static calibration, it has rarely been explored in continual settings where data distributions evolve over time. In this paper, we introduce Multi-Group Temperature Scaling for Continual Calibration (MT-CC), a novel post-hoc calibration framework that addresses the asymmetric calibration behavior in CIL, where the rate of confidence changes does not align with the rate of accuracy degradation across tasks, leading to different levels of miscalibration. Our key contribution is to design multiple temperature parameters through a lightweight grouping network that separates samples by confidence statistics and task-aware signals in CIL. Furthermore, a Groupwise Difference-between-Confidence-and-Accuracy (GDCA) regularization is incorporated to promote intra-group consistency. Experiments demonstrate that MT-CC significantly improves calibration performance while maintaining accuracy, offering a principled framework for reliable continual learning."
+    },
+    {
+      "title": "Frechet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
+      "authors": [
+        "Yian Zhao",
+        "Yu Yan",
+        "Hongcan Guo",
+        "Ruochong Zheng",
+        "Jian Zhang",
+        "Jie Chen"
+      ],
+      "summary": "Streaming video world models generate the future chunk by chunk, conditioned on their own past and a stream of actions. Trained on short clips, they drift once a rollout exceeds the training horizon, as prediction errors re-enter the context and compound. A common remedy is to train the model on its own rollouts via distribution matching distillation (DMD). For action-conditioned world models, the teacher becomes a bottleneck: an external video model is agnostic to the actions, whereas the model's own pretrained network drifts in the same manner as the student. We observe that a long rollout need not match a teacher, provided it remains a realistic continuation of its own scene that follows the commanded actions. Realism and scene fidelity can be measured against real-data statistics, which remain valid at any horizon, while action following is preserved by the model's conditional generation loss. We propose Fréchet Forcing, which fine-tunes a world model together with its deployed multi-step sampler under three constraints. Generative anchoring applies the flow-matching loss after a self-generated history ending on real data. Context fidelity, a Fréchet distance (FD) on latent statistics of the free rollout centred on each clip's own ground truth, keeps every rollout faithful to its scene. Reality matching, an FD to real frames in a frozen perceptual space, keeps the generated frames realistic. Because all three targets are derived from short real clips without comparing a rollout against a long recorded future, training requires no teacher, no online critic and no long videos. Fine-tuning MiniWorld-1B, pretrained on 253-frame clips, for at most 36 GPU-hours on 381-frame clips yields rollouts that remain stable beyond 4,000 frames and continue to follow their actions in both robot manipulation and camera-controlled exploration.",
+      "published": "2026-10-19T02:12:39Z",
+      "updated": "2026-10-19T02:12:39Z",
+      "arxiv_id": "2610.25666v1",
+      "abs_url": "http://arxiv.org/abs/2610.25666v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25666v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Frechet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
+      "summary_zh": "Streaming video world models generate the future chunk by chunk, conditioned on their own past and a stream of actions. Trained on short clips, they drift once a rollout exceeds the training horizon, as prediction errors re-enter the context and compound. A common remedy is to train the model on its own rollouts via distribution matching distillation (DMD). For action-conditioned world models, the teacher becomes a bottleneck: an external video model is agnostic to the actions, whereas the model's own pretrained network drifts in the same manner as the student. We observe that a long rollout need not match a teacher, provided it remains a realistic continuation of its own scene that follows the commanded actions. Realism and scene fidelity can be measured against real-data statistics, which remain valid at any horizon, while action following is preserved by the model's conditional generation loss. We propose Fréchet Forcing, which fine-tunes a world model together with its deployed multi-step sampler under three constraints. Generative anchoring applies the flow-matching loss after a self-generated history ending on real data. Context fidelity, a Fréchet distance (FD) on latent statistics of the free rollout centred on each clip's own ground truth, keeps every rollout faithful to its scene. Reality matching, an FD to real frames in a frozen perceptual space, keeps the generated frames realistic. Because all three targets are derived from short real clips without comparing a rollout against a long recorded future, training requires no teacher, no online critic and no long videos. Fine-tuning MiniWorld-1B, pretrained on 253-frame clips, for at most 36 GPU-hours on 381-frame clips yields rollouts that remain stable beyond 4,000 frames and continue to follow their actions in both robot manipulation and camera-controlled exploration."
+    },
+    {
+      "title": "Negation without Confusion: Decomposing Bias and Recomposing Style in Text Embeddings for Negation-aware Image Generation",
+      "authors": [
+        "Sooyeon Park",
+        "Hemraj Singh",
+        "Kyunghyun Min",
+        "Youngjae Yu",
+        "Sung-Bae Cho"
+      ],
+      "summary": "Negation-aware image generation remains challenging for text-to-image diffusion models, which often struggle with negation due to implicit linguistic biases that are deeply entangled within text representations. As a result, bias-aligned semantics frequently dominate over intended negative constraints. To overcome this limitation, we propose a simple training-free method of Decompose and Recompose text embedding (Dero), which constructs a semantic-preserving subspace and a bias subspace using auxiliary prompts and performs semantic disentanglement based on bidirectional SVD. By decomposing entangled representations and selectively recomposing disentangled semantic components, Dero realigns text representations toward intended negation semantics while restoring residual stylistic features to preserve semantic fidelity and image quality. As a model-agnostic inference-time framework operating solely on text representations, Dero can be seamlessly applied to diverse diffusion architectures, including both U-Net and DiT based models. Extensive experiments on both object- and concept-level negation demonstrate consistent improvements in negation-aware image generation, achieving stronger text-image alignment, better semantic fidelity, and higher human preference scores.",
+      "published": "2026-10-19T01:40:27Z",
+      "updated": "2026-10-19T01:40:27Z",
+      "arxiv_id": "2610.25645v1",
+      "abs_url": "http://arxiv.org/abs/2610.25645v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25645v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "图像生成与重建",
+        "图像描述与视觉推理"
+      ],
+      "topic": "语义分割",
+      "score": 5,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "image generation",
+        "U-Net"
+      ],
+      "title_zh": "Negation without Confusion: Decomposing Bias and Recomposing Style in Text Embeddings for Negation-aware Image Generation",
+      "summary_zh": "Negation-aware image generation remains challenging for text-to-image diffusion models, which often struggle with negation due to implicit linguistic biases that are deeply entangled within text representations. As a result, bias-aligned semantics frequently dominate over intended negative constraints. To overcome this limitation, we propose a simple training-free method of Decompose and Recompose text embedding (Dero), which constructs a semantic-preserving subspace and a bias subspace using auxiliary prompts and performs semantic disentanglement based on bidirectional SVD. By decomposing entangled representations and selectively recomposing disentangled semantic components, Dero realigns text representations toward intended negation semantics while restoring residual stylistic features to preserve semantic fidelity and image quality. As a model-agnostic inference-time framework operating solely on text representations, Dero can be seamlessly applied to diverse diffusion architectures, including both U-Net and DiT based models. Extensive experiments on both object- and concept-level negation demonstrate consistent improvements in negation-aware image generation, achieving stronger text-image alignment, better semantic fidelity, and higher human preference scores."
+    },
+    {
+      "title": "Reinforcement learning on the EPRI AI-ccelerating Unit Commitment benchmark: diagnosing over-commitment and guiding MILP with learned policies",
+      "authors": [
+        "Maharani Devira Pramita",
+        "Aidan O'Sullivan"
+      ],
+      "summary": "Reinforcement learning (RL) is increasingly proposed as a fast solver for unit commitment (UC), but standalone agents remain far more expensive than mixed-integer linear programming (MILP). In the first study of RL on the 51-generator, 72-hour benchmark of the Electric Power Research Institute (EPRI) AI-ccelerating Unit Commitment competition, we trace this gap to the agents' own exploration, close most of it, and show that the resulting policy can accelerate an exact solver. In every configuration tested, Proximal Policy Optimisation (PPO) and an action-branching Deep Q-Network (DQN) trained from scratch committed about twice the units of a thermal-only MILP optimum, at 39-64% higher cost, whereas a merit-order rule came within 1.6-7% (10-24% when unserved energy is priced). When each unit's decision is sampled independently, spare units insure against random de-commitments. Consistent with this, injecting exploration noise during fine-tuning enlarged a lean policy's fleet, a reward without shaping terms did not remove the over-commitment, and under their training noise the agents outperformed the rule subjected to comparable noise. Imitating the MILP solutions and fine-tuning conservatively brought PPO within 2.6% of the optimum, and these policies had the lowest penalised cost of any evaluated (about 5%). Fixing the fine-tuned policy's confident decisions made the MILP 3.8-8.5 times faster within 0.10-0.25% of the best solution, with a smaller worst case than an imitation-only policy fixing as many variables (1.1% against 8.9%). Because dispatch method and benchmark scope alone shift the reported optimality ratio by up to 3.6% and 9%, we propose a reporting protocol.",
+      "published": "2026-10-18T21:31:24Z",
+      "updated": "2026-10-18T21:31:24Z",
+      "arxiv_id": "2610.25544v1",
+      "abs_url": "http://arxiv.org/abs/2610.25544v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25544v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Reinforcement learning on the EPRI AI-ccelerating Unit Commitment benchmark: diagnosing over-commitment and guiding MILP with learned policies",
+      "summary_zh": "Reinforcement learning (RL) is increasingly proposed as a fast solver for unit commitment (UC), but standalone agents remain far more expensive than mixed-integer linear programming (MILP). In the first study of RL on the 51-generator, 72-hour benchmark of the Electric Power Research Institute (EPRI) AI-ccelerating Unit Commitment competition, we trace this gap to the agents' own exploration, close most of it, and show that the resulting policy can accelerate an exact solver. In every configuration tested, Proximal Policy Optimisation (PPO) and an action-branching Deep Q-Network (DQN) trained from scratch committed about twice the units of a thermal-only MILP optimum, at 39-64% higher cost, whereas a merit-order rule came within 1.6-7% (10-24% when unserved energy is priced). When each unit's decision is sampled independently, spare units insure against random de-commitments. Consistent with this, injecting exploration noise during fine-tuning enlarged a lean policy's fleet, a reward without shaping terms did not remove the over-commitment, and under their training noise the agents outperformed the rule subjected to comparable noise. Imitating the MILP solutions and fine-tuning conservatively brought PPO within 2.6% of the optimum, and these policies had the lowest penalised cost of any evaluated (about 5%). Fixing the fine-tuned policy's confident decisions made the MILP 3.8-8.5 times faster within 0.10-0.25% of the best solution, with a smaller worst case than an imitation-only policy fixing as many variables (1.1% against 8.9%). Because dispatch method and benchmark scope alone shift the reported optimality ratio by up to 3.6% and 9%, we propose a reporting protocol."
+    },
+    {
+      "title": "KPI-Aware Multimodal Anomaly Detection for 5G and Open RAN Telemetry",
+      "authors": [
+        "Chiman Salavati",
+        "Liang Wu",
+        "Kelly Wan",
+        "Mayank Darbari",
+        "Liangjie Hong"
+      ],
+      "summary": "Reliable anomaly detection is a deployment bottleneck for 5G/Open RAN observability and emerging self-optimizing 6G systems, where hundreds of heterogeneous KPIs, severe class imbalance, and strict alert budgets make purely numerical scores brittle. We present KAC, a deployment-oriented KPI-aware multimodal anomaly-detection framework that uses KPI-level residual-text alignment to turn compact operator-style summaries into a learnable feedback signal over full-KPI temporal evidence. This gives the detector broad numerical coverage like modern time-series models, while retaining the sparse KPI-specific reasoning that makes operator feedback sustainable in a future operator-facing workflow. Across public telecom telemetry, enterprise-scale Open RAN observability data, and a Nokia benchmark built from real 5G RAN production packet traces with realism-hardened injected anomalies, KAC achieves strong threshold-based detection performance while remaining competitive on threshold-free ranking metrics. On TelecomTS, at a fixed 2.5 percent false-positive-rate operating point, KAC achieves the highest recall among the evaluated residual-based methods while maintaining comparable precision; across the evaluated benchmarks, it remains robust under substantial class imbalance. KAC is integrated in pre-production shadow mode with Nokia's GKE-based KPI construction pipeline, where it continuously scores telemetry windows alongside an internal packet-level anomaly detector for operational evaluation.",
+      "published": "2026-10-18T19:59:20Z",
+      "updated": "2026-10-18T19:59:20Z",
+      "arxiv_id": "2610.25510v1",
+      "abs_url": "http://arxiv.org/abs/2610.25510v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25510v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Accepted at the IEEE ICDM 2026 Applied Research Track",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 4,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "robust",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "KPI-Aware Multimodal Anomaly Detection for 5G and Open RAN Telemetry",
+      "summary_zh": "Reliable anomaly detection is a deployment bottleneck for 5G/Open RAN observability and emerging self-optimizing 6G systems, where hundreds of heterogeneous KPIs, severe class imbalance, and strict alert budgets make purely numerical scores brittle. We present KAC, a deployment-oriented KPI-aware multimodal anomaly-detection framework that uses KPI-level residual-text alignment to turn compact operator-style summaries into a learnable feedback signal over full-KPI temporal evidence. This gives the detector broad numerical coverage like modern time-series models, while retaining the sparse KPI-specific reasoning that makes operator feedback sustainable in a future operator-facing workflow. Across public telecom telemetry, enterprise-scale Open RAN observability data, and a Nokia benchmark built from real 5G RAN production packet traces with realism-hardened injected anomalies, KAC achieves strong threshold-based detection performance while remaining competitive on threshold-free ranking metrics. On TelecomTS, at a fixed 2.5 percent false-positive-rate operating point, KAC achieves the highest recall among the evaluated residual-based methods while maintaining comparable precision; across the evaluated benchmarks, it remains robust under substantial class imbalance. KAC is integrated in pre-production shadow mode with Nokia's GKE-based KPI construction pipeline, where it continuously scores telemetry windows alongside an internal packet-level anomaly detector for operational evaluation."
+    },
+    {
+      "title": "Preserving the Manifold: Frozen Expert Alignment for Label-Efficient SAR Scene Understanding",
+      "authors": [
+        "Eli A. Underwood",
+        "I. Taylor McKechnie",
+        "Leslie M. Collins"
+      ],
+      "summary": "Cross-modal alignment of synthetic aperture radar (SAR) imagery to natural language is constrained by two distinct failures. The first is modality mismatch: text encoders pre-trained on optical imagery, such as CLIP, cannot be efficiently fine-tuned on SAR, because active microwave backscatter is physically incompatible with passive optical reflectance and the available SAR caption datasets are orders of magnitude too small to bridge this gap without substantially degrading the learned semantic manifold. The second is physical forgetting: SAR encoders pre-trained on large-scale self-supervised objectives encode radar physics that are progressively erased when the encoder is fine-tuned for text alignment on limited caption data. A single design principle addresses both failures: keep both encoders frozen and learn only a constrained, structure-preserving bridge. Our Frozen Expert framework aligns a frozen CROMA SAR encoder with a frozen CLIP text encoder via a lightweight constrained residual bridge. We formally define physical forgetting via Procrustes disparity and show our bridge preserves SAR geometry significantly better than fine-tuning (disparity: 0.210 vs. 0.351). We validate generality across multiple SAR backbones and text encoders. On zero-shot SAR scene classification, our approach outperforms fine-tuned baselines using up to 8x less training data: DFC2020 (+10.3% R@1, +15.5% mAP), EuroSAT-SAR (+15.7% R@1, +12.2% mAP), BigEarthNet-MM (+14.7% R@1). These results establish frozen manifold alignment as a principled, data-efficient alternative to fine-tuning in high-disparity cross-modal settings.",
+      "published": "2026-10-18T17:43:57Z",
+      "updated": "2026-10-18T17:43:57Z",
+      "arxiv_id": "2610.25429v1",
+      "abs_url": "http://arxiv.org/abs/2610.25429v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25429v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "10 pages. A shorter version of this work was presented at the ECCV 2026 Workshop TerraBytes II: Towards Global Datasets and Models for Earth Observation (non-archival)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "场景分类",
+        "图像描述与视觉推理",
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "多模态融合",
+        "光学遥感",
+        "SAR遥感",
+        "数据集/评测"
+      ],
+      "topic": "场景分类",
+      "score": 19,
+      "anchor_terms": [
+        "BigEarthNet",
+        "CLIP",
+        "earth observation",
+        "SAR",
+        "scene classification",
+        "synthetic aperture radar"
+      ],
+      "matched_terms": [
+        "BigEarthNet",
+        "CLIP",
+        "earth observation",
+        "EuroSAT",
+        "fine-tuning",
+        "SAR",
+        "scene classification",
+        "self-supervised",
+        "synthetic aperture radar",
+        "zero-shot"
+      ],
+      "title_zh": "Preserving the Manifold: Frozen Expert Alignment for Label-Efficient SAR Scene Understanding",
+      "summary_zh": "Cross-modal alignment of synthetic aperture radar (SAR) imagery to natural language is constrained by two distinct failures. The first is modality mismatch: text encoders pre-trained on optical imagery, such as CLIP, cannot be efficiently fine-tuned on SAR, because active microwave backscatter is physically incompatible with passive optical reflectance and the available SAR caption datasets are orders of magnitude too small to bridge this gap without substantially degrading the learned semantic manifold. The second is physical forgetting: SAR encoders pre-trained on large-scale self-supervised objectives encode radar physics that are progressively erased when the encoder is fine-tuned for text alignment on limited caption data. A single design principle addresses both failures: keep both encoders frozen and learn only a constrained, structure-preserving bridge. Our Frozen Expert framework aligns a frozen CROMA SAR encoder with a frozen CLIP text encoder via a lightweight constrained residual bridge. We formally define physical forgetting via Procrustes disparity and show our bridge preserves SAR geometry significantly better than fine-tuning (disparity: 0.210 vs. 0.351). We validate generality across multiple SAR backbones and text encoders. On zero-shot SAR scene classification, our approach outperforms fine-tuned baselines using up to 8x less training data: DFC2020 (+10.3% R@1, +15.5% mAP), EuroSAT-SAR (+15.7% R@1, +12.2% mAP), BigEarthNet-MM (+14.7% R@1). These results establish frozen manifold alignment as a principled, data-efficient alternative to fine-tuning in high-disparity cross-modal settings."
+    },
+    {
+      "title": "Aligning Language Models with Indigenous Community Cosmovision through Constitutional AI",
+      "authors": [
+        "Silvia Fernández-Sabido",
+        "Jorge Reyes-Magaña",
+        "Jesús Adrián Chay Tun",
+        "Jean Carlos Buenfil",
+        "Victor González Nahuat",
+        "Francisco Morales"
+      ],
+      "summary": "Large language models (LLMs) are predominantly trained on corpora that reflect Western, anglophone worldviews. This asymmetry is not neutral: when a model answers questions about territory, community authority, or the relationship with nature, it does so from assumptions that may be alien to the communities using the system. This paper presents a system for aligning language models with the ethical principles of Indigenous communities in Latin America. Drawing on interviews with five Indigenous leaders and defenders, we built an operational cultural constitution grounded in an Indigenous cosmovision, with 12 principles. On this basis, we implemented a Constitutional AI (CAI) pipeline in two phases: supervised fine-tuning (SFT) and direct preference optimization (DPO). The base models were Qwen2.5-7B-Instruct and Qwen2.5-1.5B-Instruct. With only 24 preference pairs, improvements were modest but detectable in intergenerational transmission, linguistic caution, and consultation and consent. Qualitative analysis reveals that the SFT phase was responsible for the primary shift in alignment, while DPO refined specific categories. The system was deployed in a conversational interface with retrieval-augmented generation (RAG) that allows communities to feed the knowledge base, turning alignment into a participatory cycle. We argue the architecture is functional and will scale qualitatively once the corpus is expanded and computing constraints are resolved. The work constitutes a first iteration of an epistemic justice mechanism for value alignment in the Global South.",
+      "published": "2026-10-18T14:31:59Z",
+      "updated": "2026-10-18T14:31:59Z",
+      "arxiv_id": "2610.25298v1",
+      "abs_url": "http://arxiv.org/abs/2610.25298v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25298v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "comment": "In preparation for the Dossier \"Linguistics in AI and AI in Linguistics\" of the journal TextoLivre",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "光学遥感",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 3,
+      "anchor_terms": [
+        "WorldView"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "large language model",
+        "WorldView"
+      ],
+      "title_zh": "Aligning Language Models with Indigenous Community Cosmovision through Constitutional AI",
+      "summary_zh": "Large language models (LLMs) are predominantly trained on corpora that reflect Western, anglophone worldviews. This asymmetry is not neutral: when a model answers questions about territory, community authority, or the relationship with nature, it does so from assumptions that may be alien to the communities using the system. This paper presents a system for aligning language models with the ethical principles of Indigenous communities in Latin America. Drawing on interviews with five Indigenous leaders and defenders, we built an operational cultural constitution grounded in an Indigenous cosmovision, with 12 principles. On this basis, we implemented a Constitutional AI (CAI) pipeline in two phases: supervised fine-tuning (SFT) and direct preference optimization (DPO). The base models were Qwen2.5-7B-Instruct and Qwen2.5-1.5B-Instruct. With only 24 preference pairs, improvements were modest but detectable in intergenerational transmission, linguistic caution, and consultation and consent. Qualitative analysis reveals that the SFT phase was responsible for the primary shift in alignment, while DPO refined specific categories. The system was deployed in a conversational interface with retrieval-augmented generation (RAG) that allows communities to feed the knowledge base, turning alignment into a participatory cycle. We argue the architecture is functional and will scale qualitatively once the corpus is expanded and computing constraints are resolved. The work constitutes a first iteration of an epistemic justice mechanism for value alignment in the Global South."
+    },
+    {
+      "title": "Emergent Sparsity: How Many Effective Variables Survive Coarse-Graining in AlphaEarth Embeddings?",
+      "authors": [
+        "Johannes Hirn"
+      ],
+      "summary": "AlphaEarth encodes each 10 m land pixel as a 64-component vector intended to support diverse global mapping tasks. Yet many scientific applications work at coarser spatial supports, for which fewer than 64 effective variables may suffice. We ask whether these vectors can be reorganized into ranked global nonlinear coordinates, how many suffice at a chosen reconstruction accuracy, and whether that number decreases with spatial scale. We thus describe effective dimension as a two-control surface over tolerance and spatial scale, rather than one intrinsic number. At each scale, a $β$-VAE scan with a common architecture produces a rank--distortion envelope, giving the smallest retained count achieved within the scanned family at each reconstruction tolerance. At 3% validation tolerance, this number falls from 24 to 7 when the scale is increased from 10 m to 78.9 km, whereas the corresponding PCA rank falls only from 46 to 38. Repeating the analysis on unit-norm targets preserves this trend.",
+      "published": "2026-10-18T13:24:23Z",
+      "updated": "2026-10-18T13:24:23Z",
+      "arxiv_id": "2610.25258v1",
+      "abs_url": "http://arxiv.org/abs/2610.25258v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25258v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cond-mat.stat-mech",
+        "physics.geo-ph"
+      ],
+      "comment": "Camera-ready version of a paper accepted at the 2nd Workshop on Advances in Representation Learning for Earth Observation (REO), NeurIPS 2026. 20 pages, 15 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 2,
+      "anchor_terms": [
+        "earth observation"
+      ],
+      "matched_terms": [
+        "earth observation"
+      ],
+      "title_zh": "Emergent Sparsity: How Many Effective Variables Survive Coarse-Graining in AlphaEarth Embeddings?",
+      "summary_zh": "AlphaEarth encodes each 10 m land pixel as a 64-component vector intended to support diverse global mapping tasks. Yet many scientific applications work at coarser spatial supports, for which fewer than 64 effective variables may suffice. We ask whether these vectors can be reorganized into ranked global nonlinear coordinates, how many suffice at a chosen reconstruction accuracy, and whether that number decreases with spatial scale. We thus describe effective dimension as a two-control surface over tolerance and spatial scale, rather than one intrinsic number. At each scale, a $β$-VAE scan with a common architecture produces a rank--distortion envelope, giving the smallest retained count achieved within the scanned family at each reconstruction tolerance. At 3% validation tolerance, this number falls from 24 to 7 when the scale is increased from 10 m to 78.9 km, whereas the corresponding PCA rank falls only from 46 to 38. Repeating the analysis on unit-norm targets preserves this trend."
+    },
+    {
+      "title": "BatchParScale: Sparse Batch-Mixing for Sequence Models",
+      "authors": [
+        "Hans Peter Lyngsøe Raaschou-jensen",
+        "M. Onurcan Kaya",
+        "Desmond Elliott"
+      ],
+      "summary": "Recent test-time scaling methods improve model performance by increasing inference-time compute. One practical form of this is parallel scaling, where a model samples multiple independent reasoning streams and aggregates their answers using methods like voting, reranking, or verification. While effective, this approach leaves the streams uncoordinated, and a discovery made in one rollout cannot influence any other. Multi-Sequence Verifiers jointly score candidate answers after generation, but the reasoning streams remain independent during inference. ParScale takes a step toward model-internal parallel scaling by learning to aggregate multiple forward passes, but its streams still do not exchange information while processing a sequence. We introduce BatchParScale, an attention mechanism that allows parallel streams to exchange information through a small set of communication positions. We evaluate BatchParScale on a new Parallel Needle-in-a-Haystack retrieval benchmark and in pretraining, fine-tuning, and cooperative multi-agent reinforcement learning. Across these settings, BatchParScale outperforms ParScale on language-model loss and remains competitive on coordination-sensitive MARL tasks. Masked pretraining runs beat an unmasked single-sequence baseline despite local sequence corruption, and LoRA fine-tuning shows the mechanism can be added to a pretrained Transformer. At the same time, fact retrieval performance for pretrained and finetuned BatchParScale models remains unclear.",
+      "published": "2026-10-18T13:14:40Z",
+      "updated": "2026-10-18T13:14:40Z",
+      "arxiv_id": "2610.25254v1",
+      "abs_url": "http://arxiv.org/abs/2610.25254v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25254v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "19 pages, 10 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "attention mechanism",
+        "fine-tuning",
+        "LoRA",
+        "transformer"
+      ],
+      "title_zh": "BatchParScale: Sparse Batch-Mixing for Sequence Models",
+      "summary_zh": "Recent test-time scaling methods improve model performance by increasing inference-time compute. One practical form of this is parallel scaling, where a model samples multiple independent reasoning streams and aggregates their answers using methods like voting, reranking, or verification. While effective, this approach leaves the streams uncoordinated, and a discovery made in one rollout cannot influence any other. Multi-Sequence Verifiers jointly score candidate answers after generation, but the reasoning streams remain independent during inference. ParScale takes a step toward model-internal parallel scaling by learning to aggregate multiple forward passes, but its streams still do not exchange information while processing a sequence. We introduce BatchParScale, an attention mechanism that allows parallel streams to exchange information through a small set of communication positions. We evaluate BatchParScale on a new Parallel Needle-in-a-Haystack retrieval benchmark and in pretraining, fine-tuning, and cooperative multi-agent reinforcement learning. Across these settings, BatchParScale outperforms ParScale on language-model loss and remains competitive on coordination-sensitive MARL tasks. Masked pretraining runs beat an unmasked single-sequence baseline despite local sequence corruption, and LoRA fine-tuning shows the mechanism can be added to a pretrained Transformer. At the same time, fact retrieval performance for pretrained and finetuned BatchParScale models remains unclear."
+    },
+    {
+      "title": "DROD: Dual-Ratio Ordered Dropout for Federated Continual Learning on Heterogeneous Devices",
+      "authors": [
+        "Berk Sezer",
+        "Özgür Soysal"
+      ],
+      "summary": "Federated learning for capacity-heterogeneous clients and federated continual learning are each well studied on their own, but their intersection -- clients holding differently sized models while every client's data stream also drifts over time -- remains underexplored. We study this setting directly, training a ResNet-18 fleet from scratch on Split-CIFAR-100 (10 tasks, class-incremental), and introduce DROD (Dual-Ratio Ordered Dropout), which builds on FjORD's Ordered Dropout by using two independent reduction axes to extract sub-models: a shortcut ratio and a branch ratio. On a shared parameter/FLOP budget ladder, DROD achieves the highest mean accuracy among the heterogeneous-model federated learning strategies we compare. Its advantage over the two strongest baseline geometries persists across every replay-buffer size we test and under ER, DER++, and BiC; under EWC, all three geometries collapse alike.",
+      "published": "2026-10-18T12:27:34Z",
+      "updated": "2026-10-18T12:27:34Z",
+      "arxiv_id": "2610.25220v1",
+      "abs_url": "http://arxiv.org/abs/2610.25220v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25220v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "comment": "18 pages",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 3,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "class-incremental",
+        "continual learning"
+      ],
+      "title_zh": "DROD: Dual-Ratio Ordered Dropout for Federated Continual Learning on Heterogeneous Devices",
+      "summary_zh": "Federated learning for capacity-heterogeneous clients and federated continual learning are each well studied on their own, but their intersection -- clients holding differently sized models while every client's data stream also drifts over time -- remains underexplored. We study this setting directly, training a ResNet-18 fleet from scratch on Split-CIFAR-100 (10 tasks, class-incremental), and introduce DROD (Dual-Ratio Ordered Dropout), which builds on FjORD's Ordered Dropout by using two independent reduction axes to extract sub-models: a shortcut ratio and a branch ratio. On a shared parameter/FLOP budget ladder, DROD achieves the highest mean accuracy among the heterogeneous-model federated learning strategies we compare. Its advantage over the two strongest baseline geometries persists across every replay-buffer size we test and under ER, DER++, and BiC; under EWC, all three geometries collapse alike."
+    },
+    {
+      "title": "Learning without Overwriting: Structural Knowledge Fusion for Continual Learning",
+      "authors": [
+        "Kanishk Bakshi",
+        "Amitansu Pattanaik",
+        "Kathiravan Srinivasan"
+      ],
+      "summary": "Catastrophic forgetting in sequential deep learning arises from a fixed-capacity architectural constraint: parameter updates encoding new tasks perturb weight subspaces supporting prior representations. We introduce the Knowledge Fusion Network (KFN), which mitigates the stability-plasticity trade-off in class-incremental learning through novelty-gated structural expansion rather than parameter negotiation within a shared capacity budget. KFN decouples task acquisition from knowledge consolidation: each incoming task is learned in an isolated lightweight specialist network (2.8M parameters) and integrated into the global model via a Structural Fusion Module that allocates dedicated channel capacity conditioned on a quantitative novelty score. Dual structural isolation--channel-space separation with temporally phased gradient unfreezing--protects consolidated knowledge. On ten-task Split CIFAR-100, KFN achieves 11.94% minimum task accuracy and 71.16% task-10 accuracy, whereas shared-parameter baselines degrade severely: LwF to 9.07% average accuracy (0.00% min), Replay++ to 8.91% (85.08% forgetting), and Replay to 16.21% (73.44% forgetting); KFN's forgetting (57.92%) is 15.5 pp lower than Replay. Furthermore, KFN prevents logit-scale drift, maintaining near-symmetric task performance. Across CIFAR-100 and EuroSAT satellite imagery, KFN's class-incremental retention (72.7% and 42.5%) substantially exceeds the best baselines (29.6% and 0.94%). Crucially, KFN achieves parameter-efficient linear scaling, adding 25% of the base parameter count per step and requiring 25.1% of naive backbone duplication over ten tasks (28.1M vs 112.0M). With a 37.1% peak GPU memory reduction over full retraining, KFN establishes novelty-gated expansion as a practical path beyond fixed-capacity architectures.",
+      "published": "2026-10-18T10:07:15Z",
+      "updated": "2026-10-18T10:07:15Z",
+      "arxiv_id": "2610.25150v1",
+      "abs_url": "http://arxiv.org/abs/2610.25150v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25150v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "20 pages, 7 figures, preprint",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "场景分类",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "场景分类",
+      "score": 11,
+      "anchor_terms": [
+        "continual learning",
+        "satellite image",
+        "satellite imagery",
+        "temporal"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "class-incremental",
+        "continual learning",
+        "EuroSAT",
+        "incremental learning",
+        "satellite",
+        "satellite image",
+        "satellite imagery",
+        "temporal"
+      ],
+      "title_zh": "Learning without Overwriting: Structural Knowledge Fusion for Continual Learning",
+      "summary_zh": "Catastrophic forgetting in sequential deep learning arises from a fixed-capacity architectural constraint: parameter updates encoding new tasks perturb weight subspaces supporting prior representations. We introduce the Knowledge Fusion Network (KFN), which mitigates the stability-plasticity trade-off in class-incremental learning through novelty-gated structural expansion rather than parameter negotiation within a shared capacity budget. KFN decouples task acquisition from knowledge consolidation: each incoming task is learned in an isolated lightweight specialist network (2.8M parameters) and integrated into the global model via a Structural Fusion Module that allocates dedicated channel capacity conditioned on a quantitative novelty score. Dual structural isolation--channel-space separation with temporally phased gradient unfreezing--protects consolidated knowledge. On ten-task Split CIFAR-100, KFN achieves 11.94% minimum task accuracy and 71.16% task-10 accuracy, whereas shared-parameter baselines degrade severely: LwF to 9.07% average accuracy (0.00% min), Replay++ to 8.91% (85.08% forgetting), and Replay to 16.21% (73.44% forgetting); KFN's forgetting (57.92%) is 15.5 pp lower than Replay. Furthermore, KFN prevents logit-scale drift, maintaining near-symmetric task performance. Across CIFAR-100 and EuroSAT satellite imagery, KFN's class-incremental retention (72.7% and 42.5%) substantially exceeds the best baselines (29.6% and 0.94%). Crucially, KFN achieves parameter-efficient linear scaling, adding 25% of the base parameter count per step and requiring 25.1% of naive backbone duplication over ten tasks (28.1M vs 112.0M). With a 37.1% peak GPU memory reduction over full retraining, KFN establishes novelty-gated expansion as a practical path beyond fixed-capacity architectures."
+    },
+    {
+      "title": "Reflection-Guided Dynamics Rectification for Text-to-Image Generation",
+      "authors": [
+        "Shuo Xu",
+        "Hanrui Ying",
+        "Debin Liu",
+        "Jianjun Li",
+        "Zhiyuan Ma"
+      ],
+      "summary": "Fine-grained rectification of existing generations under a limited additional budget remains a key problem in test-time optimization (TTO) for image generation. As for prior approaches, they could identify residual errors, but could not directly ensure that the model acts on the feedback during reasoning. Such errors stem from multiple sources, such as the initial noise or text prompt, and ultimately induce an execution gap of failing to handle potential deviations along the trajectory generating. However, classic models generally cannot remedy this gap. To narrow it, we propose Reflection-Guided Dynamics Rectification (RGDR), which turns reflections on completed outputs into corrective interventions on the process of sampling dynamics at the trajectory level. Specifically, RGDR could impact every sampling step by adapting to instantaneous intervention. Moreover, RGDR generates flexible candidates while adjudicating between them and the reference. As experiments show, rectification from RGDR starts from the existing base trajectory and reflection, and RGDR is substantially more effective than former trajectory exploration. Under matched budgets for additional image generation, RGDR's gain in the cross-model average final checklist score over the reference is $1.51\\times$ that of TIR prompt refinement and $1.81\\times$ that of Dynamic CFG.",
+      "published": "2026-10-18T09:47:08Z",
+      "updated": "2026-10-18T09:47:08Z",
+      "arxiv_id": "2610.25139v1",
+      "abs_url": "http://arxiv.org/abs/2610.25139v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25139v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "This paper is 20 pages long, including the appendices, and contains 10 figures. Interactive demos, code, and the dataset are available on the project page: https://mair-lab-hust.github.io/RGDR/",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 4,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation",
+        "LoRA"
+      ],
+      "title_zh": "Reflection-Guided Dynamics Rectification for Text-to-Image Generation",
+      "summary_zh": "Fine-grained rectification of existing generations under a limited additional budget remains a key problem in test-time optimization (TTO) for image generation. As for prior approaches, they could identify residual errors, but could not directly ensure that the model acts on the feedback during reasoning. Such errors stem from multiple sources, such as the initial noise or text prompt, and ultimately induce an execution gap of failing to handle potential deviations along the trajectory generating. However, classic models generally cannot remedy this gap. To narrow it, we propose Reflection-Guided Dynamics Rectification (RGDR), which turns reflections on completed outputs into corrective interventions on the process of sampling dynamics at the trajectory level. Specifically, RGDR could impact every sampling step by adapting to instantaneous intervention. Moreover, RGDR generates flexible candidates while adjudicating between them and the reference. As experiments show, rectification from RGDR starts from the existing base trajectory and reflection, and RGDR is substantially more effective than former trajectory exploration. Under matched budgets for additional image generation, RGDR's gain in the cross-model average final checklist score over the reference is $1.51\\times$ that of TIR prompt refinement and $1.81\\times$ that of Dynamic CFG."
+    },
+    {
+      "title": "LC-TSRNet: A Land-Cover-Guided Two-Stage Network for Annual MODIS Surface Reflectance Time Series Reconstruction",
+      "authors": [
+        "Wenjuan Zhang",
+        "Xuesong Ma",
+        "Zhen Li",
+        "Meixiang Wang",
+        "Caimeng Yi",
+        "Jie Pan",
+        "Nan Su",
+        "Bing Zhang"
+      ],
+      "summary": "MODIS surface reflectance (SR) products often suffer from data gaps due to cloud contamination and sensor malfunctions, limiting their applications in long-term and large-scale studies. Most existing methods rely on cloud-free observations from optical time series or introduce SAR time series as auxiliary information. However, due to the coarse spatial resolution of MODIS, cloud-free reference images are difficult to obtain, and SAR imagery is not well matched to the spatial resolution of MODIS, making it difficult to provide effective prior constraints. To address these issues, this study proposes LC-TSRNet for seamless reconstruction of annual MODIS SR products. In the first stage, an annual land cover map is introduced as prior knowledge, and CSPM is designed by leveraging the spectral similarity within identical land cover types, thereby providing prior spectral constraints for missing regions. In the second stage, to address large-area, persistent, and overlapping gaps in MODIS imagery, SMRM is designed to adaptively exploit and integrate multi-scale spatiotemporal contextual information. Meanwhile, to address the limited collaborative utilization of spatio-temporal-spectral information, 3DAM is designed to impose cross-dimensional joint constraints. Considering the lack of publicly available MODIS sample datasets, this study constructs the AIRMOD-TSR dataset. Extensive experimental results show that LC-TSRNet outperforms the comparison methods and achieves better reconstruction accuracy and spectral fidelity. Under the spatially adjacent scenario, LC-TSRNet improves PSNR by 0.56 dB and reduces SAM by 0.13°. The vegetation monitoring application further verifies the practical value of the reconstructed SR time series.",
+      "published": "2026-10-18T08:56:45Z",
+      "updated": "2026-10-18T08:56:45Z",
+      "arxiv_id": "2610.25120v1",
+      "abs_url": "http://arxiv.org/abs/2610.25120v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25120v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "实例分割",
+        "视觉-语言模型",
+        "SAR遥感",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 7,
+      "anchor_terms": [
+        "MODIS imagery",
+        "SAM",
+        "SAR",
+        "SAR image",
+        "SAR imagery",
+        "time series"
+      ],
+      "matched_terms": [
+        "land cover",
+        "MODIS",
+        "MODIS imagery",
+        "multi-scale",
+        "SAM",
+        "SAR",
+        "SAR image",
+        "SAR imagery",
+        "time series"
+      ],
+      "title_zh": "LC-TSRNet: A Land-Cover-Guided Two-Stage Network for Annual MODIS Surface Reflectance Time Series Reconstruction",
+      "summary_zh": "MODIS surface reflectance (SR) products often suffer from data gaps due to cloud contamination and sensor malfunctions, limiting their applications in long-term and large-scale studies. Most existing methods rely on cloud-free observations from optical time series or introduce SAR time series as auxiliary information. However, due to the coarse spatial resolution of MODIS, cloud-free reference images are difficult to obtain, and SAR imagery is not well matched to the spatial resolution of MODIS, making it difficult to provide effective prior constraints. To address these issues, this study proposes LC-TSRNet for seamless reconstruction of annual MODIS SR products. In the first stage, an annual land cover map is introduced as prior knowledge, and CSPM is designed by leveraging the spectral similarity within identical land cover types, thereby providing prior spectral constraints for missing regions. In the second stage, to address large-area, persistent, and overlapping gaps in MODIS imagery, SMRM is designed to adaptively exploit and integrate multi-scale spatiotemporal contextual information. Meanwhile, to address the limited collaborative utilization of spatio-temporal-spectral information, 3DAM is designed to impose cross-dimensional joint constraints. Considering the lack of publicly available MODIS sample datasets, this study constructs the AIRMOD-TSR dataset. Extensive experimental results show that LC-TSRNet outperforms the comparison methods and achieves better reconstruction accuracy and spectral fidelity. Under the spatially adjacent scenario, LC-TSRNet improves PSNR by 0.56 dB and reduces SAM by 0.13°. The vegetation monitoring application further verifies the practical value of the reconstructed SR time series."
+    },
+    {
+      "title": "PACT: NVFP4 Data-Flow LoRA Fine-Tuning on Consumer GPUs",
+      "authors": [
+        "Lei Gao",
+        "Hossein Entezari Zarch",
+        "Chaoyi Jiang",
+        "Murali Annavaram"
+      ],
+      "summary": "Fine-tuning language models on consumer GPUs is constrained by computation and memory. Although LoRA reduces trainable parameters and optimizer state, frozen projections remain expensive, and activations retained for backward can dominate memory usage. We present PACT, a LoRA fine-tuning system that accelerates frozen projections with native NVFP4 GEMMs while reducing quantization and dequantization overhead and limiting quantization error. To reduce activation memory, PACT reuses quantized RMSNorm outputs and saves gate/up activations in NVFP4 for backward. To limit numerical error, it preserves BF16 inputs for forward nonlinear operations and calibrates frozen weights offline using GPTQ adapted to NVFP4 scales and quantized activations. Fused nonlinear kernels and cached forward and backward weight layouts reduce quantization and dequantization overhead. Evaluations across multiple models and tasks on a 16\\,GB RTX~5080 show lower memory usage and faster LoRA fine-tuning with competitive accuracy, enabling model adaptation on resource-constrained consumer hardware.",
+      "published": "2026-10-18T06:14:14Z",
+      "updated": "2026-10-18T06:14:14Z",
+      "arxiv_id": "2610.25048v1",
+      "abs_url": "http://arxiv.org/abs/2610.25048v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25048v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "PACT: NVFP4 Data-Flow LoRA Fine-Tuning on Consumer GPUs",
+      "summary_zh": "Fine-tuning language models on consumer GPUs is constrained by computation and memory. Although LoRA reduces trainable parameters and optimizer state, frozen projections remain expensive, and activations retained for backward can dominate memory usage. We present PACT, a LoRA fine-tuning system that accelerates frozen projections with native NVFP4 GEMMs while reducing quantization and dequantization overhead and limiting quantization error. To reduce activation memory, PACT reuses quantized RMSNorm outputs and saves gate/up activations in NVFP4 for backward. To limit numerical error, it preserves BF16 inputs for forward nonlinear operations and calibrates frozen weights offline using GPTQ adapted to NVFP4 scales and quantized activations. Fused nonlinear kernels and cached forward and backward weight layouts reduce quantization and dequantization overhead. Evaluations across multiple models and tasks on a 16\\,GB RTX~5080 show lower memory usage and faster LoRA fine-tuning with competitive accuracy, enabling model adaptation on resource-constrained consumer hardware."
+    },
+    {
+      "title": "MultiAltitudeSR: Multi-Altitude Agricultural UAV Image Super-Resolution via Physical Ground Sampling Distance Conditioning",
+      "authors": [
+        "Xintong Jiang",
+        "Yu Tian",
+        "Yixue Liu",
+        "Valerio Hoyos-Villegas",
+        "Viacheslav Adamchuk",
+        "Shangpeng Sun"
+      ],
+      "summary": "Unmanned aerial vehicles (UAVs) enable high-throughput platforms for crop monitoring but face a fundamental trade-off between flight altitude and image spatial resolution. Many existing super-resolution (SR) methods for UAV imagery rely on oversimplified synthetic degradation models and are restricted to fixed integer upsampling scales, limiting their ability to handle real-world degradations and varying flight altitudes. This study proposes MultiAltitudeSR, a framework that conditions feature modulation and reconstruction on source and target ground sampling distances (GSDs). MultiAltitudeSR trained jointly on real UAV images at altitudes of 10 to 70 m above ground level supports all 21 source-to-target altitude pairs without pair-specific fine-tuning, covering scale factors ranging from 1.18$\\times$ to 6.03$\\times$. The framework can be extended to additional source-target GSD combinations by incorporating corresponding image pairs into training. On the 20-to-10 m pair, the model achieved competitive perceptual performance compared with pair-specific baselines, with LPIPS of 0.2236, DISTS of 0.2431, and NIQE of 8.9020. Experiments using the same architecture demonstrated the value of acquiring real-world multi-altitude UAV image pairs for SR training, with real-pair training achieving better average reconstruction performance across the 21 altitude pairs than training with the tested synthetic degradation pipeline. Downstream zero-shot segmentation case studies illustrated task-dependent benefits of super-resolved imagery for crop monitoring, suggesting potential UAV flight-time savings through image acquisition at higher altitudes.",
+      "published": "2026-10-18T03:51:58Z",
+      "updated": "2026-10-18T03:51:58Z",
+      "arxiv_id": "2610.24992v1",
+      "abs_url": "http://arxiv.org/abs/2610.24992v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.24992v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "27 pages, 12 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "开放词汇与开放集",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "无人机/UAV"
+      ],
+      "topic": "图像生成与重建",
+      "score": 10,
+      "anchor_terms": [
+        "crop",
+        "super-resolution",
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "crop",
+        "fine-tuning",
+        "super-resolution",
+        "UAV",
+        "unmanned aerial vehicle",
+        "zero-shot"
+      ],
+      "title_zh": "MultiAltitudeSR: Multi-Altitude Agricultural UAV Image Super-Resolution via Physical Ground Sampling Distance Conditioning",
+      "summary_zh": "Unmanned aerial vehicles (UAVs) enable high-throughput platforms for crop monitoring but face a fundamental trade-off between flight altitude and image spatial resolution. Many existing super-resolution (SR) methods for UAV imagery rely on oversimplified synthetic degradation models and are restricted to fixed integer upsampling scales, limiting their ability to handle real-world degradations and varying flight altitudes. This study proposes MultiAltitudeSR, a framework that conditions feature modulation and reconstruction on source and target ground sampling distances (GSDs). MultiAltitudeSR trained jointly on real UAV images at altitudes of 10 to 70 m above ground level supports all 21 source-to-target altitude pairs without pair-specific fine-tuning, covering scale factors ranging from 1.18$\\times$ to 6.03$\\times$. The framework can be extended to additional source-target GSD combinations by incorporating corresponding image pairs into training. On the 20-to-10 m pair, the model achieved competitive perceptual performance compared with pair-specific baselines, with LPIPS of 0.2236, DISTS of 0.2431, and NIQE of 8.9020. Experiments using the same architecture demonstrated the value of acquiring real-world multi-altitude UAV image pairs for SR training, with real-pair training achieving better average reconstruction performance across the 21 altitude pairs than training with the tested synthetic degradation pipeline. Downstream zero-shot segmentation case studies illustrated task-dependent benefits of super-resolved imagery for crop monitoring, suggesting potential UAV flight-time savings through image acquisition at higher altitudes."
+    },
+    {
+      "title": "ATLAS: Expert-Guided Sustainable Satellite Backhaul for Off-Grid Wildlife Monitoring",
+      "authors": [
+        "Hao Fang",
+        "Miao Zhang",
+        "Haoyuan Zhao",
+        "Long Chen",
+        "Yi Ching Chou",
+        "Chi Xu",
+        "Cheng Pan",
+        "Jiangchuan Liu"
+      ],
+      "summary": "Remote wildlife monitoring increasingly depends on high-fidelity cameras and sensors deployed far from grid power and terrestrial networks. Low Earth orbit satellite links can provide connectivity in these settings, but their high power draw and variable bandwidth, combined with intermittent on-site solar harvesting, make continuous backhaul infeasible. Current systems therefore filter at the edge, with motion triggers that waste limited energy and bandwidth on environmental artifacts, or fixed vision models that cannot follow evolving expert objectives. We present \\textsc{ATLAS}, an expert-guided edge-to-cloud system that treats satellite backhaul as a scarce resource for off-grid wildlife monitoring. \\textsc{ATLAS} uses foundation models to compile natural-language expert intent into semantic scoring logic, combines semantic relevance with environmental and energy state, and uses a constrained reinforcement-learning scheduler to decide which clips to upload and when. As a representative case study, we deployed \\textsc{ATLAS} for over six months across 18 off-grid salmon-monitoring river sites. \\textsc{ATLAS} achieves a mean clip-selection accuracy of $87.4\\%$, exceeding mean baseline accuracy by $26.4$ percentage points, while maintaining near-continuous operation through low-solar periods in which baselines incur 16.0\\% downtime.",
+      "published": "2026-10-17T23:12:21Z",
+      "updated": "2026-10-17T23:12:21Z",
+      "arxiv_id": "2610.24910v1",
+      "abs_url": "http://arxiv.org/abs/2610.24910v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.24910v1",
+      "primary_category": "eess.SY",
+      "categories": [
+        "eess.SY",
+        "cs.LG"
+      ],
+      "comment": "Accepted at the ACM SIGOPS Annual Technical Conference (ATC 2026)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "CLIP",
+        "foundation model"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "foundation model",
+        "satellite"
+      ],
+      "title_zh": "ATLAS: Expert-Guided Sustainable Satellite Backhaul for Off-Grid Wildlife Monitoring",
+      "summary_zh": "Remote wildlife monitoring increasingly depends on high-fidelity cameras and sensors deployed far from grid power and terrestrial networks. Low Earth orbit satellite links can provide connectivity in these settings, but their high power draw and variable bandwidth, combined with intermittent on-site solar harvesting, make continuous backhaul infeasible. Current systems therefore filter at the edge, with motion triggers that waste limited energy and bandwidth on environmental artifacts, or fixed vision models that cannot follow evolving expert objectives. We present \\textsc{ATLAS}, an expert-guided edge-to-cloud system that treats satellite backhaul as a scarce resource for off-grid wildlife monitoring. \\textsc{ATLAS} uses foundation models to compile natural-language expert intent into semantic scoring logic, combines semantic relevance with environmental and energy state, and uses a constrained reinforcement-learning scheduler to decide which clips to upload and when. As a representative case study, we deployed \\textsc{ATLAS} for over six months across 18 off-grid salmon-monitoring river sites. \\textsc{ATLAS} achieves a mean clip-selection accuracy of $87.4\\%$, exceeding mean baseline accuracy by $26.4$ percentage points, while maintaining near-continuous operation through low-solar periods in which baselines incur 16.0\\% downtime."
+    },
+    {
+      "title": "Recurrent Temporal Restricted Boltzmann Machines as Unsupervised Encoders for Biomechanical Movement Sequences",
+      "authors": [
+        "Wafi Sharif",
+        "Nicholas LaHaye"
+      ],
+      "summary": "Biomechanical movement recordings are continuous, high-dimensional time series, and analyzing them without manually labeling them requires representations that capture how movements evolve over time. Most unsupervised representation-learning pipelines, however, treat each observation frame independently and discard this temporal structure, while energy-based models that could capture it have not extensively been adapted to biomechanical signals. So, this paper implements the Recurrent Temporal Restricted Boltzmann Machine (RTRBM), a recurrent energy-based model, into an unsupervised encoder that maps windows of movement data to fixed-length embeddings, and tests what its recurrent structure contributes. We adapt the model to continuous-valued signals, stack it into a deep architecture, and integrate it into the SIT-FUSE segmentation pipeline. We evaluate the embeddings on simulated musculoskeletal reaching and on two real gait datasets, using clustering, reconstruction, and walking-speed classification of unseen subjects, and compare them against non-recurrent and non-probabilistic baselines, including a control that removes the recurrent connection. Clustering the embeddings recovers movement structure tied to progress toward the target without any labels, which also transfers to unseen episodes. On gait data, the embeddings outperform PCA and autoencoder baselines under a nonlinear probe. However, removing the recurrent connection does not yield a measurable loss on the reaching task, and simple per-channel summary statistics classify walking speed at least as well as the embeddings. The model is therefore a working, verified encoder for SIT-FUSE, while the evidence for a benefit of recurrence is mixed, and the learned embeddings did not outperform simple summary statistics on gait.",
+      "published": "2026-10-17T19:26:14Z",
+      "updated": "2026-10-17T19:26:14Z",
+      "arxiv_id": "2610.24829v1",
+      "abs_url": "http://arxiv.org/abs/2610.24829v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.24829v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "comment": "15 pages, 7 figures, 5 tables. Under review at Transactions on Machine Learning Research (TMLR)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 2,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "unsupervised"
+      ],
+      "title_zh": "Recurrent Temporal Restricted Boltzmann Machines as Unsupervised Encoders for Biomechanical Movement Sequences",
+      "summary_zh": "Biomechanical movement recordings are continuous, high-dimensional time series, and analyzing them without manually labeling them requires representations that capture how movements evolve over time. Most unsupervised representation-learning pipelines, however, treat each observation frame independently and discard this temporal structure, while energy-based models that could capture it have not extensively been adapted to biomechanical signals. So, this paper implements the Recurrent Temporal Restricted Boltzmann Machine (RTRBM), a recurrent energy-based model, into an unsupervised encoder that maps windows of movement data to fixed-length embeddings, and tests what its recurrent structure contributes. We adapt the model to continuous-valued signals, stack it into a deep architecture, and integrate it into the SIT-FUSE segmentation pipeline. We evaluate the embeddings on simulated musculoskeletal reaching and on two real gait datasets, using clustering, reconstruction, and walking-speed classification of unseen subjects, and compare them against non-recurrent and non-probabilistic baselines, including a control that removes the recurrent connection. Clustering the embeddings recovers movement structure tied to progress toward the target without any labels, which also transfers to unseen episodes. On gait data, the embeddings outperform PCA and autoencoder baselines under a nonlinear probe. However, removing the recurrent connection does not yield a measurable loss on the reaching task, and simple per-channel summary statistics classify walking speed at least as well as the embeddings. The model is therefore a working, verified encoder for SIT-FUSE, while the evidence for a benefit of recurrence is mixed, and the learned embeddings did not outperform simple summary statistics on gait."
+    }
+  ]
+}
