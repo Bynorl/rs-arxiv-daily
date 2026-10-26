@@ -1,0 +1,1322 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T07:15:12.877447+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 31,
+  "papers": [
+    {
+      "title": "ReLEAP: Upcycling Vision Datasets through Cross-Task Unification and Semi-Supervised Annotation",
+      "authors": [
+        "Julia Simon",
+        "Daniel Steininger",
+        "Andreas Trondl"
+      ],
+      "summary": "Developing robust vision models requires large amounts of annotated data, especially for tasks involving fine-grained class distinctions under variable environmental conditions. Even in domains with numerous existing datasets, differences in annotation formats, label definitions and targeted learning tasks hinder data reuse and integration. To address this challenge, we introduce ReLEAP, a scalable Python framework for unifying heterogeneous image datasets through data-source abstraction, systematic reuse of annotations across learning tasks, and mapping of labels to a shared hierarchical taxonomy. We demonstrate its applicability in precision agriculture by integrating fifteen diverse datasets covering a broad range of plant species and annotation types. Beyond unification, ReLEAP enables systematic recycling of existing data and provides a robust foundation for learning-based annotation upcycling. Leveraging this foundation, we conduct extensive cross-dataset and fine-tuning experiments to investigate how domain-specific models trained on unified data and foundation models can be used to automatically generate higher-level annotations under unsupervised, weakly supervised and semi-supervised settings, and how dataset characteristics influence their effectiveness. Our results show that unified data access and annotation upcycling substantially expand the pool of reusable training data and annotations while improving data transparency, enabling more sustainable and resource-efficient use of existing datasets. We release the framework and trained models for academic use to support accessible and collaborative research, particularly in data-scarce and heterogeneous domains.",
+      "published": "2026-10-23T07:47:29Z",
+      "updated": "2026-10-23T07:47:29Z",
+      "arxiv_id": "2610.32289v1",
+      "abs_url": "http://arxiv.org/abs/2610.32289v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32289v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "Accepted at Asian Conference on Computer Vision (ACCV) 2026. Code and models available at https://github.com/releap-vision/releap",
+      "code_url": "https://github.com/releap-vision/releap",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "农业与生态",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 8,
+      "anchor_terms": [
+        "weakly supervised"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "foundation model",
+        "robust",
+        "semi-supervised",
+        "unsupervised",
+        "weakly supervised"
+      ],
+      "title_zh": "ReLEAP: Upcycling Vision Datasets through Cross-Task Unification and Semi-Supervised Annotation",
+      "summary_zh": "Developing robust vision models requires large amounts of annotated data, especially for tasks involving fine-grained class distinctions under variable environmental conditions. Even in domains with numerous existing datasets, differences in annotation formats, label definitions and targeted learning tasks hinder data reuse and integration. To address this challenge, we introduce ReLEAP, a scalable Python framework for unifying heterogeneous image datasets through data-source abstraction, systematic reuse of annotations across learning tasks, and mapping of labels to a shared hierarchical taxonomy. We demonstrate its applicability in precision agriculture by integrating fifteen diverse datasets covering a broad range of plant species and annotation types. Beyond unification, ReLEAP enables systematic recycling of existing data and provides a robust foundation for learning-based annotation upcycling. Leveraging this foundation, we conduct extensive cross-dataset and fine-tuning experiments to investigate how domain-specific models trained on unified data and foundation models can be used to automatically generate higher-level annotations under unsupervised, weakly supervised and semi-supervised settings, and how dataset characteristics influence their effectiveness. Our results show that unified data access and annotation upcycling substantially expand the pool of reusable training data and annotations while improving data transparency, enabling more sustainable and resource-efficient use of existing datasets. We release the framework and trained models for academic use to support accessible and collaborative research, particularly in data-scarce and heterogeneous domains."
+    },
+    {
+      "title": "Mixing Matters: Evidence Position Bias Across Sequence Mixers in Long-Context Question Answering",
+      "authors": [
+        "Aman Behera",
+        "Namit Solanki",
+        "Mehul Anand"
+      ],
+      "summary": "Long-context models often use answer-bearing evidence less effectively when it appears away from a prompt boundary. We compare this position bias across Transformer, state-space, and hybrid Mamba architectures by moving one gold document through a fixed set of nine distractors. The evaluated Transformers show a beginning advantage that the evaluated state-space models lack, while both families favor evidence near the end. A matched pure-versus-hybrid Mamba comparison points in the same direction but remains statistically uncertain. The family difference appears among models that can answer the task. Transformer primacy reappears on synthetic retrieval, where state-space ceiling prevents a family comparison. A corpus swap within one state-space architecture changes overall accuracy without a detectable change in curve shape. Prompt changes can create or nearly remove a beginning advantage. Position remains decodable across architectures even when response curves differ, and attention concentration near initial tokens covaries with beginning sensitivity in the tested Transformer family. These exploratory results show that effective context use depends on the evaluated architecture family, capability, task, and prompt, without isolating the sequence mixer as the sole cause.",
+      "published": "2026-10-22T11:54:30Z",
+      "updated": "2026-10-22T11:54:30Z",
+      "arxiv_id": "2610.31135v1",
+      "abs_url": "http://arxiv.org/abs/2610.31135v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31135v1",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "Accepted at the 2nd Workshop on Principles of Generative Modeling (PriGM), NeurIPS 2026. 9 pages. Code: https://github.com/beingamanforever/Mixing-Matters",
+      "code_url": "https://github.com/beingamanforever/Mixing-Matters",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "Mamba"
+      ],
+      "matched_terms": [
+        "LoRA",
+        "Mamba",
+        "transformer"
+      ],
+      "title_zh": "Mixing Matters: Evidence Position Bias Across Sequence Mixers in Long-Context Question Answering",
+      "summary_zh": "Long-context models often use answer-bearing evidence less effectively when it appears away from a prompt boundary. We compare this position bias across Transformer, state-space, and hybrid Mamba architectures by moving one gold document through a fixed set of nine distractors. The evaluated Transformers show a beginning advantage that the evaluated state-space models lack, while both families favor evidence near the end. A matched pure-versus-hybrid Mamba comparison points in the same direction but remains statistically uncertain. The family difference appears among models that can answer the task. Transformer primacy reappears on synthetic retrieval, where state-space ceiling prevents a family comparison. A corpus swap within one state-space architecture changes overall accuracy without a detectable change in curve shape. Prompt changes can create or nearly remove a beginning advantage. Position remains decodable across architectures even when response curves differ, and attention concentration near initial tokens covaries with beginning sensitivity in the tested Transformer family. These exploratory results show that effective context use depends on the evaluated architecture family, capability, task, and prompt, without isolating the sequence mixer as the sole cause."
+    },
+    {
+      "title": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
+      "authors": [
+        "Panagiotis Koromilas",
+        "Eleanna Vali",
+        "Diogenis Antonopoulos",
+        "Eleni Saka",
+        "Dimitris Christofis",
+        "Nikolaos Ioannis Bountos",
+        "Konstantin Klemmer",
+        "Ioannis Papoutsis",
+        "Yannis Panagakis",
+        "Mihalis A. Nicolaou"
+      ],
+      "summary": "Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of intrinsic dimension at most 2, regardless of architecture or bandwidth, which forces the contrastive loss to strictly exceed its asymptotic optimum. Empirically, joint training also collapses the encoder's embedding covariance to low rank. Although dimension-limited, current location encoders sidestep this spectral collapse by training against a frozen image encoder, which we reinterpret as a covariance regularizer that supplies a high-rank target for the location encoder to fold onto. However, extending this approach to multimodal inputs is challenging, as location encoders should simultaneously map a single location to multiple, potentially incompatible, descriptors. We identify two requirements a regularizer must satisfy for location encoding in multimodal regimes: co-alignment across modalities, since adapters alone cannot align independently pretrained encoders; and high effective rank, since the location encoder inherits its target's spectrum. We propose LoCA (Location Contrastive Alignment), a two-stage pipeline that satisfies both. Stage 1 jointly trains Sentinel-1 and Sentinel-2 encoders with contrastive learning, producing a co-aligned, high-rank multimodal target. Stage 2 freezes the image encoders and trains a location and a tabular metadata encoder as projection adapters with multi-view contrastive learning. Against five state-of-the-art encoders on 17 tasks ranging from land cover and wildfire forecasting to geophysical, socio-economic, biodiversity and climate applications, LoCA achieves the most task wins, is the only model to outperform every other on a majority of tasks, and wins 68.8% of all per-task comparisons.",
+      "published": "2026-10-23T17:01:04Z",
+      "updated": "2026-10-23T17:01:04Z",
+      "arxiv_id": "2610.32894v1",
+      "abs_url": "http://arxiv.org/abs/2610.32894v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32894v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "基础模型",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "多模态融合",
+        "SAR遥感",
+        "高光谱/多光谱"
+      ],
+      "topic": "语义分割",
+      "score": 11,
+      "anchor_terms": [
+        "earth observation",
+        "Sentinel-1",
+        "Sentinel-2"
+      ],
+      "matched_terms": [
+        "adapter",
+        "contrastive learning",
+        "earth observation",
+        "geospatial",
+        "land cover",
+        "Sentinel-1",
+        "Sentinel-2"
+      ],
+      "title_zh": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
+      "summary_zh": "Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of intrinsic dimension at most 2, regardless of architecture or bandwidth, which forces the contrastive loss to strictly exceed its asymptotic optimum. Empirically, joint training also collapses the encoder's embedding covariance to low rank. Although dimension-limited, current location encoders sidestep this spectral collapse by training against a frozen image encoder, which we reinterpret as a covariance regularizer that supplies a high-rank target for the location encoder to fold onto. However, extending this approach to multimodal inputs is challenging, as location encoders should simultaneously map a single location to multiple, potentially incompatible, descriptors. We identify two requirements a regularizer must satisfy for location encoding in multimodal regimes: co-alignment across modalities, since adapters alone cannot align independently pretrained encoders; and high effective rank, since the location encoder inherits its target's spectrum. We propose LoCA (Location Contrastive Alignment), a two-stage pipeline that satisfies both. Stage 1 jointly trains Sentinel-1 and Sentinel-2 encoders with contrastive learning, producing a co-aligned, high-rank multimodal target. Stage 2 freezes the image encoders and trains a location and a tabular metadata encoder as projection adapters with multi-view contrastive learning. Against five state-of-the-art encoders on 17 tasks ranging from land cover and wildfire forecasting to geophysical, socio-economic, biodiversity and climate applications, LoCA achieves the most task wins, is the only model to outperform every other on a majority of tasks, and wins 68.8% of all per-task comparisons."
+    },
+    {
+      "title": "Singular Geometry of Low-Rank Adaptation",
+      "authors": [
+        "Kamillo Ferry",
+        "Anthea Monod",
+        "Keisuke Yano"
+      ],
+      "summary": "Low-rank adaptation (LoRA) is now a standard approach to parameter-efficient fine-tuning of large neural networks. Its low-rank factorization is inherently non-identifiable, making LoRA a singular statistical model whose learning complexity cannot be described by parameter dimension alone. We study this complexity using the real log canonical threshold (RLCT) from singular learning theory and how it depends on both the low-rank parameterization and the pretrained network. Under a local linearization, LoRA induces a low-rank trace regression model whose Kullback--Leibler geometry is controlled by a forward-backward covariance, constructed from activations and backpropagated sensitivities at the adapted layer. This covariance determines which low-rank perturbations are statistically observable. When it is nondegenerate along the relevant low-rank directions, we recover the classical learning complexity of reduced-rank regression; when its kernel meets these directions, additional statistically indistinguishable parameters change the singular geometry. We characterize this geometry locally through observable tangent directions and a residual singularity, and globally through affine linear sections of determinantal varieties. The global learning complexity need not be determined at a ground-truth parameter, as singularities on another rank stratum can dominate. We also introduce a curvature-corrected multi-temperature estimator of the RLCT. Experiments on multilayer perceptron and transformer architectures reveal strongly layer-dependent forward-backward geometry and show that ambient covariance degeneracy does not imply degeneracy along the low-rank directions relevant to adaptation.",
+      "published": "2026-10-23T16:27:30Z",
+      "updated": "2026-10-23T16:27:30Z",
+      "arxiv_id": "2610.32854v1",
+      "abs_url": "http://arxiv.org/abs/2610.32854v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32854v1",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "comment": "40 pages, 8 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 3,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA",
+        "transformer"
+      ],
+      "title_zh": "Singular Geometry of Low-Rank Adaptation",
+      "summary_zh": "Low-rank adaptation (LoRA) is now a standard approach to parameter-efficient fine-tuning of large neural networks. Its low-rank factorization is inherently non-identifiable, making LoRA a singular statistical model whose learning complexity cannot be described by parameter dimension alone. We study this complexity using the real log canonical threshold (RLCT) from singular learning theory and how it depends on both the low-rank parameterization and the pretrained network. Under a local linearization, LoRA induces a low-rank trace regression model whose Kullback--Leibler geometry is controlled by a forward-backward covariance, constructed from activations and backpropagated sensitivities at the adapted layer. This covariance determines which low-rank perturbations are statistically observable. When it is nondegenerate along the relevant low-rank directions, we recover the classical learning complexity of reduced-rank regression; when its kernel meets these directions, additional statistically indistinguishable parameters change the singular geometry. We characterize this geometry locally through observable tangent directions and a residual singularity, and globally through affine linear sections of determinantal varieties. The global learning complexity need not be determined at a ground-truth parameter, as singularities on another rank stratum can dominate. We also introduce a curvature-corrected multi-temperature estimator of the RLCT. Experiments on multilayer perceptron and transformer architectures reveal strongly layer-dependent forward-backward geometry and show that ambient covariance degeneracy does not imply degeneracy along the low-rank directions relevant to adaptation."
+    },
+    {
+      "title": "CARES: Coverage-Aware Replay Exemplar Selection for Continual Learning",
+      "authors": [
+        "Arundhati S. Shanbhag",
+        "Brian B. Moser",
+        "Federico Raue",
+        "Tobias C. Nauen",
+        "Andreas Dengel"
+      ],
+      "summary": "Replay-based Continual Learning mitigates catastrophic forgetting by keeping a buffer of past samples, making buffer composition critical under a fixed memory budget. Recent coreset-based replay methods improve buffer quality using model-derived gradients, losses, or auxiliary optimization, but incur substantial computational overhead as memory is repeatedly updated. We propose CARES, a continual model-optimization-free approach for buffer construction that instead exploits the geometry of a frozen pretrained feature space using class-aware, density-weighted coverage. We evaluate CARES across balanced, imbalanced, and label-noisy streams under online class- and task-incremental settings. On Tiny-ImageNet, CARES is 2.3 to 8.8 times faster than existing coreset-based selectors. Although CARES achieves this speedup using no training signal from the continual learner, it ranks among the state of the art across balanced, imbalanced, and label-noisy streams under online class- and task-incremental settings, outperforming the strongest baseline by up to 7.58 percentage points under class imbalance while also attaining higher average accuracy on Tiny-ImageNet. Code will be released upon publication",
+      "published": "2026-10-23T15:39:40Z",
+      "updated": "2026-10-23T15:39:40Z",
+      "arxiv_id": "2610.32799v1",
+      "abs_url": "http://arxiv.org/abs/2610.32799v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32799v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "17 pages, 2 figures. Includes supplementary material",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 3,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "continual learning"
+      ],
+      "title_zh": "CARES: Coverage-Aware Replay Exemplar Selection for Continual Learning",
+      "summary_zh": "Replay-based Continual Learning mitigates catastrophic forgetting by keeping a buffer of past samples, making buffer composition critical under a fixed memory budget. Recent coreset-based replay methods improve buffer quality using model-derived gradients, losses, or auxiliary optimization, but incur substantial computational overhead as memory is repeatedly updated. We propose CARES, a continual model-optimization-free approach for buffer construction that instead exploits the geometry of a frozen pretrained feature space using class-aware, density-weighted coverage. We evaluate CARES across balanced, imbalanced, and label-noisy streams under online class- and task-incremental settings. On Tiny-ImageNet, CARES is 2.3 to 8.8 times faster than existing coreset-based selectors. Although CARES achieves this speedup using no training signal from the continual learner, it ranks among the state of the art across balanced, imbalanced, and label-noisy streams under online class- and task-incremental settings, outperforming the strongest baseline by up to 7.58 percentage points under class imbalance while also attaining higher average accuracy on Tiny-ImageNet. Code will be released upon publication"
+    },
+    {
+      "title": "SCDM-HTD: Spectral-Wise Conditional Diffusion Model for Hyperspectral Target Detection",
+      "authors": [
+        "Dunbin Shen",
+        "Wenfeng Kong",
+        "Jianjun Liu",
+        "Xiaorui Ma",
+        "Hongyu Wang"
+      ],
+      "summary": "Hyperspectral target detection (HTD) aims to locate and recognize objects at a fine-grained scale, playing a pivotal role in remote sensing. Despite significant progress, current HTD methods primarily focus on feature comparison while neglecting distribution learning for background-target separation, which can limit detection robustness in practical applications. This paper addresses this issue by introducing a spectral-wise conditional diffusion model that reformulates HTD as a task of generating a detection map. Specifically, we treat background and target confidence scores as training samples and use the corresponding pixel spectra as guiding conditions to capture the distributional discrepancy between background and target through diffusion and denoising. To enhance practical applicability, we propose a lightweight conditional denoising network based on multilayer perceptron to map noisy confidence scores to their ideal counterparts and adopt a deterministic reverse non-Markov chain to skip sampling steps, thereby accelerating the generation process. Furthermore, we introduce a composite loss to improve background-target separation. This loss integrates constrained energy minimization loss to enhance target saliency and suppress the background by maximizing the target response while minimizing average output energy, alongside binary cross-entropy loss to classify background and target using pixel-wise labels. Experimental results on four benchmark datasets demonstrate the effectiveness of the proposed method, with improvements in both quantitative metrics and qualitative visual effects.",
+      "published": "2026-10-23T15:08:07Z",
+      "updated": "2026-10-23T15:08:07Z",
+      "arxiv_id": "2610.32768v1",
+      "abs_url": "http://arxiv.org/abs/2610.32768v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32768v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 9,
+      "anchor_terms": [
+        "diffusion model",
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "denoising",
+        "diffusion model",
+        "hyperspectral",
+        "remote sensing",
+        "robust"
+      ],
+      "title_zh": "SCDM-HTD: Spectral-Wise Conditional Diffusion Model for Hyperspectral Target Detection",
+      "summary_zh": "Hyperspectral target detection (HTD) aims to locate and recognize objects at a fine-grained scale, playing a pivotal role in remote sensing. Despite significant progress, current HTD methods primarily focus on feature comparison while neglecting distribution learning for background-target separation, which can limit detection robustness in practical applications. This paper addresses this issue by introducing a spectral-wise conditional diffusion model that reformulates HTD as a task of generating a detection map. Specifically, we treat background and target confidence scores as training samples and use the corresponding pixel spectra as guiding conditions to capture the distributional discrepancy between background and target through diffusion and denoising. To enhance practical applicability, we propose a lightweight conditional denoising network based on multilayer perceptron to map noisy confidence scores to their ideal counterparts and adopt a deterministic reverse non-Markov chain to skip sampling steps, thereby accelerating the generation process. Furthermore, we introduce a composite loss to improve background-target separation. This loss integrates constrained energy minimization loss to enhance target saliency and suppress the background by maximizing the target response while minimizing average output energy, alongside binary cross-entropy loss to classify background and target using pixel-wise labels. Experimental results on four benchmark datasets demonstrate the effectiveness of the proposed method, with improvements in both quantitative metrics and qualitative visual effects."
+    },
+    {
+      "title": "SP-Guide: Enhancing Aerial Vision-Language Navigation with Spatial Priors",
+      "authors": [
+        "Haoxiang Tang",
+        "Dong Zhou",
+        "Shen Tan",
+        "Minxuan Jiang",
+        "Xitong Li"
+      ],
+      "summary": "Aerial vision-language navigation (AVLN) requires a UAV to reach a language-described target from partial egocentric observations while reasoning over large outdoor scenes. Existing approaches typically fuse view-centered RGB observations and globally anchored history maps as generic visual embeddings, leaving cross-modal spatial alignment to be learned from sparse navigation supervision. We present SP-Guide, a transformer- based goal-prediction framework that addresses this weakness of alignment through a Spatial Prior Cross-Modal Encoder, an Instruction Enhanced Decoder, and a Goal Convergence Filter for terminal target refinement. Experiments implemented on the CityNav benchmark show that SP-Guide improves success rate over the representative baselines, with the largest gains on unseen environments. These results indicate that physically grounded spatial priors provide an effective inductive bias for robust AVLN.",
+      "published": "2026-10-23T14:21:58Z",
+      "updated": "2026-10-23T14:21:58Z",
+      "arxiv_id": "2610.32697v1",
+      "abs_url": "http://arxiv.org/abs/2610.32697v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32697v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "多模态融合",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 7,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "robust",
+        "transformer",
+        "UAV"
+      ],
+      "title_zh": "SP-Guide: Enhancing Aerial Vision-Language Navigation with Spatial Priors",
+      "summary_zh": "Aerial vision-language navigation (AVLN) requires a UAV to reach a language-described target from partial egocentric observations while reasoning over large outdoor scenes. Existing approaches typically fuse view-centered RGB observations and globally anchored history maps as generic visual embeddings, leaving cross-modal spatial alignment to be learned from sparse navigation supervision. We present SP-Guide, a transformer- based goal-prediction framework that addresses this weakness of alignment through a Spatial Prior Cross-Modal Encoder, an Instruction Enhanced Decoder, and a Goal Convergence Filter for terminal target refinement. Experiments implemented on the CityNav benchmark show that SP-Guide improves success rate over the representative baselines, with the largest gains on unseen environments. These results indicate that physically grounded spatial priors provide an effective inductive bias for robust AVLN."
+    },
+    {
+      "title": "Earth embeddings are decomposable records of the land surface",
+      "authors": [
+        "Robin Young",
+        "Srinivasan Keshav"
+      ],
+      "summary": "Ecological monitoring, carbon accounting and biodiversity assessment increasingly rely on annual Earth embeddings--learned vectors that compress a year of satellite observation for every ten-meter pixel on Earth, consumed in place of the imagery itself. What these vectors mean has not been established. Here we decompose two widely used embedding products and show that they contain individual ecological features, including fire, forest clearing and crop type, validated against independent reference data on events across six continents. The recovered concepts date abrupt canopy loss to the first post-disturbance growing season and resolve severity well enough to separate prescribed fire from wildfire. Small fires that recover quickly are detectable in one product but not the other, which instead separates crops more strongly.",
+      "published": "2026-10-23T13:37:35Z",
+      "updated": "2026-10-23T13:37:35Z",
+      "arxiv_id": "2610.32617v1",
+      "abs_url": "http://arxiv.org/abs/2610.32617v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32617v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "q-bio.PE"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "农业与生态"
+      ],
+      "topic": "农业与生态",
+      "score": 3,
+      "anchor_terms": [
+        "crop"
+      ],
+      "matched_terms": [
+        "crop",
+        "satellite"
+      ],
+      "title_zh": "Earth embeddings are decomposable records of the land surface",
+      "summary_zh": "Ecological monitoring, carbon accounting and biodiversity assessment increasingly rely on annual Earth embeddings--learned vectors that compress a year of satellite observation for every ten-meter pixel on Earth, consumed in place of the imagery itself. What these vectors mean has not been established. Here we decompose two widely used embedding products and show that they contain individual ecological features, including fire, forest clearing and crop type, validated against independent reference data on events across six continents. The recovered concepts date abrupt canopy loss to the first post-disturbance growing season and resolve severity well enough to separate prescribed fire from wildfire. Small fires that recover quickly are detectable in one product but not the other, which instead separates crops more strongly."
+    },
+    {
+      "title": "Standing on Open Shoulders: Regional Fine-Tuning of Open-Weight Camera-Trap Models for UK Wildlife with Modest Data and Compute",
+      "authors": [
+        "Paul Fergus"
+      ],
+      "summary": "Camera-trap species classification is dominated by large models from well-resourced organisations, which often lack the species-level distinctions regional conservation needs, such as native red versus invasive grey squirrels in the UK. We ask whether open weights let a small team with a modest dataset and a single GPU take a real part in AI development. We fine-tuned the open DeepFaune classifier on 28 UK classes, paired it with the unmodified MegaDetector v6, and compared the resulting DeepFaune-UK v1.2 with DeepFaune v1.5.0 and SpeciesNet on 20,212 hand-verified MammalWeb citizen-science images, after removing sequences sharing any of 1,039 images with our training archive. DeepFaune-UK achieved a strict image-level accuracy of 88.8%, including empty frames, against 56.5% and 59.0% for the baselines, but at DeepFaune's coarser label resolution DeepFaune v1.5.0 was more accurate, though not significantly under contributor resampling (91.4% vs. 88.8%). As DeepFaune v1.5.0 uses a newer DINOv3-based classifier, we applied the identical recipe, without new data, to that classifier. The resulting DeepFaune-UK v1.3 reached 90.6% strict accuracy, narrowed the like-for-like gap to 0.8 points and reduced roe deer misclassified as fallow deer by 69%. On 1,850 images from the 26 contributors with no overlapping images, the three DeepFaune-based models did not differ significantly (90.5%, 90.6%, 89.9% like-for-like). Fine-tuning on 10% of the training crops (about 150 per class) gave out-of-distribution accuracy similar to using all of them, and a DINOv2 run on this subset took about 22 minutes with under 4 GB of GPU memory. Open weights thus make regional model development feasible for small teams, but the largest like-for-like gain came from a newer base model trained by others, so this democratisation depends on large actors continuing to release open weights, under licences that may change.",
+      "published": "2026-10-23T13:01:44Z",
+      "updated": "2026-10-23T13:01:44Z",
+      "arxiv_id": "2610.32573v1",
+      "abs_url": "http://arxiv.org/abs/2610.32573v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32573v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "39 pages, 9 Figures, and 8 Tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "crop"
+      ],
+      "matched_terms": [
+        "crop",
+        "fine-tuning",
+        "large model"
+      ],
+      "title_zh": "Standing on Open Shoulders: Regional Fine-Tuning of Open-Weight Camera-Trap Models for UK Wildlife with Modest Data and Compute",
+      "summary_zh": "Camera-trap species classification is dominated by large models from well-resourced organisations, which often lack the species-level distinctions regional conservation needs, such as native red versus invasive grey squirrels in the UK. We ask whether open weights let a small team with a modest dataset and a single GPU take a real part in AI development. We fine-tuned the open DeepFaune classifier on 28 UK classes, paired it with the unmodified MegaDetector v6, and compared the resulting DeepFaune-UK v1.2 with DeepFaune v1.5.0 and SpeciesNet on 20,212 hand-verified MammalWeb citizen-science images, after removing sequences sharing any of 1,039 images with our training archive. DeepFaune-UK achieved a strict image-level accuracy of 88.8%, including empty frames, against 56.5% and 59.0% for the baselines, but at DeepFaune's coarser label resolution DeepFaune v1.5.0 was more accurate, though not significantly under contributor resampling (91.4% vs. 88.8%). As DeepFaune v1.5.0 uses a newer DINOv3-based classifier, we applied the identical recipe, without new data, to that classifier. The resulting DeepFaune-UK v1.3 reached 90.6% strict accuracy, narrowed the like-for-like gap to 0.8 points and reduced roe deer misclassified as fallow deer by 69%. On 1,850 images from the 26 contributors with no overlapping images, the three DeepFaune-based models did not differ significantly (90.5%, 90.6%, 89.9% like-for-like). Fine-tuning on 10% of the training crops (about 150 per class) gave out-of-distribution accuracy similar to using all of them, and a DINOv2 run on this subset took about 22 minutes with under 4 GB of GPU memory. Open weights thus make regional model development feasible for small teams, but the largest like-for-like gain came from a newer base model trained by others, so this democratisation depends on large actors continuing to release open weights, under licences that may change."
+    },
+    {
+      "title": "Reuse, Don't Retrain: Efficient, Modality-Versatile Geospatial Foundation Models through Feature Distillation",
+      "authors": [
+        "Mario Hamon",
+        "Pierre Adorni",
+        "Minh-Tan Pham"
+      ],
+      "summary": "Geospatial foundation models (GeoFMs) are costly to pretrain, yet model families often repeat this process across backbone scales and sensing modalities. We investigate feature distillation as a more efficient way to reuse existing representations. First, we distill frozen CROMA and TerraMind teachers into smaller Vision Transformers through patch-level feature matching. Across nine PANGAEA tasks, distilled TerraMind Tiny, Small, and Base outperform their scale-matched released counterparts by 2.76, 3.02, and 1.87 mean IoU points, respectively; each also matches or exceeds the next-larger released model. Distilled CROMA-Base gains 2.05 points. TerraMind-Base required only 43 A6000 GPU-hours, approximately 0.5\\% of the reported cost of independent pretraining. Second, we introduce TEDI, an unpaired multi-expert approach combining TerraMind for multispectral imagery and DINOv3 for high-resolution RGB. Separate patch embeddings route unpaired inputs into a shared Transformer trunk, removing the need for co-registered data. TEDI-Large achieves the highest single-model mean in our PANGAEA-9 comparison (62.51 mIoU), outperforming both teachers overall while retaining their modality-specific strengths. TEDI-Base reaches 61.75 mIoU with 72\\% fewer parameters. These results show that distillation improves the GeoFM accuracy-compute frontier while consolidating complementary experts into a single versatile backbone.",
+      "published": "2026-10-23T12:48:24Z",
+      "updated": "2026-10-23T12:48:24Z",
+      "arxiv_id": "2610.32566v1",
+      "abs_url": "http://arxiv.org/abs/2610.32566v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32566v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化",
+        "高光谱/多光谱"
+      ],
+      "topic": "基础模型",
+      "score": 17,
+      "anchor_terms": [
+        "foundation model",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model",
+        "multispectral image",
+        "multispectral imagery",
+        "vision transformer"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "GeoFM",
+        "geospatial",
+        "geospatial foundation",
+        "geospatial foundation model",
+        "multispectral",
+        "multispectral image",
+        "multispectral imagery",
+        "transformer",
+        "vision transformer"
+      ],
+      "title_zh": "Reuse, Don't Retrain: Efficient, Modality-Versatile Geospatial Foundation Models through Feature Distillation",
+      "summary_zh": "Geospatial foundation models (GeoFMs) are costly to pretrain, yet model families often repeat this process across backbone scales and sensing modalities. We investigate feature distillation as a more efficient way to reuse existing representations. First, we distill frozen CROMA and TerraMind teachers into smaller Vision Transformers through patch-level feature matching. Across nine PANGAEA tasks, distilled TerraMind Tiny, Small, and Base outperform their scale-matched released counterparts by 2.76, 3.02, and 1.87 mean IoU points, respectively; each also matches or exceeds the next-larger released model. Distilled CROMA-Base gains 2.05 points. TerraMind-Base required only 43 A6000 GPU-hours, approximately 0.5\\% of the reported cost of independent pretraining. Second, we introduce TEDI, an unpaired multi-expert approach combining TerraMind for multispectral imagery and DINOv3 for high-resolution RGB. Separate patch embeddings route unpaired inputs into a shared Transformer trunk, removing the need for co-registered data. TEDI-Large achieves the highest single-model mean in our PANGAEA-9 comparison (62.51 mIoU), outperforming both teachers overall while retaining their modality-specific strengths. TEDI-Base reaches 61.75 mIoU with 72\\% fewer parameters. These results show that distillation improves the GeoFM accuracy-compute frontier while consolidating complementary experts into a single versatile backbone."
+    },
+    {
+      "title": "StarRTT: An End-to-End Real-Time Framework for Blind Zone-Free RTT Prediction in Starlink LEO Satellite Networks",
+      "authors": [
+        "Jaeyong Lee",
+        "Seongjin Jeong",
+        "Yusang Park",
+        "Hyunho Hwang",
+        "Sangmin Han",
+        "Wonjae Shin"
+      ],
+      "summary": "Low Earth Orbit (LEO) satellite mega-constellations such as Starlink require frequent handovers due to high orbital velocities, resulting in substantial Round-Trip Time (RTT) fluctuations. Accurate RTT prediction can mitigate these fluctuations, yet it fundamentally relies on continuously updated serving- satellite information. Existing serving-satellite identification methods typically complete identification only at the end of each scheduling cycle, creating an identification blind zone that limits real-time prediction. To overcome this limitation, we develop StarRTT, an end-to-end real-time framework that eliminates the blind zone by integrating per-second serving-satellite identification with RTT prediction. Within this framework, we propose Real-Time Long Short-Term Memory (RT-LSTM), an LSTM-based RTT prediction model designed to capture both non-stationary RTT evolution and time-varying geometric relationships among the serving satellite, user terminal, and gateways. Specifically, a historical LSTM encodes historical RTT observations and real-time serving-satellite and gateway-relative features, while a future LSTM processes Two-Line Element (TLE)-propagated future features of the identified serving satellite up to the next scheduling instant. Under strict real-time back-testing, RT-LSTM achieves a Mean Absolute Error (MAE) of 1.405 ms averaged over all 15 prediction horizons and 15 reference time-slot indices, reducing the error by 4.3 %, 11.6 %, and 22.1 % compared with the existing baseline models, LSTM, StarNet, and Attention-based Spatiotemporal Model (ASTM), respectively. Notably, the reduction over LSTM reaches 12.5 % at the scheduling instant, highlighting the benefit of real-time serving-satellite information when recent RTT observations are limited.",
+      "published": "2026-10-23T12:20:09Z",
+      "updated": "2026-10-23T12:20:09Z",
+      "arxiv_id": "2610.32540v1",
+      "abs_url": "http://arxiv.org/abs/2610.32540v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32540v1",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "cs.AI"
+      ],
+      "comment": "15 pages, 5 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "MAE",
+        "satellite",
+        "temporal"
+      ],
+      "title_zh": "StarRTT: An End-to-End Real-Time Framework for Blind Zone-Free RTT Prediction in Starlink LEO Satellite Networks",
+      "summary_zh": "Low Earth Orbit (LEO) satellite mega-constellations such as Starlink require frequent handovers due to high orbital velocities, resulting in substantial Round-Trip Time (RTT) fluctuations. Accurate RTT prediction can mitigate these fluctuations, yet it fundamentally relies on continuously updated serving- satellite information. Existing serving-satellite identification methods typically complete identification only at the end of each scheduling cycle, creating an identification blind zone that limits real-time prediction. To overcome this limitation, we develop StarRTT, an end-to-end real-time framework that eliminates the blind zone by integrating per-second serving-satellite identification with RTT prediction. Within this framework, we propose Real-Time Long Short-Term Memory (RT-LSTM), an LSTM-based RTT prediction model designed to capture both non-stationary RTT evolution and time-varying geometric relationships among the serving satellite, user terminal, and gateways. Specifically, a historical LSTM encodes historical RTT observations and real-time serving-satellite and gateway-relative features, while a future LSTM processes Two-Line Element (TLE)-propagated future features of the identified serving satellite up to the next scheduling instant. Under strict real-time back-testing, RT-LSTM achieves a Mean Absolute Error (MAE) of 1.405 ms averaged over all 15 prediction horizons and 15 reference time-slot indices, reducing the error by 4.3 %, 11.6 %, and 22.1 % compared with the existing baseline models, LSTM, StarNet, and Attention-based Spatiotemporal Model (ASTM), respectively. Notably, the reduction over LSTM reaches 12.5 % at the scheduling instant, highlighting the benefit of real-time serving-satellite information when recent RTT observations are limited."
+    },
+    {
+      "title": "Sharpness-aware Orthogonalized Momentum Algorithms",
+      "authors": [
+        "Geetika",
+        "Shivani Singh Chauhan",
+        "Gauranshi Gupta",
+        "Anant Jain",
+        "Kaushik Kalyanaraman",
+        "Bapi Chatterjee"
+      ],
+      "summary": "Adversarial sharpness penalty per iteration of a base optimizer, known as sharpness-aware minimization (SAM), is an accepted technique to improve generalization in deep learning. Recently, Muon has emerged as a dominant optimization algorithm for training large language models (LLMs). It achieves lower sample complexity for heavy-tailed gradient updates - a phenomenon common in LLM training. However, sharpness penalties with Muon updates are yet largely unexplored in the literature. Moreover, the behavior of SAM under heavy-tailed noise is unknown both theoretically and empirically. A potential reason for this gap is the additional cost of extra gradient computation per iteration for penalty perturbations in SAM, which becomes prohibitive for LLMs. This paper introduces Sharpness-aware Orthogonalized Momentum Algorithm (SOMA) to combine a computationally efficient and theoretically grounded perturbation scheme with the Muon algorithm. The key idea is to use stale (purely) stochastic gradient noise for adversarial perturbations. Theoretically, we show that SOMA's sample complexity is invariant to the perturbation direction. We provide explorations and insights into SOMA's robustness to heavy-tailed gradient noise. We extensively explore SOMA's efficacy in (a) mitigating quality degradation due to post-training quantization, and (b) catastrophic forgetting during fine-tuning of LLMs.",
+      "published": "2026-10-23T10:32:49Z",
+      "updated": "2026-10-23T10:32:49Z",
+      "arxiv_id": "2610.32465v1",
+      "abs_url": "http://arxiv.org/abs/2610.32465v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32465v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "实例分割",
+        "视觉-语言模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "实例分割",
+      "score": 7,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "catastrophic forgetting",
+        "fine-tuning",
+        "large language model",
+        "LLM",
+        "LoRA",
+        "robust",
+        "SAM"
+      ],
+      "title_zh": "Sharpness-aware Orthogonalized Momentum Algorithms",
+      "summary_zh": "Adversarial sharpness penalty per iteration of a base optimizer, known as sharpness-aware minimization (SAM), is an accepted technique to improve generalization in deep learning. Recently, Muon has emerged as a dominant optimization algorithm for training large language models (LLMs). It achieves lower sample complexity for heavy-tailed gradient updates - a phenomenon common in LLM training. However, sharpness penalties with Muon updates are yet largely unexplored in the literature. Moreover, the behavior of SAM under heavy-tailed noise is unknown both theoretically and empirically. A potential reason for this gap is the additional cost of extra gradient computation per iteration for penalty perturbations in SAM, which becomes prohibitive for LLMs. This paper introduces Sharpness-aware Orthogonalized Momentum Algorithm (SOMA) to combine a computationally efficient and theoretically grounded perturbation scheme with the Muon algorithm. The key idea is to use stale (purely) stochastic gradient noise for adversarial perturbations. Theoretically, we show that SOMA's sample complexity is invariant to the perturbation direction. We provide explorations and insights into SOMA's robustness to heavy-tailed gradient noise. We extensively explore SOMA's efficacy in (a) mitigating quality degradation due to post-training quantization, and (b) catastrophic forgetting during fine-tuning of LLMs."
+    },
+    {
+      "title": "TENET: Time-point Encoding Network for Multivariate Time Series Anomaly Detection",
+      "authors": [
+        "Dongchan Cho",
+        "Juwon Hwang",
+        "Keumyeong Kang",
+        "Jiho Han",
+        "Namsoon Jung"
+      ],
+      "summary": "In unsupervised multivariate time series anomaly detection (MTSAD), local variation can inflate reconstruction and forecasting errors, making observation-space discrepancy an unreliable indicator of abnormal system behavior. Since latent-space scoring can mitigate this limitation, we reframe one-class MTSAD as current-point system-state compatibility estimation and propose TENET, the Time-point Encoding Network for Multivariate Time Series Anomaly Detection. We define the current-point system state as a latent representation of the target time point, constructed from variable-level temporal context in the input window. TENET constructs this state through a temporal layer that retrieves window context relative to the current point, encodes time with current-point-centered embeddings, and adaptively mixes the retrieved context with the current representation. With this design, TENET treats the input window not as the object to reconstruct, forecast, summarize, or score, but as context for constructing a latent representation evaluated with a fixed standard-normal negative log-likelihood score. Across benchmark datasets, TENET achieves state-of-the-art performance. Additional experiments further show that TENET remains effective under alternative one-class objectives and outperforms substitutions based on generic sequence encoders, suggesting that its advantage comes from decision-aligned representation construction rather than from a specialized scoring rule. These results indicate that one-class MTSAD can be strong when the latent representation is designed around the current time point.",
+      "published": "2026-10-23T08:30:30Z",
+      "updated": "2026-10-23T08:30:30Z",
+      "arxiv_id": "2610.32337v1",
+      "abs_url": "http://arxiv.org/abs/2610.32337v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32337v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "Accepted by NeurIPS 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 3,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "anomaly detection",
+        "unsupervised"
+      ],
+      "title_zh": "TENET: Time-point Encoding Network for Multivariate Time Series Anomaly Detection",
+      "summary_zh": "In unsupervised multivariate time series anomaly detection (MTSAD), local variation can inflate reconstruction and forecasting errors, making observation-space discrepancy an unreliable indicator of abnormal system behavior. Since latent-space scoring can mitigate this limitation, we reframe one-class MTSAD as current-point system-state compatibility estimation and propose TENET, the Time-point Encoding Network for Multivariate Time Series Anomaly Detection. We define the current-point system state as a latent representation of the target time point, constructed from variable-level temporal context in the input window. TENET constructs this state through a temporal layer that retrieves window context relative to the current point, encodes time with current-point-centered embeddings, and adaptively mixes the retrieved context with the current representation. With this design, TENET treats the input window not as the object to reconstruct, forecast, summarize, or score, but as context for constructing a latent representation evaluated with a fixed standard-normal negative log-likelihood score. Across benchmark datasets, TENET achieves state-of-the-art performance. Additional experiments further show that TENET remains effective under alternative one-class objectives and outperforms substitutions based on generic sequence encoders, suggesting that its advantage comes from decision-aligned representation construction rather than from a specialized scoring rule. These results indicate that one-class MTSAD can be strong when the latent representation is designed around the current time point."
+    },
+    {
+      "title": "GeoLEON-CLIP: Graph-Anchored Multimodal Contrastive Learning for Geographic Region Representation",
+      "authors": [
+        "Radoslaw Malek",
+        "Szymon Soltysiak",
+        "Aleksandra Kawala-Sterniuk",
+        "Piotr Szymanski"
+      ],
+      "summary": "Geographic regions are multimodal: satellite imagery captures visual morphology, text conveys human-interpretable semantics, and map structures describe urban context. Existing geospatial contrastive methods typically align image-text or image-location pairs, underusing structured map data. We introduce GeoLEON-CLIP, a graph-anchored contrastive framework that aligns three views of each H3-indexed region: an OpenStreetMap-derived graph embedding, a satellite image crop, and a textual description. Frozen pretrained LEON graph embeddings provide a semantic anchor between vision and language. Frozen graph, image, and text encoders are connected by trainable residual projection heads and trained with a symmetric tri-modal contrastive objective. Experiments show strong graph-image and graph-text alignment; graph-image retrieval achieves the best cross-modal performance in a mixed-resolution pool. To evaluate the anchoring hypothesis, we propose chained cross-modal recall $\\mathrm{R}@A@B$, which routes retrieval through the graph modality and compares it with direct retrieval under a matched candidate budget. At $\\mathrm{R}@1@1$, image$\\rightarrow$graph$\\rightarrow$text and text$\\rightarrow$graph$\\rightarrow$image outperform direct image-text retrieval by 4.8 and 4.4 points, respectively, despite using a single intermediate cell. Downstream probes show task-dependent gains, with the largest improvements on Airbnb and Beijing housing. These results indicate that OpenStreetMap graph structure can anchor multimodal representations combining maps, imagery, and language.",
+      "published": "2026-10-23T08:11:23Z",
+      "updated": "2026-10-23T08:11:23Z",
+      "arxiv_id": "2610.32311v1",
+      "abs_url": "http://arxiv.org/abs/2610.32311v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32311v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "Accepted at the 9th International Workshop on AI for Geographic Knowledge Discovery (GeoAI 2026), co-located with the 34th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (SIGSPATIAL 2026)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像检索",
+        "基础模型",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "多模态融合"
+      ],
+      "topic": "图像检索",
+      "score": 10,
+      "anchor_terms": [
+        "CLIP",
+        "crop",
+        "geospatial",
+        "image retrieval",
+        "satellite image",
+        "satellite imagery"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "contrastive learning",
+        "crop",
+        "geospatial",
+        "image retrieval",
+        "satellite",
+        "satellite image",
+        "satellite imagery"
+      ],
+      "title_zh": "GeoLEON-CLIP: Graph-Anchored Multimodal Contrastive Learning for Geographic Region Representation",
+      "summary_zh": "Geographic regions are multimodal: satellite imagery captures visual morphology, text conveys human-interpretable semantics, and map structures describe urban context. Existing geospatial contrastive methods typically align image-text or image-location pairs, underusing structured map data. We introduce GeoLEON-CLIP, a graph-anchored contrastive framework that aligns three views of each H3-indexed region: an OpenStreetMap-derived graph embedding, a satellite image crop, and a textual description. Frozen pretrained LEON graph embeddings provide a semantic anchor between vision and language. Frozen graph, image, and text encoders are connected by trainable residual projection heads and trained with a symmetric tri-modal contrastive objective. Experiments show strong graph-image and graph-text alignment; graph-image retrieval achieves the best cross-modal performance in a mixed-resolution pool. To evaluate the anchoring hypothesis, we propose chained cross-modal recall $\\mathrm{R}@A@B$, which routes retrieval through the graph modality and compares it with direct retrieval under a matched candidate budget. At $\\mathrm{R}@1@1$, image$\\rightarrow$graph$\\rightarrow$text and text$\\rightarrow$graph$\\rightarrow$image outperform direct image-text retrieval by 4.8 and 4.4 points, respectively, despite using a single intermediate cell. Downstream probes show task-dependent gains, with the largest improvements on Airbnb and Beijing housing. These results indicate that OpenStreetMap graph structure can anchor multimodal representations combining maps, imagery, and language."
+    },
+    {
+      "title": "OlmoEarth v1.3: Embeddings",
+      "authors": [
+        "Gabriel Tseng",
+        "Favyen Bastani",
+        "Patrick Alan Johnson",
+        "Yawen Zhang",
+        "Piper Wolters",
+        "Ando Shah",
+        "Hadrien Sablon",
+        "Joseph Redmon",
+        "Heather DeHaven",
+        "Rachel Ratner",
+        "Sasha Levy",
+        "Jordan Steward",
+        "Katrina Midgley",
+        "Andrew Howe",
+        "Hunter Pitelka",
+        "Ted Schmitt"
+      ],
+      "summary": "We make some OlmoEarth embeddings. To do this, we train a new model: OlmoEarth v1.3. OlmoEarth v1.3 is designed to condense multimodal, multitemporal remote sensing data into a single digestible 64 or 128-dimensional vector. OlmoEarth v1.3 produces state-of-the-art embeddings. In addition, OlmoEarth v1.3 is a strong encoder backbone -- competitive with OlmoEarth v1 and v1.2 -- while requiring 18% and 53% of the GPU hours to train, respectively. We use OlmoEarth v1.3 to compute global, annualized 10m embeddings, which we release under the OlmoEarth artifact license.",
+      "published": "2026-10-23T07:53:00Z",
+      "updated": "2026-10-23T07:53:00Z",
+      "arxiv_id": "2610.32294v1",
+      "abs_url": "http://arxiv.org/abs/2610.32294v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32294v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "多模态融合"
+      ],
+      "topic": "多模态融合",
+      "score": 3,
+      "anchor_terms": [
+        "remote sensing",
+        "temporal"
+      ],
+      "matched_terms": [
+        "remote sensing",
+        "temporal"
+      ],
+      "title_zh": "OlmoEarth v1.3: Embeddings",
+      "summary_zh": "We make some OlmoEarth embeddings. To do this, we train a new model: OlmoEarth v1.3. OlmoEarth v1.3 is designed to condense multimodal, multitemporal remote sensing data into a single digestible 64 or 128-dimensional vector. OlmoEarth v1.3 produces state-of-the-art embeddings. In addition, OlmoEarth v1.3 is a strong encoder backbone -- competitive with OlmoEarth v1 and v1.2 -- while requiring 18% and 53% of the GPU hours to train, respectively. We use OlmoEarth v1.3 to compute global, annualized 10m embeddings, which we release under the OlmoEarth artifact license."
+    },
+    {
+      "title": "Complementing DINO Features with Image Structure for Part Discovery",
+      "authors": [
+        "Samyak Rawlekar",
+        "Nikhil Chowdary Paleti",
+        "Amey Gupta",
+        "Narendra Ahuja"
+      ],
+      "summary": "Self-supervised Vision Transformers (ViTs) like DINO encode rich semantics, enabling training-free segmentation of objects from the background and discovery of their parts via feature clustering. This paper focuses on part discovery: partitioning a foreground object into semantic parts. Existing approaches produce imprecise part boundaries. We trace this to the rigid ViT patch grid used in training DINO, where patches straddling boundaries contain pixels from multiple parts. While DINO's invariance-based training could absorb this pixel-level mixing into clean features, experiments with over 26K foreground patches show it does not: boundary-overlapping patches produce features with higher entropy and lower assignment confidence, blurring predicted part boundaries. Rather than make the massive effort of retraining DINO over geometrically coherent regions, an easier approach is to take boundaries directly from a boundary detector, which supplies the geometric information DINO's features lack. Motivated by this, we introduce Part-DINO, a training-free framework that combines boundaries from low-level image segmentation with DINO's semantic features. We use the boundaries to partition the image into regions, pool DINO features within each region, and group them to discover parts. Without any training, Part-DINO produces structurally coherent part assignments, outperforming training-free baselines across four standard benchmarks (CUB, CelebA, PartImageNet-OOD, PartImageNet-Seg) and remaining competitive with weakly-supervised and unsupervised methods.",
+      "published": "2026-10-23T07:52:14Z",
+      "updated": "2026-10-23T07:52:14Z",
+      "arxiv_id": "2610.32293v1",
+      "abs_url": "http://arxiv.org/abs/2610.32293v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32293v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "self-supervised",
+        "transformer",
+        "unsupervised",
+        "vision transformer",
+        "ViT"
+      ],
+      "title_zh": "Complementing DINO Features with Image Structure for Part Discovery",
+      "summary_zh": "Self-supervised Vision Transformers (ViTs) like DINO encode rich semantics, enabling training-free segmentation of objects from the background and discovery of their parts via feature clustering. This paper focuses on part discovery: partitioning a foreground object into semantic parts. Existing approaches produce imprecise part boundaries. We trace this to the rigid ViT patch grid used in training DINO, where patches straddling boundaries contain pixels from multiple parts. While DINO's invariance-based training could absorb this pixel-level mixing into clean features, experiments with over 26K foreground patches show it does not: boundary-overlapping patches produce features with higher entropy and lower assignment confidence, blurring predicted part boundaries. Rather than make the massive effort of retraining DINO over geometrically coherent regions, an easier approach is to take boundaries directly from a boundary detector, which supplies the geometric information DINO's features lack. Motivated by this, we introduce Part-DINO, a training-free framework that combines boundaries from low-level image segmentation with DINO's semantic features. We use the boundaries to partition the image into regions, pool DINO features within each region, and group them to discover parts. Without any training, Part-DINO produces structurally coherent part assignments, outperforming training-free baselines across four standard benchmarks (CUB, CelebA, PartImageNet-OOD, PartImageNet-Seg) and remaining competitive with weakly-supervised and unsupervised methods."
+    },
+    {
+      "title": "TileShare: Training-Free Acceleration of Overlapping Tiled ViT Decoding",
+      "authors": [
+        "Xiangzhong Ye",
+        "Zhongshen Li",
+        "Shen You",
+        "Ziyang Meng",
+        "Liang Xu",
+        "Junkai Ji",
+        "Qiuzhen Lin",
+        "Xiangtao Li",
+        "Ka-Chun Wong"
+      ],
+      "summary": "Fixed-window Vision Transformer (ViT) decoders run at deployment resolution as overlapping tiles: every token in an overlap band is processed by several full decoder instances. In the 2.4B-parameter MiniMax-H3 video decoder, about half of all per-token computation is duplicated. Removing the tiles fails because attention, global tokens and coordinates are bound to them. TileShare keeps each released tile's attention and computes every other operation once per token. The released computation changes at one kind of step only: an overlap token's per-tile results are blended into one shared state with the released weights. Interventions show that this blend costs quality where attention reads the shared states, mainly in the first few layers, which TileShare therefore keeps per tile. Without training, keeping six layers per tile decodes 1.38-1.51x faster than batched and compiled tiling on two GPU types (up to 1.96x with FP8) and is equivalent to the released decoder in PSNR, LPIPS and DISTS on DAVIS videos. On unseen UVG videos with the setting frozen beforehand, it matches PSNR and DISTS and improves LPIPS. TileShare carries over to two further decoders and is again confirmed on unseen data. It is equivalent in PSNR and DISTS on MAGI-1. On the ViTok-v2 image autoencoder at 2K-4K, it matches overlapping tiling in PSNR, improves LPIPS and DISTS and decodes 1.5-1.8x faster. How many layers stay per tile is measured once per model (for decoders, without labels); we report it for 14 decoders and encoders. Optionally, two GPU-hours of self-distillation let MiniMax-H3 share every layer without a loss in PSNR, and a coordinate field trained while the network stays frozen brings fully shared CLIP-based open-vocabulary segmentation to parity with sliding windows on seven benchmarks.",
+      "published": "2026-10-23T06:44:38Z",
+      "updated": "2026-10-23T06:44:38Z",
+      "arxiv_id": "2610.32233v1",
+      "abs_url": "http://arxiv.org/abs/2610.32233v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32233v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "8 pages main paper + supplementary material",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "开放词汇与开放集",
+        "基础模型",
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 8,
+      "anchor_terms": [
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "open-vocabulary",
+        "transformer",
+        "vision transformer",
+        "ViT"
+      ],
+      "title_zh": "TileShare: Training-Free Acceleration of Overlapping Tiled ViT Decoding",
+      "summary_zh": "Fixed-window Vision Transformer (ViT) decoders run at deployment resolution as overlapping tiles: every token in an overlap band is processed by several full decoder instances. In the 2.4B-parameter MiniMax-H3 video decoder, about half of all per-token computation is duplicated. Removing the tiles fails because attention, global tokens and coordinates are bound to them. TileShare keeps each released tile's attention and computes every other operation once per token. The released computation changes at one kind of step only: an overlap token's per-tile results are blended into one shared state with the released weights. Interventions show that this blend costs quality where attention reads the shared states, mainly in the first few layers, which TileShare therefore keeps per tile. Without training, keeping six layers per tile decodes 1.38-1.51x faster than batched and compiled tiling on two GPU types (up to 1.96x with FP8) and is equivalent to the released decoder in PSNR, LPIPS and DISTS on DAVIS videos. On unseen UVG videos with the setting frozen beforehand, it matches PSNR and DISTS and improves LPIPS. TileShare carries over to two further decoders and is again confirmed on unseen data. It is equivalent in PSNR and DISTS on MAGI-1. On the ViTok-v2 image autoencoder at 2K-4K, it matches overlapping tiling in PSNR, improves LPIPS and DISTS and decodes 1.5-1.8x faster. How many layers stay per tile is measured once per model (for decoders, without labels); we report it for 14 decoders and encoders. Optionally, two GPU-hours of self-distillation let MiniMax-H3 share every layer without a loss in PSNR, and a coordinate field trained while the network stays frozen brings fully shared CLIP-based open-vocabulary segmentation to parity with sliding windows on seven benchmarks."
+    },
+    {
+      "title": "DS-BiCA-Net: Pair-Preserving Cross-Temporal Modeling for Remote Sensing Change Captioning",
+      "authors": [
+        "Licheng Zhang",
+        "Naveed Akhtar",
+        "Siew-Kei Lam"
+      ],
+      "summary": "Remote sensing image change captioning (RSICC) describes in natural language the semantic changes between two images of the same scene captured at different times. Previous methods commonly merge the pair during repeated processing or combine intra-image and cross-image relations in one operation, weakening source identity and leaving the two temporal directions implicit. Without separate modules for intra-image and cross-temporal processing and a separate path for each direction, the contribution of each part cannot be measured on its own, so it remains unclear which part matters most, and the design of later models has no such evidence to build on. To address these issues, we propose DS-BiCA-Net, which assigns the two kinds of processing to separate modules and keeps the two images as separate streams throughout the encoder. A windowed state-space module models context within each image, and a bidirectional cross-attention module compares the two images along two directed paths that share their projections. The two modules use the same pre-normalisation residual architecture and differ only in their mixers, and the two streams are fused only in the aggregation head, so each module and each direction can be removed and its contribution measured on its own. Controlled experiments on LEVIR-CC and Dubai-CC examine operator interaction, temporal direction and module order, showing that intra-image refinement carries no benefit alone and becomes beneficial only when followed by bidirectional cross-attention, an order that outperforms the reverse at matched parameter count and FLOPs. The bidirectional module also outperforms either temporal direction alone. Our method reaches an S_m^* of 82.65 on LEVIR-CC, the highest among the published results compared, and 66.72 on Dubai-CC without geometric augmentation, the second-highest among the published results compared.",
+      "published": "2026-10-23T05:53:18Z",
+      "updated": "2026-10-23T05:53:18Z",
+      "arxiv_id": "2610.32200v1",
+      "abs_url": "http://arxiv.org/abs/2610.32200v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32200v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "时间序列与视频"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 5,
+      "anchor_terms": [
+        "remote sensing",
+        "temporal"
+      ],
+      "matched_terms": [
+        "cross-attention",
+        "remote sensing",
+        "temporal"
+      ],
+      "title_zh": "DS-BiCA-Net: Pair-Preserving Cross-Temporal Modeling for Remote Sensing Change Captioning",
+      "summary_zh": "Remote sensing image change captioning (RSICC) describes in natural language the semantic changes between two images of the same scene captured at different times. Previous methods commonly merge the pair during repeated processing or combine intra-image and cross-image relations in one operation, weakening source identity and leaving the two temporal directions implicit. Without separate modules for intra-image and cross-temporal processing and a separate path for each direction, the contribution of each part cannot be measured on its own, so it remains unclear which part matters most, and the design of later models has no such evidence to build on. To address these issues, we propose DS-BiCA-Net, which assigns the two kinds of processing to separate modules and keeps the two images as separate streams throughout the encoder. A windowed state-space module models context within each image, and a bidirectional cross-attention module compares the two images along two directed paths that share their projections. The two modules use the same pre-normalisation residual architecture and differ only in their mixers, and the two streams are fused only in the aggregation head, so each module and each direction can be removed and its contribution measured on its own. Controlled experiments on LEVIR-CC and Dubai-CC examine operator interaction, temporal direction and module order, showing that intra-image refinement carries no benefit alone and becomes beneficial only when followed by bidirectional cross-attention, an order that outperforms the reverse at matched parameter count and FLOPs. The bidirectional module also outperforms either temporal direction alone. Our method reaches an S_m^* of 82.65 on LEVIR-CC, the highest among the published results compared, and 66.72 on Dubai-CC without geometric augmentation, the second-highest among the published results compared."
+    },
+    {
+      "title": "Rethinking LoRA Initialization for Robust Asymmetric Learning Rates",
+      "authors": [
+        "Disen Liao",
+        "Yaoliang Yu"
+      ],
+      "summary": "Low-Rank Adaptation (LoRA) is often highly sensitive to learning-rate (LR) choices. Recent empirical studies suggest that, once LRs are carefully tuned, vanilla LoRA can remain competitive with many proposed LoRA variants. This shifts the central practical question from designing ever more variants to reducing the cost and brittleness of LR selection. LoRA+ addresses this issue with asymmetric LRs, using a larger LR for the up-projection matrix $B$ than for the down-projection matrix $A$. However, the ratio $η_B / η_A$ itself becomes an additional hyperparameter: large ratios can improve adaptation, but under the standard LoRA initialization they can also cause unstable training and ratio-dependent performance collapse. We identify the source of this brittleness through a signal--noise decomposition of LoRA dynamics. Under standard \\initA, the update contains an initialization-induced noise term whose magnitude can be affected by the LR for $B$, $η_B$, the initialization scale $β$, and the adapter rank $r$. In practical LLM fine-tuning, this non-vanishing noise can limit the performance gains expected from LoRA+ style asymmetric LRs. To suppress this effect, we propose \\initAA, a simple initialization that scales the variance of $A$ as $σ_A^2 \\propto n^{-2}$ while keeping $B_0=0$. Under matched rank and training time for both initializations, this reduces the initialization-noise energy by an additional factor of $1/n$, stabilizing asymmetric LoRA training while preserving zero initial adapter output. Empirically, \\initAA substantially widens the stable LR region across initialization scales, adapter ranks, and LoRA update multipliers. Across tasks and models, \\initAA reduces best-ratio drift, prevents the high-ratio collapse observed with standard \\initA, and makes the width-based guideline $η_B \\approx n η_A$ a useful starting point for finite pretrained models.",
+      "published": "2026-10-23T04:15:33Z",
+      "updated": "2026-10-23T04:15:33Z",
+      "arxiv_id": "2610.32142v1",
+      "abs_url": "http://arxiv.org/abs/2610.32142v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32142v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "46 pages, 13 figures, NeurIPS 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像检索",
+        "视觉-语言模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "图像检索",
+      "score": 7,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "LLM",
+        "LoRA",
+        "robust"
+      ],
+      "title_zh": "Rethinking LoRA Initialization for Robust Asymmetric Learning Rates",
+      "summary_zh": "Low-Rank Adaptation (LoRA) is often highly sensitive to learning-rate (LR) choices. Recent empirical studies suggest that, once LRs are carefully tuned, vanilla LoRA can remain competitive with many proposed LoRA variants. This shifts the central practical question from designing ever more variants to reducing the cost and brittleness of LR selection. LoRA+ addresses this issue with asymmetric LRs, using a larger LR for the up-projection matrix $B$ than for the down-projection matrix $A$. However, the ratio $η_B / η_A$ itself becomes an additional hyperparameter: large ratios can improve adaptation, but under the standard LoRA initialization they can also cause unstable training and ratio-dependent performance collapse. We identify the source of this brittleness through a signal--noise decomposition of LoRA dynamics. Under standard \\initA, the update contains an initialization-induced noise term whose magnitude can be affected by the LR for $B$, $η_B$, the initialization scale $β$, and the adapter rank $r$. In practical LLM fine-tuning, this non-vanishing noise can limit the performance gains expected from LoRA+ style asymmetric LRs. To suppress this effect, we propose \\initAA, a simple initialization that scales the variance of $A$ as $σ_A^2 \\propto n^{-2}$ while keeping $B_0=0$. Under matched rank and training time for both initializations, this reduces the initialization-noise energy by an additional factor of $1/n$, stabilizing asymmetric LoRA training while preserving zero initial adapter output. Empirically, \\initAA substantially widens the stable LR region across initialization scales, adapter ranks, and LoRA update multipliers. Across tasks and models, \\initAA reduces best-ratio drift, prevents the high-ratio collapse observed with standard \\initA, and makes the width-based guideline $η_B \\approx n η_A$ a useful starting point for finite pretrained models."
+    },
+    {
+      "title": "ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation",
+      "authors": [
+        "Shuo Han",
+        "Zhilin Wang",
+        "Peng Ling",
+        "Wenjia Gong",
+        "Yang Liu",
+        "Guanjun Jiang",
+        "Yukun Cao",
+        "Xike Xie"
+      ],
+      "summary": "Complex text-to-image requests remain difficult to satisfy reliably. Verifying and repairing an image can fix an individual output, but a successful repair does not necessarily carry over to other requests. We present ImageRSI, a framework that keeps the image generator frozen and combines three components: five-dimensional verification and repair within each task, an experience library shared across tasks, and offline updating of the judge. Candidate experiences enter the library only after paired A/B validation, and the judge is updated with supervised fine-tuning and GRPO on accumulated image-judgment records and evaluated before reuse. We also introduce ImageReq-Bench, a benchmark of 961 requests built around hard cases in real-world image-generation requests, each paired with an evaluation checklist. ImageRSI achieves a Checklist Strict Accuracy (CSA) of 52.6% on MindBench (with Nano Banana Pro as the generator) and 65.66% on ImageReq-Bench, and we compare system outcomes across judge-training configurations.",
+      "published": "2026-10-23T03:42:21Z",
+      "updated": "2026-10-23T03:42:21Z",
+      "arxiv_id": "2610.32120v1",
+      "abs_url": "http://arxiv.org/abs/2610.32120v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.32120v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 4,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "image generation"
+      ],
+      "title_zh": "ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation",
+      "summary_zh": "Complex text-to-image requests remain difficult to satisfy reliably. Verifying and repairing an image can fix an individual output, but a successful repair does not necessarily carry over to other requests. We present ImageRSI, a framework that keeps the image generator frozen and combines three components: five-dimensional verification and repair within each task, an experience library shared across tasks, and offline updating of the judge. Candidate experiences enter the library only after paired A/B validation, and the judge is updated with supervised fine-tuning and GRPO on accumulated image-judgment records and evaluated before reuse. We also introduce ImageReq-Bench, a benchmark of 961 requests built around hard cases in real-world image-generation requests, each paired with an evaluation checklist. ImageRSI achieves a Checklist Strict Accuracy (CSA) of 52.6% on MindBench (with Nano Banana Pro as the generator) and 65.66% on ImageReq-Bench, and we compare system outcomes across judge-training configurations."
+    },
+    {
+      "title": "REDAR: Reinforcement-Driven Adaptive Regularisation for Class Incremental Learning",
+      "authors": [
+        "Akila Ayanthi",
+        "Darshana Priyasad",
+        "Tharindu Fernando",
+        "Sridha Sridharan",
+        "Clinton Fookes",
+        "Peyman Moghadam"
+      ],
+      "summary": "Regularisation-based class-incremental learning (CIL) methods control the stability-plasticity trade-off through fixed coefficients tuned offline, independently of the continual learning objective and blind to phase-specific variations in data volume, task difficulty, and class similarity. We argue this is a fundamental mismatch and propose REDAR: Reinforcement-Driven Adaptive Regularisation for Class Incremental Learning, which treats regularisation strength selection as a sequential decision problem. At each incremental phase, a lightweight reinforcement learning (RL) agent observes a compact state of current performance metrics and incoming data statistics, and outputs the distillation coefficients for that phase. To respect CIL's constraint on historical data access, the policy is trained entirely on pseudo-CIL tasks constructed from the initial phase, then deployed on the incremental sequence without further adaptation. Experiments on CIFAR-100 and Tiny-ImageNet demonstrate that REDAR reduces forgetting and improves forward transfer over fixed and heuristic baselines, and that policies trained on short pseudo-task horizons transfer effectively to longer incremental runs.",
+      "published": "2026-10-22T23:15:36Z",
+      "updated": "2026-10-22T23:15:36Z",
+      "arxiv_id": "2610.31991v1",
+      "abs_url": "http://arxiv.org/abs/2610.31991v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31991v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "The 28th International Conference on Digital Image Computing: Techniques and Applications (DICTA 2026)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 4,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "class-incremental",
+        "continual learning",
+        "incremental learning"
+      ],
+      "title_zh": "REDAR: Reinforcement-Driven Adaptive Regularisation for Class Incremental Learning",
+      "summary_zh": "Regularisation-based class-incremental learning (CIL) methods control the stability-plasticity trade-off through fixed coefficients tuned offline, independently of the continual learning objective and blind to phase-specific variations in data volume, task difficulty, and class similarity. We argue this is a fundamental mismatch and propose REDAR: Reinforcement-Driven Adaptive Regularisation for Class Incremental Learning, which treats regularisation strength selection as a sequential decision problem. At each incremental phase, a lightweight reinforcement learning (RL) agent observes a compact state of current performance metrics and incoming data statistics, and outputs the distillation coefficients for that phase. To respect CIL's constraint on historical data access, the policy is trained entirely on pseudo-CIL tasks constructed from the initial phase, then deployed on the incremental sequence without further adaptation. Experiments on CIFAR-100 and Tiny-ImageNet demonstrate that REDAR reduces forgetting and improves forward transfer over fixed and heuristic baselines, and that policies trained on short pseudo-task horizons transfer effectively to longer incremental runs."
+    },
+    {
+      "title": "ENCL: Enabling Efficient Neuromorphic Continual Learning with Local Learning Rule and Sub-Network Freezing Strategy",
+      "authors": [
+        "Rachmad Vidya Wicaksana Putra",
+        "Shuochen Zhou",
+        "Hassan Raza",
+        "Muhammad Shafique"
+      ],
+      "summary": "Continual learning (CL) in neural networks is a promising learning approach for updating the knowledge of deployed systems based on new data encountered at run time, that have not been learned during the offline training phase. To enable their power/energy-efficient CL processing, neuromorphic continual learning (NCL) concept with sparse event-based operations have recently been introduced. However, state-of-the-art NCL methods typically employ the memory-hungry data/experience replay, coupled with costly global learning rule (i.e., backpropagation-based surrogate gradient). To address these limitations, we propose ENCL, a novel methodology that enables efficient NCL by employing a lightweight local learning rule and sub-network freezing strategy. ENCL leverages the temporally- and spatially-local learning rule to perform efficient credit assignment for training new tasks, alleviating the expensive cost of global learning rule. ENCL also employs a sub-network freezing strategy based on the given tasks to avoid the needs for network architecture expansion, hence further improving the efficiency and scalability of the NCL training process. To efficiently support this, we train each task with a small number of epochs as well as adjusted learning rate and timestep. Experiment results on task-incremental learning (TIL) scenario show that, our ENCL consistently achieves strong performance across different datasets as compared to state-of-the-art works. Specifically, ENCL achieves competitive accuracy comparable to that of the state-of-the-art data/experience replay, while reducing memory cost by up to 88%, NCL training time by up to 51%, average power consumption by up to 40%, and energy consumption by up to 65% across different benchmarking datasets (i.e., Split MNIST, Split Fashion MNIST, Split CIFAR-10, and Split CIFAR-100).",
+      "published": "2026-10-22T21:17:34Z",
+      "updated": "2026-10-22T21:17:34Z",
+      "arxiv_id": "2610.31927v1",
+      "abs_url": "http://arxiv.org/abs/2610.31927v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31927v1",
+      "primary_category": "cs.NE",
+      "categories": [
+        "cs.NE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "9 pages, 6 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 3,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "continual learning",
+        "incremental learning"
+      ],
+      "title_zh": "ENCL: Enabling Efficient Neuromorphic Continual Learning with Local Learning Rule and Sub-Network Freezing Strategy",
+      "summary_zh": "Continual learning (CL) in neural networks is a promising learning approach for updating the knowledge of deployed systems based on new data encountered at run time, that have not been learned during the offline training phase. To enable their power/energy-efficient CL processing, neuromorphic continual learning (NCL) concept with sparse event-based operations have recently been introduced. However, state-of-the-art NCL methods typically employ the memory-hungry data/experience replay, coupled with costly global learning rule (i.e., backpropagation-based surrogate gradient). To address these limitations, we propose ENCL, a novel methodology that enables efficient NCL by employing a lightweight local learning rule and sub-network freezing strategy. ENCL leverages the temporally- and spatially-local learning rule to perform efficient credit assignment for training new tasks, alleviating the expensive cost of global learning rule. ENCL also employs a sub-network freezing strategy based on the given tasks to avoid the needs for network architecture expansion, hence further improving the efficiency and scalability of the NCL training process. To efficiently support this, we train each task with a small number of epochs as well as adjusted learning rate and timestep. Experiment results on task-incremental learning (TIL) scenario show that, our ENCL consistently achieves strong performance across different datasets as compared to state-of-the-art works. Specifically, ENCL achieves competitive accuracy comparable to that of the state-of-the-art data/experience replay, while reducing memory cost by up to 88%, NCL training time by up to 51%, average power consumption by up to 40%, and energy consumption by up to 65% across different benchmarking datasets (i.e., Split MNIST, Split Fashion MNIST, Split CIFAR-10, and Split CIFAR-100)."
+    },
+    {
+      "title": "OmniRay: Camera-Agnostic Monocular 3D Reconstruction with Composite Ray Fields",
+      "authors": [
+        "Namitha Guruprasad",
+        "Abhay Yadav",
+        "Cheng Peng",
+        "Rama Chellappa",
+        "Anand Bhattad"
+      ],
+      "summary": "Monocular models recover 3D geometry from a single image in one pass, but most assume a pinhole camera and produce distorted geometry on the wide-angle imagery produced by fisheye and panoramic lenses. Camera-aware models remove this assumption by predicting a per-pixel ray field. However, they represent different camera geometries using a single fixed basis to capture both the overall camera projection and its finer variations. We argue that camera geometry can be viewed as having a hierarchy of complexity for representing rays. We present OmniRay, a feed-forward model whose Ray Module is composed of three components: a monotone radial base that captures radially symmetric structure, a spherical-harmonic residual for smooth deviations from it, and a free-form residual for remaining local variation. These components are composed as successive rotations on the sphere, allowing the representation to accommodate diverse camera geometries. Given a single image, OmniRay predicts a ray direction and an up-to-scale radial distance for every pixel, from which a 3D point cloud is recovered without needing camera information at inference time. Extensive experiments across different camera configurations demonstrate that OmniRay establishes a new state-of-the-art in camera-agnostic monocular 3D reconstruction.",
+      "published": "2026-10-22T17:55:30Z",
+      "updated": "2026-10-22T17:55:30Z",
+      "arxiv_id": "2610.31645v1",
+      "abs_url": "http://arxiv.org/abs/2610.31645v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31645v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Project page: https://nam1410.github.io/omniray/",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "LiDAR/点云"
+      ],
+      "topic": "LiDAR/点云",
+      "score": 2,
+      "anchor_terms": [
+        "3D reconstruction"
+      ],
+      "matched_terms": [
+        "3D reconstruction",
+        "point cloud"
+      ],
+      "title_zh": "OmniRay: Camera-Agnostic Monocular 3D Reconstruction with Composite Ray Fields",
+      "summary_zh": "Monocular models recover 3D geometry from a single image in one pass, but most assume a pinhole camera and produce distorted geometry on the wide-angle imagery produced by fisheye and panoramic lenses. Camera-aware models remove this assumption by predicting a per-pixel ray field. However, they represent different camera geometries using a single fixed basis to capture both the overall camera projection and its finer variations. We argue that camera geometry can be viewed as having a hierarchy of complexity for representing rays. We present OmniRay, a feed-forward model whose Ray Module is composed of three components: a monotone radial base that captures radially symmetric structure, a spherical-harmonic residual for smooth deviations from it, and a free-form residual for remaining local variation. These components are composed as successive rotations on the sphere, allowing the representation to accommodate diverse camera geometries. Given a single image, OmniRay predicts a ray direction and an up-to-scale radial distance for every pixel, from which a 3D point cloud is recovered without needing camera information at inference time. Extensive experiments across different camera configurations demonstrate that OmniRay establishes a new state-of-the-art in camera-agnostic monocular 3D reconstruction."
+    },
+    {
+      "title": "WorldForge V2: Eliciting Camera-Trajectory Alignment in Video Diffusion Models",
+      "authors": [
+        "Chenxi Song",
+        "Yanming Yang",
+        "Tong Zhao",
+        "Ruibo Li",
+        "Joey Tianyi Zhou",
+        "Chi Zhang"
+      ],
+      "summary": "Video diffusion models have learned rich 3D/4D priors, making them promising for scene generation and video re-rendering. However, their use in spatial tasks is limited by imprecise camera control, spatial and temporal inconsistencies, and entangled camera motion with scene dynamics. Existing approaches, such as task-specific fine-tuning and post-process warping, often introduce visual artifacts, generalize poorly, or incur high computational costs. We propose WorldForge V2 to achieve accurate camera control while preserving the generative capabilities of pretrained video models. We first develop a training-free guidance framework using warped references to iteratively refine generation along a target camera path. Optical-flow analysis identifies motion-related latent channels for selective guidance, helping separate motion control from appearance. A dual-path strategy further compares guided and unguided predictions to correct artifacts from imperfect references. Together, these components guide viewpoint changes while preserving scene appearance and object motion. To reduce refinement costs, v-cache approximates the correction using the preceding denoising prediction, avoiding an additional model evaluation. We further extend motion localization from latent channels to network blocks and introduce Trajectory LoRA, which concentrates adaptation on blocks most responsive to trajectory guidance. A two-stage training strategy teaches these adapters to denoise the states encountered during guided generation, using limited supervision effectively. This enables reliable camera control with very little training data, with a single training scene already supporting generalization to unseen scenes. Quantitative and qualitative evaluations across multiple datasets show that our method achieves state-of-the-art generation quality and trajectory accuracy in camera-controlled video generation.",
+      "published": "2026-10-22T17:53:03Z",
+      "updated": "2026-10-22T17:53:03Z",
+      "arxiv_id": "2610.31640v1",
+      "abs_url": "http://arxiv.org/abs/2610.31640v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31640v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 7,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "denoising",
+        "diffusion model",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "WorldForge V2: Eliciting Camera-Trajectory Alignment in Video Diffusion Models",
+      "summary_zh": "Video diffusion models have learned rich 3D/4D priors, making them promising for scene generation and video re-rendering. However, their use in spatial tasks is limited by imprecise camera control, spatial and temporal inconsistencies, and entangled camera motion with scene dynamics. Existing approaches, such as task-specific fine-tuning and post-process warping, often introduce visual artifacts, generalize poorly, or incur high computational costs. We propose WorldForge V2 to achieve accurate camera control while preserving the generative capabilities of pretrained video models. We first develop a training-free guidance framework using warped references to iteratively refine generation along a target camera path. Optical-flow analysis identifies motion-related latent channels for selective guidance, helping separate motion control from appearance. A dual-path strategy further compares guided and unguided predictions to correct artifacts from imperfect references. Together, these components guide viewpoint changes while preserving scene appearance and object motion. To reduce refinement costs, v-cache approximates the correction using the preceding denoising prediction, avoiding an additional model evaluation. We further extend motion localization from latent channels to network blocks and introduce Trajectory LoRA, which concentrates adaptation on blocks most responsive to trajectory guidance. A two-stage training strategy teaches these adapters to denoise the states encountered during guided generation, using limited supervision effectively. This enables reliable camera control with very little training data, with a single training scene already supporting generalization to unseen scenes. Quantitative and qualitative evaluations across multiple datasets show that our method achieves state-of-the-art generation quality and trajectory accuracy in camera-controlled video generation."
+    },
+    {
+      "title": "AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark",
+      "authors": [
+        "Ruicong Liu",
+        "Liangyang Ouyang",
+        "Fengbo Lan",
+        "Zhixiang Wang",
+        "Kaipeng Zhang"
+      ],
+      "summary": "AI coding agents can now build small playable games in minutes, but the results usually look like programmer art: gray blockouts, colored geometric primitives, and flat semantic blobs. We present AnyGameRenderer, a video-to-video generative renderer that turns such footage into high-quality visuals with characters, motion detail, and effects. Throughout, it keeps the layout, camera, and every entity's position and timing intact. Our AnyGameRenderer generalizes across a wide range of genres that agents build, such as tower defense, auto-battlers, top-down survivors, turn-based battles, kart racing, and crowd runners. AnyGameRenderer takes plain video as its game-state input, with no complex representations such as engine G-buffers, per-object class labels, or low-poly proxies. Gray blockouts, colored primitives, semantic maps, and wireframes all work as input. It also preserves entity correspondence: group counts stay correct, and entities appear and disappear on the right frame. We implement AnyGameRenderer by LoRA fine-tuning MiniMax-H3 ref2va, a 33B reference-video-conditioned video generation model. Training uses $\\sim$10k paired clips from three sources: (i) multi-stream rendering data from 38 agent-made games exported from GEAR, an AI game-creation tool; (ii) two-stream rendering data from Unreal Engine, with programmatically controlled crowds, count changes, and entity scales; and (iii) real gameplay recordings, with pairs reconstructed via 3D-box detection. To evaluate the entity correspondence, we propose an entity-level benchmark of 59 held-out cases with 753 entities, scored against ground-truth boxes. Compared with the base model, AnyGameRenderer better preserves entity correspondence: temporal match rises from 50.9\\% to 62.9\\%, missed count changes fall from 34.7\\% to 21.3\\%, and fewer entities are hallucinated or left unrendered.",
+      "published": "2026-10-22T15:58:39Z",
+      "updated": "2026-10-22T15:58:39Z",
+      "arxiv_id": "2610.31466v1",
+      "abs_url": "http://arxiv.org/abs/2610.31466v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31466v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark",
+      "summary_zh": "AI coding agents can now build small playable games in minutes, but the results usually look like programmer art: gray blockouts, colored geometric primitives, and flat semantic blobs. We present AnyGameRenderer, a video-to-video generative renderer that turns such footage into high-quality visuals with characters, motion detail, and effects. Throughout, it keeps the layout, camera, and every entity's position and timing intact. Our AnyGameRenderer generalizes across a wide range of genres that agents build, such as tower defense, auto-battlers, top-down survivors, turn-based battles, kart racing, and crowd runners. AnyGameRenderer takes plain video as its game-state input, with no complex representations such as engine G-buffers, per-object class labels, or low-poly proxies. Gray blockouts, colored primitives, semantic maps, and wireframes all work as input. It also preserves entity correspondence: group counts stay correct, and entities appear and disappear on the right frame. We implement AnyGameRenderer by LoRA fine-tuning MiniMax-H3 ref2va, a 33B reference-video-conditioned video generation model. Training uses $\\sim$10k paired clips from three sources: (i) multi-stream rendering data from 38 agent-made games exported from GEAR, an AI game-creation tool; (ii) two-stream rendering data from Unreal Engine, with programmatically controlled crowds, count changes, and entity scales; and (iii) real gameplay recordings, with pairs reconstructed via 3D-box detection. To evaluate the entity correspondence, we propose an entity-level benchmark of 59 held-out cases with 753 entities, scored against ground-truth boxes. Compared with the base model, AnyGameRenderer better preserves entity correspondence: temporal match rises from 50.9\\% to 62.9\\%, missed count changes fall from 34.7\\% to 21.3\\%, and fewer entities are hallucinated or left unrendered."
+    },
+    {
+      "title": "Data-Driven Vision-Language Models for Remote Sensing: A Survey",
+      "authors": [
+        "Yue Zhou",
+        "Shujun Zhao",
+        "Xue Yang",
+        "Ruigang Li",
+        "Tianwen Zhang",
+        "Mengcheng Lan",
+        "Chaofeng Chen",
+        "Lingfei Ma",
+        "Hongjie He",
+        "Jonathan Li"
+      ],
+      "summary": "During the deep learning era, innovations in remote sensing (RS) vision models primarily focused on optimizing network architectures for specific tasks and conducting end-to-end training. However, with the advent of the Vision-Language Models (VLMs) era, constrained by substantial computational resource demands, the mainstream research paradigm has shifted towards adapting general-purpose VLMs using RS vertical domain data for fine-tuning, rather than modifying their core architectures. This transition marks a change in the innovation pathway from model-centric to data-centric. Despite the increasing importance of data, the academic community still lacks a systematic, data-centric survey to guide researchers in constructing high-quality RS vision-language datasets for various application scenarios and in conducting effective model fine-tuning and performance evaluation based on these datasets. To address this gap, this paper presents a systematic review of the development status of RS datasets tailored for VLMs. It further provides a comprehensive practical guide for RS researchers in the large model era, covering the entire pipeline from data construction to fine-tuning and evaluation. This paper aims to encourage the academic community to build more diverse and higher-quality vision-language datasets for specialized RS sub-fields. Ultimately, the goal is to converge these efforts into a comprehensive RS vision-language corpus that offers extensive task coverage and a wide geographical distribution, thereby laying a solid data foundation for advancing towards general artificial intelligence in RS.",
+      "published": "2026-10-22T14:03:29Z",
+      "updated": "2026-10-22T14:03:29Z",
+      "arxiv_id": "2610.31304v1",
+      "abs_url": "http://arxiv.org/abs/2610.31304v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31304v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "comment": "44 pages, 15 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "large model",
+        "remote sensing"
+      ],
+      "title_zh": "Data-Driven Vision-Language Models for Remote Sensing: A Survey",
+      "summary_zh": "During the deep learning era, innovations in remote sensing (RS) vision models primarily focused on optimizing network architectures for specific tasks and conducting end-to-end training. However, with the advent of the Vision-Language Models (VLMs) era, constrained by substantial computational resource demands, the mainstream research paradigm has shifted towards adapting general-purpose VLMs using RS vertical domain data for fine-tuning, rather than modifying their core architectures. This transition marks a change in the innovation pathway from model-centric to data-centric. Despite the increasing importance of data, the academic community still lacks a systematic, data-centric survey to guide researchers in constructing high-quality RS vision-language datasets for various application scenarios and in conducting effective model fine-tuning and performance evaluation based on these datasets. To address this gap, this paper presents a systematic review of the development status of RS datasets tailored for VLMs. It further provides a comprehensive practical guide for RS researchers in the large model era, covering the entire pipeline from data construction to fine-tuning and evaluation. This paper aims to encourage the academic community to build more diverse and higher-quality vision-language datasets for specialized RS sub-fields. Ultimately, the goal is to converge these efforts into a comprehensive RS vision-language corpus that offers extensive task coverage and a wide geographical distribution, thereby laying a solid data foundation for advancing towards general artificial intelligence in RS."
+    },
+    {
+      "title": "RecallGS: Geometry-Grounded Recall for Online Semantic Gaussian Splatting",
+      "authors": [
+        "Thanh-Khoi Nguyen",
+        "Thien-Phuc Tran",
+        "Minh-Triet Tran"
+      ],
+      "summary": "Online semantic 3D Gaussian Splatting (3DGS) enables open-vocabulary scene understanding from streaming observations. However, existing methods recover geometric context missing from image-derived semantic features using an additionally learned 3D network, incurring extra training and runtime overhead. We observe that such geometric-semantic evidence may already exist in the agent's observation history and can be retrieved rather than learned. Based on this insight, we introduce RecallGS (Geometry-Grounded Recall for Online Semantic Gaussian Splatting), a lightweight, training-free mechanism that treats past observations as a non-parametric geometric-semantic prior. RecallGS follows a recall-ground-fuse pipeline: CLIP retrieves relevant observations, alpha-compositing weights identify geometrically supported views, and aggregate their semantic features over each Gaussian's rendered footprint. On ScanNet and ScanNet++, RecallGS achieves strong semantic segmentation performance at 2.48 FPS, demonstrating that geometric-semantic context can be effectively recovered from observation history without an additional learned 3D branch.",
+      "published": "2026-10-22T13:55:31Z",
+      "updated": "2026-10-22T13:55:31Z",
+      "arxiv_id": "2610.31293v1",
+      "abs_url": "http://arxiv.org/abs/2610.31293v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31293v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "场景分类",
+        "开放词汇与开放集",
+        "视觉-语言模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "语义分割",
+      "score": 5,
+      "anchor_terms": [
+        "open-vocabulary",
+        "semantic segmentation"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "open-vocabulary",
+        "semantic segmentation"
+      ],
+      "title_zh": "RecallGS: Geometry-Grounded Recall for Online Semantic Gaussian Splatting",
+      "summary_zh": "Online semantic 3D Gaussian Splatting (3DGS) enables open-vocabulary scene understanding from streaming observations. However, existing methods recover geometric context missing from image-derived semantic features using an additionally learned 3D network, incurring extra training and runtime overhead. We observe that such geometric-semantic evidence may already exist in the agent's observation history and can be retrieved rather than learned. Based on this insight, we introduce RecallGS (Geometry-Grounded Recall for Online Semantic Gaussian Splatting), a lightweight, training-free mechanism that treats past observations as a non-parametric geometric-semantic prior. RecallGS follows a recall-ground-fuse pipeline: CLIP retrieves relevant observations, alpha-compositing weights identify geometrically supported views, and aggregate their semantic features over each Gaussian's rendered footprint. On ScanNet and ScanNet++, RecallGS achieves strong semantic segmentation performance at 2.48 FPS, demonstrating that geometric-semantic context can be effectively recovered from observation history without an additional learned 3D branch."
+    },
+    {
+      "title": "Learning Robot Behavior Priors from Non-Robotic Synthetic Data",
+      "authors": [
+        "Mateusz Odrowaz-Sypniewski",
+        "Michael Amir",
+        "Jasmine Bayrooti",
+        "Ajay Shankar",
+        "Amanda Prorok"
+      ],
+      "summary": "Real robot data, rich across tasks and morphologies, is often treated as the bottleneck for training robot learning models, including embodied foundation models that aim for zero-shot physical transfer. In this paper, we investigate the degree to which such models can acquire necessary structure using data from systems without embodiment. To this end, we test if inexpensive, procedurally generated synthetic data can yield useful priors before a model observes any real-world behavior. We study this through robot action prediction, a natural pretraining objective and a direct test of whether structure learned from arbitrary synthetic tasks transfers to embodied settings. We introduce three data generation pipelines that model mathematical abstractions of robotic control, and use them as pretraining priors for a Transformer. We demonstrate that a model trained purely on this non-robotic data attains non-trivial zero-shot prediction performance on unseen physical robot tasks via an in-context learning mechanism, and that our specialized control priors notably improve upon generic causal priors. We also compare against a compute-matched baseline trained on real robot data, and find that it outperforms our model but only on the datasets it was trained on. These findings suggest that procedurally generated, mathematical abstractions can yield useful robotic priors, offering a potential complement to expensive embodied data collection.",
+      "published": "2026-10-22T13:43:47Z",
+      "updated": "2026-10-22T13:43:47Z",
+      "arxiv_id": "2610.31275v1",
+      "abs_url": "http://arxiv.org/abs/2610.31275v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31275v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning",
+        "transformer",
+        "zero-shot"
+      ],
+      "title_zh": "Learning Robot Behavior Priors from Non-Robotic Synthetic Data",
+      "summary_zh": "Real robot data, rich across tasks and morphologies, is often treated as the bottleneck for training robot learning models, including embodied foundation models that aim for zero-shot physical transfer. In this paper, we investigate the degree to which such models can acquire necessary structure using data from systems without embodiment. To this end, we test if inexpensive, procedurally generated synthetic data can yield useful priors before a model observes any real-world behavior. We study this through robot action prediction, a natural pretraining objective and a direct test of whether structure learned from arbitrary synthetic tasks transfers to embodied settings. We introduce three data generation pipelines that model mathematical abstractions of robotic control, and use them as pretraining priors for a Transformer. We demonstrate that a model trained purely on this non-robotic data attains non-trivial zero-shot prediction performance on unseen physical robot tasks via an in-context learning mechanism, and that our specialized control priors notably improve upon generic causal priors. We also compare against a compute-matched baseline trained on real robot data, and find that it outperforms our model but only on the datasets it was trained on. These findings suggest that procedurally generated, mathematical abstractions can yield useful robotic priors, offering a potential complement to expensive embodied data collection."
+    },
+    {
+      "title": "Query-Time Calibration of CLIP Features for Open-Vocabulary 3D Segmentation",
+      "authors": [
+        "Dominik Engel",
+        "Yousef Rajeh",
+        "Leon Sick",
+        "Ivan Viola"
+      ],
+      "summary": "Lifting vision-language features such as CLIP into 3D Gaussian reconstructions enables open-vocabulary segmentation through natural-language queries. Although CLIP represents a broad range of semantic concepts, the lifted features of individual scenes can exhibit strong directional concentration, while raw cosine similarity does not account for the scene-specific feature distribution. We show that substantial segmentation gains can be obtained by changing how a fixed lifted feature field is compared with text. Our method partially subtracts a shared scene direction from visual features and text prototypes and whitens text prototypes using a fixed reference vocabulary of generic terms. It then uses soft clustering for multiclass prediction and CSLS with a relevance margin against the reference vocabulary for single-query prediction. Beyond reducing directional concentration, scene centering improves class-relative feature separation in every evaluated scene. Across seven lifting methods and four datasets, the resulting query-time calibration consistently improves mean intersection over union in both multiclass and single-query segmentation. These gains require no retraining, source-image re-encoding, or feature re-lifting, demonstrating the value of scene-conditioned comparison for making better use of existing lifted representations.",
+      "published": "2026-10-22T08:31:12Z",
+      "updated": "2026-10-22T08:31:12Z",
+      "arxiv_id": "2610.30908v1",
+      "abs_url": "http://arxiv.org/abs/2610.30908v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30908v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "开放词汇与开放集",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 7,
+      "anchor_terms": [
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "CLIP",
+        "open-vocabulary"
+      ],
+      "title_zh": "Query-Time Calibration of CLIP Features for Open-Vocabulary 3D Segmentation",
+      "summary_zh": "Lifting vision-language features such as CLIP into 3D Gaussian reconstructions enables open-vocabulary segmentation through natural-language queries. Although CLIP represents a broad range of semantic concepts, the lifted features of individual scenes can exhibit strong directional concentration, while raw cosine similarity does not account for the scene-specific feature distribution. We show that substantial segmentation gains can be obtained by changing how a fixed lifted feature field is compared with text. Our method partially subtracts a shared scene direction from visual features and text prototypes and whitens text prototypes using a fixed reference vocabulary of generic terms. It then uses soft clustering for multiclass prediction and CSLS with a relevance margin against the reference vocabulary for single-query prediction. Beyond reducing directional concentration, scene centering improves class-relative feature separation in every evaluated scene. Across seven lifting methods and four datasets, the resulting query-time calibration consistently improves mean intersection over union in both multiclass and single-query segmentation. These gains require no retraining, source-image re-encoding, or feature re-lifting, demonstrating the value of scene-conditioned comparison for making better use of existing lifted representations."
+    },
+    {
+      "title": "HimmBO: High-Dimensional Interactive Model-Merging Bayesian Optimization for Image Generation",
+      "authors": [
+        "Jinyuan Mao",
+        "Zhihao Shen",
+        "Chenxi Liu"
+      ],
+      "summary": "Fine-tuning has become a common way to customize text-to-image models, leading to community collections of over 100K lightweight adapters. Adapters sharing a base model can be merged with continuous coefficients. This turns a large collection into a high-dimensional continuous design space, which recent work explores interactively using preferential Bayesian optimization (PBO). However, existing approaches are limited to a few dozen preselected adapters and require expensive image generation in every interaction round. We introduce HimmBO, a two-stage method that scales preference-driven adapter merging to much larger collections while reducing image-generation cost. Its screening stage recovers the active adapter set through level-set estimation over pre-generated images, requiring no image generation. The refinement stage then optimizes merge coefficients in the recovered low-dimensional subspace. Both stages use a style-aware kernel, allowing preference information to transfer between visually similar adapters. In simulated-user image-matching experiments, HimmBO achieves higher final similarity than all comparisons while reaching a given similarity with under one tenth of the image generations required by prior work. Its performance remains stable as the collection grows to 1080 adapters, while competing methods degrade substantially.",
+      "published": "2026-10-22T07:56:10Z",
+      "updated": "2026-10-22T07:56:10Z",
+      "arxiv_id": "2610.30875v1",
+      "abs_url": "http://arxiv.org/abs/2610.30875v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30875v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化"
+      ],
+      "topic": "图像生成与重建",
+      "score": 5,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "adapter",
+        "fine-tuning",
+        "image generation"
+      ],
+      "title_zh": "HimmBO: High-Dimensional Interactive Model-Merging Bayesian Optimization for Image Generation",
+      "summary_zh": "Fine-tuning has become a common way to customize text-to-image models, leading to community collections of over 100K lightweight adapters. Adapters sharing a base model can be merged with continuous coefficients. This turns a large collection into a high-dimensional continuous design space, which recent work explores interactively using preferential Bayesian optimization (PBO). However, existing approaches are limited to a few dozen preselected adapters and require expensive image generation in every interaction round. We introduce HimmBO, a two-stage method that scales preference-driven adapter merging to much larger collections while reducing image-generation cost. Its screening stage recovers the active adapter set through level-set estimation over pre-generated images, requiring no image generation. The refinement stage then optimizes merge coefficients in the recovered low-dimensional subspace. Both stages use a style-aware kernel, allowing preference information to transfer between visually similar adapters. In simulated-user image-matching experiments, HimmBO achieves higher final similarity than all comparisons while reaching a given similarity with under one tenth of the image generations required by prior work. Its performance remains stable as the collection grows to 1080 adapters, while competing methods degrade substantially."
+    },
+    {
+      "title": "Adaptive Deadline- and Energy-Aware Caching Algorithms in Dynamic Multi-UAV Edge Networks",
+      "authors": [
+        "Jian Kim",
+        "Ki-Il Kim"
+      ],
+      "summary": "Content caching via unmanned aerial vehicles (UAVs) becomes one of the solutions to maintain content delivery when terrestrial infrastructure is unavailable or disrupted. However, existing caching approaches often focus primarily on cache-hit performance or average delivery delay, without jointly addressing spatially heterogeneous and time-varying demand, content-specific deadlines, and uneven communication-energy consumption across UAVs. To address these challenges, we formulate a dynamic deadline- and energy-aware cache placement and replacement problem that jointly considers deadline misses, UAV-side communication energy, and inter-UAV energy imbalance. To achieve this, we first develop deadline- and energy-aware UBAC (DE-UBAC), an interpretable hierarchical rule-based realization that incorporates deadline-aware prioritization, cooperative placement, energy-aware coordination, and cache-update cost. However, predefined priorities and thresholds limit its adaptability under dynamically coupled network conditions. We therefore propose GRU-assisted Deadline- and Energy-aware Proximal Policy Optimization (GRU-DEPPO), which combines local and global GRU-based temporal representations with a centralized PPO actor-critic for adaptive cache placement and replacement. Simulation results show that GRU-DEPPO achieves the lowest deadline-miss rate and total UAV-side communication energy among the considered schemes. Compared with DE-UBAC, GRU-DEPPO reduces the deadline-miss rate by approximately 61% and inter-UAV energy imbalance by approximately 40%.",
+      "published": "2026-10-22T05:42:44Z",
+      "updated": "2026-10-22T05:42:44Z",
+      "arxiv_id": "2610.30768v1",
+      "abs_url": "http://arxiv.org/abs/2610.30768v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30768v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.NI"
+      ],
+      "comment": "18 pages, 7 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV"
+      ],
+      "topic": "无人机/UAV",
+      "score": 5,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "Adaptive Deadline- and Energy-Aware Caching Algorithms in Dynamic Multi-UAV Edge Networks",
+      "summary_zh": "Content caching via unmanned aerial vehicles (UAVs) becomes one of the solutions to maintain content delivery when terrestrial infrastructure is unavailable or disrupted. However, existing caching approaches often focus primarily on cache-hit performance or average delivery delay, without jointly addressing spatially heterogeneous and time-varying demand, content-specific deadlines, and uneven communication-energy consumption across UAVs. To address these challenges, we formulate a dynamic deadline- and energy-aware cache placement and replacement problem that jointly considers deadline misses, UAV-side communication energy, and inter-UAV energy imbalance. To achieve this, we first develop deadline- and energy-aware UBAC (DE-UBAC), an interpretable hierarchical rule-based realization that incorporates deadline-aware prioritization, cooperative placement, energy-aware coordination, and cache-update cost. However, predefined priorities and thresholds limit its adaptability under dynamically coupled network conditions. We therefore propose GRU-assisted Deadline- and Energy-aware Proximal Policy Optimization (GRU-DEPPO), which combines local and global GRU-based temporal representations with a centralized PPO actor-critic for adaptive cache placement and replacement. Simulation results show that GRU-DEPPO achieves the lowest deadline-miss rate and total UAV-side communication energy among the considered schemes. Compared with DE-UBAC, GRU-DEPPO reduces the deadline-miss rate by approximately 61% and inter-UAV energy imbalance by approximately 40%."
+    }
+  ]
+}
