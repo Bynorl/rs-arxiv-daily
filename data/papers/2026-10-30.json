@@ -1,0 +1,1047 @@
+{
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30T07:54:48.926335+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 24,
+  "papers": [
+    {
+      "title": "Intrinsic Distribution Matching",
+      "authors": [
+        "Deyuan Liu",
+        "Yansen Han",
+        "Kaiwen Zheng",
+        "Jun Xie",
+        "Jiacheng Liu",
+        "Zhenglin Cheng",
+        "Peng Sun",
+        "Jintao Zhang",
+        "Jianguo Li",
+        "Tao Lin"
+      ],
+      "summary": "One-step and few-step text-to-image generation must accurately render the details specified in the prompt despite limited opportunities for refinement. Distribution matching distillation (DMD) uses score differences to bring the generated distribution closer to a reference distribution. Following prior work, we estimate this difference with internal velocity branches, avoiding a separate fake-score network. We ask whether an explicit moment constraint improves this learned score supervision. A decomposition of the reverse-KL field into a Gaussian moment component and a non-Gaussian residual identifies statistics that can be constrained explicitly. We introduce Intrinsic Distribution Matching (IDM), which retains the full DMD correction and matches feature means and per-coordinate standard deviations using the generator's exponential-moving-average (EMA) copy, requiring no external feature encoder. Experiments use full-parameter and low-rank adaptation (LoRA) tuning on Z-Image-Turbo 6B and Qwen-Image 20B. At two network evaluations, IDM reaches 94.25% and 90.20% on Chinese and English LongText-Bench, the highest scores among the compared methods at this budget. Controlled ablations show gains from the added moment loss, while generator EMA features perform competitively with an external DINOv2 encoder across the five reported metrics. Code is available at https://github.com/inclusionAI/IDM.",
+      "published": "2026-10-29T08:57:17Z",
+      "updated": "2026-10-29T08:57:17Z",
+      "arxiv_id": "2610.39633v1",
+      "abs_url": "http://arxiv.org/abs/2610.39633v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.39633v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/inclusionAI/IDM",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation",
+        "LoRA"
+      ],
+      "title_zh": "Intrinsic Distribution Matching",
+      "summary_zh": "One-step and few-step text-to-image generation must accurately render the details specified in the prompt despite limited opportunities for refinement. Distribution matching distillation (DMD) uses score differences to bring the generated distribution closer to a reference distribution. Following prior work, we estimate this difference with internal velocity branches, avoiding a separate fake-score network. We ask whether an explicit moment constraint improves this learned score supervision. A decomposition of the reverse-KL field into a Gaussian moment component and a non-Gaussian residual identifies statistics that can be constrained explicitly. We introduce Intrinsic Distribution Matching (IDM), which retains the full DMD correction and matches feature means and per-coordinate standard deviations using the generator's exponential-moving-average (EMA) copy, requiring no external feature encoder. Experiments use full-parameter and low-rank adaptation (LoRA) tuning on Z-Image-Turbo 6B and Qwen-Image 20B. At two network evaluations, IDM reaches 94.25% and 90.20% on Chinese and English LongText-Bench, the highest scores among the compared methods at this budget. Controlled ablations show gains from the added moment loss, while generator EMA features perform competitively with an external DINOv2 encoder across the five reported metrics. Code is available at https://github.com/inclusionAI/IDM."
+    },
+    {
+      "title": "Data Scaling Laws in Stereo Matching: From In-domain Fitting to Cross-domain Generalization",
+      "authors": [
+        "Tong Zhao",
+        "Di Liang",
+        "Yiming Zeng",
+        "Bo Xu",
+        "Yingzhi Tang",
+        "Chen Bai"
+      ],
+      "summary": "In the era of large models, stereo matching is developing towards generalizable foundation models trained on million-scale synthetic images. However, how model performance scales up with synthetic data is still underexplored. In this work, we preliminarily investigate the in-domain and cross-domain data scaling laws in stereo matching. A realistic synthetic dataset, named XStereo, containing 200 thousand samples is first built to serve as a high-quality benchmark for data scaling research. In-domain training on five large-scale datasets demonstrate a two-regime scaling behavior with data, transitioning from the standard power law to saturation, where the critical transition point is approximately invariant under a fixed model. Cross-domain performance exhibits a substantially weaker and less predictable dependence on the source-domain data scale. The distribution and coverage diversity are more effective for diminishing domain gaps. More instructive suggestions are provided for high-efficiency data construction and training. The insightful findings are significant verification and extension of the existing scaling laws in both language and vision, paving the way to efficient and stronger stereo matching. The XStereo dataset is public at https://huggingface.co/datasets/Tong-Zhao/XStereo.",
+      "published": "2026-10-28T10:25:48Z",
+      "updated": "2026-10-28T10:25:48Z",
+      "arxiv_id": "2610.38600v1",
+      "abs_url": "http://arxiv.org/abs/2610.38600v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38600v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "WACV 2027",
+      "code_url": "https://huggingface.co/datasets/Tong-Zhao/XStereo",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "domain generalization"
+      ],
+      "matched_terms": [
+        "domain generalization",
+        "foundation model",
+        "generalizable",
+        "large model"
+      ],
+      "title_zh": "Data Scaling Laws in Stereo Matching: From In-domain Fitting to Cross-domain Generalization",
+      "summary_zh": "In the era of large models, stereo matching is developing towards generalizable foundation models trained on million-scale synthetic images. However, how model performance scales up with synthetic data is still underexplored. In this work, we preliminarily investigate the in-domain and cross-domain data scaling laws in stereo matching. A realistic synthetic dataset, named XStereo, containing 200 thousand samples is first built to serve as a high-quality benchmark for data scaling research. In-domain training on five large-scale datasets demonstrate a two-regime scaling behavior with data, transitioning from the standard power law to saturation, where the critical transition point is approximately invariant under a fixed model. Cross-domain performance exhibits a substantially weaker and less predictable dependence on the source-domain data scale. The distribution and coverage diversity are more effective for diminishing domain gaps. More instructive suggestions are provided for high-efficiency data construction and training. The insightful findings are significant verification and extension of the existing scaling laws in both language and vision, paving the way to efficient and stronger stereo matching. The XStereo dataset is public at https://huggingface.co/datasets/Tong-Zhao/XStereo."
+    },
+    {
+      "title": "Neighbourhood shortcuts in building damage assessment from very-high-resolution satellite imagery: diagnosis and a building-evidence plug-in",
+      "authors": [
+        "JianChong Guo",
+        "YuTing Wan",
+        "Kefan Li",
+        "AiLong Ma",
+        "YanFei Zhong"
+      ],
+      "summary": "Building damage assessment (BDA) from very-high-resolution imagery supports disaster response, and deep models now achieve high overall accuracy on public benchmarks. Because damage is spatially clustered, most buildings share the damage level of their neighbours, so overall scores are dominated by such buildings, whereas damaged buildings among intact ones are rare and easily overlooked. A high overall score therefore cannot tell whether a model judges the building itself or relies on its neighbourhood as a shortcut, and this study tests which of the two current models do. We stratify buildings by their agreement with their neighbours, move buildings into new neighbourhoods with their pixels unchanged, and diagnose nine models covering the main paradigms of BDA. All models miss a third to half of the isolated damaged buildings, and in non-flood events they call 73--87% of intact buildings damaged once these are moved into a damaged neighbourhood. We propose a building-evidence plug-in that adds two experts to an existing model without retraining it. One expert sees only the building, and the other sees its surroundings but is trained with seamlessly swapped neighbourhoods so that it learns not to trust them. With each of the nine models, the plug-in maintains or improves overall accuracy, reduces errors on buildings that disagree with their neighbours by 8--18%, and cuts by 40--69% the intact buildings that a damaged neighbourhood turns into damaged ones. It also raises the detection of synthetic isolated damage from 1--6% to 13--39% and carries over to optical--SAR data and to an unseen earthquake. High overall scores thus conceal a systematic reliance on the neighbourhood, which building-level evidence reduces at low cost.",
+      "published": "2026-10-28T02:07:44Z",
+      "updated": "2026-10-28T02:07:44Z",
+      "arxiv_id": "2610.38162v1",
+      "abs_url": "http://arxiv.org/abs/2610.38162v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38162v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "22 pages, 9 figures, 11 tables. Code: https://github.com/SummerTide/neighbourhood-shortcut-bda",
+      "code_url": "https://github.com/SummerTide/neighbourhood-shortcut-bda",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "SAR遥感",
+        "灾害与应急监测",
+        "数据集/评测"
+      ],
+      "topic": "SAR遥感",
+      "score": 7,
+      "anchor_terms": [
+        "flood",
+        "SAR",
+        "satellite image",
+        "satellite imagery"
+      ],
+      "matched_terms": [
+        "damage assessment",
+        "flood",
+        "SAR",
+        "satellite",
+        "satellite image",
+        "satellite imagery"
+      ],
+      "title_zh": "Neighbourhood shortcuts in building damage assessment from very-high-resolution satellite imagery: diagnosis and a building-evidence plug-in",
+      "summary_zh": "Building damage assessment (BDA) from very-high-resolution imagery supports disaster response, and deep models now achieve high overall accuracy on public benchmarks. Because damage is spatially clustered, most buildings share the damage level of their neighbours, so overall scores are dominated by such buildings, whereas damaged buildings among intact ones are rare and easily overlooked. A high overall score therefore cannot tell whether a model judges the building itself or relies on its neighbourhood as a shortcut, and this study tests which of the two current models do. We stratify buildings by their agreement with their neighbours, move buildings into new neighbourhoods with their pixels unchanged, and diagnose nine models covering the main paradigms of BDA. All models miss a third to half of the isolated damaged buildings, and in non-flood events they call 73--87% of intact buildings damaged once these are moved into a damaged neighbourhood. We propose a building-evidence plug-in that adds two experts to an existing model without retraining it. One expert sees only the building, and the other sees its surroundings but is trained with seamlessly swapped neighbourhoods so that it learns not to trust them. With each of the nine models, the plug-in maintains or improves overall accuracy, reduces errors on buildings that disagree with their neighbours by 8--18%, and cuts by 40--69% the intact buildings that a damaged neighbourhood turns into damaged ones. It also raises the detection of synthetic isolated damage from 1--6% to 13--39% and carries over to optical--SAR data and to an unseen earthquake. High overall scores thus conceal a systematic reliance on the neighbourhood, which building-level evidence reduces at low cost."
+    },
+    {
+      "title": "Rethinking Neural Thickets Without Weight Perturbations",
+      "authors": [
+        "Nicolas Dufour",
+        "Elouan Gardès",
+        "Amil Dravid",
+        "Patrick Pérez",
+        "Loic Landrieu"
+      ],
+      "summary": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a single decoder block already recovers much of the improvement, while keeping the model entirely frozen and adding a random bias to its output logits matches or exceeds full-weight perturbations on most reasoning tasks. This suggests an alternative explanation based on output diversity, validation-based selection, and voting. We formalize this view as Perturb-Select-Vote (PSV), a general procedure that generates perturbed predictors, selects high-performing members on a small validation set, and aggregates their predictions. This interpretation connects Neural Thickets to established inference-time methods, including sampling, self-consistency, and verifier-guided selection. A first-order analysis further shows that small weight perturbations act primarily through their induced logit shifts. We extend this analysis to vision, where logit PSV substantially improves performance under domain shift, including on Earth observation, while full-weight perturbations provide little additional benefit. Together, these results suggest that the gains attributed to nearby weight-space experts can instead be obtained through output diversity, selection, and voting. Logit PSV realizes these benefits with a fully frozen model, providing a simple, training-free alternative to full-weight perturbation ensembles across language and vision.",
+      "published": "2026-10-29T17:59:29Z",
+      "updated": "2026-10-29T17:59:29Z",
+      "arxiv_id": "2610.40649v1",
+      "abs_url": "http://arxiv.org/abs/2610.40649v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40649v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "comment": "Project page can be found here: https://kyutai.org/logit-psv",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 3,
+      "anchor_terms": [
+        "earth observation"
+      ],
+      "matched_terms": [
+        "earth observation"
+      ],
+      "title_zh": "Rethinking Neural Thickets Without Weight Perturbations",
+      "summary_zh": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a single decoder block already recovers much of the improvement, while keeping the model entirely frozen and adding a random bias to its output logits matches or exceeds full-weight perturbations on most reasoning tasks. This suggests an alternative explanation based on output diversity, validation-based selection, and voting. We formalize this view as Perturb-Select-Vote (PSV), a general procedure that generates perturbed predictors, selects high-performing members on a small validation set, and aggregates their predictions. This interpretation connects Neural Thickets to established inference-time methods, including sampling, self-consistency, and verifier-guided selection. A first-order analysis further shows that small weight perturbations act primarily through their induced logit shifts. We extend this analysis to vision, where logit PSV substantially improves performance under domain shift, including on Earth observation, while full-weight perturbations provide little additional benefit. Together, these results suggest that the gains attributed to nearby weight-space experts can instead be obtained through output diversity, selection, and voting. Logit PSV realizes these benefits with a fully frozen model, providing a simple, training-free alternative to full-weight perturbation ensembles across language and vision."
+    },
+    {
+      "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
+      "authors": [
+        "Jiongfan Yang",
+        "Weichen Fan",
+        "Haiwen Diao",
+        "Zhongang Cai",
+        "Ziwei Liu"
+      ],
+      "summary": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, while high-frequency detail can be modeled locally. Based on this insight, we introduce SpecSlot, a pixel-space rectified-flow Transformer that decouples output detail from the length of the global attention sequence. SpecSlot expands each spatial anchor into multiple slots, each assigned a disjoint band of DCT coefficients; this separates anchor density from spectral subdivision. Only the lowest-frequency slot from each anchor participates in global attention, while all slots interact locally. This allows the model to increase spectral detail without enlarging the global sequence. A spatial head further adds a local correction to the spectral prediction, while the generative state, target, and loss remain in pixel space. On ImageNet-256, SpecSlot achieves a comparable final FID to a FLOPs-matched JiT control while converging faster. On ImageNet-512, it improves FID by 2.84 over the control with 3.9% fewer FLOPs, and comes within only 0.69 FID of JiT-B/16 at 38.2% lower cost. On text-to-image generation, SpecSlot surpasses JiT-B/8 on DPG-Bench by 1.06 at 40.6% lower forward cost.",
+      "published": "2026-10-29T17:59:21Z",
+      "updated": "2026-10-29T17:59:21Z",
+      "arxiv_id": "2610.40647v1",
+      "abs_url": "http://arxiv.org/abs/2610.40647v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40647v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.NE"
+      ],
+      "comment": "22 pages, 10 figures; under review at ICLR 2027",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化",
+        "高光谱/多光谱"
+      ],
+      "topic": "图像生成与重建",
+      "score": 6,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation",
+        "tokenization",
+        "transformer"
+      ],
+      "title_zh": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
+      "summary_zh": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, while high-frequency detail can be modeled locally. Based on this insight, we introduce SpecSlot, a pixel-space rectified-flow Transformer that decouples output detail from the length of the global attention sequence. SpecSlot expands each spatial anchor into multiple slots, each assigned a disjoint band of DCT coefficients; this separates anchor density from spectral subdivision. Only the lowest-frequency slot from each anchor participates in global attention, while all slots interact locally. This allows the model to increase spectral detail without enlarging the global sequence. A spatial head further adds a local correction to the spectral prediction, while the generative state, target, and loss remain in pixel space. On ImageNet-256, SpecSlot achieves a comparable final FID to a FLOPs-matched JiT control while converging faster. On ImageNet-512, it improves FID by 2.84 over the control with 3.9% fewer FLOPs, and comes within only 0.69 FID of JiT-B/16 at 38.2% lower cost. On text-to-image generation, SpecSlot surpasses JiT-B/8 on DPG-Bench by 1.06 at 40.6% lower forward cost."
+    },
+    {
+      "title": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
+      "authors": [
+        "Oliver Hahn",
+        "Rodrigo Marcuzzi",
+        "Sangeetha Grama Srinivasan",
+        "Alessandro Burzio",
+        "Sherwin Bahmani",
+        "Jiahui Huang",
+        "Stefan Roth",
+        "Shengyu Huang",
+        "Qunjie Zhou",
+        "Laura Leal-Taixé"
+      ],
+      "summary": "We present LucidLyra, a framework that makes generatively reconstructed 3D scenes directly queryable for semantics and instances in a feed-forward manner from video latents. While generative 3D reconstruction can synthesize virtual environments from a single image, downstream applications in robotics and physical AI require not only visual realism but also access to scene semantics and object identities. Existing 3D understanding approaches, however, require captured multi-view scenes, have limited generalization capabilities, or rely on expensive per-scene processing and optimization. To bridge this gap, our method distills complementary knowledge from a camera-controlled video diffusion model and frozen 2D vision foundation models into a unified model to jointly infer 3D Gaussians encoding geometry, appearance, open-vocabulary semantics, and class-agnostic instance cues. The resulting scenes support novel-view rendering, open-vocabulary segmentation, and object grouping without per-scene optimization, while training requires neither manual 3D annotations nor captured multi-view data. Our method outperforms baselines combining state-of-the-art 3DGS segmentation approaches with generative 3D scene reconstruction on curated synthetic and real-image-conditioned benchmarks, while preserving reconstruction quality. Furthermore, our latent formulation naturally extends to monocular video, reconstructing structured dynamic 3D scenes across time. By turning renderable but unstructured outputs into queryable 3D worlds, LucidLyra enables downstream applications including 3D scene editing, 3D asset mining, and robotic simulation.",
+      "published": "2026-10-29T17:18:51Z",
+      "updated": "2026-10-29T17:18:51Z",
+      "arxiv_id": "2610.40495v1",
+      "abs_url": "http://arxiv.org/abs/2610.40495v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40495v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Project Page: https://research.nvidia.com/labs/sil/projects/lucidlyra",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "图像生成与重建",
+        "开放词汇与开放集",
+        "基础模型",
+        "视觉-语言模型",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 5,
+      "anchor_terms": [
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "diffusion model",
+        "foundation model",
+        "open-vocabulary"
+      ],
+      "title_zh": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
+      "summary_zh": "We present LucidLyra, a framework that makes generatively reconstructed 3D scenes directly queryable for semantics and instances in a feed-forward manner from video latents. While generative 3D reconstruction can synthesize virtual environments from a single image, downstream applications in robotics and physical AI require not only visual realism but also access to scene semantics and object identities. Existing 3D understanding approaches, however, require captured multi-view scenes, have limited generalization capabilities, or rely on expensive per-scene processing and optimization. To bridge this gap, our method distills complementary knowledge from a camera-controlled video diffusion model and frozen 2D vision foundation models into a unified model to jointly infer 3D Gaussians encoding geometry, appearance, open-vocabulary semantics, and class-agnostic instance cues. The resulting scenes support novel-view rendering, open-vocabulary segmentation, and object grouping without per-scene optimization, while training requires neither manual 3D annotations nor captured multi-view data. Our method outperforms baselines combining state-of-the-art 3DGS segmentation approaches with generative 3D scene reconstruction on curated synthetic and real-image-conditioned benchmarks, while preserving reconstruction quality. Furthermore, our latent formulation naturally extends to monocular video, reconstructing structured dynamic 3D scenes across time. By turning renderable but unstructured outputs into queryable 3D worlds, LucidLyra enables downstream applications including 3D scene editing, 3D asset mining, and robotic simulation."
+    },
+    {
+      "title": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+      "authors": [
+        "Daniel Lengerer",
+        "Richard Schwarzkopf",
+        "Jonas Merkert",
+        "Fabian Immel",
+        "Rupert Polley",
+        "Frank Bieder",
+        "Jan-Hendrik Pauls",
+        "J. Marius Zöllner",
+        "Klaus Bogenberger",
+        "Christoph Stiller",
+        "Carsten Markgraf"
+      ],
+      "summary": "Aerial imagery provides complementary spatial context for autonomous driving by exposing road structure beyond the immediate perception range of onboard sensors. Yet map construction from aerial imagery, aerial-assisted online HD mapping, and cross-view localization are typically studied on separate data and benchmarks. We introduce KITScenes Aerial, an extension of the KITScenes Multimodal dataset that augments synchronized onboard sensor data, vehicle poses, and rich Lanelet2 map annotations with spatially associated aerial imagery and higher-resolution neural representations, providing a common basis for a variety of research tasks. Our mapping evaluation focuses on all 53 KITScenes map classes across different model designs, spatial ranges, and aerial resolutions, while retaining compatibility with the widely used three-class setting. Representative baselines show that aerial context is particularly beneficial for fine-grained and extended-range mapping, more than doubling 53-class mAP at the larger mapping extent. Higher-resolution aerial imagery yields a further 4.3 mAP (+24 %) improvement, with gains extending to challenging map elements such as traffic lights. We additionally evaluate cross-view localization under geographically disjoint conditions, where an adapted fine-grained feature-matching baseline achieves a mean translation error of 5.13 m. KITScenes Aerial thus enables unified study of aerial and ground-level information across complementary mapping and localization tasks. Project page: https://kitscenes.com/aerial",
+      "published": "2026-10-29T17:01:30Z",
+      "updated": "2026-10-29T17:01:30Z",
+      "arxiv_id": "2610.40455v1",
+      "abs_url": "http://arxiv.org/abs/2610.40455v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40455v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Accepted at the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "多模态融合",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "多模态融合",
+      "score": 4,
+      "anchor_terms": [
+        "aerial image",
+        "aerial imagery"
+      ],
+      "matched_terms": [
+        "aerial",
+        "aerial image",
+        "aerial imagery"
+      ],
+      "title_zh": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+      "summary_zh": "Aerial imagery provides complementary spatial context for autonomous driving by exposing road structure beyond the immediate perception range of onboard sensors. Yet map construction from aerial imagery, aerial-assisted online HD mapping, and cross-view localization are typically studied on separate data and benchmarks. We introduce KITScenes Aerial, an extension of the KITScenes Multimodal dataset that augments synchronized onboard sensor data, vehicle poses, and rich Lanelet2 map annotations with spatially associated aerial imagery and higher-resolution neural representations, providing a common basis for a variety of research tasks. Our mapping evaluation focuses on all 53 KITScenes map classes across different model designs, spatial ranges, and aerial resolutions, while retaining compatibility with the widely used three-class setting. Representative baselines show that aerial context is particularly beneficial for fine-grained and extended-range mapping, more than doubling 53-class mAP at the larger mapping extent. Higher-resolution aerial imagery yields a further 4.3 mAP (+24 %) improvement, with gains extending to challenging map elements such as traffic lights. We additionally evaluate cross-view localization under geographically disjoint conditions, where an adapted fine-grained feature-matching baseline achieves a mean translation error of 5.13 m. KITScenes Aerial thus enables unified study of aerial and ground-level information across complementary mapping and localization tasks. Project page: https://kitscenes.com/aerial"
+    },
+    {
+      "title": "Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones",
+      "authors": [
+        "Xinrui Li",
+        "Yijun Jin",
+        "Yifan Dong",
+        "Shoujuan Shu"
+      ],
+      "summary": "Rapid intensification (RI) is one of the most dangerous and unpredictable phases of tropical cyclones, and its environmental and structural drivers are difficult to identify and separate in observations. Here we introduce CausalVisionRI, a causal-prior-constrained deep-learning system for 24-h RI warning in the western North Pacific. It integrates infrared remote sensing imagery, atmospheric and oceanic fields, and an observationally discovered causal graph into a unified model. The graph and eight sign-verified effects on 24-h intensity change provide an auditable causal prior for training. Discovered from 522 cyclones in 2000-2017, it identifies causal pathways linking atmospheric and oceanic conditions, the cyclone's dynamical and structural state, and its 24-h intensity change. On a forward holdout covering 2020-2024 and 3,004 records, the five-member ensemble achieves a Brier skill score (BSS) of 0.259 relative to a fixed development climatology, significantly exceeding four reference systems; the three LDA baselines reach at most 0.105. It also attains higher detection rates than a published knowledge-block scheme and a reconstructed contrastive-learning scheme at matched false-detection rates under our USA 30-kt standard and the published RITCF standard. Ablations show that the graph pathway adds 0.032 BSS across the holdout and 0.063 over 2020-2021, with a significant contribution in one ensemble member. A deep-learning model constrained by observationally discovered causal structure thus offers a new route to physically informed RI warning.",
+      "published": "2026-10-29T15:46:57Z",
+      "updated": "2026-10-29T15:46:57Z",
+      "arxiv_id": "2610.40304v1",
+      "abs_url": "http://arxiv.org/abs/2610.40304v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40304v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "comment": "33 pages, including 15 pages of supplementary information; 5 main figures and 6 supplementary figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 2,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "remote sensing"
+      ],
+      "title_zh": "Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones",
+      "summary_zh": "Rapid intensification (RI) is one of the most dangerous and unpredictable phases of tropical cyclones, and its environmental and structural drivers are difficult to identify and separate in observations. Here we introduce CausalVisionRI, a causal-prior-constrained deep-learning system for 24-h RI warning in the western North Pacific. It integrates infrared remote sensing imagery, atmospheric and oceanic fields, and an observationally discovered causal graph into a unified model. The graph and eight sign-verified effects on 24-h intensity change provide an auditable causal prior for training. Discovered from 522 cyclones in 2000-2017, it identifies causal pathways linking atmospheric and oceanic conditions, the cyclone's dynamical and structural state, and its 24-h intensity change. On a forward holdout covering 2020-2024 and 3,004 records, the five-member ensemble achieves a Brier skill score (BSS) of 0.259 relative to a fixed development climatology, significantly exceeding four reference systems; the three LDA baselines reach at most 0.105. It also attains higher detection rates than a published knowledge-block scheme and a reconstructed contrastive-learning scheme at matched false-detection rates under our USA 30-kt standard and the published RITCF standard. Ablations show that the graph pathway adds 0.032 BSS across the holdout and 0.063 over 2020-2021, with a significant contribution in one ensemble member. A deep-learning model constrained by observationally discovered causal structure thus offers a new route to physically informed RI warning."
+    },
+    {
+      "title": "NeurEO: dissecting Earth observation embeddings with computational neuroscience",
+      "authors": [
+        "Thijs L van der Plas",
+        "Jacob JW Bakermans",
+        "Ioannis N Athanasiadis"
+      ],
+      "summary": "Earth embeddings are compressed representations of rich Earth observation data that enable downstream models to tackle a wide range of complex geospatial tasks. Yet, this increase in performance comes at the cost of decreased interpretability, as the semantic meaning of Earth embeddings is unknown. To address this challenge, we borrow methods from the field of computational neuroscience, which aim to interpret activity in (biological) neurons. Here, we adapt and apply these methods to assign meaning to AlphaEarth embeddings. We analyse embedding features both as stand-alone data, equivalent to spontaneous neural activity, and in relation to land cover and elevation correlates, equivalent to stimulus-response neural activity. We demonstrate correlational and multi-scale structure in the embedding features. Embedding features can display highly specific and directional tuning to land cover and elevation, such as a `North vs South woodland edge' response. When we remove the main trends of combined land cover responses (like water versus land tuning), we discover fine-grained representational details with increased effective dimensionality. Together, our analyses start to unravel what these Earth embeddings represent, which is critical for developing trustworthy downstream applications.",
+      "published": "2026-10-29T14:28:26Z",
+      "updated": "2026-10-29T14:28:26Z",
+      "arxiv_id": "2610.40137v1",
+      "abs_url": "http://arxiv.org/abs/2610.40137v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40137v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Originally published at the EurIPS 2025 REO workshop",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割"
+      ],
+      "topic": "语义分割",
+      "score": 8,
+      "anchor_terms": [
+        "earth observation"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "geospatial",
+        "land cover",
+        "multi-scale"
+      ],
+      "title_zh": "NeurEO: dissecting Earth observation embeddings with computational neuroscience",
+      "summary_zh": "Earth embeddings are compressed representations of rich Earth observation data that enable downstream models to tackle a wide range of complex geospatial tasks. Yet, this increase in performance comes at the cost of decreased interpretability, as the semantic meaning of Earth embeddings is unknown. To address this challenge, we borrow methods from the field of computational neuroscience, which aim to interpret activity in (biological) neurons. Here, we adapt and apply these methods to assign meaning to AlphaEarth embeddings. We analyse embedding features both as stand-alone data, equivalent to spontaneous neural activity, and in relation to land cover and elevation correlates, equivalent to stimulus-response neural activity. We demonstrate correlational and multi-scale structure in the embedding features. Embedding features can display highly specific and directional tuning to land cover and elevation, such as a `North vs South woodland edge' response. When we remove the main trends of combined land cover responses (like water versus land tuning), we discover fine-grained representational details with increased effective dimensionality. Together, our analyses start to unravel what these Earth embeddings represent, which is critical for developing trustworthy downstream applications."
+    },
+    {
+      "title": "Upcycling Language Models for Multiple Specialized Domains",
+      "authors": [
+        "Mingzi Cao",
+        "Xi Wang",
+        "Nikolaos Aletras"
+      ],
+      "summary": "Effective multi-domain adaptation of large language models requires prioritizing relevant domain knowledge while minimizing interference from irrelevant domains. Existing approaches commonly use Low-Rank Adaptation (LoRA) to train a separate adapter for each domain and combine these adapters within one model. However, they either weight adapters equally regardless of the input domain or dynamically weight adapters while still activating all of them including irrelevant ones. Additionally, while efficient, their low-rank structure limits performance. In contrast, upcycling is a model expansion method that adds experts and a router to a dense Transformer layer offering larger capacity than LoRA approaches. In this paper, we propose Domain-Specialized Upcycling (DS-Upcycling) for multi-domain adaptation. We introduce a new domain-aware supervision that allows the router to effectively learn to distinguish domains by selecting the appropriate experts. During fine-tuning on each new domain, we update only the corresponding expert and router while freezing all other parameters. Experiments show that our method achieves the highest average performance across the adapted domains compared to baselines while retaining general performance. With just 256 examples per domain for router supervision, DS-Upcycling achieves 90-98% routing accuracy after adaptation compared with 43-70% for routers trained without our approach.",
+      "published": "2026-10-29T13:58:38Z",
+      "updated": "2026-10-29T13:58:38Z",
+      "arxiv_id": "2610.40091v1",
+      "abs_url": "http://arxiv.org/abs/2610.40091v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40091v1",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "domain adaptation",
+        "fine-tuning",
+        "large language model",
+        "LoRA",
+        "transformer"
+      ],
+      "title_zh": "Upcycling Language Models for Multiple Specialized Domains",
+      "summary_zh": "Effective multi-domain adaptation of large language models requires prioritizing relevant domain knowledge while minimizing interference from irrelevant domains. Existing approaches commonly use Low-Rank Adaptation (LoRA) to train a separate adapter for each domain and combine these adapters within one model. However, they either weight adapters equally regardless of the input domain or dynamically weight adapters while still activating all of them including irrelevant ones. Additionally, while efficient, their low-rank structure limits performance. In contrast, upcycling is a model expansion method that adds experts and a router to a dense Transformer layer offering larger capacity than LoRA approaches. In this paper, we propose Domain-Specialized Upcycling (DS-Upcycling) for multi-domain adaptation. We introduce a new domain-aware supervision that allows the router to effectively learn to distinguish domains by selecting the appropriate experts. During fine-tuning on each new domain, we update only the corresponding expert and router while freezing all other parameters. Experiments show that our method achieves the highest average performance across the adapted domains compared to baselines while retaining general performance. With just 256 examples per domain for router supervision, DS-Upcycling achieves 90-98% routing accuracy after adaptation compared with 43-70% for routers trained without our approach."
+    },
+    {
+      "title": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
+      "authors": [
+        "Abhishek Singh",
+        "Giovanni Cuozzo",
+        "Alexander Jacob",
+        "Claudia Notarnicola"
+      ],
+      "summary": "Accurate land-cover mapping from multimodal Earth observation (EO) data remains a challenge in regions where high-resolution annotations are scarce or costly to obtain. This work introduces a quantum convolutional encoder-decoder network for pseudo-label generation using Sentinel-1 SAR and Sentinel-2 multispectral imagery, guided only by coarse MODIS-derived land-cover maps. The proposed framework uses quantum-inspired convolutional blocks to enhance feature extraction and cross-sensor fusion, enabling the model to infer a fine-scale semantic structure from heterogeneous inputs. Experiments were conducted on the DFC2020 dataset, which provides a quadruple of Sentinel-1 SAR, Sentinel-2 multispectral, low-resolution MODIS labels and high-resolution reference land-cover maps. The proposed training framework first learns a robust representation of multimodal inputs through the reconstruction branch before any supervision from low-resolution labels is applied. This self-supervised stage enables the model to capture a fine-scale spectral-spatial structure, which is then used to generate high-resolution pseudo-labels. These pseudo-labels are subsequently evaluated through classification metrics on the test data, demonstrating that the proposed approach produces more spatially coherent and class-consistent compared to classical baselines. The results highlight the potential of quantum-inspired deep learning to improve label generation in low-annotation remote sensing scenarios, offering a scalable path towards high-quality land-cover products for EO applications.",
+      "published": "2026-10-29T10:23:38Z",
+      "updated": "2026-10-29T10:23:38Z",
+      "arxiv_id": "2610.39773v1",
+      "abs_url": "http://arxiv.org/abs/2610.39773v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.39773v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "多模态融合",
+        "SAR遥感",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 13,
+      "anchor_terms": [
+        "earth observation",
+        "multispectral image",
+        "multispectral imagery",
+        "remote sensing",
+        "SAR",
+        "Sentinel-1",
+        "Sentinel-2"
+      ],
+      "matched_terms": [
+        "earth observation",
+        "MODIS",
+        "multispectral",
+        "multispectral image",
+        "multispectral imagery",
+        "remote sensing",
+        "robust",
+        "SAR",
+        "self-supervised",
+        "Sentinel-1",
+        "Sentinel-2"
+      ],
+      "title_zh": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
+      "summary_zh": "Accurate land-cover mapping from multimodal Earth observation (EO) data remains a challenge in regions where high-resolution annotations are scarce or costly to obtain. This work introduces a quantum convolutional encoder-decoder network for pseudo-label generation using Sentinel-1 SAR and Sentinel-2 multispectral imagery, guided only by coarse MODIS-derived land-cover maps. The proposed framework uses quantum-inspired convolutional blocks to enhance feature extraction and cross-sensor fusion, enabling the model to infer a fine-scale semantic structure from heterogeneous inputs. Experiments were conducted on the DFC2020 dataset, which provides a quadruple of Sentinel-1 SAR, Sentinel-2 multispectral, low-resolution MODIS labels and high-resolution reference land-cover maps. The proposed training framework first learns a robust representation of multimodal inputs through the reconstruction branch before any supervision from low-resolution labels is applied. This self-supervised stage enables the model to capture a fine-scale spectral-spatial structure, which is then used to generate high-resolution pseudo-labels. These pseudo-labels are subsequently evaluated through classification metrics on the test data, demonstrating that the proposed approach produces more spatially coherent and class-consistent compared to classical baselines. The results highlight the potential of quantum-inspired deep learning to improve label generation in low-annotation remote sensing scenarios, offering a scalable path towards high-quality land-cover products for EO applications."
+    },
+    {
+      "title": "TabCUQ: Context-Uncertainty Quantification for Tabular Foundation Models",
+      "authors": [
+        "Yuebei Shi",
+        "Molei Liu",
+        "Zijian Guo"
+      ],
+      "summary": "Tabular foundation models use in-context learning to estimate conditional expected outcomes and average treatment effects for specific groups of individuals. Using these estimates to guide scientific decisions requires reliable uncertainty quantification. The challenge is to account simultaneously for two sources of uncertainty: limited-context bias and context variation arising from the small labeled sample supplied at inference. Predictive spread does not directly quantify both sources of uncertainty, and we observe that the ordinary bootstrap may substantially overestimate context variation, whereas subsampling may underestimate it. We introduce TabCUQ, a perturbation-based framework that injects noise into observed outcomes and applies the foundation model to the perturbed contexts. TabCUQ estimates context variation using wild-bootstrap dispersion and accounts for limited-context bias using the maximum deviation between perturbed and original estimates. For a kernel-regression analogue whose estimation error admits an exact decomposition into these two components, we show that our framework provides asymptotically valid pointwise coverage. In simulations, TabCUQ substantially improves coverage, with average interval widths typically about twice those of an oracle bias-aware benchmark. Across seven real-world tasks, it also improves coverage of reference functions learned from much larger samples.",
+      "published": "2026-10-29T07:58:20Z",
+      "updated": "2026-10-29T07:58:20Z",
+      "arxiv_id": "2610.39558v1",
+      "abs_url": "http://arxiv.org/abs/2610.39558v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.39558v1",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "foundation model",
+        "in-context learning"
+      ],
+      "title_zh": "TabCUQ: Context-Uncertainty Quantification for Tabular Foundation Models",
+      "summary_zh": "Tabular foundation models use in-context learning to estimate conditional expected outcomes and average treatment effects for specific groups of individuals. Using these estimates to guide scientific decisions requires reliable uncertainty quantification. The challenge is to account simultaneously for two sources of uncertainty: limited-context bias and context variation arising from the small labeled sample supplied at inference. Predictive spread does not directly quantify both sources of uncertainty, and we observe that the ordinary bootstrap may substantially overestimate context variation, whereas subsampling may underestimate it. We introduce TabCUQ, a perturbation-based framework that injects noise into observed outcomes and applies the foundation model to the perturbed contexts. TabCUQ estimates context variation using wild-bootstrap dispersion and accounts for limited-context bias using the maximum deviation between perturbed and original estimates. For a kernel-regression analogue whose estimation error admits an exact decomposition into these two components, we show that our framework provides asymptotically valid pointwise coverage. In simulations, TabCUQ substantially improves coverage, with average interval widths typically about twice those of an oracle bias-aware benchmark. Across seven real-world tasks, it also improves coverage of reference functions learned from much larger samples."
+    },
+    {
+      "title": "Interpretable by Design Tabular Prediction via In-Context Local Linear Learning",
+      "authors": [
+        "Ran Eisenberg",
+        "Steven Berger",
+        "Ofir Lindenbaum"
+      ],
+      "summary": "In-context learning (ICL) lets tabular foundation models make predictions without dataset-specific training or fine-tuning. These models achieve strong predictive accuracy, but interpreting how individual features contribute to the prediction remains difficult. In biology, for example, feature contributions can help identify biomarkers or risk genes. Post-hoc interpretability methods assign feature importance scores, but these scores do not indicate what the model actually uses and can lead to explanation errors. We introduce TICL$^3$ (Tabular In-Context Local Linear Learning), an interpretable-by-design predictor that uses a tabular foundation model to guide a simple linear prediction rule. TICL$^3$ first learns a shared linear model to capture dataset-level feature effects. Then, for each query, it retrieves similar training samples using representations from the foundation model and fits a second linear model to the residuals in that neighborhood. The shared model captures broad effects, while the local model corrects errors among similar samples. Their combined coefficients determine each feature contribution to the final query-specific linear score, so the same model makes and explains the prediction. Across 386 classification benchmark-dataset evaluations, TICL$^3$ trails TabICLv2 by 1.1 percentage points and outperforms CatBoost in 266 evaluations. It improves average support F1 over MAPLE by 4.7 points and achieves the best performance on both real-data selected-feature utility metrics.",
+      "published": "2026-10-29T07:06:24Z",
+      "updated": "2026-10-29T07:06:24Z",
+      "arxiv_id": "2610.39506v1",
+      "abs_url": "http://arxiv.org/abs/2610.39506v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.39506v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "in-context learning"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "foundation model",
+        "in-context learning"
+      ],
+      "title_zh": "Interpretable by Design Tabular Prediction via In-Context Local Linear Learning",
+      "summary_zh": "In-context learning (ICL) lets tabular foundation models make predictions without dataset-specific training or fine-tuning. These models achieve strong predictive accuracy, but interpreting how individual features contribute to the prediction remains difficult. In biology, for example, feature contributions can help identify biomarkers or risk genes. Post-hoc interpretability methods assign feature importance scores, but these scores do not indicate what the model actually uses and can lead to explanation errors. We introduce TICL$^3$ (Tabular In-Context Local Linear Learning), an interpretable-by-design predictor that uses a tabular foundation model to guide a simple linear prediction rule. TICL$^3$ first learns a shared linear model to capture dataset-level feature effects. Then, for each query, it retrieves similar training samples using representations from the foundation model and fits a second linear model to the residuals in that neighborhood. The shared model captures broad effects, while the local model corrects errors among similar samples. Their combined coefficients determine each feature contribution to the final query-specific linear score, so the same model makes and explains the prediction. Across 386 classification benchmark-dataset evaluations, TICL$^3$ trails TabICLv2 by 1.1 percentage points and outperforms CatBoost in 266 evaluations. It improves average support F1 over MAPLE by 4.7 points and achieves the best performance on both real-data selected-feature utility metrics."
+    },
+    {
+      "title": "Sparse Fine-Tuning for Parameter-Efficient Adversarial Training",
+      "authors": [
+        "Zhaoxin Wang",
+        "Zihang Ding",
+        "Handing Wang"
+      ],
+      "summary": "Deep neural networks achieve strong performance across many tasks but remain vulnerable to adversarial perturbations. Adversarial training (AT) is one of the most effective defenses, yet it suffers from high memory cost on large models and the persistent clean-robust accuracy trade-off. Recent work introduces parameter-efficient fine-tuning, such as LoRA, into AT, but this constraint induces a notable robustness gap relative to full-parameter AT. In this work, we revisit parameter-efficient adversarial fine-tuning from a parameter space perspective. Through gradient analysis, we find that adversarial optimization is highly concentrated on a small subset of parameters, which we call Robustness-Critical Parameters (RCPs), suggesting that robustness is encoded in a sparse subspace. Building on this observation, we propose Sparse Adversarial Fine-Tuning (SAFT), which identifies RCPs via adversarial gradient saliency and performs AT by updating only these parameters while freezing the rest. Across architectures and datasets, SAFT outperforms LoRA-based methods in both clean and robust accuracy with fewer trainable parameters, and approaches or surpasses full parameter AT in robustness while updating only about 5\\% of parameters.",
+      "published": "2026-10-29T06:27:35Z",
+      "updated": "2026-10-29T06:27:35Z",
+      "arxiv_id": "2610.39455v1",
+      "abs_url": "http://arxiv.org/abs/2610.39455v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.39455v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "Accepted by NeurIPS 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "large model",
+        "LoRA",
+        "robust"
+      ],
+      "title_zh": "Sparse Fine-Tuning for Parameter-Efficient Adversarial Training",
+      "summary_zh": "Deep neural networks achieve strong performance across many tasks but remain vulnerable to adversarial perturbations. Adversarial training (AT) is one of the most effective defenses, yet it suffers from high memory cost on large models and the persistent clean-robust accuracy trade-off. Recent work introduces parameter-efficient fine-tuning, such as LoRA, into AT, but this constraint induces a notable robustness gap relative to full-parameter AT. In this work, we revisit parameter-efficient adversarial fine-tuning from a parameter space perspective. Through gradient analysis, we find that adversarial optimization is highly concentrated on a small subset of parameters, which we call Robustness-Critical Parameters (RCPs), suggesting that robustness is encoded in a sparse subspace. Building on this observation, we propose Sparse Adversarial Fine-Tuning (SAFT), which identifies RCPs via adversarial gradient saliency and performs AT by updating only these parameters while freezing the rest. Across architectures and datasets, SAFT outperforms LoRA-based methods in both clean and robust accuracy with fewer trainable parameters, and approaches or surpasses full parameter AT in robustness while updating only about 5\\% of parameters."
+    },
+    {
+      "title": "BEVLight: Generalizable Traffic Signal Control from UAV Bird's-Eye Views",
+      "authors": [
+        "Maonan Wang",
+        "Yuxin Cai",
+        "Junming Liu",
+        "Zhengyan Huang",
+        "Yi Yu",
+        "Ding Wang",
+        "Yifeng Zhang",
+        "Yirong Chen"
+      ],
+      "summary": "Learning-based traffic signal control (TSC) has achieved promising performance, but most methods rely on structured traffic states that must be estimated from sensor observations in real deployments. Visual TSC learns signal decisions directly from images, yet existing methods depend on fixed roadside cameras and remain tied to specific intersection configurations and visual domains. UAVs offer on-demand bird's-eye-view (BEV) observations that jointly capture intersection topology and traffic dynamics, making them a promising sensing platform for visual TSC. We present BEVLight, a generalizable TSC framework that directly maps BEV observations to signal actions. BEVLight grounds visual features onto individual lanes and composes them along the junction topology into movement and phase representations, allowing a shared policy to score candidate phases across heterogeneous intersection layouts and signal plans. To train the policy, we develop a web-based virtual teleoperation platform and collect over 5K human control decisions together with their underlying traffic states. Simulator-provided traffic states first supervise lane- and movement-level representations, after which human phase selections and rankings supervise the phase scorer. Re-rendering the recorded trajectories under diverse appearances preserves both forms of supervision and encourages robustness to visual changes. Closed-loop experiments demonstrate zero-shot generalization across traffic demands, signal plans, and intersections: BEVLight reduces average waiting time by 7--9\\% relative to perception-to-control visual baselines and matches or outperforms structured-state RL controllers that receive ground-truth traffic states, achieving the lowest waiting time in 12 of 16 scenarios. An offline study further shows that BEVLight transfers to real UAV observations without target-domain adaptation.",
+      "published": "2026-10-29T04:03:19Z",
+      "updated": "2026-10-29T04:03:19Z",
+      "arxiv_id": "2610.39320v1",
+      "abs_url": "http://arxiv.org/abs/2610.39320v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.39320v1",
+      "primary_category": "eess.SY",
+      "categories": [
+        "eess.SY",
+        "cs.LG"
+      ],
+      "comment": "27 pages, 15 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "无人机/UAV"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 7,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "domain adaptation",
+        "generalizable",
+        "robust",
+        "UAV",
+        "zero-shot"
+      ],
+      "title_zh": "BEVLight: Generalizable Traffic Signal Control from UAV Bird's-Eye Views",
+      "summary_zh": "Learning-based traffic signal control (TSC) has achieved promising performance, but most methods rely on structured traffic states that must be estimated from sensor observations in real deployments. Visual TSC learns signal decisions directly from images, yet existing methods depend on fixed roadside cameras and remain tied to specific intersection configurations and visual domains. UAVs offer on-demand bird's-eye-view (BEV) observations that jointly capture intersection topology and traffic dynamics, making them a promising sensing platform for visual TSC. We present BEVLight, a generalizable TSC framework that directly maps BEV observations to signal actions. BEVLight grounds visual features onto individual lanes and composes them along the junction topology into movement and phase representations, allowing a shared policy to score candidate phases across heterogeneous intersection layouts and signal plans. To train the policy, we develop a web-based virtual teleoperation platform and collect over 5K human control decisions together with their underlying traffic states. Simulator-provided traffic states first supervise lane- and movement-level representations, after which human phase selections and rankings supervise the phase scorer. Re-rendering the recorded trajectories under diverse appearances preserves both forms of supervision and encourages robustness to visual changes. Closed-loop experiments demonstrate zero-shot generalization across traffic demands, signal plans, and intersections: BEVLight reduces average waiting time by 7--9\\% relative to perception-to-control visual baselines and matches or outperforms structured-state RL controllers that receive ground-truth traffic states, achieving the lowest waiting time in 12 of 16 scenarios. An offline study further shows that BEVLight transfers to real UAV observations without target-domain adaptation."
+    },
+    {
+      "title": "CLaW: Codec-Guided Adaptive Latent Watermarking for Traceable Diffusion Image Generation",
+      "authors": [
+        "Huangchao Song",
+        "Lingyun Yu",
+        "Cong Li",
+        "Peiqi Jiang",
+        "Mingqi Fang",
+        "Hongtao Xie"
+      ],
+      "summary": "With the rapid advancement of text-to-image diffusion models, increasingly realistic AI-generated content has raised serious concerns about misuse and copyright infringement. Digital watermarking offers a promising solution by enabling user-level traceability, yet existing methods remain difficult to deploy at scale, hindered by costly model retraining or detection, poor effectiveness-fidelity trade-offs, and limited robustness to image transformations. To address these challenges, we propose CLaW (Codec-guided Latent Watermarking), a robust and efficient watermarking framework for traceable diffusion image generation with frozen diffusion backbones and inversion-free detection. Specifically, CLaW first uses a pretrained watermark codec to map each watermark message to a latent residual, enabling low-cost sampling-time injection. Then, the residual is injected within a late denoising window, where image semantics are better preserved and the watermark signal is less perturbed by subsequent denoising updates, yielding a better balance between watermark effectiveness and image fidelity. Furthermore, we introduce a decoder-guided adaptive injection mechanism that uses decoding confidence as feedback to dynamically calibrate watermark strength, reinforcing weak watermark signals and improving robustness under image transformations. Extensive experiments show that CLaW preserves high visual fidelity and achieves state-of-the-art robustness under image transformations, enabling reliable user-level traceability.",
+      "published": "2026-10-29T01:46:18Z",
+      "updated": "2026-10-29T01:46:18Z",
+      "arxiv_id": "2610.39160v1",
+      "abs_url": "http://arxiv.org/abs/2610.39160v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.39160v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CR"
+      ],
+      "comment": "Accepted at NeurIPS 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "高效微调与轻量化"
+      ],
+      "topic": "图像生成与重建",
+      "score": 6,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "denoising",
+        "diffusion model",
+        "image generation",
+        "robust"
+      ],
+      "title_zh": "CLaW: Codec-Guided Adaptive Latent Watermarking for Traceable Diffusion Image Generation",
+      "summary_zh": "With the rapid advancement of text-to-image diffusion models, increasingly realistic AI-generated content has raised serious concerns about misuse and copyright infringement. Digital watermarking offers a promising solution by enabling user-level traceability, yet existing methods remain difficult to deploy at scale, hindered by costly model retraining or detection, poor effectiveness-fidelity trade-offs, and limited robustness to image transformations. To address these challenges, we propose CLaW (Codec-guided Latent Watermarking), a robust and efficient watermarking framework for traceable diffusion image generation with frozen diffusion backbones and inversion-free detection. Specifically, CLaW first uses a pretrained watermark codec to map each watermark message to a latent residual, enabling low-cost sampling-time injection. Then, the residual is injected within a late denoising window, where image semantics are better preserved and the watermark signal is less perturbed by subsequent denoising updates, yielding a better balance between watermark effectiveness and image fidelity. Furthermore, we introduce a decoder-guided adaptive injection mechanism that uses decoding confidence as feedback to dynamically calibrate watermark strength, reinforcing weak watermark signals and improving robustness under image transformations. Extensive experiments show that CLaW preserves high visual fidelity and achieves state-of-the-art robustness under image transformations, enabling reliable user-level traceability."
+    },
+    {
+      "title": "On the Generalization Gap of Streaming Federated Learning with Markovian Data",
+      "authors": [
+        "Masoud Kavian",
+        "Milad Sefidgaran",
+        "Youssef Attia El Hili",
+        "Malik Tiomoko",
+        "Abdellatif Zaidi"
+      ],
+      "summary": "Streaming federated learning (SFL) allows clients to train a shared model from continuously arriving data without retaining large local datasets. Such streams often exhibit temporal dependence, yet its effect on generalization remains poorly understood. In this paper we study the expected generalization gap of the aggregated model when client data follow Markov processes, using information-theoretic and rate-distortion techniques. Our framework accommodates heterogeneous Markovian dynamics across clients and distinguishes temporal dependence from information acquired during local learning. We establish bounds under cross-entropy loss, specializing them to Linear Next-Token Prediction (LNTP) and Self-Attention Next-Token Prediction (SANTP). These results quantify the effects of client count, communication rounds, sample size, data dimension, mixing time, and context length. In particular, they reveal a communication--generalization tradeoff: although frequent aggregation may help optimization, it can weaken generalization guarantees. They also suggest a potential advantage of distributed over centralized streaming learning under a fixed total data budget. Temporal dependence enters through the square root of the mixing time. By analyzing the history-state process, we obtain refined bounds with improved context-length dependence under suitable mixing conditions. Experiments on GPT-style language-model pretraining with TinyStories and real-world time-series forecasting illustrate how collaboration and communication frequency influence generalization under temporal dependence",
+      "published": "2026-10-28T18:56:59Z",
+      "updated": "2026-10-28T18:56:59Z",
+      "arxiv_id": "2610.38686v1",
+      "abs_url": "http://arxiv.org/abs/2610.38686v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38686v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.IT",
+        "stat.ML"
+      ],
+      "comment": "78 Pages, 5 Figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "时间序列与视频",
+        "数据集/评测"
+      ],
+      "topic": "时间序列与视频",
+      "score": 2,
+      "anchor_terms": [
+        "temporal"
+      ],
+      "matched_terms": [
+        "self-attention",
+        "temporal",
+        "time-series"
+      ],
+      "title_zh": "On the Generalization Gap of Streaming Federated Learning with Markovian Data",
+      "summary_zh": "Streaming federated learning (SFL) allows clients to train a shared model from continuously arriving data without retaining large local datasets. Such streams often exhibit temporal dependence, yet its effect on generalization remains poorly understood. In this paper we study the expected generalization gap of the aggregated model when client data follow Markov processes, using information-theoretic and rate-distortion techniques. Our framework accommodates heterogeneous Markovian dynamics across clients and distinguishes temporal dependence from information acquired during local learning. We establish bounds under cross-entropy loss, specializing them to Linear Next-Token Prediction (LNTP) and Self-Attention Next-Token Prediction (SANTP). These results quantify the effects of client count, communication rounds, sample size, data dimension, mixing time, and context length. In particular, they reveal a communication--generalization tradeoff: although frequent aggregation may help optimization, it can weaken generalization guarantees. They also suggest a potential advantage of distributed over centralized streaming learning under a fixed total data budget. Temporal dependence enters through the square root of the mixing time. By analyzing the history-state process, we obtain refined bounds with improved context-length dependence under suitable mixing conditions. Experiments on GPT-style language-model pretraining with TinyStories and real-world time-series forecasting illustrate how collaboration and communication frequency influence generalization under temporal dependence"
+    },
+    {
+      "title": "Episodic looking - using reinforcement learning to bias perception enhances few-shot and continual learning with protection from forgetting",
+      "authors": [
+        "David Rawlinson",
+        "Gideon Kowadlo"
+      ],
+      "summary": "There is a fundamental contradiction between the desire for models that can generalize, and models that can continuously adapt to recent input with changing statistics. These conditions, captured in few-shot and continual learning settings, can bias or disrupt learned representations. This harms generalization to a broader context, leaving the model unable to overcome input variance. This paper proposes a solution based on the Complementary Learning System architecture (CLS), in which a Short-Term Memory (STM) delegates generalization to a slow, statistical Long-Term Memory (LTM). Delegation is achieved by working in a space of robust, generalized perceptions produced by the LTM. With this separation, the STM can focus on memorizing recent input and avoiding interference between memories. We show that on an image classification task, the resulting CLS model is more resistant to forgetting in a domain-incremental continual learning setting than a baseline ResNet LTM, and generalizes more effectively in a few-shot setting than other continual learners. In the continual setting, overall accuracy is slightly worse than existing continual learning models, but with a different mix of performance characteristics. Results analysis suggests that the model is limited by the representations and representational plasticity of the LTM. In future work, we will seek to address this by replaying STM memories to the LTM.",
+      "published": "2026-10-28T10:09:11Z",
+      "updated": "2026-10-28T10:09:11Z",
+      "arxiv_id": "2610.38577v1",
+      "abs_url": "http://arxiv.org/abs/2610.38577v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38577v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "comment": "21 pages, 8 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "场景分类",
+        "小样本与域泛化"
+      ],
+      "topic": "场景分类",
+      "score": 4,
+      "anchor_terms": [
+        "continual learning"
+      ],
+      "matched_terms": [
+        "continual learning",
+        "image classification",
+        "robust"
+      ],
+      "title_zh": "Episodic looking - using reinforcement learning to bias perception enhances few-shot and continual learning with protection from forgetting",
+      "summary_zh": "There is a fundamental contradiction between the desire for models that can generalize, and models that can continuously adapt to recent input with changing statistics. These conditions, captured in few-shot and continual learning settings, can bias or disrupt learned representations. This harms generalization to a broader context, leaving the model unable to overcome input variance. This paper proposes a solution based on the Complementary Learning System architecture (CLS), in which a Short-Term Memory (STM) delegates generalization to a slow, statistical Long-Term Memory (LTM). Delegation is achieved by working in a space of robust, generalized perceptions produced by the LTM. With this separation, the STM can focus on memorizing recent input and avoiding interference between memories. We show that on an image classification task, the resulting CLS model is more resistant to forgetting in a domain-incremental continual learning setting than a baseline ResNet LTM, and generalizes more effectively in a few-shot setting than other continual learners. In the continual setting, overall accuracy is slightly worse than existing continual learning models, but with a different mix of performance characteristics. Results analysis suggests that the model is limited by the representations and representational plasticity of the LTM. In future work, we will seek to address this by replaying STM memories to the LTM."
+    },
+    {
+      "title": "UnMixMamba: Unmixing Guided State Space Subpixel Mapping of Crops from MODIS Time Series",
+      "authors": [
+        "Motasem Alkayid",
+        "Yimin Zhu",
+        "Naser El-Sheimy",
+        "Lincoln Linlin Xu"
+      ],
+      "summary": "Subpixel mapping (SPM) of crop types from \\SI{250}{m} Moderate Resolution Imaging Spectroradiometer (MODIS) time series to field-scale Agriculture and Agri-Food Canada (AAFC) labels supports acreage estimation and agricultural monitoring. Three difficulties remain: (i)~spectral-temporal coupling and mixed pixels that break direct coarse-to-fine classifiers; (ii)~intra-class endmember variability that a single spectrum per crop cannot capture; and (iii)~uniform refinement on the high-resolution (HR) grid, which treats every subpixel the same, so most of the effort goes to easy pixels while errors remain in the minority class. UnMixMamba addresses them as follows. For~(i), a temporal-spectral-spatial decoupled (TSSD) factorization estimates simplex fractions and drives AAFC classification from the same mixture field, instead of mapping low-resolution (LR) observations directly to HR logits. For~(ii), \\(\\times 8\\) abundance super-resolution and a learnable per-crop variant endmember bank reconstruct the MODIS cube at LR and HR under a linear mixing model. For~(iii), the predicted crop fractions decide where a fixed Mamba token budget is spent, so HR refinement focuses on the minority class instead of the full grid. On Alberta 2015 under a fixed spatial-block protocol, UnMixMamba reaches OA 0.8397, mIoU 0.6640, AA 0.7837, and Kappa 0.7715, ahead of ST-DRes, ESPCN, FineCrop, AgriFM, and classical SPM baselines. The task is closed-set four-crop mapping inside a known agricultural mask.",
+      "published": "2026-10-28T09:25:09Z",
+      "updated": "2026-10-28T09:25:09Z",
+      "arxiv_id": "2610.38507v1",
+      "abs_url": "http://arxiv.org/abs/2610.38507v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38507v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "基础模型",
+        "高光谱/多光谱",
+        "农业与生态"
+      ],
+      "topic": "图像生成与重建",
+      "score": 7,
+      "anchor_terms": [
+        "crop"
+      ],
+      "matched_terms": [
+        "crop",
+        "crop mapping",
+        "Mamba",
+        "MODIS",
+        "super-resolution"
+      ],
+      "title_zh": "UnMixMamba: Unmixing Guided State Space Subpixel Mapping of Crops from MODIS Time Series",
+      "summary_zh": "Subpixel mapping (SPM) of crop types from \\SI{250}{m} Moderate Resolution Imaging Spectroradiometer (MODIS) time series to field-scale Agriculture and Agri-Food Canada (AAFC) labels supports acreage estimation and agricultural monitoring. Three difficulties remain: (i)~spectral-temporal coupling and mixed pixels that break direct coarse-to-fine classifiers; (ii)~intra-class endmember variability that a single spectrum per crop cannot capture; and (iii)~uniform refinement on the high-resolution (HR) grid, which treats every subpixel the same, so most of the effort goes to easy pixels while errors remain in the minority class. UnMixMamba addresses them as follows. For~(i), a temporal-spectral-spatial decoupled (TSSD) factorization estimates simplex fractions and drives AAFC classification from the same mixture field, instead of mapping low-resolution (LR) observations directly to HR logits. For~(ii), \\(\\times 8\\) abundance super-resolution and a learnable per-crop variant endmember bank reconstruct the MODIS cube at LR and HR under a linear mixing model. For~(iii), the predicted crop fractions decide where a fixed Mamba token budget is spent, so HR refinement focuses on the minority class instead of the full grid. On Alberta 2015 under a fixed spatial-block protocol, UnMixMamba reaches OA 0.8397, mIoU 0.6640, AA 0.7837, and Kappa 0.7715, ahead of ST-DRes, ESPCN, FineCrop, AgriFM, and classical SPM baselines. The task is closed-set four-crop mapping inside a known agricultural mask."
+    },
+    {
+      "title": "Automatic Iconographic Annotation of Medieval Illuminations: Comparing Generative Vision-Language Models and Supervised Discriminative Classifiers",
+      "authors": [
+        "Vincent Jolivet",
+        "Lucas Terriel",
+        "Chahan Vidal-Gor{è}ne"
+      ],
+      "summary": "The large-scale digitisation of medieval manuscripts creates a growing need for automated iconographic indexing. We evaluate two complementary paradigms for this task on 9,735 full-folio images annotated with 2,333 TIMEL concepts: generative Vision-Language Models (VLM) and supervised discriminative classifiers (SDC). The VLM experiments evaluate fine-tuning, structured JSON decoding, taxonomybased candidates generation, and deterministic reranking. The discriminative experiments evaluate flat, hierarchy-aware, and patch-attention heads over a frozen DINOv3 encoder. Our results highlight key functional differences: ML-Decoder (SDC) achieves the strongest overall retrieval performance (precision@1 of 0.696, MRR of 0.806), with loss calibration (Asymmetric Loss) serving as the primary performance lever. While SDCs provide superior precision and reliability within a closed vocabulary, VLMs offer strong semantic generalization and broad taxonomic coverage, particularly through structured JSON targets and verify-calibrate reranking (hierarchical F1 of 0.559). Furthermore, model behavior strongly depends on concept abstraction: SDCs excel at perceptually grounded descriptive concepts, whereas VLMs provide useful hypotheses for complex interpretative scenes. Finally, we find that enforcing explicit hierarchy within model architectures limits coverage compared to spatial feature aggregation. Overall, rather than competing approaches, SDCs and VLMs emerge as complementary components for future hybrid indexing systems combining structured retrieval with exploratory annotation assistance. As a methodological contribution, we define the soft F1 metric to provide a taxonomy-aware evaluation that credits semantically close predictions based on lowest common ancestors.",
+      "published": "2026-10-28T08:38:13Z",
+      "updated": "2026-10-28T08:38:13Z",
+      "arxiv_id": "2610.38462v1",
+      "abs_url": "http://arxiv.org/abs/2610.38462v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38462v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA",
+        "VLM"
+      ],
+      "title_zh": "Automatic Iconographic Annotation of Medieval Illuminations: Comparing Generative Vision-Language Models and Supervised Discriminative Classifiers",
+      "summary_zh": "The large-scale digitisation of medieval manuscripts creates a growing need for automated iconographic indexing. We evaluate two complementary paradigms for this task on 9,735 full-folio images annotated with 2,333 TIMEL concepts: generative Vision-Language Models (VLM) and supervised discriminative classifiers (SDC). The VLM experiments evaluate fine-tuning, structured JSON decoding, taxonomybased candidates generation, and deterministic reranking. The discriminative experiments evaluate flat, hierarchy-aware, and patch-attention heads over a frozen DINOv3 encoder. Our results highlight key functional differences: ML-Decoder (SDC) achieves the strongest overall retrieval performance (precision@1 of 0.696, MRR of 0.806), with loss calibration (Asymmetric Loss) serving as the primary performance lever. While SDCs provide superior precision and reliability within a closed vocabulary, VLMs offer strong semantic generalization and broad taxonomic coverage, particularly through structured JSON targets and verify-calibrate reranking (hierarchical F1 of 0.559). Furthermore, model behavior strongly depends on concept abstraction: SDCs excel at perceptually grounded descriptive concepts, whereas VLMs provide useful hypotheses for complex interpretative scenes. Finally, we find that enforcing explicit hierarchy within model architectures limits coverage compared to spatial feature aggregation. Overall, rather than competing approaches, SDCs and VLMs emerge as complementary components for future hybrid indexing systems combining structured retrieval with exploratory annotation assistance. As a methodological contribution, we define the soft F1 metric to provide a taxonomy-aware evaluation that credits semantically close predictions based on lowest common ancestors."
+    },
+    {
+      "title": "Encode Once, Answer Many: Internalizing Context via Parametric Flow",
+      "authors": [
+        "Xinhao Zhong",
+        "Mengxuan Wu",
+        "Chonghua Liao",
+        "Linxi Xie",
+        "Ruicheng Feng",
+        "Yanpei Guo",
+        "Hao Tan",
+        "Jiaxin Hong",
+        "Jason Li",
+        "Panpan Zhang",
+        "Ziheng Qin",
+        "Qinglin Lu",
+        "Yuzhang Shang",
+        "Tongliang Liu",
+        "Damian Borth",
+        "Haggai Maron",
+        "Yongxiang Hua",
+        "Zhixiang Wei",
+        "Jian Hu",
+        "Yunfei Wu",
+        "Xing Sun",
+        "Xin Li",
+        "Haoyu Cao",
+        "Zhangyang Wang",
+        "Kai Wang"
+      ],
+      "summary": "Large language models are typically adapted to a task either by placing knowledge in the input context, which keeps it external and re-encodes it on every call, or by fine-tuning, which internalizes it but demands a costly round of optimization per task. We aim to internalize the knowledge carried by a context directly into model parameters, without per-task optimization and without keeping the context in the input at inference time. To this end, we propose CLIK, a context-conditioned parameter generator that maps a given context to LoRA parameters for internalizing knowledge in a single forward pass through a Transformer encoder with cross-attention, requiring no test-time gradient updates. Once the generated LoRA is inserted into a frozen base model, the model answers downstream queries from the query alone, having internalized the context into its weights rather than re-reading it. Because the adapter depends only on the context, it is generated once and reused for every query on the same document, so the cost of reading that document is amortized across queries. On document question answering, CLIK substantially improves over the no-context base model and outperforms existing hypernetwork-based generators, while remaining behind a base model that reads the context directly, and it carries over to multi-turn dialogue without any multi-turn-specific training. Analysis further shows that the context-dependent part of the generated adapter concentrates in a compact and specific substructure.",
+      "published": "2026-10-28T06:55:19Z",
+      "updated": "2026-10-28T06:55:19Z",
+      "arxiv_id": "2610.38356v1",
+      "abs_url": "http://arxiv.org/abs/2610.38356v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38356v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "adapter",
+        "cross-attention",
+        "fine-tuning",
+        "large language model",
+        "LoRA",
+        "transformer"
+      ],
+      "title_zh": "Encode Once, Answer Many: Internalizing Context via Parametric Flow",
+      "summary_zh": "Large language models are typically adapted to a task either by placing knowledge in the input context, which keeps it external and re-encodes it on every call, or by fine-tuning, which internalizes it but demands a costly round of optimization per task. We aim to internalize the knowledge carried by a context directly into model parameters, without per-task optimization and without keeping the context in the input at inference time. To this end, we propose CLIK, a context-conditioned parameter generator that maps a given context to LoRA parameters for internalizing knowledge in a single forward pass through a Transformer encoder with cross-attention, requiring no test-time gradient updates. Once the generated LoRA is inserted into a frozen base model, the model answers downstream queries from the query alone, having internalized the context into its weights rather than re-reading it. Because the adapter depends only on the context, it is generated once and reused for every query on the same document, so the cost of reading that document is amortized across queries. On document question answering, CLIK substantially improves over the no-context base model and outperforms existing hypernetwork-based generators, while remaining behind a base model that reads the context directly, and it carries over to multi-turn dialogue without any multi-turn-specific training. Analysis further shows that the context-dependent part of the generated adapter concentrates in a compact and specific substructure."
+    },
+    {
+      "title": "SSQA: Sibling-Selective Quadtree Attention for Hierarchical Modeling in Perception Tasks",
+      "authors": [
+        "Yufan Chen",
+        "Arnav Bali",
+        "Angela Liu",
+        "Laura Zheng",
+        "Ming C. Lin"
+      ],
+      "summary": "Perception tasks for navigation in robotics, including aerial platforms such as drones and autonomous driving systems, are inherently structured. Drone-mounted cameras typically capture sky above, terrain below, and obstacles or man-made structures in between, while driving data often contains organized road layouts, lane markings, and surrounding agents. Motivated by these axis-aligned structural priors, we note that such information is typically more structured than in generic image tasks. We hypothesize that processing information in a quadtree-esque manner can not only model features effectively in a hierarchical manner, but also offers an efficient linear-time alternative to vanilla attention mechanisms, which run in quadratic time. In this paper, we propose Sibling-Selective Quadtree Attention (SSQA), which models image tokens hierarchically as a structured, full quadtree. We show analytical complexity analysis that guarantees linear-time feature modeling, in addition to empirical experiments comparing inference speeds with other popular modeling approaches, such as Mamba 2 and Quadtree Attention. Our results, benchmarked across several tasks, show that we achieve results at least as good, if not notably better, as others at a fraction of the computational costs.",
+      "published": "2026-10-28T06:14:06Z",
+      "updated": "2026-10-28T06:14:06Z",
+      "arxiv_id": "2610.38320v1",
+      "abs_url": "http://arxiv.org/abs/2610.38320v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38320v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "8 pages, 6 figures, 4 tables. Published at ICRA 2026 (oral)",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "高效微调与轻量化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 6,
+      "anchor_terms": [
+        "drone"
+      ],
+      "matched_terms": [
+        "aerial",
+        "attention mechanism",
+        "drone",
+        "Mamba"
+      ],
+      "title_zh": "SSQA: Sibling-Selective Quadtree Attention for Hierarchical Modeling in Perception Tasks",
+      "summary_zh": "Perception tasks for navigation in robotics, including aerial platforms such as drones and autonomous driving systems, are inherently structured. Drone-mounted cameras typically capture sky above, terrain below, and obstacles or man-made structures in between, while driving data often contains organized road layouts, lane markings, and surrounding agents. Motivated by these axis-aligned structural priors, we note that such information is typically more structured than in generic image tasks. We hypothesize that processing information in a quadtree-esque manner can not only model features effectively in a hierarchical manner, but also offers an efficient linear-time alternative to vanilla attention mechanisms, which run in quadratic time. In this paper, we propose Sibling-Selective Quadtree Attention (SSQA), which models image tokens hierarchically as a structured, full quadtree. We show analytical complexity analysis that guarantees linear-time feature modeling, in addition to empirical experiments comparing inference speeds with other popular modeling approaches, such as Mamba 2 and Quadtree Attention. Our results, benchmarked across several tasks, show that we achieve results at least as good, if not notably better, as others at a fraction of the computational costs."
+    },
+    {
+      "title": "TGTV: An Interpretable Framework for UAV Fault Detection and Traceability via Spatiotemporal Graph Learning and Large Language Models",
+      "authors": [
+        "Zixuan Wang",
+        "Changbo Shi",
+        "Ji Liu"
+      ],
+      "summary": "Fixed-wing unmanned aerial vehicles experience operating-condition transitions, asynchronous sensor sampling, and control-system compensation that can obscure fault signatures. Existing temporal detection methods have limited capacity to represent coupled faults across subsystems, track their evolution, and constrain language-model diagnoses with quantitative evidence. This paper proposes TGTV, an interpretable fault detection and traceability framework that integrates spatiotemporal graph learning with a large language model. A temporal convolutional network and a graph attention network with weighted fused adjacency extract multiscale temporal patterns and spatial dependencies among sensors. A hybrid temporal Transformer and variational autoencoder then evaluates window-level anomalies using prediction errors and reconstruction probabilities. Continuous-time Shapley attribution identifies critical sensors and high-contribution intervals while preserving the temporal continuity of fault evolution. A structured evidence package combines detection results, graph relationships, temporal attribution, sensor attribution, and operating context. An evidence-constrained diagnosis protocol uses this package to generate flight-level conclusions with traceable evidence identifiers. Cross-flight holdout experiments on the public ALFA fixed-wing flight dataset yield a window-level area under the precision-recall curve of 0.976, accuracy of 0.973, recall of 0.902, and F1 score of 0.920. Flight-level fault diagnosis achieves recall of 0.943 and an F1 score of 0.944. These results demonstrate accurate anomaly detection and quantitatively supported fault-tracing cues, providing a basis for interpretable post-flight fault review and analysis.",
+      "published": "2026-10-28T00:44:22Z",
+      "updated": "2026-10-28T00:44:22Z",
+      "arxiv_id": "2610.38106v1",
+      "abs_url": "http://arxiv.org/abs/2610.38106v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38106v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "21 pages, 8 figures, 4 tables. Submitted to IEEE Sensors Journal",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 9,
+      "anchor_terms": [
+        "anomaly detection",
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "anomaly detection",
+        "large language model",
+        "transformer",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "TGTV: An Interpretable Framework for UAV Fault Detection and Traceability via Spatiotemporal Graph Learning and Large Language Models",
+      "summary_zh": "Fixed-wing unmanned aerial vehicles experience operating-condition transitions, asynchronous sensor sampling, and control-system compensation that can obscure fault signatures. Existing temporal detection methods have limited capacity to represent coupled faults across subsystems, track their evolution, and constrain language-model diagnoses with quantitative evidence. This paper proposes TGTV, an interpretable fault detection and traceability framework that integrates spatiotemporal graph learning with a large language model. A temporal convolutional network and a graph attention network with weighted fused adjacency extract multiscale temporal patterns and spatial dependencies among sensors. A hybrid temporal Transformer and variational autoencoder then evaluates window-level anomalies using prediction errors and reconstruction probabilities. Continuous-time Shapley attribution identifies critical sensors and high-contribution intervals while preserving the temporal continuity of fault evolution. A structured evidence package combines detection results, graph relationships, temporal attribution, sensor attribution, and operating context. An evidence-constrained diagnosis protocol uses this package to generate flight-level conclusions with traceable evidence identifiers. Cross-flight holdout experiments on the public ALFA fixed-wing flight dataset yield a window-level area under the precision-recall curve of 0.976, accuracy of 0.973, recall of 0.902, and F1 score of 0.920. Flight-level fault diagnosis achieves recall of 0.943 and an F1 score of 0.944. These results demonstrate accurate anomaly detection and quantitatively supported fault-tracing cues, providing a basis for interpretable post-flight fault review and analysis."
+    },
+    {
+      "title": "From Next Day Wildfire to Next Days Wildfire: A New Multi-Continent Dataset of Active-Fire Spread for Sequence-to-Sequence Forecasting",
+      "authors": [
+        "Jose Guillen",
+        "Renzo Zanca",
+        "Valentin Barriere"
+      ],
+      "summary": "Benchmarks such as WildfireSpreadTS (WSTS) have enabled data-driven forecasting of wildfire spread from multimodal satellite time series, but they suffer from limitations: size restricts them to large fires that burn for weeks, and they are from similar environments. We introduce AFSeq, a multimodal dataset of 1,194 recent fire events (2023 to 2026) from 8 different countries across three regions, dominated by the short, small fires that existing benchmarks underrepresent. Our dataset is the largest and most diverse to date for time-series-based wildfire spread prediction. We also introduce UTAE-AR, an extension of a classical U-Net with Temporal Auto Encoder, enhanced with recurrent modules before the decoder. This allows the model to not only predict the next day but the whole sequence in an autoregressive way. Moreover, our model can feed its own predicted fire mask back one day at a time, producing the day-by-day forecasts that single-step models cannot. Our results show that UTAE-AR surpasses state-of-the-art on both WSTS, WSTS+ and AFSeq for next-day accuracy while having 21.5% of their parameters, and being able to predict confidently at a longer horizon.",
+      "published": "2026-10-28T00:00:17Z",
+      "updated": "2026-10-28T00:00:17Z",
+      "arxiv_id": "2610.38086v1",
+      "abs_url": "http://arxiv.org/abs/2610.38086v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38086v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Accepted at WACV 2027. 19 pages including supplementary material, 12 figures, 13 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "时间序列与视频",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 5,
+      "anchor_terms": [
+        "temporal",
+        "time series"
+      ],
+      "matched_terms": [
+        "satellite",
+        "temporal",
+        "time series",
+        "time-series",
+        "U-Net"
+      ],
+      "title_zh": "From Next Day Wildfire to Next Days Wildfire: A New Multi-Continent Dataset of Active-Fire Spread for Sequence-to-Sequence Forecasting",
+      "summary_zh": "Benchmarks such as WildfireSpreadTS (WSTS) have enabled data-driven forecasting of wildfire spread from multimodal satellite time series, but they suffer from limitations: size restricts them to large fires that burn for weeks, and they are from similar environments. We introduce AFSeq, a multimodal dataset of 1,194 recent fire events (2023 to 2026) from 8 different countries across three regions, dominated by the short, small fires that existing benchmarks underrepresent. Our dataset is the largest and most diverse to date for time-series-based wildfire spread prediction. We also introduce UTAE-AR, an extension of a classical U-Net with Temporal Auto Encoder, enhanced with recurrent modules before the decoder. This allows the model to not only predict the next day but the whole sequence in an autoregressive way. Moreover, our model can feed its own predicted fire mask back one day at a time, producing the day-by-day forecasts that single-step models cannot. Our results show that UTAE-AR surpasses state-of-the-art on both WSTS, WSTS+ and AFSeq for next-day accuracy while having 21.5% of their parameters, and being able to predict confidently at a longer horizon."
+    }
+  ]
+}
