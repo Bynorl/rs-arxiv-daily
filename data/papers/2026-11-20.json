@@ -1,0 +1,1287 @@
+{
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20T09:27:59.478201+00:00",
+  "timezone": "Asia/Shanghai",
+  "source": "arXiv",
+  "source_url": "https://arxiv.org/",
+  "query": "(cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG OR cat:cs.MM OR cat:stat.ML)",
+  "total_fetched": 700,
+  "total_matched": 30,
+  "papers": [
+    {
+      "title": "Mamba Flow Matching Neural Processes: Linear-Time Inference for Irregularly Observed Spatial Fields",
+      "authors": [
+        "Cosmo Santoni",
+        "Giovanni Charles",
+        "Timothy James Hitge",
+        "Oliver Watson",
+        "Elizaveta Semenova"
+      ],
+      "summary": "Interpolating a spatial field, such as daily maximum temperature, from sparse, irregularly located observations recurs across the environmental and health sciences. Standard Gaussian-process kriging refits hyperparameters and solves an $O(N^3)$ system for every new field. When many related fields are observed, such as daily maps from one sensor network, neural processes (NPs) instead learn the interpolation map from past fields and predict a new field in one forward pass. Joint-predictive variants, which sample whole fields rather than independent per-location values, typically use self-attention over context and query points, costing $O(K^2)$ in the combined point count $K$ and limiting practical use to a few thousand points. State-space models offer a linear-time alternative, but a direct state-space adaptation compresses the context into one hidden state before reading queries, reducing what the decoder sees. We propose MambaFlowNP, a linear-compute joint-predictive NP trained with conditional flow matching. A multi-directional Mamba-2 scan reads context and query tokens in one shared sequence, so each query's velocity is read from its own scan position rather than a compressed context summary, and because queries only read the scan state, predictions are consistent across query sets. MambaFlowNP is competitive with the strongest attention-based joint-predictive baselines on synthetic Matérn Gaussian-process benchmarks, and on regional to continental-scale NOAA temperature interpolation it attains the lowest RMSE and CRPS and near-nominal coverage on every tier, while running 114--784$\\times$ faster than the strongest joint-predictive baseline. A single forward pass scales to $10^6$ points on one NVIDIA L40S GPU in under a second. This makes joint prediction feasible for continental-scale, irregularly sampled sensor networks; predictive quality is evaluated up to $K=5{,}580$.",
+      "published": "2026-11-19T16:25:45Z",
+      "updated": "2026-11-19T16:25:45Z",
+      "arxiv_id": "2611.26355v1",
+      "abs_url": "http://arxiv.org/abs/2611.26355v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26355v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "Accepted at NeurIPS 2026. XX pages, X figures. Code: https://github.com/Cosmonaught/Mambaflownp",
+      "code_url": "https://github.com/Cosmonaught/Mambaflownp",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 3,
+      "anchor_terms": [
+        "Mamba"
+      ],
+      "matched_terms": [
+        "Mamba",
+        "self-attention"
+      ],
+      "title_zh": "Mamba Flow Matching Neural Processes: Linear-Time Inference for Irregularly Observed Spatial Fields",
+      "summary_zh": "Interpolating a spatial field, such as daily maximum temperature, from sparse, irregularly located observations recurs across the environmental and health sciences. Standard Gaussian-process kriging refits hyperparameters and solves an $O(N^3)$ system for every new field. When many related fields are observed, such as daily maps from one sensor network, neural processes (NPs) instead learn the interpolation map from past fields and predict a new field in one forward pass. Joint-predictive variants, which sample whole fields rather than independent per-location values, typically use self-attention over context and query points, costing $O(K^2)$ in the combined point count $K$ and limiting practical use to a few thousand points. State-space models offer a linear-time alternative, but a direct state-space adaptation compresses the context into one hidden state before reading queries, reducing what the decoder sees. We propose MambaFlowNP, a linear-compute joint-predictive NP trained with conditional flow matching. A multi-directional Mamba-2 scan reads context and query tokens in one shared sequence, so each query's velocity is read from its own scan position rather than a compressed context summary, and because queries only read the scan state, predictions are consistent across query sets. MambaFlowNP is competitive with the strongest attention-based joint-predictive baselines on synthetic Matérn Gaussian-process benchmarks, and on regional to continental-scale NOAA temperature interpolation it attains the lowest RMSE and CRPS and near-nominal coverage on every tier, while running 114--784$\\times$ faster than the strongest joint-predictive baseline. A single forward pass scales to $10^6$ points on one NVIDIA L40S GPU in under a second. This makes joint prediction feasible for continental-scale, irregularly sampled sensor networks; predictive quality is evaluated up to $K=5{,}580$."
+    },
+    {
+      "title": "SAM 3 Sees More Than It Detects: Promptable Concept Maps Beyond Categories",
+      "authors": [
+        "Yu-Huan Wu",
+        "Yun Liu",
+        "Liangli Zhen"
+      ],
+      "summary": "Promptable segmenters answer what a thing is. Dense prediction tasks also ask class-agnostic questions, such as what stands out or hides, how light is blocked, transmitted or reflected, and where structure lies. Robots, surveillance systems and image editors build on their answers. We study promptable concept maps (PCM), which extend SAM 3's promptable concept segmentation from noun instances to maps of concepts named by short noun phrases such as `\"transparent object\", with \"none\" as an answer. PCM-Bench groups the standard test sets of seven such tasks by the question they ask. On it, we find that SAM 3 sees more than it detects. Its semantic path responds to many of these concepts, yet a low image-level presence score can block every detection of its instance path. We present UNVEIL, which trains a copy of SAM 3's semantic path for these maps, with LoRA on copies of its last blocks. A separate presence decoder learns from verified negatives whether a concept occurs. With one text phrase per query, UNVEIL maps region concepts such as salient and camouflaged objects, shadows, transparent objects and mirrors. The same weights map thin structures such as edges and skeletons as well as object categories. Run next to SAM 3, it leaves SAM 3's own outputs unchanged. On each of the seven tasks, UNVEIL reaches the highest score among the compared promptable models, including SAM 3's official fine-tuning and pipelines built on multimodal LLMs. Code is available at https://github.com/yuhuan-wu/UNVEIL.",
+      "published": "2026-11-19T08:52:36Z",
+      "updated": "2026-11-19T08:52:36Z",
+      "arxiv_id": "2611.25747v1",
+      "abs_url": "http://arxiv.org/abs/2611.25747v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25747v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "18 pages, 5 figures, 15 tables",
+      "code_url": "https://github.com/yuhuan-wu/UNVEIL",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "实例分割",
+        "开放词汇与开放集",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "多模态融合"
+      ],
+      "topic": "实例分割",
+      "score": 5,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA",
+        "SAM"
+      ],
+      "title_zh": "SAM 3 Sees More Than It Detects: Promptable Concept Maps Beyond Categories",
+      "summary_zh": "Promptable segmenters answer what a thing is. Dense prediction tasks also ask class-agnostic questions, such as what stands out or hides, how light is blocked, transmitted or reflected, and where structure lies. Robots, surveillance systems and image editors build on their answers. We study promptable concept maps (PCM), which extend SAM 3's promptable concept segmentation from noun instances to maps of concepts named by short noun phrases such as `\"transparent object\", with \"none\" as an answer. PCM-Bench groups the standard test sets of seven such tasks by the question they ask. On it, we find that SAM 3 sees more than it detects. Its semantic path responds to many of these concepts, yet a low image-level presence score can block every detection of its instance path. We present UNVEIL, which trains a copy of SAM 3's semantic path for these maps, with LoRA on copies of its last blocks. A separate presence decoder learns from verified negatives whether a concept occurs. With one text phrase per query, UNVEIL maps region concepts such as salient and camouflaged objects, shadows, transparent objects and mirrors. The same weights map thin structures such as edges and skeletons as well as object categories. Run next to SAM 3, it leaves SAM 3's own outputs unchanged. On each of the seven tasks, UNVEIL reaches the highest score among the compared promptable models, including SAM 3's official fine-tuning and pipelines built on multimodal LLMs. Code is available at https://github.com/yuhuan-wu/UNVEIL."
+    },
+    {
+      "title": "From Data Alignment to Parameter Generation: Few-Shot Cross-City Traffic Prediction with Conditional Diffusion",
+      "authors": [
+        "Shengchun Wang",
+        "Yuhang Lin",
+        "Tong Li",
+        "Pengyuan Zhou",
+        "Andy Chi Lok Tai",
+        "Wenjie Chen",
+        "Zhu Xiao",
+        "Zhu Han"
+      ],
+      "summary": "Accurate mobile traffic forecasting is crucial for network service management, supporting proactive capacity provisioning, congestion mitigation, and energy-efficient operation. However, many cities and regions are data-scarce (e.g., newly deployed or poorly instrumented areas), thus making traffic prediction a few-shot learning problem and limiting the practicality of standard data-driven models. Existing cross-city solutions primarily rely on data-space alignment to match traffic distributions between data-rich and data-scarce cities, but such alignment is often brittle under real-world distribution shifts, measurement noise, and city-specific bias. To address these limitations, we propose a Conditional Diffusion-based Parameter Generation (CDPG) framework. Instead of aligning raw data, CDPG learns the conditional distribution of high-performing predictor parameters for source cities and directly generates node-specific model parameters for the target city. To support reliable adaptation for network traffic prediction, CDPG conditions parameter generation on multi-modal spatio-temporal context. Specifically, CDPG captures spatial environment cues by combining satellite imagery with large language model (LLM)-derived semantic descriptions, and summarizes complex temporal behaviors via unsupervised pattern clustering. These contextual components guide CDPG in producing parameters tailored to each base station's operational context, thereby improving robustness under cross-city and cross-region shifts. Extensive experiments on three large-scale datasets show that CDPG consistently outperforms state-of-the-art cross-city few-shot baselines by up to 9.72% on standard forecasting metrics and remains robust for few-shot multi-step prediction. The code is available at https://github.com/LingoodBoy/CDPG.",
+      "published": "2026-11-19T06:37:24Z",
+      "updated": "2026-11-19T06:37:24Z",
+      "arxiv_id": "2611.25592v1",
+      "abs_url": "http://arxiv.org/abs/2611.25592v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25592v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "25 pages",
+      "code_url": "https://github.com/LingoodBoy/CDPG",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 7,
+      "anchor_terms": [
+        "satellite image",
+        "satellite imagery",
+        "temporal",
+        "unsupervised"
+      ],
+      "matched_terms": [
+        "few-shot learning",
+        "large language model",
+        "LLM",
+        "robust",
+        "satellite",
+        "satellite image",
+        "satellite imagery",
+        "temporal",
+        "unsupervised"
+      ],
+      "title_zh": "From Data Alignment to Parameter Generation: Few-Shot Cross-City Traffic Prediction with Conditional Diffusion",
+      "summary_zh": "Accurate mobile traffic forecasting is crucial for network service management, supporting proactive capacity provisioning, congestion mitigation, and energy-efficient operation. However, many cities and regions are data-scarce (e.g., newly deployed or poorly instrumented areas), thus making traffic prediction a few-shot learning problem and limiting the practicality of standard data-driven models. Existing cross-city solutions primarily rely on data-space alignment to match traffic distributions between data-rich and data-scarce cities, but such alignment is often brittle under real-world distribution shifts, measurement noise, and city-specific bias. To address these limitations, we propose a Conditional Diffusion-based Parameter Generation (CDPG) framework. Instead of aligning raw data, CDPG learns the conditional distribution of high-performing predictor parameters for source cities and directly generates node-specific model parameters for the target city. To support reliable adaptation for network traffic prediction, CDPG conditions parameter generation on multi-modal spatio-temporal context. Specifically, CDPG captures spatial environment cues by combining satellite imagery with large language model (LLM)-derived semantic descriptions, and summarizes complex temporal behaviors via unsupervised pattern clustering. These contextual components guide CDPG in producing parameters tailored to each base station's operational context, thereby improving robustness under cross-city and cross-region shifts. Extensive experiments on three large-scale datasets show that CDPG consistently outperforms state-of-the-art cross-city few-shot baselines by up to 9.72% on standard forecasting metrics and remains robust for few-shot multi-step prediction. The code is available at https://github.com/LingoodBoy/CDPG."
+    },
+    {
+      "title": "RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images?",
+      "authors": [
+        "Junzhe Dang",
+        "Mengmeng Zhang",
+        "Yuxiang Zhang",
+        "Wei Li"
+      ],
+      "summary": "We study how to obtain a task-specific Vision-Language Model (VLM) for language-guided path generation between start and end points on remote sensing images. We explore this question from three aspects. First, we implement three widely used architectural approaches and compare their performance. Second, we design a scalable method for constructing pre-training data and build an effective pre-training dataset with a degree of diversity. Methods trained on this dataset achieve promising zero-shot performance. Third, we construct three benchmarks that support stratified evaluation and design three metrics for path generation. We investigate this problem through extensive experiments. The results show that the zero-shot performance of methods trained on the constructed pre-training dataset can exceed that of some advanced commercial VLMs. Code and Dataset can be available at https://github.com/jzdang/RemoteVLPG",
+      "published": "2026-11-19T03:39:24Z",
+      "updated": "2026-11-19T03:39:24Z",
+      "arxiv_id": "2611.25458v1",
+      "abs_url": "http://arxiv.org/abs/2611.25458v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25458v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "18 pages, 10 figures",
+      "code_url": "https://github.com/jzdang/RemoteVLPG",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "基础模型",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 8,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "pre-training",
+        "remote sensing",
+        "VLM",
+        "zero-shot"
+      ],
+      "title_zh": "RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images?",
+      "summary_zh": "We study how to obtain a task-specific Vision-Language Model (VLM) for language-guided path generation between start and end points on remote sensing images. We explore this question from three aspects. First, we implement three widely used architectural approaches and compare their performance. Second, we design a scalable method for constructing pre-training data and build an effective pre-training dataset with a degree of diversity. Methods trained on this dataset achieve promising zero-shot performance. Third, we construct three benchmarks that support stratified evaluation and design three metrics for path generation. We investigate this problem through extensive experiments. The results show that the zero-shot performance of methods trained on the constructed pre-training dataset can exceed that of some advanced commercial VLMs. Code and Dataset can be available at https://github.com/jzdang/RemoteVLPG"
+    },
+    {
+      "title": "HOPD: Historical On-Policy Distillation for SAR MLLM Continual Learning",
+      "authors": [
+        "Yuxuan Li",
+        "Derrick Goh Xin Deik",
+        "Zheng-Peng Duan",
+        "Qianru Sun",
+        "Weijie Li"
+      ],
+      "summary": "Continual SAR interpretation requires multimodal large language models to learn incoming sources while retaining earlier task abilities. This is difficult when acquisition and geographic shifts alter visual evidence, regionally concentrated categories bias answers, and historical images are scarce. We address this problem with Historical On-Policy Distillation (HOPD), which reuses source-acquisition LoRA states as persistent teachers for one evolving student. Archiving each state before consolidation preserves a stable source reference. The teachers supervise student-generated prefixes, transferring historical behavior to the student's changing generation contexts. To enrich sparse replay, original-view teachers guide augmented historical student views while preserving spatial coordinates. This knowledge is consolidated into a single deployed adapter that requires no source identity. On SARVQA-CL, our source-incremental evaluation protocol, HOPD achieves the highest final mean score of 54.51 among the compared methods, exceeding the strongest baseline by 2.96 points. It also improves the final source-macro score in every evaluated task over shared-memory Replay-SFT, with gains across source orders. These results support source-acquisition history as supervision for retaining earlier task performance during continual SAR adaptation. Code and data: https://github.com/zcablii/HOPD.",
+      "published": "2026-11-19T02:34:48Z",
+      "updated": "2026-11-19T02:34:48Z",
+      "arxiv_id": "2611.25391v1",
+      "abs_url": "http://arxiv.org/abs/2611.25391v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25391v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "https://github.com/zcablii/HOPD",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "多模态融合",
+        "SAR遥感",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 11,
+      "anchor_terms": [
+        "continual learning",
+        "MLLM",
+        "multimodal large language model",
+        "SAR"
+      ],
+      "matched_terms": [
+        "adapter",
+        "continual learning",
+        "large language model",
+        "LoRA",
+        "MLLM",
+        "multimodal large language model",
+        "SAR"
+      ],
+      "title_zh": "HOPD: Historical On-Policy Distillation for SAR MLLM Continual Learning",
+      "summary_zh": "Continual SAR interpretation requires multimodal large language models to learn incoming sources while retaining earlier task abilities. This is difficult when acquisition and geographic shifts alter visual evidence, regionally concentrated categories bias answers, and historical images are scarce. We address this problem with Historical On-Policy Distillation (HOPD), which reuses source-acquisition LoRA states as persistent teachers for one evolving student. Archiving each state before consolidation preserves a stable source reference. The teachers supervise student-generated prefixes, transferring historical behavior to the student's changing generation contexts. To enrich sparse replay, original-view teachers guide augmented historical student views while preserving spatial coordinates. This knowledge is consolidated into a single deployed adapter that requires no source identity. On SARVQA-CL, our source-incremental evaluation protocol, HOPD achieves the highest final mean score of 54.51 among the compared methods, exceeding the strongest baseline by 2.96 points. It also improves the final source-macro score in every evaluated task over shared-memory Replay-SFT, with gains across source orders. These results support source-acquisition history as supervision for retaining earlier task performance during continual SAR adaptation. Code and data: https://github.com/zcablii/HOPD."
+    },
+    {
+      "title": "ShadowTransfer: A Geographic Transfer Benchmark for Overhead Shadow Detection",
+      "authors": [
+        "Shagun Mittal",
+        "Raymond A. Yeh",
+        "Satish Ukkusuri"
+      ],
+      "summary": "Overhead aerial imagery feeds dense-prediction pipelines that are routinely trained in one geographic region and deployed in another, yet no benchmark measures how shadow detection models transfer across regions. Existing overhead shadow datasets either lack a geographic transfer protocol or rely on automatically generated labels. We introduce ShadowTransfer, a benchmark of 4,500 human-verified shadow masks across three U.S. cities at two native resolutions, paired with a leave-one-city-out evaluation protocol. Under vanilla training, holding out the test city costs 3.5 to 7.8 mIoU across four architectures, the gap remains significant when the training set grows from 225 to 900 images, and six of eight adaptation methods degrade more than vanilla training on average. We propose a three-probe framework that diagnoses where and how the transfer breaks: the failure operates in feature space, beyond the reach of pixel-histogram matching, shows up as a confidence collapse on shadow pixels while background confidence stays intact, and is recoverable by retraining different architectural components depending on the model: encoder for some, decoder for others. These findings replicate on INRIA building footprints, suggesting they describe geographic transfer beyond shadows. Guided by the diagnosis, we build Spectral Information Bottleneck (SIB), a plug-in module with one component per finding. Across the 9 (architecture, held-out city) cells, SIB has the smallest mean gap to the within-city upper bound of the ten methods we evaluate (6.42 mIoU), level with FDA. The benchmark, LOCO protocol, code, and trained models are released to support reproducible evaluation of geographic transfer in overhead dense prediction.",
+      "published": "2026-11-18T18:41:54Z",
+      "updated": "2026-11-18T18:41:54Z",
+      "arxiv_id": "2611.24904v1",
+      "abs_url": "http://arxiv.org/abs/2611.24904v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.24904v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Accepted at NeurIPS 2026, Track on Evaluations and Datasets. 53 pages. Project page: https://shagun8.github.io/shadowtransfer/ . Code: https://github.com/shagun8/shadowtransfer . Data: https://huggingface.co/datasets/shagunmittal/ShadowTransfer (DOI 10.57967/hf/11483)",
+      "code_url": "https://github.com/shagun8/shadowtransfer",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "高光谱/多光谱",
+        "无人机/UAV",
+        "城市与基础设施",
+        "数据集/评测"
+      ],
+      "topic": "高光谱/多光谱",
+      "score": 4,
+      "anchor_terms": [
+        "aerial image",
+        "aerial imagery",
+        "building footprint"
+      ],
+      "matched_terms": [
+        "aerial",
+        "aerial image",
+        "aerial imagery",
+        "building footprint"
+      ],
+      "title_zh": "ShadowTransfer: A Geographic Transfer Benchmark for Overhead Shadow Detection",
+      "summary_zh": "Overhead aerial imagery feeds dense-prediction pipelines that are routinely trained in one geographic region and deployed in another, yet no benchmark measures how shadow detection models transfer across regions. Existing overhead shadow datasets either lack a geographic transfer protocol or rely on automatically generated labels. We introduce ShadowTransfer, a benchmark of 4,500 human-verified shadow masks across three U.S. cities at two native resolutions, paired with a leave-one-city-out evaluation protocol. Under vanilla training, holding out the test city costs 3.5 to 7.8 mIoU across four architectures, the gap remains significant when the training set grows from 225 to 900 images, and six of eight adaptation methods degrade more than vanilla training on average. We propose a three-probe framework that diagnoses where and how the transfer breaks: the failure operates in feature space, beyond the reach of pixel-histogram matching, shows up as a confidence collapse on shadow pixels while background confidence stays intact, and is recoverable by retraining different architectural components depending on the model: encoder for some, decoder for others. These findings replicate on INRIA building footprints, suggesting they describe geographic transfer beyond shadows. Guided by the diagnosis, we build Spectral Information Bottleneck (SIB), a plug-in module with one component per finding. Across the 9 (architecture, held-out city) cells, SIB has the smallest mean gap to the within-city upper bound of the ten methods we evaluate (6.42 mIoU), level with FDA. The benchmark, LOCO protocol, code, and trained models are released to support reproducible evaluation of geographic transfer in overhead dense prediction."
+    },
+    {
+      "title": "MLIE-CoT: Chain-of-Thought Reasoning via Multi-Level Image Editing",
+      "authors": [
+        "Baichuan Yang",
+        "Dongyuan Xu",
+        "Zhao Yang",
+        "Yong Liu",
+        "Bing Su"
+      ],
+      "summary": "Chain-of-thought (CoT) reasoning has proven effective in improving the reasoning abilities of large language models by breaking complex tasks into step-by-step solutions. In recent years, researchers have attempted to extend CoT reasoning to visual generative models to improve their ability to handle complex tasks. However, existing CoT methods for text-to-image generation still rely mainly on textual reasoning and therefore cannot fully use and preserve the correct semantic information already present in an image, as even the most detailed language cannot capture all visual information. With advances in image generation, models such as FLUX and BAGEL can generate images conditioned on visual inputs. Recent work has attempted to carry images forward as context in the chain of thought, but this introduces another limitation: unsuitable earlier images can strongly interfere with the model, while repeated whole-image regeneration introduces new hallucinations at each round and causes them to accumulate. To address these issues, we propose MLIE-CoT, a visual chain-of-thought framework based on multi-level image editing. MLIE-CoT learns to select the repair granularity from three levels, preserving correct semantics whenever possible during reasoning while reducing the effect of incorrect content. To improve the ability of multimodal models to route errors of different severity to appropriate repair levels, we construct an image-repair dataset covering different error cases and use it to train a repair-level router. Extensive experiments demonstrate that MLIE-CoT significantly outperforms both its base models and methods using fixed repair strategies, producing clear improvements across multiple benchmarks.",
+      "published": "2026-11-18T13:49:34Z",
+      "updated": "2026-11-18T13:49:34Z",
+      "arxiv_id": "2611.24433v1",
+      "abs_url": "http://arxiv.org/abs/2611.24433v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.24433v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "11 pages, 5 figures. Code: https://github.com/yang031119/MLIE-CoT",
+      "code_url": "https://github.com/yang031119/MLIE-CoT",
+      "has_code": true,
+      "labels": [
+        "开源",
+        "图像生成与重建",
+        "视觉-语言模型",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "图像生成与重建",
+      "score": 3,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation",
+        "large language model"
+      ],
+      "title_zh": "MLIE-CoT: Chain-of-Thought Reasoning via Multi-Level Image Editing",
+      "summary_zh": "Chain-of-thought (CoT) reasoning has proven effective in improving the reasoning abilities of large language models by breaking complex tasks into step-by-step solutions. In recent years, researchers have attempted to extend CoT reasoning to visual generative models to improve their ability to handle complex tasks. However, existing CoT methods for text-to-image generation still rely mainly on textual reasoning and therefore cannot fully use and preserve the correct semantic information already present in an image, as even the most detailed language cannot capture all visual information. With advances in image generation, models such as FLUX and BAGEL can generate images conditioned on visual inputs. Recent work has attempted to carry images forward as context in the chain of thought, but this introduces another limitation: unsuitable earlier images can strongly interfere with the model, while repeated whole-image regeneration introduces new hallucinations at each round and causes them to accumulate. To address these issues, we propose MLIE-CoT, a visual chain-of-thought framework based on multi-level image editing. MLIE-CoT learns to select the repair granularity from three levels, preserving correct semantics whenever possible during reasoning while reducing the effect of incorrect content. To improve the ability of multimodal models to route errors of different severity to appropriate repair levels, we construct an image-repair dataset covering different error cases and use it to train a repair-level router. Extensive experiments demonstrate that MLIE-CoT significantly outperforms both its base models and methods using fixed repair strategies, producing clear improvements across multiple benchmarks."
+    },
+    {
+      "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
+      "authors": [
+        "Tanmay Sah"
+      ],
+      "summary": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and zero runtime hooks, while bounding per-layer normalization drift and preserving natural-language (NL) competence. Our construction combines three analytical mechanisms: (1) two-layer Mellin-GLU quadrature over bias-free SwiGLU/GeGLU layers, turning unknown per-token RMSNorm scaling into translation along a log-spaced gate grid ($>250\\times$ dynamic range) with IEEE 754 error bounds; (2) cross-token scale cancellation via signed Chebyshev Indefinite-RoPE self-sink attention and memoryless SiLU-antisymmetric GatedDeltaNet shifts; and (3) axis-aligned width extension ($d \\to d+K$) with $\\sqrt{d/(d+K)}$ norm compensation, Base-1000 canonical BPE emission, and differential $(+254,-256)$ tied unembeddings. An automated 5-stage compiler synthesizes 4-8 digit signed $\\{+,-,\\times\\}$ circuits in constant $\\mathsf{TC}^0$ depth alongside 3-literal Boolean (100%, $N=1{,}728$; plus 42-layer Gemma 4 E4B audits) and 5-bit Majority/Parity (100%) circuits. On 6-digit arithmetic ($N=1{,}200$, BF16), IBM Granite 4.2 3B (1.07M-1.33M active non-zeros, $\\le 0.036\\%$) and Alibaba Qwen 3.5 4B (2.25M-2.39M non-zeros, $\\le 0.057\\%$) reach 99.17% and 100.00% ALU-prefix accuracy (100% with an FP32 sidecar) and 98%-100% mid-sentence resumption, outperforming 12.8K-sample LoRA (42.2% / 61.7%, 0% inline continuation). A factorized block-sparse sidecar holds A100 memory at 7.89 / 10.65 GiB (4.60 / 8.14 GiB under INT8/INT4 + FP32 sidecar) while passing all 14/14 pre-registered $>2$K-token Tango splits ($N=4{,}392$; 0/11,134 OOD triggers).",
+      "published": "2026-11-19T17:18:38Z",
+      "updated": "2026-11-19T17:18:38Z",
+      "arxiv_id": "2611.26450v1",
+      "abs_url": "http://arxiv.org/abs/2611.26450v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26450v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "27 pages, 3 figures, 24 tables",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LLM",
+        "LoRA"
+      ],
+      "title_zh": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
+      "summary_zh": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and zero runtime hooks, while bounding per-layer normalization drift and preserving natural-language (NL) competence. Our construction combines three analytical mechanisms: (1) two-layer Mellin-GLU quadrature over bias-free SwiGLU/GeGLU layers, turning unknown per-token RMSNorm scaling into translation along a log-spaced gate grid ($>250\\times$ dynamic range) with IEEE 754 error bounds; (2) cross-token scale cancellation via signed Chebyshev Indefinite-RoPE self-sink attention and memoryless SiLU-antisymmetric GatedDeltaNet shifts; and (3) axis-aligned width extension ($d \\to d+K$) with $\\sqrt{d/(d+K)}$ norm compensation, Base-1000 canonical BPE emission, and differential $(+254,-256)$ tied unembeddings. An automated 5-stage compiler synthesizes 4-8 digit signed $\\{+,-,\\times\\}$ circuits in constant $\\mathsf{TC}^0$ depth alongside 3-literal Boolean (100%, $N=1{,}728$; plus 42-layer Gemma 4 E4B audits) and 5-bit Majority/Parity (100%) circuits. On 6-digit arithmetic ($N=1{,}200$, BF16), IBM Granite 4.2 3B (1.07M-1.33M active non-zeros, $\\le 0.036\\%$) and Alibaba Qwen 3.5 4B (2.25M-2.39M non-zeros, $\\le 0.057\\%$) reach 99.17% and 100.00% ALU-prefix accuracy (100% with an FP32 sidecar) and 98%-100% mid-sentence resumption, outperforming 12.8K-sample LoRA (42.2% / 61.7%, 0% inline continuation). A factorized block-sparse sidecar holds A100 memory at 7.89 / 10.65 GiB (4.60 / 8.14 GiB under INT8/INT4 + FP32 sidecar) while passing all 14/14 pre-registered $>2$K-token Tango splits ($N=4{,}392$; 0/11,134 OOD triggers)."
+    },
+    {
+      "title": "Attention Drift Regularization with Adaptive Initialization for Domain-Robust Visual Recognition",
+      "authors": [
+        "Shivangi Rai",
+        "Vinod K Kurmi"
+      ],
+      "summary": "Source-free domain adaptation (SFDA) adapts a pretrained source model to unlabeled target domains without source data access, yet two critical failure modes remain unaddressed. First, attention drift: source-learned attention maps shift toward spurious or background features under distribution shift, destabilizing feature representations. Second, domain-gap-agnostic initialization: applying a single fixed source model uniformly across all target domains ignores domain gap severity, causing premature overfitting to noisy pseudo-labels under large shifts. We propose DGA-CAFC to address both failures. The Counterfactual Attention-based Feature Consistency (CAFC) module enforces feature stability by minimizing the discrepancy between representations computed under learned attention and those under counterfactual-inspired normalized perturbations, thereby promoting domain-robust features independent of spurious attention shifts. The Domain-Gap Aware Source Model Selection (DGASS) module estimates domain gap severity via target prediction entropy and selects the source model variant whose confidence level best matches the estimated gap, reducing negative transfer and stabilizing pseudo-label quality. Crucially, CAFC transfers beyond SFDA: applied as a lightweight regularizer to standard domain generalization objectives without target data. Extensive experiments across SFDA and DG benchmarks demonstrate that our method consistently improves over recent baselines, demonstrating the effectiveness and generality of the proposed framework. Project page is available at https://visdomlab.github.io/DGA_CAFC",
+      "published": "2026-11-19T15:09:20Z",
+      "updated": "2026-11-19T15:09:20Z",
+      "arxiv_id": "2611.26234v1",
+      "abs_url": "http://arxiv.org/abs/2611.26234v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26234v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "Accepted in WACV 2027",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 6,
+      "anchor_terms": [
+        "source-free"
+      ],
+      "matched_terms": [
+        "domain adaptation",
+        "domain generalization",
+        "robust",
+        "source-free",
+        "source-free domain adaptation"
+      ],
+      "title_zh": "Attention Drift Regularization with Adaptive Initialization for Domain-Robust Visual Recognition",
+      "summary_zh": "Source-free domain adaptation (SFDA) adapts a pretrained source model to unlabeled target domains without source data access, yet two critical failure modes remain unaddressed. First, attention drift: source-learned attention maps shift toward spurious or background features under distribution shift, destabilizing feature representations. Second, domain-gap-agnostic initialization: applying a single fixed source model uniformly across all target domains ignores domain gap severity, causing premature overfitting to noisy pseudo-labels under large shifts. We propose DGA-CAFC to address both failures. The Counterfactual Attention-based Feature Consistency (CAFC) module enforces feature stability by minimizing the discrepancy between representations computed under learned attention and those under counterfactual-inspired normalized perturbations, thereby promoting domain-robust features independent of spurious attention shifts. The Domain-Gap Aware Source Model Selection (DGASS) module estimates domain gap severity via target prediction entropy and selects the source model variant whose confidence level best matches the estimated gap, reducing negative transfer and stabilizing pseudo-label quality. Crucially, CAFC transfers beyond SFDA: applied as a lightweight regularizer to standard domain generalization objectives without target data. Extensive experiments across SFDA and DG benchmarks demonstrate that our method consistently improves over recent baselines, demonstrating the effectiveness and generality of the proposed framework. Project page is available at https://visdomlab.github.io/DGA_CAFC"
+    },
+    {
+      "title": "A version of the Cloude/van Zyl decomposition for full/quad pol synthetic aperture radar data",
+      "authors": [
+        "Allan Aasbjerg Nielsen",
+        "Paul Jacques Connetable",
+        "Henning Skriver",
+        "Knut Conradsen"
+      ],
+      "summary": "Based on the Cloude/van Zyl decomposition of reflection symmetric polarimetric SAR data we present a version for full/quad polarisation data. We demonstrate both versions on X-band F-SAR data over Vejers, Denmark. Differences between the original and our version of the decomposition occur especially for very bright man-made targets. These differences come with lower entropy for our version giving an improved focus on a more pronounced dominant scattering mechanism for these objects. Interpretation of the scattering mechanism related to the full/quad pol version of the decomposition is facilitated by means of the Cloude/Pottier $\\barα$ angle.",
+      "published": "2026-11-19T14:41:12Z",
+      "updated": "2026-11-19T14:41:12Z",
+      "arxiv_id": "2611.26195v1",
+      "abs_url": "http://arxiv.org/abs/2611.26195v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26195v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "11 pages, 5 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "SAR遥感"
+      ],
+      "topic": "SAR遥感",
+      "score": 4,
+      "anchor_terms": [
+        "SAR",
+        "synthetic aperture radar"
+      ],
+      "matched_terms": [
+        "SAR",
+        "synthetic aperture radar"
+      ],
+      "title_zh": "A version of the Cloude/van Zyl decomposition for full/quad pol synthetic aperture radar data",
+      "summary_zh": "Based on the Cloude/van Zyl decomposition of reflection symmetric polarimetric SAR data we present a version for full/quad polarisation data. We demonstrate both versions on X-band F-SAR data over Vejers, Denmark. Differences between the original and our version of the decomposition occur especially for very bright man-made targets. These differences come with lower entropy for our version giving an improved focus on a more pronounced dominant scattering mechanism for these objects. Interpretation of the scattering mechanism related to the full/quad pol version of the decomposition is facilitated by means of the Cloude/Pottier $\\barα$ angle."
+    },
+    {
+      "title": "Sample-efficient end-to-end Optical Music Recognition through Active Learning",
+      "authors": [
+        "Eric Ayllon",
+        "Francisco J. Castellanos",
+        "Antonio Rios-Vila"
+      ],
+      "summary": "End-to-end approaches to Optical Music Recognition (OMR) have recently shown promising results, but their performance often degrades on unseen data. A common solution is to pretrain and fine-tune models with annotated samples from the target domain, improving adaptation to new distributions. However, this process typically requires extensive manual annotation to yield competitive models, making it costly and time-consuming. In this work, we explore Active Learning to reduce this burden by selecting informative samples for labeling in low-resource scenarios, where the amount of manual annotation that can be performed is limited. We evaluate both uncertainty- and diversity-based sampling strategies on staff-level and full-page corpora. Results show that confidence-based sampling performs comparably to oracle selection (based on true error), and that each scenario benefits from a tailored strategy.",
+      "published": "2026-11-19T11:59:52Z",
+      "updated": "2026-11-19T11:59:52Z",
+      "arxiv_id": "2611.25975v1",
+      "abs_url": "http://arxiv.org/abs/2611.25975v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25975v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "无监督与弱监督",
+      "score": 3,
+      "anchor_terms": [
+        "active learning"
+      ],
+      "matched_terms": [
+        "active learning"
+      ],
+      "title_zh": "Sample-efficient end-to-end Optical Music Recognition through Active Learning",
+      "summary_zh": "End-to-end approaches to Optical Music Recognition (OMR) have recently shown promising results, but their performance often degrades on unseen data. A common solution is to pretrain and fine-tune models with annotated samples from the target domain, improving adaptation to new distributions. However, this process typically requires extensive manual annotation to yield competitive models, making it costly and time-consuming. In this work, we explore Active Learning to reduce this burden by selecting informative samples for labeling in low-resource scenarios, where the amount of manual annotation that can be performed is limited. We evaluate both uncertainty- and diversity-based sampling strategies on staff-level and full-page corpora. Results show that confidence-based sampling performs comparably to oracle selection (based on true error), and that each scenario benefits from a tailored strategy."
+    },
+    {
+      "title": "ROAM-GRPO: Enforcing Reasoning Diversity in GRPO via Routed Off-mode Approach Mining",
+      "authors": [
+        "Jeff Duan",
+        "Matt Thomson"
+      ],
+      "summary": "Supervised fine-tuning (SFT) paired with Reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant recipe for post-training LLMs on complex reasoning tasks, but has been shown to collapse the policy into a low-diversity mode. Repeated LLM outputs are nearly identical, and pass@k accuracy converges or degrades as a result. We propose ROAM-GRPO (Routed Off-mode Approach Mining for GRPO), an augmentation to the GRPO algorithm which incentivizes exploration of distinct reasoning strategies and aims to increase output creativity during evaluation. ROAM-GRPO detects well-solved problems during training and transfers them to an \"off-mode\" track. The model is prompted to produce distinct solution strategies to such problems, which are verified for logical validity and distinctness by an LLM judge and subsequently self-distilled into the policy. Training Qwen3.5-2b on a 1,000-problem subset of the MATH lvl5 dataset, ROAM-GRPO implementation increases peak pass@16 by 4.7% and correct embedding cosine distance by approximately 1.5-2x on a difficult evaluation set.",
+      "published": "2026-11-19T11:09:34Z",
+      "updated": "2026-11-19T11:09:34Z",
+      "arxiv_id": "2611.25926v1",
+      "abs_url": "http://arxiv.org/abs/2611.25926v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25926v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "Accepted to the NeurIPS 2026 Transitioning from Pre-Training to Post-Training Workshop",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LLM",
+        "LoRA",
+        "pre-training"
+      ],
+      "title_zh": "ROAM-GRPO: Enforcing Reasoning Diversity in GRPO via Routed Off-mode Approach Mining",
+      "summary_zh": "Supervised fine-tuning (SFT) paired with Reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant recipe for post-training LLMs on complex reasoning tasks, but has been shown to collapse the policy into a low-diversity mode. Repeated LLM outputs are nearly identical, and pass@k accuracy converges or degrades as a result. We propose ROAM-GRPO (Routed Off-mode Approach Mining for GRPO), an augmentation to the GRPO algorithm which incentivizes exploration of distinct reasoning strategies and aims to increase output creativity during evaluation. ROAM-GRPO detects well-solved problems during training and transfers them to an \"off-mode\" track. The model is prompted to produce distinct solution strategies to such problems, which are verified for logical validity and distinctness by an LLM judge and subsequently self-distilled into the policy. Training Qwen3.5-2b on a 1,000-problem subset of the MATH lvl5 dataset, ROAM-GRPO implementation increases peak pass@16 by 4.7% and correct embedding cosine distance by approximately 1.5-2x on a difficult evaluation set."
+    },
+    {
+      "title": "Does It Depend on the Split? Frozen Satellite Features vs. Fine-Tuned CNNs for Tree Species Mapping",
+      "authors": [
+        "Dharani Deivasihamani",
+        "Nandakishore Puttashamachar"
+      ],
+      "summary": "Self-supervised foundation models are often said to need fewer labels than supervised training. We test this on a forestry task: classifying 20 tree species classes in 0.2 m aerial images from the TreeSatAI dataset. We compare a frozen DINOv3 model pretrained on 493 million satellite images, with only a linear classifier trained on top, against an ImageNet ResNet-50 that is fine-tuned end to end. On the official split, fine-tuning wins clearly (macro F1 0.764 vs. 0.685). However, 28.8% of the official test patches overlap a training or validation patch, and copying the label of the nearest such patch is correct for 83.6% of them. We therefore build a spatial split that holds out whole 2 km squares with a 200 m buffer. On this split the comparison becomes inconclusive (0.648 vs. 0.640, paired 95% CI of the difference [-0.054, 0.016]), and the learning curves of the two models overlap at every label budget from 343 to 33,126 training patches. On the five rarest classes, the frozen model achieves a higher mean F1 (0.566 vs. 0.445), although the confidence interval for this difference includes zero ([-0.05, 0.23]). Diagnostics show that the frozen features mainly miss differences between closely related species, such as the two native oaks. Choosing the input size and layer on validation data (224 px, block 16) raises the frozen model to 0.662 on the spatial split. A comparison that looks decisive on the official split is thus inconclusive under geographically separated evaluation. We release the spatial split and our code.",
+      "published": "2026-11-19T10:52:47Z",
+      "updated": "2026-11-19T10:52:47Z",
+      "arxiv_id": "2611.25902v1",
+      "abs_url": "http://arxiv.org/abs/2611.25902v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25902v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "基础模型",
+        "无监督与弱监督",
+        "高效微调与轻量化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "基础模型",
+      "score": 9,
+      "anchor_terms": [
+        "aerial image",
+        "aerial images",
+        "foundation model",
+        "satellite image",
+        "satellite images"
+      ],
+      "matched_terms": [
+        "aerial",
+        "aerial image",
+        "aerial images",
+        "fine-tuning",
+        "foundation model",
+        "satellite",
+        "satellite image",
+        "satellite images",
+        "self-supervised"
+      ],
+      "title_zh": "Does It Depend on the Split? Frozen Satellite Features vs. Fine-Tuned CNNs for Tree Species Mapping",
+      "summary_zh": "Self-supervised foundation models are often said to need fewer labels than supervised training. We test this on a forestry task: classifying 20 tree species classes in 0.2 m aerial images from the TreeSatAI dataset. We compare a frozen DINOv3 model pretrained on 493 million satellite images, with only a linear classifier trained on top, against an ImageNet ResNet-50 that is fine-tuned end to end. On the official split, fine-tuning wins clearly (macro F1 0.764 vs. 0.685). However, 28.8% of the official test patches overlap a training or validation patch, and copying the label of the nearest such patch is correct for 83.6% of them. We therefore build a spatial split that holds out whole 2 km squares with a 200 m buffer. On this split the comparison becomes inconclusive (0.648 vs. 0.640, paired 95% CI of the difference [-0.054, 0.016]), and the learning curves of the two models overlap at every label budget from 343 to 33,126 training patches. On the five rarest classes, the frozen model achieves a higher mean F1 (0.566 vs. 0.445), although the confidence interval for this difference includes zero ([-0.05, 0.23]). Diagnostics show that the frozen features mainly miss differences between closely related species, such as the two native oaks. Choosing the input size and layer on validation data (224 px, block 16) raises the frozen model to 0.662 on the spatial split. A comparison that looks decisive on the official split is thus inconclusive under geographically separated evaluation. We release the spatial split and our code."
+    },
+    {
+      "title": "Trustworthy Geospatial AI Workflows: Reproducible Maritime Analytics and Forecasting on Open-Source AIS Data",
+      "authors": [
+        "Divya Acharya",
+        "Thomas M. Roehr",
+        "Arnaud Gotlieb"
+      ],
+      "summary": "Publicly available geospatial data provide increasing opportuni- ties for data-driven maritime analytics and predictive modelling. However, their availability does not necessarily imply that the underlying observations are equally suitable for downstream AI applications. Properties of the data source and observation pro- cess, including provenance, reporting regularity, spatial coverage, observation density, and missingness, can affect how geospatial data are interpreted, processed, and ultimately used by predictive models. At the same time, trustworthy geospatial AI requires ana- lytical workflows in which these processing decisions can be made explicit and reproduced. This paper presents a reproducible mar- itime geospatial AI workflow built around damast, an open-source data-processing and machine-learning library developed at Simula Research Laboratory. Using AIS observations from multiple public data providers as a case study, we demonstrate metadata-aware validation, reusable processing pipelines, maritime trajectory con- struction, and reproducible machine-learning experimentation. The predictive stage is model-agnostic and is instantiated in this study using a Transformer-based vessel-trajectory forecasting model. Building on these implemented capabilities, we further outline an envisioned extension toward trustworthiness-aware geospatial AI. The extension introduces explicit characterization of source- and data-level properties and their relationship with downstream model performance. This distinguishes capabilities demonstrated in the current workflow from trustworthiness-oriented components identified for future development. Overall, the study demonstrates how reproducible open-source infrastructure can provide a practi- cal foundation for developing more transparent and trustworthy geospatial AI workflows.",
+      "published": "2026-11-19T10:39:00Z",
+      "updated": "2026-11-19T10:39:00Z",
+      "arxiv_id": "2611.25884v1",
+      "abs_url": "http://arxiv.org/abs/2611.25884v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25884v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 4,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial",
+        "transformer"
+      ],
+      "title_zh": "Trustworthy Geospatial AI Workflows: Reproducible Maritime Analytics and Forecasting on Open-Source AIS Data",
+      "summary_zh": "Publicly available geospatial data provide increasing opportuni- ties for data-driven maritime analytics and predictive modelling. However, their availability does not necessarily imply that the underlying observations are equally suitable for downstream AI applications. Properties of the data source and observation pro- cess, including provenance, reporting regularity, spatial coverage, observation density, and missingness, can affect how geospatial data are interpreted, processed, and ultimately used by predictive models. At the same time, trustworthy geospatial AI requires ana- lytical workflows in which these processing decisions can be made explicit and reproduced. This paper presents a reproducible mar- itime geospatial AI workflow built around damast, an open-source data-processing and machine-learning library developed at Simula Research Laboratory. Using AIS observations from multiple public data providers as a case study, we demonstrate metadata-aware validation, reusable processing pipelines, maritime trajectory con- struction, and reproducible machine-learning experimentation. The predictive stage is model-agnostic and is instantiated in this study using a Transformer-based vessel-trajectory forecasting model. Building on these implemented capabilities, we further outline an envisioned extension toward trustworthiness-aware geospatial AI. The extension introduces explicit characterization of source- and data-level properties and their relationship with downstream model performance. This distinguishes capabilities demonstrated in the current workflow from trustworthiness-oriented components identified for future development. Overall, the study demonstrates how reproducible open-source infrastructure can provide a practi- cal foundation for developing more transparent and trustworthy geospatial AI workflows."
+    },
+    {
+      "title": "Fusing Multimodal CNN Features with Structurally-Masked Transformers for Hierarchical Sub-Pixel Tree Species Mapping",
+      "authors": [
+        "Mattia Ferrari",
+        "Lorenzo Bruzzone"
+      ],
+      "summary": "Precise forest species mapping using spaceborne hyperspectral data is challenging due to high spectral similarity and the inherent sub-pixel heterogeneity of natural forest stands. While traditional deep learning models exploit spatial context through convolutional architectures, these approaches can introduce noise in fragmented or mixed-species forests. In this paper, we propose a hierarchy-aware, multimodal deep learning framework to resolve sub-pixel forest composition by integrating PRISMA (PRecursore IperSpettrale della Missione Applicativa) hyperspectral imagery, high-resolution panchromatic data, and digital elevation models. The architecture features a multi-branch encoder combining an EfficientNetV2-based one-dimensional convolutional neural network (CNN) for spectral signatures and twin two-dimensional CNNs for spatial and topographic features, coupled with a novel structurally-masked Transformer. By using a binary transition tensor to condition the Transformer slot embeddings and constrain inference, the model enforces taxonomic consistency between broad forest categories and fine-grained species distributions. The framework is validated across three diverse Italian biogeographical regions (the Alps and the Central and Southern Apennines) using field-surveyed plots. The proposed method consistently outperforms state-of-the-art multi-label and ranking-based paradigms, particularly in identifying subordinate species and their relative dominance. The bidirectional learning mechanism allows sub-pixel compositional features to refine macroscopic forest type predictions, while the integration of topographic priors effectively resolves spectral ambiguities in complex terrains. This knowledge-driven method supports regional-scale biodiversity monitoring and forest characterization within the evaluated PRISMA scenarios.",
+      "published": "2026-11-19T09:41:45Z",
+      "updated": "2026-11-19T09:41:45Z",
+      "arxiv_id": "2611.25824v1",
+      "abs_url": "http://arxiv.org/abs/2611.25824v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25824v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "19 pages, 6 figures",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "多模态融合",
+        "光学遥感",
+        "高光谱/多光谱",
+        "LiDAR/点云"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 10,
+      "anchor_terms": [
+        "hyperspectral image",
+        "hyperspectral imagery"
+      ],
+      "matched_terms": [
+        "CNN",
+        "convolutional neural network",
+        "digital elevation model",
+        "hyperspectral",
+        "hyperspectral image",
+        "hyperspectral imagery",
+        "panchromatic",
+        "spaceborne",
+        "transformer"
+      ],
+      "title_zh": "Fusing Multimodal CNN Features with Structurally-Masked Transformers for Hierarchical Sub-Pixel Tree Species Mapping",
+      "summary_zh": "Precise forest species mapping using spaceborne hyperspectral data is challenging due to high spectral similarity and the inherent sub-pixel heterogeneity of natural forest stands. While traditional deep learning models exploit spatial context through convolutional architectures, these approaches can introduce noise in fragmented or mixed-species forests. In this paper, we propose a hierarchy-aware, multimodal deep learning framework to resolve sub-pixel forest composition by integrating PRISMA (PRecursore IperSpettrale della Missione Applicativa) hyperspectral imagery, high-resolution panchromatic data, and digital elevation models. The architecture features a multi-branch encoder combining an EfficientNetV2-based one-dimensional convolutional neural network (CNN) for spectral signatures and twin two-dimensional CNNs for spatial and topographic features, coupled with a novel structurally-masked Transformer. By using a binary transition tensor to condition the Transformer slot embeddings and constrain inference, the model enforces taxonomic consistency between broad forest categories and fine-grained species distributions. The framework is validated across three diverse Italian biogeographical regions (the Alps and the Central and Southern Apennines) using field-surveyed plots. The proposed method consistently outperforms state-of-the-art multi-label and ranking-based paradigms, particularly in identifying subordinate species and their relative dominance. The bidirectional learning mechanism allows sub-pixel compositional features to refine macroscopic forest type predictions, while the integration of topographic priors effectively resolves spectral ambiguities in complex terrains. This knowledge-driven method supports regional-scale biodiversity monitoring and forest characterization within the evaluated PRISMA scenarios."
+    },
+    {
+      "title": "Goal-Guided Reinforcement Learning via Fine-Tuning Vision-Language Models",
+      "authors": [
+        "Yajie Qi",
+        "Wei Wei",
+        "Lin Li",
+        "Lijun Zhang",
+        "Jianye Hao"
+      ],
+      "summary": "Exploration remains a major challenge for reinforcement learning (RL) agents in Craftax-style environments due to sparse rewards and long horizons. Large language models (LLMs) can guide exploration by generating high-level goals, but methods using models without explicit task adaptation often rely on carefully designed prompts and may produce inconsistent or contextually inappropriate goals. We introduce CCGP-2M, a multimodal goal-preference dataset constructed from interaction trajectories in Craftax-Classic, and propose a vision-language model (VLM)-guided RL framework that learns environment-specific goal guidance from this dataset. The framework consists of two stages: offline VLM fine-tuning and online goal-guided RL. In the offline stage, we align the VLM with goal preferences using Kullback-Leibler Token-level Direct Preference Optimization (KLTDPO), which combines token-level KL regularization with distributionally robust reweighting. Experiments on Craftax-Classic show that our method collects diamonds earlier than state-of-the-art baselines, achieves the highest score and reward, and attains the highest success rates on most achievements.",
+      "published": "2026-11-19T08:50:19Z",
+      "updated": "2026-11-19T08:50:19Z",
+      "arxiv_id": "2611.25742v1",
+      "abs_url": "http://arxiv.org/abs/2611.25742v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25742v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 6,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "large language model",
+        "LoRA",
+        "robust",
+        "VLM"
+      ],
+      "title_zh": "Goal-Guided Reinforcement Learning via Fine-Tuning Vision-Language Models",
+      "summary_zh": "Exploration remains a major challenge for reinforcement learning (RL) agents in Craftax-style environments due to sparse rewards and long horizons. Large language models (LLMs) can guide exploration by generating high-level goals, but methods using models without explicit task adaptation often rely on carefully designed prompts and may produce inconsistent or contextually inappropriate goals. We introduce CCGP-2M, a multimodal goal-preference dataset constructed from interaction trajectories in Craftax-Classic, and propose a vision-language model (VLM)-guided RL framework that learns environment-specific goal guidance from this dataset. The framework consists of two stages: offline VLM fine-tuning and online goal-guided RL. In the offline stage, we align the VLM with goal preferences using Kullback-Leibler Token-level Direct Preference Optimization (KLTDPO), which combines token-level KL regularization with distributionally robust reweighting. Experiments on Craftax-Classic show that our method collects diamonds earlier than state-of-the-art baselines, achieves the highest score and reward, and attains the highest success rates on most achievements."
+    },
+    {
+      "title": "Can LLMs Resolve Entity Conflicts in Domain Specific NLU Pipelines?",
+      "authors": [
+        "Akansha Bhardwaj",
+        "Mingbo Cui",
+        "Victor Guimaraes",
+        "Dominik Kohler",
+        "Diana Nicoleta Popa",
+        "Meghana M. Reddy",
+        "Paolo Rosso"
+      ],
+      "summary": "Resolving entity conflicts is a critical step in Pipeline-based NLU architectures, especially when multiple extractors provide overlapping or conflicting outputs. Traditional rule-based entity conflict resolution methods often lack flexibility and are unscalable. In this work, we aim to study if the broad knowledge of LLMs can be leveraged to resolve entity conflicts in domain specific NLU pipelines. We present an experimental comparison between a traditional rule-based conflict resolution method, and two LLM-based approaches: a multi-shot prompting method using the Llama3.1-8B-Instruct model and a LoRA fine-tuned Llama3.1-8B-Instruct model. The evaluation was conducted under two setups: (1) a broad assessment of LLM's capability to match existing NLU pipeline output, and (2) a more controlled scenario assessing the LLM accuracy on human-labeled data. Results show that while multi-shot prompting offers ease of adaptation and rapid behavioral changes, the fine-tuned model delivers superior performance on complex, ambiguous cases. Ultimately, the best approach appears to be a combination of both strategies, leveraging multi-shot prompting's flexibility alongside the broad accuracy gains of LoRA fine-tuning for a more comprehensive performance.",
+      "published": "2026-11-19T08:45:09Z",
+      "updated": "2026-11-19T08:45:09Z",
+      "arxiv_id": "2611.25733v1",
+      "abs_url": "http://arxiv.org/abs/2611.25733v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25733v1",
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "comment": "This work was completed in February, 2025",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 4,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LLM",
+        "LoRA"
+      ],
+      "title_zh": "Can LLMs Resolve Entity Conflicts in Domain Specific NLU Pipelines?",
+      "summary_zh": "Resolving entity conflicts is a critical step in Pipeline-based NLU architectures, especially when multiple extractors provide overlapping or conflicting outputs. Traditional rule-based entity conflict resolution methods often lack flexibility and are unscalable. In this work, we aim to study if the broad knowledge of LLMs can be leveraged to resolve entity conflicts in domain specific NLU pipelines. We present an experimental comparison between a traditional rule-based conflict resolution method, and two LLM-based approaches: a multi-shot prompting method using the Llama3.1-8B-Instruct model and a LoRA fine-tuned Llama3.1-8B-Instruct model. The evaluation was conducted under two setups: (1) a broad assessment of LLM's capability to match existing NLU pipeline output, and (2) a more controlled scenario assessing the LLM accuracy on human-labeled data. Results show that while multi-shot prompting offers ease of adaptation and rapid behavioral changes, the fine-tuned model delivers superior performance on complex, ambiguous cases. Ultimately, the best approach appears to be a combination of both strategies, leveraging multi-shot prompting's flexibility alongside the broad accuracy gains of LoRA fine-tuning for a more comprehensive performance."
+    },
+    {
+      "title": "Verifying Before Enhancing: Target Evidence Chain Verification for Infrared Small Target Detection",
+      "authors": [
+        "Jiayi Zuo",
+        "Songwei Pei",
+        "Shuhuai Wang",
+        "Yifei Wu",
+        "Shangguang Wang"
+      ],
+      "summary": "Infrared small target detection is essential for early warning, surveillance, remote sensing, and space-based target perception. However, infrared small targets are typically tiny, weakly textured, and boundary-blurred, making them difficult to distinguish from complex backgrounds. Moreover, target-like background structures can produce salient responses across multiple scales, making response strength alone insufficient for reliable target discrimination. To address this challenge, we propose VBE-UNet, a Target Evidence Chain Verification Network that assesses candidate reliability beyond response magnitude through complementary evidence cues. Specifically, counterfactual background explanation models local target evidence, while joint evidence verification integrates cross-scale support and perturbation-based contribution verification to guide feature recomposition. The resulting reliability estimates guide selective feature refinement, promoting target-relevant responses while reducing unsupported background activations. Extensive experiments on IRSTD-1K, NUDT-SIRST, and NUAA-SIRST demonstrate that VBE-UNet achieves superior detection accuracy and lower false-alarm rates compared with state-of-the-art methods. Ablation studies and evidence reliability analysis further validate the effectiveness of the proposed verification framework.",
+      "published": "2026-11-19T08:40:16Z",
+      "updated": "2026-11-19T08:40:16Z",
+      "arxiv_id": "2611.25724v1",
+      "abs_url": "http://arxiv.org/abs/2611.25724v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25724v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [],
+      "topic": "其他",
+      "score": 3,
+      "anchor_terms": [
+        "remote sensing"
+      ],
+      "matched_terms": [
+        "remote sensing"
+      ],
+      "title_zh": "Verifying Before Enhancing: Target Evidence Chain Verification for Infrared Small Target Detection",
+      "summary_zh": "Infrared small target detection is essential for early warning, surveillance, remote sensing, and space-based target perception. However, infrared small targets are typically tiny, weakly textured, and boundary-blurred, making them difficult to distinguish from complex backgrounds. Moreover, target-like background structures can produce salient responses across multiple scales, making response strength alone insufficient for reliable target discrimination. To address this challenge, we propose VBE-UNet, a Target Evidence Chain Verification Network that assesses candidate reliability beyond response magnitude through complementary evidence cues. Specifically, counterfactual background explanation models local target evidence, while joint evidence verification integrates cross-scale support and perturbation-based contribution verification to guide feature recomposition. The resulting reliability estimates guide selective feature refinement, promoting target-relevant responses while reducing unsupported background activations. Extensive experiments on IRSTD-1K, NUDT-SIRST, and NUAA-SIRST demonstrate that VBE-UNet achieves superior detection accuracy and lower false-alarm rates compared with state-of-the-art methods. Ablation studies and evidence reliability analysis further validate the effectiveness of the proposed verification framework."
+    },
+    {
+      "title": "From Geographic Memory to Spatial Generalization in Large Language Models",
+      "authors": [
+        "Chen Chu",
+        "Zhaonan Wang",
+        "Cyrus Shahabi",
+        "Hengcai Zhang",
+        "Feng Lu"
+      ],
+      "summary": "Large language models (LLMs) can associate places with geographic descriptions, but recovering an observed association does not establish an ability to generalize across geographic space. We distinguish geospatial memory, the recovery of location--description associations observed during training, from spatial generalization, the prediction of descriptions for locations in unobserved regions. We investigate whether continuous location representations improve this generalization and encourage geographic knowledge to become spatially organized within an LLM. We frame this organization as a latent spatial field: a learned mapping from locations to descriptions connected through spatial dependencies. Building on a continuous spatial encoder, we project location representations into the model's embedding space and supply them as spatial tokens. We evaluate the resulting models on two newly curated geo-text benchmarks for Los Angeles and London using two complementary assessments. Geospatial captioning tests both memory and spatial generalization by generating descriptions at observed locations and at locations beyond the spatial coverage of the training observations. A separate geospatial grounding model tests whether generated location--description pairs provide useful additional supervision for mapping text to geographic space. Across multiple LLM families, continuous location representations improve captioning at unobserved locations relative to textual coordinates, while their generated descriptions yield modest but consistent improvements in downstream grounding. Layer-wise probing and representation clustering provide additional evidence consistent with spatially organized geographic representations. Together, these findings show the value of evaluating spatial generalization separately from memory and of incorporating continuous spatial representations into language models.",
+      "published": "2026-11-19T08:18:16Z",
+      "updated": "2026-11-19T08:18:16Z",
+      "arxiv_id": "2611.25703v1",
+      "abs_url": "http://arxiv.org/abs/2611.25703v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25703v1",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像描述与视觉推理",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "图像描述与视觉推理",
+      "score": 5,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial",
+        "large language model",
+        "LLM"
+      ],
+      "title_zh": "From Geographic Memory to Spatial Generalization in Large Language Models",
+      "summary_zh": "Large language models (LLMs) can associate places with geographic descriptions, but recovering an observed association does not establish an ability to generalize across geographic space. We distinguish geospatial memory, the recovery of location--description associations observed during training, from spatial generalization, the prediction of descriptions for locations in unobserved regions. We investigate whether continuous location representations improve this generalization and encourage geographic knowledge to become spatially organized within an LLM. We frame this organization as a latent spatial field: a learned mapping from locations to descriptions connected through spatial dependencies. Building on a continuous spatial encoder, we project location representations into the model's embedding space and supply them as spatial tokens. We evaluate the resulting models on two newly curated geo-text benchmarks for Los Angeles and London using two complementary assessments. Geospatial captioning tests both memory and spatial generalization by generating descriptions at observed locations and at locations beyond the spatial coverage of the training observations. A separate geospatial grounding model tests whether generated location--description pairs provide useful additional supervision for mapping text to geographic space. Across multiple LLM families, continuous location representations improve captioning at unobserved locations relative to textual coordinates, while their generated descriptions yield modest but consistent improvements in downstream grounding. Layer-wise probing and representation clustering provide additional evidence consistent with spatially organized geographic representations. Together, these findings show the value of evaluating spatial generalization separately from memory and of incorporating continuous spatial representations into language models."
+    },
+    {
+      "title": "AeroBelief: Budgeted First-Action Verification for Evidence-Guided Aerial Sensing",
+      "authors": [
+        "Tianren Li",
+        "Dongbo Li",
+        "Hongkai Chen",
+        "Jie Liu",
+        "Guoliang Xing"
+      ],
+      "summary": "Aerial sensing must combine uncertain overhead context with current observations while budgeting prediction, movement and image processing. AeroBelief uses the next executable action as the unit of verification against reference scores. It groups candidate views by first action, scans them with an inexpensive proposer, and selectively queries a structured world model (WM). Calibrated group bounds support strict commitment; a six-query controller connects selective prediction with belief updates, acceptance checks and scheduled sensing. Across four layout families, 40 worlds and 960 closed-loop executions, the AeroBelief controller completes 75.42% of tasks, compared with 73.33% for exhaustive WM scoring and 65.83% for line-of-sight geometry, using 91.81% fewer reference-candidate evaluations than exhaustive scoring. In fixed-reference replay with a six-query cap, proposer-scaled anchored bounds raised first-action certificate availability from 36.25% to 54.69% and reduced mean queries per state by 13.54% relative to unit-scale anchored bounds. A complete ground-hosted pipeline processes 2,685 self-collected 20-megapixel unmanned aerial vehicle (UAV) images from seven DJI Mavic 3M routes. Context-guided admission and feedback retain all eight independently supported target confirmations with 76.05% fewer processed images and 70.02% less accumulated active processing service than uncapped all-frame processing; feedback saves another 5.17% of images relative to static context. The studies connect budgeted action selection with evidence-driven processing of recorded flight imagery.",
+      "published": "2026-11-19T06:09:28Z",
+      "updated": "2026-11-19T06:09:28Z",
+      "arxiv_id": "2611.25568v1",
+      "abs_url": "http://arxiv.org/abs/2611.25568v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25568v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "无人机/UAV",
+      "score": 5,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "AeroBelief: Budgeted First-Action Verification for Evidence-Guided Aerial Sensing",
+      "summary_zh": "Aerial sensing must combine uncertain overhead context with current observations while budgeting prediction, movement and image processing. AeroBelief uses the next executable action as the unit of verification against reference scores. It groups candidate views by first action, scans them with an inexpensive proposer, and selectively queries a structured world model (WM). Calibrated group bounds support strict commitment; a six-query controller connects selective prediction with belief updates, acceptance checks and scheduled sensing. Across four layout families, 40 worlds and 960 closed-loop executions, the AeroBelief controller completes 75.42% of tasks, compared with 73.33% for exhaustive WM scoring and 65.83% for line-of-sight geometry, using 91.81% fewer reference-candidate evaluations than exhaustive scoring. In fixed-reference replay with a six-query cap, proposer-scaled anchored bounds raised first-action certificate availability from 36.25% to 54.69% and reduced mean queries per state by 13.54% relative to unit-scale anchored bounds. A complete ground-hosted pipeline processes 2,685 self-collected 20-megapixel unmanned aerial vehicle (UAV) images from seven DJI Mavic 3M routes. Context-guided admission and feedback retain all eight independently supported target confirmations with 76.05% fewer processed images and 70.02% less accumulated active processing service than uncapped all-frame processing; feedback saves another 5.17% of images relative to static context. The studies connect budgeted action selection with evidence-driven processing of recorded flight imagery."
+    },
+    {
+      "title": "A Unified Framework for Image Manipulation Localization Under Multi-Type Weak Supervision",
+      "authors": [
+        "Songlin Li",
+        "Hui Ma",
+        "Zhiqing Guo",
+        "Dan Ma",
+        "Gaobo Yang",
+        "Xin Liao"
+      ],
+      "summary": "Existing weakly supervised image manipulation localization (IML) methods typically rely on annotation-specific training strategies, hindering the joint use of diverse annotations within a single model. This limits the scale of usable training data and constrains further progress. We propose UniIML, a teacher-student framework that maps diverse weak annotations into a unified representation to guide the Segment Anything Model (SAM) in generating multiple candidate masks. However, SAM is designed for general-purpose segmentation and has limited sensitivity to manipulation traces; its predicted quality scores alone may therefore fail to reliably identify the candidate that best delineates the manipulated region. We introduce Ordinal Safe Consensus (OSC), which first filters candidates using trusted weak-annotation constraints encoded in the unified representation. It then ranks the remaining candidates separately by consistency with weak annotations, SAM-predicted quality scores, and cross-view stability, aggregating these rankings for an initial selection. To assess how changes in the evaluation criteria affect candidate selection, OSC repeats ranking and selection while omitting one criterion at a time. The most frequently selected candidate is adopted as the final mask, and its relative selection frequency quantifies selection stability. We construct soft pseudo-labels from the selected candidate's predicted probabilities and estimate pixel-level supervision weights based on selection stability, pixel-level agreement among candidates, and predictive certainty. The student receives direct supervision in regions defined by weak annotations and learns from soft pseudo-labels elsewhere through reliability-weighted distillation, enabling unified training across weak annotation types. Experiments show that UniIML achieves superior average performance compared with state-of-the-art IML methods.",
+      "published": "2026-11-19T02:08:21Z",
+      "updated": "2026-11-19T02:08:21Z",
+      "arxiv_id": "2611.25371v1",
+      "abs_url": "http://arxiv.org/abs/2611.25371v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25371v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "实例分割",
+        "视觉-语言模型",
+        "无监督与弱监督",
+        "数据集/评测"
+      ],
+      "topic": "实例分割",
+      "score": 4,
+      "anchor_terms": [
+        "weakly supervised"
+      ],
+      "matched_terms": [
+        "SAM",
+        "Segment Anything Model",
+        "weakly supervised"
+      ],
+      "title_zh": "A Unified Framework for Image Manipulation Localization Under Multi-Type Weak Supervision",
+      "summary_zh": "Existing weakly supervised image manipulation localization (IML) methods typically rely on annotation-specific training strategies, hindering the joint use of diverse annotations within a single model. This limits the scale of usable training data and constrains further progress. We propose UniIML, a teacher-student framework that maps diverse weak annotations into a unified representation to guide the Segment Anything Model (SAM) in generating multiple candidate masks. However, SAM is designed for general-purpose segmentation and has limited sensitivity to manipulation traces; its predicted quality scores alone may therefore fail to reliably identify the candidate that best delineates the manipulated region. We introduce Ordinal Safe Consensus (OSC), which first filters candidates using trusted weak-annotation constraints encoded in the unified representation. It then ranks the remaining candidates separately by consistency with weak annotations, SAM-predicted quality scores, and cross-view stability, aggregating these rankings for an initial selection. To assess how changes in the evaluation criteria affect candidate selection, OSC repeats ranking and selection while omitting one criterion at a time. The most frequently selected candidate is adopted as the final mask, and its relative selection frequency quantifies selection stability. We construct soft pseudo-labels from the selected candidate's predicted probabilities and estimate pixel-level supervision weights based on selection stability, pixel-level agreement among candidates, and predictive certainty. The student receives direct supervision in regions defined by weak annotations and learns from soft pseudo-labels elsewhere through reliability-weighted distillation, enabling unified training across weak annotation types. Experiments show that UniIML achieves superior average performance compared with state-of-the-art IML methods."
+    },
+    {
+      "title": "MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks",
+      "authors": [
+        "Anima Singh",
+        "Suhas Yogin",
+        "Weicheng Kuo",
+        "Ivor Rendulic",
+        "Ivan Jurin",
+        "Antoine Yang",
+        "Oran Kelly",
+        "Rohan Doshi",
+        "Hammad Ayyubi",
+        "Ioana Bica",
+        "Sergi Caelles",
+        "Matthew Conniff",
+        "Dan Graur",
+        "Anastasija Ilić",
+        "Ahmet Iscen",
+        "Chao Jia",
+        "Tomasz Kępa",
+        "Chunyuan Li",
+        "Noah Ó Donnaile",
+        "Filip Pavetic",
+        "Goran Petrovic",
+        "Khalid Salama",
+        "Zhicheng Wang",
+        "Polina Zablotskaia",
+        "Yiqian Zhang",
+        "Ming Zhao",
+        "Benjamin Caine",
+        "Mario Lučić",
+        "Melvin Johnson",
+        "Radu Soricut",
+        "Jean-Baptiste Alayrac"
+      ],
+      "summary": "We introduce the Multimodal Knowledge Agent (MKA) benchmark, which measures how well autonomous agents perform end-to-end professional knowledge work that depends on visual understanding. Each task requires an agent to extract and combine information from multiple visually dense files, such as CAD blueprints, electronics schematics, radiographs, complex charts and geospatial maps, and to produce a standalone deliverable in .xlsx, .pptx, .pdf, .docx, .html or .png format. Existing benchmarks leave this capability largely untested: removing image-viewing tools leaves Gemini 4 Carbon's score on GDPval unchanged, and single-format evaluations such as GDP.pdf and GDP.xlsx do not require reasoning across files or modalities. MKA contains 200 tasks across 10 economic sectors. Deliverables are graded against expert-weighted rubrics by a sandboxed agentic autorater that agrees with human domain experts on 96.2% of criterion judgments in our expert-graded study (Cohen's $κ= 0.91$), scored by weighted satisfaction rate (WSR) overall and on frontier criteria unsaturated by prior-generation models (Climb-WSR). Across the frontier models we evaluate (Gemini 4 Carbon, Claude Fable 5.2, Claude Opus 5.5, and GPT-6 Astra), Claude Fable 5.2 (56.6% Climb-WSR, 73.3% Overall WSR) and Gemini 4 Carbon (54.3% Climb-WSR, 71.9% Overall WSR) achieve the highest scores, while Carbon uses $5.7\\times$ fewer tokens. Even for the strongest models, Climb-WSR remains below 57%, leaving substantial headroom for multimodal agents.",
+      "published": "2026-11-18T21:59:46Z",
+      "updated": "2026-11-18T21:59:46Z",
+      "arxiv_id": "2611.25228v1",
+      "abs_url": "http://arxiv.org/abs/2611.25228v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25228v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "多模态融合",
+        "数据集/评测"
+      ],
+      "topic": "多模态融合",
+      "score": 3,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial"
+      ],
+      "title_zh": "MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks",
+      "summary_zh": "We introduce the Multimodal Knowledge Agent (MKA) benchmark, which measures how well autonomous agents perform end-to-end professional knowledge work that depends on visual understanding. Each task requires an agent to extract and combine information from multiple visually dense files, such as CAD blueprints, electronics schematics, radiographs, complex charts and geospatial maps, and to produce a standalone deliverable in .xlsx, .pptx, .pdf, .docx, .html or .png format. Existing benchmarks leave this capability largely untested: removing image-viewing tools leaves Gemini 4 Carbon's score on GDPval unchanged, and single-format evaluations such as GDP.pdf and GDP.xlsx do not require reasoning across files or modalities. MKA contains 200 tasks across 10 economic sectors. Deliverables are graded against expert-weighted rubrics by a sandboxed agentic autorater that agrees with human domain experts on 96.2% of criterion judgments in our expert-graded study (Cohen's $κ= 0.91$), scored by weighted satisfaction rate (WSR) overall and on frontier criteria unsaturated by prior-generation models (Climb-WSR). Across the frontier models we evaluate (Gemini 4 Carbon, Claude Fable 5.2, Claude Opus 5.5, and GPT-6 Astra), Claude Fable 5.2 (56.6% Climb-WSR, 73.3% Overall WSR) and Gemini 4 Carbon (54.3% Climb-WSR, 71.9% Overall WSR) achieve the highest scores, while Carbon uses $5.7\\times$ fewer tokens. Even for the strongest models, Climb-WSR remains below 57%, leaving substantial headroom for multimodal agents."
+    },
+    {
+      "title": "Bridging vision-language reasoning and learned control for legged navigation in the wild",
+      "authors": [
+        "Takahiro Miki",
+        "Robin Schmid",
+        "Manthan Patel",
+        "Turcan Tuna",
+        "Julia Richter",
+        "Julian Nubert",
+        "Joonho Lee",
+        "Matthias Müller",
+        "Marco Hutter"
+      ],
+      "summary": "Autonomous navigation in diverse real-world environments remains one of the greatest challenges in robotics. It demands both robust low-level motion control to handle diverse terrain and high-level reasoning to interpret environmental cues. We present ROAM (Robust Open-world Autonomous Mobility), a system that enables legged robots to perform kilometer-scale navigation in complex alpine and urban settings. ROAM combines the world knowledge of a Vision-Language Model (VLM), pre-trained on internet-scale data, with robust locomotion and local planning policies learned in simulation via reinforcement learning (RL). The VLM provides common-sense reasoning and semantic interpretation of the scene, assessing risks, interpreting signs, and producing semantic labels with associated navigation costs. An open-vocabulary segmentation module converts these labels into a dense, real-time risk map, which conditions two pre-trained RL policies responsible for agile locomotion and local navigation, effectively coupling high-level VLM reasoning with low-level physical control. Real-world experiments showed the system's ability to autonomously navigate a wide range of complex real-world environments. The robot completes kilometer-long hikes with minimal intervention, interprets signs to avoid danger, and evaluates its environment to identify safe areas on which to step. This work represents a step toward the reliable deployment of systems in unstructured environments. However, it also underscores the challenges that remain in VLM reliability and spatial reasoning, indicating that foundational models are a crucial component but not yet a complete solution for navigation in the wild.",
+      "published": "2026-11-18T21:40:00Z",
+      "updated": "2026-11-18T21:40:00Z",
+      "arxiv_id": "2611.25215v1",
+      "abs_url": "http://arxiv.org/abs/2611.25215v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25215v1",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "comment": "42 pages, 6 figures, 15 supplementary figures. Author's version of the article published in Science Robotics. Project page: https://roam-hiking.github.io",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "开放词汇与开放集",
+        "图像描述与视觉推理",
+        "基础模型",
+        "视觉-语言模型"
+      ],
+      "topic": "语义分割",
+      "score": 6,
+      "anchor_terms": [
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "open-vocabulary",
+        "robust",
+        "spatial reasoning",
+        "VLM"
+      ],
+      "title_zh": "Bridging vision-language reasoning and learned control for legged navigation in the wild",
+      "summary_zh": "Autonomous navigation in diverse real-world environments remains one of the greatest challenges in robotics. It demands both robust low-level motion control to handle diverse terrain and high-level reasoning to interpret environmental cues. We present ROAM (Robust Open-world Autonomous Mobility), a system that enables legged robots to perform kilometer-scale navigation in complex alpine and urban settings. ROAM combines the world knowledge of a Vision-Language Model (VLM), pre-trained on internet-scale data, with robust locomotion and local planning policies learned in simulation via reinforcement learning (RL). The VLM provides common-sense reasoning and semantic interpretation of the scene, assessing risks, interpreting signs, and producing semantic labels with associated navigation costs. An open-vocabulary segmentation module converts these labels into a dense, real-time risk map, which conditions two pre-trained RL policies responsible for agile locomotion and local navigation, effectively coupling high-level VLM reasoning with low-level physical control. Real-world experiments showed the system's ability to autonomously navigate a wide range of complex real-world environments. The robot completes kilometer-long hikes with minimal intervention, interprets signs to avoid danger, and evaluates its environment to identify safe areas on which to step. This work represents a step toward the reliable deployment of systems in unstructured environments. However, it also underscores the challenges that remain in VLM reliability and spatial reasoning, indicating that foundational models are a crucial component but not yet a complete solution for navigation in the wild."
+    },
+    {
+      "title": "Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping",
+      "authors": [
+        "Ege Artan",
+        "Shuo Chen",
+        "Andrew Peng",
+        "Sammuel Aldrich Karya",
+        "Kyaw Thiha"
+      ],
+      "summary": "The spectral range of the Field Imaging Nanosatellite for Crop residue Hyperspectral Mapping (FINCH), developed by the University of Toronto Aerospace Team's Space System Division, poses significant challenges for hyperspectral unmixing to determine crop residue cover fractional abundances. The severe lack of standard indices necessitates the use of complex, data-driven unmixing models. Complex unmixing models require dense, well-distributed manifolds, whereas ground-truth datasets are sparse and expensive. To better leverage the information content in existing ground-truth datasets, this study presents a framework that decouples interpolation and abundance-mapping estimation via an intermediary conditional data generator, contrasting with traditional single-model unmixing pipelines. This decoupling enables the inclusion of physical prior knowledge about spectra, which is not natively accessible to unmixing models, thereby artificially expanding the dataset to serve as a Monte Carlo approximation of the population risk. To test this hypothesis, we have proposed two generator models: a 1D Conditional U-Net with Conformer Layers (GD-Streamline) and a Dual-Path Transformer Conditional Variational AutoEncoder (TCVAE), and two unmixing models: Multi-Layered Perceptrons (MLP) and Fourier Neural Operators (FNO). The results of the study indicate a need for rigorous integration and introduction of spectral priors within the scope of the proposed decoupling framework to prevent domain and mode collapse and hallucination by the generator models; otherwise, this leads to falsely approximated data manifolds, ultimately resulting in unsatisfactory and out-of-distribution unmixing performance.",
+      "published": "2026-11-18T17:58:21Z",
+      "updated": "2026-11-18T17:58:21Z",
+      "arxiv_id": "2611.24827v1",
+      "abs_url": "http://arxiv.org/abs/2611.24827v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.24827v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "eess.SP"
+      ],
+      "comment": "8 pages, 3 figures. Published in the XXV ISPRS Congress 2026",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "语义分割",
+        "小样本与域泛化",
+        "高光谱/多光谱",
+        "数据集/评测"
+      ],
+      "topic": "语义分割",
+      "score": 10,
+      "anchor_terms": [
+        "crop"
+      ],
+      "matched_terms": [
+        "crop",
+        "hyperspectral",
+        "hyperspectral unmixing",
+        "satellite",
+        "transformer",
+        "U-Net"
+      ],
+      "title_zh": "Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping",
+      "summary_zh": "The spectral range of the Field Imaging Nanosatellite for Crop residue Hyperspectral Mapping (FINCH), developed by the University of Toronto Aerospace Team's Space System Division, poses significant challenges for hyperspectral unmixing to determine crop residue cover fractional abundances. The severe lack of standard indices necessitates the use of complex, data-driven unmixing models. Complex unmixing models require dense, well-distributed manifolds, whereas ground-truth datasets are sparse and expensive. To better leverage the information content in existing ground-truth datasets, this study presents a framework that decouples interpolation and abundance-mapping estimation via an intermediary conditional data generator, contrasting with traditional single-model unmixing pipelines. This decoupling enables the inclusion of physical prior knowledge about spectra, which is not natively accessible to unmixing models, thereby artificially expanding the dataset to serve as a Monte Carlo approximation of the population risk. To test this hypothesis, we have proposed two generator models: a 1D Conditional U-Net with Conformer Layers (GD-Streamline) and a Dual-Path Transformer Conditional Variational AutoEncoder (TCVAE), and two unmixing models: Multi-Layered Perceptrons (MLP) and Fourier Neural Operators (FNO). The results of the study indicate a need for rigorous integration and introduction of spectral priors within the scope of the proposed decoupling framework to prevent domain and mode collapse and hallucination by the generator models; otherwise, this leads to falsely approximated data manifolds, ultimately resulting in unsatisfactory and out-of-distribution unmixing performance."
+    },
+    {
+      "title": "Watch Where You Linearize: Predicting and Correcting Model-Merging Interference",
+      "authors": [
+        "Ido Nitzan Hidekel",
+        "Dan Raviv"
+      ],
+      "summary": "Model merging combines separately fine-tuned models by adding their task vectors to a shared backbone. Interference is typically assessed only after constructing and evaluating a candidate merge, making coefficient search expensive. We show that a first-order directional derivative of task A's outputs along task B's vector can predict interference, but only when evaluated at the appropriate model. At the receiver model, this derivative forecasts nearby merges per task and per example, halves the accuracy error of a no-change baseline, and identifies most examples whose predictions flip. For full multi-task merges, a single evaluation is insufficient; two evaluations along the merge path are needed. At the shared pretrained backbone, however, the derivative is nearly orthogonal to realized changes in our vision experiments and only partly predictive in LoRA language-model pilots. Controls link this failure to displacement along the receiver's own task vector, not simply parameter distance; the mismatch appears within the first few dozen fine-tuning steps. Freezing receiver-local responses produces a surrogate affine in the merge coefficients. We use it to construct LR-Merge, a label-free correction that optimizes coefficients through convex teacher matching on unlabeled probes, without backpropagation through merged networks. LR-Merge improves all tested closed-form, isotropic, and sparsified base mergers, with gains generally increasing as more tasks are merged. Using pretrained rather than receiver-local responses instead degrades the base merge. LR-Merge matches exact teacher matching through a merged network, which takes roughly three times longer to converge and performs similarly at an equal compute budget. Once built, the surrogate answers new coefficient and task-subset queries in seconds.",
+      "published": "2026-11-18T16:57:20Z",
+      "updated": "2026-11-18T16:57:20Z",
+      "arxiv_id": "2611.25000v1",
+      "abs_url": "http://arxiv.org/abs/2611.25000v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25000v1",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "高效微调与轻量化",
+        "数据集/评测"
+      ],
+      "topic": "高效微调与轻量化",
+      "score": 2,
+      "anchor_terms": [
+        "LoRA"
+      ],
+      "matched_terms": [
+        "fine-tuning",
+        "LoRA"
+      ],
+      "title_zh": "Watch Where You Linearize: Predicting and Correcting Model-Merging Interference",
+      "summary_zh": "Model merging combines separately fine-tuned models by adding their task vectors to a shared backbone. Interference is typically assessed only after constructing and evaluating a candidate merge, making coefficient search expensive. We show that a first-order directional derivative of task A's outputs along task B's vector can predict interference, but only when evaluated at the appropriate model. At the receiver model, this derivative forecasts nearby merges per task and per example, halves the accuracy error of a no-change baseline, and identifies most examples whose predictions flip. For full multi-task merges, a single evaluation is insufficient; two evaluations along the merge path are needed. At the shared pretrained backbone, however, the derivative is nearly orthogonal to realized changes in our vision experiments and only partly predictive in LoRA language-model pilots. Controls link this failure to displacement along the receiver's own task vector, not simply parameter distance; the mismatch appears within the first few dozen fine-tuning steps. Freezing receiver-local responses produces a surrogate affine in the merge coefficients. We use it to construct LR-Merge, a label-free correction that optimizes coefficients through convex teacher matching on unlabeled probes, without backpropagation through merged networks. LR-Merge improves all tested closed-form, isotropic, and sparsified base mergers, with gains generally increasing as more tasks are merged. Using pretrained rather than receiver-local responses instead degrades the base merge. LR-Merge matches exact teacher matching through a merged network, which takes roughly three times longer to converge and performs similarly at an equal compute budget. Once built, the surrogate answers new coefficient and task-subset queries in seconds."
+    },
+    {
+      "title": "Jeveration: System One Models Now Generate",
+      "authors": [
+        "Yuhe Liu",
+        "Qi Li",
+        "Shihua Zhang",
+        "Xinchao Wang"
+      ],
+      "summary": "System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model, repurposing its visual-semantic knowledge for holistic image generation. The key challenge is to maintain global consistency. A single prompt admits many valid images, yet parallel predictions must converge on a coherent whole. We therefore condition all positions on a shared random state to coordinate parallel predictions, so that each draw yields a different but coherent image. Since the model tends to ignore this state under direct image supervision, we first learn a distribution over discrete image codes to guide single-pass generation. Beyond text-to-image generation, we further unify image-to-image generation and dense prediction within the same architecture, so that one checkpoint supports all three tasks, each in one forward pass. Experiments show that Jeveration generates a 512x512 image in 78 ms, up to 122x faster than existing unified models, while maintaining competitive image quality and dense prediction performance.",
+      "published": "2026-11-18T16:56:59Z",
+      "updated": "2026-11-18T16:56:59Z",
+      "arxiv_id": "2611.24738v1",
+      "abs_url": "http://arxiv.org/abs/2611.24738v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.24738v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "图像生成与重建",
+        "视觉-语言模型"
+      ],
+      "topic": "图像生成与重建",
+      "score": 2,
+      "anchor_terms": [
+        "image generation"
+      ],
+      "matched_terms": [
+        "image generation"
+      ],
+      "title_zh": "Jeveration: System One Models Now Generate",
+      "summary_zh": "System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model, repurposing its visual-semantic knowledge for holistic image generation. The key challenge is to maintain global consistency. A single prompt admits many valid images, yet parallel predictions must converge on a coherent whole. We therefore condition all positions on a shared random state to coordinate parallel predictions, so that each draw yields a different but coherent image. Since the model tends to ignore this state under direct image supervision, we first learn a distribution over discrete image codes to guide single-pass generation. Beyond text-to-image generation, we further unify image-to-image generation and dense prediction within the same architecture, so that one checkpoint supports all three tasks, each in one forward pass. Experiments show that Jeveration generates a 512x512 image in 78 ms, up to 122x faster than existing unified models, while maintaining competitive image quality and dense prediction performance."
+    },
+    {
+      "title": "AggCLIP: Aggregating CLIP for Zero-Shot Multimodal Anomaly Detection",
+      "authors": [
+        "Zhi Li",
+        "Hanyu Wang",
+        "Fei Shen",
+        "Zhengtao Zhang"
+      ],
+      "summary": "Zero-Shot Multimodal Anomaly Detection (ZSMAD) aims to identify both appearance and geometric defects in novel categories without relying on target-specific training data, making it especially valuable in real-world scenarios constrained by data scarcity, privacy concerns, or high annotation costs. While recent approaches successfully adapt vision-language models like CLIP to achieve this open-vocabulary generalization, they still face significant challenges: (i) severe geometric information loss during 3D-to-2D point cloud rendering; (ii) spatially noisy 2D feature maps produced by raw CLIP patch embeddings, compounded by shallow late-stage modality fusion; and (iii) severe cross-modal semantic misalignment due to decoupled processing streams. To address these limitations, we propose AggCLIP, a novel framework that adapts frozen CLIP representations for ZSMAD by explicitly incorporating local geometric structure and visual spatial context. Specifically, to accurately localize fine-grained defects, we design a Geometry-Aware Spatial Aggregation (GSA) module that refines back-projected 3D point features via density-adaptive neighborhood weighting, alongside a Context-Aware Spatial Aggregation (CSA) module that smooths multi-scale 2D patch embeddings using a lightweight trainable adapter. Furthermore, to prevent semantic drift between modalities, we introduce a Dual-Stream Prompt Contrastive (DSPC) loss, which aligns the abstract concepts of normality and abnormality across the point cloud and RGB streams. Extensive experiments demonstrate that the proposed AggCLIP framework achieves state-of-the-art performance on the MVTec 3D-AD and Eyecandies benchmarks under both one-vs-rest and cross-dataset zero-shot settings, notably surpassing the strongest competitive methods by up to 2.9% in pixel-level AUPRO.",
+      "published": "2026-11-18T15:49:05Z",
+      "updated": "2026-11-18T15:49:05Z",
+      "arxiv_id": "2611.24643v1",
+      "abs_url": "http://arxiv.org/abs/2611.24643v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.24643v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "13 pages, 4 figures, 6 tables. Author version of the ACM Multimedia 2026 paper",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "开放词汇与开放集",
+        "视觉-语言模型",
+        "小样本与域泛化",
+        "高效微调与轻量化",
+        "多模态融合",
+        "LiDAR/点云",
+        "数据集/评测"
+      ],
+      "topic": "开放词汇与开放集",
+      "score": 12,
+      "anchor_terms": [
+        "open-vocabulary"
+      ],
+      "matched_terms": [
+        "adapter",
+        "anomaly detection",
+        "CLIP",
+        "multi-scale",
+        "open-vocabulary",
+        "point cloud",
+        "zero-shot"
+      ],
+      "title_zh": "AggCLIP: Aggregating CLIP for Zero-Shot Multimodal Anomaly Detection",
+      "summary_zh": "Zero-Shot Multimodal Anomaly Detection (ZSMAD) aims to identify both appearance and geometric defects in novel categories without relying on target-specific training data, making it especially valuable in real-world scenarios constrained by data scarcity, privacy concerns, or high annotation costs. While recent approaches successfully adapt vision-language models like CLIP to achieve this open-vocabulary generalization, they still face significant challenges: (i) severe geometric information loss during 3D-to-2D point cloud rendering; (ii) spatially noisy 2D feature maps produced by raw CLIP patch embeddings, compounded by shallow late-stage modality fusion; and (iii) severe cross-modal semantic misalignment due to decoupled processing streams. To address these limitations, we propose AggCLIP, a novel framework that adapts frozen CLIP representations for ZSMAD by explicitly incorporating local geometric structure and visual spatial context. Specifically, to accurately localize fine-grained defects, we design a Geometry-Aware Spatial Aggregation (GSA) module that refines back-projected 3D point features via density-adaptive neighborhood weighting, alongside a Context-Aware Spatial Aggregation (CSA) module that smooths multi-scale 2D patch embeddings using a lightweight trainable adapter. Furthermore, to prevent semantic drift between modalities, we introduce a Dual-Stream Prompt Contrastive (DSPC) loss, which aligns the abstract concepts of normality and abnormality across the point cloud and RGB streams. Extensive experiments demonstrate that the proposed AggCLIP framework achieves state-of-the-art performance on the MVTec 3D-AD and Eyecandies benchmarks under both one-vs-rest and cross-dataset zero-shot settings, notably surpassing the strongest competitive methods by up to 2.9% in pixel-level AUPRO."
+    },
+    {
+      "title": "ABSClaw: From Invented Worlds to Reality-Grounded Social Simulation",
+      "authors": [
+        "Shaobin He",
+        "Yan Gao",
+        "Quan Zheng",
+        "Zhenyang Lin",
+        "Zhen Liu",
+        "Jiyan He",
+        "Shuxin Zheng"
+      ],
+      "summary": "LLM-based artificial societies exhibit rich behavior but often lack scientific grounding: personas and environments are assumed, interaction networks are synthetic, and simulators are generated as free-form code, making results difficult to tie to real populations and sensitive to the backbone model. We argue that simulated worlds should be sampled from observed data, while simulation logic should be implemented by composing operations from a shared, task-independent vocabulary. In this paper, we introduce ABSClaw, a zero-code agent that compiles natural-language requests into executable, reality-grounded social simulations. ABSClaw grounds who acts, where they act, and with whom they interact in survey and census data, geospatial sources, and real networks. It expresses state transitions through 26 atomic operations. To support an open and extensible ecosystem, ABSClaw further allows capabilities to be added as lifecycle-scoped skills without modifying its core. Furthermore, we propose ABSBench, a benchmark of 193 real-world social-simulation tasks. On ABSBench, ABSClaw achieves the best overall performance among the evaluated social simulators. Three real-world case studies show that grounding personas, environments, and interaction networks each improves agreement with observed outcomes. With one runtime skill, ABSClaw executes 13 population-scale simulations, collectively involving 25 million agents. Together, these results demonstrate ABSClaw's real-world fidelity, extensibility, and scalability.",
+      "published": "2026-11-18T14:37:48Z",
+      "updated": "2026-11-18T14:37:48Z",
+      "arxiv_id": "2611.24517v1",
+      "abs_url": "http://arxiv.org/abs/2611.24517v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.24517v1",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "视觉-语言模型",
+        "数据集/评测"
+      ],
+      "topic": "视觉-语言模型",
+      "score": 3,
+      "anchor_terms": [
+        "geospatial"
+      ],
+      "matched_terms": [
+        "geospatial",
+        "LLM"
+      ],
+      "title_zh": "ABSClaw: From Invented Worlds to Reality-Grounded Social Simulation",
+      "summary_zh": "LLM-based artificial societies exhibit rich behavior but often lack scientific grounding: personas and environments are assumed, interaction networks are synthetic, and simulators are generated as free-form code, making results difficult to tie to real populations and sensitive to the backbone model. We argue that simulated worlds should be sampled from observed data, while simulation logic should be implemented by composing operations from a shared, task-independent vocabulary. In this paper, we introduce ABSClaw, a zero-code agent that compiles natural-language requests into executable, reality-grounded social simulations. ABSClaw grounds who acts, where they act, and with whom they interact in survey and census data, geospatial sources, and real networks. It expresses state transitions through 26 atomic operations. To support an open and extensible ecosystem, ABSClaw further allows capabilities to be added as lifecycle-scoped skills without modifying its core. Furthermore, we propose ABSBench, a benchmark of 193 real-world social-simulation tasks. On ABSBench, ABSClaw achieves the best overall performance among the evaluated social simulators. Three real-world case studies show that grounding personas, environments, and interaction networks each improves agreement with observed outcomes. With one runtime skill, ABSClaw executes 13 population-scale simulations, collectively involving 25 million agents. Together, these results demonstrate ABSClaw's real-world fidelity, extensibility, and scalability."
+    },
+    {
+      "title": "Cooperative UAV and Ground Station for Robust MEC of Dynamic Aquatic IoT: A Generative AI-Enhanced Approach",
+      "authors": [
+        "Jiahao You",
+        "Ziye Jia",
+        "Chao Dong",
+        "Qihui Wu",
+        "Zhu Han"
+      ],
+      "summary": "The increasing aquatic Internet of Things (AIoTs) require computational support and coverage in applications such as maritime search and rescue. Unmanned aerial vehicles (UAVs) can offer low-cost, flexible aerial services, and ground stations (GSs) can provide powerful supports, which can cooperate to help the AIoTs in complex scenarios. However, the collaboration between UAVs and GSs for AIoTs faces challenges of task uncertainties, AIoTs trajectory uncertainties, heterogeneities, and limited computational resources. To address these issues, we propose a cooperative UAV and GS based robust multi-access edge computing (MEC) framework to assist AIoTs in completing computational tasks. Specifically, we formulate the optimization problem of joint task offloading and UAV trajectory to minimize the total execution time, which is in the form of mixed integer nonlinear programming and NP-hard to tackle. Therefore, we propose the algorithm of generative artificial intelligence-enhanced heterogeneous agent proximal policy optimization (GAI-HAPPO). The proposed algorithm integrates GAI models to enhance the actor network ability to model complex environments and extract high-level features, thereby allowing the algorithm to predict uncertainties and adapt to dynamic conditions. Additionally, GAI stabilizes the critic network, addressing the instability of multi-agent reinforcement learning approaches. Finally, extensive simulations demonstrate that the proposed algorithm outperforms the existing benchmark methods, thus highlighting the potentials in tackling intricate, cross-domain issues in the considered scenarios.",
+      "published": "2026-11-18T14:05:46Z",
+      "updated": "2026-11-18T14:05:46Z",
+      "arxiv_id": "2611.24466v1",
+      "abs_url": "http://arxiv.org/abs/2611.24466v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.24466v1",
+      "primary_category": "cs.NI",
+      "categories": [
+        "cs.NI",
+        "cs.LG"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "小样本与域泛化",
+        "无人机/UAV",
+        "数据集/评测"
+      ],
+      "topic": "小样本与域泛化",
+      "score": 7,
+      "anchor_terms": [
+        "UAV"
+      ],
+      "matched_terms": [
+        "aerial",
+        "robust",
+        "UAV",
+        "unmanned aerial vehicle"
+      ],
+      "title_zh": "Cooperative UAV and Ground Station for Robust MEC of Dynamic Aquatic IoT: A Generative AI-Enhanced Approach",
+      "summary_zh": "The increasing aquatic Internet of Things (AIoTs) require computational support and coverage in applications such as maritime search and rescue. Unmanned aerial vehicles (UAVs) can offer low-cost, flexible aerial services, and ground stations (GSs) can provide powerful supports, which can cooperate to help the AIoTs in complex scenarios. However, the collaboration between UAVs and GSs for AIoTs faces challenges of task uncertainties, AIoTs trajectory uncertainties, heterogeneities, and limited computational resources. To address these issues, we propose a cooperative UAV and GS based robust multi-access edge computing (MEC) framework to assist AIoTs in completing computational tasks. Specifically, we formulate the optimization problem of joint task offloading and UAV trajectory to minimize the total execution time, which is in the form of mixed integer nonlinear programming and NP-hard to tackle. Therefore, we propose the algorithm of generative artificial intelligence-enhanced heterogeneous agent proximal policy optimization (GAI-HAPPO). The proposed algorithm integrates GAI models to enhance the actor network ability to model complex environments and extract high-level features, thereby allowing the algorithm to predict uncertainties and adapt to dynamic conditions. Additionally, GAI stabilizes the critic network, addressing the instability of multi-agent reinforcement learning approaches. Finally, extensive simulations demonstrate that the proposed algorithm outperforms the existing benchmark methods, thus highlighting the potentials in tackling intricate, cross-domain issues in the considered scenarios."
+    },
+    {
+      "title": "Anchoring with Visual Evidence: Explicit Semantic Anchors for Joint Change Detection and Captioning",
+      "authors": [
+        "Kai Zheng",
+        "Hang-Cheng Dong",
+        "Puyi Fang",
+        "Junjia Pan",
+        "Zhenkai Wu",
+        "Wei Zhang"
+      ],
+      "summary": "Joint change detection and captioning seeks to localize changes and describe them from bi-temporal remote sensing images. A key challenge is translating dense visual evidence into the semantic conditions that guide description generation. We propose Explicit Semantic Anchors (ESA), a supervised interface that exposes entity presence, temporal appearance variation, and spatial extent. A prediction-guided readout combines visual features and predicted change probabilities, and three factor heads estimate the corresponding anchor activations. These activations guide generation through two complementary routes. The context route maps the three factor activations to three separate memory tokens, one per factor, and appends them to the dense visual memory, while the lexicon route produces an additive vocabulary bias at each decoding step. Dense visual memory remains available for spatial detail and information beyond the explicit factors. Anchor targets are derived from existing images and change annotations, requiring no additional anchor-level language annotation. At inference, all conditions are computed from the input image pair and the model's own predictions. Experiments on LEVIR-MCI and WHU-CDC show strong joint detection and captioning performance, supporting the use of supervised visual attributes as explicit conditions for change description generation.",
+      "published": "2026-11-18T14:03:23Z",
+      "updated": "2026-11-18T14:03:23Z",
+      "arxiv_id": "2611.24462v1",
+      "abs_url": "http://arxiv.org/abs/2611.24462v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.24462v1",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "comment": "",
+      "code_url": "",
+      "has_code": false,
+      "labels": [
+        "变化检测",
+        "图像描述与视觉推理",
+        "数据集/评测"
+      ],
+      "topic": "变化检测",
+      "score": 6,
+      "anchor_terms": [
+        "change detection",
+        "remote sensing",
+        "temporal"
+      ],
+      "matched_terms": [
+        "change detection",
+        "remote sensing",
+        "temporal",
+        "WHU"
+      ],
+      "title_zh": "Anchoring with Visual Evidence: Explicit Semantic Anchors for Joint Change Detection and Captioning",
+      "summary_zh": "Joint change detection and captioning seeks to localize changes and describe them from bi-temporal remote sensing images. A key challenge is translating dense visual evidence into the semantic conditions that guide description generation. We propose Explicit Semantic Anchors (ESA), a supervised interface that exposes entity presence, temporal appearance variation, and spatial extent. A prediction-guided readout combines visual features and predicted change probabilities, and three factor heads estimate the corresponding anchor activations. These activations guide generation through two complementary routes. The context route maps the three factor activations to three separate memory tokens, one per factor, and appends them to the dense visual memory, while the lexicon route produces an additive vocabulary bias at each decoding step. Dense visual memory remains available for spatial detail and information beyond the explicit factors. Anchor targets are derived from existing images and change annotations, requiring no additional anchor-level language annotation. At inference, all conditions are computed from the input image pair and the model's own predictions. Experiments on LEVIR-MCI and WHU-CDC show strong joint detection and captioning performance, supporting the use of supervised visual attributes as explicit conditions for change description generation."
+    }
+  ]
+}
